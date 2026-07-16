@@ -66,16 +66,16 @@ const routes = {
   bedrock: {
     label: "Bedrock addon route",
     readout: "Bedrock",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
     versions: ["Bedrock 26.30", "Bedrock 26.20", "I am not sure"],
     issues: ["download", "not working", "box not spawning", "voice not working", "is it real"],
     summaries: {
       download: {
-        title: "Use a Bedrock addon page, not the Java mod file",
+        title: "Use the Verity BE addon page, not the Java mod file",
         summary:
           "Bedrock players need addon files and world settings. A Java .jar file will not work in Bedrock.",
         steps: [
-          "Open the Bedrock route and choose the addon version that matches your game.",
+          "Open the Verity BE route and choose the addon version that matches your game.",
           "Import the addon into Minecraft Bedrock.",
           "Activate both resource and behavior packs in the world settings.",
           "Restart the world after the packs are enabled."
@@ -111,7 +111,7 @@ const routes = {
           "Confirm the Bedrock addon version mentions voice support.",
           "Check platform microphone permission if the feature is available.",
           "Test without resource packs that alter sound behavior.",
-          "Use the Bedrock maintainer page instead of Java troubleshooting."
+          "Use the Verity BE maintainer page instead of Java troubleshooting."
         ]
       },
       "is it real": {

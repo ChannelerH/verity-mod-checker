@@ -180,6 +180,8 @@ h3 {
 .voxel-board,
 .fix-card,
 .guide-block,
+.status-card,
+.error-card,
 .link-list a,
 details,
 .table-wrap {
@@ -408,8 +410,10 @@ select {
 }
 
 .band,
+.status-section,
 .guide-section,
 .deep-guide,
+.error-section,
 .split-section,
 .intent-table,
 .faq {
@@ -462,6 +466,87 @@ select {
 
 .check-list strong {
   color: var(--ink);
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.status-card {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-width: 0;
+  padding: 18px;
+  box-shadow: none;
+  border-top: 5px solid var(--moss);
+}
+
+.status-card.primary {
+  border-top-color: var(--ember);
+}
+
+.status-topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-topline span,
+.status-topline strong,
+.error-card span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.status-topline strong {
+  color: var(--ember);
+}
+
+.status-card p,
+.error-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.status-card a {
+  width: fit-content;
+  min-height: 40px;
+  padding: 10px 12px;
+  color: #171611;
+  text-decoration: none;
+  background: var(--gold);
+  border: 1px solid #caa133;
+}
+
+.error-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.error-card {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-width: 0;
+  padding: 18px;
+  box-shadow: none;
+  border-left: 5px solid var(--signal);
+}
+
+.error-card:nth-child(2n) {
+  border-left-color: var(--ember);
+}
+
+.error-card:nth-child(3n) {
+  border-left-color: var(--gold);
 }
 
 .fix-grid {
@@ -617,7 +702,9 @@ details p {
   }
 
   .guide-grid,
-  .guide-grid.three {
+  .guide-grid.three,
+  .status-grid,
+  .error-grid {
     grid-template-columns: 1fr;
   }
 

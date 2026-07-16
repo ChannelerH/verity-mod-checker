@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Verity Mod Checker - Download, Java, Bedrock & Not Working Fixes</title>
+    <title>Verity Mod Download Checker - Java, Bedrock, MCPE & Fixes</title>
     <meta
       name="description"
-      content="Use this Verity Mod checker to choose Java, Bedrock, or MCPE, open safe project routes, and fix setup problems without mirrors."
+      content="Use this Verity Mod download checker to choose Java, Bedrock, or MCPE, open safe routes, and fix common setup errors."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://veritymodchecker.online/" />
-    <meta property="og:title" content="Verity Mod Checker" />
+    <meta property="og:title" content="Verity Mod Download Checker" />
     <meta
       property="og:description"
-      content="Pick your Minecraft edition and issue to get a focused Verity Mod setup or troubleshooting checklist."
+      content="Pick your Minecraft edition and issue to get the right Verity Mod download route, current status, and troubleshooting checklist."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://veritymodchecker.online/" />
@@ -31,7 +31,7 @@
       {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Verity Mod Checker",
+        "name": "Verity Mod Download Checker",
         "applicationCategory": "UtilityApplication",
         "operatingSystem": "Any",
         "description": "A fan-made utility that helps Minecraft players choose the right Verity Mod page and fix Java or Bedrock setup issues.",
@@ -81,12 +81,13 @@
   </head>
   <body>
     <header class="topbar" aria-label="Site header">
-      <a class="brand" href="#checker" aria-label="Verity Mod Checker home">
+      <a class="brand" href="#checker" aria-label="Verity Mod Download Checker home">
         <span class="brand-mark" aria-hidden="true">V</span>
         <span>Verity Checker</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#checker">Checker</a>
+        <a href="#current-status">Status</a>
         <a href="#setup-guide">Install</a>
         <a href="#fixes">Fixes</a>
         <a href="#safe-links">Safe links</a>
@@ -98,9 +99,9 @@
       <section class="hero" id="checker">
         <div class="hero-copy">
           <p class="eyebrow">Minecraft Java + Bedrock routing</p>
-          <h1>Verity Mod Checker</h1>
+          <h1>Verity Mod Download Checker</h1>
           <p class="lede">
-            Pick your edition, version, and problem. The checker returns the safest download route,
+            Pick your edition, version, and problem. The checker returns the safest current download route,
             setup steps, and a focused fix for common not working issues.
           </p>
           <div class="trust-strip" aria-label="What this tool does">
@@ -170,6 +171,53 @@
             <strong>Route</strong>
             <span id="readoutEdition">Java</span>
           </div>
+        </div>
+      </section>
+
+      <section class="status-section" id="current-status">
+        <div class="section-heading">
+          <p class="eyebrow">Current route status</p>
+          <h2>Start with the right Verity Mod project page</h2>
+        </div>
+        <div class="status-grid">
+          <article class="status-card primary">
+            <div class="status-topline">
+              <span>Java</span>
+              <strong>Primary route</strong>
+            </div>
+            <h3>Verity JE</h3>
+            <p>
+              Use this route for Minecraft Java profiles. Match the listed file with your loader before launch:
+              Forge for 1.20.1 or NeoForge for 1.21.1 when the project page lists that build.
+            </p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="noopener" target="_blank">Open Java download route</a>
+          </article>
+
+          <article class="status-card primary">
+            <div class="status-topline">
+              <span>Bedrock / MCPE</span>
+              <strong>Primary route</strong>
+            </div>
+            <h3>Verity BE</h3>
+            <p>
+              Use this route for Bedrock and mobile players first. It has the clearest current setup notes for 26.30 and
+              26.20, including Beta APIs, commands, dialogue issues, and response problems.
+            </p>
+            <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="noopener" target="_blank">Open Bedrock download route</a>
+          </article>
+
+          <article class="status-card">
+            <div class="status-topline">
+              <span>Bedrock alternate</span>
+              <strong>Secondary route</strong>
+            </div>
+            <h3>Verity - Bedrock Edition</h3>
+            <p>
+              Keep this route as an alternate Bedrock project page. Use it when you are following a guide that names PnTMC
+              or when the primary Bedrock route does not match your exact world setup.
+            </p>
+            <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="noopener" target="_blank">Open alternate route</a>
+          </article>
         </div>
       </section>
 
@@ -290,6 +338,63 @@
         </div>
       </section>
 
+      <section class="error-section" id="specific-errors">
+        <div class="section-heading">
+          <p class="eyebrow">Exact error fixes</p>
+          <h2>Fix the Verity Mod symptoms players actually search</h2>
+        </div>
+        <div class="error-grid">
+          <article class="error-card">
+            <span>Bedrock</span>
+            <h3>Verity only says "..."</h3>
+            <p>
+              Check whether Beta APIs are enabled, then re-run the required connect command from the project page. If the
+              command looks right, restart the world and test with only the Verity packs active.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Bedrock</span>
+            <h3>Dialogue box does not appear</h3>
+            <p>
+              Remove texture or UI packs that change item behavior, confirm the resource pack is active, and use the supported
+              interaction item. A clean world is faster than debugging an old save.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Bedrock / MCPE</span>
+            <h3>Box or entity not spawning</h3>
+            <p>
+              Enable cheats and command permissions, confirm the behavior pack is active, and use the exact command for your
+              addon version. Importing the file is not the same as activating it.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Java</span>
+            <h3>Error: No Purpose</h3>
+            <p>
+              Treat this as an AI or configuration issue after the base Java route loads. Recheck Groq or Ollama setup, restart
+              Minecraft, and test with a smaller clean profile before adding other mods.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Java</span>
+            <h3>Crashes before launch</h3>
+            <p>
+              Do not debug AI first. Match Minecraft version, loader, and dependency files. Use Forge files with Forge profiles
+              and NeoForge files with NeoForge profiles.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Download</span>
+            <h3>Old link, 404, or mirror page</h3>
+            <p>
+              Search for the project name on CurseForge instead of following short links. Avoid EXE installers, APK prompts,
+              password archives, and Google Drive mirrors that hide the project owner.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="split-section" id="safe-links">
         <div>
           <p class="eyebrow">Safe-link routing</p>
@@ -309,13 +414,13 @@
             <span>Java route</span>
             <strong>CurseForge: Verity JE</strong>
           </a>
-          <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="noopener" target="_blank">
-            <span>Bedrock route</span>
-            <strong>CurseForge: Verity - Bedrock Edition</strong>
-          </a>
           <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="noopener" target="_blank">
-            <span>Bedrock alternate</span>
+            <span>Bedrock route</span>
             <strong>CurseForge: Verity BE</strong>
+          </a>
+          <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="noopener" target="_blank">
+            <span>Bedrock alternate</span>
+            <strong>CurseForge: Verity - Bedrock Edition</strong>
           </a>
         </div>
       </section>
