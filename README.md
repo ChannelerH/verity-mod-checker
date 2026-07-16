@@ -2,6 +2,8 @@
 
 Static SEO tool page for routing Minecraft players to the right Verity Mod setup, troubleshooting flow, and official project links.
 
+Live Cloudflare Pages URL: https://verity-mod-checker.pages.dev/
+
 ## Local Preview
 
 Open `index.html` in a browser, or run:
