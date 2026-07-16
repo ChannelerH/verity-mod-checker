@@ -30,7 +30,7 @@ jobs:
       - name: Prepare static artifact
         run: |
           mkdir _site
-          cp index.html styles.css script.js favicon.svg _site/
+          cp index.html styles.css script.js favicon.svg robots.txt sitemap.xml _worker.js _site/
           touch _site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
