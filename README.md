@@ -6,6 +6,12 @@ Live custom domain: https://veritymodchecker.online/
 
 Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
+## Live Routes
+
+- Java download route: https://veritymodchecker.online/java/
+- Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
+- Not working and 404 fixes: https://veritymodchecker.online/not-working/
+
 ## What It Covers
 
 - Java route: Verity JE, Forge, NeoForge, Groq, Ollama, and version checks.
