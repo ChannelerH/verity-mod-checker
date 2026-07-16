@@ -6,7 +6,7 @@
     <title>Verity Mod Checker - Download, Java, Bedrock & Not Working Fixes</title>
     <meta
       name="description"
-      content="Use this Verity Mod checker to find the right Java or Bedrock download path, fix not working issues, and verify safe official links."
+      content="Use this Verity Mod checker to choose Java, Bedrock, or MCPE, open safe project routes, and fix setup problems without mirrors."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://veritymodchecker.online/" />
@@ -48,7 +48,15 @@
             "name": "What is the Verity Mod?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Verity Mod is a Minecraft horror companion mod or addon with separate Java and Bedrock routes. This page helps players identify the right setup path and official project pages."
+              "text": "Verity Mod is searched as a Minecraft horror companion mod or addon with separate Java and Bedrock routes. This checker helps players identify the right setup path, version checks, and maintainer-controlled project pages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Verity download should I use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java players should use the Java project route and match Forge or NeoForge with the listed Minecraft version. Bedrock and MCPE players should use addon routes, not Java jar files."
             }
           },
           {
@@ -56,7 +64,7 @@
             "name": "Why is Verity Mod not working?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Common causes include the wrong edition, mismatched Minecraft version, missing Bedrock experimental settings, disabled cheats, or incomplete Java AI configuration."
+              "text": "Common causes include the wrong edition, mismatched Minecraft version, missing Bedrock experimental settings such as Beta APIs, disabled cheats, inactive packs, conflicting texture packs, or incomplete Java AI configuration."
             }
           },
           {
@@ -79,6 +87,7 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#checker">Checker</a>
+        <a href="#setup-guide">Install</a>
         <a href="#fixes">Fixes</a>
         <a href="#safe-links">Safe links</a>
         <a href="#faq">FAQ</a>
@@ -164,6 +173,41 @@
         </div>
       </section>
 
+      <section class="guide-section" id="setup-guide">
+        <div class="section-heading">
+          <p class="eyebrow">Player-first guide</p>
+          <h2>Choose the correct Verity Mod path before you download</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>What this Verity Mod checker is designed to answer</h3>
+            <p>
+              Most players who search for Verity Mod are not looking for a long lore article first. They need a direct answer:
+              is there a working download, is it for Java or Bedrock, what version does it support, and why does the setup fail
+              after import or launch? This page is built around that intent. The interactive checker at the top asks for your
+              edition, version, and issue, then turns those inputs into a short route you can follow before you open any external
+              page.
+            </p>
+            <p>
+              The safest habit is to treat every result as a routing problem instead of a file-hunting problem. A Java player
+              needs a loader-specific Verity Mod project page and a matching jar. A Bedrock or MCPE player needs an addon page, an importable
+              package, active resource and behavior packs, and the required world settings. If those paths are mixed, the download
+              may be real but still useless for your game.
+            </p>
+          </article>
+
+          <article class="guide-block">
+            <h3>Quick edition decision</h3>
+            <ul class="check-list">
+              <li><strong>Java Edition:</strong> use the Java route when your launcher profile runs Forge or NeoForge and your game version is listed on the Verity Mod project page.</li>
+              <li><strong>Bedrock Edition:</strong> use a Bedrock addon route when you install through Minecraft Bedrock and manage packs inside world settings.</li>
+              <li><strong>MCPE:</strong> use an MCPE-compatible Bedrock route, then test in a fresh mobile world before moving it into a main save.</li>
+              <li><strong>Unknown version:</strong> do not guess. Open the Verity Mod project files list and compare the exact Minecraft version before downloading.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <section class="band" id="fixes">
         <div class="section-heading">
           <p class="eyebrow">Fast diagnosis</p>
@@ -189,6 +233,63 @@
         </div>
       </section>
 
+      <section class="deep-guide" aria-label="Detailed setup guide">
+        <div class="guide-grid three">
+          <article class="guide-block">
+            <p class="eyebrow">Java route</p>
+            <h2>Java setup checks</h2>
+            <p>
+              For Java, the Verity Mod route depends on the loader and game version first. Current project listings identify
+              Forge and NeoForge builds, so the first check is not whether the file name looks popular. The first check is whether
+              your launcher profile, Minecraft version, and loader all match the file you plan to install. If you run a Forge
+              profile with a NeoForge file, or choose a 1.21.1 file for a 1.20.1 profile, the Verity Mod can fail before any AI feature is
+              involved.
+            </p>
+            <p>
+              After the base game launches, move on to the optional AI and voice pieces. Java listings mention Groq and local
+              Ollama routes, so keep credentials and provider settings outside this site. A good test order is: launch a clean
+              profile, confirm the Verity Mod loads, confirm the entity or box appears, then configure AI, then check speech or voice. This
+              separates version problems from provider problems and makes error messages easier to read.
+            </p>
+          </article>
+
+          <article class="guide-block">
+            <p class="eyebrow">Bedrock + MCPE</p>
+            <h2>Addon setup checks</h2>
+            <p>
+              Bedrock and MCPE searches often include phrases like "box not spawning" or "addon not working" because the file can
+              import successfully while the world is still missing required settings. For the Verity Mod Bedrock route, confirm
+              that both resource and behavior packs are active in the exact world you are testing. Then check cheats, commands, and
+              experimental options. Some Bedrock listings call out Beta APIs, and ignoring that setting can make the addon look
+              broken even when the package imported correctly.
+            </p>
+            <p>
+              If the held item or model is invisible, remove texture packs that change the item appearance and test again. If the
+              assistant does not respond, start from a fresh world, import the current addon, enable the required options before
+              the first launch, and then use the exact interaction or command from the maintainer page. This clean-world test is the
+              fastest way to find whether the problem is the addon, the save, or another pack.
+            </p>
+          </article>
+
+          <article class="guide-block">
+            <p class="eyebrow">Safety</p>
+            <h2>Download without mirrors</h2>
+            <p>
+              A spike in search volume attracts reposts, short-link chains, and pages that reuse the same name without a clear
+              source. This site does not host a Verity Mod file because direct hosting would make the trust problem worse. Instead,
+              it links to project pages where you can see the owner, update date, game version, loader or addon type, changelog,
+              and comments. Those details are more useful than a random "download now" button.
+            </p>
+            <p>
+              Before you install anything, check whether the page names the edition clearly, whether the file extension matches
+              your platform, and whether the project has a visible history. Do not paste a Groq key, Microsoft login, or launcher
+              credential into a page that only promises a faster download. If a file asks for an unrelated installer, APK, browser
+              extension, or password-protected archive, close it and return to a maintainer-controlled route.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="split-section" id="safe-links">
         <div>
           <p class="eyebrow">Safe-link routing</p>
@@ -196,6 +297,11 @@
           <p>
             This checker does not host mod files. It points users toward maintainer-controlled pages so players can avoid
             fake downloads, stale reposts, and confusing Java versus Bedrock pages.
+          </p>
+          <p>
+            Re-check the file list on the destination page every time. Version numbers, release labels, dependencies, and warnings
+            can change quickly while a trend is active, and a guide that was correct yesterday may no longer be the safest file
+            today.
           </p>
         </div>
         <div class="link-list" aria-label="Safe project links">
@@ -211,6 +317,51 @@
             <span>Bedrock alternate</span>
             <strong>CurseForge: Verity BE</strong>
           </a>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="Setup checklist">
+        <div class="section-heading">
+          <p class="eyebrow">Install checklist</p>
+          <h2>What to verify before blaming Verity Mod</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Check</th>
+                <th>Java</th>
+                <th>Bedrock / MCPE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Correct edition</td>
+                <td>Use a Minecraft Java project page and a jar file.</td>
+                <td>Use an addon page and an importable package.</td>
+              </tr>
+              <tr>
+                <td>Version match</td>
+                <td>Match 1.20.1 or 1.21.1 only when the project file lists it.</td>
+                <td>Match the listed Bedrock version, such as 26.30 or 26.20.</td>
+              </tr>
+              <tr>
+                <td>Required settings</td>
+                <td>Confirm loader, dependencies, and AI provider setup after launch.</td>
+                <td>Enable behavior pack, resource pack, cheats, commands, and Beta APIs when required.</td>
+              </tr>
+              <tr>
+                <td>Clean test</td>
+                <td>Launch a clean profile before testing with a large modpack.</td>
+                <td>Create a fresh world before debugging an older save.</td>
+              </tr>
+              <tr>
+                <td>Security check</td>
+                <td>Never enter an API key on a random download page.</td>
+                <td>Avoid APK installers, short-link chains, and disguised Java downloads.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -259,6 +410,48 @@
         </div>
       </section>
 
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Why setup fails</p>
+          <h2>Common failure patterns</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>The download is real, but it is the wrong format</h3>
+            <p>
+              This is the most common mismatch for a trending Minecraft search. A player sees a high-download Verity Mod project, grabs the
+              first file, and then tries to use it in the wrong edition. A Java jar will not become a Bedrock addon, and a Bedrock
+              package will not load through Forge. The checker keeps the Verity Mod decision focused on edition first because that
+              single choice prevents most dead ends.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>The world settings are incomplete</h3>
+            <p>
+              Bedrock worlds keep pack activation and experimental switches at the world level. Importing an addon into Minecraft
+              does not always activate it for the save you are playing. If the box, entity, or interaction does not appear, rebuild
+              the test from world settings before assuming the file is broken.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>The AI layer is being debugged too early</h3>
+            <p>
+              Java players should separate launch errors from AI errors. If Minecraft crashes, solve the loader and version problem
+              first. If the game launches but the assistant is silent or slow, then inspect Groq, Ollama, local model performance,
+              voice permissions, and any provider-specific setup.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>The source is unclear</h3>
+            <p>
+              Search trends create lookalike pages quickly. Treat pages with hidden final URLs, forced installers, renamed archives,
+              or missing version metadata as unsafe. A good Verity Mod route should make the project owner, file history, and supported game
+              version visible before you download.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="faq" id="faq">
         <div class="section-heading">
           <p class="eyebrow">FAQ</p>
@@ -272,6 +465,13 @@
           </p>
         </details>
         <details>
+          <summary>Which Verity Mod download should I choose?</summary>
+          <p>
+            Choose by Minecraft edition first. Java users should match the listed game version and loader on the Java project
+            route. Bedrock and MCPE users should use addon routes and confirm the required world settings before launching.
+          </p>
+        </details>
+        <details>
           <summary>Why is Verity Mod not working after install?</summary>
           <p>
             The common causes are a wrong Minecraft edition, an unsupported version, inactive behavior packs on Bedrock, disabled
@@ -281,7 +481,7 @@
         <details>
           <summary>Is Verity Mod real?</summary>
           <p>
-            The project has maintainer pages on known mod platforms, but search results can include reposts. Use the safe-link
+            The Verity Mod project has maintainer pages on known mod platforms, but search results can include reposts. Use the safe-link
             section and avoid files from pages that hide the source or rename the package.
           </p>
         </details>
@@ -290,6 +490,13 @@
           <p>
             No. If your Java setup uses Groq or Ollama, configure those services locally or on their own official
             pages. This site only generates a checklist.
+          </p>
+        </details>
+        <details>
+          <summary>Can this checker install the mod for me?</summary>
+          <p>
+            No. The Verity Mod checker is a routing and troubleshooting tool. It helps you decide which project page to open and what to
+            verify before installing, but the actual download and import happen on the maintainer page and inside Minecraft.
           </p>
         </details>
       </section>
