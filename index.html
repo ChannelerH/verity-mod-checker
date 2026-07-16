@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Mod Checker - Download, Java, Bedrock & Not Working Fixes</title>
+    <meta
+      name="description"
+      content="Use this Verity Mod checker to find the right Java or Bedrock download path, fix not working issues, and verify safe official links."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://channelerh.github.io/verity-mod-checker/" />
+    <meta property="og:title" content="Verity Mod Checker" />
+    <meta
+      property="og:description"
+      content="Pick your Minecraft edition and issue to get a focused Verity Mod setup or troubleshooting checklist."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://channelerh.github.io/verity-mod-checker/" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Verity Mod Checker",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "description": "A fan-made utility that helps Minecraft players choose the right Verity Mod page and fix Java or Bedrock setup issues.",
+        "url": "https://channelerh.github.io/verity-mod-checker/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the Verity Mod?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Verity Mod is a Minecraft horror companion mod or addon with separate Java and Bedrock routes. This page helps players identify the right setup path and official project pages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Verity Mod not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common causes include the wrong edition, mismatched Minecraft version, missing Bedrock experimental settings, disabled cheats, or incomplete Java AI configuration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this an official Verity Mod site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This is a fan-made checker that links to official or maintainer-controlled project pages and does not host mod files."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#checker" aria-label="Verity Mod Checker home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Checker</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#checker">Checker</a>
+        <a href="#fixes">Fixes</a>
+        <a href="#safe-links">Safe links</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="checker">
+        <div class="hero-copy">
+          <p class="eyebrow">Minecraft Java + Bedrock routing</p>
+          <h1>Verity Mod Checker</h1>
+          <p class="lede">
+            Pick your edition, version, and problem. The checker returns the safest download route,
+            setup steps, and a focused fix for common not working issues.
+          </p>
+          <div class="trust-strip" aria-label="What this tool does">
+            <span>Official-link first</span>
+            <span>No file mirrors</span>
+            <span>No API keys collected</span>
+          </div>
+        </div>
+
+        <form class="tool-panel" id="checkerForm">
+          <div class="field-group">
+            <label>Edition</label>
+            <div class="segmented" role="radiogroup" aria-label="Minecraft edition">
+              <button type="button" class="segment active" data-edition="java" aria-pressed="true">Java</button>
+              <button type="button" class="segment" data-edition="bedrock" aria-pressed="false">Bedrock</button>
+              <button type="button" class="segment" data-edition="pe" aria-pressed="false">MCPE</button>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              Version
+              <select id="versionSelect" name="version"></select>
+            </label>
+            <label>
+              Issue
+              <select id="issueSelect" name="issue"></select>
+            </label>
+          </div>
+
+          <div class="switch-grid" aria-label="Setup details">
+            <label class="switch-row">
+              <input type="checkbox" id="voiceToggle" />
+              <span>Voice chat is part of my setup</span>
+            </label>
+            <label class="switch-row">
+              <input type="checkbox" id="aiToggle" />
+              <span>I am configuring Groq or Ollama</span>
+            </label>
+          </div>
+        </form>
+
+        <aside class="result-panel" aria-live="polite">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="resultLabel">Java setup route</span>
+          </div>
+          <h2 id="resultTitle">Use the Java project page and confirm your loader</h2>
+          <p id="resultSummary">
+            Start from the maintainer page, match the loader, then complete the AI configuration only if your build requires it.
+          </p>
+          <ol class="steps" id="stepsList"></ol>
+          <div class="action-row">
+            <a class="primary-link" id="primaryLink" href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="noopener" target="_blank">Open safe route</a>
+            <button type="button" class="copy-button" id="copyButton">Copy checklist</button>
+          </div>
+        </aside>
+
+        <div class="voxel-board" aria-label="Decorative diagnostic board">
+          <div class="scan-line"></div>
+          <div class="voxel-grid" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="board-readout">
+            <strong>Route</strong>
+            <span id="readoutEdition">Java</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="fixes">
+        <div class="section-heading">
+          <p class="eyebrow">Fast diagnosis</p>
+          <h2>Troubleshooting by intent</h2>
+        </div>
+        <div class="fix-grid">
+          <article class="fix-card">
+            <h3>Not working</h3>
+            <p>Check edition first. Bedrock usually fails from inactive behavior packs, disabled cheats, or missing experimental settings.</p>
+          </article>
+          <article class="fix-card">
+            <h3>Voice not working</h3>
+            <p>Confirm the voice dependency, microphone permissions, and whether your Java build supports the same voice stack.</p>
+          </article>
+          <article class="fix-card">
+            <h3>Java setup</h3>
+            <p>Match the Minecraft version, loader, and AI provider before troubleshooting messages, silence, or response delay.</p>
+          </article>
+          <article class="fix-card">
+            <h3>Verity Bedrock Mod setup</h3>
+            <p>Use the Bedrock addon route, activate both packs, and restart the world after changing experimental options.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="safe-links">
+        <div>
+          <p class="eyebrow">Safe-link routing</p>
+          <h2>Download routing without mirrors</h2>
+          <p>
+            This checker does not host mod files. It points users toward maintainer-controlled pages so players can avoid
+            fake downloads, stale reposts, and confusing Java versus Bedrock pages.
+          </p>
+        </div>
+        <div class="link-list" aria-label="Safe project links">
+          <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="noopener" target="_blank">
+            <span>Java route</span>
+            <strong>CurseForge: Verity JE</strong>
+          </a>
+          <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="noopener" target="_blank">
+            <span>Bedrock route</span>
+            <strong>CurseForge: Verity - Bedrock Edition</strong>
+          </a>
+          <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="noopener" target="_blank">
+            <span>Bedrock alternate</span>
+            <strong>CurseForge: Verity BE</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="Keyword intent map">
+        <div class="section-heading">
+          <p class="eyebrow">Search intent map</p>
+          <h2>Which page should answer each query?</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Query</th>
+                <th>Intent</th>
+                <th>Best answer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>verity mod download</td>
+                <td>Find a safe source</td>
+                <td>Route to the correct Java or Bedrock maintainer page.</td>
+              </tr>
+              <tr>
+                <td>how to get verity mod</td>
+                <td>Install steps</td>
+                <td>Show edition-specific install order and required settings.</td>
+              </tr>
+              <tr>
+                <td>verity mod java</td>
+                <td>Java setup</td>
+                <td>Match loader, version, and AI provider before launch.</td>
+              </tr>
+              <tr>
+                <td>verity bedrock mod</td>
+                <td>Addon setup</td>
+                <td>Activate packs, cheats, and experimental settings.</td>
+              </tr>
+              <tr>
+                <td>is verity mod real</td>
+                <td>Trust check</td>
+                <td>Use official project pages and avoid mirrored downloads.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions players ask first</h2>
+        </div>
+        <details>
+          <summary>What is the Verity Mod?</summary>
+          <p>
+            Verity is searched as a Minecraft horror companion mod or addon. The important split is edition: Java and Bedrock
+            use different files, setup steps, and troubleshooting paths.
+          </p>
+        </details>
+        <details>
+          <summary>Why is Verity Mod not working after install?</summary>
+          <p>
+            The common causes are a wrong Minecraft edition, an unsupported version, inactive behavior packs on Bedrock, disabled
+            cheats, missing experimental options, or incomplete AI setup on Java.
+          </p>
+        </details>
+        <details>
+          <summary>Is Verity Mod real?</summary>
+          <p>
+            The project has maintainer pages on known mod platforms, but search results can include reposts. Use the safe-link
+            section and avoid files from pages that hide the source or rename the package.
+          </p>
+        </details>
+        <details>
+          <summary>Does this checker collect API keys?</summary>
+          <p>
+            No. If your Java setup uses Groq or Ollama, configure those services locally or on their own official
+            pages. This site only generates a checklist.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Fan-made utility. Not affiliated with Mojang, Microsoft, CurseForge, or Verity maintainers. Minecraft is a trademark of
+        its respective owner.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

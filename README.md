@@ -1,0 +1,17 @@
+# Verity Mod Checker
+
+Static SEO tool page for routing Minecraft players to the right Verity Mod setup, troubleshooting flow, and official project links.
+
+## Local Preview
+
+Open `index.html` in a browser, or run:
+
+```bash
+python3 -m http.server 4173
+```
+
+Then visit `http://localhost:4173`.
+
+## Deployment
+
+The repository includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
