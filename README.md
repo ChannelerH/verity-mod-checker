@@ -1,10 +1,17 @@
-# Verity Mod Checker
+# Verity Mod Download Checker
 
-Static SEO tool page for routing Minecraft players to the right Verity Mod setup, troubleshooting flow, and official project links.
+[Verity Mod Download Checker](https://veritymodchecker.online/) is a static SEO utility for Minecraft players who need the right Verity Mod download route, Java or Bedrock setup guidance, and quick fixes for common not working issues.
 
-Live custom domain target: https://veritymodchecker.online/
+Live custom domain: https://veritymodchecker.online/
 
 Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
+
+## What It Covers
+
+- Java route: Verity JE, Forge, NeoForge, Groq, Ollama, and version checks.
+- Bedrock / MCPE route: Verity BE, pack activation, Beta APIs, commands, and world setup.
+- Troubleshooting: box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
+- SEO support: canonical domain, robots.txt, sitemap.xml, GA4, and GSC submission.
 
 ## Local Preview
 
