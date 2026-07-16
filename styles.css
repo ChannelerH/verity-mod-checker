@@ -110,6 +110,12 @@ main {
   padding: clamp(28px, 6vw, 70px) 0 30px;
 }
 
+.route-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.82fr);
+  grid-template-areas: "copy result";
+  min-height: auto;
+}
+
 .hero-copy {
   grid-area: copy;
   align-self: center;
@@ -474,6 +480,43 @@ select {
   gap: 12px;
 }
 
+.route-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.route-card {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  text-decoration: none;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--signal);
+  box-shadow: none;
+}
+
+.route-card:nth-child(2) {
+  border-top-color: var(--ember);
+}
+
+.route-card:nth-child(3) {
+  border-top-color: var(--gold);
+}
+
+.route-card span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.route-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .status-card {
   display: grid;
   align-content: start;
@@ -701,11 +744,16 @@ details p {
     grid-template-columns: 1fr;
   }
 
+  .route-hero,
   .guide-grid,
   .guide-grid.three,
   .status-grid,
+  .route-card-grid,
   .error-grid {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "result";
   }
 
   .fix-grid {
