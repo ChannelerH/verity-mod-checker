@@ -8,9 +8,13 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 ## Live Routes
 
+- Download route: https://veritymodchecker.online/download/
 - Java download route: https://veritymodchecker.online/java/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
+- MCPE mobile route: https://veritymodchecker.online/mcpe/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
+- Voice not working fix: https://veritymodchecker.online/voice-not-working/
+- Taken down or 404 route: https://veritymodchecker.online/taken-down/
 
 ## What It Covers
 

@@ -509,7 +509,7 @@ select {
 
 .route-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
 }
 
@@ -529,6 +529,22 @@ select {
 }
 
 .route-card:nth-child(3) {
+  border-top-color: var(--gold);
+}
+
+.route-card:nth-child(4) {
+  border-top-color: var(--moss);
+}
+
+.route-card:nth-child(5) {
+  border-top-color: var(--signal);
+}
+
+.route-card:nth-child(6) {
+  border-top-color: var(--ember);
+}
+
+.route-card:nth-child(7) {
   border-top-color: var(--gold);
 }
 
