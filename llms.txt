@@ -1,10 +1,10 @@
-# Verity Mod Download Checker
+# Verity Mod Download Guide
 
 > VerityModChecker.online is an independent Verity Mod status, download routing, and troubleshooting guide for Minecraft Java, Bedrock, MCPE, VERITY.exe, Groq, Ollama, and voice setup searches.
 
 ## Core Pages
 
-- [Verity Mod Download Checker](https://veritymodchecker.online/): Interactive edition and issue checker with current Java and Bedrock status.
+- [Verity Mod Download for Minecraft](https://veritymodchecker.online/): Current Java and Bedrock release map with direct maintainer project routes and an interactive edition checker.
 - [Verity Mod Download Route](https://veritymodchecker.online/download/): Current public route map for Verity JE, Verity BE, Verity - Bedrock Edition, and VERITY.exe.
 - [What Happened to Verity Mod?](https://veritymodchecker.online/what-happened/): Explains old 404 links, current projects, and project-name confusion.
 - [Verity JE Download Status](https://veritymodchecker.online/verity-je/): Java route for Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, and voice setup.
