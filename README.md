@@ -1,6 +1,6 @@
 # Verity Mod Download Checker
 
-[Verity Mod Download Checker](https://veritymodchecker.online/) is a browser-only source and file identity checker for Minecraft players. It recognizes current Verity project paths and IDs, flags package mismatches, calculates local SHA-256 fingerprints without uploading files, and links users to Java or Bedrock installation guidance.
+[Verity Mod Download Checker](https://veritymodchecker.online/) is a browser-only source and file identity checker for Minecraft players. It recognizes current Verity project paths, IDs, release filenames, record numbers, and package types; compares a selected file's displayed size with published metadata; calculates a local SHA-256 fingerprint without uploading the file; and links users to the exact Java or Bedrock release record.
 
 Live custom domain: https://veritymodchecker.online/
 
@@ -20,11 +20,13 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 ## What It Covers
 
-- Java route: Verity JE, Forge, NeoForge, Groq, Ollama, and version checks.
-- Bedrock / MCPE route: Verity BE, pack activation, Beta APIs, commands, and world setup.
-- Browser checker: project URL, Project ID, filename, package type, mirror signals, and local SHA-256.
+- Java route: Verity JE record `8450350`, Forge 1.20.1, NeoForge status, Groq, Ollama, and version checks.
+- Bedrock / MCPE routes: Verity BE record `8420981`, PnTMC record `8327253`, pack activation, Beta APIs, commands, and world setup.
+- Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Troubleshooting: box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, GA4, and GSC submission.
+
+The checker verifies identity signals against the public metadata recorded on July 18, 2026. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on the maintainer's CurseForge record instead of being mirrored by this site.
 
 ## Local Preview
 
@@ -38,4 +40,4 @@ Then visit `http://localhost:4173`.
 
 ## Deployment
 
-The repository includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
+The primary deployment is the Cloudflare Pages project `verity-mod-checker`, with `veritymodchecker.online` as the canonical custom domain and `www` redirected to the apex domain by `_worker.js`. The repository also retains the GitHub Pages workflow at `.github/workflows/pages.yml` as a fallback build path.

@@ -602,6 +602,38 @@ select {
   line-height: 1.65;
 }
 
+.route-facts {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.route-facts div {
+  display: grid;
+  grid-template-columns: minmax(86px, 0.35fr) minmax(0, 1fr);
+  gap: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.route-facts dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.route-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-weight: 800;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .status-card a {
   width: fit-content;
   min-height: 40px;
@@ -758,6 +790,28 @@ details p {
   margin-top: 12px;
 }
 
+.source-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: baseline;
+  margin: 12px 0 34px;
+  padding: 18px 0;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.source-strip strong {
+  color: var(--ink);
+}
+
+.source-strip a {
+  color: var(--signal);
+  font-weight: 800;
+  text-underline-offset: 3px;
+}
+
 .footer {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -857,6 +911,11 @@ details p {
   h1 {
     max-width: 9ch;
   }
+
+  .source-strip {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 /* Home page: download-first layout */
@@ -924,7 +983,7 @@ details p {
 .home-hero-media figcaption {
   position: absolute;
   right: 16px;
-  bottom: 12px;
+  bottom: 42px;
   max-width: min(46ch, calc(100% - 32px));
   padding: 6px 8px;
   color: rgba(255, 255, 255, 0.82);
@@ -1211,6 +1270,42 @@ details p {
   text-decoration: none;
   background: var(--charcoal);
   border-bottom: 3px solid var(--gold);
+}
+
+.verification-log {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 24px;
+  margin-top: 16px;
+  padding: 24px;
+  color: #f8fbf8;
+  background: var(--charcoal);
+  border-left: 6px solid var(--gold);
+}
+
+.verification-log h3 {
+  max-width: 34ch;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  line-height: 1.12;
+}
+
+.verification-log p:not(.eyebrow) {
+  max-width: 72ch;
+  margin: 12px 0 0;
+  color: #cfdbcf;
+  line-height: 1.65;
+}
+
+.verification-log ul {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: #e7eee7;
+  line-height: 1.5;
 }
 
 .source-checker-section {
@@ -1785,6 +1880,7 @@ details p {
   }
 
   .release-grid,
+  .verification-log,
   .source-checker-workspace,
   .checker-workspace,
   .route-index-grid,
@@ -1875,6 +1971,7 @@ details p {
   }
 
   .release-item dl,
+  .route-facts div,
   .safety-note {
     grid-template-columns: 1fr;
   }

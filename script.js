@@ -2,7 +2,7 @@ const routes = {
   java: {
     label: "Java setup route",
     readout: "Java",
-    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je",
+    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8450350",
     versions: ["1.21.1 NeoForge", "1.20.1 Forge", "I am not sure"],
     issues: ["download", "not working", "voice not working", "AI setup", "is it real"],
     summaries: {
@@ -66,9 +66,9 @@ const routes = {
   bedrock: {
     label: "Bedrock addon route",
     readout: "Bedrock",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8420981",
     versions: ["Bedrock 26.30", "Bedrock 26.20", "I am not sure"],
-    issues: ["download", "not working", "box not spawning", "voice not working", "is it real"],
+    issues: ["download", "not working", "only saying ...", "box not spawning", "voice not working", "is it real"],
     summaries: {
       download: {
         title: "Use the Verity BE addon page, not the Java mod file",
@@ -90,6 +90,17 @@ const routes = {
           "Enable cheats if the addon instructions require commands.",
           "Turn on Beta APIs or experimental options when the version calls for it.",
           "Create a fresh test world to separate addon problems from old-world settings."
+        ]
+      },
+      "only saying ...": {
+        title: "Reconnect the Verity BE debugger backend",
+        summary:
+          "For Verity BE, dots usually mean Beta APIs or the project backend connection is missing rather than a bad download.",
+        steps: [
+          "Confirm that you installed Verity BE by Undertaletalelover, Project ID 1574632.",
+          "Enable Beta APIs and cheats in a clean Bedrock 26.30 world.",
+          "Check the current project page, then run the listed connect command; on July 18 it is /script debugger connect traye.ddns.net.",
+          "If the command still fails, check the maintainer Discord or project comments for backend status before reinstalling."
         ]
       },
       "box not spawning": {
@@ -130,7 +141,7 @@ const routes = {
   pe: {
     label: "MCPE addon route",
     readout: "MCPE",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8420981",
     versions: ["MCPE current", "MCPE older build", "I am not sure"],
     issues: ["download", "not working", "box not spawning", "is it real"],
     summaries: {
@@ -300,7 +311,10 @@ const knownProjects = [
     edition: "Java",
     id: "1591438",
     slugs: ["/minecraft/mc-mods/verity-je"],
-    files: ["verity-5.7.2.jar", "verity-3.4.1.jar"],
+    releases: [
+      { filename: "verity-5.7.2.jar", record: "8450350", sizeMb: 235.06, version: "Minecraft 1.20.1 · Forge", published: "July 17, 2026" },
+      { filename: "verity-3.4.1.jar", record: "", sizeMb: null, version: "Minecraft 1.21.1 · NeoForge", published: "June 30, 2026" }
+    ],
     link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files"
   },
   {
@@ -308,7 +322,9 @@ const knownProjects = [
     edition: "Bedrock",
     id: "1574632",
     slugs: ["/minecraft-bedrock/addons/verity-be"],
-    files: [],
+    releases: [
+      { filename: "Verity (Stable) (1.0.8)-(26.3).mcaddon", record: "8420981", sizeMb: 18.80, version: "Bedrock 26.30", published: "July 12, 2026" }
+    ],
     link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files"
   },
   {
@@ -316,10 +332,35 @@ const knownProjects = [
     edition: "Bedrock",
     id: "1575941",
     slugs: ["/minecraft-bedrock/addons/verity-bedrock-edition"],
-    files: [],
+    releases: [
+      { filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon", record: "8327253", sizeMb: 35.45, version: "Bedrock 26.30", published: "June 27, 2026" }
+    ],
     link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files"
   }
 ];
+
+function normalizeSignal(value) {
+  try {
+    return decodeURIComponent(value).toLowerCase();
+  } catch {
+    return value.toLowerCase();
+  }
+}
+
+function findKnownRelease(value) {
+  const clean = normalizeSignal(value);
+  for (const project of knownProjects) {
+    const release = project.releases.find((item) =>
+      clean.includes(item.filename.toLowerCase()) || (item.record && clean.includes(item.record))
+    );
+    if (release) return { project, release };
+  }
+  return null;
+}
+
+function releaseRecordLink(project, release) {
+  return release?.record ? `${project.link}/${release.record}` : project.link;
+}
 
 const sourceCheckForm = document.querySelector("#sourceCheckForm");
 const sourceInput = document.querySelector("#sourceInput");
@@ -354,11 +395,12 @@ function packageType(value) {
 }
 
 function findKnownProject(value) {
-  const clean = value.toLowerCase();
+  const clean = normalizeSignal(value);
+  const releaseMatch = findKnownRelease(value);
+  if (releaseMatch) return releaseMatch.project;
   return knownProjects.find((project) =>
     clean.includes(project.id) ||
-    project.slugs.some((slug) => clean.includes(slug)) ||
-    project.files.some((file) => clean.includes(file))
+    project.slugs.some((slug) => clean.includes(slug))
   );
 }
 
@@ -407,8 +449,8 @@ function setSourceResult(result) {
 
 function inspectTextSource(rawValue) {
   const value = rawValue.trim();
-  const lower = value.toLowerCase();
-  const project = findKnownProject(value);
+  const releaseMatch = findKnownRelease(value);
+  const project = releaseMatch?.project || findKnownProject(value);
   const type = packageType(value);
   const isHash = /^[a-f0-9]{64}$/i.test(value);
   const riskyExtension = type === "Executable installer";
@@ -488,8 +530,8 @@ function inspectTextSource(rawValue) {
           "This result verifies identity signals, not the contents of a downloaded file.",
           "Use the project files tab and avoid direct mirrors of an older release."
         ],
-        link: project.link,
-        linkLabel: `Open ${project.name} files`,
+        link: releaseRecordLink(project, releaseMatch?.release),
+        linkLabel: releaseMatch?.release.record ? `Open ${project.name} record #${releaseMatch.release.record}` : `Open ${project.name} files`,
         external: true
       };
     }
@@ -560,13 +602,16 @@ function inspectTextSource(rawValue) {
   }
 
   if (project) {
-    const exactFile = project.files.some((file) => lower.includes(file));
+    const exactFile = Boolean(releaseMatch);
+    const releaseDetail = releaseMatch
+      ? `${releaseMatch.release.version}; record #${releaseMatch.release.record || "listed legacy branch"}; ${releaseMatch.release.published}`
+      : "No exact current file record in the input";
     return {
-      state: exactFile || value === project.id ? "verified" : "caution",
-      verdict: exactFile || value === project.id ? "Known identity signal" : "Partial name match",
-      risk: "Verify on publisher page",
+      state: "caution",
+      verdict: exactFile || value === project.id ? "Known release signal" : "Partial name match",
+      risk: "Name can be copied",
       title: exactFile ? `${project.name} filename recognized` : `${project.name} record recognized`,
-      summary: "The text matches a checked filename, project path, or Project ID. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.",
+      summary: `The text matches a checked filename, project path, or Project ID. ${releaseDetail}. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.`,
       source: "Text or filename",
       package: type,
       project: `${project.name} · ID ${project.id}`,
@@ -576,8 +621,8 @@ function inspectTextSource(rawValue) {
         "Confirm the current file on the publisher files page.",
         "Choose a local file to calculate its SHA-256 fingerprint."
       ],
-      link: project.link,
-      linkLabel: `Open ${project.name} files`,
+      link: releaseRecordLink(project, releaseMatch?.release),
+      linkLabel: releaseMatch?.release.record ? `Open ${project.name} record #${releaseMatch.release.record}` : `Open ${project.name} files`,
       external: true
     };
   }
@@ -605,7 +650,8 @@ function inspectTextSource(rawValue) {
 
 async function inspectLocalFile(file) {
   const type = packageType(file.name);
-  const project = findKnownProject(file.name);
+  const releaseMatch = findKnownRelease(file.name);
+  const project = releaseMatch?.project || findKnownProject(file.name);
   const riskyExtension = type === "Executable installer";
   const digest = await crypto.subtle.digest("SHA-256", await file.arrayBuffer());
   const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
@@ -633,25 +679,39 @@ async function inspectLocalFile(file) {
     };
   }
 
+  const measuredSizeMb = file.size / (1024 * 1024);
+  const expectedSizeMb = releaseMatch?.release.sizeMb;
+  const sizeMatches = expectedSizeMb ? Math.abs(measuredSizeMb - expectedSizeMb) <= 0.15 : false;
+  const exactMetadata = Boolean(releaseMatch && sizeMatches);
+  const expectedDetail = releaseMatch
+    ? `${releaseMatch.release.version}; expected ${expectedSizeMb ? `${expectedSizeMb.toFixed(2)} MB` : "size not recorded"}; file record #${releaseMatch.release.record || "legacy branch"}`
+    : "No current release metadata matched";
+
   return {
-    state: project ? "caution" : "caution",
-    verdict: project ? "Filename match only" : "Local fingerprint created",
-    risk: "Contents not scanned",
-    title: project ? `${project.name} filename signal found` : "File fingerprint calculated locally",
-    summary: project
-      ? "The name matches a checked project signal, but names can be copied. Compare this SHA-256 and the release metadata with the original publisher page before installing."
-      : "The file was not uploaded. Its package type and SHA-256 are now visible, but no checked project identity could be matched from the filename alone.",
+    state: exactMetadata ? "verified" : "caution",
+    verdict: exactMetadata ? "Current metadata match" : project ? "Filename match only" : "Local fingerprint created",
+    risk: exactMetadata ? "Not a malware verdict" : "Contents not scanned",
+    title: exactMetadata ? `${project.name} name and size match the current record` : project ? `${project.name} filename signal found` : "File fingerprint calculated locally",
+    summary: exactMetadata
+      ? `The filename and displayed size match the checked public release metadata (${expectedDetail}). This still does not prove the bytes are safe or publisher-identical; compare the SHA-256 with a trusted reputation source.`
+      : project
+        ? `The name matches a checked project signal, but the full current metadata did not match (${expectedDetail}). Compare this SHA-256 and the original publisher record before installing.`
+        : "The file was not uploaded. Its package type and SHA-256 are now visible, but no checked project identity could be matched from the filename alone.",
     source: `Local file · ${size}`,
     package: type,
     project: project ? `${project.name} · ID ${project.id}` : "No known match",
     hash,
     checks: [
       "SHA-256 identifies the selected bytes and changes if the file changes.",
-      "A hash without a publisher reference does not prove safety.",
+      exactMetadata ? "Filename and displayed size match the checked release record." : "A hash without a publisher reference does not prove safety.",
       project ? "Open the matched project files page and compare release details." : "Confirm the source, owner, edition, and release before installing."
     ],
-    link: project?.link || `https://www.virustotal.com/gui/file/${hash}`,
-    linkLabel: project ? `Open ${project.name} files` : "Look up this hash",
+    link: project ? releaseRecordLink(project, releaseMatch?.release) : `https://www.virustotal.com/gui/file/${hash}`,
+    linkLabel: project
+      ? releaseMatch?.release.record
+        ? `Open ${project.name} record #${releaseMatch.release.record}`
+        : `Open ${project.name} files`
+      : "Look up this hash",
     external: true
   };
 }
