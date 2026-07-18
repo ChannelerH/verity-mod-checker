@@ -220,6 +220,124 @@
           </article>
         </div>
       </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Current Java route details</p>
+          <h2>How to read the Verity JE file list</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>The file name is only one part of the answer</h3>
+            <p>
+              A Verity Mod Java search usually starts with a file name, but the file name alone is not
+              enough to decide whether you should install it. A useful Java route also needs the project
+              page, loader label, Minecraft version, update date, and whether the page warns about a branch.
+              Current public Verity JE data separates Forge 1.20.1 from NeoForge 1.21.1, so the correct
+              answer depends on the launcher profile you actually use.
+            </p>
+            <p>
+              If the project page lists a newer Forge file and an older NeoForge file, that does not mean
+              both branches are equally stable. Read the branch notes before you move the jar. A player who
+              only wants the safest first test should usually start with the branch that matches both the
+              file page and a clean Minecraft profile, then add other mods later. That is more reliable than
+              copying a jar from an old video description into a profile that already contains conflicts.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Why a source ZIP is not a Java download</h3>
+            <p>
+              Some Verity search results point to source archives. Source code can be useful for review,
+              but it is not the same thing as a compiled jar. A normal player should not rename a ZIP to
+              JAR, extract it into the mods folder, or assume a repository download is ready to launch. A
+              repository may contain Gradle files, Java packages, resources, and build scripts that only
+              become a mod after compilation.
+            </p>
+            <p>
+              If you want to inspect code, use the source route deliberately and keep it separate from the
+              install route. If you want to play, use a release file from a project file page. Mixing those
+              two paths creates confusing support requests because the crash log may describe a missing
+              mod artifact, not a broken Verity behavior.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="Java decision table">
+        <div class="section-heading">
+          <p class="eyebrow">Decision table</p>
+          <h2>Pick the Java fix by where the failure happens</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Stage</th>
+                <th>What it means</th>
+                <th>Best next check</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Download page</td>
+                <td>You are deciding whether a Verity JE file is the right Java file.</td>
+                <td>Compare project owner, file history, loader, and Minecraft version.</td>
+              </tr>
+              <tr>
+                <td>Launcher profile</td>
+                <td>Minecraft starts, but the loader or mod list may be wrong.</td>
+                <td>Use a clean Forge or NeoForge profile that matches the file page.</td>
+              </tr>
+              <tr>
+                <td>Startup crash</td>
+                <td>The mod may not be loaded with the environment it expects.</td>
+                <td>Remove unrelated mods and check dependencies before changing AI settings.</td>
+              </tr>
+              <tr>
+                <td>In-game silence</td>
+                <td>The base mod may load, but Groq, Ollama, or voice setup fails.</td>
+                <td>Move to the AI model or voice troubleshooting route.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Search result comparison</p>
+          <h2>Why this Java page does not send every user to one file</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>Java players need a route, not just a button</h3>
+            <p>
+              A single download button looks convenient, but it can hide the most important Java detail:
+              compatibility. The same Verity Mod query can come from a Forge 1.20.1 player, a NeoForge
+              1.21.1 player, a player following an older ThatMob-inspired video, or a player trying to
+              configure AI after a successful install. If one button serves all of them, at least one group
+              is likely to receive the wrong file or the wrong setup instructions.
+            </p>
+            <p>
+              This page intentionally keeps the decision visible. First identify Java Edition, then choose
+              the project route, then match loader and version, then install in a clean profile, then debug
+              Groq, Ollama, voice, or dependencies. That is the workflow a searcher actually needs when the
+              public file list changes quickly. It also makes support easier because every symptom can be
+              attached to a stage instead of treated as a mysterious download failure.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>When to use the broader checker</h3>
+            <p>
+              Use the broader checker if you are unsure whether you need Verity JE, a Bedrock addon, MCPE,
+              VERITY.exe, or an old taken-down link explanation. Use this Java page only after you know the
+              target is Java Edition. That separation keeps the site useful for both high-intent download
+              searches and troubleshooting searches. A Java visitor should not have to read mobile pack
+              instructions, and a mobile visitor should not be told to install a Java loader.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -232,6 +350,10 @@
         <a href="/not-working/">Not working fixes</a>
         <a href="/voice-not-working/">Voice fix</a>
         <a href="/taken-down/">Taken down / 404</a>
+        <a href="/what-happened/">What happened</a>
+        <a href="/verity-je/">Verity JE</a>
+        <a href="/verity-exe/">VERITY.exe</a>
+        <a href="/ai-model/">AI model</a>
       </nav>
       <p>Fan-made route page. Not affiliated with Mojang, Microsoft, CurseForge, or Verity maintainers.</p>
     </footer>

@@ -217,6 +217,129 @@
           </article>
         </div>
       </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Bedrock route details</p>
+          <h2>How to choose between Bedrock Verity pages</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Bedrock has more than one public-looking route</h3>
+            <p>
+              Bedrock players can see Verity BE, Verity - Bedrock Edition, MCPE reposts, and video links
+              in the same search session. Those names may describe related fan work, but they are not one
+              automatic file path. Before importing anything, compare the publisher, supported game version,
+              update date, file name, comments, gallery, and setup instructions. A current addon route should
+              explain whether it expects 26.30, 26.20, or another Bedrock build.
+            </p>
+            <p>
+              This distinction matters because Bedrock add-ons can be very version-sensitive. If a package
+              was built for a newer preview or a specific stable build, older mobile clients may import it
+              but fail during world activation. When that happens, players often think the Verity Mod download
+              is fake, but the real issue is that the Minecraft client, world experiments, or pack version is
+              not aligned with the addon.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Why Java safety rules do not translate directly</h3>
+            <p>
+              Java users ask about jars and loaders. Bedrock users ask about .mcaddon or .mcpack files,
+              resource packs, behavior packs, experimental toggles, commands, and world import behavior.
+              A Bedrock fix should not tell a mobile player to install Forge, and a Java fix should not tell
+              a desktop player to import a .mcaddon into the launcher.
+            </p>
+            <p>
+              The correct Bedrock workflow is more like a checklist than a single download button. Import
+              the package, restart Minecraft if the pack list does not refresh, activate both packs in the
+              target world, enable required experiments, and then follow the current command or connection
+              instructions from the project page. Only after those steps should you decide the file itself
+              is broken.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="Bedrock decision table">
+        <div class="section-heading">
+          <p class="eyebrow">Decision table</p>
+          <h2>Bedrock symptoms and the first useful check</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Symptom</th>
+                <th>Likely layer</th>
+                <th>First useful check</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Addon imports but nothing changes</td>
+                <td>World activation</td>
+                <td>Activate both behavior and resource packs in the same world.</td>
+              </tr>
+              <tr>
+                <td>Verity appears but will not respond</td>
+                <td>Experiment or command setup</td>
+                <td>Enable required toggles and rerun the current command from the project page.</td>
+              </tr>
+              <tr>
+                <td>Mobile file opens the wrong app</td>
+                <td>File association or package format</td>
+                <td>Confirm the file is a Bedrock addon package, not a jar, APK, or archive gate.</td>
+              </tr>
+              <tr>
+                <td>Old world fails, new world works</td>
+                <td>Save conflict</td>
+                <td>Copy the working pack settings into a backed-up world carefully.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Bedrock verification</p>
+          <h2>How to verify a Verity Bedrock file before import</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Read the project page before tapping the package</h3>
+            <p>
+              A Bedrock package can look harmless because it imports through Minecraft, but the source still
+              matters. Check whether the page lists the publisher, game version, update date, file name,
+              comments, and setup notes. If the route says Verity BE, make sure the file and instructions
+              match Verity BE. If it says Verity - Bedrock Edition, treat it as a separate project and read
+              its own setup notes. Do not assume two Bedrock routes share commands or behavior.
+            </p>
+            <p>
+              The more a page hides the final package, the less useful it is for a player. A safe Bedrock
+              route should not require a separate installer, a browser extension, notification permission,
+              or a password gate. It should explain the addon format and tell you what to do after import.
+              If the page cannot explain activation, experiments, and supported versions, it is not answering
+              the real Verity Mod Bedrock search intent.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Why Bedrock ranking pages need setup depth</h3>
+            <p>
+              Bedrock users do not finish the task when the file downloads. They finish when the addon works
+              in a world. That means a good page needs more than a download claim. It should explain why the
+              resource pack matters, why the behavior pack matters, why experimental toggles may be required,
+              why an old world can keep stale settings, and why MCPE users should restart the app after
+              import. Those practical details are what separate a useful status page from a thin keyword page.
+            </p>
+            <p>
+              If you already imported a package and the result failed, do one fresh-world test before trying
+              another source. If the fresh world works, keep the route and fix your old world. If the fresh
+              world fails, return to the project route and confirm version, file, setup notes, and commands.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -229,6 +352,10 @@
         <a href="/not-working/">Not working fixes</a>
         <a href="/voice-not-working/">Voice fix</a>
         <a href="/taken-down/">Taken down / 404</a>
+        <a href="/what-happened/">What happened</a>
+        <a href="/verity-je/">Verity JE</a>
+        <a href="/verity-exe/">VERITY.exe</a>
+        <a href="/ai-model/">AI model</a>
       </nav>
       <p>Fan-made route page. Not affiliated with Mojang, Microsoft, CurseForge, MCPEDL, or Verity maintainers.</p>
     </footer>

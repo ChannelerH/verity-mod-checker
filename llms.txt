@@ -1,0 +1,22 @@
+# Verity Mod Download Checker
+
+> VerityModChecker.online is an independent Verity Mod status, download routing, and troubleshooting guide for Minecraft Java, Bedrock, MCPE, VERITY.exe, Groq, Ollama, and voice setup searches.
+
+## Core Pages
+
+- [Verity Mod Download Checker](https://veritymodchecker.online/): Interactive edition and issue checker with current Java and Bedrock status.
+- [Verity Mod Download Route](https://veritymodchecker.online/download/): Current public route map for Verity JE, Verity BE, Verity - Bedrock Edition, and VERITY.exe.
+- [What Happened to Verity Mod?](https://veritymodchecker.online/what-happened/): Explains old 404 links, current projects, and project-name confusion.
+- [Verity JE Download Status](https://veritymodchecker.online/verity-je/): Java route for Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, and voice setup.
+- [Verity Mod Java Route](https://veritymodchecker.online/java/): Java install and troubleshooting guide.
+- [Verity Mod Bedrock Route](https://veritymodchecker.online/bedrock/): Bedrock addon and MCPE setup guide.
+- [Verity Mod MCPE Route](https://veritymodchecker.online/mcpe/): Mobile import, pack activation, and clean-world checks.
+- [What Is VERITY.exe?](https://veritymodchecker.online/verity-exe/): Separates the VERITY.exe modpack from standalone Java and Bedrock routes.
+- [Best AI Model for Verity Mod](https://veritymodchecker.online/ai-model/): Groq, Ollama, voice, latency, and credential-safety guidance.
+- [Verity Mod Not Working](https://veritymodchecker.online/not-working/): Fixes for crashes, box not spawning, dialogue missing, and broken setup.
+- [Verity Mod Voice Not Working](https://veritymodchecker.online/voice-not-working/): Voice and audio troubleshooting.
+- [Verity Mod Taken Down or 404](https://veritymodchecker.online/taken-down/): Recovery checklist for old links, mirrors, and removed pages.
+
+## Current Position
+
+Checked July 18, 2026: public CurseForge data shows Verity JE for Minecraft Java 1.20.1 and 1.21.1 with Forge and NeoForge branches; Verity BE and Verity - Bedrock Edition are Bedrock addon routes; VERITY.exe is a separate modpack route. The site does not host files or collect API keys.

@@ -1,0 +1,21 @@
+# Verity Mod Download Checker Full Context
+
+VerityModChecker.online helps Minecraft players answer urgent Verity Mod search questions without downloading a random mirror. The site focuses on route selection, current public project status, Java versus Bedrock separation, MCPE setup, VERITY.exe modpack confusion, AI model setup, voice troubleshooting, and 404 or taken-down links.
+
+The homepage provides an interactive checker. A player chooses Java, Bedrock, or MCPE, then chooses a version and issue. The checker returns a route and checklist. The homepage also includes a current public status panel checked July 18, 2026.
+
+The download page is the main status tracker. It explains that Verity JE, Verity BE, Verity - Bedrock Edition, and VERITY.exe answer overlapping searches but are different routes. Java jars do not import into Bedrock. Bedrock .mcaddon files do not belong in the Java mods folder. A modpack is a profile route and should not be treated as the same artifact as a standalone Java jar.
+
+The what-happened page answers searches like "what happened to Verity Mod" and "did Verity Mod get taken down." The page explains that some old video links, old project pages, and comments can point to removed or stale files, while current public routes still exist. It tells players to rebuild the route by project name, edition, version, and file type instead of trusting the first mirror.
+
+The Verity JE page is for exact Java intent. It covers Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, voice, clean profile testing, loader matching, and dependency order. It tells players to debug Minecraft version and loader before debugging AI.
+
+The Bedrock and MCPE pages cover addon import, behavior pack activation, resource pack activation, Beta APIs, commands, mobile restart, clean test worlds, and why Java instructions do not apply to Bedrock.
+
+The VERITY.exe page explains that VERITY.exe is a CurseForge modpack route. It may be relevant when a player names the modpack directly, but it is not the same as Verity JE and not the same as a Bedrock addon.
+
+The AI model page explains that Groq is the hosted route and Ollama is the local route. The page does not collect keys. It warns players not to paste API keys into download pages, Reddit, Discord, or random forms. It also separates text response problems from voice output problems.
+
+The not-working, voice-not-working, and taken-down pages handle symptom searches: crashes, old links, 404 pages, unsafe mirrors, box not spawning, dialogue missing, only saying "...", chat works but voice is silent, and suspected unsafe reposts.
+
+VerityModChecker.online is fan-made and independent. It is not affiliated with Mojang, Microsoft, CurseForge, Groq, Ollama, ThatMob, or Verity maintainers. It does not host mod files, does not collect API keys, and does not claim ownership of Verity-related projects.

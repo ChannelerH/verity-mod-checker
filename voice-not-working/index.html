@@ -230,6 +230,125 @@
           </table>
         </div>
       </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Voice layer details</p>
+          <h2>Why Verity voice can fail after the mod already loads</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Text response and sound output are different systems</h3>
+            <p>
+              A player can have a working Verity interaction while the voice still fails. Text may come from
+              the mod, an AI provider, or scripted dialogue, while sound may depend on resource packs, TTS,
+              local operating system audio, device routing, or a voice dependency. That is why "chat works
+              but no voice" should not be treated as the same problem as "the mod does not load."
+            </p>
+            <p>
+              Start with the least destructive checks. Turn up Minecraft sliders and device volume. Remove
+              unrelated audio, UI, and resource packs. Test one clean profile or clean world. If Java text
+              responses work, inspect the voice dependency or TTS path. If Bedrock dialogue appears, inspect
+              the resource pack and device sound path. Reinstalling from a new mirror should be the last
+              move, not the first.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Voice expectations differ by route</h3>
+            <p>
+              Do not assume every Verity route supports the same voice behavior. A Java project can mention
+              Groq, Ollama, speech recognition, or text-to-speech. A Bedrock addon may rely on resources,
+              commands, or scripted audio cues. MCPE may add device-specific sound and permission issues.
+              A modpack route may bundle additional dependencies that a standalone jar does not include.
+            </p>
+            <p>
+              Before filing a bug or changing downloads, confirm the exact route you installed and read its
+              notes. If the route does not promise voice output, silence is not necessarily a bug. If it does
+              promise voice output, reproduce the issue in a clean setup and record the route, version,
+              loader or Bedrock build, device, and whether text responses appear.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="Voice route table">
+        <div class="section-heading">
+          <p class="eyebrow">Route table</p>
+          <h2>Voice checks by edition</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Edition</th>
+                <th>Voice risk</th>
+                <th>First fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Java Forge or NeoForge</td>
+                <td>TTS, voice dependency, provider setup, or operating system audio.</td>
+                <td>Confirm base mod loads, then test provider and voice path separately.</td>
+              </tr>
+              <tr>
+                <td>Bedrock</td>
+                <td>Resource pack inactive, sound sliders, or addon command state.</td>
+                <td>Activate resource and behavior packs in a fresh world.</td>
+              </tr>
+              <tr>
+                <td>MCPE</td>
+                <td>Device silent mode, Bluetooth output, app restart, or cached packs.</td>
+                <td>Restart Minecraft and test only Verity packs in a new world.</td>
+              </tr>
+              <tr>
+                <td>VERITY.exe modpack</td>
+                <td>Bundled dependency or profile-specific sound configuration.</td>
+                <td>Treat it as a modpack profile, not a standalone jar issue.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence before reinstall</p>
+          <h2>What to capture when Verity voice stays silent</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Write down the exact route and symptom</h3>
+            <p>
+              Voice support questions are hard to answer without context. Record the edition, project route,
+              file name, Minecraft version, loader or Bedrock build, device, and whether text responses
+              appear. If Java uses a provider, note whether Groq or Ollama answers outside Minecraft. If
+              Bedrock or MCPE uses resource audio, note whether other Minecraft sounds work and whether the
+              resource pack is active in the same world.
+            </p>
+            <p>
+              That evidence prevents the wrong fix. A silent phone in Bluetooth mode does not need a new
+              Verity Mod download. A Java provider that cannot answer outside Minecraft does not need a
+              resource pack fix. A Bedrock resource pack conflict does not need a NeoForge jar. The more
+              precise the symptom, the less likely you are to download a risky "voice fixed" repost.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>When reinstalling is reasonable</h3>
+            <p>
+              Reinstall only when the route itself is questionable, the file does not match the project page,
+              the installed branch is wrong for your edition, or a clean setup fails before the voice layer
+              can even be tested. If the base interaction works, reinstalling from an unrelated source is
+              usually wasted effort. Stay with audio, provider, dependency, permission, or pack checks first.
+            </p>
+            <p>
+              If you do reinstall, return to a traceable route and repeat the clean test. Do not stack a new
+              file on top of an old profile full of previous voice experiments. A clean baseline gives you
+              one clear answer: the route loads or it does not.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -242,6 +361,10 @@
         <a href="/not-working/">Not working fixes</a>
         <a href="/voice-not-working/">Voice fix</a>
         <a href="/taken-down/">Taken down / 404</a>
+        <a href="/what-happened/">What happened</a>
+        <a href="/verity-je/">Verity JE</a>
+        <a href="/verity-exe/">VERITY.exe</a>
+        <a href="/ai-model/">AI model</a>
       </nav>
       <p>Fan-made voice troubleshooting page. Not affiliated with Mojang, Microsoft, CurseForge, or Verity maintainers.</p>
     </footer>
