@@ -60,12 +60,13 @@
           {
             "@type": "WebApplication",
             "@id": "https://veritymodchecker.online/#checker",
-            "name": "Verity Mod Route Checker",
+            "name": "Verity Mod Source and File Checker",
             "url": "https://veritymodchecker.online/#checker",
-            "applicationCategory": "UtilityApplication",
+            "applicationCategory": "SecurityApplication",
             "operatingSystem": "Any",
             "isAccessibleForFree": true,
-            "description": "A browser tool that routes Minecraft Java, Bedrock, and MCPE players to the matching Verity project and setup checklist."
+            "browserRequirements": "Requires JavaScript and a modern browser with Web Crypto support for local SHA-256 calculation.",
+            "description": "A browser-only checker that reviews a Verity Mod URL, filename, or local file for known project identity, package type, source-host signals, and SHA-256 without uploading the file."
           }
         ]
       }
@@ -123,7 +124,7 @@
         <a href="/bedrock/">Bedrock</a>
         <a href="/not-working/">Fixes</a>
         <a href="#current-status">Status</a>
-        <a class="nav-tool" href="#checker">Route checker</a>
+        <a class="nav-tool" href="#checker">File checker</a>
       </nav>
     </header>
 
@@ -161,7 +162,7 @@
               rel="noopener"
               target="_blank"
             >Bedrock files</a>
-            <a class="hero-text-link" href="/download/">Compare every route</a>
+            <a class="hero-text-link" href="#checker">Check a URL or file</a>
           </div>
           <ul class="hero-facts" aria-label="Current edition summary">
             <li><strong>Java:</strong> Forge 1.20.1 and NeoForge 1.21.1</li>
@@ -267,9 +268,75 @@
         </div>
       </section>
 
-      <section class="checker-section" id="checker" aria-labelledby="checker-title">
+      <section class="source-checker-section" id="checker" aria-labelledby="source-checker-title">
+        <div class="section-heading home-heading source-checker-heading">
+          <p class="eyebrow">Browser-only identity check</p>
+          <h2 id="source-checker-title">Check a Verity Mod link or file before installing</h2>
+          <p>
+            Paste a project URL or choose a local file. The checker compares names, domains, extensions, and known
+            project identifiers, then calculates a SHA-256 fingerprint locally. Your file never leaves this browser.
+          </p>
+        </div>
+
+        <div class="source-checker-workspace">
+          <form class="source-checker-form" id="sourceCheckForm">
+            <label for="sourceInput">
+              URL, Project ID, filename, or SHA-256
+              <input
+                id="sourceInput"
+                name="source"
+                type="text"
+                inputmode="url"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="https://www.curseforge.com/... or verity-5.7.2.jar"
+              />
+            </label>
+            <div class="source-divider"><span>or inspect a local file</span></div>
+            <label class="file-drop" for="sourceFile">
+              <span class="file-drop-icon" aria-hidden="true">#</span>
+              <span><strong>Choose a JAR, MCADDON, or other file</strong><small id="sourceFileName">No file selected</small></span>
+              <input id="sourceFile" name="file" type="file" />
+            </label>
+            <div class="source-actions">
+              <button class="source-submit" type="submit">Check source</button>
+              <button class="source-reset" id="sourceReset" type="button" aria-label="Reset source checker">Reset</button>
+            </div>
+            <p class="source-privacy">Identity and package check only. This is not a malware scan or a guarantee that a file is safe.</p>
+          </form>
+
+          <aside class="source-result" id="sourceResult" aria-live="polite" data-state="idle">
+            <div class="source-result-topline">
+              <span class="source-result-dot" aria-hidden="true"></span>
+              <strong id="sourceVerdict">Ready to check</strong>
+              <span id="sourceRisk">Local only</span>
+            </div>
+            <h3 id="sourceTitle">Paste a source or choose a file</h3>
+            <p id="sourceSummary">
+              A strong match needs more than the word “Verity.” Check the publishing host, project identity, Minecraft
+              edition, package type, and release record together.
+            </p>
+            <dl class="source-facts" id="sourceFacts">
+              <div><dt>Source</dt><dd>Waiting</dd></div>
+              <div><dt>Package</dt><dd>Waiting</dd></div>
+              <div><dt>Project match</dt><dd>Waiting</dd></div>
+              <div><dt>SHA-256</dt><dd>Choose a file to calculate</dd></div>
+            </dl>
+            <ul class="source-checks" id="sourceChecks">
+              <li>No data has been sent anywhere.</li>
+              <li>Known projects currently include Verity JE and two separate Bedrock add-ons.</li>
+            </ul>
+            <div class="source-result-actions">
+              <a id="sourceProjectLink" href="/download/">Compare known projects</a>
+              <button id="copyHashButton" type="button" disabled>Copy SHA-256</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="checker-section" id="route-checker" aria-labelledby="checker-title">
         <div class="section-heading home-heading checker-heading">
-          <p class="eyebrow">Interactive route checker</p>
+          <p class="eyebrow">Setup route chooser</p>
           <h2 id="checker-title">Not sure which Verity Mod file you need?</h2>
           <p>Select your edition and problem. The result links to a maintainer project page and gives a short setup order.</p>
         </div>
@@ -348,11 +415,13 @@
             <a href="/java/"><strong>Java setup</strong><span>Loader matching and clean-profile order</span></a>
             <a href="/bedrock/"><strong>Bedrock setup</strong><span>Add-on import, packs, commands, and Beta APIs</span></a>
             <a href="/mcpe/"><strong>MCPE setup</strong><span>Mobile import and fresh-world checks</span></a>
+            <a href="/how-to-get-verity-mod/"><strong>How to get Verity</strong><span>Install Java or Bedrock in the correct order</span></a>
             <a href="/verity-exe/"><strong>VERITY.exe</strong><span>Modpack identity versus Verity JE</span></a>
           </div>
           <div class="route-group">
             <h3>Status and troubleshooting</h3>
             <a href="/what-happened/"><strong>What happened?</strong><span>Old links, current projects, and release changes</span></a>
+            <a href="/what-is-verity-mod/"><strong>What is Verity?</strong><span>Videos, horror story, and playable community projects</span></a>
             <a href="/not-working/"><strong>Not working</strong><span>Crash, silence, dots, spawn, and connection fixes</span></a>
             <a href="/voice-not-working/"><strong>Voice not working</strong><span>Chat works but speech or sound is missing</span></a>
             <a href="/taken-down/"><strong>Taken down or 404</strong><span>Recover from deleted and misleading links</span></a>
@@ -511,6 +580,8 @@
         <a href="/mcpe/">MCPE</a>
         <a href="/verity-exe/">VERITY.exe</a>
         <a href="/ai-model/">AI model</a>
+        <a href="/what-is-verity-mod/">What is Verity?</a>
+        <a href="/how-to-get-verity-mod/">How to get it</a>
         <a href="/what-happened/">What happened</a>
         <a href="/not-working/">Not working</a>
         <a href="/voice-not-working/">Voice fixes</a>

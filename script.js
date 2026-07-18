@@ -261,11 +261,17 @@ function setEdition(edition) {
 }
 
 document.querySelectorAll(".segment").forEach((button) => {
-  button.addEventListener("click", () => setEdition(button.dataset.edition));
+  button.addEventListener("click", () => {
+    setEdition(button.dataset.edition);
+    trackEvent("verity_route_edition", { edition: button.dataset.edition });
+  });
 });
 
 [versionSelect, issueSelect, voiceToggle, aiToggle].forEach((control) => {
-  control.addEventListener("change", render);
+  control.addEventListener("change", () => {
+    render();
+    trackEvent("verity_route_change", { control: control.id, edition: currentEdition });
+  });
 });
 
 copyButton.addEventListener("click", async () => {
@@ -287,3 +293,478 @@ copyButton.addEventListener("click", async () => {
 });
 
 setEdition(currentEdition);
+
+const knownProjects = [
+  {
+    name: "Verity JE",
+    edition: "Java",
+    id: "1591438",
+    slugs: ["/minecraft/mc-mods/verity-je"],
+    files: ["verity-5.7.2.jar", "verity-3.4.1.jar"],
+    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files"
+  },
+  {
+    name: "Verity BE",
+    edition: "Bedrock",
+    id: "1574632",
+    slugs: ["/minecraft-bedrock/addons/verity-be"],
+    files: [],
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files"
+  },
+  {
+    name: "Verity - Bedrock Edition",
+    edition: "Bedrock",
+    id: "1575941",
+    slugs: ["/minecraft-bedrock/addons/verity-bedrock-edition"],
+    files: [],
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files"
+  }
+];
+
+const sourceCheckForm = document.querySelector("#sourceCheckForm");
+const sourceInput = document.querySelector("#sourceInput");
+const sourceFile = document.querySelector("#sourceFile");
+const sourceFileName = document.querySelector("#sourceFileName");
+const sourceReset = document.querySelector("#sourceReset");
+const sourceResult = document.querySelector("#sourceResult");
+const sourceVerdict = document.querySelector("#sourceVerdict");
+const sourceRisk = document.querySelector("#sourceRisk");
+const sourceTitle = document.querySelector("#sourceTitle");
+const sourceSummary = document.querySelector("#sourceSummary");
+const sourceFacts = document.querySelector("#sourceFacts");
+const sourceChecks = document.querySelector("#sourceChecks");
+const sourceProjectLink = document.querySelector("#sourceProjectLink");
+const copyHashButton = document.querySelector("#copyHashButton");
+let currentFileHash = "";
+
+function trackEvent(name, parameters = {}) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", name, parameters);
+  }
+}
+
+function packageType(value) {
+  const clean = value.toLowerCase().split(/[?#]/)[0];
+  if (clean.endsWith(".jar")) return "Java JAR";
+  if (clean.endsWith(".mcaddon")) return "Bedrock MCADDON";
+  if (clean.endsWith(".mcpack")) return "Bedrock MCPACK";
+  if (clean.endsWith(".zip")) return "ZIP archive or source";
+  if (/\.(exe|msi|apk|dmg|scr)$/.test(clean)) return "Executable installer";
+  return "Not identified";
+}
+
+function findKnownProject(value) {
+  const clean = value.toLowerCase();
+  return knownProjects.find((project) =>
+    clean.includes(project.id) ||
+    project.slugs.some((slug) => clean.includes(slug)) ||
+    project.files.some((file) => clean.includes(file))
+  );
+}
+
+function buildFact(label, value) {
+  const wrapper = document.createElement("div");
+  const term = document.createElement("dt");
+  const description = document.createElement("dd");
+  term.textContent = label;
+  description.textContent = value;
+  wrapper.append(term, description);
+  return wrapper;
+}
+
+function setSourceResult(result) {
+  sourceResult.dataset.state = result.state;
+  sourceVerdict.textContent = result.verdict;
+  sourceRisk.textContent = result.risk;
+  sourceTitle.textContent = result.title;
+  sourceSummary.textContent = result.summary;
+  sourceFacts.replaceChildren(
+    buildFact("Source", result.source),
+    buildFact("Package", result.package),
+    buildFact("Project match", result.project),
+    buildFact("SHA-256", result.hash || "Choose a file to calculate")
+  );
+  sourceChecks.replaceChildren(
+    ...result.checks.map((check) => {
+      const item = document.createElement("li");
+      item.textContent = check;
+      return item;
+    })
+  );
+  sourceProjectLink.href = result.link;
+  sourceProjectLink.textContent = result.linkLabel;
+  if (result.external) {
+    sourceProjectLink.target = "_blank";
+    sourceProjectLink.rel = "noopener";
+  } else {
+    sourceProjectLink.removeAttribute("target");
+    sourceProjectLink.removeAttribute("rel");
+  }
+  currentFileHash = result.hash || "";
+  copyHashButton.disabled = !currentFileHash;
+  copyHashButton.textContent = "Copy SHA-256";
+}
+
+function inspectTextSource(rawValue) {
+  const value = rawValue.trim();
+  const lower = value.toLowerCase();
+  const project = findKnownProject(value);
+  const type = packageType(value);
+  const isHash = /^[a-f0-9]{64}$/i.test(value);
+  const riskyExtension = type === "Executable installer";
+  let parsedUrl = null;
+
+  try {
+    parsedUrl = new URL(value);
+  } catch {
+    parsedUrl = null;
+  }
+
+  if (isHash) {
+    return {
+      state: "caution",
+      verdict: "Fingerprint received",
+      risk: "Needs reputation check",
+      title: "A SHA-256 identifies bytes, not trust",
+      summary: "The fingerprint is valid in shape, but this site has no authoritative reference hash to compare against it. Use it to search an established reputation service or compare with a publisher-provided checksum.",
+      source: "SHA-256 input",
+      package: "Unknown",
+      project: "No identity data",
+      hash: value.toLowerCase(),
+      checks: [
+        "A matching hash proves two files are identical, not that either file is safe.",
+        "Do not post private API keys, account tokens, or personal paths with a hash report.",
+        "Return to the publisher project record and verify the release metadata."
+      ],
+      link: `https://www.virustotal.com/gui/file/${value.toLowerCase()}`,
+      linkLabel: "Look up this hash",
+      external: true
+    };
+  }
+
+  if (riskyExtension) {
+    return {
+      state: "danger",
+      verdict: "Package mismatch",
+      risk: "Do not run it",
+      title: "This is not a normal Verity Mod package",
+      summary: "Minecraft Java mods normally use JAR files, while Bedrock add-ons normally use MCADDON or MCPACK files. An EXE, MSI, APK, DMG, or SCR presented as the mod needs an explanation from a traceable publisher before it is opened.",
+      source: parsedUrl ? parsedUrl.hostname : "Filename only",
+      package: type,
+      project: project ? `${project.name} name signal only` : "No known match",
+      hash: "",
+      checks: [
+        "Do not run the file to see what happens.",
+        "Delete downloads from hidden redirects, short links, or unrelated installers.",
+        "Open the known project record and obtain the package type listed there."
+      ],
+      link: "/download/",
+      linkLabel: "Open known projects",
+      external: false
+    };
+  }
+
+  if (parsedUrl) {
+    const host = parsedUrl.hostname.replace(/^www\./, "");
+    const riskyHosts = ["mediafire.com", "mega.nz", "dropbox.com", "bit.ly", "tinyurl.com", "discordapp.com", "discord.com"];
+    const isRiskyHost = riskyHosts.some((domain) => host === domain || host.endsWith(`.${domain}`));
+    const isCurseForge = host === "curseforge.com" || host.endsWith(".curseforge.com");
+    const isModrinth = host === "modrinth.com" || host.endsWith(".modrinth.com");
+    const isGitHub = host === "github.com" || host.endsWith(".github.com");
+
+    if (isCurseForge && project) {
+      return {
+        state: "verified",
+        verdict: "Known project match",
+        risk: "Identity matched",
+        title: `${project.name} project record recognized`,
+        summary: `The URL matches the checked ${project.edition} project identity. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`,
+        source: host,
+        package: type,
+        project: `${project.name} · ID ${project.id}`,
+        hash: "",
+        checks: [
+          "The publishing host and known project path match.",
+          "This result verifies identity signals, not the contents of a downloaded file.",
+          "Use the project files tab and avoid direct mirrors of an older release."
+        ],
+        link: project.link,
+        linkLabel: `Open ${project.name} files`,
+        external: true
+      };
+    }
+
+    if (isRiskyHost) {
+      return {
+        state: "danger",
+        verdict: "Mirror or redirect host",
+        risk: "Source not verified",
+        title: "This link does not preserve a known project identity",
+        summary: "A generic file host, chat attachment, or short link can distribute bytes without showing the original owner, Project ID, supported Minecraft version, or release history. Do not treat the filename as proof.",
+        source: host,
+        package: type,
+        project: project ? `${project.name} text match only` : "No known match",
+        hash: "",
+        checks: [
+          "Do not install from a mirror when the maintained project page is available.",
+          "A copied filename can be attached to different file contents.",
+          "Use the known project record and compare the current release there."
+        ],
+        link: project?.link || "/download/",
+        linkLabel: project ? `Open ${project.name} files` : "Compare known projects",
+        external: Boolean(project),
+      };
+    }
+
+    if (isCurseForge || isModrinth || isGitHub) {
+      return {
+        state: "caution",
+        verdict: "Recognized platform",
+        risk: "Project not matched",
+        title: "The host is known, but this project identity is different or unknown",
+        summary: "A trusted hosting platform can contain many unrelated projects. Compare the author, project path, edition, version, and release record instead of assuming every Verity-named page is the same mod.",
+        source: host,
+        package: type,
+        project: project ? `${project.name} partial match` : "No checked project match",
+        hash: "",
+        checks: [
+          "Platform reputation does not replace project verification.",
+          "Confirm Java versus Bedrock before downloading.",
+          "Do not mistake a source ZIP for an installable release."
+        ],
+        link: "/download/",
+        linkLabel: "Compare checked projects",
+        external: false
+      };
+    }
+
+    return {
+      state: "caution",
+      verdict: "Unknown source",
+      risk: "Manual review needed",
+      title: "This domain is not in the checked source map",
+      summary: "The checker cannot connect this host to one of the current Verity project records. That does not prove the link is malicious, but it means the source, owner, and release history remain unverified.",
+      source: host,
+      package: type,
+      project: project ? `${project.name} text match only` : "No known match",
+      hash: "",
+      checks: [
+        "Find the original project page before downloading.",
+        "Avoid pages that hide the final URL or require unrelated software.",
+        "Match the game edition and package type before installation."
+      ],
+      link: "/download/",
+      linkLabel: "Open checked source map",
+      external: false
+    };
+  }
+
+  if (project) {
+    const exactFile = project.files.some((file) => lower.includes(file));
+    return {
+      state: exactFile || value === project.id ? "verified" : "caution",
+      verdict: exactFile || value === project.id ? "Known identity signal" : "Partial name match",
+      risk: "Verify on publisher page",
+      title: exactFile ? `${project.name} filename recognized` : `${project.name} record recognized`,
+      summary: "The text matches a checked filename, project path, or Project ID. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.",
+      source: "Text or filename",
+      package: type,
+      project: `${project.name} · ID ${project.id}`,
+      hash: "",
+      checks: [
+        "Filename matching is useful but not a content scan.",
+        "Confirm the current file on the publisher files page.",
+        "Choose a local file to calculate its SHA-256 fingerprint."
+      ],
+      link: project.link,
+      linkLabel: `Open ${project.name} files`,
+      external: true
+    };
+  }
+
+  return {
+    state: "caution",
+    verdict: "No known match",
+    risk: "Manual review needed",
+    title: "This name alone is not enough to verify a Verity Mod file",
+    summary: "The value does not match a checked project ID, project path, or current filename. Open the source map and compare edition, owner, version, and package type before installing anything.",
+    source: "Text or filename",
+    package: type,
+    project: "No known match",
+    hash: "",
+    checks: [
+      "Check whether the file is a Java JAR or Bedrock add-on.",
+      "Avoid executable installers and hidden redirect chains.",
+      "Use a maintained project page instead of a repost."
+    ],
+    link: "/download/",
+    linkLabel: "Compare known projects",
+    external: false
+  };
+}
+
+async function inspectLocalFile(file) {
+  const type = packageType(file.name);
+  const project = findKnownProject(file.name);
+  const riskyExtension = type === "Executable installer";
+  const digest = await crypto.subtle.digest("SHA-256", await file.arrayBuffer());
+  const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+  const size = `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
+
+  if (riskyExtension) {
+    return {
+      state: "danger",
+      verdict: "Package mismatch",
+      risk: "Do not run it",
+      title: "The selected file is an executable, not a normal mod package",
+      summary: "The browser calculated a fingerprint without uploading the file. Minecraft Java and Bedrock use different package formats, but neither normally requires this executable type as the Verity mod itself.",
+      source: `Local file · ${size}`,
+      package: type,
+      project: project ? `${project.name} filename text only` : "No known match",
+      hash,
+      checks: [
+        "Do not launch the executable.",
+        "Search the SHA-256 before deleting it if you need an incident record.",
+        "Return to a traceable project files page."
+      ],
+      link: `https://www.virustotal.com/gui/file/${hash}`,
+      linkLabel: "Look up this hash",
+      external: true
+    };
+  }
+
+  return {
+    state: project ? "caution" : "caution",
+    verdict: project ? "Filename match only" : "Local fingerprint created",
+    risk: "Contents not scanned",
+    title: project ? `${project.name} filename signal found` : "File fingerprint calculated locally",
+    summary: project
+      ? "The name matches a checked project signal, but names can be copied. Compare this SHA-256 and the release metadata with the original publisher page before installing."
+      : "The file was not uploaded. Its package type and SHA-256 are now visible, but no checked project identity could be matched from the filename alone.",
+    source: `Local file · ${size}`,
+    package: type,
+    project: project ? `${project.name} · ID ${project.id}` : "No known match",
+    hash,
+    checks: [
+      "SHA-256 identifies the selected bytes and changes if the file changes.",
+      "A hash without a publisher reference does not prove safety.",
+      project ? "Open the matched project files page and compare release details." : "Confirm the source, owner, edition, and release before installing."
+    ],
+    link: project?.link || `https://www.virustotal.com/gui/file/${hash}`,
+    linkLabel: project ? `Open ${project.name} files` : "Look up this hash",
+    external: true
+  };
+}
+
+sourceFile.addEventListener("change", () => {
+  const file = sourceFile.files[0];
+  if (file) sourceInput.value = "";
+  sourceFileName.textContent = file ? `${file.name} · ${(file.size / (1024 * 1024)).toFixed(2)} MB` : "No file selected";
+});
+
+sourceInput.addEventListener("input", () => {
+  if (!sourceInput.value.trim() || !sourceFile.files.length) return;
+  sourceFile.value = "";
+  sourceFileName.textContent = "No file selected";
+});
+
+sourceCheckForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const file = sourceFile.files[0];
+  const value = sourceInput.value.trim();
+
+  if (!file && !value) {
+    sourceInput.focus();
+    setSourceResult({
+      state: "caution",
+      verdict: "Nothing to check",
+      risk: "Input required",
+      title: "Paste a URL or choose a local file",
+      summary: "The checker needs a source URL, Project ID, filename, SHA-256, or local file before it can compare identity signals.",
+      source: "Waiting",
+      package: "Waiting",
+      project: "Waiting",
+      hash: "",
+      checks: ["Use a full project URL when possible.", "Files are processed locally and are not uploaded."],
+      link: "/download/",
+      linkLabel: "Compare known projects",
+      external: false
+    });
+    return;
+  }
+
+  sourceVerdict.textContent = file ? "Calculating locally" : "Checking source";
+  sourceRisk.textContent = "Please wait";
+  try {
+    const result = file ? await inspectLocalFile(file) : inspectTextSource(value);
+    setSourceResult(result);
+    trackEvent("verity_source_check", {
+      input_type: file ? "local_file" : "text_or_url",
+      result_state: result.state,
+      package_type: result.package
+    });
+  } catch {
+    setSourceResult({
+      state: "caution",
+      verdict: "Check failed",
+      risk: "Try another input",
+      title: "The browser could not inspect this file",
+      summary: "The file may be too large for available browser memory or Web Crypto may be unavailable. No file data was uploaded.",
+      source: "Local browser",
+      package: file ? packageType(file.name) : "Unknown",
+      project: "Not checked",
+      hash: "",
+      checks: ["Try the project URL or filename instead.", "Use a desktop browser for very large files."],
+      link: "/download/",
+      linkLabel: "Compare known projects",
+      external: false
+    });
+  }
+});
+
+sourceReset.addEventListener("click", () => {
+  sourceCheckForm.reset();
+  sourceFileName.textContent = "No file selected";
+  setSourceResult({
+    state: "idle",
+    verdict: "Ready to check",
+    risk: "Local only",
+    title: "Paste a source or choose a file",
+    summary: "A strong match needs more than the word “Verity.” Check the publishing host, project identity, Minecraft edition, package type, and release record together.",
+    source: "Waiting",
+    package: "Waiting",
+    project: "Waiting",
+    hash: "",
+    checks: ["No data has been sent anywhere.", "Known projects currently include Verity JE and two separate Bedrock add-ons."],
+    link: "/download/",
+    linkLabel: "Compare known projects",
+    external: false
+  });
+});
+
+copyHashButton.addEventListener("click", async () => {
+  if (!currentFileHash) return;
+  try {
+    await navigator.clipboard.writeText(currentFileHash);
+    copyHashButton.textContent = "Hash copied";
+    trackEvent("verity_hash_copy", { method: "sha256" });
+  } catch {
+    copyHashButton.textContent = "Copy failed";
+  }
+});
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a[href]");
+  if (!link) return;
+  try {
+    const destination = new URL(link.href, window.location.href);
+    if (destination.hostname !== window.location.hostname) {
+      trackEvent("verity_outbound_project_click", {
+        destination_host: destination.hostname,
+        link_text: link.textContent.trim().slice(0, 80)
+      });
+    }
+  } catch {
+    // Ignore malformed links; normal navigation behavior is unchanged.
+  }
+});
