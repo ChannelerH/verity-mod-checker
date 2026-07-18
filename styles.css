@@ -1039,6 +1039,8 @@ details p {
 }
 
 .home-status-bar {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: min(1180px, calc(100% - 32px));
