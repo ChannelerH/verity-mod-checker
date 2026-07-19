@@ -32,6 +32,8 @@ export default {
     } else if (
       url.pathname === "/robots.txt" ||
       url.pathname === "/sitemap.xml" ||
+      url.pathname === "/feed.xml" ||
+      url.pathname.startsWith("/data/") ||
       url.pathname === "/llms.txt" ||
       url.pathname === "/llms-full.txt"
     ) {

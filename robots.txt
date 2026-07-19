@@ -8,5 +8,7 @@ User-agent: anthropic-ai
 Allow: /
 
 Sitemap: https://veritymodchecker.online/sitemap.xml
+Data: https://veritymodchecker.online/data/verity-releases.json
+Feed: https://veritymodchecker.online/feed.xml
 LLM-Content: https://veritymodchecker.online/llms.txt
 LLM-Full-Content: https://veritymodchecker.online/llms-full.txt

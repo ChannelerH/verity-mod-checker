@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-releases.schema.json",
+  "title": "Verity release route snapshot",
+  "type": "object",
+  "required": ["schemaVersion", "checkedAt", "canonicalUrl", "projects"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "checkedAt": { "type": "string", "format": "date-time" },
+    "canonicalUrl": { "type": "string", "format": "uri" },
+    "method": { "type": "string" },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "edition", "owner", "projectId", "projectUrl", "status", "releases"],
+        "properties": {
+          "name": { "type": "string" },
+          "edition": { "enum": ["Java", "Bedrock"] },
+          "owner": { "type": "string" },
+          "projectId": { "type": "integer" },
+          "projectUrl": { "type": "string", "format": "uri" },
+          "status": { "type": "string" },
+          "projectDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "projectDownloadsApproximate": { "type": "boolean" },
+          "releases": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["status", "filename", "recordId", "recordUrl", "minecraftVersion", "packageType", "publishedDate"],
+              "properties": {
+                "status": { "type": "string" },
+                "filename": { "type": "string" },
+                "recordId": { "type": ["integer", "null"] },
+                "recordUrl": { "type": "string", "format": "uri" },
+                "minecraftVersion": { "type": "string" },
+                "loader": { "type": ["string", "null"] },
+                "packageType": { "enum": ["jar", "mcaddon"] },
+                "displayedSizeMb": { "type": ["number", "null"] },
+                "publishedDate": { "type": "string", "format": "date" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

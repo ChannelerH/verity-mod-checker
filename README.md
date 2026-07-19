@@ -24,9 +24,9 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Bedrock / MCPE routes: Verity BE record `8420981`, PnTMC record `8327253`, pack activation, Beta APIs, commands, and world setup.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Troubleshooting: box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
-- SEO support: canonical domain, robots.txt, sitemap.xml, GA4, and GSC submission.
+- SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
-The checker verifies identity signals against the public metadata recorded on July 18, 2026. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on the maintainer's CurseForge record instead of being mirrored by this site.
+The checker verifies identity signals against the public metadata recorded on July 19, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). A filename, size, URL, or hash result is not a malware verdict. Downloads remain on the maintainer's CurseForge record instead of being mirrored by this site.
 
 ## Local Preview
 
@@ -38,6 +38,12 @@ python3 -m http.server 4173
 
 Then visit `http://localhost:4173`.
 
+Run the static SEO and internal-link audit with:
+
+```bash
+node scripts/audit-site.mjs
+```
+
 ## Deployment
 
-The primary deployment is the Cloudflare Pages project `verity-mod-checker`, with `veritymodchecker.online` as the canonical custom domain and `www` redirected to the apex domain by `_worker.js`. The repository also retains the GitHub Pages workflow at `.github/workflows/pages.yml` as a fallback build path.
+The primary deployment is the Cloudflare Pages project `verity-mod-checker`, with `veritymodchecker.online` as the canonical custom domain and `www` redirected to the apex domain by `_worker.js`. The repository also retains the GitHub Pages workflow at `.github/workflows/pages.yml` as a fallback build path. `.github/workflows/site-health.yml` checks the live canonical pages, SEO files, route data, and `www` redirect every day.

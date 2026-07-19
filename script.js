@@ -819,9 +819,24 @@ document.addEventListener("click", (event) => {
   try {
     const destination = new URL(link.href, window.location.href);
     if (destination.hostname !== window.location.hostname) {
-      trackEvent("verity_outbound_project_click", {
+      const isProjectRoute = destination.hostname === "www.curseforge.com";
+      const projectName = destination.pathname.includes("verity-bedrock-edition")
+        ? "PnTMC Verity Bedrock"
+        : destination.pathname.includes("verity-be")
+          ? "Verity BE"
+          : destination.pathname.includes("verity-je")
+            ? "Verity JE"
+            : "External reference";
+      const section = link.closest("section");
+      const linkArea = section?.id || (link.closest("footer") ? "footer" : link.closest("header") ? "header" : "content");
+      trackEvent(isProjectRoute ? "verity_outbound_project_click" : "verity_outbound_reference_click", {
         destination_host: destination.hostname,
-        link_text: link.textContent.trim().slice(0, 80)
+        destination_path: destination.pathname,
+        link_text: link.textContent.trim().slice(0, 80),
+        project_name: projectName,
+        source_page: window.location.pathname,
+        link_area: linkArea,
+        transport_type: "beacon"
       });
     }
   } catch {
