@@ -129,6 +129,10 @@
             "status": "pending-review"
           }
         ],
+        "distribution": {
+          "githubCommit": "ef9abfb",
+          "cloudflareDeployment": "https://66268e60.verity-mod-checker.pages.dev"
+        },
         "refreshedPlacements": [
           "https://gist.github.com/ChannelerH/dc15bf49a5d21769325012bd8fdb494f",
           "https://gist.github.com/ChannelerH/b665791a7ea7208d47db6ab0b001687c"
