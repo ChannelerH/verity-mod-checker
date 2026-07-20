@@ -32,7 +32,6 @@ jobs:
             "/how-to-get-verity-mod/"
             "/java/"
             "/bedrock/"
-            "/mcpe/"
             "/not-working/"
             "/sitemap.xml"
             "/robots.txt"
@@ -49,5 +48,13 @@ jobs:
           set -euo pipefail
           curl --fail --silent --show-error https://veritymodchecker.online/data/verity-releases.json \
             | jq -e '.projects | length == 3' > /dev/null
+          checked_at="$(curl --fail --silent --show-error https://veritymodchecker.online/data/verity-releases.json | jq -r '.checkedAt')"
+          checked_epoch="$(date --date="${checked_at}" +%s)"
+          now_epoch="$(date +%s)"
+          test "$((now_epoch - checked_epoch))" -lt 259200
           test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://www.veritymodchecker.online/)" \
             = "https://veritymodchecker.online/"
+          test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/verity-je/)" \
+            = "https://veritymodchecker.online/java/#versions"
+          test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/mcpe/)" \
+            = "https://veritymodchecker.online/bedrock/#mcpe"

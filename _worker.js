@@ -7,6 +7,18 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (url.pathname === "/verity-je" || url.pathname.startsWith("/verity-je/")) {
+      url.pathname = "/java/";
+      url.hash = "versions";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
+      url.pathname = "/bedrock/";
+      url.hash = "mcpe";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/04cb9707b196d4d8b34d0f083fb95f05.txt") {
       return new Response("04cb9707b196d4d8b34d0f083fb95f05", {
         headers: {

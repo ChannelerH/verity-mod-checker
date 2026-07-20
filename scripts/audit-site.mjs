@@ -12,6 +12,10 @@ const pageFiles = [
 const errors = [];
 const titles = new Map();
 const descriptions = new Map();
+const releaseSnapshot = JSON.parse(fs.readFileSync("data/verity-releases.json", "utf8"));
+const currentJavaRelease = releaseSnapshot.projects
+  .find((project) => project.name === "Verity JE")
+  ?.releases.find((release) => release.status === "current");
 
 for (const file of pageFiles) {
   const html = fs.readFileSync(file, "utf8");
@@ -51,6 +55,28 @@ for (const file of pageFiles) {
   if (description) descriptions.set(description, file);
 
   console.log(`${file}\t${words.length} words\t${exactPhrases.length} exact phrases\t${density.toFixed(2)}% occurrence density\t${h1Count} h1`);
+}
+
+if (!currentJavaRelease?.filename || !currentJavaRelease?.recordId) {
+  errors.push("data/verity-releases.json: missing current Verity JE filename or record ID");
+} else {
+  const expectedSignals = [currentJavaRelease.filename, String(currentJavaRelease.recordId)];
+  for (const file of ["index.html", "download/index.html", "java/index.html", "script.js", "feed.xml"]) {
+    const content = fs.readFileSync(file, "utf8");
+    for (const signal of expectedSignals) {
+      if (!content.includes(signal)) errors.push(`${file}: missing current Java release signal ${signal}`);
+    }
+  }
+}
+
+const sitemap = fs.readFileSync("sitemap.xml", "utf8");
+for (const retiredRoute of ["/verity-je/", "/mcpe/"]) {
+  if (sitemap.includes(retiredRoute)) errors.push(`sitemap.xml: retired route remains listed ${retiredRoute}`);
+}
+
+const worker = fs.readFileSync("_worker.js", "utf8");
+for (const retiredRoute of ["/verity-je", "/mcpe"]) {
+  if (!worker.includes(retiredRoute)) errors.push(`_worker.js: missing redirect for ${retiredRoute}`);
 }
 
 for (const file of pageFiles) {

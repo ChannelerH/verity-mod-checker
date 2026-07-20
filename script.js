@@ -2,7 +2,7 @@ const routes = {
   java: {
     label: "Java setup route",
     readout: "Java",
-    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8450350",
+    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257",
     versions: ["1.21.1 NeoForge", "1.20.1 Forge", "I am not sure"],
     issues: ["download", "not working", "voice not working", "AI setup", "is it real"],
     summaries: {
@@ -312,7 +312,7 @@ const knownProjects = [
     id: "1591438",
     slugs: ["/minecraft/mc-mods/verity-je"],
     releases: [
-      { filename: "verity-5.7.2.jar", record: "8450350", sizeMb: 235.06, version: "Minecraft 1.20.1 · Forge", published: "July 17, 2026" },
+      { filename: "verity-5.7.3.jar", record: "8461257", sizeMb: 235.06, version: "Minecraft 1.20.1 · Forge", published: "July 18, 2026" },
       { filename: "verity-3.4.1.jar", record: "", sizeMb: null, version: "Minecraft 1.21.1 · NeoForge", published: "June 30, 2026" }
     ],
     link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files"

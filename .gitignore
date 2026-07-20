@@ -5,3 +5,4 @@ dist-cf/
 .env
 .env.*
 .wrangler/
+__pycache__/

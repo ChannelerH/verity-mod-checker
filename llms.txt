@@ -23,4 +23,4 @@
 
 ## Current Position
 
-Checked July 19, 2026: Verity JE's current Forge file is `verity-5.7.2.jar`, CurseForge record `8450350`, for Minecraft 1.20.1. Verity BE's current file is `Verity (Stable) (1.0.8)-(26.3).mcaddon`, record `8420981`, for Bedrock 26.30. The PnTMC alternate is `ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon`, record `8327253`. NeoForge 1.21.1 remains a separate older branch, and VERITY.exe is a separate modpack route. The site does not host files, upload selected files, collect API keys, or claim that metadata matching is a malware scan.
+Checked July 20, 2026: Verity JE's current Forge file is `verity-5.7.3.jar`, CurseForge record `8461257`, for Minecraft 1.20.1. Verity BE's current file is `Verity (Stable) (1.0.8)-(26.3).mcaddon`, record `8420981`, for Bedrock 26.30. The PnTMC alternate is `ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon`, record `8327253`. NeoForge 1.21.1 remains a separate older branch, and VERITY.exe is a separate modpack route. The site does not host files, upload selected files, collect API keys, or claim that metadata matching is a malware scan.
