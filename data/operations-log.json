@@ -78,8 +78,43 @@
         }
       },
       "promotion": {
-        "linksPosted": 0,
-        "reason": "A relevant Reddit thread was verified, but the available browser session was logged out. No login, CAPTCHA, or forced promotional reply was attempted."
+        "linksPosted": 5,
+        "placements": [
+          {
+            "type": "minecraft-directory-request",
+            "url": "https://github.com/uberswe/awesomeminecraft.com/issues/8",
+            "status": "pending-review"
+          },
+          {
+            "type": "minecraft-directory-pull-request",
+            "url": "https://github.com/uberswe/awesomeminecraft.com/pull/9",
+            "status": "pending-review"
+          },
+          {
+            "type": "bedrock-directory-pull-request",
+            "url": "https://github.com/CAIMEOX/awesome-minecraft-bedrock/pull/3",
+            "status": "pending-review"
+          },
+          {
+            "type": "status-429-reference-gist",
+            "url": "https://gist.github.com/ChannelerH/860e342df2f84581f5f630b9f6c4cab1",
+            "status": "published"
+          },
+          {
+            "type": "release-data-snapshot",
+            "url": "https://github.com/ChannelerH/verity-mod-checker/releases/tag/data-2026-07-20",
+            "status": "published"
+          }
+        ],
+        "refreshedPlacements": [
+          "https://gist.github.com/ChannelerH/dc15bf49a5d21769325012bd8fdb494f",
+          "https://gist.github.com/ChannelerH/b665791a7ea7208d47db6ab0b001687c"
+        ],
+        "blocked": [
+          "GitHub profile website field required a user OAuth scope that was not available; no reauthorization was forced.",
+          "The relevant Reddit thread was logged out; no login, CAPTCHA, or promotional reply was attempted.",
+          "Tool Commons requires an OSI-approved license and no tracking, so this GA4-enabled site was not submitted."
+        ]
       }
     }
   ]
