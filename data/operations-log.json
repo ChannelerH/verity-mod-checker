@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "observedAt": "2026-07-20T09:41:00+08:00",
+      "gsc": {
+        "window": "last-24-hours",
+        "clicks": 1,
+        "impressions": 50,
+        "ctr": 0.02,
+        "averagePosition": 9.1,
+        "pageObservation": "All reported Google impressions and the click were attributed to the homepage."
+      },
+      "ga4": {
+        "window": "last-7-days",
+        "activeUsers": 150,
+        "newUsers": 154,
+        "sessions": 164,
+        "organicSearchSessions": 19,
+        "directSessions": 135,
+        "referralSessions": 6,
+        "veritySourceCheckEvents": 11,
+        "outboundProjectClickVisible": false
+      },
+      "officialProjects": [
+        {
+          "name": "Verity JE",
+          "projectId": 1591438,
+          "latestFile": "verity-5.7.3.jar",
+          "gameVersion": "1.20.1",
+          "loader": "Forge",
+          "downloads": 1588780
+        },
+        {
+          "name": "Verity BE",
+          "projectId": 1574632,
+          "latestFile": "Verity (Stable) (1.0.8)-(26.3).mcaddon",
+          "gameVersion": "26.30",
+          "downloads": 3288997
+        },
+        {
+          "name": "Verity - Bedrock Edition by PnTMC",
+          "projectId": 1575941,
+          "latestFile": "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
+          "gameVersion": "26.30",
+          "downloads": 5800414
+        }
+      ],
+      "newDemand": [
+        {
+          "topic": "Verity JE status 429 after working briefly",
+          "source": "https://www.reddit.com/r/MinecraftMod/comments/1v0d8ze/verity_je_broken/",
+          "firstPartyReference": "https://console.groq.com/docs/rate-limits",
+          "action": "Added a status 429 diagnosis and recovery checklist to /ai-model/."
+        }
+      ],
+      "promotion": {
+        "linksPosted": 0,
+        "reason": "No authenticated, rule-compliant placement with enough first-party context was available; no forced link was posted."
+      }
+    }
+  ]
+}

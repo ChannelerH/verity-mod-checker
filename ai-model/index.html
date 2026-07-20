@@ -6,7 +6,7 @@
     <title>Best AI Model for Verity Mod: Groq vs Ollama</title>
     <meta
       name="description"
-      content="Choose the best AI model route for Verity Mod Java, Groq, Ollama, voice issues, response delay, and safe credential handling."
+      content="Choose the best AI model route for Verity Mod Java and fix Groq status 429, rate limits, voice issues, response delay, and API key setup."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/ai-model/" />
@@ -43,6 +43,43 @@
             "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veritymodchecker.online/"},
               {"@type": "ListItem", "position": 2, "name": "AI Model", "item": "https://veritymodchecker.online/ai-model/"}
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best Groq model for Verity Mod?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Start with the model recommended by the installed Verity JE build. If no exact model is required, prefer a fast, stable model before testing larger or slower options."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I run Verity Mod fully local?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use the Ollama route only if the installed build supports it and the computer can run the selected model."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Verity not talk?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "If text works, check audio, microphone, dependency, and language support before switching AI models."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Verity Mod show status 429?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Groq status 429 means the provider rate-limited the request. Check the active model limits and reset window in Groq Console; another key in the same organization may share the same limit."
+                }
+              }
             ]
           }
         ]
@@ -239,9 +276,51 @@
             <p>Rotate the key through the provider and update local config; do not paste it into a website.</p>
           </article>
           <article class="error-card">
+            <span>Status 429</span>
+            <h3>Verity works, then stops</h3>
+            <p>Check the Groq rate-limit dashboard and reset window before changing the mod or API key.</p>
+          </article>
+          <article class="error-card">
             <span>Voice</span>
             <h3>Text works but speech fails</h3>
             <p>Check voice dependency and audio output before changing the AI model.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="status-429">
+        <div class="section-heading">
+          <p class="eyebrow">Status 429</p>
+          <h2>Fix Verity Mod status 429 without replacing the mod</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>What a Groq 429 error means</h3>
+            <p>
+              Groq documents HTTP 429 as "Too Many Requests." It appears when an account reaches a request,
+              token, or audio limit for a time window. That fits the player report where Verity answers for a
+              short time, stops for 30 to 60 minutes, and then starts again. It is an AI provider limit, not
+              evidence that the Verity Mod file, Forge profile, or Minecraft world is corrupt.
+            </p>
+            <p>
+              A new API key may not fix status 429 because Groq applies limits at the organization level. Keys
+              in the same organization can share the same ceiling. Check the exact model and current limits in
+              the Groq Console instead of repeatedly creating keys or reinstalling Verity JE.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>429 recovery checklist</h3>
+            <ol class="steps">
+              <li>Stop repeated prompts; retries can keep consuming the same request window.</li>
+              <li>Open Groq Console Limits and identify whether RPM, RPD, TPM, TPD, or audio reached its cap.</li>
+              <li>Wait for the displayed reset, then test one short text prompt before testing voice.</li>
+              <li>Reduce prompt frequency or context size if the same model repeatedly reaches its token limit.</li>
+              <li>Use a higher provider tier or the official Ollama route only when your installed Verity JE build supports it.</li>
+            </ol>
+            <p>
+              Do not post your API key in a support thread. Record the status code, model name, and time of the
+              error; those details are useful without exposing credentials.
+            </p>
           </article>
         </div>
       </section>
@@ -314,11 +393,21 @@
             and language support before switching AI models.
           </p>
         </details>
+        <details>
+          <summary>Why does Verity Mod show status 429?</summary>
+          <p>
+            Groq status 429 means the provider rate-limited the request. Check the active model's limits and
+            reset window in Groq Console; replacing the Verity Mod file or creating another key in the same
+            organization may not change the shared limit.
+          </p>
+        </details>
       </section>
 
       <aside class="source-strip" aria-label="Official AI setup references">
         <strong>Official setup references:</strong>
         <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq quickstart</a>
+        <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
+        <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
         <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
         <span>Use the provider flow required by your installed Verity JE build.</span>
       </aside>
