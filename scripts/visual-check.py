@@ -8,7 +8,15 @@ VIEWPORTS = {
     "desktop": {"width": 1440, "height": 1000},
     "mobile": {"width": 390, "height": 844},
 }
-ROUTES = ["/", "/java/", "/bedrock/", "/not-working/"]
+ROUTES = [
+    "/",
+    "/java/",
+    "/bedrock/",
+    "/ai-model/",
+    "/api-connection-failed/",
+    "/how-to-talk-to-verity/",
+    "/not-working/",
+]
 
 
 def assert_layout(page, route, viewport_name):

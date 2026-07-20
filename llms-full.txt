@@ -20,7 +20,11 @@ The Bedrock and MCPE pages cover addon import, behavior pack activation, resourc
 
 The VERITY.exe page explains that VERITY.exe is a CurseForge modpack route. It may be relevant when a player names the modpack directly, but it is not the same as Verity JE and not the same as a Bedrock addon.
 
-The AI model page explains that Groq is the hosted route and Ollama is the local route. The page does not collect keys. It warns players not to paste API keys into download pages, Reddit, Discord, or random forms. It also separates text response problems from voice output problems.
+The AI model page compares Groq, supported OpenRouter configurations, and local Ollama. The page does not collect keys. It warns players not to paste API keys into download pages, Reddit, Discord, or random forms. It also separates text response problems from voice output problems.
+
+The API connection failed page maps status 401, 403, 404, 429, provider 5xx responses, and local Ollama connection failures to the correct layer. It explains that a provider status code normally appears after the Java mod has loaded, so players should not replace the jar to fix a rate limit. It links to the current Verity JE project, maintainer tutorial, and primary Groq, OpenRouter, and Ollama documentation.
+
+The how-to-talk page separates all three current interaction routes. Verity JE needs a working AI provider before text and voice testing. Verity BE tells players to type Verity before a message and documents its Beta API and backend requirements. The separate PnTMC Bedrock project documents chat while Verity is on the ground, the Hey Verity inventory wake phrase, and a distance rule. The page does not combine instructions across projects.
 
 The not-working, voice-not-working, and taken-down pages handle symptom searches: crashes, old links, 404 pages, unsafe mirrors, box not spawning, dialogue missing, only saying "...", chat works but voice is silent, and suspected unsafe reposts.
 

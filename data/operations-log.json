@@ -2,6 +2,123 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "observedAt": "2026-07-20T11:17:15+08:00",
+      "analytics": {
+        "liveAccess": "blocked",
+        "reason": "The available Chrome session opened the GSC add-property welcome page and the GA4 provisioning welcome page instead of the existing properties. No property was added or reconfigured.",
+        "retainedBaseline": {
+          "gscLast24Hours": {
+            "clicks": 1,
+            "impressions": 50,
+            "ctr": 0.02,
+            "averagePosition": 9.1,
+            "pageObservation": "All previously reported impressions and the click were attributed to the homepage."
+          },
+          "ga4Last7Days": {
+            "activeUsers": 150,
+            "newUsers": 154,
+            "sessions": 164,
+            "organicSearchSessions": 19,
+            "directSessions": 135,
+            "referralSessions": 6,
+            "veritySourceCheckEvents": 11,
+            "outboundProjectClickVisible": false
+          }
+        }
+      },
+      "officialProjects": [
+        {
+          "name": "Verity JE",
+          "projectId": 1591438,
+          "latestFile": "verity-5.7.3.jar",
+          "gameVersion": "1.20.1",
+          "loader": "Forge",
+          "downloads": 1592303,
+          "source": "https://www.curseforge.com/minecraft/mc-mods/verity-je"
+        },
+        {
+          "name": "Verity BE",
+          "projectId": 1574632,
+          "latestFile": "Verity (Stable) (1.0.8)-(26.3).mcaddon",
+          "gameVersion": "26.30",
+          "downloads": 3292212,
+          "source": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be"
+        },
+        {
+          "name": "Verity - Bedrock Edition by PnTMC",
+          "projectId": 1575941,
+          "latestFile": "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
+          "gameVersion": "26.30",
+          "downloads": 5805950,
+          "source": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition"
+        }
+      ],
+      "searchSample": {
+        "query": "verity mod",
+        "market": "United States",
+        "siteResultVisible": false,
+        "topResultTypes": [
+          "CurseForge Verity JE",
+          "Reddit discussion",
+          "Modrinth Verity JE",
+          "CurseForge Verity BE",
+          "Fandom",
+          "Google Play",
+          "YouTube"
+        ],
+        "currentQuestionSignals": [
+          "groq api key",
+          "api connection failed verity mod",
+          "openrouter",
+          "ollama",
+          "how to talk to verity in minecraft",
+          "verity voice changer",
+          "aternos"
+        ],
+        "observation": "The broad query currently favors authoritative project, community, app, wiki, and video hosts. The fastest controllable opportunity is useful long-tail troubleshooting coverage and relevant community referral traffic."
+      },
+      "siteChanges": {
+        "homepage": "Moved the exact topic to the start of the title and H1, added visible entrances for current API and interaction questions, refreshed official project totals, and preserved natural occurrence density.",
+        "newPages": [
+          {
+            "url": "https://veritymodchecker.online/api-connection-failed/",
+            "intent": "Groq 401 and 429, OpenRouter errors, Ollama connection failures, and silent replies"
+          },
+          {
+            "url": "https://veritymodchecker.online/how-to-talk-to-verity/",
+            "intent": "Java talk controls, Verity BE chat prefix, PnTMC wake phrase, distance rules, dots, and voice separation"
+          }
+        ],
+        "validation": {
+          "staticAudit": "14 pages passed; every page has at least 1200 visible words, one H1, unique metadata, valid JSON-LD, and an exact-phrase occurrence density from 0.28% to 1.43%.",
+          "visualAudit": "Desktop and mobile screenshots passed for the homepage, Java, Bedrock, AI model, API error, how-to-talk, and general troubleshooting routes."
+        }
+      },
+      "distribution": {
+        "cloudflareDeployment": "https://2a452a91.verity-mod-checker.pages.dev",
+        "customDomainVerified": true,
+        "wwwRedirectVerified": true,
+        "indexNow": {
+          "statusCode": 200,
+          "urls": [
+            "https://veritymodchecker.online/",
+            "https://veritymodchecker.online/api-connection-failed/",
+            "https://veritymodchecker.online/how-to-talk-to-verity/"
+          ]
+        },
+        "communityPlacement": {
+          "type": "relevant-ai-model-answer",
+          "url": "https://www.reddit.com/r/MinecraftMod/comments/1uvmw8n/comment/oyls858/",
+          "status": "published",
+          "note": "Answered the OP's 4 GB VRAM and model-quality question with a practical hosted-versus-local test order and linked the matching provider guide."
+        }
+      },
+      "blocked": [
+        "Current browser access did not expose the configured GSC or GA4 properties, so no fresh query or landing-page export was fabricated.",
+        "GSC manual indexing was not claimed; the prior daily request quota was already blocked and the current session did not have property access."
+      ]
+    },
+    {
       "observedAt": "2026-07-20T10:42:53+08:00",
       "gsc": {
         "window": "last-24-hours",

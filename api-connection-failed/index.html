@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Mod API Connection Failed: Fix 401, 429 &amp; Timeouts</title>
+    <meta
+      name="description"
+      content="Fix Verity Mod API connection failed errors by status code. Diagnose Groq 401 or 429, OpenRouter errors, Ollama connection problems, and silent replies."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/api-connection-failed/" />
+    <meta property="og:title" content="Verity Mod API Connection Failed: Error Fixes" />
+    <meta property="og:description" content="Use the status code and provider to fix Groq, OpenRouter, or Ollama connection failures without reinstalling Minecraft." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/api-connection-failed/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Verity Mod API Connection Failed: Fix 401, 429 and Timeouts",
+            "url": "https://veritymodchecker.online/api-connection-failed/",
+            "description": "A status-code troubleshooting guide for Verity JE AI provider connection failures.",
+            "dateModified": "2026-07-20"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veritymodchecker.online/"},
+              {"@type": "ListItem", "position": 2, "name": "API Connection Failed", "item": "https://veritymodchecker.online/api-connection-failed/"}
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why does Verity Mod say API connection failed?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The message means Verity JE loaded but its selected AI provider did not return a usable response. The status code separates invalid credentials, provider permissions, rate limits, unavailable models, network failures, and local Ollama problems."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I fix Verity Mod status 429?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Stop repeated prompts, open the provider limits page, identify the exhausted request or token window, wait for its reset, and test one short text prompt. Groq limits apply at the organization level, so another key in the same organization may not help."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does API connection failed mean the Verity file is broken?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Usually no. If Minecraft loads Verity and reports an HTTP or provider error, the mod reached its AI layer. Diagnose the selected provider and status code before replacing the jar."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I post my API key when asking for help?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Share the provider name, status code, model name, time, and sanitized log line. Revoke any key that was shown in a screenshot, chat, forum, or public log."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Download Guide home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/how-to-talk-to-verity/">Talk</a>
+        <a href="/ai-model/">AI setup</a>
+        <a href="/not-working/">Fixes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Live problem route checked July 20, 2026</p>
+          <h1>Verity Mod API Connection Failed</h1>
+          <p class="lede">
+            Do not reinstall the jar until you read the status code. An API connection failed message usually
+            means Verity JE loaded and reached its AI layer, but Groq, OpenRouter, or local Ollama did not
+            return a usable answer. Match the code below, fix one layer, and retest with one short text prompt.
+          </p>
+          <div class="trust-strip" aria-label="Troubleshooting scope">
+            <span>401 key check</span>
+            <span>429 rate limit</span>
+            <span>Ollama local check</span>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Fast diagnosis</span>
+          </div>
+          <h2>Use the code, not another download</h2>
+          <p>If the game shows a status number, record it before restarting. The number tells you which system rejected the request.</p>
+          <ol class="steps">
+            <li><strong>401:</strong> invalid, missing, revoked, or incorrectly pasted key.</li>
+            <li><strong>403:</strong> the account or key lacks permission for that request.</li>
+            <li><strong>404:</strong> the selected endpoint or model may no longer exist.</li>
+            <li><strong>429:</strong> a request, token, or audio rate limit was reached.</li>
+            <li><strong>No code:</strong> check network, provider selection, local service, and logs.</li>
+          </ol>
+          <div class="action-row">
+            <a class="primary-link" href="#error-map">Match the error</a>
+            <a class="copy-button" href="/ai-model/">Compare providers</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intent-table" id="error-map" aria-label="API error status map">
+        <div class="section-heading">
+          <p class="eyebrow">Error map</p>
+          <h2>What each connection error means</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Message or code</th>
+                <th>Most likely layer</th>
+                <th>First useful action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>401 Unauthorized</td>
+                <td>Credential</td>
+                <td>Confirm the selected provider, revoke exposed keys, create one valid key, and paste it without quotes or spaces.</td>
+              </tr>
+              <tr>
+                <td>403 Forbidden</td>
+                <td>Account permission</td>
+                <td>Check model access, account restrictions, and provider permissions instead of changing Minecraft files.</td>
+              </tr>
+              <tr>
+                <td>404 Not Found</td>
+                <td>Model or endpoint</td>
+                <td>Return to the current provider model list and select a model supported by the installed build.</td>
+              </tr>
+              <tr>
+                <td>429 Too Many Requests</td>
+                <td>Rate limit</td>
+                <td>Stop retrying, inspect the exact limit and reset window, then test after the reset.</td>
+              </tr>
+              <tr>
+                <td>500, 502, or 503</td>
+                <td>Provider service</td>
+                <td>Wait and retry once later. Check provider status before rotating keys or reinstalling.</td>
+              </tr>
+              <tr>
+                <td>Connection refused</td>
+                <td>Local Ollama</td>
+                <td>Confirm Ollama is running, the expected local address is reachable, and the configured model is installed.</td>
+              </tr>
+              <tr>
+                <td>Silent reply with no code</td>
+                <td>Config, voice, or logs</td>
+                <td>Test text first, open the latest log, and separate AI output from text-to-speech.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">One clean test</p>
+          <h2>Confirm that the mod loaded before touching the API</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>An API error is later than a loader error</h3>
+            <p>
+              Start by naming the layer that already works. If Minecraft reaches the main menu, the Verity entry
+              appears in the mod list, the world opens, and the box or entity appears, the base installation has
+              passed several checks. If a prompt then produces an API connection failed line, the immediate problem
+              is probably not Forge, the Verity JE jar, or the world save. It is the provider path used after the
+              character tries to answer.
+            </p>
+            <p>
+              If the game crashes before those steps, use the <a href="/java/">Java version route</a> instead.
+              The current checked Java file is <strong>verity-5.7.3.jar</strong> for Minecraft 1.20.1 Forge. The
+              project page still lists the 1.21.1 NeoForge branch but warns that it is deprecated and has many bugs.
+              Do not combine a 1.20.1 Forge file with a 1.21.1 NeoForge profile and then diagnose the result as an
+              API problem.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Record five details before changing anything</h3>
+            <p>
+              Write down the provider selected in the mod, the exact status code, the selected model name, the time
+              of the failure, and whether one short text prompt ever worked. Also note whether text appears but voice
+              does not. Those facts distinguish a bad key, a rate limit, an unavailable model, a provider outage, a
+              local Ollama service problem, and a separate audio failure.
+            </p>
+            <p>
+              Keep the log line but remove credentials. A useful support example is "Groq, status 429, model name,
+              14:20 UTC, text worked for five minutes." A screenshot containing the key is not useful and creates a
+              second problem. Revoke any token that has already been exposed publicly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="groq-fixes">
+        <div class="section-heading">
+          <p class="eyebrow">Groq route</p>
+          <h2>Fix Groq 401 and status 429 in the right order</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>For 401, replace the credential once</h3>
+            <p>
+              Groq documents 401 as a request without valid authentication credentials. Confirm that Groq is the
+              provider selected in the Verity configuration. Create or rotate the key in Groq Console, paste only
+              the key value into the local mod configuration, save, and restart the game. Avoid quotation marks,
+              leading spaces, trailing spaces, or a key copied from the wrong provider.
+            </p>
+            <p>
+              Do not cycle through many keys without reading the code. If a fresh, private key still gives 401,
+              confirm the config was saved and that an older config file is not overriding the in-game setting. If
+              the code changes to 429, authentication now works and the next issue is quota. That is progress, not
+              a reason to download the jar again.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>For 429, inspect the exhausted limit</h3>
+            <p>
+              Groq defines 429 as too many requests in a time window. Its current documentation tracks requests per
+              minute and day, tokens per minute and day, plus audio limits. Limits apply at the organization level,
+              not to each key separately. That is why making another key in the same organization can produce the
+              same failure.
+            </p>
+            <p>
+              Stop repeated prompts, open the Groq limits page, identify which counter reached its ceiling, and wait
+              for the displayed reset. Then send one short text prompt. Test speech only after text works. If the
+              limit returns quickly, reduce prompt frequency or context use, choose a supported lower-demand model,
+              use a suitable paid tier, or follow the maintainer-linked local Ollama route if your computer can run it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Provider split</p>
+          <h2>Do not paste a Groq fix into OpenRouter or Ollama</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>OpenRouter has its own key, credits, and model IDs</h3>
+            <p>
+              Some current Verity-related configurations and add-ons expose an OpenRouter path, but an OpenRouter
+              key is not a Groq key. Select OpenRouter in the local configuration before entering an OpenRouter token.
+              If the account is out of credits or the requested model is unavailable, OpenRouter returns its own
+              structured error. Read the provider message and model ID instead of assuming every failure is Groq 429.
+            </p>
+            <p>
+              Model names can change, and a model may be routed through different upstream providers. Use the current
+              OpenRouter model list and the option supported by your installed build. Avoid copying a model ID from an
+              old video without checking it. If text begins working but speech remains silent, move to the
+              <a href="/voice-not-working/">voice troubleshooting route</a>; the API text path has already succeeded.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Ollama removes the cloud key but adds a local service</h3>
+            <p>
+              The Verity JE project links a dedicated Ollama setup tutorial for fully local operation. Local does not
+              mean automatic. Ollama must be installed and running, the configured model must be present, and the mod
+              must connect to the local service address it expects. A connection refused message usually means the
+              service is not listening or a firewall, address, or port differs from the configuration.
+            </p>
+            <p>
+              Confirm the model can answer through Ollama before opening Minecraft. Then launch a clean profile and
+              test a short prompt. Watch RAM, CPU or GPU load, and response time. A model that is too large can appear
+              silent while it loads or runs slowly. Choose a smaller supported model before treating latency as file
+              corruption. Never install an unknown executable that claims it can "unlock" local Verity AI.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="error-section">
+        <div class="section-heading">
+          <p class="eyebrow">Avoid false fixes</p>
+          <h2>Actions that usually waste time</h2>
+        </div>
+        <div class="error-grid">
+          <article class="error-card">
+            <span>Download</span>
+            <h3>Replacing the jar for 429</h3>
+            <p>A rate limit belongs to the provider account and time window. Reinstalling the same release cannot reset it.</p>
+          </article>
+          <article class="error-card">
+            <span>Keys</span>
+            <h3>Publishing a credential</h3>
+            <p>Support only needs a sanitized error. Revoke a key immediately if it appears in a screenshot or public post.</p>
+          </article>
+          <article class="error-card">
+            <span>Voice</span>
+            <h3>Changing AI when text works</h3>
+            <p>A text response proves the model path works. Check TTS, output device, language, and voice dependencies next.</p>
+          </article>
+          <article class="error-card">
+            <span>Retries</span>
+            <h3>Spamming prompts during a limit</h3>
+            <p>Repeated retries do not repair quota. Wait for the provider reset and retest with a single short prompt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Support-ready result</p>
+          <h2>Know when the connection is actually fixed</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Pass text before voice</h3>
+            <p>
+              A clean verification has a simple sequence. Start Minecraft with the intended profile. Confirm the
+              Verity entry and world behavior. Send one short text question. Wait for a complete text answer. Send a
+              second question only after the first finishes. If both responses arrive without an error, the AI
+              connection is working at that moment. You can then test speech recognition and text-to-speech separately.
+            </p>
+            <p>
+              Run the same two-prompt test after changing a key, provider, or local model. Changing one variable makes
+              the result understandable. If the error returns, record the new code and provider dashboard state. A
+              repeatable failure with sanitized evidence is suitable for the maintainer support channel; a vague
+              statement that Verity is broken is not.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>When reinstalling is reasonable</h3>
+            <p>
+              Reinstall only when the file is missing, corrupted, from the wrong edition, or incompatible with the
+              profile. Use the checked maintainer record, confirm the filename and Minecraft version, and test without
+              unrelated mods. Reinstalling is also reasonable after a failed partial download, but not as a response
+              to a provider status code.
+            </p>
+            <p>
+              If the API succeeds outside Minecraft but the same valid configuration consistently fails inside a clean
+              profile, collect the launcher log, exact Verity JE version, Forge version, provider, model, and sanitized
+              error. That is the point where a mod configuration or compatibility report is more useful than another
+              account or another file mirror.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Verity Mod API connection questions</h2>
+        </div>
+        <details open>
+          <summary>Why does Verity Mod say API connection failed?</summary>
+          <p>
+            The selected provider did not return a usable response. Read the status code and provider message. A 401
+            points to authentication, 403 to permission, 404 to a model or endpoint, 429 to rate limits, and 5xx to a
+            service-side problem. No-code failures need a network, config, Ollama service, or log check.
+          </p>
+        </details>
+        <details>
+          <summary>How do I fix status 429?</summary>
+          <p>
+            Stop sending prompts, inspect the provider limits, identify the exhausted request, token, or audio window,
+            wait for its reset, and test one short text prompt. For Groq, limits apply at the organization level, so a
+            second key in the same organization may share the same ceiling.
+          </p>
+        </details>
+        <details>
+          <summary>Does API connection failed mean the Verity file is broken?</summary>
+          <p>
+            Usually not. The error normally appears after the mod has loaded far enough to call its AI provider. Check
+            the provider path first. Revisit the file only if Minecraft cannot load the mod or the file does not match
+            the game version and loader.
+          </p>
+        </details>
+        <details>
+          <summary>Can I share my API key with someone fixing the mod?</summary>
+          <p>
+            No. Share the provider, model, status code, timestamp, and sanitized error text. Revoke any key that was
+            pasted into a public chat, support post, screenshot, stream, or form.
+          </p>
+        </details>
+      </section>
+
+      <aside class="source-strip" aria-label="Primary troubleshooting references">
+        <strong>Primary references checked July 20:</strong>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
+        <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Maintainer setup tutorial</a>
+        <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
+        <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
+        <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-routes" aria-label="Footer route links">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/bedrock/">Bedrock / MCPE</a>
+        <a href="/how-to-talk-to-verity/">How to talk</a>
+        <a href="/api-connection-failed/">API errors</a>
+        <a href="/ai-model/">AI model</a>
+        <a href="/voice-not-working/">Voice fixes</a>
+        <a href="/not-working/">All fixes</a>
+      </nav>
+      <p>Independent troubleshooting guide. No API keys are collected. Not affiliated with the listed projects or providers.</p>
+    </footer>
+  </body>
+</html>

@@ -9,12 +9,14 @@
 - [What Is the Verity Mod?](https://veritymodchecker.online/what-is-verity-mod/): Separates the ThatMob horror character and video experience from current playable Java and Bedrock community projects.
 - [How to Get Verity Mod](https://veritymodchecker.online/how-to-get-verity-mod/): Edition-specific Java and Bedrock installation order, source checks, and first-launch troubleshooting.
 - [What Happened to Verity Mod?](https://veritymodchecker.online/what-happened/): Explains old 404 links, current projects, and project-name confusion.
-- [Verity JE Download Status](https://veritymodchecker.online/verity-je/): Java route for Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, and voice setup.
+- [Verity JE Download Status](https://veritymodchecker.online/java/#versions): Java route for Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, and voice setup.
 - [Verity Mod Java Route](https://veritymodchecker.online/java/): Java install and troubleshooting guide.
 - [Verity Mod Bedrock Route](https://veritymodchecker.online/bedrock/): Bedrock addon and MCPE setup guide.
-- [Verity Mod MCPE Route](https://veritymodchecker.online/mcpe/): Mobile import, pack activation, and clean-world checks.
+- [Verity Mod MCPE Route](https://veritymodchecker.online/bedrock/#mcpe): Mobile import, pack activation, and clean-world checks.
 - [What Is VERITY.exe?](https://veritymodchecker.online/verity-exe/): Separates the VERITY.exe modpack from standalone Java and Bedrock routes.
-- [Best AI Model for Verity Mod](https://veritymodchecker.online/ai-model/): Groq, Ollama, voice, latency, and credential-safety guidance.
+- [Best AI Model for Verity Mod](https://veritymodchecker.online/ai-model/): Groq, OpenRouter, Ollama, voice, latency, and credential-safety guidance.
+- [Verity Mod API Connection Failed](https://veritymodchecker.online/api-connection-failed/): Status-code diagnosis for Groq 401 and 429, OpenRouter errors, Ollama connections, and silent replies.
+- [How to Talk to Verity](https://veritymodchecker.online/how-to-talk-to-verity/): Project-specific Java controls, Verity BE chat prefix, and PnTMC wake phrase and distance rules.
 - [Verity Mod Not Working](https://veritymodchecker.online/not-working/): Fixes for crashes, box not spawning, dialogue missing, and broken setup.
 - [Verity Mod Voice Not Working](https://veritymodchecker.online/voice-not-working/): Voice and audio troubleshooting.
 - [Verity Mod Taken Down or 404](https://veritymodchecker.online/taken-down/): Recovery checklist for old links, mirrors, and removed pages.

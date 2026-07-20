@@ -16,14 +16,16 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - MCPE mobile route: https://veritymodchecker.online/bedrock/#mcpe
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
 - Voice not working fix: https://veritymodchecker.online/voice-not-working/
+- API connection failed: https://veritymodchecker.online/api-connection-failed/
+- How to talk to Verity: https://veritymodchecker.online/how-to-talk-to-verity/
 - Taken down or 404 route: https://veritymodchecker.online/taken-down/
 
 ## What It Covers
 
-- Java route: Verity JE record `8461257`, Forge 1.20.1, NeoForge status, Groq, Ollama, and version checks.
+- Java route: Verity JE record `8461257`, Forge 1.20.1, NeoForge status, Groq, OpenRouter, Ollama, and version checks.
 - Bedrock / MCPE routes: Verity BE record `8420981`, PnTMC record `8327253`, pack activation, Beta APIs, commands, and world setup.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
-- Troubleshooting: box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
+- Troubleshooting: API 401/429, box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
 The checker verifies identity signals against the public metadata recorded on July 20, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current Java file. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on the maintainer's CurseForge record instead of being mirrored by this site.
