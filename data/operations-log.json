@@ -2,6 +2,209 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "observedAt": "2026-07-20T14:03:20+08:00",
+      "analyticsAccess": {
+        "status": "live",
+        "googleAccount": "huaerze12138@gmail.com",
+        "gscProperty": "sc-domain:veritymodchecker.online",
+        "ga4Property": "Verity Mod Checker",
+        "ga4PropertyId": 545836630,
+        "note": "The earlier welcome pages came from the wrong Chrome account context. The configured properties were read successfully from Google account slot u/2."
+      },
+      "gsc": {
+        "last24Hours": {
+          "clicks": 1,
+          "impressions": 61,
+          "ctr": 0.016,
+          "averagePosition": 8.8,
+          "lastUpdated": "3 hours before observation",
+          "landingPages": [
+            {
+              "url": "https://veritymodchecker.online/",
+              "clicks": 1,
+              "impressions": 61
+            }
+          ],
+          "visibleQueries": [
+            {
+              "query": "verity-3.4.1.jar",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "averagePosition": 4.3
+            },
+            {
+              "query": "verity pfkl",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "averagePosition": 7
+            },
+            {
+              "query": "verity map",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "averagePosition": 8.5
+            },
+            {
+              "query": "verity loading screen",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "averagePosition": 9
+            },
+            {
+              "query": "verity mod minecraft java download",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "averagePosition": 16
+            },
+            {
+              "query": "verity mod java download free",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "averagePosition": 35
+            },
+            {
+              "query": "verity mod java",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "averagePosition": 36
+            }
+          ],
+          "queryPrivacyNote": "The query that produced the click was not present in the visible query table because Search Console withholds low-volume query data."
+        },
+        "finalizedSevenDayView": {
+          "dataThrough": "2026-07-18",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "averagePosition": 5.9,
+          "pagesSeen": [
+            "https://veritymodchecker.online/",
+            "http://veritymodchecker.online/",
+            "https://veritymodchecker.online/download/",
+            "https://veritymodchecker.online/how-to-get-verity-mod/"
+          ],
+          "note": "This finalized view excludes the newer hourly data and must not be compared directly with the last-24-hours total."
+        },
+        "indexing": {
+          "pageReport": "processing; Search Console asks to check again in about one day",
+          "httpsPagesShownInOverview": 3,
+          "sitemap": {
+            "url": "https://veritymodchecker.online/sitemap.xml",
+            "submissionStatus": "success",
+            "discoveredPagesBeforeResubmission": 12,
+            "discoveredPagesAfterResubmission": 14,
+            "discoveredVideos": 0
+          }
+        }
+      },
+      "ga4": {
+        "last7Days": {
+          "activeUsers": 152,
+          "newUsers": 158,
+          "sessions": 162,
+          "events": 695,
+          "channels": {
+            "directSessions": 134,
+            "organicSearchSessions": 21,
+            "referralSessions": 7
+          },
+          "organicSearch": {
+            "engagedSessions": 6,
+            "engagementRate": 0.2857,
+            "averageEngagementTimePerSessionSeconds": 11,
+            "events": 75
+          },
+          "firstUserSourcesObserved": {
+            "bing / organic": 11,
+            "yandex.ru / referral": 8,
+            "gist.github.com / referral": 3,
+            "github.com / referral": 2
+          },
+          "customEvents": {
+            "verity_source_check": {
+              "events": 11,
+              "users": 2
+            },
+            "verity_outbound_project_click": {
+              "events": 7,
+              "users": 4,
+              "markedAsKeyEventAt": "2026-07-20T14:03:20+08:00",
+              "verification": "The event action menu changed from 'Mark as key event' to 'Unmark as key event'."
+            },
+            "verity_hash_copy": {
+              "events": 1,
+              "users": 1
+            }
+          }
+        },
+        "landingPages": {
+          "reportWindow": "2026-06-22 through 2026-07-19",
+          "topRows": [
+            {
+              "path": "/",
+              "sessions": 88,
+              "activeUsers": 79,
+              "averageEngagementTimePerSessionSeconds": 48
+            },
+            {
+              "path": "/not-working",
+              "sessions": 16,
+              "activeUsers": 16,
+              "averageEngagementTimePerSessionSeconds": 17
+            },
+            {
+              "path": "/bedrock",
+              "sessions": 11,
+              "activeUsers": 11,
+              "averageEngagementTimePerSessionSeconds": 3
+            },
+            {
+              "path": "/taken-down",
+              "sessions": 11,
+              "activeUsers": 11,
+              "averageEngagementTimePerSessionSeconds": 5
+            },
+            {
+              "path": "/download",
+              "sessions": 10,
+              "activeUsers": 10,
+              "averageEngagementTimePerSessionSeconds": 1
+            },
+            {
+              "path": "/voice-not-working",
+              "sessions": 10,
+              "activeUsers": 10,
+              "averageEngagementTimePerSessionSeconds": 2
+            }
+          ]
+        },
+        "linkedSearchConsoleReport": {
+          "landingPage": "/",
+          "googleOrganicClicks": 0,
+          "googleOrganicImpressions": 4,
+          "averagePosition": 1,
+          "note": "The linked GA4 Search Console report has a different processing delay from the live GSC performance report."
+        }
+      },
+      "actions": [
+        "Marked verity_outbound_project_click as a GA4 key event after its first verified appearance.",
+        "Resubmitted the live sitemap after verifying it contains 14 URLs; GSC confirmed success and updated discovered pages from 12 to 14.",
+        "Kept the site unchanged because the newly published intent pages do not yet have enough Search Console data and the visible query samples contain only one to three impressions each."
+      ],
+      "nextChecks": [
+        "Recheck the GSC page-indexing report after processing completes.",
+        "Watch whether /api-connection-failed/ and /how-to-talk-to-verity/ enter the page and query tables before changing titles or copy.",
+        "Treat Java download rankings of positions 16 to 36 as a content-and-authority gap only after a larger finalized sample confirms the pattern."
+      ]
+    },
+    {
       "observedAt": "2026-07-20T11:17:15+08:00",
       "analytics": {
         "liveAccess": "blocked",
