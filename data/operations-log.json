@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "entries": [
     {
-      "observedAt": "2026-07-20T09:41:00+08:00",
+      "observedAt": "2026-07-20T10:42:53+08:00",
       "gsc": {
         "window": "last-24-hours",
         "clicks": 1,
@@ -78,7 +78,7 @@
         }
       },
       "promotion": {
-        "linksPosted": 5,
+        "linksPosted": 8,
         "placements": [
           {
             "type": "minecraft-directory-request",
@@ -104,6 +104,29 @@
             "type": "release-data-snapshot",
             "url": "https://github.com/ChannelerH/verity-mod-checker/releases/tag/data-2026-07-20",
             "status": "published"
+          },
+          {
+            "type": "minecraft-web-app-directory-pull-request",
+            "url": "https://github.com/bs-community/awesome-minecraft/pull/61",
+            "status": "pending-review"
+          },
+          {
+            "type": "free-minecraft-tools-directory-request",
+            "url": "https://github.com/fmhy/edit/issues/5840",
+            "status": "pending-review"
+          },
+          {
+            "type": "status-429-community-answer",
+            "url": "https://www.reddit.com/r/MinecraftMod/comments/1v0d8ze/comment/oylml1h/",
+            "status": "published"
+          }
+        ],
+        "directorySubmissions": [
+          {
+            "name": "Tool2Mate",
+            "url": "https://tool2mate.com/",
+            "method": "email",
+            "status": "pending-review"
           }
         ],
         "refreshedPlacements": [
@@ -112,8 +135,8 @@
         ],
         "blocked": [
           "GitHub profile website field required a user OAuth scope that was not available; no reauthorization was forced.",
-          "The relevant Reddit thread was logged out; no login, CAPTCHA, or promotional reply was attempted.",
-          "Tool Commons requires an OSI-approved license and no tracking, so this GA4-enabled site was not submitted."
+          "Tool Commons requires an OSI-approved license and no tracking, so this GA4-enabled site was not submitted.",
+          "LUMT's submission link points to a deprecated repository; its replacement restricts issues and has an incomplete contribution guide, so no submission was forced."
         ]
       }
     }
