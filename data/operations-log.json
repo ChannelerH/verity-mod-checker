@@ -54,9 +54,32 @@
           "action": "Added a status 429 diagnosis and recovery checklist to /ai-model/."
         }
       ],
+      "searchSample": {
+        "siteResultVisible": false,
+        "competitorsObserved": [
+          "https://veritymod.com/",
+          "https://veritymod.wiki/",
+          "https://veritymod.org/",
+          "https://veritymod.blog/"
+        ],
+        "observation": "The sampled results still favored older competitor domains. Some competitor Java guidance still displayed Verity JE 5.6.4 while the maintainer page listed 5.7.3."
+      },
+      "distribution": {
+        "githubCommit": "e0d660f",
+        "cloudflareDeployment": "https://71a201a9.verity-mod-checker.pages.dev",
+        "indexNow": {
+          "url": "https://veritymodchecker.online/ai-model/",
+          "statusCode": 200
+        },
+        "gsc": {
+          "url": "https://veritymodchecker.online/ai-model/",
+          "inspection": "Not indexed; Google did not yet recognize the URL.",
+          "requestStatus": "Blocked by the account's daily manual indexing quota; retry after the quota resets."
+        }
+      },
       "promotion": {
         "linksPosted": 0,
-        "reason": "No authenticated, rule-compliant placement with enough first-party context was available; no forced link was posted."
+        "reason": "A relevant Reddit thread was verified, but the available browser session was logged out. No login, CAPTCHA, or forced promotional reply was attempted."
       }
     }
   ]
