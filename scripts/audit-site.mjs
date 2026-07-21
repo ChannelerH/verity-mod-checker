@@ -78,6 +78,9 @@ const worker = fs.readFileSync("_worker.js", "utf8");
 for (const retiredRoute of ["/verity-je", "/mcpe"]) {
   if (!worker.includes(retiredRoute)) errors.push(`_worker.js: missing redirect for ${retiredRoute}`);
 }
+if (!worker.includes('url.pathname === "/data/operations-log.json"')) {
+  errors.push("_worker.js: private operations log path is not blocked");
+}
 
 for (const file of pageFiles) {
   const html = fs.readFileSync(file, "utf8");

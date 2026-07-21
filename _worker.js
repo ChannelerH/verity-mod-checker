@@ -28,6 +28,17 @@ export default {
       });
     }
 
+    if (url.pathname === "/data/operations-log.json") {
+      return new Response("Not found", {
+        status: 404,
+        headers: {
+          "cache-control": "no-store",
+          "content-type": "text/plain; charset=utf-8",
+          "x-content-type-options": "nosniff",
+        },
+      });
+    }
+
     const assetResponse = await env.ASSETS.fetch(request);
     const headers = new Headers(assetResponse.headers);
     const contentType = headers.get("content-type") || "";

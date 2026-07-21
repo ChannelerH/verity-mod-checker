@@ -6,3 +6,5 @@ dist-cf/
 .env.*
 .wrangler/
 __pycache__/
+.seo-operations.private.json
+data/operations-log.json

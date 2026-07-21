@@ -28,7 +28,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Troubleshooting: API 401/429, box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
-The checker verifies identity signals against the public metadata recorded on July 20, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current Java file. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on the maintainer's CurseForge record instead of being mirrored by this site.
+The checker verifies identity signals against the public metadata recorded on July 21, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current Java file. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on the maintainer's CurseForge record instead of being mirrored by this site.
 
 ## Local Preview
 

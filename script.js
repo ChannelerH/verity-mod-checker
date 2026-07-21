@@ -323,7 +323,7 @@ const knownProjects = [
     id: "1574632",
     slugs: ["/minecraft-bedrock/addons/verity-be"],
     releases: [
-      { filename: "Verity (Stable) (1.0.8)-(26.3).mcaddon", record: "8420981", sizeMb: 18.80, version: "Bedrock 26.30", published: "July 12, 2026" }
+      { filename: "Verity (Stable) (1.0.8)-(26.3#).mcaddon", record: "8420981", sizeMb: 18.80, version: "Bedrock 26.30", published: "July 12, 2026" }
     ],
     link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files"
   },
