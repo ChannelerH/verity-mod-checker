@@ -1,9 +1,9 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
-  "schemaVersion": 1,
-  "checkedAt": "2026-07-21T09:34:03+08:00",
+  "schemaVersion": 2,
+  "checkedAt": "2026-07-22T09:28:19+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
-  "method": "Manual comparison against the linked maintainer project and exact file records. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
     {
       "name": "Verity JE",
@@ -12,8 +12,39 @@
       "projectId": 1591438,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
       "status": "current",
-      "projectDownloadsAtCheck": 1689651,
+      "projectDownloadsAtCheck": 1778387,
       "projectDownloadsApproximate": false,
+      "verifiedAlternateSources": [
+        {
+          "host": "Modrinth",
+          "owner": "Varmite",
+          "projectId": "on1Y0osD",
+          "projectUrl": "https://modrinth.com/mod/verity-je-official",
+          "status": "current",
+          "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
+          "projectDownloadsAtCheck": 121460,
+          "projectDownloadsApproximate": false,
+          "releases": [
+            {
+              "status": "current",
+              "filename": "verity-5.7.3.jar",
+              "recordId": "yAt0wv1Z",
+              "recordUrl": "https://modrinth.com/mod/verity-je-official/version/5.7.3",
+              "downloadUrl": "https://cdn.modrinth.com/data/on1Y0osD/versions/yAt0wv1Z/verity-5.7.3.jar",
+              "minecraftVersion": "1.20.1",
+              "loader": "Forge",
+              "packageType": "jar",
+              "displayedSizeMb": 235.06,
+              "sizeBytes": 246481139,
+              "publishedDate": "2026-07-18",
+              "hashes": {
+                "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
+                "sha512": "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"
+              }
+            }
+          ]
+        }
+      ],
       "releases": [
         {
           "status": "current",
@@ -46,7 +77,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 3327574,
+      "projectDownloadsAtCheck": 3362730,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -69,7 +100,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 5874830,
+      "projectDownloadsAtCheck": 5945425,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -84,13 +115,6 @@
           "publishedDate": "2026-06-27"
         }
       ]
-    }
-  ],
-  "unverifiedRoutes": [
-    {
-      "name": "Verity Java",
-      "host": "Modrinth",
-      "reason": "A recently crawled listing could not be confirmed through the public project page or Modrinth API at check time, so it is not presented as a current download route."
     }
   ]
 }

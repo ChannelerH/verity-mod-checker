@@ -5,30 +5,38 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-21T09:34:03+08:00</updated>
+  <updated>2026-07-22T09:28:19+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity JE 5.7.3 now has a verified Modrinth route and publisher checksum</title>
+    <id>https://veritymodchecker.online/updates/verity-je-modrinth-5-7-3</id>
+    <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="alternate" />
+    <published>2026-07-18T23:46:58Z</published>
+    <updated>2026-07-22T09:28:19+08:00</updated>
+    <summary>Checked Modrinth project on1Y0osD and version yAt0wv1Z: verity-5.7.3.jar, Forge for Minecraft 1.20.1, 246481139 bytes. The official API publishes SHA-1 and SHA-512 fingerprints for local file comparison.</summary>
+  </entry>
   <entry>
     <title>Verity JE 5.7.3 is the current Forge 1.20.1 route</title>
     <id>https://veritymodchecker.online/updates/verity-je-5-7-3</id>
     <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="alternate" />
     <published>2026-07-18T00:00:00Z</published>
-    <updated>2026-07-21T09:34:03+08:00</updated>
-    <summary>Checked record 8461257: verity-5.7.3.jar, Forge for Minecraft 1.20.1, displayed size 235.06 MB.</summary>
+    <updated>2026-07-22T09:28:19+08:00</updated>
+    <summary>Checked record 8461257: verity-5.7.3.jar, Forge for Minecraft 1.20.1, displayed size 235.06 MB. Project total at check: 1,778,387 downloads.</summary>
   </entry>
   <entry>
     <title>Verity BE Stable 1.0.8 remains the current Bedrock 26.30 route</title>
     <id>https://veritymodchecker.online/updates/verity-be-1-0-8</id>
     <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8420981" rel="alternate" />
     <published>2026-07-12T00:00:00Z</published>
-    <updated>2026-07-21T09:34:03+08:00</updated>
-    <summary>Checked record 8420981: Verity (Stable) (1.0.8)-(26.3#).mcaddon for Bedrock 26.30, displayed size 18.80 MB.</summary>
+    <updated>2026-07-22T09:28:19+08:00</updated>
+    <summary>Checked record 8420981: Verity (Stable) (1.0.8)-(26.3#).mcaddon for Bedrock 26.30, displayed size 18.80 MB. Project total at check: 3,362,730 downloads.</summary>
   </entry>
   <entry>
     <title>PnTMC Verity 2.1.0 remains a separate Bedrock 26.30 route</title>
     <id>https://veritymodchecker.online/updates/pntmc-verity-2-1-0</id>
     <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253" rel="alternate" />
     <published>2026-06-27T00:00:00Z</published>
-    <updated>2026-07-21T09:34:03+08:00</updated>
-    <summary>Checked record 8327253: ThatMob's Verity 2.1.0 by PnTMC for Bedrock 26.30, displayed size 35.45 MB.</summary>
+    <updated>2026-07-22T09:28:19+08:00</updated>
+    <summary>Checked record 8327253: ThatMob's Verity 2.1.0 by PnTMC for Bedrock 26.30, displayed size 35.45 MB. Project total at check: 5,945,425 downloads.</summary>
   </entry>
 </feed>

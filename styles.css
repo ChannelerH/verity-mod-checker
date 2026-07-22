@@ -1652,6 +1652,10 @@ details p {
   border-bottom: 1px solid #31423a;
 }
 
+.source-facts div:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .source-facts dt {
   color: #86a093;
   font-size: 0.68rem;

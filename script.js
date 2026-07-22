@@ -309,33 +309,119 @@ const knownProjects = [
   {
     name: "Verity JE",
     edition: "Java",
-    id: "1591438",
-    slugs: ["/minecraft/mc-mods/verity-je"],
-    releases: [
-      { filename: "verity-5.7.3.jar", record: "8461257", sizeMb: 235.06, version: "Minecraft 1.20.1 · Forge", published: "July 18, 2026" },
-      { filename: "verity-3.4.1.jar", record: "", sizeMb: null, version: "Minecraft 1.21.1 · NeoForge", published: "June 30, 2026" }
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1591438",
+        slugs: ["/minecraft/mc-mods/verity-je"],
+        link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files"
+      },
+      {
+        platform: "Modrinth",
+        id: "on1Y0osD",
+        slugs: ["/mod/verity-je-official"],
+        link: "https://modrinth.com/mod/verity-je-official/versions"
+      }
     ],
-    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files"
+    releases: [
+      {
+        status: "current",
+        filename: "verity-5.7.3.jar",
+        versionNumber: "5.7.3",
+        sizeMb: 235.06,
+        version: "Minecraft 1.20.1 · Forge",
+        published: "July 18, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8461257",
+            link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"
+          },
+          {
+            platform: "Modrinth",
+            id: "yAt0wv1Z",
+            link: "https://modrinth.com/mod/verity-je-official/version/5.7.3",
+            hashes: {
+              sha1: "da28115bbad0478d9ed9c97f2466b67d46d13d51",
+              sha512: "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"
+            }
+          }
+        ]
+      },
+      {
+        status: "deprecated-buggy",
+        filename: "verity-3.4.1.jar",
+        versionNumber: "3.4.1",
+        sizeMb: null,
+        version: "Minecraft 1.21.1 · NeoForge",
+        published: "June 30, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8346795",
+            link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8346795"
+          }
+        ]
+      }
+    ]
   },
   {
     name: "Verity BE",
     edition: "Bedrock",
-    id: "1574632",
-    slugs: ["/minecraft-bedrock/addons/verity-be"],
-    releases: [
-      { filename: "Verity (Stable) (1.0.8)-(26.3#).mcaddon", record: "8420981", sizeMb: 18.80, version: "Bedrock 26.30", published: "July 12, 2026" }
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1574632",
+        slugs: ["/minecraft-bedrock/addons/verity-be"],
+        link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files"
+      }
     ],
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files"
+    releases: [
+      {
+        status: "current",
+        filename: "Verity (Stable) (1.0.8)-(26.3#).mcaddon",
+        versionNumber: "1.0.8",
+        sizeMb: 18.80,
+        version: "Bedrock 26.30",
+        published: "July 12, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8420981",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8420981"
+          }
+        ]
+      }
+    ]
   },
   {
     name: "Verity - Bedrock Edition",
     edition: "Bedrock",
-    id: "1575941",
-    slugs: ["/minecraft-bedrock/addons/verity-bedrock-edition"],
-    releases: [
-      { filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon", record: "8327253", sizeMb: 35.45, version: "Bedrock 26.30", published: "June 27, 2026" }
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1575941",
+        slugs: ["/minecraft-bedrock/addons/verity-bedrock-edition"],
+        link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files"
+      }
     ],
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files"
+    releases: [
+      {
+        status: "current",
+        filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
+        versionNumber: "2.1.0",
+        sizeMb: 35.45,
+        version: "Bedrock 26.30",
+        published: "June 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8327253",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253"
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -350,16 +436,65 @@ function normalizeSignal(value) {
 function findKnownRelease(value) {
   const clean = normalizeSignal(value);
   for (const project of knownProjects) {
-    const release = project.releases.find((item) =>
-      clean.includes(item.filename.toLowerCase()) || (item.record && clean.includes(item.record))
-    );
-    if (release) return { project, release };
+    for (const release of project.releases) {
+      const record = release.records.find((item) =>
+        clean.includes(item.id.toLowerCase()) ||
+        Object.values(item.hashes || {}).some((hash) => clean.includes(hash.toLowerCase()))
+      );
+      if (clean.includes(release.filename.toLowerCase()) || record) return { project, release, record };
+    }
   }
   return null;
 }
 
-function releaseRecordLink(project, release) {
-  return release?.record ? `${project.link}/${release.record}` : project.link;
+function projectIdentityLabel(project) {
+  return project.sources.map((source) => `${source.platform} ${source.id}`).join(" · ");
+}
+
+function releaseRecordLink(project, release, preferredPlatform = "") {
+  if (release) {
+    const record = release.records.find((item) => item.platform === preferredPlatform) || release.records[0];
+    if (record) return record.link;
+  }
+  return project.sources.find((source) => source.platform === preferredPlatform)?.link || project.sources[0].link;
+}
+
+function releaseRecordLabel(release, record) {
+  if (!record) return "files";
+  return record.platform === "CurseForge" ? `record #${record.id}` : `version ${release.versionNumber}`;
+}
+
+function findKnownSourceUrl(parsedUrl) {
+  const host = parsedUrl.hostname.replace(/^www\./, "");
+  const platform = host === "curseforge.com" || host.endsWith(".curseforge.com")
+    ? "CurseForge"
+    : host === "modrinth.com" || host.endsWith(".modrinth.com")
+      ? "Modrinth"
+      : "";
+  if (!platform) return null;
+
+  const path = normalizeSignal(parsedUrl.pathname);
+  for (const project of knownProjects) {
+    const source = project.sources.find((item) =>
+      item.platform === platform &&
+      (item.slugs.some((slug) => path.includes(slug.toLowerCase())) || path.includes(item.id.toLowerCase()))
+    );
+    if (!source) continue;
+
+    for (const release of project.releases) {
+      const record = release.records.find((item) =>
+        item.platform === platform &&
+        (path.includes(item.id.toLowerCase()) || path.includes(`/version/${release.versionNumber.toLowerCase()}`))
+      );
+      if (record) return { project, source, release, record };
+    }
+    return { project, source, release: null, record: null };
+  }
+  return null;
+}
+
+function releasePublisherHash(release, algorithm) {
+  return release?.records.find((record) => record.hashes?.[algorithm])?.hashes[algorithm] || "";
 }
 
 const sourceCheckForm = document.querySelector("#sourceCheckForm");
@@ -377,6 +512,7 @@ const sourceChecks = document.querySelector("#sourceChecks");
 const sourceProjectLink = document.querySelector("#sourceProjectLink");
 const copyHashButton = document.querySelector("#copyHashButton");
 let currentFileHash = "";
+let currentFileHashLabel = "SHA-256";
 
 function trackEvent(name, parameters = {}) {
   if (typeof window.gtag === "function") {
@@ -399,8 +535,10 @@ function findKnownProject(value) {
   const releaseMatch = findKnownRelease(value);
   if (releaseMatch) return releaseMatch.project;
   return knownProjects.find((project) =>
-    clean.includes(project.id) ||
-    project.slugs.some((slug) => clean.includes(slug))
+    project.sources.some((source) =>
+      clean.includes(source.id.toLowerCase()) ||
+      source.slugs.some((slug) => clean.includes(slug.toLowerCase()))
+    )
   );
 }
 
@@ -424,7 +562,8 @@ function setSourceResult(result) {
     buildFact("Source", result.source),
     buildFact("Package", result.package),
     buildFact("Project match", result.project),
-    buildFact("SHA-256", result.hash || "Choose a file to calculate")
+    buildFact(result.hashLabel || "SHA-256", result.hash || "Choose a file to calculate"),
+    buildFact("Publisher checksum", result.publisherCheck || "Not checked")
   );
   sourceChecks.replaceChildren(
     ...result.checks.map((check) => {
@@ -443,8 +582,9 @@ function setSourceResult(result) {
     sourceProjectLink.removeAttribute("rel");
   }
   currentFileHash = result.hash || "";
+  currentFileHashLabel = result.hashLabel || "SHA-256";
   copyHashButton.disabled = !currentFileHash;
-  copyHashButton.textContent = "Copy SHA-256";
+  copyHashButton.textContent = `Copy ${currentFileHashLabel}`;
 }
 
 function inspectTextSource(rawValue) {
@@ -452,7 +592,13 @@ function inspectTextSource(rawValue) {
   const releaseMatch = findKnownRelease(value);
   const project = releaseMatch?.project || findKnownProject(value);
   const type = packageType(value);
-  const isHash = /^[a-f0-9]{64}$/i.test(value);
+  const hashAlgorithm = /^[a-f0-9]{40}$/i.test(value)
+    ? "SHA-1"
+    : /^[a-f0-9]{64}$/i.test(value)
+      ? "SHA-256"
+      : /^[a-f0-9]{128}$/i.test(value)
+        ? "SHA-512"
+        : "";
   const riskyExtension = type === "Executable installer";
   let parsedUrl = null;
 
@@ -462,25 +608,56 @@ function inspectTextSource(rawValue) {
     parsedUrl = null;
   }
 
-  if (isHash) {
+  if (hashAlgorithm) {
+    const normalizedHash = value.toLowerCase();
+    const knownChecksum = releaseMatch?.record &&
+      Object.values(releaseMatch.record.hashes || {}).some((hash) => hash.toLowerCase() === normalizedHash);
+
+    if (knownChecksum) {
+      return {
+        state: "verified",
+        verdict: "Publisher checksum match",
+        risk: "Exact bytes identified",
+        title: `${releaseMatch.project.name} ${hashAlgorithm} checksum recognized`,
+        summary: `This fingerprint exactly matches the checksum published for ${releaseMatch.release.filename} on the checked Modrinth version record. It proves byte-for-byte identity with that recorded file, not that the mod is risk-free.`,
+        source: `${releaseMatch.record.platform} checksum`,
+        package: releaseMatch.release.filename.endsWith(".jar") ? "Java JAR" : "Bedrock MCADDON",
+        project: `${releaseMatch.project.name} · ${projectIdentityLabel(releaseMatch.project)}`,
+        hash: normalizedHash,
+        hashLabel: hashAlgorithm,
+        publisherCheck: `${hashAlgorithm} exact match`,
+        checks: [
+          "The checksum matches the publisher record byte for byte.",
+          "A publisher checksum is an identity check, not a malware guarantee.",
+          "Keep the Minecraft version and loader matched to the same release."
+        ],
+        link: releaseMatch.record.link,
+        linkLabel: `Open ${releaseMatch.record.platform} ${releaseRecordLabel(releaseMatch.release, releaseMatch.record)}`,
+        external: true
+      };
+    }
+
+    const reputationLookupSupported = hashAlgorithm !== "SHA-512";
     return {
       state: "caution",
       verdict: "Fingerprint received",
-      risk: "Needs reputation check",
-      title: "A SHA-256 identifies bytes, not trust",
-      summary: "The fingerprint is valid in shape, but this site has no authoritative reference hash to compare against it. Use it to search an established reputation service or compare with a publisher-provided checksum.",
-      source: "SHA-256 input",
+      risk: "No checked match",
+      title: `This ${hashAlgorithm} does not match a recorded publisher checksum`,
+      summary: "The fingerprint is valid in shape, but it does not match the current publisher checksum recorded by this checker. That does not prove the file is malicious; confirm the exact version and source before installing it.",
+      source: `${hashAlgorithm} input`,
       package: "Unknown",
       project: "No identity data",
-      hash: value.toLowerCase(),
+      hash: normalizedHash,
+      hashLabel: hashAlgorithm,
+      publisherCheck: "No current match",
       checks: [
         "A matching hash proves two files are identical, not that either file is safe.",
         "Do not post private API keys, account tokens, or personal paths with a hash report.",
         "Return to the publisher project record and verify the release metadata."
       ],
-      link: `https://www.virustotal.com/gui/file/${value.toLowerCase()}`,
-      linkLabel: "Look up this hash",
-      external: true
+      link: reputationLookupSupported ? `https://www.virustotal.com/gui/file/${normalizedHash}` : "/download/",
+      linkLabel: reputationLookupSupported ? "Look up this hash" : "Compare checked projects",
+      external: reputationLookupSupported
     };
   }
 
@@ -513,25 +690,34 @@ function inspectTextSource(rawValue) {
     const isCurseForge = host === "curseforge.com" || host.endsWith(".curseforge.com");
     const isModrinth = host === "modrinth.com" || host.endsWith(".modrinth.com");
     const isGitHub = host === "github.com" || host.endsWith(".github.com");
+    const sourceMatch = findKnownSourceUrl(parsedUrl);
 
-    if (isCurseForge && project) {
+    if (sourceMatch) {
+      const matchedRelease = sourceMatch.release || releaseMatch?.release;
+      const matchedRecord = sourceMatch.record || releaseMatch?.record;
+      const hasPublisherHash = Boolean(releasePublisherHash(matchedRelease, "sha512"));
       return {
         state: "verified",
         verdict: "Known project match",
         risk: "Identity matched",
-        title: `${project.name} project record recognized`,
-        summary: `The URL matches the checked ${project.edition} project identity. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`,
+        title: `${sourceMatch.project.name} ${sourceMatch.source.platform} route recognized`,
+        summary: `The host and project path match the checked ${sourceMatch.project.edition} source. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`,
         source: host,
         package: type,
-        project: `${project.name} · ID ${project.id}`,
+        project: `${sourceMatch.project.name} · ${projectIdentityLabel(sourceMatch.project)}`,
         hash: "",
+        publisherCheck: hasPublisherHash ? "SHA-512 available for local comparison" : "Not published in the checked record",
         checks: [
-          "The publishing host and known project path match.",
+          `The ${sourceMatch.source.platform} host and known project path match.`,
           "This result verifies identity signals, not the contents of a downloaded file.",
-          "Use the project files tab and avoid direct mirrors of an older release."
+          hasPublisherHash
+            ? "Choose the local JAR to compare it with the publisher's SHA-512 checksum."
+            : "Use the project files tab and avoid direct mirrors of an older release."
         ],
-        link: releaseRecordLink(project, releaseMatch?.release),
-        linkLabel: releaseMatch?.release.record ? `Open ${project.name} record #${releaseMatch.release.record}` : `Open ${project.name} files`,
+        link: matchedRecord?.link || releaseRecordLink(sourceMatch.project, matchedRelease, sourceMatch.source.platform),
+        linkLabel: matchedRecord
+          ? `Open ${sourceMatch.source.platform} ${releaseRecordLabel(matchedRelease, matchedRecord)}`
+          : `Open ${sourceMatch.project.name} on ${sourceMatch.source.platform}`,
         external: true
       };
     }
@@ -552,7 +738,7 @@ function inspectTextSource(rawValue) {
           "A copied filename can be attached to different file contents.",
           "Use the known project record and compare the current release there."
         ],
-        link: project?.link || "/download/",
+        link: project ? releaseRecordLink(project, releaseMatch?.release) : "/download/",
         linkLabel: project ? `Open ${project.name} files` : "Compare known projects",
         external: Boolean(project),
       };
@@ -603,26 +789,33 @@ function inspectTextSource(rawValue) {
 
   if (project) {
     const exactFile = Boolean(releaseMatch);
+    const exactProjectId = project.sources.some((source) => value.toLowerCase() === source.id.toLowerCase());
+    const matchedRecord = releaseMatch?.record || releaseMatch?.release.records[0];
     const releaseDetail = releaseMatch
-      ? `${releaseMatch.release.version}; record #${releaseMatch.release.record || "listed legacy branch"}; ${releaseMatch.release.published}`
+      ? `${releaseMatch.release.version}; ${releaseRecordLabel(releaseMatch.release, matchedRecord)}; ${releaseMatch.release.published}`
       : "No exact current file record in the input";
     return {
       state: "caution",
-      verdict: exactFile || value === project.id ? "Known release signal" : "Partial name match",
+      verdict: exactFile || exactProjectId ? "Known release signal" : "Partial name match",
       risk: "Name can be copied",
       title: exactFile ? `${project.name} filename recognized` : `${project.name} record recognized`,
       summary: `The text matches a checked filename, project path, or Project ID. ${releaseDetail}. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.`,
       source: "Text or filename",
       package: type,
-      project: `${project.name} · ID ${project.id}`,
+      project: `${project.name} · ${projectIdentityLabel(project)}`,
       hash: "",
+      publisherCheck: releasePublisherHash(releaseMatch?.release, "sha512") ? "SHA-512 available for local comparison" : "Not published in the checked record",
       checks: [
         "Filename matching is useful but not a content scan.",
         "Confirm the current file on the publisher files page.",
-        "Choose a local file to calculate its SHA-256 fingerprint."
+        releasePublisherHash(releaseMatch?.release, "sha512")
+          ? "Choose the local file to compare its SHA-512 with the publisher record."
+          : "Choose a local file to calculate its SHA-256 fingerprint."
       ],
-      link: releaseRecordLink(project, releaseMatch?.release),
-      linkLabel: releaseMatch?.release.record ? `Open ${project.name} record #${releaseMatch.release.record}` : `Open ${project.name} files`,
+      link: releaseRecordLink(project, releaseMatch?.release, matchedRecord?.platform),
+      linkLabel: matchedRecord
+        ? `Open ${matchedRecord.platform} ${releaseRecordLabel(releaseMatch.release, matchedRecord)}`
+        : `Open ${project.name} files`,
       external: true
     };
   }
@@ -648,13 +841,21 @@ function inspectTextSource(rawValue) {
   };
 }
 
+function digestToHex(digest) {
+  return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
 async function inspectLocalFile(file) {
   const type = packageType(file.name);
   const releaseMatch = findKnownRelease(file.name);
   const project = releaseMatch?.project || findKnownProject(file.name);
   const riskyExtension = type === "Executable installer";
-  const digest = await crypto.subtle.digest("SHA-256", await file.arrayBuffer());
-  const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+  const fileBytes = await file.arrayBuffer();
+  const hash = digestToHex(await crypto.subtle.digest("SHA-256", fileBytes));
+  const expectedSha512 = releasePublisherHash(releaseMatch?.release, "sha512");
+  const sha512 = expectedSha512 ? digestToHex(await crypto.subtle.digest("SHA-512", fileBytes)) : "";
+  const publisherHashMatches = Boolean(expectedSha512 && sha512 === expectedSha512);
+  const publisherHashMismatch = Boolean(expectedSha512 && sha512 !== expectedSha512);
   const size = `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
 
   if (riskyExtension) {
@@ -668,6 +869,8 @@ async function inspectLocalFile(file) {
       package: type,
       project: project ? `${project.name} filename text only` : "No known match",
       hash,
+      hashLabel: "SHA-256",
+      publisherCheck: "Not applicable",
       checks: [
         "Do not launch the executable.",
         "Search the SHA-256 before deleting it if you need an incident record.",
@@ -683,33 +886,63 @@ async function inspectLocalFile(file) {
   const expectedSizeMb = releaseMatch?.release.sizeMb;
   const sizeMatches = expectedSizeMb ? Math.abs(measuredSizeMb - expectedSizeMb) <= 0.15 : false;
   const exactMetadata = Boolean(releaseMatch && sizeMatches);
+  const checksumRecord = releaseMatch?.release.records.find((record) => record.hashes?.sha512);
+  const matchedRecord = releaseMatch?.record || checksumRecord || releaseMatch?.release.records[0];
   const expectedDetail = releaseMatch
-    ? `${releaseMatch.release.version}; expected ${expectedSizeMb ? `${expectedSizeMb.toFixed(2)} MB` : "size not recorded"}; file record #${releaseMatch.release.record || "legacy branch"}`
+    ? `${releaseMatch.release.version}; expected ${expectedSizeMb ? `${expectedSizeMb.toFixed(2)} MB` : "size not recorded"}; ${releaseRecordLabel(releaseMatch.release, matchedRecord)}`
     : "No current release metadata matched";
 
   return {
-    state: exactMetadata ? "verified" : "caution",
-    verdict: exactMetadata ? "Current metadata match" : project ? "Filename match only" : "Local fingerprint created",
-    risk: exactMetadata ? "Not a malware verdict" : "Contents not scanned",
-    title: exactMetadata ? `${project.name} name and size match the current record` : project ? `${project.name} filename signal found` : "File fingerprint calculated locally",
-    summary: exactMetadata
-      ? `The filename and displayed size match the checked public release metadata (${expectedDetail}). This still does not prove the bytes are safe or publisher-identical; compare the SHA-256 with a trusted reputation source.`
+    state: publisherHashMismatch ? "danger" : publisherHashMatches || exactMetadata ? "verified" : "caution",
+    verdict: publisherHashMismatch
+      ? "Publisher checksum mismatch"
+      : publisherHashMatches
+        ? "Publisher checksum match"
+        : exactMetadata
+          ? "Current metadata match"
+          : project
+            ? "Filename match only"
+            : "Local fingerprint created",
+    risk: publisherHashMismatch ? "Not the checked bytes" : publisherHashMatches ? "Exact bytes identified" : exactMetadata ? "Not a malware verdict" : "Contents not scanned",
+    title: publisherHashMismatch
+      ? `${project.name} filename matches, but the SHA-512 does not`
+      : publisherHashMatches
+        ? `${project.name} matches the publisher's current checksum`
+        : exactMetadata
+          ? `${project.name} name and size match the current record`
+          : project
+            ? `${project.name} filename signal found`
+            : "File fingerprint calculated locally",
+    summary: publisherHashMismatch
+      ? `The filename or size may match, but the local SHA-512 is different from the checksum published for the checked Modrinth file (${expectedDetail}). This does not identify malware, but it proves this is not byte-for-byte the recorded artifact.`
+      : publisherHashMatches
+        ? `The filename, size, and SHA-512 match the checked publisher metadata (${expectedDetail}). This proves byte-for-byte identity with that Modrinth artifact; it is still not a general malware guarantee.`
+        : exactMetadata
+          ? `The filename and displayed size match the checked public release metadata (${expectedDetail}). No publisher checksum is recorded for this route, so the result remains a metadata match rather than a byte-for-byte verification.`
       : project
         ? `The name matches a checked project signal, but the full current metadata did not match (${expectedDetail}). Compare this SHA-256 and the original publisher record before installing.`
         : "The file was not uploaded. Its package type and SHA-256 are now visible, but no checked project identity could be matched from the filename alone.",
     source: `Local file · ${size}`,
     package: type,
-    project: project ? `${project.name} · ID ${project.id}` : "No known match",
+    project: project ? `${project.name} · ${projectIdentityLabel(project)}` : "No known match",
     hash,
+    hashLabel: "SHA-256",
+    publisherCheck: expectedSha512 ? (publisherHashMatches ? "SHA-512 exact match" : "SHA-512 mismatch") : "No publisher hash recorded",
     checks: [
       "SHA-256 identifies the selected bytes and changes if the file changes.",
-      exactMetadata ? "Filename and displayed size match the checked release record." : "A hash without a publisher reference does not prove safety.",
+      publisherHashMatches
+        ? "The local SHA-512 exactly matches the publisher's current Modrinth checksum."
+        : publisherHashMismatch
+          ? "Do not treat this file as the checked Modrinth artifact."
+          : exactMetadata
+            ? "Filename and displayed size match the checked release record."
+            : "A hash without a publisher reference does not prove safety.",
       project ? "Open the matched project files page and compare release details." : "Confirm the source, owner, edition, and release before installing."
     ],
-    link: project ? releaseRecordLink(project, releaseMatch?.release) : `https://www.virustotal.com/gui/file/${hash}`,
+    link: project ? releaseRecordLink(project, releaseMatch?.release, matchedRecord?.platform) : `https://www.virustotal.com/gui/file/${hash}`,
     linkLabel: project
-      ? releaseMatch?.release.record
-        ? `Open ${project.name} record #${releaseMatch.release.record}`
+      ? matchedRecord
+        ? `Open ${matchedRecord.platform} ${releaseRecordLabel(releaseMatch.release, matchedRecord)}`
         : `Open ${project.name} files`
       : "Look up this hash",
     external: true
@@ -740,7 +973,7 @@ sourceCheckForm.addEventListener("submit", async (event) => {
       verdict: "Nothing to check",
       risk: "Input required",
       title: "Paste a URL or choose a local file",
-      summary: "The checker needs a source URL, Project ID, filename, SHA-256, or local file before it can compare identity signals.",
+      summary: "The checker needs a source URL, Project ID, filename, checksum, or local file before it can compare identity signals.",
       source: "Waiting",
       package: "Waiting",
       project: "Waiting",
@@ -807,7 +1040,7 @@ copyHashButton.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(currentFileHash);
     copyHashButton.textContent = "Hash copied";
-    trackEvent("verity_hash_copy", { method: "sha256" });
+    trackEvent("verity_hash_copy", { method: currentFileHashLabel.toLowerCase().replace("-", "") });
   } catch {
     copyHashButton.textContent = "Copy failed";
   }
@@ -819,12 +1052,12 @@ document.addEventListener("click", (event) => {
   try {
     const destination = new URL(link.href, window.location.href);
     if (destination.hostname !== window.location.hostname) {
-      const isProjectRoute = destination.hostname === "www.curseforge.com";
+      const isProjectRoute = destination.hostname === "www.curseforge.com" || destination.hostname === "modrinth.com";
       const projectName = destination.pathname.includes("verity-bedrock-edition")
         ? "PnTMC Verity Bedrock"
         : destination.pathname.includes("verity-be")
           ? "Verity BE"
-          : destination.pathname.includes("verity-je")
+          : destination.pathname.includes("verity-je") || destination.pathname.includes("verity-je-official")
             ? "Verity JE"
             : "External reference";
       const section = link.closest("section");

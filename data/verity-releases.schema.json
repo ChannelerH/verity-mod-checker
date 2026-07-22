@@ -3,6 +3,51 @@
   "$id": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "title": "Verity release route snapshot",
   "type": "object",
+  "$defs": {
+    "hashes": {
+      "type": "object",
+      "properties": {
+        "sha1": { "type": "string", "pattern": "^[a-fA-F0-9]{40}$" },
+        "sha512": { "type": "string", "pattern": "^[a-fA-F0-9]{128}$" }
+      }
+    },
+    "release": {
+      "type": "object",
+      "required": ["status", "filename", "recordId", "recordUrl", "minecraftVersion", "packageType", "publishedDate"],
+      "properties": {
+        "status": { "type": "string" },
+        "filename": { "type": "string" },
+        "recordId": { "type": ["integer", "string", "null"] },
+        "recordUrl": { "type": "string", "format": "uri" },
+        "downloadUrl": { "type": "string", "format": "uri" },
+        "minecraftVersion": { "type": "string" },
+        "loader": { "type": ["string", "null"] },
+        "packageType": { "enum": ["jar", "mcaddon"] },
+        "displayedSizeMb": { "type": ["number", "null"] },
+        "sizeBytes": { "type": "integer", "minimum": 0 },
+        "publishedDate": { "type": "string", "format": "date" },
+        "hashes": { "$ref": "#/$defs/hashes" }
+      }
+    },
+    "alternateSource": {
+      "type": "object",
+      "required": ["host", "owner", "projectId", "projectUrl", "status", "releases"],
+      "properties": {
+        "host": { "type": "string" },
+        "owner": { "type": "string" },
+        "projectId": { "type": ["integer", "string"] },
+        "projectUrl": { "type": "string", "format": "uri" },
+        "status": { "type": "string" },
+        "relationshipEvidence": { "type": "string" },
+        "projectDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+        "projectDownloadsApproximate": { "type": "boolean" },
+        "releases": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/release" }
+        }
+      }
+    }
+  },
   "required": ["schemaVersion", "checkedAt", "canonicalUrl", "projects"],
   "properties": {
     "schemaVersion": { "type": "integer", "minimum": 1 },
@@ -23,23 +68,13 @@
           "status": { "type": "string" },
           "projectDownloadsAtCheck": { "type": "integer", "minimum": 0 },
           "projectDownloadsApproximate": { "type": "boolean" },
+          "verifiedAlternateSources": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/alternateSource" }
+          },
           "releases": {
             "type": "array",
-            "items": {
-              "type": "object",
-              "required": ["status", "filename", "recordId", "recordUrl", "minecraftVersion", "packageType", "publishedDate"],
-              "properties": {
-                "status": { "type": "string" },
-                "filename": { "type": "string" },
-                "recordId": { "type": ["integer", "null"] },
-                "recordUrl": { "type": "string", "format": "uri" },
-                "minecraftVersion": { "type": "string" },
-                "loader": { "type": ["string", "null"] },
-                "packageType": { "enum": ["jar", "mcaddon"] },
-                "displayedSizeMb": { "type": ["number", "null"] },
-                "publishedDate": { "type": "string", "format": "date" }
-              }
-            }
+            "items": { "$ref": "#/$defs/release" }
           }
         }
       }

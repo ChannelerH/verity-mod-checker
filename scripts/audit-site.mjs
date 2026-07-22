@@ -16,6 +16,10 @@ const releaseSnapshot = JSON.parse(fs.readFileSync("data/verity-releases.json", 
 const currentJavaRelease = releaseSnapshot.projects
   .find((project) => project.name === "Verity JE")
   ?.releases.find((release) => release.status === "current");
+const currentJavaModrinth = releaseSnapshot.projects
+  .find((project) => project.name === "Verity JE")
+  ?.verifiedAlternateSources?.find((source) => source.host === "Modrinth" && source.status === "current");
+const currentJavaModrinthRelease = currentJavaModrinth?.releases.find((release) => release.status === "current");
 
 for (const file of pageFiles) {
   const html = fs.readFileSync(file, "utf8");
@@ -66,6 +70,21 @@ if (!currentJavaRelease?.filename || !currentJavaRelease?.recordId) {
     for (const signal of expectedSignals) {
       if (!content.includes(signal)) errors.push(`${file}: missing current Java release signal ${signal}`);
     }
+  }
+}
+
+if (!currentJavaModrinth?.projectId || !currentJavaModrinthRelease?.recordId || !currentJavaModrinthRelease?.hashes?.sha512) {
+  errors.push("data/verity-releases.json: missing current Verity JE Modrinth project, version, or SHA-512");
+} else {
+  const expectedSignals = [String(currentJavaModrinth.projectId), String(currentJavaModrinthRelease.recordId)];
+  for (const file of ["index.html", "download/index.html", "java/index.html", "script.js", "feed.xml", "llms.txt"]) {
+    const content = fs.readFileSync(file, "utf8");
+    for (const signal of expectedSignals) {
+      if (!content.includes(signal)) errors.push(`${file}: missing current Modrinth signal ${signal}`);
+    }
+  }
+  if (!/^[a-f0-9]{128}$/.test(currentJavaModrinthRelease.hashes.sha512)) {
+    errors.push("data/verity-releases.json: current Verity JE Modrinth SHA-512 is malformed");
   }
 }
 

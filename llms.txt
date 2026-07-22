@@ -5,7 +5,7 @@
 ## Core Pages
 
 - [Verity Mod Download for Minecraft](https://veritymodchecker.online/): Current Java and Bedrock release map plus a browser-only URL, release record, filename, displayed-size, package, and SHA-256 checker.
-- [Verity Mod Download Route](https://veritymodchecker.online/download/): Exact current CurseForge records for Verity JE, Verity BE, and the PnTMC Bedrock alternate, plus route separation for VERITY.exe.
+- [Verity Mod Download Route](https://veritymodchecker.online/download/): Exact current CurseForge records for Verity JE, Verity BE, and the PnTMC Bedrock alternate, plus the verified official Verity JE Modrinth route and route separation for VERITY.exe.
 - [What Is the Verity Mod?](https://veritymodchecker.online/what-is-verity-mod/): Separates the ThatMob horror character and video experience from current playable Java and Bedrock community projects.
 - [How to Get Verity Mod](https://veritymodchecker.online/how-to-get-verity-mod/): Edition-specific Java and Bedrock installation order, source checks, and first-launch troubleshooting.
 - [What Happened to Verity Mod?](https://veritymodchecker.online/what-happened/): Explains old 404 links, current projects, and project-name confusion.
@@ -25,4 +25,4 @@
 
 ## Current Position
 
-Checked July 21, 2026: Verity JE's current Forge file is `verity-5.7.3.jar`, CurseForge record `8461257`, for Minecraft 1.20.1. Verity BE's current file is `Verity (Stable) (1.0.8)-(26.3#).mcaddon`, record `8420981`, for Bedrock 26.30. The PnTMC alternate is `ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon`, record `8327253`. NeoForge 1.21.1 remains a separate older branch, and VERITY.exe is a separate modpack route. The site does not host files, upload selected files, collect API keys, or claim that metadata matching is a malware scan.
+Checked July 22, 2026: Verity JE's current Forge file is `verity-5.7.3.jar` for Minecraft 1.20.1. It appears as CurseForge record `8461257` and Modrinth version `yAt0wv1Z` under project `on1Y0osD`; Modrinth publishes SHA-1 and SHA-512 fingerprints for this file. Verity BE's current file is `Verity (Stable) (1.0.8)-(26.3#).mcaddon`, record `8420981`, for Bedrock 26.30. The PnTMC alternate is `ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon`, record `8327253`. Point-in-time CurseForge project totals are 1,778,387, 3,362,730, and 5,945,425 downloads respectively; the Modrinth Verity JE project total is 121,460. NeoForge 1.21.1 remains a separate older branch, and VERITY.exe is a separate modpack route. The site does not host files, upload selected files, collect API keys, or claim that metadata or checksum matching is a malware scan.

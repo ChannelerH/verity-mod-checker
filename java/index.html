@@ -38,7 +38,7 @@
             "name": "Where do I download Verity Mod for Java?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Start from the Verity JE project route and confirm the file lists your Minecraft version and loader before installing."
+              "text": "Start from the checked Verity JE project on CurseForge or Modrinth and confirm that the file lists Minecraft 1.20.1 and Forge before installing the current 5.7.3 release."
             }
           },
           {
@@ -61,7 +61,7 @@
             "@id": "https://veritymodchecker.online/java/#webpage",
             "url": "https://veritymodchecker.online/java/",
             "name": "Verity Mod Java Download: 5.7.3 Forge & NeoForge",
-            "dateModified": "2026-07-20",
+            "dateModified": "2026-07-22",
             "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
             "about": ["Verity Mod Java", "Verity JE", "Minecraft Forge", "NeoForge"]
           },
@@ -96,17 +96,18 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Verified July 20, 2026</p>
+          <p class="eyebrow">Verified July 22, 2026</p>
           <h1>Verity Mod Java Download</h1>
           <p class="lede">
             The current Verity JE main file is <strong>verity-5.7.3.jar</strong> for Minecraft
-            1.20.1 Forge, CurseForge record #8461257. Minecraft 1.21.1 uses the older
+            1.20.1 Forge. It is listed on CurseForge as record #8461257 and on Modrinth as version
+            yAt0wv1Z. Minecraft 1.21.1 uses the older
             <strong>verity-3.4.1.jar</strong> NeoForge branch, which the maintainer warns is deprecated
             and buggy. Match the version and loader before installing.
           </p>
           <div class="trust-strip" aria-label="Page purpose">
             <span>Current file verified</span>
-            <span>Forge + NeoForge</span>
+            <span>Two publisher records</span>
             <span>No mirror files</span>
           </div>
         </div>
@@ -118,18 +119,18 @@
           </div>
           <h2>Download verity-5.7.3.jar for Forge 1.20.1</h2>
           <p>
-            Verified against Verity JE by VarmiteYT, Project ID 1591438. The current file record lists
-            Forge, Minecraft 1.20.1, 235.06 MB, and a July 18, 2026 publication date.
+            Verified against CurseForge Project ID 1591438 and Modrinth Project ID on1Y0osD. Both current
+            records list Forge, Minecraft 1.20.1, 235.06 MB, and a July 18, 2026 publication date.
           </p>
           <ol class="steps">
             <li>Use record #8461257 for Forge 1.20.1.</li>
+            <li>Use Modrinth yAt0wv1Z when you need a publisher checksum.</li>
             <li>Use the Files page to inspect the NeoForge 1.21.1 branch.</li>
-            <li>Launch a clean profile before adding other mods.</li>
-            <li>Configure Groq or Ollama only after the base mod loads.</li>
+            <li>Launch a clean profile, then configure Groq or Ollama after the base mod loads.</li>
           </ol>
           <div class="action-row">
-            <a class="primary-link" href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open verified 5.7.3 record</a>
-            <a class="copy-button" href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/all" rel="noopener" target="_blank">Compare Java files</a>
+            <a class="primary-link" href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open CurseForge record</a>
+            <a class="copy-button" href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="noopener" target="_blank">Open Modrinth record</a>
           </div>
         </aside>
       </section>
@@ -152,10 +153,14 @@
             </p>
             <dl class="route-facts">
               <div><dt>Record</dt><dd>#8461257</dd></div>
+              <div><dt>Modrinth</dt><dd>yAt0wv1Z</dd></div>
               <div><dt>Published</dt><dd>July 18, 2026</dd></div>
               <div><dt>Size</dt><dd>235.06 MB</dd></div>
             </dl>
-            <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open exact file record</a>
+            <div class="card-actions">
+              <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open CurseForge record</a>
+              <a href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="noopener" target="_blank">Open checksum record</a>
+            </div>
           </article>
           <article class="status-card primary">
             <div class="status-topline">
@@ -284,6 +289,13 @@
               file page and a clean Minecraft profile, then add other mods later. That is more reliable than
               copying a jar from an old video description into a profile that already contains conflicts.
             </p>
+            <p>
+              The current Modrinth record adds a stronger identity check: it publishes SHA-1 and SHA-512
+              fingerprints for verity-5.7.3.jar. The checker on the homepage can calculate the selected
+              file's SHA-512 inside your browser and compare it with that publisher value. A checksum match
+              proves the bytes are identical to the recorded file, but it is not a promise that every mod
+              behavior is safe or compatible with your profile.
+            </p>
           </article>
           <article class="guide-block">
             <h3>Why a source ZIP is not a Java download</h3>
@@ -396,7 +408,7 @@
         <a href="/verity-exe/">VERITY.exe</a>
         <a href="/ai-model/">AI model</a>
       </nav>
-      <p>Fan-made route page. Not affiliated with Mojang, Microsoft, CurseForge, or Verity maintainers.</p>
+      <p>Fan-made route page. Not affiliated with Mojang, Microsoft, CurseForge, Modrinth, or Verity maintainers.</p>
     </footer>
   </body>
 </html>

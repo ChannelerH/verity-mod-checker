@@ -10,8 +10,12 @@ VIEWPORTS = {
 }
 ROUTES = [
     "/",
+    "/download/",
     "/java/",
     "/bedrock/",
+    "/how-to-get-verity-mod/",
+    "/what-is-verity-mod/",
+    "/what-happened/",
     "/ai-model/",
     "/api-connection-failed/",
     "/how-to-talk-to-verity/",
@@ -61,10 +65,42 @@ with sync_playwright() as playwright:
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity JE" in result_text
         assert "8461257" in result_text
+
+        page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/5.7.3")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Modrinth route recognized" in result_text
+        assert "on1Y0osD" in result_text
+        assert "SHA-512 available" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/5.7.3")
+
+        page.locator("#sourceInput").fill("https://modrinth.com/mod/unrelated-project?file=verity-5.7.3.jar")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "recognized platform" in result_text.lower()
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/download/"
+
+        page.locator("#sourceInput").fill(
+            "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"
+        )
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "publisher checksum match" in result_text.lower()
+
+        page.locator("#sourceFile").set_input_files(
+            files={
+                "name": "verity-5.7.3.jar",
+                "mimeType": "application/java-archive",
+                "buffer": b"checksum mismatch test",
+            }
+        )
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "publisher checksum mismatch" in result_text.lower()
         context.close()
 
     browser.close()
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile core routes and current-file checker")
+print("VISUAL_CHECK_OK desktop+mobile routes, Modrinth identity, and checksum branches")
