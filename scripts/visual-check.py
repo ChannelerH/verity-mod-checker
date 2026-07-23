@@ -20,6 +20,9 @@ ROUTES = [
     "/api-connection-failed/",
     "/how-to-talk-to-verity/",
     "/not-working/",
+    "/voice-not-working/",
+    "/taken-down/",
+    "/verity-exe/",
 ]
 
 

@@ -20,6 +20,9 @@ const currentJavaModrinth = releaseSnapshot.projects
   .find((project) => project.name === "Verity JE")
   ?.verifiedAlternateSources?.find((source) => source.host === "Modrinth" && source.status === "current");
 const currentJavaModrinthRelease = currentJavaModrinth?.releases.find((release) => release.status === "current");
+const currentBedrockRelease = releaseSnapshot.projects
+  .find((project) => project.name === "Verity BE")
+  ?.releases.find((release) => release.status === "current");
 
 for (const file of pageFiles) {
   const html = fs.readFileSync(file, "utf8");
@@ -85,6 +88,24 @@ if (!currentJavaModrinth?.projectId || !currentJavaModrinthRelease?.recordId || 
   }
   if (!/^[a-f0-9]{128}$/.test(currentJavaModrinthRelease.hashes.sha512)) {
     errors.push("data/verity-releases.json: current Verity JE Modrinth SHA-512 is malformed");
+  }
+}
+
+if (!currentBedrockRelease?.filename || !currentBedrockRelease?.recordId) {
+  errors.push("data/verity-releases.json: missing current Verity BE filename or record ID");
+} else {
+  const expectedSignals = [currentBedrockRelease.filename, String(currentBedrockRelease.recordId)];
+  for (const file of ["index.html", "download/index.html", "bedrock/index.html", "script.js", "feed.xml", "llms.txt"]) {
+    const content = fs.readFileSync(file, "utf8");
+    for (const signal of expectedSignals) {
+      if (!content.includes(signal)) errors.push(`${file}: missing current Bedrock release signal ${signal}`);
+    }
+  }
+  for (const file of ["voice-not-working/index.html", "not-working/index.html"]) {
+    const content = fs.readFileSync(file, "utf8");
+    if (!content.includes(String(currentBedrockRelease.recordId))) {
+      errors.push(`${file}: missing current Bedrock release record ${currentBedrockRelease.recordId}`);
+    }
   }
 }
 

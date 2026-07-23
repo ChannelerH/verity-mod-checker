@@ -48,8 +48,28 @@
               "@type": "Answer",
               "text": "Usually no. If the mod loads and chat appears, the base download is probably working. Focus on audio settings, resource packs, voice dependencies, provider settings, or world/profile conflicts."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I enable voice in Verity BE 1.0.9?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Verity BE 1.0.9 adds local text-to-speech. Run /verity:tts on to enable it or /verity:tts off to disable it, then check the active resource pack and Minecraft audio output if dialogue remains silent."
+            }
           }
         ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://veritymodchecker.online/voice-not-working/#webpage",
+        "url": "https://veritymodchecker.online/voice-not-working/",
+        "name": "Verity Mod Voice Not Working - Chat Works But No Sound Fix",
+        "dateModified": "2026-07-23",
+        "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
+        "about": ["Verity Mod voice", "Verity BE text-to-speech", "Minecraft audio troubleshooting"]
       }
     </script>
   </head>
@@ -107,6 +127,40 @@
             <a class="copy-button" href="/">Run checker</a>
           </div>
         </aside>
+      </section>
+
+      <section class="status-section" aria-labelledby="bedrock-tts-title">
+        <div class="section-heading">
+          <p class="eyebrow">Verity BE 1.0.9 voice</p>
+          <h2 id="bedrock-tts-title">Use the new local TTS toggle before reinstalling</h2>
+        </div>
+        <div class="status-grid">
+          <article class="status-card primary">
+            <div class="status-topline"><span>Enable</span><strong>Local TTS</strong></div>
+            <h3>Run <code>/verity:tts on</code></h3>
+            <p>
+              Record #8486588 adds local text-to-speech synchronized with Verity BE dialogue. Run the command
+              in a world using the 1.0.9 package, then trigger a new response instead of replaying old text.
+            </p>
+          </article>
+          <article class="status-card primary">
+            <div class="status-topline"><span>Disable</span><strong>Expected silence</strong></div>
+            <h3>Check whether TTS was turned off</h3>
+            <p>
+              The matching command is <code>/verity:tts off</code>. If chat works and audio stopped after a
+              command or world change, turn TTS on again before replacing files or resetting the backend.
+            </p>
+          </article>
+          <article class="status-card">
+            <div class="status-topline"><span>Still silent</span><strong>Audio path</strong></div>
+            <h3>Verify the package, pack, and output device</h3>
+            <p>
+              Confirm Verity (Stable) (1.0.9)-(26.3).mcaddon, activate its resource pack, check Minecraft and
+              device volume, then test without other audio or UI packs in a new world.
+            </p>
+            <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588" target="_blank" rel="noopener noreferrer">Open the official 1.0.9 record</a>
+          </article>
+        </div>
       </section>
 
       <section class="guide-section">
@@ -169,8 +223,9 @@
             <span>Bedrock</span>
             <h3>Dialogue appears but audio is missing</h3>
             <p>
-              Confirm the resource pack is active and move texture or UI packs below Verity for testing.
-              Resource conflicts can make a working behavior pack feel incomplete.
+              On Verity BE 1.0.9, first run <code>/verity:tts on</code>. Then confirm the resource pack is
+              active and move texture or UI packs below Verity for testing. Resource conflicts can make a
+              working behavior pack feel incomplete.
             </p>
           </article>
           <article class="error-card">
@@ -357,7 +412,7 @@
       <aside class="source-strip" aria-label="Voice troubleshooting references">
         <strong>Check the base route before changing voice components:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" target="_blank" rel="noopener noreferrer">Verity JE current record</a>
-        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8420981" target="_blank" rel="noopener noreferrer">Verity BE current record</a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588" target="_blank" rel="noopener noreferrer">Verity BE 1.0.9 current record</a>
         <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq setup reference</a>
       </aside>
     </main>

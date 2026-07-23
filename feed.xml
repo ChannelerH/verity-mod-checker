@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-22T09:28:19+08:00</updated>
+  <updated>2026-07-23T09:27:22+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE 1.0.9 adds local text-to-speech and new interactions</title>
+    <id>https://veritymodchecker.online/updates/verity-be-1-0-9</id>
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588" rel="alternate" />
+    <published>2026-07-22T00:00:00Z</published>
+    <updated>2026-07-23T09:27:22+08:00</updated>
+    <summary>Checked record 8486588: Verity (Stable) (1.0.9)-(26.3).mcaddon for Bedrock 26.30, displayed size 19.70 MB. The maintainer release notes add local TTS controls, pickup and throw interactions, progression changes, and reliability fixes. Project total at check: 3,456,204 downloads.</summary>
+  </entry>
   <entry>
     <title>Verity JE 5.7.3 now has a verified Modrinth route and publisher checksum</title>
     <id>https://veritymodchecker.online/updates/verity-je-modrinth-5-7-3</id>
@@ -24,7 +32,7 @@
     <summary>Checked record 8461257: verity-5.7.3.jar, Forge for Minecraft 1.20.1, displayed size 235.06 MB. Project total at check: 1,778,387 downloads.</summary>
   </entry>
   <entry>
-    <title>Verity BE Stable 1.0.8 remains the current Bedrock 26.30 route</title>
+    <title>Verity BE Stable 1.0.8 was the checked Bedrock route on July 22</title>
     <id>https://veritymodchecker.online/updates/verity-be-1-0-8</id>
     <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8420981" rel="alternate" />
     <published>2026-07-12T00:00:00Z</published>
