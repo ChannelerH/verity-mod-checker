@@ -14,6 +14,7 @@ ROUTES = [
     "/curseforge/",
     "/creators/",
     "/faq/",
+    "/horror-mod/",
     "/is-verity-real/",
     "/java/",
     "/bedrock/",
@@ -103,6 +104,12 @@ with sync_playwright() as playwright:
         assert "Verity Pocket Edition (Be)" in result_text
         assert "8406293" in result_text
 
+        page.locator("#sourceInput").fill("Verity (Stable) (1.0.9)-(26.3#).mcaddon")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity BE" in result_text
+        assert "8486588" in result_text
+
         page.locator("#sourceInput").fill(
             "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"
         )
@@ -126,4 +133,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, API diagnosis, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, horror page, API diagnosis, aliases, Modrinth identity, and checksum branches")

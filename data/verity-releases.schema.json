@@ -17,6 +17,7 @@
       "properties": {
         "status": { "type": "string" },
         "filename": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
         "recordId": { "type": ["integer", "string", "null"] },
         "recordUrl": { "type": "string", "format": "uri" },
         "downloadUrl": { "type": "string", "format": "uri" },
@@ -26,6 +27,7 @@
         "displayedSizeMb": { "type": ["number", "null"] },
         "sizeBytes": { "type": "integer", "minimum": 0 },
         "recordDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+        "recordDownloadsApproximate": { "type": "boolean" },
         "publishedDate": { "type": "string", "format": "date" },
         "hashes": { "$ref": "#/$defs/hashes" }
       }

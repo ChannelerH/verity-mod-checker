@@ -380,6 +380,7 @@ const knownProjects = [
       {
         status: "current",
         filename: "Verity (Stable) (1.0.9)-(26.3).mcaddon",
+        aliases: ["Verity (Stable) (1.0.9)-(26.3#).mcaddon"],
         versionNumber: "1.0.9",
         sizeMb: 19.70,
         version: "Bedrock 26.30",
@@ -438,6 +439,7 @@ const knownProjects = [
       {
         status: "similar-named-current",
         filename: "Verity (1.0.2) — (26.3).mcaddon",
+        aliases: ["Verity (1.0.2) — (26.3#).mcaddon", "Verity (1.0.2) - (26.3).mcaddon", "Verity (1.0.2) - (26.3#).mcaddon"],
         versionNumber: "1.0.2",
         sizeMb: 18.6,
         version: "Bedrock 26.30",
@@ -466,11 +468,12 @@ function findKnownRelease(value) {
   const clean = normalizeSignal(value);
   for (const project of knownProjects) {
     for (const release of project.releases) {
+      const releaseNames = [release.filename, ...(release.aliases || [])].map((name) => name.toLowerCase());
       const record = release.records.find((item) =>
         clean.includes(item.id.toLowerCase()) ||
         Object.values(item.hashes || {}).some((hash) => clean.includes(hash.toLowerCase()))
       );
-      if (clean.includes(release.filename.toLowerCase()) || record) return { project, release, record };
+      if (releaseNames.some((name) => clean.includes(name)) || record) return { project, release, record };
     }
   }
   return null;

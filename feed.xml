@@ -5,8 +5,24 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T18:05:00+08:00</updated>
+  <updated>2026-07-24T19:16:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity horror mod guide added for story and playable-route intent</title>
+    <id>https://veritymodchecker.online/updates/horror-mod-guide-2026-07-24</id>
+    <link href="https://veritymodchecker.online/horror-mod/" rel="alternate" />
+    <published>2026-07-24T19:16:00+08:00</published>
+    <updated>2026-07-24T19:16:00+08:00</updated>
+    <summary>Added a Verity horror mod guide after related query data and current SERP checks showed separate demand for Verity horror mod, Verity Minecraft horror mod, and story-versus-download explanations. The page separates the horror character, playable Java and Bedrock projects, route identity signals, feature expectations, and unsafe mirror patterns while linking back to the current download map and browser-only checker.</summary>
+  </entry>
+  <entry>
+    <title>July 24 evening verification refreshed official project counters</title>
+    <id>https://veritymodchecker.online/updates/evening-verification-2026-07-24</id>
+    <link href="https://veritymodchecker.online/download/" rel="alternate" />
+    <published>2026-07-24T19:16:00+08:00</published>
+    <updated>2026-07-24T19:16:00+08:00</updated>
+    <summary>Refreshed the visible Verity Mod route map after checking CurseForge project pages, CurseForge file records, and the official Modrinth API. Current route records remain 8461257, 8486588, 8327253, and 8406293. Project totals at check are 1,972,599, 3,577,031, 6,292,817, and 41,627 on CurseForge; the Modrinth Verity JE project is at 191,600 and version yAt0wv1Z is at 144,543 downloads.</summary>
+  </entry>
   <entry>
     <title>API connection diagnosis selector added for 401, 429, and Ollama failures</title>
     <id>https://veritymodchecker.online/updates/api-diagnosis-tool-2026-07-24</id>
@@ -68,8 +84,8 @@
     <id>https://veritymodchecker.online/updates/verification-2026-07-24</id>
     <link href="https://veritymodchecker.online/download/" rel="alternate" />
     <published>2026-07-24T09:55:00+08:00</published>
-    <updated>2026-07-24T18:05:00+08:00</updated>
-    <summary>Verity JE record 8461257, Verity BE record 8486588, PnTMC record 8327253, and Pocket Edition record 8406293 are the current checked routes. Point-in-time project totals are 1,964,540, 3,570,128, 6,278,446, and 41,316 on CurseForge; the official Verity JE Modrinth project is at 188,727. These counters are popularity signals, not unique-user or safety claims.</summary>
+    <updated>2026-07-24T19:16:00+08:00</updated>
+    <summary>Verity JE record 8461257, Verity BE record 8486588, PnTMC record 8327253, and Pocket Edition record 8406293 are the current checked routes. Point-in-time project totals are 1,972,599, 3,577,031, 6,292,817, and 41,627 on CurseForge; the official Verity JE Modrinth project is at 191,600. These counters are popularity signals, not unique-user or safety claims.</summary>
   </entry>
   <entry>
     <title>Verity BE 1.0.9 adds local text-to-speech and new interactions</title>
