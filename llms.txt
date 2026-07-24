@@ -8,6 +8,7 @@
 - [Verity Mod Download Route](https://veritymodchecker.online/download/): Exact current CurseForge records for Verity JE, Verity BE, and the PnTMC Bedrock alternate, plus the verified official Verity JE Modrinth route and route separation for VERITY.exe and VerityPack.
 - [Verity Mod FAQ](https://veritymodchecker.online/faq/): Consolidated answers for current download, Java, Bedrock, MCPE, NeoForge, voice, API 429, VERITY.exe, taken-down, and file-safety questions.
 - [What Is the Verity Mod?](https://veritymodchecker.online/what-is-verity-mod/): Separates the ThatMob horror character and video experience from current playable Java and Bedrock community projects.
+- [Is Verity Real?](https://veritymodchecker.online/is-verity-real/): Reality-check page for the character, videos, official claims, current public downloads, and unsafe reposts.
 - [How to Get Verity Mod](https://veritymodchecker.online/how-to-get-verity-mod/): Edition-specific Java and Bedrock installation order, source checks, and first-launch troubleshooting.
 - [What Happened to Verity Mod?](https://veritymodchecker.online/what-happened/): Explains old 404 links, current projects, and project-name confusion.
 - [Verity JE Download Status](https://veritymodchecker.online/java/#versions): Java route for Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, and voice setup.
