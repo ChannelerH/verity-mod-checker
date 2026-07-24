@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T17:28:00+08:00</updated>
+  <updated>2026-07-24T18:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>API connection diagnosis selector added for 401, 429, and Ollama failures</title>
+    <id>https://veritymodchecker.online/updates/api-diagnosis-tool-2026-07-24</id>
+    <link href="https://veritymodchecker.online/api-connection-failed/#quick-diagnosis" rel="alternate" />
+    <published>2026-07-24T18:05:00+08:00</published>
+    <updated>2026-07-24T18:05:00+08:00</updated>
+    <summary>Added a no-key quick diagnosis selector to the Verity Mod API connection failed page after GA4 showed it as the highest-viewed page title and GSC still included API and 429 problem intent. The selector maps provider plus symptom to next steps for Groq 401 and 429, OpenRouter errors, local Ollama failures, null replies, and text-working-but-voice-failing cases without collecting API keys or logs.</summary>
+  </entry>
   <entry>
     <title>Pocket Edition route page added for MCPE search intent</title>
     <id>https://veritymodchecker.online/updates/pocket-edition-route-2026-07-24</id>
@@ -60,8 +68,8 @@
     <id>https://veritymodchecker.online/updates/verification-2026-07-24</id>
     <link href="https://veritymodchecker.online/download/" rel="alternate" />
     <published>2026-07-24T09:55:00+08:00</published>
-    <updated>2026-07-24T17:28:00+08:00</updated>
-    <summary>Verity JE record 8461257, Verity BE record 8486588, PnTMC record 8327253, and Pocket Edition record 8406293 are the current checked routes. Point-in-time project totals are 1,964,540, 3,570,128, 6,278,446, and 41,316 on CurseForge; the official Verity JE Modrinth project is at 187,971. These counters are popularity signals, not unique-user or safety claims.</summary>
+    <updated>2026-07-24T18:05:00+08:00</updated>
+    <summary>Verity JE record 8461257, Verity BE record 8486588, PnTMC record 8327253, and Pocket Edition record 8406293 are the current checked routes. Point-in-time project totals are 1,964,540, 3,570,128, 6,278,446, and 41,316 on CurseForge; the official Verity JE Modrinth project is at 188,727. These counters are popularity signals, not unique-user or safety claims.</summary>
   </entry>
   <entry>
     <title>Verity BE 1.0.9 adds local text-to-speech and new interactions</title>
