@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T19:16:00+08:00</updated>
+  <updated>2026-07-24T19:56:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity horror guide added to primary navigation and creator references</title>
+    <id>https://veritymodchecker.online/updates/horror-guide-entrypoints-2026-07-24</id>
+    <link href="https://veritymodchecker.online/horror-mod/" rel="alternate" />
+    <published>2026-07-24T19:56:00+08:00</published>
+    <updated>2026-07-24T19:56:00+08:00</updated>
+    <summary>Added the Verity horror guide to primary navigation across the site and expanded the creator reference page with copy-ready wording for Verity horror mod videos, articles, and trend explainers. No home page title, description, canonical URL, or route facts were retargeted; the change improves crawl paths and gives outreach a more specific citation target.</summary>
+  </entry>
   <entry>
     <title>Verity horror mod guide added for story and playable-route intent</title>
     <id>https://veritymodchecker.online/updates/horror-mod-guide-2026-07-24</id>
