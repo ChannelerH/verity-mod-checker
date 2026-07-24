@@ -11,8 +11,13 @@ VIEWPORTS = {
 ROUTES = [
     "/",
     "/download/",
+    "/curseforge/",
+    "/creators/",
+    "/faq/",
+    "/is-verity-real/",
     "/java/",
     "/bedrock/",
+    "/pocket-edition/",
     "/how-to-get-verity-mod/",
     "/what-is-verity-mod/",
     "/what-happened/",
@@ -27,7 +32,7 @@ ROUTES = [
 
 
 def assert_layout(page, route, viewport_name):
-    page.goto(f"{BASE_URL}{route}", wait_until="networkidle")
+    page.goto(f"{BASE_URL}{route}", wait_until="domcontentloaded")
     page.locator("h1").wait_for(state="visible")
     metrics = page.evaluate(
         """
@@ -61,7 +66,7 @@ with sync_playwright() as playwright:
         for route in ROUTES:
             assert_layout(page, route, viewport_name)
 
-        page.goto(BASE_URL, wait_until="networkidle")
+        page.goto(BASE_URL, wait_until="domcontentloaded")
         page.locator("#sourceInput").fill("verity-5.7.3.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         page.locator("#sourceVerdict").wait_for(state="visible")
@@ -82,6 +87,14 @@ with sync_playwright() as playwright:
         result_text = page.locator("#sourceResult").inner_text()
         assert "recognized platform" in result_text.lower()
         assert page.locator("#sourceProjectLink").get_attribute("href") == "/download/"
+
+        page.locator("#sourceInput").fill(
+            "https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files/8406293"
+        )
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity Pocket Edition (Be)" in result_text
+        assert "8406293" in result_text
 
         page.locator("#sourceInput").fill(
             "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"

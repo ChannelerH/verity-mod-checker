@@ -13,7 +13,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - How to get Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
 - Java download route: https://veritymodchecker.online/java/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
-- MCPE mobile route: https://veritymodchecker.online/bedrock/#mcpe
+- MCPE mobile route: https://veritymodchecker.online/pocket-edition/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
 - Voice not working fix: https://veritymodchecker.online/voice-not-working/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/

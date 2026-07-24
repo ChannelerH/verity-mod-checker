@@ -422,6 +422,35 @@ const knownProjects = [
         ]
       }
     ]
+  },
+  {
+    name: "Verity Pocket Edition (Be)",
+    edition: "Bedrock",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1596246",
+        slugs: ["/minecraft-bedrock/addons/verity-pocket-edition-be"],
+        link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files"
+      }
+    ],
+    releases: [
+      {
+        status: "similar-named-current",
+        filename: "Verity (1.0.2) — (26.3).mcaddon",
+        versionNumber: "1.0.2",
+        sizeMb: 18.6,
+        version: "Bedrock 26.30",
+        published: "July 10, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8406293",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files/8406293"
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -1028,7 +1057,7 @@ sourceReset.addEventListener("click", () => {
     package: "Waiting",
     project: "Waiting",
     hash: "",
-    checks: ["No data has been sent anywhere.", "Known projects currently include Verity JE and two separate Bedrock add-ons."],
+    checks: ["No data has been sent anywhere.", "Known projects currently include Verity JE and multiple separate Bedrock add-ons."],
     link: "/download/",
     linkLabel: "Compare known projects",
     external: false
