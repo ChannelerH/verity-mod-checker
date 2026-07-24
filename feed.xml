@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T19:56:00+08:00</updated>
+  <updated>2026-07-24T21:08:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity link checker page added for source and mirror intent</title>
+    <id>https://veritymodchecker.online/updates/verity-link-checker-2026-07-24</id>
+    <link href="https://veritymodchecker.online/link/" rel="alternate" />
+    <published>2026-07-24T21:08:00+08:00</published>
+    <updated>2026-07-24T21:08:00+08:00</updated>
+    <summary>Added a dedicated Verity link checker guide after existing query evidence included verity link and related download-link intent. The page explains how to compare official URLs, mirrors, short-link chains, filenames, Project IDs, file records, Java JARs, Bedrock MCADDONs, and modpack claims before installing. It links to the browser-only source checker, download map, and machine-readable release data without changing the home page TDK.</summary>
+  </entry>
   <entry>
     <title>Verity horror guide added to primary navigation and creator references</title>
     <id>https://veritymodchecker.online/updates/horror-guide-entrypoints-2026-07-24</id>

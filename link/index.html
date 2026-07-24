@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Link Checker: Official URLs &amp; Safe Source Routes</title>
+    <meta
+      name="description"
+      content="Check a Verity link before installing: match official Java, Bedrock, MCPE, Modrinth, CurseForge, Project IDs, file records, and unsafe mirror patterns."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/link/" />
+    <link rel="alternate" type="application/atom+xml" title="Verity Mod verified route updates" href="/feed.xml" />
+    <link rel="alternate" type="application/json" title="Verity Mod release data" href="/data/verity-releases.json" />
+    <meta property="og:title" content="Verity Link Checker: Official URLs &amp; Safe Source Routes" />
+    <meta property="og:description" content="Use this source-check guide before opening a Verity download link from a video, comment, mirror, or short-link chain." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/link/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Verity Link Checker: Official URLs and Safe Source Routes",
+            "description": "A Verity link verification guide for players comparing CurseForge, Modrinth, Bedrock add-ons, MCPE files, mirrors, and short-link chains.",
+            "datePublished": "2026-07-24",
+            "dateModified": "2026-07-24",
+            "mainEntityOfPage": "https://veritymodchecker.online/link/",
+            "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
+            "author": {"@type": "Organization", "name": "Verity Mod Guide"},
+            "publisher": {"@type": "Organization", "name": "Verity Mod Guide"}
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veritymodchecker.online/" },
+              { "@type": "ListItem", "position": 2, "name": "Verity Link Checker", "item": "https://veritymodchecker.online/link/" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Which Verity link should I open?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Open the route that matches your edition first. Java players should use a Java project record such as Verity JE. Bedrock and MCPE players need Bedrock add-on records. A mirror link is weaker than a maintainer page with project and file history."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a Verity Mod link safe if the filename looks correct?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. A familiar filename is only one signal. Match the source host, owner, Project ID, record ID, Minecraft version, file type, and release history before installing."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Guide home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/bedrock/">Bedrock</a>
+        <a href="/horror-mod/">Horror</a>
+        <a href="/taken-down/">404</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/#checker">File checker</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Link intent checked July 24, 2026</p>
+          <h1>Verity Link Checker: Official URLs, Mirrors, and Safe Source Routes</h1>
+          <p class="lede">
+            Searchers typing Verity link or Verity Mod link usually want the fastest path to a working file.
+            That is exactly when mistakes happen. A link from a video description, comment, repost, short-link
+            page, Discord message, or file mirror can use the right name while pointing to the wrong edition,
+            a removed file, an outdated branch, or an installer that is not part of Minecraft. Use this page to
+            judge the source before you open the final download.
+          </p>
+          <div class="trust-strip" aria-label="Link checker scope">
+            <span>Official records first</span>
+            <span>Java and Bedrock separated</span>
+            <span>No mirrored files</span>
+          </div>
+          <div class="quick-routes" aria-label="Link checker shortcuts">
+            <a href="/#checker">Paste a source</a>
+            <a href="#known-links">Known routes</a>
+            <a href="#mirror-test">Mirror test</a>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Fast answer</span>
+          </div>
+          <h2>Do not trust a Verity link by name alone</h2>
+          <p>
+            A reliable route preserves context: host, owner, edition, Project ID, file record, Minecraft
+            version, package type, and changelog. A bare file link loses most of that context.
+          </p>
+          <ol class="steps">
+            <li>Choose Java, Bedrock, MCPE, or modpack first.</li>
+            <li>Prefer maintainer-controlled project records.</li>
+            <li>Match the current file record, not only the filename.</li>
+            <li>Use the browser-only checker before opening unfamiliar URLs.</li>
+          </ol>
+          <div class="action-row">
+            <a class="primary-link" href="/#checker">Open source checker</a>
+            <a class="copy-button" href="/download/">Open route map</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Why link searches are risky</p>
+          <h2>A Verity link is only useful if it keeps the project identity attached</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Players ask for a link, but they need a route</h3>
+            <p>
+              The word link feels simple, but Verity searches are not simple. There are Java files, Bedrock
+              add-ons, MCPE imports, video story explainers, old 404 pages, modpack routes, AI setup notes,
+              and unofficial reposts using similar language. A single generic Verity Mod link cannot safely
+              answer every player because Java and Bedrock packages are not interchangeable.
+            </p>
+            <p>
+              The safer question is: which route does this link claim to represent? A Java route should name a
+              Java project, loader, Minecraft version, and JAR record. A Bedrock or MCPE route should name an
+              add-on project, Bedrock build, MCADDON package, and world setup requirements. A modpack route
+              should say it is a profile or pack, not a standalone Java mod file. When those details are
+              missing, the link is not ready for installation.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Signals a source link should preserve</h3>
+            <ul class="check-list">
+              <li><strong>Host:</strong> a recognizable project platform or maintainer-controlled destination.</li>
+              <li><strong>Owner:</strong> the account or team responsible for the project page.</li>
+              <li><strong>Edition:</strong> Java, Bedrock, MCPE, or modpack, not a vague all-edition claim.</li>
+              <li><strong>Record:</strong> Project ID, version ID, file record, or release history.</li>
+              <li><strong>Package:</strong> JAR, MCADDON, ZIP profile, or another clearly named file type.</li>
+              <li><strong>Setup:</strong> loader, Beta APIs, packs, AI provider, or voice notes where relevant.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" id="known-links" aria-label="Known Verity link routes">
+        <div class="section-heading">
+          <p class="eyebrow">Known current routes</p>
+          <h2>Use these records to compare a Verity link before installing</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Route</th>
+                <th>What the link should show</th>
+                <th>Use when</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Verity JE CurseForge record</a></td>
+                <td>Project 1591438, file record 8461257, verity-5.7.3.jar, Forge 1.20.1</td>
+                <td>You are installing the current Java route from CurseForge.</td>
+              </tr>
+              <tr>
+                <td><a href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="noopener" target="_blank">Verity JE Modrinth record</a></td>
+                <td>Project on1Y0osD, version yAt0wv1Z, published hashes for byte comparison</td>
+                <td>You want the Java file with publisher SHA-1 and SHA-512 metadata.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588" rel="noopener" target="_blank">Verity BE record</a></td>
+                <td>Project 1574632, file record 8486588, Bedrock 26.30, stable 1.0.9 MCADDON</td>
+                <td>You are installing the Undertaletalelover Bedrock route.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253" rel="noopener" target="_blank">PnTMC Bedrock record</a></td>
+                <td>Project 1575941, file record 8327253, ThatMob's Verity 2.1.0 V26.30</td>
+                <td>You are following the PnTMC Bedrock add-on route.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files/8406293" rel="noopener" target="_blank">Pocket Edition record</a></td>
+                <td>Project 1596246, file record 8406293, Bedrock 26.30 similar-name route</td>
+                <td>You are checking a Pocket Edition-specific project page.</td>
+              </tr>
+              <tr>
+                <td><a href="/verity-exe/">VERITY.exe route</a></td>
+                <td>A modpack or executable-style search, not the standalone Java JAR or Bedrock MCADDON</td>
+                <td>You are intentionally looking for the modpack identity.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section" id="mirror-test">
+        <div class="section-heading">
+          <p class="eyebrow">Mirror test</p>
+          <h2>How to decide whether a reposted Verity link deserves trust</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>Run the four-question test</h3>
+            <p>
+              First, does the page name the edition? If a page says one download works for Java, Bedrock,
+              MCPE, and Windows, treat that as a warning. Second, does it name a project page or maintainer?
+              A file host with no project trail cannot prove that it carries the current release. Third, does
+              the package type fit your game? A Java JAR belongs in a Java loader profile. An MCADDON belongs
+              in Bedrock and must be activated as packs. Fourth, does the link hide the final destination
+              behind redirects, countdowns, passwords, or unrelated installers?
+            </p>
+            <p>
+              A link that fails one question is not automatically malicious, but it is not a strong install
+              source. Use the route map, official records, and local checker before continuing. If a creator
+              or community post wants to help players, ask them to cite a route page or project record rather
+              than a bare archive.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Common bad-link patterns</h3>
+            <ul class="check-list">
+              <li><strong>Short-link chain:</strong> hides the final host until after several ad pages.</li>
+              <li><strong>Password ZIP:</strong> adds friction while removing project history.</li>
+              <li><strong>APK for everyone:</strong> does not answer Java or normal Bedrock install intent.</li>
+              <li><strong>EXE installer:</strong> may be unrelated unless the modpack identity is explicit.</li>
+              <li><strong>Old file repost:</strong> may keep a familiar name while losing changelog context.</li>
+              <li><strong>API key form:</strong> no download page should ask for a Groq, OpenRouter, Microsoft, or Discord credential.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Source checker workflow</p>
+          <h2>Use the homepage checker to inspect a link before opening it</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>What the checker can recognize</h3>
+            <p>
+              The browser-only checker on this site looks for route signals in text, URLs, filenames, record
+              IDs, package extensions, displayed sizes, and known hashes. It can recognize the current Java
+              route, the verified Modrinth route, Bedrock add-on records, Pocket Edition aliases, and common
+              stale filenames. It does not upload selected files. When a local file is selected, checksum
+              calculation happens in the browser so the bytes stay on the device.
+            </p>
+            <p>
+              The checker is not a malware scanner. Its job is narrower and still useful: it tells you
+              whether the thing in front of you resembles a known route or whether the source looks
+              unrelated, stale, or incomplete. That is the right first step for a Verity link search because
+              most user mistakes happen before antivirus questions, at the point where the wrong edition or
+              wrong source is selected.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>What to do with the result</h3>
+            <p>
+              If the checker recognizes an official route, open the maintainer page and compare the file
+              details again. If the checker recognizes only a filename, rebuild the route through Project ID
+              and edition before installing. If it recognizes a platform but the project path is unrelated,
+              do not assume the file is safe just because the host is familiar. If it does not recognize the
+              input at all, treat the link as unverified and use the route table above.
+            </p>
+            <p>
+              This is also useful for creators and Discord moderators. Instead of answering every request
+              with one direct file, point players to the route checker or the download map. It solves the
+              underlying confusion and reduces repeat comments from Java players receiving Bedrock files or
+              MCPE players receiving Java JARs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Verity link questions</h2>
+        </div>
+        <details open>
+          <summary>What is the best Verity Mod link?</summary>
+          <p>
+            The best link depends on edition. Java players should start with Verity JE. Bedrock and MCPE
+            players should use Bedrock add-on records. If you are not sure, start with the
+            <a href="/download/">download route map</a> or paste the source into the homepage checker.
+          </p>
+        </details>
+        <details>
+          <summary>Should I trust a Verity link from YouTube or Discord?</summary>
+          <p>
+            Treat it as a lead, not proof. Open the final destination, check whether it preserves owner,
+            edition, Project ID, record ID, file type, and version details, then compare it with the known
+            routes on this page.
+          </p>
+        </details>
+        <details>
+          <summary>Why not just mirror the file here?</summary>
+          <p>
+            Mirroring would remove the project history that users need to make a good decision. This site
+            links to maintainer records and explains how to compare them. It does not host Verity files.
+          </p>
+        </details>
+      </section>
+
+      <section class="source-strip" aria-label="Link checker sources">
+        <strong>Checked route sources</strong>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">CurseForge Verity JE</a>
+        <a href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="noopener" target="_blank">Modrinth Verity JE</a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588" rel="noopener" target="_blank">CurseForge Verity BE</a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253" rel="noopener" target="_blank">PnTMC Bedrock route</a>
+        <a href="/data/verity-releases.json">Machine-readable release data</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-routes" aria-label="Footer route links">
+        <a href="/">Checker</a>
+        <a href="/link/">Link checker</a>
+        <a href="/download/">Download route</a>
+        <a href="/curseforge/">CurseForge routes</a>
+        <a href="/java/">Java route</a>
+        <a href="/bedrock/">Bedrock / MCPE route</a>
+        <a href="/horror-mod/">Horror guide</a>
+        <a href="/taken-down/">Taken down / 404</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/data/verity-releases.json">Release data</a>
+        <a href="/feed.xml">Update feed</a>
+      </nav>
+      <p>Fan-made source-routing page. Not affiliated with Mojang, Microsoft, CurseForge, Modrinth, ThatMob, or Verity maintainers.</p>
+    </footer>
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

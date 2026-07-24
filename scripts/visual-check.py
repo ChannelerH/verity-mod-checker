@@ -10,6 +10,7 @@ VIEWPORTS = {
 }
 ROUTES = [
     "/",
+    "/link/",
     "/download/",
     "/curseforge/",
     "/creators/",
