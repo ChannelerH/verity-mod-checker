@@ -14,8 +14,8 @@ export default {
     }
 
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
-      url.pathname = "/bedrock/";
-      url.hash = "mcpe";
+      url.pathname = "/pocket-edition/";
+      url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
 
