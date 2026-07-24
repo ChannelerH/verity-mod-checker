@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T13:08:00+08:00</updated>
+  <updated>2026-07-24T14:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>FAQ hub added for download, Java, Bedrock, voice, and 429 questions</title>
+    <id>https://veritymodchecker.online/updates/faq-hub-2026-07-24</id>
+    <link href="https://veritymodchecker.online/faq/" rel="alternate" />
+    <published>2026-07-24T14:05:00+08:00</published>
+    <updated>2026-07-24T14:05:00+08:00</updated>
+    <summary>Added a Verity Mod FAQ hub after Search Console showed long-tail demand around verity-5.7.3.jar, Bedrock, NeoForge, Java download, and 429 troubleshooting. The page links players to the matching download, Java, Bedrock, API, talk, voice, and file-checker routes without changing the home page title or mirroring downloads.</summary>
+  </entry>
   <entry>
     <title>VerityPack checked as a separate modpack route</title>
     <id>https://veritymodchecker.online/updates/veritypack-route-2026-07-24</id>
