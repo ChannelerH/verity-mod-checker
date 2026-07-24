@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T15:08:00+08:00</updated>
+  <updated>2026-07-24T15:42:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Creator reference page added for video and article citations</title>
+    <id>https://veritymodchecker.online/updates/creator-reference-2026-07-24</id>
+    <link href="https://veritymodchecker.online/creators/" rel="alternate" />
+    <published>2026-07-24T15:42:00+08:00</published>
+    <updated>2026-07-24T15:42:00+08:00</updated>
+    <summary>Added a creator reference page for YouTube descriptions, articles, resource pages, Discord answers, and pinned comments. The page provides copy-safe source notes, current Verity JE, Verity BE, and PnTMC project facts, official route links, and a machine-readable data pointer without mirroring downloads.</summary>
+  </entry>
   <entry>
     <title>CurseForge route page added for Java and Bedrock project confusion</title>
     <id>https://veritymodchecker.online/updates/curseforge-routes-2026-07-24</id>
