@@ -72,6 +72,14 @@
               "@type": "Answer",
               "text": "No. Local text-to-speech reads generated dialogue aloud. It does not by itself add live microphone input or prove that a different Verity project supports voice chat."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Simple Voice Chat make Verity JE react to my microphone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not by itself. If Simple Voice Chat shows that your microphone works, that only proves the voice chat layer can hear you. For Verity JE, first confirm a typed prompt works, then check the installed talk control, English speech-to-text support, provider setup, and server-side requirements for the exact build."
+            }
           }
         ]
       }
@@ -236,6 +244,15 @@
             </p>
           </article>
           <article class="error-card">
+            <span>Java voice chat</span>
+            <h3>Simple Voice Chat works but Verity does not react</h3>
+            <p>
+              Treat this as a routing test, not proof that the Verity JE voice path works. A voice chat mod can
+              pass microphone audio while Verity still waits for its own talk control, AI provider, English
+              speech-to-text path, or required server-side setup.
+            </p>
+          </article>
+          <article class="error-card">
             <span>Bedrock</span>
             <h3>Dialogue appears but audio is missing</h3>
             <p>
@@ -260,6 +277,15 @@
               Compare the visible response with the audio, note the Minecraft and device language, and test
               one short English line without other resource packs. Correct chat with incorrect speech points
               to the local TTS path; changing the AI provider or downloading a mirror is not the first fix.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Android Java</span>
+            <h3>PojavLauncher or Zalith reports no compatible microphone</h3>
+            <p>
+              Treat Android Java launchers as a separate audio runtime. Smiley OpenAL's CurseForge record says
+              it routes Verity JE microphone input and text-to-speech through OpenAL for those launchers. Verify
+              that add-on separately and keep the original Verity JE installed.
             </p>
           </article>
           <article class="error-card">
@@ -334,6 +360,11 @@
                 <td>Live microphone input is being confused with local TTS</td>
                 <td>Identify the project; TTS reads text and is not voice chat</td>
               </tr>
+              <tr>
+                <td>simple voice chat verity not reacting</td>
+                <td>Microphone audio works but the Java mod does not receive or answer it</td>
+                <td>Test typed prompts, talk control, English STT, provider, and server-side setup</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -376,6 +407,37 @@
               loader or Bedrock build, device, and whether text responses appear.
             </p>
           </article>
+          <article class="guide-block">
+            <h3>Simple Voice Chat is only one layer in Java</h3>
+            <p>
+              A common Java report is: "Simple Voice Chat works, I can hear audio, but Verity does not react."
+              That result proves the microphone and the voice chat mod are alive, but it does not prove Verity JE
+              received speech as a prompt. Test a typed Verity prompt first. If typed text fails, fix the provider
+              or build before touching microphone settings.
+            </p>
+            <p>
+              If typed text works, open Controls and check the installed Verity talk binding, then test one short
+              English voice phrase because the official project notes speech-to-text and text-to-speech were tested
+              in English. On a multiplayer server, confirm the matching required files and dependencies are present
+              server-side as well as client-side before assuming the public CurseForge file is broken.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Android Java launchers need their own audio check</h3>
+            <p>
+              PojavLauncher and Zalith are not the same runtime as desktop Java. If the mod loads but Minecraft
+              reports no compatible microphone, keep the problem separate from Bedrock MCPE issues and separate
+              from suspicious Verity mod download mirrors. First confirm the base Verity JE file, then inspect
+              the Android launcher, microphone permission, and audio bridge layer.
+            </p>
+            <p>
+              The Smiley OpenAL CurseForge page describes an independent add-on for Verity JE on Android Java
+              launchers. Verify it like any third-party add-on: owner EzequielDevTeam, Project ID 1615985, main
+              file <code>smiley-openal-1.1.0-lite.jar</code> for Minecraft 1.20.1 Forge, and a clear statement
+              that it is not the Verity Mod itself and does not contain Verity code.
+            </p>
+            <a href="https://www.curseforge.com/minecraft/mc-addons/smiley-openal" target="_blank" rel="noopener noreferrer">Open Smiley OpenAL record</a>
+          </article>
         </div>
       </section>
 
@@ -398,6 +460,11 @@
                 <td>Java Forge or NeoForge</td>
                 <td>TTS, voice dependency, provider setup, or operating system audio.</td>
                 <td>Confirm base mod loads, then test provider and voice path separately.</td>
+              </tr>
+              <tr>
+                <td>Android Java launcher</td>
+                <td>PojavLauncher or Zalith may miss desktop Java audio APIs.</td>
+                <td>Verify Verity JE, Android microphone permission, and any OpenAL bridge add-on separately.</td>
               </tr>
               <tr>
                 <td>Bedrock</td>
