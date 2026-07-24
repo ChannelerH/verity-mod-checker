@@ -292,6 +292,11 @@
                 <td>Install the right Java or Bedrock package in order</td>
                 <td><a href="/how-to-get-verity-mod/">Installation guide</a></td>
               </tr>
+              <tr>
+                <td>veritypack or verity pack</td>
+                <td>Choose a CurseForge modpack profile instead of a standalone file</td>
+                <td><a href="#modpack-routes">Modpack distinction</a></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -330,6 +335,21 @@
               <li><strong>source ZIP:</strong> not a direct mod install unless you know how to build and review it.</li>
               <li><strong>EXE or APK:</strong> avoid unless the publisher and signature are clearly verified.</li>
             </ul>
+          </article>
+          <article class="guide-block" id="modpack-routes">
+            <h3>VerityPack is not the base Verity JE file</h3>
+            <p>
+              Checked July 24, 2026: the CurseForge <a href="https://www.curseforge.com/minecraft/modpacks/veritypack" rel="noopener" target="_blank">VerityPack</a>
+              page is a separate modpack by Sarelsana, Project ID 1587394, with a Forge 1.20.1 ZIP profile named
+              <code>VerityPack-1.20.1.zip</code> and 111,309 downloads at check. Use it only when you want a
+              bundled profile built around Verity, not when a tutorial asks for a single Verity JE jar.
+            </p>
+            <p>
+              The similar <code>/minecraft/modpacks/verity-pack</code> slug currently returns a CurseForge 404,
+              and VerityPack's own description points bug reports at an older <code>/minecraft/mc-mods/verity-mod</code>
+              link that also returns 404. For the current standalone Java route, compare against Verity JE
+              instead of treating every Verity Pack search result as the same download.
+            </p>
           </article>
         </div>
       </section>
@@ -374,6 +394,11 @@
                 <td>CurseForge modpack with Forge and NeoForge files</td>
                 <td>You specifically want the VERITY.exe modpack, not the standalone Verity JE mod.</td>
               </tr>
+              <tr>
+                <td><a href="https://www.curseforge.com/minecraft/modpacks/veritypack" rel="noopener" target="_blank">VerityPack</a></td>
+                <td>CurseForge modpack #1587394, Forge 1.20.1 ZIP profile, checked at 111,309 downloads</td>
+                <td>You want a bundled horror profile and accept modpack-level changes.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -395,8 +420,8 @@
               tells the player exactly what they are about to open.
             </p>
             <p>
-              This is why the route page separates Verity JE, Verity BE, PnTMC's Bedrock edition, and
-              VERITY.exe. They answer overlapping searches, but they are not interchangeable. A Java player
+              This is why the route page separates Verity JE, Verity BE, PnTMC's Bedrock edition, VERITY.exe,
+              and VerityPack. They answer overlapping searches, but they are not interchangeable. A Java player
               cannot install a Bedrock .mcaddon. A Bedrock player cannot use a Java jar. A modpack may contain
               the right idea but still require the CurseForge app and a separate profile.
             </p>

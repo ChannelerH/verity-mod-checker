@@ -10,7 +10,7 @@ The what-is-verity-mod page answers the rising searches "what is Verity Mod," "w
 
 The how-to-get-verity-mod page answers download and installation intent. It starts with edition selection, gives a clean-profile Java order, gives a fresh-world Bedrock order, and delays Groq, Ollama, voice, commands, and experimental features until the base project loads.
 
-The download page is the main status tracker. It explains that Verity JE, Verity BE, Verity - Bedrock Edition, and VERITY.exe answer overlapping searches but are different routes. Java jars do not import into Bedrock. Bedrock .mcaddon files do not belong in the Java mods folder. A modpack is a profile route and should not be treated as the same artifact as a standalone Java jar.
+The download page is the main status tracker. It explains that Verity JE, Verity BE, Verity - Bedrock Edition, VERITY.exe, and VerityPack answer overlapping searches but are different routes. Java jars do not import into Bedrock. Bedrock .mcaddon files do not belong in the Java mods folder. A modpack is a profile route and should not be treated as the same artifact as a standalone Java jar. Checked July 24, 2026: VerityPack is a separate CurseForge modpack by Sarelsana, Project ID 1587394, with a Forge 1.20.1 ZIP profile named `VerityPack-1.20.1.zip` and 111,309 downloads at check.
 
 The what-happened page answers searches like "what happened to Verity Mod" and "did Verity Mod get taken down." The page explains that some old video links, old project pages, and comments can point to removed or stale files, while current public routes still exist. It tells players to rebuild the route by project name, edition, version, and file type instead of trusting the first mirror.
 
