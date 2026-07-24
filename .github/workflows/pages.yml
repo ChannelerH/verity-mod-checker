@@ -30,7 +30,7 @@ jobs:
       - name: Prepare static artifact
         run: |
           mkdir _site
-          cp index.html styles.css script.js favicon.svg robots.txt sitemap.xml feed.xml llms.txt llms-full.txt 04cb9707b196d4d8b34d0f083fb95f05.txt _site/
+          cp index.html styles.css script.js analytics.js favicon.svg robots.txt sitemap.xml feed.xml llms.txt llms-full.txt 04cb9707b196d4d8b34d0f083fb95f05.txt _site/
           cp -R ai-model api-connection-failed assets bedrock data download how-to-get-verity-mod how-to-talk-to-verity java not-working taken-down verity-exe voice-not-working what-happened what-is-verity-mod _site/
           touch _site/.nojekyll
       - name: Upload artifact
