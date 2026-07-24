@@ -37,7 +37,7 @@
             "name": "Verity Mod API Connection Failed: Fix 401, 429 and Timeouts",
             "url": "https://veritymodchecker.online/api-connection-failed/",
             "description": "A status-code troubleshooting guide for Verity JE AI provider connection failures.",
-            "dateModified": "2026-07-20"
+            "dateModified": "2026-07-24"
           },
           {
             "@type": "BreadcrumbList",
@@ -80,6 +80,14 @@
                   "@type": "Answer",
                   "text": "No. Share the provider name, status code, model name, time, and sanitized log line. Revoke any key that was shown in a screenshot, chat, forum, or public log."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Ollama work in the terminal but Verity returns null or a blank reply?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Terminal success proves that Ollama and one model can answer, but not that the Minecraft profile uses the same model name or local endpoint. Keep Ollama running, verify the exact profile configuration, test a short prompt, and compare a sanitized Verity log before reinstalling."
+                }
               }
             ]
           }
@@ -105,7 +113,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Live problem route checked July 20, 2026</p>
+          <p class="eyebrow">Live problem route checked July 24, 2026</p>
           <h1>Verity Mod API Connection Failed</h1>
           <p class="lede">
             Do not reinstall the jar until you read the status code. An API connection failed message usually
@@ -184,6 +192,11 @@
                 <td>Connection refused</td>
                 <td>Local Ollama</td>
                 <td>Confirm Ollama is running, the expected local address is reachable, and the configured model is installed.</td>
+              </tr>
+              <tr>
+                <td>Ollama works in terminal, but Verity returns <code>null</code> or blank</td>
+                <td>In-game model, endpoint, or integration config</td>
+                <td>Keep Ollama running, verify the exact model and local endpoint used by the Minecraft profile, then inspect a sanitized log.</td>
               </tr>
               <tr>
                 <td>Silent reply with no code</td>
@@ -309,6 +322,13 @@
               silent while it loads or runs slowly. Choose a smaller supported model before treating latency as file
               corruption. Never install an unknown executable that claims it can "unlock" local Verity AI.
             </p>
+            <p>
+              If Ollama answers in the terminal but Verity returns <code>null</code>, blank text, or no usable reply,
+              terminal success has only verified the local runtime and that one model. Keep the service open, confirm
+              the exact model name and local endpoint selected by the Minecraft profile, and reproduce one short prompt
+              while reading the sanitized launcher or mod log. If a clean profile still fails, report the Verity JE
+              version, Forge version, Ollama model, and error line instead of replacing the jar.
+            </p>
           </article>
         </div>
       </section>
@@ -417,10 +437,18 @@
             pasted into a public chat, support post, screenshot, stream, or form.
           </p>
         </details>
+        <details>
+          <summary>Why does Ollama work in the terminal but Verity returns null or a blank reply?</summary>
+          <p>
+            The terminal test proves that Ollama and one model can answer, but it does not prove that Minecraft uses
+            the same model name or local endpoint. Keep Ollama running, verify the exact profile configuration, test
+            one short prompt, and compare a sanitized Verity log before reinstalling.
+          </p>
+        </details>
       </section>
 
       <aside class="source-strip" aria-label="Primary troubleshooting references">
-        <strong>Primary references checked July 20:</strong>
+        <strong>Primary references checked July 24:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Maintainer setup tutorial</a>
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
@@ -444,5 +472,6 @@
       </nav>
       <p>Independent troubleshooting guide. No API keys are collected. Not affiliated with the listed projects or providers.</p>
     </footer>
+    <script src="/analytics.js" defer></script>
   </body>
 </html>

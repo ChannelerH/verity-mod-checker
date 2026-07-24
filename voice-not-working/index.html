@@ -56,6 +56,22 @@
               "@type": "Answer",
               "text": "Verity BE 1.0.9 adds local text-to-speech. Run /verity:tts on to enable it or /verity:tts off to disable it, then check the active resource pack and Minecraft audio output if dialogue remains silent."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Verity BE text-to-speech spell one letter at a time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Treat letter-by-letter speech as a text-to-speech rendering problem, not a missing download. Confirm Verity BE 1.0.9, run /verity:tts on, reproduce one short line in a clean world, and report the exact phrase, device language, and game version if it continues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Verity BE local TTS the same as voice chat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Local text-to-speech reads generated dialogue aloud. It does not by itself add live microphone input or prove that a different Verity project supports voice chat."
+            }
           }
         ]
       }
@@ -67,7 +83,7 @@
         "@id": "https://veritymodchecker.online/voice-not-working/#webpage",
         "url": "https://veritymodchecker.online/voice-not-working/",
         "name": "Verity Mod Voice Not Working - Chat Works But No Sound Fix",
-        "dateModified": "2026-07-23",
+        "dateModified": "2026-07-24",
         "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
         "about": ["Verity Mod voice", "Verity BE text-to-speech", "Minecraft audio troubleshooting"]
       }
@@ -229,6 +245,24 @@
             </p>
           </article>
           <article class="error-card">
+            <span>Bedrock 1.0.9</span>
+            <h3>TTS spells the response one letter at a time</h3>
+            <p>
+              Do not replace the add-on first. Confirm record #8486588, run <code>/verity:tts on</code>, and
+              reproduce one short line in a clean world. Record the exact phrase, device language, and game
+              version for the maintainer if the same letter-by-letter output continues.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Language</span>
+            <h3>The spoken language does not match the chat text</h3>
+            <p>
+              Compare the visible response with the audio, note the Minecraft and device language, and test
+              one short English line without other resource packs. Correct chat with incorrect speech points
+              to the local TTS path; changing the AI provider or downloading a mirror is not the first fix.
+            </p>
+          </article>
+          <article class="error-card">
             <span>MCPE</span>
             <h3>Phone is silent but chat works</h3>
             <p>
@@ -284,6 +318,21 @@
                 <td>verity mcpe no sound</td>
                 <td>Mobile Bedrock audio issue</td>
                 <td><a href="/bedrock/#mcpe">MCPE route</a> plus device audio checks</td>
+              </tr>
+              <tr>
+                <td>verity tts spelling letters</td>
+                <td>Local TTS renders the response incorrectly</td>
+                <td>Reproduce one short line and record the device language</td>
+              </tr>
+              <tr>
+                <td>verity voice wrong language</td>
+                <td>Chat text and spoken output do not match</td>
+                <td>Compare text versus audio in a clean Bedrock 1.0.9 world</td>
+              </tr>
+              <tr>
+                <td>verity voice chat</td>
+                <td>Live microphone input is being confused with local TTS</td>
+                <td>Identify the project; TTS reads text and is not voice chat</td>
               </tr>
             </tbody>
           </table>
@@ -434,5 +483,6 @@
       </nav>
       <p>Fan-made voice troubleshooting page. Not affiliated with Mojang, Microsoft, CurseForge, or Verity maintainers.</p>
     </footer>
+    <script src="/analytics.js" defer></script>
   </body>
 </html>

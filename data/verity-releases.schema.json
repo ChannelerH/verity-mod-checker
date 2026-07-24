@@ -25,6 +25,7 @@
         "packageType": { "enum": ["jar", "mcaddon"] },
         "displayedSizeMb": { "type": ["number", "null"] },
         "sizeBytes": { "type": "integer", "minimum": 0 },
+        "recordDownloadsAtCheck": { "type": "integer", "minimum": 0 },
         "publishedDate": { "type": "string", "format": "date" },
         "hashes": { "$ref": "#/$defs/hashes" }
       }

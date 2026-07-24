@@ -50,7 +50,11 @@ export default {
 
     if (/^\/assets\/images\/.+-v\d+\.(?:avif|webp|png|jpe?g)$/i.test(url.pathname)) {
       headers.set("cache-control", "public, max-age=31536000, immutable");
-    } else if (url.pathname === "/styles.css" || url.pathname === "/script.js") {
+    } else if (
+      url.pathname === "/styles.css" ||
+      url.pathname === "/script.js" ||
+      url.pathname === "/analytics.js"
+    ) {
       headers.set("cache-control", "public, max-age=3600, must-revalidate");
     } else if (
       url.pathname === "/robots.txt" ||

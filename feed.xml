@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-23T09:27:22+08:00</updated>
+  <updated>2026-07-24T09:55:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>July 24 verification keeps the same current Verity file records</title>
+    <id>https://veritymodchecker.online/updates/verification-2026-07-24</id>
+    <link href="https://veritymodchecker.online/download/" rel="alternate" />
+    <published>2026-07-24T09:55:00+08:00</published>
+    <updated>2026-07-24T09:55:00+08:00</updated>
+    <summary>Verity JE record 8461257, Verity BE record 8486588, and PnTMC record 8327253 remain the current checked routes. Point-in-time project totals are 1,950,264, 3,550,887, and 6,240,846 on CurseForge; the official Verity JE Modrinth project is at 180,575. These counters are popularity signals, not unique-user or safety claims.</summary>
+  </entry>
   <entry>
     <title>Verity BE 1.0.9 adds local text-to-speech and new interactions</title>
     <id>https://veritymodchecker.online/updates/verity-be-1-0-9</id>

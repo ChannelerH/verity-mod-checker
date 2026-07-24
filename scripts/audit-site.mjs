@@ -23,6 +23,12 @@ const currentJavaModrinthRelease = currentJavaModrinth?.releases.find((release) 
 const currentBedrockRelease = releaseSnapshot.projects
   .find((project) => project.name === "Verity BE")
   ?.releases.find((release) => release.status === "current");
+const downloadSignals = [
+  releaseSnapshot.projects.find((project) => project.name === "Verity JE")?.projectDownloadsAtCheck,
+  currentJavaModrinth?.projectDownloadsAtCheck,
+  releaseSnapshot.projects.find((project) => project.name === "Verity BE")?.projectDownloadsAtCheck,
+  releaseSnapshot.projects.find((project) => project.name === "Verity - Bedrock Edition")?.projectDownloadsAtCheck,
+];
 
 for (const file of pageFiles) {
   const html = fs.readFileSync(file, "utf8");
@@ -52,6 +58,9 @@ for (const file of pageFiles) {
 
   if (!title || !description || h1Count !== 1 || !canonical) {
     errors.push(`${file}: metadata title=${Boolean(title)} description=${Boolean(description)} h1=${h1Count} canonical=${Boolean(canonical)}`);
+  }
+  if (!html.includes('<script src="/analytics.js" defer></script>')) {
+    errors.push(`${file}: missing shared outbound analytics`);
   }
   if (words.length < 1200) errors.push(`${file}: only ${words.length} visible words; expected at least 1200`);
   if (exactPhrases.length === 0) errors.push(`${file}: the primary phrase does not appear in visible copy`);
@@ -105,6 +114,18 @@ if (!currentBedrockRelease?.filename || !currentBedrockRelease?.recordId) {
     const content = fs.readFileSync(file, "utf8");
     if (!content.includes(String(currentBedrockRelease.recordId))) {
       errors.push(`${file}: missing current Bedrock release record ${currentBedrockRelease.recordId}`);
+    }
+  }
+}
+
+if (downloadSignals.some((value) => !Number.isInteger(value))) {
+  errors.push("data/verity-releases.json: missing a current project download total");
+} else {
+  const formattedSignals = downloadSignals.map((value) => value.toLocaleString("en-US"));
+  for (const file of ["index.html", "download/index.html", "feed.xml", "llms.txt", "llms-full.txt"]) {
+    const content = fs.readFileSync(file, "utf8");
+    for (const signal of formattedSignals) {
+      if (!content.includes(signal)) errors.push(`${file}: missing current project download total ${signal}`);
     }
   }
 }

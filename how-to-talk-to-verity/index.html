@@ -36,7 +36,7 @@
             "@type": "HowTo",
             "name": "How to talk to Verity in Minecraft",
             "description": "Project-specific steps for talking to Verity in Java and Bedrock editions.",
-            "dateModified": "2026-07-20",
+            "dateModified": "2026-07-24",
             "step": [
               {"@type": "HowToStep", "name": "Identify the project", "text": "Confirm whether you installed Verity JE, Verity BE, or Verity - Bedrock Edition by PnTMC."},
               {"@type": "HowToStep", "name": "Complete required setup", "text": "Configure the Java AI provider or enable the Bedrock packs and Beta APIs required by the selected project."},
@@ -85,6 +85,14 @@
                   "@type": "Answer",
                   "text": "Confirm that the mod loaded, its Groq or Ollama provider is configured, and a short text prompt returns a response. Then check the installed build's controls, microphone permission, audio output, and voice dependencies."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "Does every Verity Mod support live voice chat like the videos?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Verity JE, Verity BE, and the PnTMC Bedrock add-on have different interaction layers. Verity BE 1.0.9 local TTS reads dialogue aloud but is not live microphone chat, and edited or role-played video audio does not prove a public project has the same feature."
+                }
               }
             ]
           }
@@ -110,7 +118,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Interaction guide checked July 20, 2026</p>
+          <p class="eyebrow">Interaction guide checked July 24, 2026</p>
           <h1>How to Talk to Verity in Minecraft</h1>
           <p class="lede">
             First identify the Verity Mod project. Verity JE, Verity BE, and Verity - Bedrock Edition by PnTMC do not
@@ -154,6 +162,7 @@
                 <th>Installed project</th>
                 <th>Before talking</th>
                 <th>How interaction starts</th>
+                <th>Confirmed voice expectation</th>
               </tr>
             </thead>
             <tbody>
@@ -161,20 +170,28 @@
                 <td>Verity JE, Project ID 1591438</td>
                 <td>Correct Forge or NeoForge profile plus configured Groq or Ollama route.</td>
                 <td>Use the text or talk control provided by the installed build; test text before voice.</td>
+                <td>Text supports more languages; the maintainer says speech input and TTS were tested in English.</td>
               </tr>
               <tr>
                 <td>Verity BE, Project ID 1574632</td>
                 <td>Bedrock 26.30, active packs, Beta APIs, and the current connect step.</td>
                 <td>Open chat and type <code>Verity</code> followed by what you want to say.</td>
+                <td>Version 1.0.9 adds local TTS through <code>/verity:tts on</code>; this is not live microphone chat.</td>
               </tr>
               <tr>
                 <td>Verity - Bedrock Edition by PnTMC, Project ID 1575941</td>
                 <td>Matching add-on version with its packs active in the current world.</td>
                 <td>Chat while Verity is on the ground; use <code>Hey Verity</code> to wake him in inventory.</td>
+                <td>Use the documented text and wake behavior; do not infer live voice chat from a video.</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p>
+          A recorded video can include a different project, human role-play, voice-over, editing, or private
+          configuration. Match a feature to the current maintainer notes before treating video audio as a
+          promised capability of the file you installed.
+        </p>
       </section>
 
       <section class="guide-section">
@@ -432,10 +449,18 @@
             output device, voice dependencies, and English voice support.
           </p>
         </details>
+        <details>
+          <summary>Does every Verity Mod support live voice chat like the videos?</summary>
+          <p>
+            No. Verity JE, Verity BE, and PnTMC use different interaction layers. Verity BE 1.0.9 local TTS
+            reads dialogue aloud but is not live microphone input. Video voice-over, editing, role-play, or a
+            private setup does not prove that the public file has the same feature.
+          </p>
+        </details>
       </section>
 
       <aside class="source-strip" aria-label="Primary interaction references">
-        <strong>Maintainer records checked July 20:</strong>
+        <strong>Maintainer records checked July 24:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE</a>
         <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Verity JE setup tutorial</a>
         <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" target="_blank" rel="noopener noreferrer">Verity BE</a>
@@ -457,5 +482,6 @@
       </nav>
       <p>Independent interaction guide. Not affiliated with Mojang, Microsoft, CurseForge, or the listed maintainers.</p>
     </footer>
+    <script src="/analytics.js" defer></script>
   </body>
 </html>
