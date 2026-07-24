@@ -5,7 +5,7 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T11:38:42+08:00</updated>
+  <updated>2026-07-24T13:08:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>VerityPack checked as a separate modpack route</title>
@@ -20,8 +20,8 @@
     <id>https://veritymodchecker.online/updates/verification-2026-07-24</id>
     <link href="https://veritymodchecker.online/download/" rel="alternate" />
     <published>2026-07-24T09:55:00+08:00</published>
-    <updated>2026-07-24T10:55:00+08:00</updated>
-    <summary>Verity JE record 8461257, Verity BE record 8486588, and PnTMC record 8327253 remain the current checked routes. Point-in-time project totals are 1,953,123, 3,555,586, and 6,249,548 on CurseForge; the official Verity JE Modrinth project is at 181,544. These counters are popularity signals, not unique-user or safety claims.</summary>
+    <updated>2026-07-24T13:08:00+08:00</updated>
+    <summary>Verity JE record 8461257, Verity BE record 8486588, and PnTMC record 8327253 remain the current checked routes. Point-in-time project totals are 1,957,869, 3,562,660, and 6,263,660 on CurseForge; the official Verity JE Modrinth project is at 183,856. These counters are popularity signals, not unique-user or safety claims.</summary>
   </entry>
   <entry>
     <title>Verity BE 1.0.9 adds local text-to-speech and new interactions</title>
