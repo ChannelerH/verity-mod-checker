@@ -134,6 +134,13 @@ const sitemap = fs.readFileSync("sitemap.xml", "utf8");
 for (const retiredRoute of ["/verity-je/", "/mcpe/"]) {
   if (sitemap.includes(retiredRoute)) errors.push(`sitemap.xml: retired route remains listed ${retiredRoute}`);
 }
+const indexNowScript = fs.readFileSync("scripts/submit-indexnow.mjs", "utf8");
+const indexNowKeyFile = indexNowScript.match(/const keyFile = "([^"]+)"/)?.[1];
+if (!indexNowScript.includes("https://api.indexnow.org/indexnow") || !indexNowKeyFile) {
+  errors.push("scripts/submit-indexnow.mjs: missing IndexNow API endpoint");
+} else if (!fs.existsSync(indexNowKeyFile) || fs.readFileSync(indexNowKeyFile, "utf8").trim() !== indexNowKeyFile.replace(/\.txt$/, "")) {
+  errors.push(`IndexNow key: script points to a missing or invalid key file ${indexNowKeyFile}`);
+}
 
 const worker = fs.readFileSync("_worker.js", "utf8");
 for (const retiredRoute of ["/verity-je", "/mcpe"]) {
