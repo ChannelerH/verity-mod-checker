@@ -209,6 +209,56 @@
         </div>
       </section>
 
+      <section class="guide-section api-diagnosis-section" id="quick-diagnosis">
+        <div class="section-heading">
+          <p class="eyebrow">Quick diagnosis</p>
+          <h2>Choose the provider and error before changing files</h2>
+        </div>
+        <div class="api-diagnosis-grid">
+          <form class="guide-block api-diagnosis-form" id="apiDiagnosisForm">
+            <div class="field-grid">
+              <label>
+                Provider
+                <select id="apiProvider">
+                  <option value="groq">Groq</option>
+                  <option value="openrouter">OpenRouter</option>
+                  <option value="ollama">Ollama</option>
+                  <option value="unknown">Not sure</option>
+                </select>
+              </label>
+              <label>
+                Error or symptom
+                <select id="apiSymptom">
+                  <option value="429">429 Too Many Requests</option>
+                  <option value="401">401 Unauthorized</option>
+                  <option value="403">403 Forbidden</option>
+                  <option value="404">404 Model or endpoint not found</option>
+                  <option value="5xx">500, 502, or 503</option>
+                  <option value="refused">Connection refused</option>
+                  <option value="blank">Null, blank, or silent reply</option>
+                  <option value="voice">Text works but voice does not</option>
+                </select>
+              </label>
+            </div>
+            <button class="primary-link api-diagnosis-button" type="submit">Show next step</button>
+            <p class="api-privacy-note">No API key, log text, or file is collected. This selector only changes the advice shown on this page.</p>
+          </form>
+          <article class="guide-block api-diagnosis-result" id="apiDiagnosisResult" aria-live="polite">
+            <span class="result-status">Status code first</span>
+            <h3 id="apiDiagnosisTitle">429 usually means quota, not a broken jar</h3>
+            <p id="apiDiagnosisSummary">
+              Stop sending prompts, open the selected provider's limit or usage page, wait for the reset window, and
+              retest with one short text prompt before changing downloads.
+            </p>
+            <ol class="steps" id="apiDiagnosisSteps">
+              <li>Do not reinstall the same Verity JE file for a provider rate limit.</li>
+              <li>Check whether requests, tokens, audio, or daily quota reached a ceiling.</li>
+              <li>Send one short text prompt after the reset before testing voice.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
       <section class="guide-section">
         <div class="section-heading">
           <p class="eyebrow">One clean test</p>
@@ -474,5 +524,119 @@
       <p>Independent troubleshooting guide. No API keys are collected. Not affiliated with the listed projects or providers.</p>
     </footer>
     <script src="/analytics.js" defer></script>
+    <script>
+      (() => {
+        const form = document.querySelector("#apiDiagnosisForm");
+        const provider = document.querySelector("#apiProvider");
+        const symptom = document.querySelector("#apiSymptom");
+        const title = document.querySelector("#apiDiagnosisTitle");
+        const summary = document.querySelector("#apiDiagnosisSummary");
+        const steps = document.querySelector("#apiDiagnosisSteps");
+        if (!form || !provider || !symptom || !title || !summary || !steps) return;
+
+        const providerNames = {
+          groq: "Groq",
+          openrouter: "OpenRouter",
+          ollama: "Ollama",
+          unknown: "the selected provider",
+        };
+
+        const advice = {
+          "429": {
+            title: "429 means the provider is limiting requests",
+            summary: "A Verity Mod 429 error is usually a quota, token, audio, or request-window limit. Retrying quickly can extend the problem and make logs harder to read.",
+            steps: [
+              "Stop sending prompts until you know which limit was reached.",
+              "Open the provider usage or limits page and find the reset window.",
+              "After the reset, test one short text prompt before testing voice or long conversations.",
+            ],
+          },
+          "401": {
+            title: "401 means the provider did not accept the key",
+            summary: "A Verity Mod 401 error points to a missing, revoked, pasted-wrong, or wrong-provider credential. Fix the key once before changing any Minecraft file.",
+            steps: [
+              "Confirm the configured provider matches the key provider.",
+              "Create or rotate one private key and paste only the key value.",
+              "Restart the profile and test one short prompt; if the code changes to 429, authentication now works.",
+            ],
+          },
+          "403": {
+            title: "403 means the account or model is not allowed",
+            summary: "A 403 is different from a bad password. The key may be valid, but the account, organization, route, or model does not have permission.",
+            steps: [
+              "Check model access and account restrictions on the provider dashboard.",
+              "Confirm the selected model is allowed for that key or organization.",
+              "Do not expose the key in a support post; share only provider, model, code, and sanitized time.",
+            ],
+          },
+          "404": {
+            title: "404 means the endpoint or model is not found",
+            summary: "A 404 usually means the configured model ID or endpoint no longer matches the provider. It is not evidence that the Verity file disappeared.",
+            steps: [
+              "Open the current provider model list.",
+              "Select a model supported by the installed Verity build or setup guide.",
+              "Retest with text only after saving the corrected model name.",
+            ],
+          },
+          "5xx": {
+            title: "5xx usually means a provider-side service problem",
+            summary: "A 500, 502, or 503 can happen when the provider or upstream model is unavailable. Rotating keys or reinstalling the jar usually does not help.",
+            steps: [
+              "Wait and retry once later instead of spamming prompts.",
+              "Check the provider status or incident page.",
+              "If the error persists after the provider recovers, collect a sanitized log and profile details.",
+            ],
+          },
+          refused: {
+            title: "Connection refused usually points to local Ollama",
+            summary: "For Ollama, connection refused means Minecraft cannot reach the local service address. The cloud key path is not involved.",
+            steps: [
+              "Start Ollama and confirm it can answer outside Minecraft.",
+              "Verify the local endpoint, port, firewall, and exact model name used by the Minecraft profile.",
+              "Choose a smaller model if the service runs but responses appear to stall.",
+            ],
+          },
+          blank: {
+            title: "Blank or null replies need a clean text test",
+            summary: "If Verity returns null or a blank reply, separate model output, local service state, config, and voice before reinstalling.",
+            steps: [
+              "Test one short text prompt with voice disabled or ignored.",
+              "Compare the configured model name with the provider or Ollama model that answers outside Minecraft.",
+              "Read the latest sanitized launcher or mod log for the first provider error line.",
+            ],
+          },
+          voice: {
+            title: "If text works, the API path already succeeded",
+            summary: "Text success means the AI provider returned a response. Move to microphone, text-to-speech, language, output device, or voice dependency checks.",
+            steps: [
+              "Keep the provider configuration unchanged while testing voice.",
+              "Check Minecraft audio, OS output device, language, microphone permission, and voice dependencies.",
+              "Use the voice troubleshooting page instead of rotating API keys.",
+            ],
+          },
+        };
+
+        function renderAdvice(event) {
+          event?.preventDefault();
+          const selected = advice[symptom.value] || advice["429"];
+          const providerName = providerNames[provider.value] || "the selected provider";
+          title.textContent = `${providerName}: ${selected.title}`;
+          summary.textContent = selected.summary;
+          steps.replaceChildren(...selected.steps.map((item) => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            return li;
+          }));
+          window.gtag?.("event", "verity_api_error_diagnosis", {
+            provider: provider.value,
+            symptom: symptom.value,
+          });
+        }
+
+        form.addEventListener("submit", renderAdvice);
+        provider.addEventListener("change", renderAdvice);
+        symptom.addEventListener("change", renderAdvice);
+      })();
+    </script>
   </body>
 </html>

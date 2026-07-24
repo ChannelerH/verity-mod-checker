@@ -494,6 +494,35 @@ select {
   line-height: 1.68;
 }
 
+.api-diagnosis-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 12px;
+}
+
+.api-diagnosis-form {
+  align-content: start;
+}
+
+.api-diagnosis-button {
+  width: fit-content;
+  border: 0;
+}
+
+.api-privacy-note {
+  font-size: 0.92rem;
+}
+
+.api-diagnosis-result {
+  border-top: 5px solid var(--gold);
+}
+
+.api-diagnosis-result .result-status {
+  color: var(--ink);
+  background: #fff8dd;
+  border-color: var(--gold);
+}
+
 .check-list {
   display: grid;
   gap: 12px;
@@ -1968,6 +1997,7 @@ details p {
   .verification-log,
   .source-checker-workspace,
   .checker-workspace,
+  .api-diagnosis-grid,
   .route-index-grid,
   .evidence-grid,
   .entity-section {

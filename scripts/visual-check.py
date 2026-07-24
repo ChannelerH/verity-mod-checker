@@ -66,6 +66,13 @@ with sync_playwright() as playwright:
         for route in ROUTES:
             assert_layout(page, route, viewport_name)
 
+        page.goto(f"{BASE_URL}/api-connection-failed/", wait_until="domcontentloaded")
+        page.locator("#apiProvider").select_option("ollama")
+        page.locator("#apiSymptom").select_option("refused")
+        diagnosis_text = page.locator("#apiDiagnosisResult").inner_text()
+        assert "Ollama: Connection refused" in diagnosis_text
+        assert "Start Ollama" in diagnosis_text
+
         page.goto(BASE_URL, wait_until="domcontentloaded")
         page.locator("#sourceInput").fill("verity-5.7.3.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -119,4 +126,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, API diagnosis, Modrinth identity, and checksum branches")
