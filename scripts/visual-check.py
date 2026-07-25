@@ -12,6 +12,7 @@ ROUTES = [
     "/",
     "/link/",
     "/download/",
+    "/minecraft-verity-mod/",
     "/curseforge/",
     "/creators/",
     "/faq/",

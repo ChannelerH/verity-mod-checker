@@ -25,6 +25,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://veritymodchecker.online/minecraft-verity-mod/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://veritymodchecker.online/curseforge/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>

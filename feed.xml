@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-25T15:10:00+08:00</updated>
+  <updated>2026-07-25T16:10:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Minecraft Verity Mod route hub added for broad search intent</title>
+    <id>https://veritymodchecker.online/updates/minecraft-verity-mod-route-2026-07-25</id>
+    <link href="https://veritymodchecker.online/minecraft-verity-mod/" rel="alternate" />
+    <published>2026-07-25T16:10:00+08:00</published>
+    <updated>2026-07-25T16:10:00+08:00</updated>
+    <summary>Added a Minecraft Verity Mod route hub after related query data showed minecraft verity mod as a top and rising phrase and current SERP checks showed broad articles, videos, official project pages, MCPEDL, and app listings competing for the same intent. The page keeps homepage TDK stable while routing users to Java, Bedrock, MCPE, MCPEDL, link-checking, API-error, and modpack guides by edition, file record, and package type.</summary>
+  </entry>
   <entry>
     <title>PnTMC 3.1.0 and MCPEDL route check added</title>
     <id>https://veritymodchecker.online/updates/pntmc-mcpedl-route-2026-07-25</id>
