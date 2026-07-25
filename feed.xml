@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-24T21:08:00+08:00</updated>
+  <updated>2026-07-25T15:10:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>PnTMC 3.1.0 and MCPEDL route check added</title>
+    <id>https://veritymodchecker.online/updates/pntmc-mcpedl-route-2026-07-25</id>
+    <link href="https://veritymodchecker.online/mcpedl/" rel="alternate" />
+    <published>2026-07-25T15:10:00+08:00</published>
+    <updated>2026-07-25T15:10:00+08:00</updated>
+    <summary>Checked July 25, 2026 after MCPEDL and CurseForge showed a new PnTMC Bedrock route. Current route records are now 8461257, 8486588, 8503821, and 8406293. Point-in-time CurseForge project totals are 2,042,763, 3,656,858, 6,513,866, and 44,099 downloads; the Modrinth Verity JE project is at 214,587 and version yAt0wv1Z is at 166,838 downloads. Added a dedicated MCPEDL route page explaining the PnTMC 3.1.0 V26.30 file, record 8503821, 39.7 MB CurseForge size, MCPEDL's 39.66 MB listing, and V26.30, V26.20, and V26.10 package choices.</summary>
+  </entry>
   <entry>
     <title>Verity link checker page added for source and mirror intent</title>
     <id>https://veritymodchecker.online/updates/verity-link-checker-2026-07-24</id>

@@ -409,16 +409,20 @@ const knownProjects = [
     releases: [
       {
         status: "current",
-        filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
-        versionNumber: "2.1.0",
-        sizeMb: 35.45,
+        filename: "ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
+        aliases: [
+          "ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.20.mcaddon",
+          "ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.10.mcaddon"
+        ],
+        versionNumber: "3.1.0",
+        sizeMb: 39.7,
         version: "Bedrock 26.30",
-        published: "June 27, 2026",
+        published: "July 25, 2026",
         records: [
           {
             platform: "CurseForge",
-            id: "8327253",
-            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253"
+            id: "8503821",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8503821"
           }
         ]
       }
@@ -479,6 +483,16 @@ function findKnownRelease(value) {
   return null;
 }
 
+function pathMatchesSlug(path, slug) {
+  const normalizedSlug = slug.toLowerCase();
+  return path === normalizedSlug || path.startsWith(`${normalizedSlug}/`);
+}
+
+function signalContainsSlug(clean, slug) {
+  const normalizedSlug = slug.toLowerCase();
+  return clean.includes(`${normalizedSlug}/`) || clean.endsWith(normalizedSlug);
+}
+
 function projectIdentityLabel(project) {
   return project.sources.map((source) => `${source.platform} ${source.id}`).join(" · ");
 }
@@ -509,7 +523,7 @@ function findKnownSourceUrl(parsedUrl) {
   for (const project of knownProjects) {
     const source = project.sources.find((item) =>
       item.platform === platform &&
-      (item.slugs.some((slug) => path.includes(slug.toLowerCase())) || path.includes(item.id.toLowerCase()))
+      (item.slugs.some((slug) => pathMatchesSlug(path, slug)) || path.includes(item.id.toLowerCase()))
     );
     if (!source) continue;
 
@@ -569,7 +583,7 @@ function findKnownProject(value) {
   return knownProjects.find((project) =>
     project.sources.some((source) =>
       clean.includes(source.id.toLowerCase()) ||
-      source.slugs.some((slug) => clean.includes(slug.toLowerCase()))
+      source.slugs.some((slug) => signalContainsSlug(clean, slug))
     )
   );
 }
