@@ -66,7 +66,7 @@ const routes = {
   bedrock: {
     label: "Bedrock addon route",
     readout: "Bedrock",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198",
     versions: ["Bedrock 26.30", "Bedrock 26.20", "I am not sure"],
     issues: ["download", "not working", "only saying ...", "box not spawning", "voice not working", "is it real"],
     summaries: {
@@ -115,11 +115,11 @@ const routes = {
         ]
       },
       "voice not working": {
-        title: "Enable Verity BE 1.0.9 local TTS before changing files",
+        title: "Confirm the current Verity BE package before changing files",
         summary:
-          "Verity BE 1.0.9 adds a local text-to-speech toggle. Bedrock addon behavior still differs from Java mod behavior.",
+          "The current Verity BE 1.1.0 package uses the same Bedrock addon route; voice behavior still differs from Java mod behavior.",
         steps: [
-          "Confirm that you installed Verity BE 1.0.9, CurseForge record 8486588.",
+          "Confirm that you installed Verity BE 1.1.0, CurseForge record 8506198.",
           "Run /verity:tts on, then trigger a new dialogue response.",
           "Check Minecraft and device audio, then test without resource packs that alter sound behavior.",
           "Use the Verity BE maintainer page instead of Java troubleshooting."
@@ -141,7 +141,7 @@ const routes = {
   pe: {
     label: "MCPE addon route",
     readout: "MCPE",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198",
     versions: ["MCPE current", "MCPE older build", "I am not sure"],
     issues: ["download", "not working", "box not spawning", "is it real"],
     summaries: {
@@ -379,17 +379,17 @@ const knownProjects = [
     releases: [
       {
         status: "current",
-        filename: "Verity (Stable) (1.0.9)-(26.3).mcaddon",
-        aliases: ["Verity (Stable) (1.0.9)-(26.3#).mcaddon"],
-        versionNumber: "1.0.9",
-        sizeMb: 19.70,
+        filename: "Verity (Stable) (1.1.0)-(26.3).mcaddon",
+        aliases: ["Verity (Stable) (1.1.0)-(26.3#).mcaddon"],
+        versionNumber: "1.1.0",
+        sizeMb: 21.3,
         version: "Bedrock 26.30",
-        published: "July 22, 2026",
+        published: "July 25, 2026",
         records: [
           {
             platform: "CurseForge",
-            id: "8486588",
-            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8486588"
+            id: "8506198",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198"
           }
         ]
       }
