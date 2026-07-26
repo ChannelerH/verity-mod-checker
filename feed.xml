@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-25T16:16:00+08:00</updated>
+  <updated>2026-07-25T17:04:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Canonical install guide alias added</title>
+    <id>https://veritymodchecker.online/updates/how-to-install-alias-2026-07-25</id>
+    <link href="https://veritymodchecker.online/how-to-get-verity-mod/" rel="alternate" />
+    <published>2026-07-25T17:04:00+08:00</published>
+    <updated>2026-07-25T17:04:00+08:00</updated>
+    <summary>Added a 301 route from /how-to-install/ to the canonical How to Get and Install Verity Mod guide, then refreshed the guide title, H1, description, homepage entry text, sitemap lastmod, and LLM discovery notes so install-intent users land on the existing edition-specific Java, Bedrock, and MCPE installation workflow instead of a duplicate page.</summary>
+  </entry>
   <entry>
     <title>PnTMC 2.1.0 stale file route explained</title>
     <id>https://veritymodchecker.online/updates/pntmc-8327253-stale-route-2026-07-25</id>

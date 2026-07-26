@@ -19,6 +19,12 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (url.pathname === "/how-to-install" || url.pathname.startsWith("/how-to-install/")) {
+      url.pathname = "/how-to-get-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/04cb9707b196d4d8b34d0f083fb95f05.txt") {
       return new Response("04cb9707b196d4d8b34d0f083fb95f05", {
         headers: {
