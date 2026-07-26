@@ -19,6 +19,7 @@ ROUTES = [
     "/horror-mod/",
     "/is-verity-real/",
     "/java/",
+    "/verity-5-7-3-jar/",
     "/bedrock/",
     "/pocket-edition/",
     "/apk/",

@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-26T15:20:00+08:00</updated>
+  <updated>2026-07-26T16:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>verity-5.7.3.jar file identity page added</title>
+    <id>https://veritymodchecker.online/updates/verity-573-jar-file-page-2026-07-26</id>
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />
+    <published>2026-07-26T16:05:00+08:00</published>
+    <updated>2026-07-26T16:05:00+08:00</updated>
+    <summary>Added a focused verity-5.7.3.jar file identity page after Search Console showed the exact filename receiving impressions but no clicks. The page maps the current Verity JE Java file to CurseForge record 8461257, Modrinth version yAt0wv1Z under project on1Y0osD, Forge 1.20.1, 246,481,139 bytes, the published SHA-1 and SHA-512 route, and the browser-only local checksum checker. The same source check refreshed current project totals to Verity JE 2,122,806 CurseForge downloads and 244,563 Modrinth downloads, Verity BE 3,774,957 downloads, PnTMC 6,751,858 downloads, and Verity Pocket Edition (Be) 47,571 downloads. Homepage TDK and canonical were left unchanged; homepage and Java guide internal links now expose the new file-specific route.</summary>
+  </entry>
   <entry>
     <title>API key source guidance added for 401 searches</title>
     <id>https://veritymodchecker.online/updates/api-key-source-guidance-2026-07-26</id>
