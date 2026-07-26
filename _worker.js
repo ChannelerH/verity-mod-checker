@@ -19,6 +19,12 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (url.pathname === "/app" || url.pathname.startsWith("/app/")) {
+      url.pathname = "/apk/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/how-to-install" || url.pathname.startsWith("/how-to-install/")) {
       url.pathname = "/how-to-get-verity-mod/";
       url.hash = "";

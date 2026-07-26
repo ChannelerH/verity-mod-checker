@@ -21,6 +21,7 @@ ROUTES = [
     "/java/",
     "/bedrock/",
     "/pocket-edition/",
+    "/apk/",
     "/mcpedl/",
     "/how-to-get-verity-mod/",
     "/what-is-verity-mod/",

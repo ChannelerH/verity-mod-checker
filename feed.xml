@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-26T10:30:00+08:00</updated>
+  <updated>2026-07-26T11:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>APK and Google Play app safety route added</title>
+    <id>https://veritymodchecker.online/updates/apk-app-safety-route-2026-07-26</id>
+    <link href="https://veritymodchecker.online/apk/" rel="alternate" />
+    <published>2026-07-26T11:05:00+08:00</published>
+    <updated>2026-07-26T11:05:00+08:00</updated>
+    <summary>Added a dedicated Verity Mod APK and Google Play app safety page after current SERP checks showed mobile app and APK-style results competing with MCPE and Bedrock add-on intent. The page explains that normal MCPE installation uses MCADDON or MCPACK packages, separates Google Play app claims from official Bedrock project records, and links users to Verity BE record 8506198, PnTMC record 8503821, Verity Pocket Edition (Be) record 8406293, MCPEDL route notes, and the browser-only source checker.</summary>
+  </entry>
   <entry>
     <title>Verity BE 1.1.0 current route refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-be-110-route-2026-07-26</id>

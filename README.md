@@ -15,6 +15,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Java download route: https://veritymodchecker.online/java/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
 - MCPE mobile route: https://veritymodchecker.online/pocket-edition/
+- APK and Google Play app safety route: https://veritymodchecker.online/apk/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
 - Voice not working fix: https://veritymodchecker.online/voice-not-working/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/
@@ -25,6 +26,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 - Java route: Verity JE record `8461257`, Forge 1.20.1, NeoForge status, Groq, OpenRouter, Ollama, and version checks.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC record `8503821`, pack activation, Beta APIs, commands, and world setup.
+- APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Troubleshooting: API 401/429, box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
