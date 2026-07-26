@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-26T11:05:00+08:00</updated>
+  <updated>2026-07-26T15:20:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>API key source guidance added for 401 searches</title>
+    <id>https://veritymodchecker.online/updates/api-key-source-guidance-2026-07-26</id>
+    <link href="https://veritymodchecker.online/api-connection-failed/#api-key-source" rel="alternate" />
+    <published>2026-07-26T15:20:00+08:00</published>
+    <updated>2026-07-26T15:20:00+08:00</updated>
+    <summary>Expanded the Verity Mod API connection failed guide after SERP and Search Console evidence showed 401, 429, and API-key confusion. The page now separates where Groq, OpenRouter, and Ollama credentials or local setup come from, warns against posting API keys in public comments or screenshots, and explains why a change from 401 to 429 means authentication may now work while the provider is rate limiting the account or organization.</summary>
+  </entry>
   <entry>
     <title>APK and Google Play app safety route added</title>
     <id>https://veritymodchecker.online/updates/apk-app-safety-route-2026-07-26</id>

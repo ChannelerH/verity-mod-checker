@@ -37,7 +37,7 @@
             "name": "Verity Mod API Connection Failed: Fix 401, 429 and Timeouts",
             "url": "https://veritymodchecker.online/api-connection-failed/",
             "description": "A status-code troubleshooting guide for Verity JE AI provider connection failures.",
-            "dateModified": "2026-07-24"
+            "dateModified": "2026-07-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -71,6 +71,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Usually no. If Minecraft loads Verity and reports an HTTP or provider error, the mod reached its AI layer. Diagnose the selected provider and status code before replacing the jar."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do I get the API key for Verity Mod?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Get the key from the provider you selected in the local Verity configuration, not from this website or a comment thread. Groq keys come from Groq Console, OpenRouter keys come from OpenRouter, and Ollama normally uses a local running service instead of a cloud API key."
                 }
               },
               {
@@ -256,6 +264,44 @@
               <li>Check whether requests, tokens, audio, or daily quota reached a ceiling.</li>
               <li>Send one short text prompt after the reset before testing voice.</li>
             </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="api-key-source">
+        <div class="section-heading">
+          <p class="eyebrow">API key source</p>
+          <h2>Where to get the key without exposing it</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>The key comes from the provider, not from a download page</h3>
+            <p>
+              If Verity asks for an API key, first check which provider the local configuration selected. A
+              Groq setup needs a Groq Console key. An OpenRouter setup needs an OpenRouter key and a model ID
+              that the installed build supports. An Ollama setup usually does not need a cloud key at all; it
+              needs the local Ollama service running with the configured model installed.
+            </p>
+            <p>
+              Do not ask for a key in a CurseForge comment, YouTube comment, Discord message, Reddit thread,
+              or troubleshooting website. Nobody needs your secret token to diagnose a 401 or 429. If a key
+              appears in a screenshot or pasted log, revoke it at the provider and create a new private one
+              before testing again.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Provider-specific next step</h3>
+            <ul class="check-list">
+              <li><strong>Groq:</strong> sign in to Groq Console, create or rotate one API key, paste only the key value into the local Verity config, then restart Minecraft.</li>
+              <li><strong>OpenRouter:</strong> create an OpenRouter key, confirm credits or model access, and use the exact provider/model route supported by your installed build.</li>
+              <li><strong>Ollama:</strong> install Ollama, start the local service, pull the selected model, and confirm the model answers outside Minecraft before testing Verity.</li>
+              <li><strong>Unknown provider:</strong> return to the maintainer setup tutorial or current project page before entering any credential.</li>
+            </ul>
+            <p>
+              A 401 after this step means the configured credential still is not accepted. A 429 after this
+              step means the credential is probably accepted, but the provider is rate limiting the account,
+              organization, model, or token window.
+            </p>
           </article>
         </div>
       </section>
@@ -483,6 +529,15 @@
           </p>
         </details>
         <details>
+          <summary>Where do I get the API key for Verity Mod?</summary>
+          <p>
+            Get it from the provider selected in your local setup, not from this website or a public comment.
+            Groq users create a key in Groq Console. OpenRouter users create an OpenRouter key and match the
+            supported model route. Ollama users usually need a running local Ollama service instead of a cloud
+            key. Keep the key private and revoke it if it was exposed.
+          </p>
+        </details>
+        <details>
           <summary>Can I share my API key with someone fixing the mod?</summary>
           <p>
             No. Share the provider, model, status code, timestamp, and sanitized error text. Revoke any key that was
@@ -500,12 +555,15 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary troubleshooting references">
-        <strong>Primary references checked July 24:</strong>
+        <strong>Primary references checked July 26:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Maintainer setup tutorial</a>
+        <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq quickstart</a>
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
         <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
+        <a href="https://openrouter.ai/docs/api_reference/authentication" target="_blank" rel="noopener noreferrer">OpenRouter authentication</a>
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
         <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
       </aside>
     </main>

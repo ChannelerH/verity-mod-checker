@@ -24,7 +24,7 @@
 - [Verity Mod MCPEDL Route](https://veritymodchecker.online/mcpedl/): MCPEDL and PnTMC Bedrock route check for the current 3.1.0 V26.30 file, CurseForge record 8503821, previous 2.1.0 record 8327253, and older V26.20 or V26.10 package choices.
 - [What Is VERITY.exe?](https://veritymodchecker.online/verity-exe/): Separates the VERITY.exe modpack from standalone Java and Bedrock routes.
 - [Best AI Model for Verity Mod](https://veritymodchecker.online/ai-model/): Groq, OpenRouter, Ollama, voice, latency, and credential-safety guidance.
-- [Verity Mod API Connection Failed](https://veritymodchecker.online/api-connection-failed/): Status-code diagnosis and a no-key quick selector for Groq 401 and 429, OpenRouter errors, Ollama connections, null replies, and voice-vs-text separation.
+- [Verity Mod API Connection Failed](https://veritymodchecker.online/api-connection-failed/): Status-code diagnosis, API-key source guidance, and a no-key quick selector for Groq 401 and 429, OpenRouter errors, Ollama connections, null replies, and voice-vs-text separation.
 - [How to Talk to Verity](https://veritymodchecker.online/how-to-talk-to-verity/): Project-specific Java controls, Verity BE chat prefix, and PnTMC wake phrase and distance rules.
 - [Verity Mod Not Working](https://veritymodchecker.online/not-working/): Fixes for crashes, box not spawning, dialogue missing, and broken setup.
 - [Verity Mod Voice Not Working](https://veritymodchecker.online/voice-not-working/): Voice and audio troubleshooting.
