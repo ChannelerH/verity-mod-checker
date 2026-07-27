@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-app-claims.schema.json",
+  "title": "Verity Mod App Claims",
+  "type": "object",
+  "required": ["schemaVersion", "checkedAt", "canonicalUrl", "normalMinecraftPackageRoutes", "googlePlayListings"],
+  "properties": {
+    "schemaVersion": { "type": "integer" },
+    "checkedAt": { "type": "string" },
+    "canonicalUrl": { "type": "string", "format": "uri" },
+    "method": { "type": "string" },
+    "normalMinecraftPackageRoutes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "projectId", "recordId", "packageType", "url"],
+        "properties": {
+          "name": { "type": "string" },
+          "projectId": { "type": "integer" },
+          "recordId": { "type": "integer" },
+          "packageType": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "googlePlayListings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "publisher", "packageId", "url", "installSignal", "updated", "relationshipStatus"],
+        "properties": {
+          "title": { "type": "string" },
+          "publisher": { "type": "string" },
+          "packageId": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "installSignal": { "type": "string" },
+          "ratingSignal": { "type": "string" },
+          "updated": { "type": "string" },
+          "monetization": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "relationshipStatus": { "type": "string" },
+          "listingSignals": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

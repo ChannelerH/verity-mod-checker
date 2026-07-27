@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T13:50:00+08:00</updated>
+  <updated>2026-07-27T14:16:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity app claims JSON and two more Play listings added</title>
+    <id>https://veritymodchecker.online/updates/google-play-app-claims-json-2026-07-27</id>
+    <link href="https://veritymodchecker.online/data/verity-app-claims.json" rel="alternate" />
+    <published>2026-07-27T14:16:00+08:00</published>
+    <updated>2026-07-27T14:16:00+08:00</updated>
+    <summary>Expanded the Verity Mod APK and Google Play app safety route after current SERP checks exposed two additional store packages: Real Games Villa verity.mod.minecraft.pemodverity and richard7 com.richmcpe.verity. The page now compares five Play listings against normal MCPE package routes and publishes the app-claim facts as machine-readable JSON at /data/verity-app-claims.json for creators, editors, and crawlers to cite without treating any third-party app as an official MCADDON replacement.</summary>
+  </entry>
   <entry>
     <title>Third Google Play Verity app listing added to APK route</title>
     <id>https://veritymodchecker.online/updates/google-play-l13devstudio-app-2026-07-27</id>

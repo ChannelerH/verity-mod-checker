@@ -1,0 +1,106 @@
+{
+  "$schema": "https://veritymodchecker.online/data/verity-app-claims.schema.json",
+  "schemaVersion": 1,
+  "checkedAt": "2026-07-27T14:16:00+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/apk/",
+  "method": "Manual comparison against public Google Play listing text and current maintainer MCADDON route records. App listing facts are point-in-time store disclosures, not malware verdicts and not official-project proof.",
+  "normalMinecraftPackageRoutes": [
+    {
+      "name": "Verity BE",
+      "projectId": 1574632,
+      "recordId": 8506198,
+      "packageType": "mcaddon",
+      "url": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198"
+    },
+    {
+      "name": "Verity - Bedrock Edition by PnTMC",
+      "projectId": 1575941,
+      "recordId": 8517480,
+      "packageType": "mcaddon",
+      "url": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480"
+    },
+    {
+      "name": "Verity Pocket Edition (Be)",
+      "projectId": 1596246,
+      "recordId": 8406293,
+      "packageType": "mcaddon",
+      "url": "https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files/8406293"
+    }
+  ],
+  "googlePlayListings": [
+    {
+      "title": "Verity Mods for Minecraft",
+      "publisher": "BirchApps",
+      "packageId": "com.verity.stalker.mobs.birchappsmcpe",
+      "url": "https://play.google.com/store/apps/details?id=com.verity.stalker.mobs.birchappsmcpe",
+      "installSignal": "500K+ downloads",
+      "updated": "2026-07-24",
+      "monetization": ["contains ads"],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "disclaimer says it is not affiliated with Mojang, Microsoft, Verity creators, or related rights holders",
+        "data safety disclosures mention shared and collected data"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "GO:KU STUDIO",
+      "packageId": "com.goku.verity.horror",
+      "url": "https://play.google.com/store/apps/details?id=com.goku.verity.horror",
+      "installSignal": "0+ downloads observed at check",
+      "updated": "2026-07-24",
+      "monetization": ["contains ads"],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "describes itself as a content browser for community-made plugins",
+        "says it is not affiliated with Mojang, Microsoft, or Minecraft",
+        "data-safety panel says data is not encrypted in transit and cannot be deleted"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "L13DEVSTUDIO",
+      "packageId": "com.l13devstudio.verit",
+      "url": "https://play.google.com/store/apps/details?id=com.l13devstudio.verit",
+      "installSignal": "100K+ downloads",
+      "updated": "2026-07-24",
+      "monetization": ["contains ads", "in-app purchases"],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "disclaimer says it is an unofficial app not associated with Mojang or Microsoft",
+        "data-safety panel says no data is shared with third parties and no data is collected"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "Real Games Villa",
+      "packageId": "verity.mod.minecraft.pemodverity",
+      "url": "https://play.google.com/store/apps/details?id=verity.mod.minecraft.pemodverity",
+      "installSignal": "5K+ downloads",
+      "updated": "2026-07-17",
+      "monetization": ["contains ads"],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "says it is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft",
+        "data-safety panel says no data is shared or collected",
+        "data-safety panel says data is not encrypted"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "richard7",
+      "packageId": "com.richmcpe.verity",
+      "url": "https://play.google.com/store/apps/details?id=com.richmcpe.verity",
+      "installSignal": "100K+ downloads",
+      "ratingSignal": "4.5 stars and 1.16K reviews observed at check",
+      "updated": "2026-07-05",
+      "monetization": ["contains ads"],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "says it is not approved by or associated with Mojang or Microsoft",
+        "data-safety panel says device or other IDs may be shared with third parties",
+        "visible reviews include users saying the mods did not work after ads or pack activation"
+      ]
+    }
+  ]
+}

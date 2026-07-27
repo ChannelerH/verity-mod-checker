@@ -9,6 +9,7 @@ Allow: /
 
 Sitemap: https://veritymodchecker.online/sitemap.xml
 Data: https://veritymodchecker.online/data/verity-releases.json
+App-Claims-Data: https://veritymodchecker.online/data/verity-app-claims.json
 Feed: https://veritymodchecker.online/feed.xml
 LLM-Content: https://veritymodchecker.online/llms.txt
 LLM-Full-Content: https://veritymodchecker.online/llms-full.txt
