@@ -5,15 +5,15 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T15:22:00+08:00</updated>
+  <updated>2026-07-27T16:28:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>verity-5.7.3.jar exact file page refreshed for current Java searches</title>
     <id>https://veritymodchecker.online/updates/verity-573-file-ctr-refresh-2026-07-27</id>
     <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />
     <published>2026-07-27T15:22:00+08:00</published>
-    <updated>2026-07-27T15:22:00+08:00</updated>
-    <summary>Refreshed the focused verity-5.7.3.jar page after Search Console showed exact current-file queries with impressions but no clicks: verity-5.7.3.jar at 47 impressions and verity 5.7.3 at 20 impressions in the visible query table. The page now leads with the current Verity JE 5.7.3 Forge 1.20.1 identity, CurseForge record 8461257, displayed 529.8K file downloads, Modrinth version yAt0wv1Z, 218,801 Modrinth version downloads, byte size 246,481,139, and checksum route. Added exact-path redirects from /verity-5.7.3.jar, /verity-5.7.3, /verity-5.7.3-jar, and /verity-573-jar to the canonical page without changing the homepage title or mirroring files.</summary>
+    <updated>2026-07-27T16:28:00+08:00</updated>
+    <summary>Refreshed the focused verity-5.7.3.jar page after Search Console showed exact current-file queries with impressions but no clicks: verity-5.7.3.jar at 47 impressions and verity 5.7.3 at 20 impressions in the visible query table. The page now leads with the current Verity JE 5.7.3 Forge 1.20.1 identity, CurseForge record 8461257, displayed 529.8K file downloads, Modrinth version yAt0wv1Z, 219,790 Modrinth version downloads, byte size 246,481,139, and checksum route. Added exact-path redirects from /verity-5.7.3.jar, /verity-5.7.3, /verity-5.7.3-jar, and /verity-573-jar to the canonical page without changing the homepage title or mirroring files.</summary>
   </entry>
   <entry>
     <title>Verity Mod status 429 fix route and release counters refreshed</title>
@@ -21,7 +21,7 @@
     <link href="https://veritymodchecker.online/status-429/" rel="alternate" />
     <published>2026-07-27T14:45:00+08:00</published>
     <updated>2026-07-27T14:45:00+08:00</updated>
-    <summary>Added a focused Verity Mod status 429 troubleshooting route after Search Console and current SERP checks showed live player demand around Groq, OpenRouter, and rate-limit failures. The page explains why a Verity Java session can work briefly and then return 429, why another key may share the same account or organization limit, and why a clean text retest should come before voice or download changes. The same pass refreshed point-in-time source counters from CurseForge and the Modrinth API: Verity JE 2,191,579 CurseForge and 268,908 Modrinth project downloads, current CurseForge file 8461257 at 529.8K, current Modrinth version yAt0wv1Z at 218,801, Verity BE 3,853,549 with current file 8506198 at 93.7K, PnTMC 6,949,187 with previous 3.1.0 file 8503821 at 240.7K, and Pocket Edition 50,373 with file 8406293 at 42.8K.</summary>
+    <summary>Added a focused Verity Mod status 429 troubleshooting route after Search Console and current SERP checks showed live player demand around Groq, OpenRouter, and rate-limit failures. The page explains why a Verity Java session can work briefly and then return 429, why another key may share the same account or organization limit, and why a clean text retest should come before voice or download changes. The same pass refreshed point-in-time source counters from CurseForge and the Modrinth API: Verity JE 2,191,579 CurseForge and 269,434 Modrinth project downloads, current CurseForge file 8461257 at 529.8K, current Modrinth version yAt0wv1Z at 219,790, Verity BE 3,853,549 with current file 8506198 at 93.7K, PnTMC 6,949,187 with previous 3.1.0 file 8503821 at 240.7K, and Pocket Edition 50,373 with file 8406293 at 42.8K.</summary>
   </entry>
   <entry>
     <title>Verity app claims JSON and two more Play listings added</title>
