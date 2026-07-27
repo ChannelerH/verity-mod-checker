@@ -1,3 +1,68 @@
+const htmlRoutes = new Set([
+  "/",
+  "/ai-model/",
+  "/api-connection-failed/",
+  "/apk/",
+  "/bedrock/",
+  "/creators/",
+  "/curseforge/",
+  "/download/",
+  "/faq/",
+  "/horror-mod/",
+  "/how-to-get-verity-mod/",
+  "/how-to-spawn-verity/",
+  "/how-to-talk-to-verity/",
+  "/is-verity-real/",
+  "/java/",
+  "/link/",
+  "/mcpedl/",
+  "/minecraft-verity-mod/",
+  "/not-working/",
+  "/pntmc-verity-3-2-0/",
+  "/pocket-edition/",
+  "/status-429/",
+  "/taken-down/",
+  "/verity-3-4-1-jar/",
+  "/verity-5-7-3-jar/",
+  "/verity-exe/",
+  "/verity-mod-lag-fix/",
+  "/voice-not-working/",
+  "/what-happened/",
+  "/what-is-verity-mod/",
+]);
+
+const rootFiles = new Set([
+  "/04cb9707b196d4d8b34d0f083fb95f05.txt",
+  "/b2212c6677aba44b57c09b052426de92.txt",
+  "/analytics.js",
+  "/favicon.svg",
+  "/feed.xml",
+  "/llms-full.txt",
+  "/llms.txt",
+  "/robots.txt",
+  "/script.js",
+  "/sitemap.xml",
+  "/styles.css",
+]);
+
+const dataFiles = new Set([
+  "/data/verity-app-claims.json",
+  "/data/verity-app-claims.schema.json",
+  "/data/verity-releases.json",
+  "/data/verity-releases.schema.json",
+]);
+
+function notFound() {
+  return new Response("Not found", {
+    status: 404,
+    headers: {
+      "cache-control": "no-store",
+      "content-type": "text/plain; charset=utf-8",
+      "x-content-type-options": "nosniff",
+    },
+  });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -133,14 +198,31 @@ export default {
     }
 
     if (url.pathname === "/data/operations-log.json") {
-      return new Response("Not found", {
-        status: 404,
-        headers: {
-          "cache-control": "no-store",
-          "content-type": "text/plain; charset=utf-8",
-          "x-content-type-options": "nosniff",
-        },
-      });
+      return notFound();
+    }
+
+    if (url.pathname.endsWith("/index.html")) {
+      const routePath = url.pathname.slice(0, -10) || "/";
+      if (htmlRoutes.has(routePath)) {
+        url.pathname = routePath;
+        url.hash = "";
+        return Response.redirect(url.toString(), 301);
+      }
+    }
+
+    if (!url.pathname.endsWith("/") && htmlRoutes.has(`${url.pathname}/`)) {
+      url.pathname = `${url.pathname}/`;
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    const isKnownRoute = htmlRoutes.has(url.pathname);
+    const isKnownRootFile = rootFiles.has(url.pathname);
+    const isKnownDataFile = dataFiles.has(url.pathname);
+    const isKnownAsset = url.pathname.startsWith("/assets/");
+
+    if (!isKnownRoute && !isKnownRootFile && !isKnownDataFile && !isKnownAsset) {
+      return notFound();
     }
 
     const assetResponse = await env.ASSETS.fetch(request);
