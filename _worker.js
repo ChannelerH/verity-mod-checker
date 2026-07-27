@@ -47,6 +47,21 @@ export default {
     }
 
     if (
+      url.pathname === "/verity-5.7.3.jar" ||
+      url.pathname.startsWith("/verity-5.7.3.jar/") ||
+      url.pathname === "/verity-5.7.3" ||
+      url.pathname.startsWith("/verity-5.7.3/") ||
+      url.pathname === "/verity-5.7.3-jar" ||
+      url.pathname.startsWith("/verity-5.7.3-jar/") ||
+      url.pathname === "/verity-573-jar" ||
+      url.pathname.startsWith("/verity-573-jar/")
+    ) {
+      url.pathname = "/verity-5-7-3-jar/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/pntmc-3-2-0" ||
       url.pathname.startsWith("/pntmc-3-2-0/") ||
       url.pathname === "/thatmobs-verity-3-2-0" ||

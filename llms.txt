@@ -18,7 +18,7 @@
 - [What Happened to Verity Mod?](https://veritymodchecker.online/what-happened/): Explains old 404 links, current projects, and project-name confusion.
 - [Verity JE Download Status](https://veritymodchecker.online/java/#versions): Java route for Forge 1.20.1, NeoForge 1.21.1, Groq, Ollama, and voice setup.
 - [Verity Mod Java Route](https://veritymodchecker.online/java/): Java install and troubleshooting guide.
-- [verity-5.7.3.jar File Check](https://veritymodchecker.online/verity-5-7-3-jar/): Focused file identity page for the current Verity JE Forge 1.20.1 JAR, CurseForge record 8461257, Modrinth yAt0wv1Z, and checksum verification.
+- [verity-5.7.3.jar File Check](https://veritymodchecker.online/verity-5-7-3-jar/): Focused file identity page for exact `verity-5.7.3.jar` and `verity 5.7.3` searches, current Verity JE Forge 1.20.1, CurseForge record 8461257, displayed 529.8K file downloads, Modrinth yAt0wv1Z, 218,801 Modrinth version downloads, and checksum verification.
 - [verity-3.4.1.jar Status Check](https://veritymodchecker.online/verity-3-4-1-jar/): Explains that the older Verity JE NeoForge 1.21.1 file maps to CurseForge record 8346795 and should not be treated as the current default Java route.
 - [Verity Mod Bedrock Route](https://veritymodchecker.online/bedrock/): Bedrock addon and MCPE setup guide.
 - [Verity Mod MCPE Route](https://veritymodchecker.online/pocket-edition/): Pocket Edition route comparison for Verity BE, PnTMC, and Verity Pocket Edition (Be), plus mobile import, pack activation, backend notes, and clean-world checks.
