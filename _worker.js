@@ -42,6 +42,19 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/spawn-verity" ||
+      url.pathname.startsWith("/spawn-verity/") ||
+      url.pathname === "/verity-not-spawning" ||
+      url.pathname.startsWith("/verity-not-spawning/") ||
+      url.pathname === "/verity-doesnt-spawn" ||
+      url.pathname.startsWith("/verity-doesnt-spawn/")
+    ) {
+      url.pathname = "/how-to-spawn-verity/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/04cb9707b196d4d8b34d0f083fb95f05.txt") {
       return new Response("04cb9707b196d4d8b34d0f083fb95f05", {
         headers: {

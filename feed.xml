@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T10:13:00+08:00</updated>
+  <updated>2026-07-27T10:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>How to spawn Verity troubleshooting page added</title>
+    <id>https://veritymodchecker.online/updates/how-to-spawn-verity-2026-07-27</id>
+    <link href="https://veritymodchecker.online/how-to-spawn-verity/" rel="alternate" />
+    <published>2026-07-27T10:45:00+08:00</published>
+    <updated>2026-07-27T10:45:00+08:00</updated>
+    <summary>Added a dedicated spawn-intent page after current SERP and player-comment evidence showed recurring searches and questions around how to spawn Verity, Verity not spawning, and Verity failing to appear after importing a Bedrock or MCPE package. The page separates PnTMC record 8517480, Verity BE record 8506198, Java record 8461257, pack activation, Beta APIs, commands, and clean-world testing before sending users to the current official project records.</summary>
+  </entry>
   <entry>
     <title>ThatMob's Verity 3.2.0 by PnTMC file check page added</title>
     <id>https://veritymodchecker.online/updates/pntmc-verity-3-2-0-file-check-2026-07-27</id>
