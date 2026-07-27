@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-27T16:28:00+08:00",
+  "checkedAt": "2026-07-27T16:58:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -12,7 +12,7 @@
       "projectId": 1591438,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
       "status": "current",
-      "projectDownloadsAtCheck": 2191579,
+      "projectDownloadsAtCheck": 2195311,
       "projectDownloadsApproximate": false,
       "verifiedAlternateSources": [
         {
@@ -22,7 +22,7 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 269434,
+          "projectDownloadsAtCheck": 270468,
           "projectDownloadsApproximate": false,
           "releases": [
             {
@@ -36,7 +36,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 219790,
+              "recordDownloadsAtCheck": 220788,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
@@ -56,7 +56,7 @@
           "loader": "Forge",
           "packageType": "jar",
           "displayedSizeMb": 235.1,
-          "recordDownloadsAtCheck": 529800,
+          "recordDownloadsAtCheck": 532500,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-18"
         },
@@ -83,7 +83,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 3853549,
+      "projectDownloadsAtCheck": 3855436,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -98,7 +98,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 21.3,
-          "recordDownloadsAtCheck": 93700,
+          "recordDownloadsAtCheck": 94900,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         }
@@ -111,7 +111,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 6949187,
+      "projectDownloadsAtCheck": 6955502,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -123,7 +123,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.6,
-          "recordDownloadsAtCheck": 17700,
+          "recordDownloadsAtCheck": 24400,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-27",
           "changelogSummary": [
@@ -131,6 +131,34 @@
             "upgrade throw system (sneak + drop = throw)",
             "upgrade AI"
           ]
+        },
+        {
+          "status": "current-version-other-bedrock-build",
+          "filename": "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon",
+          "recordId": null,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all?page=1&pageSize=20",
+          "minecraftVersion": "26.20",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 39.6,
+          "recordDownloadsAtCheck": 3000,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-07-27",
+          "note": "CurseForge file list showed this current 3.2.0 V26.20 row on July 27, 2026; use the exact file page when opening the final download."
+        },
+        {
+          "status": "current-version-other-bedrock-build",
+          "filename": "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon",
+          "recordId": null,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all?page=1&pageSize=20",
+          "minecraftVersion": "26.13+",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 39.6,
+          "recordDownloadsAtCheck": 4600,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-07-27",
+          "note": "CurseForge file list showed the V26.10 row under 26.13 plus three additional supported builds on July 27, 2026."
         },
         {
           "status": "previous-still-available",
@@ -141,7 +169,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.7,
-          "recordDownloadsAtCheck": 240700,
+          "recordDownloadsAtCheck": 241100,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         },

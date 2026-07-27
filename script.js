@@ -410,10 +410,6 @@ const knownProjects = [
       {
         status: "current",
         filename: "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon",
-        aliases: [
-          "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon",
-          "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon"
-        ],
         versionNumber: "3.2.0",
         sizeMb: 39.6,
         version: "Bedrock 26.30",
@@ -423,6 +419,36 @@ const knownProjects = [
             platform: "CurseForge",
             id: "8517480",
             link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480"
+          }
+        ]
+      },
+      {
+        status: "current",
+        filename: "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon",
+        versionNumber: "3.2.0",
+        sizeMb: 39.6,
+        version: "Bedrock 26.20",
+        published: "July 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "files",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all?page=1&pageSize=20"
+          }
+        ]
+      },
+      {
+        status: "current",
+        filename: "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon",
+        versionNumber: "3.2.0",
+        sizeMb: 39.6,
+        version: "Bedrock 26.10 / 26.13+ row",
+        published: "July 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "files",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all?page=1&pageSize=20"
           }
         ]
       },
@@ -526,6 +552,7 @@ function releaseRecordLink(project, release, preferredPlatform = "") {
 
 function releaseRecordLabel(release, record) {
   if (!record) return "files";
+  if (record.id === "files") return "files tab";
   return record.platform === "CurseForge" ? `record #${record.id}` : `version ${release.versionNumber}`;
 }
 
