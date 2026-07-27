@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T09:50:00+08:00</updated>
+  <updated>2026-07-27T10:13:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>ThatMob's Verity 3.2.0 by PnTMC file check page added</title>
+    <id>https://veritymodchecker.online/updates/pntmc-verity-3-2-0-file-check-2026-07-27</id>
+    <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="alternate" />
+    <published>2026-07-27T10:13:00+08:00</published>
+    <updated>2026-07-27T10:13:00+08:00</updated>
+    <summary>Added a dedicated ThatMob's Verity 3.2.0 by PnTMC file-check page for exact Bedrock 26.30 and record 8517480 intent. The page explains that the current PnTMC route is ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon, record 8517480, 39.6 MB, while MCPEDL updated on July 27 but can still show older 3.1.0 rows during listing lag. The page links users to the current CurseForge record, the MCPEDL route check, release data, setup fixes, and the link checker without mirroring files.</summary>
+  </entry>
   <entry>
     <title>PnTMC Verity 3.2.0 route checked against MCPEDL</title>
     <id>https://veritymodchecker.online/updates/pntmc-3-2-0-route-2026-07-27</id>

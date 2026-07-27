@@ -16,6 +16,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
 - MCPE mobile route: https://veritymodchecker.online/pocket-edition/
 - APK and Google Play app safety route: https://veritymodchecker.online/apk/
+- PnTMC 3.2.0 file check: https://veritymodchecker.online/pntmc-verity-3-2-0/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
 - Voice not working fix: https://veritymodchecker.online/voice-not-working/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/

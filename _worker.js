@@ -31,6 +31,17 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/pntmc-3-2-0" ||
+      url.pathname.startsWith("/pntmc-3-2-0/") ||
+      url.pathname === "/thatmobs-verity-3-2-0" ||
+      url.pathname.startsWith("/thatmobs-verity-3-2-0/")
+    ) {
+      url.pathname = "/pntmc-verity-3-2-0/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/04cb9707b196d4d8b34d0f083fb95f05.txt") {
       return new Response("04cb9707b196d4d8b34d0f083fb95f05", {
         headers: {

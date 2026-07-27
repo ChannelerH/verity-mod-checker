@@ -23,6 +23,7 @@
 - [Verity Mod MCPE Route](https://veritymodchecker.online/pocket-edition/): Pocket Edition route comparison for Verity BE, PnTMC, and Verity Pocket Edition (Be), plus mobile import, pack activation, backend notes, and clean-world checks.
 - [Verity Mod APK and App Safety](https://veritymodchecker.online/apk/): Mobile-focused route check for Google Play apps, APK claims, MCPE package types, publisher identity, app permissions, and source-trail checks before installing.
 - [Verity Mod MCPEDL Route](https://veritymodchecker.online/mcpedl/): MCPEDL and PnTMC Bedrock route check for the current 3.2.0 V26.30 file, CurseForge record 8517480, previous 3.1.0 record 8503821, older 2.1.0 record 8327253, and V26.20 or V26.10 package choices.
+- [ThatMob's Verity 3.2.0 by PnTMC File Check](https://veritymodchecker.online/pntmc-verity-3-2-0/): Exact Bedrock 26.30 file identity page for current PnTMC record 8517480, MCPEDL listing lag, previous records, and install route separation.
 - [What Is VERITY.exe?](https://veritymodchecker.online/verity-exe/): Separates the VERITY.exe modpack from standalone Java and Bedrock routes.
 - [Best AI Model for Verity Mod](https://veritymodchecker.online/ai-model/): Groq, OpenRouter, Ollama, voice, latency, and credential-safety guidance.
 - [Verity Mod API Connection Failed](https://veritymodchecker.online/api-connection-failed/): Status-code diagnosis, API-key source guidance, and a no-key quick selector for Groq 401 and 429, OpenRouter errors, Ollama connections, null replies, and voice-vs-text separation.
