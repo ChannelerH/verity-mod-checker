@@ -7,6 +7,16 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (url.pathname === "/dist-cf" || url.pathname.startsWith("/dist-cf/")) {
+      let canonicalPath = url.pathname;
+      while (canonicalPath === "/dist-cf" || canonicalPath.startsWith("/dist-cf/")) {
+        canonicalPath = canonicalPath.slice("/dist-cf".length) || "/";
+      }
+      url.pathname = canonicalPath === "/index.html" ? "/" : canonicalPath;
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/verity-je" || url.pathname.startsWith("/verity-je/")) {
       url.pathname = "/java/";
       url.hash = "versions";
