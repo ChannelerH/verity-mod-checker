@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-26T16:05:00+08:00</updated>
+  <updated>2026-07-27T09:50:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>PnTMC Verity 3.2.0 route checked against MCPEDL</title>
+    <id>https://veritymodchecker.online/updates/pntmc-3-2-0-route-2026-07-27</id>
+    <link href="https://veritymodchecker.online/mcpedl/" rel="alternate" />
+    <published>2026-07-27T09:50:00+08:00</published>
+    <updated>2026-07-27T09:50:00+08:00</updated>
+    <summary>Checked July 27, 2026 after CurseForge Verity - Bedrock Edition moved to ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon, record 8517480, 39.6 MB. MCPEDL updated July 27 with a 3.2.0 changelog, but its visible download list can still show older 3.1.0 V26.30 rows while the listing settles. The same pass refreshed current records: Verity JE verity-5.7.3.jar record 8461257 and Modrinth project on1Y0osD version yAt0wv1Z, Verity BE Verity (Stable) (1.1.0)-(26.3).mcaddon record 8506198, and Verity Pocket Edition record 8406293. Project totals at check were Verity JE 2,180,336 CurseForge and 264,269 Modrinth, Verity BE 3,839,014, PnTMC 6,893,448, and Pocket Edition 49,903 downloads.</summary>
+  </entry>
   <entry>
     <title>verity-5.7.3.jar file identity page added</title>
     <id>https://veritymodchecker.online/updates/verity-573-jar-file-page-2026-07-26</id>

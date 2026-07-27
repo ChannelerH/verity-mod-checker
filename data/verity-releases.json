@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-26T16:05:00+08:00",
+  "checkedAt": "2026-07-27T09:50:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -12,7 +12,7 @@
       "projectId": 1591438,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
       "status": "current",
-      "projectDownloadsAtCheck": 2122806,
+      "projectDownloadsAtCheck": 2180336,
       "projectDownloadsApproximate": false,
       "verifiedAlternateSources": [
         {
@@ -22,7 +22,7 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 244563,
+          "projectDownloadsAtCheck": 264269,
           "projectDownloadsApproximate": false,
           "releases": [
             {
@@ -36,7 +36,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 195216,
+              "recordDownloadsAtCheck": 214866,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
@@ -56,7 +56,7 @@
           "loader": "Forge",
           "packageType": "jar",
           "displayedSizeMb": 235.1,
-          "recordDownloadsAtCheck": 478000,
+          "recordDownloadsAtCheck": 523400,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-18"
         },
@@ -80,7 +80,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 3774957,
+      "projectDownloadsAtCheck": 3839014,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -95,7 +95,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 21.3,
-          "recordDownloadsAtCheck": 49600,
+          "recordDownloadsAtCheck": 85500,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         }
@@ -108,11 +108,29 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 6751858,
+      "projectDownloadsAtCheck": 6893448,
       "projectDownloadsApproximate": false,
       "releases": [
         {
           "status": "current",
+          "filename": "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon",
+          "recordId": 8517480,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480",
+          "minecraftVersion": "26.30",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 39.6,
+          "recordDownloadsAtCheck": 25,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-07-27",
+          "changelogSummary": [
+            "fixed 9 bugs",
+            "upgrade throw system (sneak + drop = throw)",
+            "upgrade AI"
+          ]
+        },
+        {
+          "status": "previous-still-available",
           "filename": "ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
           "recordId": 8503821,
           "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8503821",
@@ -120,7 +138,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.7,
-          "recordDownloadsAtCheck": 159200,
+          "recordDownloadsAtCheck": 237700,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         },
@@ -133,7 +151,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 35.4,
-          "recordDownloadsAtCheck": 2800000,
+          "recordDownloadsAtCheck": 2900000,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-06-27"
         }
@@ -146,7 +164,7 @@
       "projectId": 1596246,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be",
       "status": "similar-named-current",
-      "projectDownloadsAtCheck": 47571,
+      "projectDownloadsAtCheck": 49903,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -163,7 +181,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 18.6,
-          "recordDownloadsAtCheck": 40000,
+          "recordDownloadsAtCheck": 42300,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-10"
         }

@@ -116,18 +116,18 @@ with sync_playwright() as playwright:
         assert "8506198" in result_text
 
         page.locator("#sourceInput").fill(
-            "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8503821"
+            "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480"
         )
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity - Bedrock Edition" in result_text
-        assert "8503821" in result_text
+        assert "8517480" in result_text
 
-        page.locator("#sourceInput").fill("ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.20.mcaddon")
+        page.locator("#sourceInput").fill("ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity - Bedrock Edition" in result_text
-        assert "8503821" in result_text
+        assert "8517480" in result_text
 
         page.locator("#sourceInput").fill(
             "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"

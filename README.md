@@ -25,13 +25,13 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## What It Covers
 
 - Java route: Verity JE record `8461257`, Forge 1.20.1, NeoForge status, Groq, OpenRouter, Ollama, and version checks.
-- Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC record `8503821`, pack activation, Beta APIs, commands, and world setup.
+- Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC record `8517480`, pack activation, Beta APIs, commands, and world setup.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Troubleshooting: API 401/429, box not spawning, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
-The checker verifies identity signals against the public metadata recorded on July 26, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current release map. Verity JE 5.7.3 is checked on both CurseForge (`1591438` / `8461257`) and Modrinth (`on1Y0osD` / `yAt0wv1Z`); Verity BE 1.1.0 is checked on CurseForge (`1574632` / `8506198`). The browser checker can compare a local Java JAR with Modrinth's published SHA-512 without uploading it. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on maintainer-controlled records instead of being mirrored by this site.
+The checker verifies identity signals against the public metadata recorded on July 27, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current release map. Verity JE 5.7.3 is checked on both CurseForge (`1591438` / `8461257`) and Modrinth (`on1Y0osD` / `yAt0wv1Z`); Verity BE 1.1.0 is checked on CurseForge (`1574632` / `8506198`); PnTMC Verity 3.2.0 is checked on CurseForge (`1575941` / `8517480`). The browser checker can compare a local Java JAR with Modrinth's published SHA-512 without uploading it. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on maintainer-controlled records instead of being mirrored by this site.
 
 ## Local Preview
 

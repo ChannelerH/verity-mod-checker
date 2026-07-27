@@ -409,6 +409,25 @@ const knownProjects = [
     releases: [
       {
         status: "current",
+        filename: "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon",
+        aliases: [
+          "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon",
+          "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon"
+        ],
+        versionNumber: "3.2.0",
+        sizeMb: 39.6,
+        version: "Bedrock 26.30",
+        published: "July 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8517480",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480"
+          }
+        ]
+      },
+      {
+        status: "previous-still-available",
         filename: "ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
         aliases: [
           "ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.20.mcaddon",
