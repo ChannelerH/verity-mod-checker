@@ -955,6 +955,80 @@ details p {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .intent-table .table-wrap {
+    overflow: visible;
+    background: transparent;
+    border: 0;
+  }
+
+  .intent-table table,
+  .intent-table thead,
+  .intent-table tbody,
+  .intent-table tr,
+  .intent-table th,
+  .intent-table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .intent-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .intent-table tr {
+    margin-bottom: 12px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+  }
+
+  .intent-table td {
+    border-bottom: 0;
+  }
+
+  .intent-table td + td {
+    border-top: 1px solid var(--line);
+  }
+
+  .intent-table td::before {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--ember);
+    font-family: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, monospace;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .intent-table:not(#route-table) td:nth-child(1)::before {
+    content: "Store listing";
+  }
+
+  .intent-table:not(#route-table) td:nth-child(2)::before {
+    content: "Publisher and package";
+  }
+
+  .intent-table:not(#route-table) td:nth-child(3)::before {
+    content: "Signals to check";
+  }
+
+  #route-table td:nth-child(1)::before {
+    content: "Claim";
+  }
+
+  #route-table td:nth-child(2)::before {
+    content: "Meaning";
+  }
+
+  #route-table td:nth-child(3)::before {
+    content: "Safest next step";
+  }
 }
 
 /* Home page: download-first layout */

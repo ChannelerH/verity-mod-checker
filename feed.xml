@@ -5,15 +5,31 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T13:08:42+08:00</updated>
+  <updated>2026-07-27T13:50:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Third Google Play Verity app listing added to APK route</title>
+    <id>https://veritymodchecker.online/updates/google-play-l13devstudio-app-2026-07-27</id>
+    <link href="https://veritymodchecker.online/apk/#google-play-check" rel="alternate" />
+    <published>2026-07-27T13:50:00+08:00</published>
+    <updated>2026-07-27T13:50:00+08:00</updated>
+    <summary>Expanded the APK and Google Play app safety table after current SERP checks exposed another high-visibility mobile listing: L13DEVSTUDIO package com.l13devstudio.verit, shown as Verity Mod for Minecraft PE with ads, in-app purchases, 100K+ downloads, and a July 24, 2026 update. The page now compares this package with BirchApps com.verity.stalker.mobs.birchappsmcpe and GO:KU STUDIO com.goku.verity.horror while still routing normal MCPE installs to maintainer MCADDON records.</summary>
+  </entry>
+  <entry>
+    <title>Verity release reach counters refreshed from first-party sources</title>
+    <id>https://veritymodchecker.online/updates/release-reach-counters-2026-07-27-1343</id>
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="alternate" />
+    <published>2026-07-27T13:43:00+08:00</published>
+    <updated>2026-07-27T13:43:00+08:00</updated>
+    <summary>Refreshed point-in-time project and file counters from the current CurseForge project/file pages and the official Modrinth API without changing homepage title, description, canonical, or download routing. Current visible project totals at this check are Verity JE 2,189,733 CurseForge and 267,913 Modrinth, Verity BE 3,851,539, PnTMC 6,942,257, and Verity Pocket Edition (Be) 50,288 downloads. Current file counters recorded in the JSON snapshot include Modrinth yAt0wv1Z at 218,350, Verity BE record 8506198 at about 92.5K, PnTMC record 8517480 at about 17.7K, previous PnTMC 8503821 at about 239.1K, and Pocket Edition record 8406293 at about 42.7K.</summary>
+  </entry>
   <entry>
     <title>Google Play Verity app claim table added to APK route</title>
     <id>https://veritymodchecker.online/updates/google-play-verity-app-claims-2026-07-27</id>
     <link href="https://veritymodchecker.online/apk/#google-play-check" rel="alternate" />
     <published>2026-07-27T13:08:42+08:00</published>
     <updated>2026-07-27T13:08:42+08:00</updated>
-    <summary>Expanded the Verity Mod APK and app safety route after current search results showed Google Play app intent. The page now identifies two current store listings by package name: BirchApps com.verity.stalker.mobs.birchappsmcpe and GO:KU STUDIO com.goku.verity.horror. Both are treated as third-party app claims that should be checked against official MCADDON records such as Verity BE 8506198, PnTMC 8517480, and Pocket Edition 8406293 before installing.</summary>
+    <summary>Expanded the Verity Mod APK and app safety route after current search results showed Google Play app intent. The page now identifies three current store listings by package name: BirchApps com.verity.stalker.mobs.birchappsmcpe, GO:KU STUDIO com.goku.verity.horror, and L13DEVSTUDIO com.l13devstudio.verit. All are treated as third-party app claims that should be checked against official MCADDON records such as Verity BE 8506198, PnTMC 8517480, and Pocket Edition 8406293 before installing.</summary>
   </entry>
   <entry>
     <title>verity-3.4.1.jar status page added for older NeoForge searches</title>
