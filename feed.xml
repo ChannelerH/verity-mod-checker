@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T10:45:00+08:00</updated>
+  <updated>2026-07-27T11:25:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod lag fix page added for delayed mobs and MCPE stutter</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-lag-fix-2026-07-27</id>
+    <link href="https://veritymodchecker.online/verity-mod-lag-fix/" rel="alternate" />
+    <published>2026-07-27T11:25:00+08:00</published>
+    <updated>2026-07-27T11:25:00+08:00</updated>
+    <summary>Added a dedicated Verity Mod lag fix page after current SERP and official project evidence showed performance intent around delayed mobs, block delay, MCPE stutter, and Java AI latency. The page separates PnTMC record 8517480, Verity BE record 8506198, clean-world Bedrock testing, pack conflicts, Beta APIs, device limits, and Java provider response time, while keeping users on maintainer project records instead of random lite mirrors.</summary>
+  </entry>
   <entry>
     <title>How to spawn Verity troubleshooting page added</title>
     <id>https://veritymodchecker.online/updates/how-to-spawn-verity-2026-07-27</id>

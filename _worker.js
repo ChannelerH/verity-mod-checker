@@ -55,6 +55,19 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/lag-fix" ||
+      url.pathname.startsWith("/lag-fix/") ||
+      url.pathname === "/verity-lag" ||
+      url.pathname.startsWith("/verity-lag/") ||
+      url.pathname === "/verity-mod-lag" ||
+      url.pathname.startsWith("/verity-mod-lag/")
+    ) {
+      url.pathname = "/verity-mod-lag-fix/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/04cb9707b196d4d8b34d0f083fb95f05.txt") {
       return new Response("04cb9707b196d4d8b34d0f083fb95f05", {
         headers: {

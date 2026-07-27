@@ -26,6 +26,7 @@ ROUTES = [
     "/mcpedl/",
     "/pntmc-verity-3-2-0/",
     "/how-to-spawn-verity/",
+    "/verity-mod-lag-fix/",
     "/how-to-get-verity-mod/",
     "/what-is-verity-mod/",
     "/what-happened/",
@@ -154,4 +155,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
