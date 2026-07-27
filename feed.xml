@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T12:40:45+08:00</updated>
+  <updated>2026-07-27T13:08:42+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Google Play Verity app claim table added to APK route</title>
+    <id>https://veritymodchecker.online/updates/google-play-verity-app-claims-2026-07-27</id>
+    <link href="https://veritymodchecker.online/apk/#google-play-check" rel="alternate" />
+    <published>2026-07-27T13:08:42+08:00</published>
+    <updated>2026-07-27T13:08:42+08:00</updated>
+    <summary>Expanded the Verity Mod APK and app safety route after current search results showed Google Play app intent. The page now identifies two current store listings by package name: BirchApps com.verity.stalker.mobs.birchappsmcpe and GO:KU STUDIO com.goku.verity.horror. Both are treated as third-party app claims that should be checked against official MCADDON records such as Verity BE 8506198, PnTMC 8517480, and Pocket Edition 8406293 before installing.</summary>
+  </entry>
   <entry>
     <title>verity-3.4.1.jar status page added for older NeoForge searches</title>
     <id>https://veritymodchecker.online/updates/verity-341-jar-status-2026-07-27</id>
