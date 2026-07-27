@@ -20,6 +20,7 @@ ROUTES = [
     "/is-verity-real/",
     "/java/",
     "/verity-5-7-3-jar/",
+    "/verity-3-4-1-jar/",
     "/bedrock/",
     "/pocket-edition/",
     "/apk/",
@@ -155,4 +156,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

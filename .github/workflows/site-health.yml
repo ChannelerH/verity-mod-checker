@@ -31,7 +31,12 @@ jobs:
             "/what-is-verity-mod/"
             "/how-to-get-verity-mod/"
             "/java/"
+            "/verity-5-7-3-jar/"
+            "/verity-3-4-1-jar/"
             "/bedrock/"
+            "/pocket-edition/"
+            "/pntmc-verity-3-2-0/"
+            "/verity-mod-lag-fix/"
             "/api-connection-failed/"
             "/how-to-talk-to-verity/"
             "/not-working/"
@@ -49,7 +54,7 @@ jobs:
         run: |
           set -euo pipefail
           curl --fail --silent --show-error https://veritymodchecker.online/data/verity-releases.json \
-            | jq -e '.projects | length == 3' > /dev/null
+            | jq -e '.projects | length == 4' > /dev/null
           checked_at="$(curl --fail --silent --show-error https://veritymodchecker.online/data/verity-releases.json | jq -r '.checkedAt')"
           checked_epoch="$(date --date="${checked_at}" +%s)"
           now_epoch="$(date +%s)"
@@ -59,4 +64,6 @@ jobs:
           test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/verity-je/)" \
             = "https://veritymodchecker.online/java/#versions"
           test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/mcpe/)" \
-            = "https://veritymodchecker.online/bedrock/#mcpe"
+            = "https://veritymodchecker.online/pocket-edition/"
+          test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/verity-3.4.1.jar)" \
+            = "https://veritymodchecker.online/verity-3-4-1-jar/"

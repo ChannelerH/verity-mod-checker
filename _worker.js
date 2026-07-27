@@ -32,6 +32,21 @@ export default {
     }
 
     if (
+      url.pathname === "/verity-3.4.1.jar" ||
+      url.pathname.startsWith("/verity-3.4.1.jar/") ||
+      url.pathname === "/verity-3.4.1-jar" ||
+      url.pathname.startsWith("/verity-3.4.1-jar/") ||
+      url.pathname === "/verity-341-jar" ||
+      url.pathname.startsWith("/verity-341-jar/") ||
+      url.pathname === "/neoforge-verity-3-4-1" ||
+      url.pathname.startsWith("/neoforge-verity-3-4-1/")
+    ) {
+      url.pathname = "/verity-3-4-1-jar/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/pntmc-3-2-0" ||
       url.pathname.startsWith("/pntmc-3-2-0/") ||
       url.pathname === "/thatmobs-verity-3-2-0" ||
