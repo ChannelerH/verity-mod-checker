@@ -432,8 +432,8 @@ const knownProjects = [
         records: [
           {
             platform: "CurseForge",
-            id: "files",
-            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all?page=1&pageSize=20"
+            id: "8517478",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517478"
           }
         ]
       },
@@ -447,8 +447,8 @@ const knownProjects = [
         records: [
           {
             platform: "CurseForge",
-            id: "files",
-            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all?page=1&pageSize=20"
+            id: "8517473",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517473"
           }
         ]
       },

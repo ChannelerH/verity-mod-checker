@@ -133,8 +133,8 @@ with sync_playwright() as playwright:
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity - Bedrock Edition" in result_text
         assert "Bedrock 26.20" in result_text
-        assert "files tab" in result_text
-        assert "8517480" not in result_text
+        assert "8517478" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/files/8517478")
 
         page.locator("#sourceInput").fill(
             "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"

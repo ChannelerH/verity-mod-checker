@@ -5,15 +5,15 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T16:58:00+08:00</updated>
+  <updated>2026-07-27T17:06:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>PnTMC Verity 3.2.0 multi-build rows and counters refreshed</title>
     <id>https://veritymodchecker.online/updates/pntmc-320-multi-build-refresh-2026-07-27</id>
     <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="alternate" />
     <published>2026-07-27T16:58:00+08:00</published>
-    <updated>2026-07-27T16:58:00+08:00</updated>
-    <summary>Refreshed the PnTMC 3.2.0 route after the current CurseForge file list showed three active ThatMob's Verity 3.2.0 by PnTMC rows: V26.30 at record 8517480 with 24.4K displayed file downloads, V26.20 at 3.0K, and V26.10-style builds at 4.6K under a 26.13 plus additional-build label. The PnTMC file-check page, Bedrock route, MCPEDL route, Pocket Edition route, download map, release JSON, and LLM summaries now tell players to match their Bedrock build before importing. Point-in-time counters were also refreshed from official pages and the Modrinth API: Verity JE 2,195,311 CurseForge and 270,468 Modrinth project downloads, current CurseForge file 8461257 at 532.5K, current Modrinth version yAt0wv1Z at 220,788, Verity BE 3,855,436 with current file 8506198 at 94.9K, and PnTMC 6,955,502.</summary>
+    <updated>2026-07-27T17:06:00+08:00</updated>
+    <summary>Refreshed the PnTMC 3.2.0 route after the current CurseForge file list exposed exact active records for three ThatMob's Verity 3.2.0 by PnTMC rows: V26.30 record 8517480 with 27.6K displayed file downloads, V26.20 record 8517478 with 3.2K, and V26.10-style record 8517473 with 4.8K under a 26.13 plus additional-build label. The PnTMC file-check page, Bedrock route, MCPEDL route, Pocket Edition route, download map, release JSON, and LLM summaries now tell players to match their Bedrock build before importing. Point-in-time counters were also refreshed from official pages and the Modrinth API: Verity JE 2,197,457 CurseForge and 271,037 Modrinth project downloads, current CurseForge file 8461257 at 534.1K, current Modrinth version yAt0wv1Z at 221,307, Verity BE 3,857,511 with current file 8506198 at 96.1K, and PnTMC 6,961,252.</summary>
   </entry>
   <entry>
     <title>verity-5.7.3.jar exact file page refreshed for current Java searches</title>
