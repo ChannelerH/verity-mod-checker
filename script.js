@@ -352,7 +352,7 @@ const knownProjects = [
         status: "deprecated-buggy",
         filename: "verity-3.4.1.jar",
         versionNumber: "3.4.1",
-        sizeMb: null,
+        sizeMb: 156.0,
         version: "Minecraft 1.21.1 · NeoForge",
         published: "June 30, 2026",
         records: [

@@ -5,7 +5,7 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T12:25:00+08:00</updated>
+  <updated>2026-07-27T12:40:45+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>verity-3.4.1.jar status page added for older NeoForge searches</title>
@@ -13,7 +13,7 @@
     <link href="https://veritymodchecker.online/verity-3-4-1-jar/" rel="alternate" />
     <published>2026-07-27T12:25:00+08:00</published>
     <updated>2026-07-27T12:25:00+08:00</updated>
-    <summary>Added a dedicated verity-3.4.1.jar status page after Search Console showed the exact older Java filename receiving impressions. The page maps verity-3.4.1.jar to Verity JE CurseForge record 8346795, Minecraft 1.21.1 NeoForge, and the maintainer deprecation warning, then routes fresh Java installs to the current verity-5.7.3.jar Forge 1.20.1 record 8461257 and Modrinth yAt0wv1Z instead of treating the older branch as the default download.</summary>
+    <summary>Added a dedicated verity-3.4.1.jar status page after Search Console showed the exact older Java filename receiving impressions. The page maps verity-3.4.1.jar to Verity JE CurseForge record 8346795, 156.0 MB, about 264.1K file downloads at check, Minecraft 1.21.1 NeoForge, Maven coordinate curse.maven:verity-je-1591438:8346795, and the maintainer deprecation warning, then routes fresh Java installs to the current verity-5.7.3.jar Forge 1.20.1 record 8461257 and Modrinth yAt0wv1Z instead of treating the older branch as the default download.</summary>
   </entry>
   <entry>
     <title>Verity Mod lag fix page added for delayed mobs and MCPE stutter</title>
@@ -45,7 +45,7 @@
     <link href="https://veritymodchecker.online/mcpedl/" rel="alternate" />
     <published>2026-07-27T09:50:00+08:00</published>
     <updated>2026-07-27T09:50:00+08:00</updated>
-    <summary>Checked July 27, 2026 after CurseForge Verity - Bedrock Edition moved to ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon, record 8517480, 39.6 MB. MCPEDL updated July 27 with a 3.2.0 changelog, but its visible download list can still show older 3.1.0 V26.30 rows while the listing settles. The same pass refreshed current records: Verity JE verity-5.7.3.jar record 8461257 and Modrinth project on1Y0osD version yAt0wv1Z, Verity BE Verity (Stable) (1.1.0)-(26.3).mcaddon record 8506198, and Verity Pocket Edition record 8406293. Project totals at check were Verity JE 2,180,336 CurseForge and 264,269 Modrinth, Verity BE 3,839,014, PnTMC 6,893,448, and Pocket Edition 49,903 downloads.</summary>
+    <summary>Checked July 27, 2026 after CurseForge Verity - Bedrock Edition moved to ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon, record 8517480, 39.6 MB. MCPEDL updated July 27 with a 3.2.0 changelog, but its visible download list can still show older 3.1.0 V26.30 rows while the listing settles. The same pass refreshed current records: Verity JE verity-5.7.3.jar record 8461257 and Modrinth project on1Y0osD version yAt0wv1Z, Verity BE Verity (Stable) (1.1.0)-(26.3).mcaddon record 8506198, and Verity Pocket Edition record 8406293. Project totals at check were Verity JE 2,189,733 CurseForge and 266,934 Modrinth, Verity BE 3,849,379, PnTMC 6,935,093, and Pocket Edition 50,226 downloads.</summary>
   </entry>
   <entry>
     <title>verity-5.7.3.jar file identity page added</title>
