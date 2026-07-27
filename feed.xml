@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-27T14:16:00+08:00</updated>
+  <updated>2026-07-27T14:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod status 429 fix route and release counters refreshed</title>
+    <id>https://veritymodchecker.online/updates/status-429-route-release-counters-2026-07-27</id>
+    <link href="https://veritymodchecker.online/status-429/" rel="alternate" />
+    <published>2026-07-27T14:45:00+08:00</published>
+    <updated>2026-07-27T14:45:00+08:00</updated>
+    <summary>Added a focused Verity Mod status 429 troubleshooting route after Search Console and current SERP checks showed live player demand around Groq, OpenRouter, and rate-limit failures. The page explains why a Verity Java session can work briefly and then return 429, why another key may share the same account or organization limit, and why a clean text retest should come before voice or download changes. The same pass refreshed point-in-time source counters from CurseForge and the Modrinth API: Verity JE 2,191,579 CurseForge and 268,908 Modrinth project downloads, current CurseForge file 8461257 at 529.8K, current Modrinth version yAt0wv1Z at 218,801, Verity BE 3,853,549 with current file 8506198 at 93.7K, PnTMC 6,949,187 with previous 3.1.0 file 8503821 at 240.7K, and Pocket Edition 50,373 with file 8406293 at 42.8K.</summary>
+  </entry>
   <entry>
     <title>Verity app claims JSON and two more Play listings added</title>
     <id>https://veritymodchecker.online/updates/google-play-app-claims-json-2026-07-27</id>

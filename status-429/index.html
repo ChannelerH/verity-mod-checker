@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Mod Status 429 Fix: Groq, OpenRouter &amp; Rate Limits</title>
+    <meta
+      name="description"
+      content="Fix Verity Mod status 429 without reinstalling. Check Groq or OpenRouter rate limits, key scope, reset windows, prompt length, and safe test order."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/status-429/" />
+    <meta property="og:title" content="Verity Mod Status 429 Fix" />
+    <meta property="og:description" content="Use provider limits, reset windows, and a clean text test to fix Verity Mod 429 errors safely." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/status-429/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Verity Mod Status 429 Fix",
+            "description": "A focused rate-limit troubleshooting guide for Verity JE AI provider errors.",
+            "datePublished": "2026-07-27",
+            "dateModified": "2026-07-27",
+            "mainEntityOfPage": "https://veritymodchecker.online/status-429/",
+            "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
+            "author": {"@type": "Organization", "name": "Verity Mod Guide"},
+            "publisher": {"@type": "Organization", "name": "Verity Mod Guide"}
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veritymodchecker.online/"},
+              {"@type": "ListItem", "position": 2, "name": "Status 429", "item": "https://veritymodchecker.online/status-429/"}
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does Verity Mod status 429 mean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Status 429 means the selected AI provider is rate limiting the request. It is usually a request, token, audio, model, daily, or organization-level limit, not proof that the Verity jar is broken."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Verity work briefly and then return 429?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Short successful use can consume a small request or token window. After that window is exhausted, repeated prompts can return 429 until the provider resets the limit."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will a new API key fix Verity Mod status 429?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not necessarily. For providers such as Groq, limits can apply to the account or organization, so another key under the same owner may share the same ceiling."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I post my Groq or OpenRouter key for help?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Share only the provider name, status code, model, approximate time, and a sanitized error line. Revoke any key that appeared in a screenshot, chat, stream, or public post."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Download Guide home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/ai-model/">AI setup</a>
+        <a href="/api-connection-failed/">API errors</a>
+        <a href="/not-working/">Fixes</a>
+        <a href="/faq/">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Rate-limit route checked July 27, 2026</p>
+          <h1>Verity Mod Status 429 Fix</h1>
+          <p class="lede">
+            Verity Mod status 429 usually means the Java mod reached its AI provider and the provider refused
+            more requests for the current window. Do not reinstall the jar first. Identify the provider, read
+            the exhausted limit, wait for the reset, and retest one short text prompt before testing voice,
+            long chat, or a full survival session.
+          </p>
+          <div class="trust-strip" aria-label="429 scope">
+            <span>Groq limits</span>
+            <span>OpenRouter credits</span>
+            <span>Safe retest order</span>
+          </div>
+          <div class="quick-routes" aria-label="429 support routes">
+            <a href="#quick-fix">Quick fix</a>
+            <a href="#works-then-fails">Works then fails</a>
+            <a href="/api-connection-failed/">All API errors</a>
+            <a href="/ai-model/">Provider setup</a>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Fast answer</span>
+          </div>
+          <h2>429 is not a download verdict</h2>
+          <p>
+            If Minecraft loads Verity JE and only fails when the AI answers, the file probably loaded far
+            enough to call Groq, OpenRouter, or a local route. Keep the file stable while checking limits.
+          </p>
+          <ol class="steps">
+            <li>Stop sending prompts for the moment.</li>
+            <li>Open the selected provider's limit or usage page.</li>
+            <li>Find whether requests, tokens, audio, model, daily, or organization limits were hit.</li>
+            <li>After reset, test one short text prompt.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="guide-section" id="quick-fix">
+        <div class="section-heading">
+          <p class="eyebrow">Quick fix</p>
+          <h2>What to do when the game says status 429</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Read the provider, not just the Minecraft message</h3>
+            <p>
+              Verity JE uses an AI provider path after the base Minecraft mod loads. A status 429 message is
+              normally a provider response. The provider is saying too many requests, too many tokens, too much
+              audio, too much model usage, or too much daily account usage happened in a window. Reinstalling
+              <strong>verity-5.7.3.jar</strong> does not reset a cloud provider's quota.
+            </p>
+            <p>
+              Start by naming the provider selected in your local setup. Groq users should check Groq Console
+              and the Groq rate-limit page. OpenRouter users should check the account, credits, model route,
+              and error payload in OpenRouter. Ollama users usually do not get a cloud 429 from Ollama itself;
+              if a local setup returns a similar failure, confirm that Minecraft is actually configured for
+              the local endpoint and not still using a cloud provider.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Do this in order</h3>
+            <ol class="steps">
+              <li>Pause prompts so the log does not fill with repeated failures.</li>
+              <li>Confirm the selected provider and model in the local Verity configuration.</li>
+              <li>Check whether the account hit request, token, audio, model, or daily limits.</li>
+              <li>Wait for the reset window shown by the provider.</li>
+              <li>Retest one short text-only prompt before turning on voice or long context.</li>
+              <li>Only revisit the Java file if the mod fails to load before the AI call.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="429 source map">
+        <div class="section-heading">
+          <p class="eyebrow">Provider map</p>
+          <h2>Match the 429 to the right account layer</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Provider path</th>
+                <th>Likely reason for 429</th>
+                <th>First useful check</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Groq</td>
+                <td>Request, token, audio, daily, or organization-level rate limit</td>
+                <td>Open Groq limits and usage before creating another key.</td>
+              </tr>
+              <tr>
+                <td>OpenRouter</td>
+                <td>Credits, model route, provider-side quota, or upstream rate limit</td>
+                <td>Check the exact model ID, account balance, and returned error body.</td>
+              </tr>
+              <tr>
+                <td>Ollama local</td>
+                <td>Usually not a cloud quota unless the profile still points to a cloud provider</td>
+                <td>Confirm Ollama answers outside Minecraft and compare the configured local endpoint.</td>
+              </tr>
+              <tr>
+                <td>Unknown provider</td>
+                <td>Setup tutorial, profile config, or copied advice does not match the installed route</td>
+                <td>Return to the Verity JE project setup notes and identify the selected provider first.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section" id="works-then-fails">
+        <div class="section-heading">
+          <p class="eyebrow">Short sessions</p>
+          <h2>Why Verity works for a minute and then 429 appears</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>A small free tier can run out quickly</h3>
+            <p>
+              A common player pattern is: the mod loads, Verity answers once or twice, then the next prompts
+              return status 429. That pattern usually means the key is accepted but the provider reached a
+              short request or token window. It can also happen when voice or long context burns tokens faster
+              than a simple text test. The first successful replies are important evidence: they separate a
+              bad key from an exhausted limit.
+            </p>
+            <p>
+              Do not use repeated retries as a test. Rapid retries can keep you inside the failing window and
+              make the log harder to read. Wait for the documented reset time, then send one short prompt such
+              as "say hi." If the short prompt works but a long conversation fails again, reduce frequency,
+              shorten context, use a lower-demand supported model, or move to a provider/tier that matches the
+              way you want to play.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>A second key may share the same ceiling</h3>
+            <p>
+              Players often create a new key after seeing Verity Mod status 429. That can help only if the old
+              key had a key-specific problem. If the limit belongs to the account, organization, project, model,
+              or upstream provider, another key owned by the same account can return the same 429. A new key
+              also creates security risk if you start pasting screenshots or logs into public support threads.
+            </p>
+            <p>
+              Rotate a key when it was exposed, revoked, copied with spaces, or belongs to the wrong provider.
+              For rate limits, inspect the provider's usage panel first. If the code changes from 401 to 429
+              after you fix the key, authentication improved; now you are debugging quota instead of credentials.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Clean test</p>
+          <h2>Use a text-only retest before changing voice or downloads</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Separate file, AI, and voice layers</h3>
+            <p>
+              The fastest clean test is a fresh Java profile with the same current Verity JE file, the same
+              provider, and one short text prompt. Do not change the JAR, provider, model, resource packs,
+              voice settings, and extra mods in one pass. If the short text prompt works after the reset, the
+              download route was probably not the problem. If text works but voice fails, use the
+              <a href="/voice-not-working/">voice troubleshooting page</a> instead of rotating API keys.
+            </p>
+            <p>
+              If every short text prompt immediately returns 429 after the reset, collect a sanitized support
+              line: provider, model, status code, approximate time, and whether it ever worked in that session.
+              Remove keys, account IDs, local file paths, and personal information. A good report says
+              "Groq, status 429, model name, 14:20 UTC, text worked for five minutes." A bad report includes
+              the secret key or a screenshot of the provider console.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>When to revisit the download</h3>
+            <p>
+              Revisit the download only when Minecraft fails before the API layer: wrong loader, wrong
+              Minecraft version, missing dependencies, crash on startup, or a file that does not match
+              <a href="/verity-5-7-3-jar/">verity-5.7.3.jar</a> for the current Forge route. A 429 after
+              Verity appears in game is later than that. Keep the source stable and debug the provider path.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="status-429-faq">
+        <div class="section-heading">
+          <p class="eyebrow">Questions</p>
+          <h2 id="status-429-faq">Verity Mod status 429 FAQ</h2>
+        </div>
+        <details open>
+          <summary>What does Verity Mod status 429 mean?</summary>
+          <p>
+            It means the selected AI provider refused the request because a rate or quota limit was reached.
+            Check requests, tokens, audio, model, daily, and organization limits before changing the Verity file.
+          </p>
+        </details>
+        <details>
+          <summary>Why did it work for one minute and then fail?</summary>
+          <p>
+            The early replies probably consumed enough quota to exhaust a short window. Wait for the reset and
+            test one short text prompt. Then test longer chat and voice separately.
+          </p>
+        </details>
+        <details>
+          <summary>Should I make another Groq key?</summary>
+          <p>
+            Not as the first step. A new key may share the same account or organization ceiling. Create or rotate
+            a key when the old key is invalid, exposed, copied incorrectly, or from the wrong provider.
+          </p>
+        </details>
+        <details>
+          <summary>Is Verity Mod status 429 a virus warning?</summary>
+          <p>
+            No. It is an HTTP/provider status code. It does not prove a file is safe, but it also does not mean
+            the file is malware. Use the <a href="/#checker">source checker</a> for route identity and keep
+            malware scanning separate.
+          </p>
+        </details>
+      </section>
+
+      <aside class="source-strip" aria-label="Primary rate-limit references">
+        <strong>Primary references checked July 27:</strong>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
+        <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
+        <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
+        <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
+        <a href="/api-connection-failed/">Full API connection guide</a>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-routes" aria-label="Footer route links">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/api-connection-failed/">API errors</a>
+        <a href="/status-429/">Status 429</a>
+        <a href="/ai-model/">AI model</a>
+        <a href="/voice-not-working/">Voice fixes</a>
+        <a href="/not-working/">All fixes</a>
+      </nav>
+      <p>Independent troubleshooting page. No API keys are collected. Not affiliated with the listed projects or providers.</p>
+    </footer>
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

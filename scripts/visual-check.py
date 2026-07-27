@@ -33,6 +33,7 @@ ROUTES = [
     "/what-happened/",
     "/ai-model/",
     "/api-connection-failed/",
+    "/status-429/",
     "/how-to-talk-to-verity/",
     "/not-working/",
     "/voice-not-working/",
@@ -156,4 +157,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

@@ -83,6 +83,21 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/429" ||
+      url.pathname.startsWith("/429/") ||
+      url.pathname === "/verity-429" ||
+      url.pathname.startsWith("/verity-429/") ||
+      url.pathname === "/verity-mod-429" ||
+      url.pathname.startsWith("/verity-mod-429/") ||
+      url.pathname === "/api-429" ||
+      url.pathname.startsWith("/api-429/")
+    ) {
+      url.pathname = "/status-429/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/04cb9707b196d4d8b34d0f083fb95f05.txt") {
       return new Response("04cb9707b196d4d8b34d0f083fb95f05", {
         headers: {

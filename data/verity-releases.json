@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-27T13:43:00+08:00",
+  "checkedAt": "2026-07-27T14:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -12,7 +12,7 @@
       "projectId": 1591438,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
       "status": "current",
-      "projectDownloadsAtCheck": 2189733,
+      "projectDownloadsAtCheck": 2191579,
       "projectDownloadsApproximate": false,
       "verifiedAlternateSources": [
         {
@@ -22,7 +22,7 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 267913,
+          "projectDownloadsAtCheck": 268908,
           "projectDownloadsApproximate": false,
           "releases": [
             {
@@ -36,7 +36,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 218350,
+              "recordDownloadsAtCheck": 218801,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
@@ -56,7 +56,7 @@
           "loader": "Forge",
           "packageType": "jar",
           "displayedSizeMb": 235.1,
-          "recordDownloadsAtCheck": 528400,
+          "recordDownloadsAtCheck": 529800,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-18"
         },
@@ -68,8 +68,8 @@
           "minecraftVersion": "1.21.1",
           "loader": "NeoForge",
           "packageType": "jar",
-          "displayedSizeMb": 156.0,
-          "recordDownloadsAtCheck": 264100,
+          "displayedSizeMb": 156,
+          "recordDownloadsAtCheck": 264300,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-06-30",
           "maven": "curse.maven:verity-je-1591438:8346795"
@@ -83,7 +83,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 3851539,
+      "projectDownloadsAtCheck": 3853549,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -98,7 +98,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 21.3,
-          "recordDownloadsAtCheck": 92500,
+          "recordDownloadsAtCheck": 93700,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         }
@@ -111,7 +111,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 6942257,
+      "projectDownloadsAtCheck": 6949187,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -141,7 +141,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.7,
-          "recordDownloadsAtCheck": 239100,
+          "recordDownloadsAtCheck": 240700,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         },
@@ -167,7 +167,7 @@
       "projectId": 1596246,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be",
       "status": "similar-named-current",
-      "projectDownloadsAtCheck": 50288,
+      "projectDownloadsAtCheck": 50373,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -184,7 +184,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 18.6,
-          "recordDownloadsAtCheck": 42700,
+          "recordDownloadsAtCheck": 42800,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-10"
         }

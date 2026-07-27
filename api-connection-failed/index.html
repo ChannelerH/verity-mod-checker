@@ -37,7 +37,7 @@
             "name": "Verity Mod API Connection Failed: Fix 401, 429 and Timeouts",
             "url": "https://veritymodchecker.online/api-connection-failed/",
             "description": "A status-code troubleshooting guide for Verity JE AI provider connection failures.",
-            "dateModified": "2026-07-26"
+            "dateModified": "2026-07-27"
           },
           {
             "@type": "BreadcrumbList",
@@ -123,7 +123,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Live problem route checked July 24, 2026</p>
+          <p class="eyebrow">Live problem route checked July 27, 2026</p>
           <h1>Verity Mod API Connection Failed</h1>
           <p class="lede">
             Do not reinstall the jar until you read the status code. An API connection failed message usually
@@ -134,6 +134,11 @@
             <span>401 key check</span>
             <span>429 rate limit</span>
             <span>Ollama local check</span>
+          </div>
+          <div class="quick-routes" aria-label="API troubleshooting routes">
+            <a href="/status-429/">Status 429 fix</a>
+            <a href="/ai-model/">Provider setup</a>
+            <a href="/voice-not-working/">Voice after text</a>
           </div>
         </div>
 
@@ -153,6 +158,7 @@
           </ol>
           <div class="action-row">
             <a class="primary-link" href="#error-map">Match the error</a>
+            <a class="copy-button" href="/status-429/">Status 429 page</a>
             <a class="copy-button" href="/ai-model/">Compare providers</a>
           </div>
         </aside>
@@ -440,7 +446,7 @@
           <article class="error-card">
             <span>Download</span>
             <h3>Replacing the jar for 429</h3>
-            <p>A rate limit belongs to the provider account and time window. Reinstalling the same release cannot reset it.</p>
+            <p>A rate limit belongs to the provider account and time window. Reinstalling the same release cannot reset it. Use the <a href="/status-429/">status 429 fix</a> when it works briefly and then fails again.</p>
           </article>
           <article class="error-card">
             <span>Keys</span>
@@ -555,7 +561,7 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary troubleshooting references">
-        <strong>Primary references checked July 26:</strong>
+        <strong>Primary references checked July 27:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Maintainer setup tutorial</a>
         <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq quickstart</a>
@@ -565,6 +571,7 @@
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
         <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
         <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
+        <a href="/status-429/">Status 429 fix</a>
         <a href="/verity-mod-lag-fix/">Lag versus AI delay</a>
       </aside>
     </main>
@@ -577,6 +584,7 @@
         <a href="/bedrock/">Bedrock / MCPE</a>
         <a href="/how-to-talk-to-verity/">How to talk</a>
         <a href="/api-connection-failed/">API errors</a>
+        <a href="/status-429/">Status 429</a>
         <a href="/ai-model/">AI model</a>
         <a href="/verity-mod-lag-fix/">Lag fixes</a>
         <a href="/voice-not-working/">Voice fixes</a>
