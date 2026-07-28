@@ -20,30 +20,20 @@ jobs:
   live-audit:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Check canonical pages and SEO files
         shell: bash
         run: |
           set -euo pipefail
           origin="https://veritymodchecker.online"
-          paths=(
-            "/"
-            "/download/"
-            "/what-is-verity-mod/"
-            "/how-to-get-verity-mod/"
-            "/java/"
-            "/verity-5-7-3-jar/"
-            "/verity-3-4-1-jar/"
-            "/bedrock/"
-            "/pocket-edition/"
-            "/pntmc-verity-3-2-0/"
-            "/verity-mod-lag-fix/"
-            "/api-connection-failed/"
-            "/how-to-talk-to-verity/"
-            "/not-working/"
-            "/sitemap.xml"
-            "/robots.txt"
-            "/feed.xml"
-            "/data/verity-releases.json"
+          mapfile -t paths < <(
+            {
+              printf "/\n"
+              find . -mindepth 2 -maxdepth 2 -name index.html \
+                | sed 's#^\./#/#; s#/index.html#/#'
+              printf "/sitemap.xml\n/robots.txt\n/feed.xml\n/llms.txt\n/llms-full.txt\n/data/verity-releases.json\n"
+            } | sort -u
           )
           for path in "${paths[@]}"; do
             curl --fail --silent --show-error --location --retry 3 --max-time 30 "${origin}${path}" > /dev/null
@@ -61,8 +51,8 @@ jobs:
           test "$((now_epoch - checked_epoch))" -lt 259200
           test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://www.veritymodchecker.online/)" \
             = "https://veritymodchecker.online/"
-          test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/verity-je/)" \
-            = "https://veritymodchecker.online/java/#versions"
+          test "$(curl --silent --output /dev/null --write-out '%{http_code}' https://veritymodchecker.online/verity-je/)" \
+            = "200"
           test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/mcpe/)" \
             = "https://veritymodchecker.online/pocket-edition/"
           test "$(curl --silent --output /dev/null --write-out '%{redirect_url}' https://veritymodchecker.online/verity-3.4.1.jar)" \
