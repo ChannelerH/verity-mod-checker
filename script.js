@@ -326,6 +326,25 @@ const knownProjects = [
     releases: [
       {
         status: "beta",
+        filename: "verity-6.0.1-all.jar",
+        versionNumber: "6.0.1-beta",
+        sizeMb: 243.15,
+        version: "Minecraft 1.20.1 · Forge",
+        published: "July 28, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "YLEoXe6t",
+            link: "https://modrinth.com/mod/verity-je-official/version/6.0.1-beta",
+            hashes: {
+              sha1: "288e57b5ed8ccb829da95377f38250059bbf28e8",
+              sha512: "453d369063e2260c2e3af66182cfe4943fc48e6afdc0203759e04e938b938ce15de47b3693dfa6e2d1224a5a4d93ad73a872c3e7fc9688a2b3adde74bc677c59"
+            }
+          }
+        ]
+      },
+      {
+        status: "previous-beta",
         filename: "verity-6.0.0.jar",
         versionNumber: "6.0.0-beta",
         sizeMb: 235.11,

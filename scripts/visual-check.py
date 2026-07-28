@@ -27,6 +27,7 @@ ROUTES = [
     "/is-verity-real/",
     "/java/",
     "/verity-je/",
+    "/verity-6-0-1-jar/",
     "/verity-6-0-0-jar/",
     "/verity-5-7-3-jar/",
     "/verity-3-4-1-jar/",
@@ -111,20 +112,20 @@ with sync_playwright() as playwright:
         assert "Start Ollama" in diagnosis_text
 
         page.goto(BASE_URL, wait_until="domcontentloaded")
-        page.locator("#sourceInput").fill("verity-6.0.0.jar")
+        page.locator("#sourceInput").fill("verity-6.0.1-all.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         page.locator("#sourceVerdict").wait_for(state="visible")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity JE" in result_text
-        assert "5ech0sTo" in result_text
+        assert "YLEoXe6t" in result_text
 
-        page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/6.0.0-beta")
+        page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/6.0.1-beta")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Modrinth route recognized" in result_text
         assert "on1Y0osD" in result_text
         assert "SHA-512 available" in result_text
-        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/6.0.0-beta")
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/6.0.1-beta")
 
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -218,4 +219,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

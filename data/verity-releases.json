@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-28T23:39:14+08:00",
+  "checkedAt": "2026-07-28T23:48:30+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -22,11 +22,30 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 311208,
+          "projectDownloadsAtCheck": 311708,
           "projectDownloadsApproximate": false,
           "releases": [
             {
               "status": "beta",
+              "filename": "verity-6.0.1-all.jar",
+              "recordId": "YLEoXe6t",
+              "recordUrl": "https://modrinth.com/mod/verity-je-official/version/6.0.1-beta",
+              "downloadUrl": "https://cdn.modrinth.com/data/on1Y0osD/versions/YLEoXe6t/verity-6.0.1-all.jar",
+              "minecraftVersion": "1.20.1",
+              "loader": "Forge",
+              "packageType": "jar",
+              "displayedSizeMb": 243.15,
+              "sizeBytes": 254958053,
+              "recordDownloadsAtCheck": 3,
+              "publishedDate": "2026-07-28",
+              "versionType": "beta",
+              "hashes": {
+                "sha1": "288e57b5ed8ccb829da95377f38250059bbf28e8",
+                "sha512": "453d369063e2260c2e3af66182cfe4943fc48e6afdc0203759e04e938b938ce15de47b3693dfa6e2d1224a5a4d93ad73a872c3e7fc9688a2b3adde74bc677c59"
+              }
+            },
+            {
+              "status": "previous-beta",
               "filename": "verity-6.0.0.jar",
               "recordId": "5ech0sTo",
               "recordUrl": "https://modrinth.com/mod/verity-je-official/version/6.0.0-beta",
@@ -55,7 +74,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 245371,
+              "recordDownloadsAtCheck": 245780,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",

@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T23:39:14+08:00</updated>
+  <updated>2026-07-28T23:48:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity JE 6.0.1 beta route added after Modrinth API update</title>
+    <id>https://veritymodchecker.online/updates/verity-601-beta-route-2026-07-28-2348</id>
+    <link href="https://veritymodchecker.online/verity-6-0-1-jar/" rel="alternate" />
+    <published>2026-07-28T23:48:30+08:00</published>
+    <updated>2026-07-28T23:48:30+08:00</updated>
+    <summary>Official Modrinth API checks showed Verity JE 6.0.1-beta published on July 28, 2026 as version YLEoXe6t with file verity-6.0.1-all.jar, Forge 1.20.1, 254,958,053 bytes, SHA-1, SHA-512, and 3 version downloads at the first check. The Modrinth project on1Y0osD showed 311,708 downloads, stable 5.7.3 version yAt0wv1Z showed 245,780 downloads, and the previous 6.0.0 beta version 5ech0sTo remained available at 14,648 downloads. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Verity JE Modrinth counters refreshed after GSC and referral review</title>
     <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2339</id>
