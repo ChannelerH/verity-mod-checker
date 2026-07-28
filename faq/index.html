@@ -37,7 +37,7 @@
             "headline": "Verity Mod FAQ: Download, Java, Bedrock, Voice, and 429 Fixes",
             "description": "A frequently updated Minecraft player FAQ for current Verity Mod project routes, file identity, setup, and troubleshooting.",
             "datePublished": "2026-07-24",
-            "dateModified": "2026-07-27",
+            "dateModified": "2026-07-28",
             "mainEntityOfPage": "https://veritymodchecker.online/faq/",
             "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
             "author": {"@type": "Organization", "name": "Verity Mod Guide"},
@@ -75,6 +75,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "CurseForge still lists a Verity JE 3.4.1 NeoForge 1.21.1 file, but the maintainer marks that branch as deprecated and buggy. Use it only when you intentionally need that older branch."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a Verity Mod Fabric file?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The July 28, 2026 source check found official Verity JE loader records for Forge and NeoForge, but not Fabric. Do not put a Forge or NeoForge Verity JAR into a Fabric profile."
                 }
               },
               {
@@ -221,6 +229,16 @@
         </details>
 
         <details>
+          <summary>Is there a Verity Mod Fabric download?</summary>
+          <p>
+            Not in the checked official records. Modrinth currently lists Verity JE with a Forge loader, and
+            CurseForge lists Forge plus an older NeoForge branch. Neither source lists Fabric. If you see a
+            Verity Mod Fabric promise on a mirror or short-link page, use the <a href="/fabric/">Fabric loader
+            check</a> before downloading.
+          </p>
+        </details>
+
+        <details>
           <summary>Is Verity Mod 1.21.1 NeoForge current?</summary>
           <p>
             A NeoForge 1.21.1 branch exists as <strong>verity-3.4.1.jar</strong>, but it is not the main
@@ -342,6 +360,11 @@
                 <td><a href="/java/">Java download route</a></td>
               </tr>
               <tr>
+                <td>verity mod fabric</td>
+                <td>Check whether a Fabric loader route exists before using a mirror.</td>
+                <td><a href="/fabric/">Fabric loader check</a></td>
+              </tr>
+              <tr>
                 <td>verity bedrock mod</td>
                 <td>Install the correct MCADDON and avoid Java files.</td>
                 <td><a href="/bedrock/">Bedrock / MCPE route</a></td>
@@ -421,6 +444,7 @@
         <a href="/link/">Verity link checker</a>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="noopener" target="_blank">CurseForge Verity JE</a>
         <a href="https://modrinth.com/mod/verity-je-official" rel="noopener" target="_blank">Modrinth Verity JE</a>
+        <a href="/fabric/">Fabric loader check</a>
         <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="noopener" target="_blank">CurseForge Verity BE</a>
         <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="noopener" target="_blank">PnTMC Bedrock route</a>
         <a href="/mcpedl/">MCPEDL route check</a>
@@ -436,6 +460,7 @@
         <a href="/download/">Download route</a>
         <a href="/curseforge/">CurseForge routes</a>
         <a href="/java/">Java route</a>
+        <a href="/fabric/">Fabric check</a>
         <a href="/bedrock/">Bedrock / MCPE route</a>
         <a href="/mcpedl/">MCPEDL route</a>
         <a href="/not-working/">Not working fixes</a>

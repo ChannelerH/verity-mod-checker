@@ -21,6 +21,7 @@ ROUTES = [
     "/curseforge/",
     "/creators/",
     "/faq/",
+    "/fabric/",
     "/horror-mod/",
     "/is-verity-real/",
     "/java/",
@@ -216,4 +217,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, play and server route selectors, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including Fabric, play and server route selectors, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

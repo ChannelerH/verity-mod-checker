@@ -8,6 +8,7 @@ const htmlRoutes = new Set([
   "/curseforge/",
   "/download/",
   "/faq/",
+  "/fabric/",
   "/horror-mod/",
   "/how-to-get-verity-mod/",
   "/how-to-spawn-verity/",
@@ -189,6 +190,22 @@ export default {
       url.pathname.startsWith("/which-verity-download/")
     ) {
       url.pathname = "/java-vs-bedrock/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/fabric" ||
+      url.pathname === "/verity-fabric" ||
+      url.pathname.startsWith("/verity-fabric/") ||
+      url.pathname === "/verity-mod-fabric" ||
+      url.pathname.startsWith("/verity-mod-fabric/") ||
+      url.pathname === "/fabric-verity-mod" ||
+      url.pathname.startsWith("/fabric-verity-mod/") ||
+      url.pathname === "/minecraft-verity-fabric" ||
+      url.pathname.startsWith("/minecraft-verity-fabric/")
+    ) {
+      url.pathname = "/fabric/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

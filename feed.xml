@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T20:25:00+08:00</updated>
+  <updated>2026-07-28T21:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod Fabric loader check added after SERP review</title>
+    <id>https://veritymodchecker.online/updates/fabric-loader-check-2026-07-28</id>
+    <link href="https://veritymodchecker.online/fabric/" rel="alternate" />
+    <published>2026-07-28T21:05:00+08:00</published>
+    <updated>2026-07-28T21:05:00+08:00</updated>
+    <summary>Added a dedicated Fabric loader check after current Google SERP related terms included verity mod fabric. The new page uses first-party Modrinth and CurseForge records to explain that current Verity JE routes list Forge and NeoForge, not Fabric, and routes players to the stable Forge 1.20.1 file, the 6.0.0 Forge beta, the older NeoForge branch, or Bedrock add-on routes without mirroring downloads. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>MCPEDL and PnTMC 3.2.0 route corrected after July 28 player-question check</title>
     <id>https://veritymodchecker.online/updates/mcpedl-pntmc-player-fix-2026-07-28</id>
