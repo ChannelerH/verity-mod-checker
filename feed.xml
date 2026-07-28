@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T21:08:44+08:00</updated>
+  <updated>2026-07-28T22:22:12+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity JE Modrinth counters refreshed after GA4 source-click review</title>
+    <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2222</id>
+    <link href="https://veritymodchecker.online/updates/#source-freshness" rel="alternate" />
+    <published>2026-07-28T22:22:12+08:00</published>
+    <updated>2026-07-28T22:22:12+08:00</updated>
+    <summary>Refreshed current Verity JE Modrinth counters from the official API after GA4 confirmed real users are clicking official project routes. Modrinth project on1Y0osD now shows 308,567 project downloads; version 5ech0sTo for verity-6.0.0.jar shows 13,198 version downloads; stable version yAt0wv1Z for verity-5.7.3.jar shows 244,613 version downloads. File size, SHA-1, SHA-512, loader, Minecraft version, and homepage TDK were unchanged. GSC also accepted an indexing request for /verity-exe/ after a live test confirmed it can be indexed.</summary>
+  </entry>
   <entry>
     <title>Verity JE Modrinth counters refreshed and GSC indexing requested</title>
     <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2108</id>
