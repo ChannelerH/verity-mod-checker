@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T04:06:00+08:00</updated>
+  <updated>2026-07-29T05:15:20+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity current counters and sitemap refreshed from July 29 source checks</title>
+    <id>https://veritymodchecker.online/updates/current-counters-sitemap-2026-07-29-0515</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <published>2026-07-29T05:15:20+08:00</published>
+    <updated>2026-07-29T05:15:20+08:00</updated>
+    <summary>Official Modrinth API checks showed Verity JE project on1Y0osD at 317,516 downloads and stable version yAt0wv1Z for verity-5.7.3.jar at 251,046 version downloads, while the active versions list still exposed only 5QXbQ4rF, 7qhItxce, and yAt0wv1Z. The MCPEDL Verity - Bedrock Edition page embedded 7,221,003 listing downloads, displayed as 7.2M, with the July 27 PnTMC 3.2.0 download rows still first. The site refreshed current counters, release JSON, LLM summaries, affected page lastmod values in sitemap.xml, and kept homepage title and description stable.</summary>
+    <category term="release-data" />
+    <category term="sitemap" />
+  </entry>
   <entry>
     <title>Verity JE 6.0 beta records now return 404 on Modrinth</title>
     <id>https://veritymodchecker.online/updates/verity-je-beta-records-404-2026-07-29-0406</id>
