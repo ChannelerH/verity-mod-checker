@@ -31,6 +31,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity Mod does not respond fix: https://veritymodchecker.online/verity-doesnt-respond/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
 - Voice not working fix: https://veritymodchecker.online/voice-not-working/
+- Groq API key setup: https://veritymodchecker.online/verity-groq-api-key/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/
 - How to talk to Verity: https://veritymodchecker.online/how-to-talk-to-verity/
 - Taken down or 404 route: https://veritymodchecker.online/taken-down/
@@ -46,7 +47,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Play route selector: Java, Bedrock, MCPE, mobile, TLauncher caveats, solo, friends, server, talk, spawn, and broken-session first steps.
 - Server route selector: Java Forge servers, Aternos and free hosts, Bedrock worlds or Realms, PS4/Xbox/Switch console joiners, public server listing safety, AI provider failures, lag, and friends-session setup.
 - No-response route: exact troubleshooting for `verity doesn't respond`, `verity not responding`, `verity no reply`, `verity doesn't talk`, dots-only, silent voice, and missing monster-form searches across Java, Bedrock, MCPE, PnTMC, and modpack routes.
-- Troubleshooting: API 401/429, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
+- Troubleshooting: Groq API key setup, OpenRouter key separation, local Ollama setup, API 401/429, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
 ## Public Reference Assets

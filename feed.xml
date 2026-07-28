@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T06:18:00+08:00</updated>
+  <updated>2026-07-29T06:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Groq API key setup route added for AI provider intent</title>
+    <id>https://veritymodchecker.online/updates/verity-groq-api-key-route-2026-07-29-0645</id>
+    <link href="https://veritymodchecker.online/verity-groq-api-key/" rel="alternate" />
+    <published>2026-07-29T06:45:00+08:00</published>
+    <updated>2026-07-29T06:45:00+08:00</updated>
+    <summary>Added a dedicated Verity Mod Groq API key setup route after current SERP checks showed API-key, Groq, OpenRouter, Ollama, and no-response intent around Verity Mod Java searches. The new page explains where keys come from, why Groq and OpenRouter credentials are separate, why Ollama is usually a local-service route, and how to fix 401, 403, 429, blank replies, and voice confusion without exposing private keys or replacing the download first. Homepage TDK was not changed.</summary>
+    <category term="ai-setup" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity no-response troubleshooting route added for player question intent</title>
     <id>https://veritymodchecker.online/updates/verity-doesnt-respond-route-2026-07-29-0618</id>

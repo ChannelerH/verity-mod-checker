@@ -30,6 +30,7 @@ const htmlRoutes = new Set([
   "/taken-down/",
   "/updates/",
   "/verity-pack/",
+  "/verity-groq-api-key/",
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
   "/verity-6-0-0-jar/",
@@ -542,6 +543,29 @@ export default {
       url.pathname.startsWith("/verity-only-says-dots/")
     ) {
       url.pathname = "/verity-doesnt-respond/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/groq-api-key" ||
+      url.pathname.startsWith("/groq-api-key/") ||
+      url.pathname === "/grok-api-key" ||
+      url.pathname.startsWith("/grok-api-key/") ||
+      url.pathname === "/verity-api-key" ||
+      url.pathname.startsWith("/verity-api-key/") ||
+      url.pathname === "/verity-groq" ||
+      url.pathname.startsWith("/verity-groq/") ||
+      url.pathname === "/verity-grok" ||
+      url.pathname.startsWith("/verity-grok/") ||
+      url.pathname === "/verity-grok-api-key" ||
+      url.pathname.startsWith("/verity-grok-api-key/") ||
+      url.pathname === "/verity-openrouter-api-key" ||
+      url.pathname.startsWith("/verity-openrouter-api-key/") ||
+      url.pathname === "/openrouter-api-key" ||
+      url.pathname.startsWith("/openrouter-api-key/")
+    ) {
+      url.pathname = "/verity-groq-api-key/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
