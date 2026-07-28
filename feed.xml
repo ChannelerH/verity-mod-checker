@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T15:31:00+08:00</updated>
+  <updated>2026-07-28T15:54:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity source counters refreshed from late July 28 checks</title>
+    <id>https://veritymodchecker.online/updates/source-counters-2026-07-28-1554</id>
+    <link href="https://veritymodchecker.online/updates/#source-freshness" rel="alternate" />
+    <published>2026-07-28T15:54:00+08:00</published>
+    <updated>2026-07-28T15:54:00+08:00</updated>
+    <summary>Refreshed point-in-time counters from the official Modrinth API and current CurseForge project/file pages after GSC and GA4 review showed continuing branded Java and Bedrock demand. Current source totals are Verity JE 2,262,441 CurseForge downloads and 296,665 Modrinth downloads, Modrinth beta 6,753 downloads, stable CurseForge file 8461257 at 582.3K, stable Modrinth yAt0wv1Z at 239,408, older Java record 8346795 at 269.8K, Verity BE 3,934,799 with file 8506198 at 137.0K, PnTMC 7,137,557 with file 8517480 at 119.5K, and Pocket Edition 53,267 with file 8406293 at 45.5K. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Ultimate VERITY modpack and old verity-mod 404 route clarified</title>
     <id>https://veritymodchecker.online/updates/ultimate-verity-modpack-404-2026-07-28</id>
