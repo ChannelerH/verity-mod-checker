@@ -12,6 +12,7 @@ ROUTES = [
     "/",
     "/link/",
     "/download/",
+    "/updates/",
     "/minecraft-verity-mod/",
     "/curseforge/",
     "/creators/",
@@ -182,4 +183,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

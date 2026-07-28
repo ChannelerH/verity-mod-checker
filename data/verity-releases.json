@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-28T09:30:00+08:00",
+  "checkedAt": "2026-07-28T10:00:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -22,7 +22,7 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 288591,
+          "projectDownloadsAtCheck": 289704,
           "projectDownloadsApproximate": false,
           "releases": [
             {
@@ -36,7 +36,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.11,
               "sizeBytes": 246535597,
-              "recordDownloadsAtCheck": 2080,
+              "recordDownloadsAtCheck": 2753,
               "publishedDate": "2026-07-27",
               "versionType": "beta",
               "hashes": {
@@ -55,7 +55,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 236248,
+              "recordDownloadsAtCheck": 236452,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
@@ -102,7 +102,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 3913186,
+      "projectDownloadsAtCheck": 3917197,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -130,7 +130,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 7082946,
+      "projectDownloadsAtCheck": 7093341,
       "projectDownloadsApproximate": false,
       "releases": [
         {

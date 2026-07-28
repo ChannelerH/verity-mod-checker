@@ -5,15 +5,23 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T09:30:00+08:00</updated>
+  <updated>2026-07-28T10:00:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod latest version tracker added for Java, Bedrock, PnTMC, and MCPEDL updates</title>
+    <id>https://veritymodchecker.online/updates/latest-version-tracker-2026-07-28</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <published>2026-07-28T10:00:00+08:00</published>
+    <updated>2026-07-28T10:00:00+08:00</updated>
+    <summary>Added a human-readable latest version tracker after current SERP checks showed live demand around Verity Mod download, Java beta, Bedrock, MCPEDL, API 429, and current-file confusion. The page maps Modrinth 6.0.0-beta record 5ech0sTo, stable Java record 8461257 and yAt0wv1Z, Verity BE record 8506198, PnTMC records 8517480, 8517478, and 8517473, and the MCPEDL July 27 changelog in one route table. Source counters were refreshed from first-party pages and APIs: Modrinth project 289,704, Modrinth beta 2,753, Modrinth stable 236,452, Verity BE 3,917,197, and PnTMC 7,093,341. Homepage TDK was not changed; internal links, sitemap, feed, LLM summaries, and release JSON expose the new tracker.</summary>
+  </entry>
   <entry>
     <title>Verity JE 6.0.0 beta file route added from Modrinth</title>
     <id>https://veritymodchecker.online/updates/verity-600-beta-route-2026-07-28</id>
     <link href="https://veritymodchecker.online/verity-6-0-0-jar/" rel="alternate" />
-    <published>2026-07-28T09:30:00+08:00</published>
-    <updated>2026-07-28T09:30:00+08:00</updated>
-    <summary>Checked the official Verity JE Modrinth project after it published version 6.0.0-beta on July 27, 2026. The new beta route is verity-6.0.0.jar, Modrinth version 5ech0sTo, Minecraft 1.20.1 Forge, 246,535,597 bytes, about 235.11 MB, with SHA-1 and SHA-512 fingerprints. The Java page, homepage release map, download map, source checker, sitemap, LLM summaries, and release JSON now separate this beta from the stable verity-5.7.3.jar route. Point-in-time counters were refreshed from official pages: Verity JE 2,247,805 CurseForge and 288,591 Modrinth project downloads, stable CurseForge file 8461257 at 572.8K, stable Modrinth yAt0wv1Z at 236,248, Verity BE 3,913,186 with current file 8506198 at 126.1K, PnTMC 7,082,946 with record 8517480 at 92.4K, and Pocket Edition 52,547 with record 8406293 at 44.9K.</summary>
+    <published>2026-07-28T10:00:00+08:00</published>
+    <updated>2026-07-28T10:00:00+08:00</updated>
+    <summary>Checked the official Verity JE Modrinth project after it published version 6.0.0-beta on July 27, 2026. The new beta route is verity-6.0.0.jar, Modrinth version 5ech0sTo, Minecraft 1.20.1 Forge, 246,535,597 bytes, about 235.11 MB, with SHA-1 and SHA-512 fingerprints. The Java page, homepage release map, download map, source checker, sitemap, LLM summaries, and release JSON now separate this beta from the stable verity-5.7.3.jar route. Point-in-time counters were refreshed from official pages: Verity JE 2,247,805 CurseForge and 289,704 Modrinth project downloads, stable CurseForge file 8461257 at 572.8K, stable Modrinth yAt0wv1Z at 236,452, Verity BE 3,917,197 with current file 8506198 at 126.1K, PnTMC 7,093,341 with record 8517480 at 92.4K, and Pocket Edition 52,547 with record 8406293 at 44.9K.</summary>
   </entry>
   <entry>
     <title>PnTMC Verity 3.2.0 multi-build rows and counters refreshed</title>

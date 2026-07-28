@@ -9,6 +9,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## Live Routes
 
 - Download route: https://veritymodchecker.online/download/
+- Latest version tracker: https://veritymodchecker.online/updates/
 - What is Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
 - How to get Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/

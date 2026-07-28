@@ -22,6 +22,7 @@ const htmlRoutes = new Set([
   "/pocket-edition/",
   "/status-429/",
   "/taken-down/",
+  "/updates/",
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
   "/verity-6-0-0-jar/",
