@@ -325,12 +325,13 @@ const knownProjects = [
     ],
     releases: [
       {
-        status: "beta",
+        status: "unlisted-beta-observed",
         filename: "verity-6.0.1-all.jar",
         versionNumber: "6.0.1-beta",
         sizeMb: 243.15,
         version: "Minecraft 1.20.1 · Forge",
         published: "July 28, 2026",
+        availability: "Modrinth version endpoint returned HTTP 404 and the project versions list no longer included YLEoXe6t on July 29, 2026.",
         records: [
           {
             platform: "Modrinth",
@@ -344,12 +345,13 @@ const knownProjects = [
         ]
       },
       {
-        status: "previous-beta",
+        status: "unlisted-previous-beta-observed",
         filename: "verity-6.0.0.jar",
         versionNumber: "6.0.0-beta",
         sizeMb: 235.11,
         version: "Minecraft 1.20.1 · Forge",
         published: "July 27, 2026",
+        availability: "Modrinth version endpoint returned HTTP 404 and the project versions list no longer included 5ech0sTo on July 29, 2026.",
         records: [
           {
             platform: "Modrinth",
@@ -639,6 +641,10 @@ function releaseRecordLabel(release, record) {
   return record.platform === "CurseForge" ? `record #${record.id}` : `version ${release.versionNumber} (${record.id})`;
 }
 
+function isUnavailableRelease(release) {
+  return Boolean(release?.status?.includes("unlisted") || release?.availability);
+}
+
 function findKnownSourceUrl(parsedUrl) {
   const host = parsedUrl.hostname.replace(/^www\./, "");
   const platform = host === "curseforge.com" || host.endsWith(".curseforge.com")
@@ -789,6 +795,29 @@ function inspectTextSource(rawValue) {
       Object.values(releaseMatch.record.hashes || {}).some((hash) => hash.toLowerCase() === normalizedHash);
 
     if (knownChecksum) {
+      if (isUnavailableRelease(releaseMatch.release)) {
+        return {
+          state: "caution",
+          verdict: "Historical checksum match",
+          risk: "Record now unlisted",
+          title: `${releaseMatch.project.name} ${hashAlgorithm} checksum matches an observed beta record`,
+          summary: `This fingerprint matches the checksum previously recorded for ${releaseMatch.release.filename}, but the latest Modrinth source check no longer shows that beta version as an active route. Use it as historical identity evidence, not as the current Verity Mod download answer.`,
+          source: `${releaseMatch.record.platform} checksum`,
+          package: releaseMatch.release.filename.endsWith(".jar") ? "Java JAR" : "Bedrock MCADDON",
+          project: `${releaseMatch.project.name} · ${projectIdentityLabel(releaseMatch.project)}`,
+          hash: normalizedHash,
+          hashLabel: hashAlgorithm,
+          publisherCheck: `${hashAlgorithm} matched an unlisted record`,
+          checks: [
+            releaseMatch.release.availability || "The matched record is no longer listed in the current source map.",
+            "Do not treat a historical beta checksum as the current stable route.",
+            "Open the current project versions list or use verity-5.7.3.jar for the stable Forge route."
+          ],
+          link: "/verity-5-7-3-jar/",
+          linkLabel: "Open current stable Java route",
+          external: false
+        };
+      }
       return {
         state: "verified",
         verdict: "Publisher checksum match",
@@ -872,6 +901,28 @@ function inspectTextSource(rawValue) {
       const matchedRecord = sourceMatch.record || releaseMatch?.record;
       const hasPublisherHash = Boolean(releasePublisherHash(matchedRelease, "sha512"));
       const matchedPackageType = matchedRelease?.filename ? packageType(matchedRelease.filename) : type;
+      if (isUnavailableRelease(matchedRelease)) {
+        return {
+          state: "caution",
+          verdict: "Known record, now unlisted",
+          risk: "Not current",
+          title: `${sourceMatch.project.name} ${sourceMatch.source.platform} beta route now returns 404`,
+          summary: `The URL matches a previously observed ${sourceMatch.project.edition} beta record, but the latest source check found that Modrinth no longer lists this version and the version endpoint returns 404. Use this page to understand old filenames, then choose an active publisher route.`,
+          source: host,
+          package: type === "Not identified" ? matchedPackageType : type,
+          project: `${sourceMatch.project.name} · ${projectIdentityLabel(sourceMatch.project)}`,
+          hash: "",
+          publisherCheck: hasPublisherHash ? "Historical SHA-512 recorded" : "No active publisher checksum",
+          checks: [
+            matchedRelease.availability || "This release is not in the current source map.",
+            "Do not use a copied 6.0 beta link as the current Verity Mod route.",
+            "Open the current Modrinth versions list or the stable 5.7.3 file check."
+          ],
+          link: "/verity-5-7-3-jar/",
+          linkLabel: "Open current stable Java route",
+          external: false
+        };
+      }
       return {
         state: "verified",
         verdict: "Known project match",
@@ -967,32 +1018,43 @@ function inspectTextSource(rawValue) {
     const exactFile = Boolean(releaseMatch);
     const exactProjectId = project.sources.some((source) => value.toLowerCase() === source.id.toLowerCase());
     const matchedRecord = releaseMatch?.record || releaseMatch?.release.records[0];
+    const unavailableRelease = isUnavailableRelease(releaseMatch?.release);
     const releaseDetail = releaseMatch
       ? `${releaseMatch.release.version}; ${releaseRecordLabel(releaseMatch.release, matchedRecord)}; ${releaseMatch.release.published}`
       : "No exact current file record in the input";
     return {
       state: "caution",
-      verdict: exactFile || exactProjectId ? "Known release signal" : "Partial name match",
-      risk: "Name can be copied",
+      verdict: unavailableRelease ? "Observed beta, now unlisted" : exactFile || exactProjectId ? "Known release signal" : "Partial name match",
+      risk: unavailableRelease ? "Not current" : "Name can be copied",
       title: exactFile ? `${project.name} filename recognized` : `${project.name} record recognized`,
-      summary: `The text matches a checked filename, project path, or Project ID. ${releaseDetail}. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.`,
+      summary: unavailableRelease
+        ? `The text matches a previously observed beta filename or record. ${releaseMatch.release.availability} Use this as historical route context, not as the current Verity Mod download answer.`
+        : `The text matches a checked filename, project path, or Project ID. ${releaseDetail}. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.`,
       source: "Text or filename",
       package: type,
       project: `${project.name} · ${projectIdentityLabel(project)}`,
       hash: "",
-      publisherCheck: releasePublisherHash(releaseMatch?.release, "sha512") ? "SHA-512 available for local comparison" : "Not published in the checked record",
-      checks: [
+      publisherCheck: unavailableRelease
+        ? "Historical SHA-512 recorded"
+        : releasePublisherHash(releaseMatch?.release, "sha512") ? "SHA-512 available for local comparison" : "Not published in the checked record",
+      checks: unavailableRelease ? [
+        "The latest source check found this beta missing from the active Modrinth version list.",
+        "Do not replace a stable profile from a mirror that only copies the old beta filename.",
+        "Use the current 5.7.3 stable route or the project versions list before installing."
+      ] : [
         "Filename matching is useful but not a content scan.",
         "Confirm the current file on the publisher files page.",
         releasePublisherHash(releaseMatch?.release, "sha512")
           ? "Choose the local file to compare its SHA-512 with the publisher record."
           : "Choose a local file to calculate its SHA-256 fingerprint."
       ],
-      link: releaseRecordLink(project, releaseMatch?.release, matchedRecord?.platform),
-      linkLabel: matchedRecord
+      link: unavailableRelease ? "/verity-5-7-3-jar/" : releaseRecordLink(project, releaseMatch?.release, matchedRecord?.platform),
+      linkLabel: unavailableRelease
+        ? "Open current stable Java route"
+        : matchedRecord
         ? `Open ${matchedRecord.platform} ${releaseRecordLabel(releaseMatch.release, matchedRecord)}`
         : `Open ${project.name} files`,
-      external: true
+      external: !unavailableRelease
     };
   }
 
@@ -1032,6 +1094,7 @@ async function inspectLocalFile(file) {
   const sha512 = expectedSha512 ? digestToHex(await crypto.subtle.digest("SHA-512", fileBytes)) : "";
   const publisherHashMatches = Boolean(expectedSha512 && sha512 === expectedSha512);
   const publisherHashMismatch = Boolean(expectedSha512 && sha512 !== expectedSha512);
+  const unavailableRelease = isUnavailableRelease(releaseMatch?.release);
   const size = `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
 
   if (riskyExtension) {
@@ -1069,21 +1132,29 @@ async function inspectLocalFile(file) {
     : "No current release metadata matched";
 
   return {
-    state: publisherHashMismatch ? "danger" : publisherHashMatches || exactMetadata ? "verified" : "caution",
+    state: publisherHashMismatch ? "danger" : unavailableRelease ? "caution" : publisherHashMatches || exactMetadata ? "verified" : "caution",
     verdict: publisherHashMismatch
       ? "Publisher checksum mismatch"
+      : unavailableRelease && publisherHashMatches
+        ? "Historical checksum match"
       : publisherHashMatches
         ? "Publisher checksum match"
+        : unavailableRelease
+          ? "Observed beta, now unlisted"
         : exactMetadata
           ? "Current metadata match"
           : project
             ? "Filename match only"
             : "Local fingerprint created",
-    risk: publisherHashMismatch ? "Not the checked bytes" : publisherHashMatches ? "Exact bytes identified" : exactMetadata ? "Not a malware verdict" : "Contents not scanned",
+    risk: publisherHashMismatch ? "Not the checked bytes" : unavailableRelease ? "Record now unlisted" : publisherHashMatches ? "Exact bytes identified" : exactMetadata ? "Not a malware verdict" : "Contents not scanned",
     title: publisherHashMismatch
       ? `${project.name} filename matches, but the SHA-512 does not`
+      : unavailableRelease && publisherHashMatches
+        ? `${project.name} matches a historical beta checksum`
       : publisherHashMatches
         ? `${project.name} matches the publisher's current checksum`
+        : unavailableRelease
+          ? `${project.name} beta filename is no longer a current route`
         : exactMetadata
           ? `${project.name} name and size match the current record`
           : project
@@ -1091,8 +1162,12 @@ async function inspectLocalFile(file) {
             : "File fingerprint calculated locally",
     summary: publisherHashMismatch
       ? `The filename or size may match, but the local SHA-512 is different from the checksum published for the checked Modrinth file (${expectedDetail}). This does not identify malware, but it proves this is not byte-for-byte the recorded artifact.`
+      : unavailableRelease && publisherHashMatches
+        ? `The file matches a checksum previously recorded for ${releaseMatch.release.filename}, but the current Modrinth check no longer lists that beta version. Treat this as historical identity evidence and return to an active publisher route before installing.`
       : publisherHashMatches
         ? `The filename, size, and SHA-512 match the checked publisher metadata (${expectedDetail}). This proves byte-for-byte identity with that Modrinth artifact; it is still not a general malware guarantee.`
+        : unavailableRelease
+          ? `The filename matches a previously observed beta record, but ${releaseMatch.release.availability} Compare the current versions list before installing.`
         : exactMetadata
           ? `The filename and displayed size match the checked public release metadata (${expectedDetail}). No publisher checksum is recorded for this route, so the result remains a metadata match rather than a byte-for-byte verification.`
       : project
@@ -1103,10 +1178,12 @@ async function inspectLocalFile(file) {
     project: project ? `${project.name} · ${projectIdentityLabel(project)}` : "No known match",
     hash,
     hashLabel: "SHA-256",
-    publisherCheck: expectedSha512 ? (publisherHashMatches ? "SHA-512 exact match" : "SHA-512 mismatch") : "No publisher hash recorded",
+    publisherCheck: expectedSha512 ? (publisherHashMatches ? (unavailableRelease ? "Historical SHA-512 exact match" : "SHA-512 exact match") : "SHA-512 mismatch") : "No publisher hash recorded",
     checks: [
       "SHA-256 identifies the selected bytes and changes if the file changes.",
-      publisherHashMatches
+      unavailableRelease
+        ? "The matched beta record is no longer listed as a current Modrinth version."
+        : publisherHashMatches
         ? "The local SHA-512 exactly matches the publisher's current Modrinth checksum."
         : publisherHashMismatch
           ? "Do not treat this file as the checked Modrinth artifact."
@@ -1115,9 +1192,11 @@ async function inspectLocalFile(file) {
             : "A hash without a publisher reference does not prove safety.",
       project ? "Open the matched project files page and compare release details." : "Confirm the source, owner, edition, and release before installing."
     ],
-    link: project ? releaseRecordLink(project, releaseMatch?.release, matchedRecord?.platform) : `https://www.virustotal.com/gui/file/${hash}`,
+    link: unavailableRelease ? "/verity-5-7-3-jar/" : project ? releaseRecordLink(project, releaseMatch?.release, matchedRecord?.platform) : `https://www.virustotal.com/gui/file/${hash}`,
     linkLabel: project
-      ? matchedRecord
+      ? unavailableRelease
+        ? "Open current stable Java route"
+        : matchedRecord
         ? `Open ${matchedRecord.platform} ${releaseRecordLabel(releaseMatch.release, matchedRecord)}`
         : `Open ${project.name} files`
       : "Look up this hash",

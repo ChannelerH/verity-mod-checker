@@ -108,7 +108,7 @@
             "name": "Which Verity Mod file is for Java Edition?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The checked Java project is Verity JE. Modrinth now lists a 6.0.1 beta for Forge 1.20.1, while the stable 5.7.3 file is listed on CurseForge Project ID 1591438 and Modrinth Project ID on1Y0osD. CurseForge also lists an older NeoForge 1.21.1 branch. Match both Minecraft version and loader before installing."
+              "text": "The checked Java project is Verity JE. At the July 29, 2026 source check, the active Modrinth versions list only exposed 5.7.3, 5.7.2, and 5.6.2; the earlier 6.0.1 and 6.0.0 beta version endpoints returned 404. Use stable 5.7.3 on CurseForge Project ID 1591438 or Modrinth Project ID on1Y0osD unless you are researching those unlisted beta filenames."
             }
           },
           {
@@ -195,7 +195,7 @@
             <a class="hero-text-link" href="#checker">Check a URL or file</a>
           </div>
           <ul class="hero-facts" aria-label="Current edition summary">
-            <li><strong>Java:</strong> Forge 1.20.1 beta and stable, plus NeoForge 1.21.1</li>
+            <li><strong>Java:</strong> Forge 1.20.1 stable is current; observed 6.0 beta links now return 404</li>
             <li><strong>Bedrock:</strong> multiple separate 26.30 add-on routes</li>
             <li><strong>Safety:</strong> project pages instead of file mirrors</li>
           </ul>
@@ -264,20 +264,20 @@
         <div class="release-grid">
           <article class="release-item java-release">
             <div class="release-item-top">
-              <span class="edition-tag">Java · Forge</span>
-              <span class="release-state caution">Beta</span>
+              <span class="edition-tag">Java · Modrinth</span>
+              <span class="release-state caution">Unlisted beta</span>
             </div>
-            <h3>Verity JE 6.0.1 beta for Minecraft 1.20.1</h3>
+            <h3>Verity JE 6.0.1 beta record now returns 404</h3>
             <dl>
               <div><dt>Owner</dt><dd>Varmite on Modrinth</dd></div>
               <div><dt>Project ID</dt><dd>on1Y0osD</dd></div>
-              <div><dt>Checked file</dt><dd>verity-6.0.1-all.jar</dd></div>
+              <div><dt>Observed file</dt><dd>verity-6.0.1-all.jar</dd></div>
               <div><dt>File record</dt><dd>Modrinth YLEoXe6t · 243.15 MB</dd></div>
-              <div><dt>Project reach</dt><dd>312,563 Modrinth downloads at check</dd></div>
+              <div><dt>Current API status</dt><dd>Version endpoint 404; not in current versions list</dd></div>
             </dl>
-            <p>Use this July 28, 2026 beta only when you intentionally want to test the newer Verity JE route.</p>
-            <a href="https://modrinth.com/mod/verity-je-official/version/6.0.1-beta" rel="noopener" target="_blank">Open Modrinth beta record</a>
-            <a href="/verity-6-0-1-jar/">Check the 6.0.1 beta file</a>
+            <p>Keep this page for exact filename searches, but do not treat a copied 6.0.1 link as the current Verity Mod route.</p>
+            <a href="/verity-6-0-1-jar/">Check the 6.0.1 beta status</a>
+            <a href="https://modrinth.com/mod/verity-je-official/versions" rel="noopener" target="_blank">Open current Modrinth versions</a>
             <a href="/verity-je/">Compare Java versions</a>
           </article>
 
@@ -292,9 +292,9 @@
               <div><dt>Project IDs</dt><dd>1591438 · on1Y0osD</dd></div>
               <div><dt>Checked file</dt><dd>verity-5.7.3.jar</dd></div>
               <div><dt>File records</dt><dd>CurseForge #8461257 · Modrinth yAt0wv1Z</dd></div>
-              <div><dt>Project reach</dt><dd>2,287,006 CurseForge · 312,563 Modrinth</dd></div>
+              <div><dt>Project reach</dt><dd>2,287,006 CurseForge · 316,611 Modrinth</dd></div>
             </dl>
-            <p>CurseForge still shows this July 18, 2026 file as the visible Java file route for Minecraft 1.20.1 Forge.</p>
+            <p>CurseForge still shows this July 18, 2026 file as the visible Java file route, and Modrinth keeps yAt0wv1Z as the active checksum route.</p>
             <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open CurseForge record</a>
             <a href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="noopener" target="_blank">Open Modrinth version and checksum</a>
             <a href="/verity-je/">Read Java install details</a>
@@ -380,14 +380,15 @@
             <h3 id="verification-log-title">Every current Verity Mod file claim links to the public record used to check it</h3>
             <p>
               The map above was reviewed July 29, 2026 against official CurseForge file records and the official Verity JE
-              Modrinth versions. We compare owner, Project ID, filename, supported game version, loader or add-on format,
-              publication date, displayed file size, and a publisher checksum when one is available. We do not call a
-              file malware-free merely because its metadata or checksum matches.
+              Modrinth API. That check found the earlier 6.0.1 and 6.0.0 beta records missing from Modrinth's active
+              versions list, while stable 5.7.3 remained listed as yAt0wv1Z. We compare owner, Project ID, filename,
+              supported game version, loader or add-on format, publication date, displayed file size, and a publisher
+              checksum when one is available. We do not call a file malware-free merely because its metadata or checksum matches.
             </p>
           </div>
           <ul>
-            <li><strong>Java beta:</strong> Modrinth YLEoXe6t for verity-6.0.1-all.jar, Forge 1.20.1.</li>
-            <li><strong>Java stable:</strong> CurseForge #8461257 and Modrinth yAt0wv1Z for verity-5.7.3.jar.</li>
+            <li><strong>Java active route:</strong> CurseForge #8461257 and Modrinth yAt0wv1Z for verity-5.7.3.jar.</li>
+            <li><strong>Java beta history:</strong> Modrinth YLEoXe6t and 5ech0sTo are observed beta records that now return 404.</li>
             <li><strong>Bedrock:</strong> Verity BE 1.1.0 record #8506198 for 26.30.</li>
             <li><strong>Alternate Bedrock:</strong> PnTMC 3.2.0 has V26.30 record #8517480, V26.20 record #8517478, and V26.10-style record #8517473 package rows.</li>
           </ul>
@@ -545,16 +546,16 @@
             <a href="/link/"><strong>Link checker</strong><span>Check official URLs, mirrors, and short-link claims</span></a>
             <a href="/minecraft-verity-mod/"><strong>Minecraft Verity Mod</strong><span>Broad Java, Bedrock, MCPE, and source route overview</span></a>
             <a href="/download/"><strong>Download map</strong><span>Compare every current project and file type</span></a>
-            <a href="/updates/"><strong>Latest version tracker</strong><span>Check current Java beta, stable Java, Bedrock, PnTMC, and MCPEDL updates</span></a>
+            <a href="/updates/"><strong>Latest version tracker</strong><span>Check active Java stable, unlisted beta records, Bedrock, PnTMC, and MCPEDL updates</span></a>
             <a href="/real-verity-mod-updated/"><strong>Real Verity updated</strong><span>Separate the video-led update trend from Java, Bedrock, MCPE, and app routes</span></a>
             <a href="/play/"><strong>How to play Verity</strong><span>Pick a Java, Bedrock, MCPE, friends, or server first-session route</span></a>
             <a href="/server/"><strong>Verity server setup</strong><span>Choose Java server, Aternos, Bedrock Realm, console, or public-server safety route</span></a>
             <a href="/curseforge/"><strong>CurseForge routes</strong><span>Choose the right Java or Bedrock project record</span></a>
             <a href="/creators/"><strong>Creator reference</strong><span>Copy-safe source notes for videos and articles</span></a>
-            <a href="/verity-je/"><strong>Verity JE files</strong><span>6.0.1 beta, 5.7.3 stable, and older NeoForge records</span></a>
+            <a href="/verity-je/"><strong>Verity JE files</strong><span>Current 5.7.3 stable, unlisted 6.0 beta records, and older NeoForge records</span></a>
             <a href="/java/"><strong>Java setup</strong><span>Loader matching and clean-profile order</span></a>
             <a href="/fabric/"><strong>Fabric check</strong><span>Verify that current Verity JE files are Forge or NeoForge, not Fabric</span></a>
-            <a href="/verity-6-0-1-jar/"><strong>verity-6.0.1-all.jar</strong><span>Check the new Modrinth 6.0.1 beta file and checksum route</span></a>
+            <a href="/verity-6-0-1-jar/"><strong>verity-6.0.1-all.jar</strong><span>Check why the observed Modrinth 6.0.1 beta record now returns 404</span></a>
             <a href="/verity-5-7-3-jar/"><strong>verity-5.7.3.jar</strong><span>Check the stable Forge 1.20.1 Java file record and checksum route</span></a>
             <a href="/verity-3-4-1-jar/"><strong>verity-3.4.1.jar</strong><span>Check the older NeoForge 1.21.1 branch before installing</span></a>
             <a href="/bedrock/"><strong>Bedrock setup</strong><span>Add-on import, packs, commands, and Beta APIs</span></a>
@@ -701,10 +702,11 @@
         <details>
           <summary>Which Verity Mod file is for Java Edition?</summary>
           <p>
-            The checked Java project is Verity JE. Modrinth now lists a 6.0.1 beta for Forge 1.20.1, while
-            the stable 5.7.3 file appears under CurseForge Project ID 1591438 and Modrinth Project ID on1Y0osD.
-            CurseForge also lists an older NeoForge 1.21.1 branch. Match the Minecraft version and loader
-            together before placing a jar in the mods folder.
+            The checked Java project is Verity JE. The active Modrinth versions list now exposes 5.7.3,
+            5.7.2, and 5.6.2; the previously observed 6.0.1 and 6.0.0 beta records return 404 at this
+            source check. Use 5.7.3 under CurseForge Project ID 1591438 and Modrinth Project ID on1Y0osD
+            for the current stable Forge route, then match the Minecraft version and loader before placing
+            a jar in the mods folder.
           </p>
         </details>
         <details>

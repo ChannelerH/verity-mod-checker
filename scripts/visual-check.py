@@ -117,15 +117,16 @@ with sync_playwright() as playwright:
         page.locator("#sourceVerdict").wait_for(state="visible")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity JE" in result_text
-        assert "YLEoXe6t" in result_text
+        assert "OBSERVED BETA, NOW UNLISTED" in result_text
+        assert "missing from the active Modrinth version list" in result_text
 
         page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/6.0.1-beta")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
-        assert "Modrinth route recognized" in result_text
+        assert "KNOWN RECORD, NOW UNLISTED" in result_text
         assert "on1Y0osD" in result_text
-        assert "SHA-512 available" in result_text
-        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/6.0.1-beta")
+        assert "Historical SHA-512" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-5-7-3-jar/")
 
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -190,7 +191,7 @@ with sync_playwright() as playwright:
         )
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
-        assert "publisher checksum match" in result_text.lower()
+        assert "historical checksum match" in result_text.lower()
 
         page.locator("#sourceInput").fill(
             "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"

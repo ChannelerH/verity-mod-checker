@@ -5,15 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T00:52:30+08:00</updated>
+  <updated>2026-07-29T04:06:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity JE 6.0 beta records now return 404 on Modrinth</title>
+    <id>https://veritymodchecker.online/updates/verity-je-beta-records-404-2026-07-29-0406</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <published>2026-07-29T04:06:00+08:00</published>
+    <updated>2026-07-29T04:06:00+08:00</updated>
+    <summary>Official Modrinth API checks changed the Java route answer: project on1Y0osD now exposes active versions 5QXbQ4rF, 7qhItxce, and yAt0wv1Z only. The previously observed 6.0.1-beta version YLEoXe6t for verity-6.0.1-all.jar and 6.0.0-beta version 5ech0sTo for verity-6.0.0.jar both returned HTTP 404. The site now treats those exact beta filenames as stale-link status pages, keeps stable Verity JE 5.7.3 as the active Forge 1.20.1 route, updates release JSON, homepage copy, Java pages, source checker behavior, LLM summaries, and IndexNow targets, and keeps homepage TDK stable.</summary>
+    <category term="release-data" />
+    <category term="source-status" />
+  </entry>
   <entry>
     <title>Verity source counters refreshed from July 29 official checks</title>
     <id>https://veritymodchecker.online/updates/verity-source-counters-2026-07-29-0052</id>
     <link href="https://veritymodchecker.online/updates/" rel="alternate" />
     <published>2026-07-29T00:52:30+08:00</published>
     <updated>2026-07-29T00:52:30+08:00</updated>
-    <summary>Official Modrinth and CurseForge checks showed active Verity traffic after the 6.0.1-beta release: Modrinth project on1Y0osD reached 312,563 downloads; 6.0.1-beta version YLEoXe6t reached 459 downloads; previous 6.0.0-beta version 5ech0sTo reached 14,933; stable Modrinth yAt0wv1Z reached 246,110; CurseForge Verity JE reached 2,287,006 project downloads with stable file 8461257 at 602.5K; Verity BE reached 3,956,705 with file 8506198 at 153.1K; and PnTMC Verity - Bedrock Edition reached 7,191,125 with V26.30 file 8517480 at 150.7K. GSC totals remained 48 clicks and 1,450 impressions, GA4 showed Organic Search at 165 sessions, and homepage TDK was not changed.</summary>
+    <summary>Official Modrinth and CurseForge checks showed active Verity traffic after the 6.0.1-beta release: Modrinth project on1Y0osD reached 316,611 downloads; 6.0.1-beta version YLEoXe6t reached 459 downloads; previous 6.0.0-beta version 5ech0sTo reached 14,933; stable Modrinth yAt0wv1Z reached 249,718; CurseForge Verity JE reached 2,287,006 project downloads with stable file 8461257 at 602.5K; Verity BE reached 3,956,705 with file 8506198 at 153.1K; and PnTMC Verity - Bedrock Edition reached 7,191,125 with V26.30 file 8517480 at 150.7K. GSC totals remained 48 clicks and 1,450 impressions, GA4 showed Organic Search at 165 sessions, and homepage TDK was not changed.</summary>
     <category term="release-data" />
     <category term="seo-operations" />
   </entry>
@@ -31,7 +41,7 @@
     <link href="https://veritymodchecker.online/verity-je/" rel="alternate" />
     <published>2026-07-28T23:39:14+08:00</published>
     <updated>2026-07-28T23:39:14+08:00</updated>
-    <summary>Refreshed current Verity JE Modrinth counters from the official API after Search Console showed the head query verity mod appearing, GA4 showed real gist.github.com referral sessions, and the MCPEDL support thread needed current source facts. Modrinth project on1Y0osD now shows 311,208 project downloads; version 5ech0sTo for verity-6.0.0.jar shows 14,648 version downloads; stable version yAt0wv1Z for verity-5.7.3.jar remains at 245,371 version downloads. File size, SHA-1, SHA-512, loader, Minecraft version, and homepage TDK were unchanged.</summary>
+    <summary>Refreshed current Verity JE Modrinth counters from the official API after Search Console showed the head query verity mod appearing, GA4 showed real gist.github.com referral sessions, and the MCPEDL support thread needed current source facts. Modrinth project on1Y0osD now shows 311,208 project downloads; version 5ech0sTo for verity-6.0.0.jar shows 14,648 version downloads; stable version yAt0wv1Z for verity-5.7.3.jar remains at 249,718 version downloads. File size, SHA-1, SHA-512, loader, Minecraft version, and homepage TDK were unchanged.</summary>
   </entry>
   <entry>
     <title>PnTMC Bedrock counters refreshed from official CurseForge pages</title>

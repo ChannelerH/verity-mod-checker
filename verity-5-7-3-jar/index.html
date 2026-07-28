@@ -47,7 +47,7 @@
             "name": "Is Verity 5.7.3 still the stable Java file?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "At the July 29, 2026 check, Verity JE 5.7.3 remains the stable Forge 1.20.1 Java route on CurseForge record 8461257 and Modrinth version yAt0wv1Z. Modrinth also lists a separate 6.0.0 beta."
+              "text": "At the July 29, 2026 check, Verity JE 5.7.3 remains the stable Forge 1.20.1 Java route on CurseForge record 8461257 and Modrinth version yAt0wv1Z. The observed 6.0.1 and 6.0.0 beta endpoints now return 404."
             }
           },
           {
@@ -94,7 +94,7 @@
             "@id": "https://veritymodchecker.online/verity-5-7-3-jar/#webpage",
             "url": "https://veritymodchecker.online/verity-5-7-3-jar/",
             "name": "verity-5.7.3.jar Download Route & Stable File Check",
-            "dateModified": "2026-07-28",
+            "dateModified": "2026-07-29",
             "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
             "about": ["verity-5.7.3.jar", "Verity Mod Java", "Verity JE", "Forge 1.20.1", "Modrinth checksum"]
           },
@@ -136,10 +136,11 @@
             <strong>verity-5.7.3.jar</strong> is the stable Verity JE Java file checked for Minecraft
             1.20.1 Forge. The same file route is published as CurseForge record #8461257 and Modrinth
             version yAt0wv1Z under project on1Y0osD. At this check, CurseForge displays 602.5K downloads
-            for the exact file and Modrinth reports 245,371 downloads for the same 5.7.3 version. Use this
+            for the exact file and Modrinth reports 249,718 downloads for the same 5.7.3 version. Use this
             page when the search result says download, file, checksum, CurseForge, Modrinth, or Forge
             1.20.1 and you need the stable file name plus source context before opening a publisher page.
-            Modrinth also lists a separate <a href="/verity-6-0-0-jar/">verity-6.0.0.jar beta</a>.
+            The observed <a href="/verity-6-0-1-jar/">verity-6.0.1-all.jar</a> and
+            <a href="/verity-6-0-0-jar/">verity-6.0.0.jar</a> beta endpoints now return 404.
           </p>
           <div class="trust-strip" aria-label="File facts">
             <span>Forge 1.20.1</span>
@@ -213,13 +214,13 @@
             <p>
               The Modrinth route is useful when you want stronger byte-level identity information. It is
               listed under project on1Y0osD and publishes SHA-1 plus SHA-512 fingerprints for the stable
-              file. At this check, Modrinth reports 245,371 downloads for version yAt0wv1Z. The browser
+              file. At this check, Modrinth reports 249,718 downloads for version yAt0wv1Z. The browser
               checker can compare a selected local file with the published SHA-512 without uploading the jar.
             </p>
             <dl class="route-facts">
               <div><dt>Project</dt><dd>on1Y0osD</dd></div>
               <div><dt>Version</dt><dd>yAt0wv1Z</dd></div>
-              <div><dt>Downloads</dt><dd>245,371 at check</dd></div>
+              <div><dt>Downloads</dt><dd>249,718 at check</dd></div>
               <div><dt>Size</dt><dd>246,481,139 bytes</dd></div>
               <div><dt>SHA-1</dt><dd>da28115bbad0478d9ed9c97f2466b67d46d13d51</dd></div>
             </dl>
@@ -240,16 +241,16 @@
           </article>
           <article class="status-card">
             <div class="status-topline">
-              <span>Newer beta</span>
-              <strong>Separate choice</strong>
+              <span>Observed beta</span>
+              <strong>Now 404</strong>
             </div>
-            <h3>verity-6.0.0.jar exists on Modrinth</h3>
+            <h3>6.0 beta links are stale at this check</h3>
             <p>
-              The July 29 check still found Modrinth version 5ech0sTo, labeled 6.0.0-beta, for Minecraft
-              1.20.1 Forge. Do not replace a stable setup with it unless you intentionally want to test
-              the beta route.
+              The July 29 check found both observed 6.0 beta records returning 404: YLEoXe6t for
+              <code>verity-6.0.1-all.jar</code> and 5ech0sTo for <code>verity-6.0.0.jar</code>. Do not replace
+              a stable setup with a mirror that only copies those names.
             </p>
-            <a href="/verity-6-0-0-jar/">Check the 6.0.0 beta file</a>
+            <a href="/verity-6-0-1-jar/">Check the 6.0.1 beta status</a>
           </article>
         </div>
       </section>
@@ -453,7 +454,8 @@
             Yes for the checked Forge stable route. At the July 29, 2026 check, Verity JE 5.7.3 remains the
             stable Forge 1.20.1 Java file on the public publisher routes used here. The exact filename is
             <strong>verity-5.7.3.jar</strong>, with CurseForge record 8461257 and Modrinth version yAt0wv1Z.
-            Modrinth also lists a newer <a href="/verity-6-0-0-jar/">6.0.0 beta</a> as a separate choice.
+            The observed 6.0.1 and 6.0.0 beta endpoints now return 404, so this stable route is the active
+            Java answer unless the publisher exposes a new 6.0 route.
           </p>
         </details>
         <details>
@@ -495,7 +497,8 @@
         <a href="/">Checker</a>
         <a href="/download/">Download route</a>
         <a href="/java/">Java route</a>
-        <a href="/verity-6-0-0-jar/">verity-6.0.0.jar beta</a>
+        <a href="/verity-6-0-1-jar/">verity-6.0.1-all.jar status</a>
+        <a href="/verity-6-0-0-jar/">verity-6.0.0.jar status</a>
         <a href="/verity-5-7-3-jar/">verity-5.7.3.jar</a>
         <a href="/verity-3-4-1-jar/">verity-3.4.1.jar</a>
         <a href="/api-connection-failed/">API fixes</a>

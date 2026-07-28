@@ -247,11 +247,11 @@
           <article class="guide-block guide-lead">
             <h3>Build the server around the exact Java route</h3>
             <p>
-              For Java Edition, the checked project is Verity JE. Current public records include the
-              Modrinth <strong>verity-6.0.0.jar</strong> beta under version <code>5ech0sTo</code> and
+              For Java Edition, the checked project is Verity JE. Current active public records center on
               the stable <strong>verity-5.7.3.jar</strong> route under CurseForge record <code>8461257</code>
-              and Modrinth version <code>yAt0wv1Z</code>. Both current routes are for Minecraft 1.20.1 Forge
-              at this check. If a video or Discord message names an older NeoForge 1.21.1 file such as
+              and Modrinth version <code>yAt0wv1Z</code>. Observed 6.0.1 and 6.0.0 beta links now return
+              404 on Modrinth, so do not build a server around a mirror that only copies those names. The active
+              stable route is for Minecraft 1.20.1 Forge at this check. If a video or Discord message names an older NeoForge 1.21.1 file such as
               <code>verity-3.4.1.jar</code>, treat that as a separate legacy branch, not the default server setup.
             </p>
             <p>
@@ -273,7 +273,7 @@
               If text replies work but voice is missing, use the voice checklist instead of replacing a verified JAR.
             </p>
             <ul class="check-list">
-              <li><a href="/java/">Java route</a>: current beta, stable file, loader, and dependency order.</li>
+              <li><a href="/java/">Java route</a>: active stable file, stale beta-link status, loader, and dependency order.</li>
               <li><a href="/api-connection-failed/">API connection failed</a>: provider status codes and local Ollama checks.</li>
               <li><a href="/status-429/">Status 429</a>: rate-limit behavior after a short working session.</li>
               <li><a href="/voice-not-working/">Voice not working</a>: sound and speech checks after text works.</li>
@@ -499,7 +499,7 @@
             summary: "A server file should still trace back to the Verity JE maintainer route, not a mirrored launcher or hidden ZIP.",
             link: "/download/",
             steps: [
-              "Open the current Java route and pick stable 5.7.3 or beta 6.0.0 intentionally.",
+              "Open the current Java route and use stable 5.7.3 unless an active publisher beta exists.",
               "Confirm the server host supports that Minecraft version and loader.",
               "Reject downloads that hide the owner, record, version, or final host."
             ]

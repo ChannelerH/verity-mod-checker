@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-29T00:52:30+08:00",
+  "checkedAt": "2026-07-29T04:06:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -22,11 +22,11 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 312563,
+          "projectDownloadsAtCheck": 316611,
           "projectDownloadsApproximate": false,
           "releases": [
             {
-              "status": "beta",
+              "status": "unlisted-beta-observed",
               "filename": "verity-6.0.1-all.jar",
               "recordId": "YLEoXe6t",
               "recordUrl": "https://modrinth.com/mod/verity-je-official/version/6.0.1-beta",
@@ -42,10 +42,11 @@
               "hashes": {
                 "sha1": "288e57b5ed8ccb829da95377f38250059bbf28e8",
                 "sha512": "453d369063e2260c2e3af66182cfe4943fc48e6afdc0203759e04e938b938ce15de47b3693dfa6e2d1224a5a4d93ad73a872c3e7fc9688a2b3adde74bc677c59"
-              }
+              },
+              "currentApiStatus": "Version endpoint returned HTTP 404 and the project versions list no longer included this ID at the July 29, 2026 source check."
             },
             {
-              "status": "previous-beta",
+              "status": "unlisted-previous-beta-observed",
               "filename": "verity-6.0.0.jar",
               "recordId": "5ech0sTo",
               "recordUrl": "https://modrinth.com/mod/verity-je-official/version/6.0.0-beta",
@@ -61,7 +62,8 @@
               "hashes": {
                 "sha1": "87f39573ea29e796ad856d96fd056b8dfe0043d9",
                 "sha512": "c8b282be27ab4a0f19da6e834c4ee70602cef98bb5a81fe848932c1ca0edd98c41904602fe02b357d0a65265fba352860df6e06da669de6404143a224ce40afb"
-              }
+              },
+              "currentApiStatus": "Version endpoint returned HTTP 404 and the project versions list no longer included this ID at the July 29, 2026 source check."
             },
             {
               "status": "stable-current",
@@ -74,14 +76,20 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 246110,
+              "recordDownloadsAtCheck": 249718,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
                 "sha512": "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"
               }
             }
-          ]
+          ],
+          "apiVisibleVersionIdsAtCheck": [
+            "5QXbQ4rF",
+            "7qhItxce",
+            "yAt0wv1Z"
+          ],
+          "latestApiVisibleRelease": "yAt0wv1Z"
         }
       ],
       "releases": [

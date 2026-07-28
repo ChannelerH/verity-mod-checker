@@ -54,7 +54,7 @@
             "name": "What should Fabric players do instead?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Use a separate Minecraft 1.20.1 Forge profile for the current stable Verity JE route, intentionally test the 6.0.0 beta in a clean Forge profile, or wait for a maintainer-published Fabric record before using Fabric."
+              "text": "Use a separate Minecraft 1.20.1 Forge profile for the current stable Verity JE route, treat observed 6.0 beta links as stale because they now return 404, or wait for a maintainer-published Fabric record before using Fabric."
             }
           }
         ]
@@ -138,7 +138,8 @@
             loaders. Neither source lists Fabric for Verity JE at this check.
           </p>
           <ol class="steps">
-            <li>Use Forge 1.20.1 for the stable 5.7.3 route or the 6.0.0 beta route.</li>
+            <li>Use Forge 1.20.1 for the active stable 5.7.3 route.</li>
+            <li>Treat observed 6.0.1 and 6.0.0 beta links as stale because their Modrinth endpoints now return 404.</li>
             <li>Treat NeoForge 1.21.1 as an older branch with a maintainer warning.</li>
             <li>Do not rename a JAR or use a bridge claim as proof of a Fabric release.</li>
             <li>Wait for a maintainer-published Fabric file page before using Fabric.</li>
@@ -165,9 +166,9 @@
             <h3>Loader listed: Forge</h3>
             <p>
               The public Modrinth API for Verity JE lists project on1Y0osD with the loader value
-              <strong>forge</strong>. Its current versions are Java Edition files for Minecraft 1.20.1, including
-              the 6.0.0 beta record 5ech0sTo and the stable 5.7.3 record yAt0wv1Z. That evidence supports
-              a Forge route. It does not support a Fabric download route.
+              <strong>forge</strong>. Its active versions are Java Edition files for Minecraft 1.20.1, with
+              the stable 5.7.3 record yAt0wv1Z still listed while observed 6.0 beta records now return 404.
+              That evidence supports a Forge route. It does not support a Fabric download route.
             </p>
             <a href="https://modrinth.com/mod/verity-je-official" rel="noopener" target="_blank">Check the Modrinth project</a>
           </article>
@@ -220,8 +221,8 @@
               A safe install starts by matching four things: Minecraft version, loader, file record, and
               project owner. For Verity JE stable, the clean match is Minecraft 1.20.1, Forge,
               verity-5.7.3.jar, and the Verity JE project owned by VarmiteYT on CurseForge or Varmite on
-              Modrinth. For the beta, the clean match is Minecraft 1.20.1, Forge, Modrinth version 5ech0sTo,
-              and a willingness to test a beta. For the older branch, the match is Minecraft 1.21.1,
+              Modrinth. For an old beta link, the clean response is to verify the 404 status before trusting
+              a mirror. For the older branch, the match is Minecraft 1.21.1,
               NeoForge, verity-3.4.1.jar, and awareness that the maintainer warns about bugs.
             </p>
             <p>
@@ -358,8 +359,8 @@
         <details>
           <summary>Is the Verity 6.0.0 beta a Fabric file?</summary>
           <p>
-            No. The Modrinth 6.0.0 beta record is still a Forge 1.20.1 file. It is newer than 5.7.3, but
-            "newer" does not mean "Fabric." Treat it as a beta Forge route.
+            No. The observed Modrinth 6.0.0 beta record was a Forge 1.20.1 file, and it now returns 404.
+            "Newer" does not mean "Fabric." Treat it as a stale Forge beta link.
           </p>
         </details>
       </section>
