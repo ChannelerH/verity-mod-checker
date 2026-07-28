@@ -8,6 +8,14 @@
   <updated>2026-07-28T13:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
+    <title>Verity BE Bedrock route expanded after GSC showed zero-click BE intent</title>
+    <id>https://veritymodchecker.online/updates/verity-be-bedrock-zero-click-2026-07-28</id>
+    <link href="https://veritymodchecker.online/bedrock/" rel="alternate" />
+    <published>2026-07-28T13:18:00+08:00</published>
+    <updated>2026-07-28T13:18:00+08:00</updated>
+    <summary>Expanded the /bedrock/ canonical route after Search Console showed verity be impressions with zero clicks and player-comment sampling showed confusion around wrong files, Verity Java, missing dialogue boxes, dots-only replies, Beta APIs, and debugger connect setup. The page now leads with Verity BE Download for Minecraft Bedrock, maps CurseForge Project ID 1574632 to file record 8506198, adds MCPEDL Verity BE source context, and keeps PnTMC plus Pocket Edition separated instead of creating thin duplicate pages. Point-in-time source counters from official pages now show Verity JE 2,254,835 CurseForge downloads, Verity BE 3,928,058 with file 8506198 at 134.2K, PnTMC 7,112,849, and Pocket Edition 52,547. Homepage TDK was not changed.</summary>
+  </entry>
+  <entry>
     <title>verity-5.7.3.jar download route sharpened for zero-click file searches</title>
     <id>https://veritymodchecker.online/updates/verity-573-download-route-zero-click-2026-07-28</id>
     <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />

@@ -124,6 +124,16 @@ export default {
       url.pathname.startsWith("/verity-bedrock/") ||
       url.pathname === "/verity-bedrock-mod" ||
       url.pathname.startsWith("/verity-bedrock-mod/") ||
+      url.pathname === "/verity-be" ||
+      url.pathname.startsWith("/verity-be/") ||
+      url.pathname === "/verity-be-download" ||
+      url.pathname.startsWith("/verity-be-download/") ||
+      url.pathname === "/verity-be-bedrock" ||
+      url.pathname.startsWith("/verity-be-bedrock/") ||
+      url.pathname === "/vertiy-be" ||
+      url.pathname.startsWith("/vertiy-be/") ||
+      url.pathname === "/verity-mod-bedrock-download" ||
+      url.pathname.startsWith("/verity-mod-bedrock-download/") ||
       url.pathname === "/verity-minecraft-bedrock" ||
       url.pathname.startsWith("/verity-minecraft-bedrock/")
     ) {
