@@ -489,6 +489,7 @@ export default {
     const assetUrl = new URL(request.url);
     if (isKnownRoute) {
       assetUrl.pathname = url.pathname === "/" ? "/index.html" : `${url.pathname}index.html`;
+      assetUrl.search = "";
     }
 
     const assetRequest = new Request(assetUrl.toString(), request);
