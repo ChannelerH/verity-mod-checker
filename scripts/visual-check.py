@@ -15,6 +15,7 @@ ROUTES = [
     "/download/",
     "/java-vs-bedrock/",
     "/updates/",
+    "/real-verity-mod-updated/",
     "/play/",
     "/server/",
     "/minecraft-verity-mod/",
@@ -217,4 +218,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including Fabric, play and server route selectors, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

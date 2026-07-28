@@ -24,6 +24,7 @@ const htmlRoutes = new Set([
   "/pntmc-verity-2-1-0/",
   "/pntmc-verity-3-2-0/",
   "/pocket-edition/",
+  "/real-verity-mod-updated/",
   "/server/",
   "/status-429/",
   "/taken-down/",
@@ -250,6 +251,22 @@ export default {
       url.pathname.startsWith("/what-is-verity-minecraft/")
     ) {
       url.pathname = "/what-is-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/real-verity-mod-updated" ||
+      url.pathname === "/the-real-verity-mod-updated" ||
+      url.pathname.startsWith("/the-real-verity-mod-updated/") ||
+      url.pathname === "/updated-real-verity-mod" ||
+      url.pathname.startsWith("/updated-real-verity-mod/") ||
+      url.pathname === "/verity-mod-updated" ||
+      url.pathname.startsWith("/verity-mod-updated/") ||
+      url.pathname === "/verity-mod-latest-update" ||
+      url.pathname.startsWith("/verity-mod-latest-update/")
+    ) {
+      url.pathname = "/real-verity-mod-updated/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
