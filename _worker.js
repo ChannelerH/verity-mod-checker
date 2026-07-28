@@ -277,7 +277,18 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
-    if (url.pathname === "/how-to-install" || url.pathname.startsWith("/how-to-install/")) {
+    if (
+      url.pathname === "/how-to-install" ||
+      url.pathname.startsWith("/how-to-install/") ||
+      url.pathname === "/how-to-download-verity-mod" ||
+      url.pathname.startsWith("/how-to-download-verity-mod/") ||
+      url.pathname === "/how-to-download-and-install-verity-mod" ||
+      url.pathname.startsWith("/how-to-download-and-install-verity-mod/") ||
+      url.pathname === "/how-to-download-verity-mod-in-minecraft" ||
+      url.pathname.startsWith("/how-to-download-verity-mod-in-minecraft/") ||
+      url.pathname === "/how-to-download-and-install-verity-for-minecraft" ||
+      url.pathname.startsWith("/how-to-download-and-install-verity-for-minecraft/")
+    ) {
       url.pathname = "/how-to-get-verity-mod/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);

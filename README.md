@@ -15,7 +15,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity Mod server, friends, PS4, Xbox, and console route: https://veritymodchecker.online/server/
 - What is Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
-- How to get Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
+- How to download and install Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
 - Verity JE branded download route: https://veritymodchecker.online/verity-je/
 - Java setup and troubleshooting route: https://veritymodchecker.online/java/
 - Older Java 3.4.1 status route: https://veritymodchecker.online/verity-3-4-1-jar/

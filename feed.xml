@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T16:42:00+08:00</updated>
+  <updated>2026-07-28T18:55:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Download and install Verity Mod route sharpened for zero-click install intent</title>
+    <id>https://veritymodchecker.online/updates/download-install-route-2026-07-28</id>
+    <link href="https://veritymodchecker.online/how-to-get-verity-mod/" rel="alternate" />
+    <published>2026-07-28T18:55:00+08:00</published>
+    <updated>2026-07-28T18:55:00+08:00</updated>
+    <summary>Refreshed the canonical how-to-get route after GSC showed /how-to-get-verity-mod/ receiving impressions with zero clicks and current SERP checks showed repeated YouTube-style wording around how to download and install Verity Mod in Minecraft. The page now leads with download/install intent, keeps how-to-get wording in the copy, adds FAQ coverage for edition-specific Java, Bedrock, and MCPE installation, and redirects download-install aliases such as /how-to-download-verity-mod/ and /how-to-download-and-install-verity-mod/ to the same canonical page instead of creating duplicate thin pages. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Verity Mod Java vs Bedrock chooser added after GSC and SERP review</title>
     <id>https://veritymodchecker.online/updates/java-vs-bedrock-chooser-2026-07-28</id>
