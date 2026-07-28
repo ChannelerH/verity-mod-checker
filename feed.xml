@@ -8,6 +8,14 @@
   <updated>2026-07-28T13:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
+    <title>How to play Verity Mod platform answers refreshed for console, mobile, TLauncher, and friends</title>
+    <id>https://veritymodchecker.online/updates/how-to-play-platform-answers-2026-07-28</id>
+    <link href="https://veritymodchecker.online/play/" rel="alternate" />
+    <published>2026-07-28T12:20:00+08:00</published>
+    <updated>2026-07-28T12:20:00+08:00</updated>
+    <summary>Expanded the /play/ route after current Google SERP sampling showed separate demand around how to play Verity Mod with friends, how to play Verity Mod on PS4 or Xbox, how to play the real Verity Mod on mobile, and how to play Verity Mod on TLauncher. The page now answers those platform routes directly, explains that console players need a Bedrock-compatible host rather than a Java JAR, warns that third-party launchers do not verify Verity files, and keeps the homepage TDK unchanged. Added canonical redirects from those long-tail slugs to the /play/ or /server/ route instead of creating thin duplicate pages.</summary>
+  </entry>
+  <entry>
     <title>Verity Mod download and Bedrock route freshness refreshed</title>
     <id>https://veritymodchecker.online/updates/download-bedrock-freshness-2026-07-28</id>
     <link href="https://veritymodchecker.online/download/" rel="alternate" />

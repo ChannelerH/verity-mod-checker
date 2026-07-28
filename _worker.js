@@ -204,6 +204,22 @@ export default {
     if (
       url.pathname === "/how-to-play" ||
       url.pathname.startsWith("/how-to-play/") ||
+      url.pathname === "/how-to-play-verity-mod" ||
+      url.pathname.startsWith("/how-to-play-verity-mod/") ||
+      url.pathname === "/how-to-play-the-real-verity-mod" ||
+      url.pathname.startsWith("/how-to-play-the-real-verity-mod/") ||
+      url.pathname === "/how-to-play-the-real-verity-mod-in-minecraft" ||
+      url.pathname.startsWith("/how-to-play-the-real-verity-mod-in-minecraft/") ||
+      url.pathname === "/how-to-play-verity-mod-on-mobile" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-on-mobile/") ||
+      url.pathname === "/how-to-play-the-verity-mod-on-mobile" ||
+      url.pathname.startsWith("/how-to-play-the-verity-mod-on-mobile/") ||
+      url.pathname === "/how-to-play-verity-mod-on-tlauncher" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-on-tlauncher/") ||
+      url.pathname === "/how-to-play-verity-mod-tlauncher" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-tlauncher/") ||
+      url.pathname === "/verity-mod-tlauncher" ||
+      url.pathname.startsWith("/verity-mod-tlauncher/") ||
       url.pathname === "/how-to-use-verity-mod" ||
       url.pathname.startsWith("/how-to-use-verity-mod/") ||
       url.pathname === "/play-verity-mod" ||
@@ -223,6 +239,22 @@ export default {
       url.pathname.startsWith("/verity-server/") ||
       url.pathname === "/play-with-friends" ||
       url.pathname.startsWith("/play-with-friends/") ||
+      url.pathname === "/how-to-play-verity-mod-with-friends" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-with-friends/") ||
+      url.pathname === "/how-to-play-verity-mod-multiplayer" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-multiplayer/") ||
+      url.pathname === "/how-to-play-verity-mod-ps4" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-ps4/") ||
+      url.pathname === "/how-to-play-verity-mod-on-ps4" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-on-ps4/") ||
+      url.pathname === "/how-to-play-verity-mod-xbox" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-xbox/") ||
+      url.pathname === "/how-to-play-verity-mod-on-xbox" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-on-xbox/") ||
+      url.pathname === "/verity-mod-ps4" ||
+      url.pathname.startsWith("/verity-mod-ps4/") ||
+      url.pathname === "/verity-mod-xbox" ||
+      url.pathname.startsWith("/verity-mod-xbox/") ||
       url.pathname === "/verity-server-download" ||
       url.pathname.startsWith("/verity-server-download/")
     ) {
