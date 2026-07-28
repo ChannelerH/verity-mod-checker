@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T21:05:00+08:00</updated>
+  <updated>2026-07-28T21:08:44+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity JE Modrinth counters refreshed and GSC indexing requested</title>
+    <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2108</id>
+    <link href="https://veritymodchecker.online/verity-je/" rel="alternate" />
+    <published>2026-07-28T21:08:44+08:00</published>
+    <updated>2026-07-28T21:08:44+08:00</updated>
+    <summary>Refreshed Verity JE counters from the official Modrinth API after Search Console showed /verity-je/ as crawled but not indexed while branded Java queries such as verity je download were already appearing. Modrinth project on1Y0osD now shows 306,601 project downloads, and version 5ech0sTo for verity-6.0.0.jar shows 12,209 version downloads; file size, SHA-1, SHA-512, loader, and Minecraft version are unchanged. Search Console URL Inspection confirmed /verity-je/ is crawlable and indexable, then accepted a request to add it to the priority crawl queue. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Real Verity Mod updated route added after current video-led SERP review</title>
     <id>https://veritymodchecker.online/updates/real-verity-mod-updated-2026-07-28</id>
