@@ -181,6 +181,11 @@
                 <td>Ask who owns it and compare version details</td>
                 <td>Assume it is official because it has downloads</td>
               </tr>
+              <tr>
+                <td>Modpack points to /minecraft/mc-mods/verity-mod</td>
+                <td>Check whether the standalone mod URL now returns 404, then use the current Verity JE or modpack route by Project ID</td>
+                <td>Download a repost just because the modpack description preserved the old link</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -241,6 +246,13 @@
               VERITY.exe, check whether it is talking about the modpack instead of the standalone mod. If a
               page promises one file for every edition, treat that as a warning sign because Java, Bedrock,
               MCPE, and modpack routes do not install the same way.
+            </p>
+            <p>
+              This also applies when a modpack page preserves an old source link. At the July 28, 2026
+              check, Ultimate VERITY was a live CurseForge modpack with Project ID 1584643 and file record
+              8467605, but the bug-report link in its description pointed to
+              <code>/minecraft/mc-mods/verity-mod</code>, a CurseForge URL that returned 404. That is a stale
+              route signal, not permission to install a mirror without checking the current project record.
             </p>
           </article>
           <article class="guide-block">

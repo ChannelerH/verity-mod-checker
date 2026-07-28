@@ -1,9 +1,10 @@
+import os
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
 
-BASE_URL = "http://127.0.0.1:4173"
+BASE_URL = os.environ.get("BASE_URL", "http://127.0.0.1:4173").rstrip("/")
 VIEWPORTS = {
     "desktop": {"width": 1440, "height": 1000},
     "mobile": {"width": 390, "height": 844},

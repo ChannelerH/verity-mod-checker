@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T15:10:00+08:00</updated>
+  <updated>2026-07-28T15:31:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Ultimate VERITY modpack and old verity-mod 404 route clarified</title>
+    <id>https://veritymodchecker.online/updates/ultimate-verity-modpack-404-2026-07-28</id>
+    <link href="https://veritymodchecker.online/download/#modpack-routes" rel="alternate" />
+    <published>2026-07-28T15:31:00+08:00</published>
+    <updated>2026-07-28T15:31:00+08:00</updated>
+    <summary>Added a fact-driven clarification after current SERP and CurseForge checks showed Ultimate VERITY as a separate modpack route while its description still points bug reports to the old /minecraft/mc-mods/verity-mod URL, which currently returns 404. The download, what-happened, and taken-down routes now explain that Ultimate VERITY is Project ID 1584643 with main file record 8467605, Forge 1.20.1, 27,866 project downloads at check, and a stale standalone-mod link. This helps players recover from old links without treating mirrors as safer. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Verity source counters refreshed after current first-party checks</title>
     <id>https://veritymodchecker.online/updates/source-counters-2026-07-28-1510</id>
