@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T23:48:30+08:00</updated>
+  <updated>2026-07-29T00:52:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity source counters refreshed from July 29 official checks</title>
+    <id>https://veritymodchecker.online/updates/verity-source-counters-2026-07-29-0052</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <published>2026-07-29T00:52:30+08:00</published>
+    <updated>2026-07-29T00:52:30+08:00</updated>
+    <summary>Official Modrinth and CurseForge checks showed active Verity traffic after the 6.0.1-beta release: Modrinth project on1Y0osD reached 312,563 downloads; 6.0.1-beta version YLEoXe6t reached 459 downloads; previous 6.0.0-beta version 5ech0sTo reached 14,933; stable Modrinth yAt0wv1Z reached 246,110; CurseForge Verity JE reached 2,287,006 project downloads with stable file 8461257 at 602.5K; Verity BE reached 3,956,705 with file 8506198 at 153.1K; and PnTMC Verity - Bedrock Edition reached 7,191,125 with V26.30 file 8517480 at 150.7K. GSC totals remained 48 clicks and 1,450 impressions, GA4 showed Organic Search at 165 sessions, and homepage TDK was not changed.</summary>
+    <category term="release-data" />
+    <category term="seo-operations" />
+  </entry>
   <entry>
     <title>Verity JE 6.0.1 beta route added after Modrinth API update</title>
     <id>https://veritymodchecker.online/updates/verity-601-beta-route-2026-07-28-2348</id>
