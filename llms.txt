@@ -41,6 +41,7 @@
 - [Verity Mod API Connection Failed](https://veritymodchecker.online/api-connection-failed/): Status-code diagnosis, API-key source guidance, and a no-key quick selector for Groq 401 and 429, OpenRouter errors, Ollama connections, null replies, and voice-vs-text separation.
 - [Verity Mod Status 429 Fix](https://veritymodchecker.online/status-429/): Focused rate-limit guide for Groq and OpenRouter sessions that work briefly, then return status 429; explains reset windows, organization-level limits, short text retests, and why not to replace the jar first.
 - [How to Talk to Verity](https://veritymodchecker.online/how-to-talk-to-verity/): Project-specific Java controls, Verity BE chat prefix, PnTMC wake phrase and distance rules, and no-reply/no-monster-form checks.
+- [Verity Mod Doesn't Respond](https://veritymodchecker.online/verity-doesnt-respond/): Focused no-response route for `verity doesn't respond`, `verity not responding`, no reply, no talk, dots-only, silent voice, and missing monster-form searches; separates Java AI provider failures from Bedrock pack setup, PnTMC wake phrase/distance, MCPE imports, and modpack assumptions.
 - [Verity Mod Not Working](https://veritymodchecker.online/not-working/): Fixes for crashes, box not spawning, dialogue missing, and broken setup.
 - [Verity Mod Voice Not Working](https://veritymodchecker.online/voice-not-working/): Voice and audio troubleshooting.
 - [Verity Mod Taken Down or 404](https://veritymodchecker.online/taken-down/): Recovery checklist for old links, mirrors, and removed pages.

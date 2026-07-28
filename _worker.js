@@ -34,6 +34,7 @@ const htmlRoutes = new Set([
   "/verity-5-7-3-jar/",
   "/verity-6-0-0-jar/",
   "/verity-6-0-1-jar/",
+  "/verity-doesnt-respond/",
   "/verity-je/",
   "/verity-exe/",
   "/verity-mod-lag-fix/",
@@ -517,6 +518,30 @@ export default {
       url.pathname.startsWith("/verity-doesnt-spawn/")
     ) {
       url.pathname = "/how-to-spawn-verity/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-doesnt-respond" ||
+      url.pathname === "/verity-mod-doesnt-respond" ||
+      url.pathname.startsWith("/verity-mod-doesnt-respond/") ||
+      url.pathname === "/verity-not-responding" ||
+      url.pathname.startsWith("/verity-not-responding/") ||
+      url.pathname === "/verity-mod-not-responding" ||
+      url.pathname.startsWith("/verity-mod-not-responding/") ||
+      url.pathname === "/verity-no-reply" ||
+      url.pathname.startsWith("/verity-no-reply/") ||
+      url.pathname === "/verity-not-replying" ||
+      url.pathname.startsWith("/verity-not-replying/") ||
+      url.pathname === "/verity-doesnt-talk" ||
+      url.pathname.startsWith("/verity-doesnt-talk/") ||
+      url.pathname === "/verity-wont-talk" ||
+      url.pathname.startsWith("/verity-wont-talk/") ||
+      url.pathname === "/verity-only-says-dots" ||
+      url.pathname.startsWith("/verity-only-says-dots/")
+    ) {
+      url.pathname = "/verity-doesnt-respond/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -48,6 +48,7 @@ ROUTES = [
     "/status-429/",
     "/how-to-talk-to-verity/",
     "/not-working/",
+    "/verity-doesnt-respond/",
     "/voice-not-working/",
     "/taken-down/",
     "/verity-exe/",

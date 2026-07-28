@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T06:02:00+08:00</updated>
+  <updated>2026-07-29T06:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity no-response troubleshooting route added for player question intent</title>
+    <id>https://veritymodchecker.online/updates/verity-doesnt-respond-route-2026-07-29-0618</id>
+    <link href="https://veritymodchecker.online/verity-doesnt-respond/" rel="alternate" />
+    <published>2026-07-29T06:18:00+08:00</published>
+    <updated>2026-07-29T06:18:00+08:00</updated>
+    <summary>Added a focused Verity Mod doesn't respond route after current public SERP and player-question checks showed repeated no-reply, no-talk, only-dots, voice-silent, and no-monster-form intent across Java, Bedrock, MCPE, and PnTMC routes. The page separates Java AI provider failures from Bedrock pack activation, Beta APIs, PnTMC wake phrase or distance checks, voice output, modpack assumptions, and source-link problems. Homepage TDK was not changed.</summary>
+    <category term="troubleshooting" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity Pack modpack route added for CurseForge pack confusion</title>
     <id>https://veritymodchecker.online/updates/verity-pack-modpack-route-2026-07-29-0602</id>

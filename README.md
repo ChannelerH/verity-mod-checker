@@ -28,6 +28,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - PnTMC 2.1.0 old-file check: https://veritymodchecker.online/pntmc-verity-2-1-0/
 - How to spawn Verity: https://veritymodchecker.online/how-to-spawn-verity/
 - Verity Mod lag fix: https://veritymodchecker.online/verity-mod-lag-fix/
+- Verity Mod does not respond fix: https://veritymodchecker.online/verity-doesnt-respond/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
 - Voice not working fix: https://veritymodchecker.online/voice-not-working/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/
@@ -44,6 +45,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Play route selector: Java, Bedrock, MCPE, mobile, TLauncher caveats, solo, friends, server, talk, spawn, and broken-session first steps.
 - Server route selector: Java Forge servers, Aternos and free hosts, Bedrock worlds or Realms, PS4/Xbox/Switch console joiners, public server listing safety, AI provider failures, lag, and friends-session setup.
+- No-response route: exact troubleshooting for `verity doesn't respond`, `verity not responding`, `verity no reply`, `verity doesn't talk`, dots-only, silent voice, and missing monster-form searches across Java, Bedrock, MCPE, PnTMC, and modpack routes.
 - Troubleshooting: API 401/429, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
