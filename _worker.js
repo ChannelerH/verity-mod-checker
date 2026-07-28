@@ -548,6 +548,7 @@ export default {
     }
 
     if (
+      url.pathname === "/verity-groq-api-key" ||
       url.pathname === "/groq-api-key" ||
       url.pathname.startsWith("/groq-api-key/") ||
       url.pathname === "/grok-api-key" ||
