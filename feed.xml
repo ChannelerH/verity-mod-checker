@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T10:32:00+08:00</updated>
+  <updated>2026-07-28T11:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod server route added for Java, Aternos, Bedrock Realms, console, and public-server checks</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-server-route-2026-07-28</id>
+    <link href="https://veritymodchecker.online/server/" rel="alternate" />
+    <published>2026-07-28T11:18:00+08:00</published>
+    <updated>2026-07-28T11:18:00+08:00</updated>
+    <summary>Added a dedicated /server/ route after current Google SERP sampling showed separate demand around Verity Mod server, Verity Mod server download, playing Verity Mod with friends, Aternos, Bedrock server, public server listings, and console-friendly routes. The new page starts with an interactive server selector for Java Forge, Aternos and free hosts, Bedrock worlds or Realms, PS4/Xbox/Switch console paths, public server listing safety, AI-provider issues, lag, and missing-entity troubleshooting. It uses the current checked Java and Bedrock project records without changing homepage TDK, without claiming an official public server IP, and without mirroring files. Sitemap, worker aliases, internal links, README, and LLM summaries expose the new canonical URL.</summary>
+  </entry>
   <entry>
     <title>How to play Verity Mod route selector added for Java, Bedrock, MCPE, and friends</title>
     <id>https://veritymodchecker.online/updates/how-to-play-verity-mod-route-2026-07-28</id>

@@ -11,6 +11,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Download route: https://veritymodchecker.online/download/
 - Latest version tracker: https://veritymodchecker.online/updates/
 - How to play Verity Mod: https://veritymodchecker.online/play/
+- Verity Mod server route: https://veritymodchecker.online/server/
 - What is Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
 - How to get Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
@@ -35,6 +36,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Play route selector: Java, Bedrock, MCPE, solo, friends, server, talk, spawn, and broken-session first steps.
+- Server route selector: Java Forge servers, Aternos and free hosts, Bedrock worlds or Realms, console joiners, public server listing safety, AI provider failures, lag, and friends-session setup.
 - Troubleshooting: API 401/429, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 

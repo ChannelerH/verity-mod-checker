@@ -14,6 +14,7 @@ ROUTES = [
     "/download/",
     "/updates/",
     "/play/",
+    "/server/",
     "/minecraft-verity-mod/",
     "/curseforge/",
     "/creators/",
@@ -88,6 +89,13 @@ with sync_playwright() as playwright:
         assert "friends" in play_text
         assert "behavior pack activation" in play_text
         assert page.locator("#routeLink").get_attribute("href").endswith("/how-to-spawn-verity/")
+
+        page.goto(f"{BASE_URL}/server/", wait_until="domcontentloaded")
+        page.locator("#serverEdition").select_option("aternos")
+        page.locator("#serverGoal").select_option("ai")
+        server_text = page.locator("#serverSummary").inner_text()
+        assert "provider access" in server_text
+        assert page.locator("#serverLink").get_attribute("href").endswith("/api-connection-failed/")
 
         page.goto(f"{BASE_URL}/api-connection-failed/", wait_until="domcontentloaded")
         page.locator("#apiProvider").select_option("ollama")
@@ -193,4 +201,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, play route selector, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, play and server route selectors, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

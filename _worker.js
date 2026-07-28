@@ -21,6 +21,7 @@ const htmlRoutes = new Set([
   "/play/",
   "/pntmc-verity-3-2-0/",
   "/pocket-edition/",
+  "/server/",
   "/status-429/",
   "/taken-down/",
   "/updates/",
@@ -118,6 +119,23 @@ export default {
       url.pathname.startsWith("/play-verity-mod/")
     ) {
       url.pathname = "/play/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-mod-server" ||
+      url.pathname.startsWith("/verity-mod-server/") ||
+      url.pathname === "/minecraft-verity-server" ||
+      url.pathname.startsWith("/minecraft-verity-server/") ||
+      url.pathname === "/verity-server" ||
+      url.pathname.startsWith("/verity-server/") ||
+      url.pathname === "/play-with-friends" ||
+      url.pathname.startsWith("/play-with-friends/") ||
+      url.pathname === "/verity-server-download" ||
+      url.pathname.startsWith("/verity-server-download/")
+    ) {
+      url.pathname = "/server/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
