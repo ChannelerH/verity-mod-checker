@@ -9,6 +9,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## Live Routes
 
 - Download route: https://veritymodchecker.online/download/
+- Java vs Bedrock download chooser: https://veritymodchecker.online/java-vs-bedrock/
 - Latest version tracker: https://veritymodchecker.online/updates/
 - How to play Verity Mod on Java, Bedrock, MCPE, mobile, and TLauncher: https://veritymodchecker.online/play/
 - Verity Mod server, friends, PS4, Xbox, and console route: https://veritymodchecker.online/server/
@@ -35,6 +36,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 - Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; Modrinth beta `5ech0sTo` for `verity-6.0.0.jar`, stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
+- Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Play route selector: Java, Bedrock, MCPE, mobile, TLauncher caveats, solo, friends, server, talk, spawn, and broken-session first steps.

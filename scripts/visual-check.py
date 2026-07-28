@@ -13,6 +13,7 @@ ROUTES = [
     "/",
     "/link/",
     "/download/",
+    "/java-vs-bedrock/",
     "/updates/",
     "/play/",
     "/server/",

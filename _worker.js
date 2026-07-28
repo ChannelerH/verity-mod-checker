@@ -14,6 +14,7 @@ const htmlRoutes = new Set([
   "/how-to-talk-to-verity/",
   "/is-verity-real/",
   "/java/",
+  "/java-vs-bedrock/",
   "/link/",
   "/mcpedl/",
   "/minecraft-verity-mod/",
@@ -171,6 +172,23 @@ export default {
       url.pathname.startsWith("/verity-by-varmiteyt/")
     ) {
       url.pathname = "/verity-je/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/bedrock-vs-java" ||
+      url.pathname.startsWith("/bedrock-vs-java/") ||
+      url.pathname === "/verity-mod-java-vs-bedrock" ||
+      url.pathname.startsWith("/verity-mod-java-vs-bedrock/") ||
+      url.pathname === "/verity-mod-bedrock-vs-java" ||
+      url.pathname.startsWith("/verity-mod-bedrock-vs-java/") ||
+      url.pathname === "/which-verity-mod" ||
+      url.pathname.startsWith("/which-verity-mod/") ||
+      url.pathname === "/which-verity-download" ||
+      url.pathname.startsWith("/which-verity-download/")
+    ) {
+      url.pathname = "/java-vs-bedrock/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

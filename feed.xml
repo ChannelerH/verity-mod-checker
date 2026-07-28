@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T15:54:00+08:00</updated>
+  <updated>2026-07-28T16:42:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod Java vs Bedrock chooser added after GSC and SERP review</title>
+    <id>https://veritymodchecker.online/updates/java-vs-bedrock-chooser-2026-07-28</id>
+    <link href="https://veritymodchecker.online/java-vs-bedrock/" rel="alternate" />
+    <published>2026-07-28T16:42:00+08:00</published>
+    <updated>2026-07-28T16:42:00+08:00</updated>
+    <summary>Added a dedicated Java vs Bedrock decision page after GSC showed /download/, /bedrock/, /how-to-get-verity-mod/, and related platform pages receiving impressions while current SERP checks showed players comparing Java, Bedrock, MCPE, console, server, and file-type intent before downloading. The new page routes Java JAR users to Verity JE, Bedrock MCADDON users to Verity BE or PnTMC, MCPE users to Pocket Edition, PS4/Xbox users to a Bedrock host-world path, and API or 404 users to the correct troubleshooting pages. Internal links were added from the homepage, download, Java, Bedrock, MCPE, play, and server pages, and sitemap, feed, llms, Worker routing, and fallback deployment config were updated. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Verity source counters refreshed from late July 28 checks</title>
     <id>https://veritymodchecker.online/updates/source-counters-2026-07-28-1554</id>
