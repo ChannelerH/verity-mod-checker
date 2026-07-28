@@ -21,6 +21,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - MCPE mobile route: https://veritymodchecker.online/pocket-edition/
 - APK and Google Play app safety route: https://veritymodchecker.online/apk/
 - PnTMC 3.2.0 file check: https://veritymodchecker.online/pntmc-verity-3-2-0/
+- PnTMC 2.1.0 old-file check: https://veritymodchecker.online/pntmc-verity-2-1-0/
 - How to spawn Verity: https://veritymodchecker.online/how-to-spawn-verity/
 - Verity Mod lag fix: https://veritymodchecker.online/verity-mod-lag-fix/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
@@ -32,7 +33,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## What It Covers
 
 - Java route: Verity JE Modrinth beta `5ech0sTo` for `verity-6.0.0.jar`, stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
-- Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC record `8517480`, pack activation, Beta APIs, commands, and world setup.
+- Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Play route selector: Java, Bedrock, MCPE, mobile, TLauncher caveats, solo, friends, server, talk, spawn, and broken-session first steps.
@@ -40,7 +41,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Troubleshooting: API 401/429, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
-The checker verifies identity signals against the public metadata recorded on July 28, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current release map. Verity JE 6.0.0 beta is checked on Modrinth (`on1Y0osD` / `5ech0sTo`), while stable Verity JE 5.7.3 is checked on CurseForge (`1591438` / `8461257`) and Modrinth (`on1Y0osD` / `yAt0wv1Z`); Verity BE 1.1.0 is checked on CurseForge (`1574632` / `8506198`); PnTMC Verity 3.2.0 is checked on CurseForge (`1575941` / `8517480`, `8517478`, `8517473`). The browser checker can compare a local Java JAR with Modrinth's published SHA-512 without uploading it. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on maintainer-controlled records instead of being mirrored by this site.
+The checker verifies identity signals against the public metadata recorded on July 28, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current release map. Verity JE 6.0.0 beta is checked on Modrinth (`on1Y0osD` / `5ech0sTo`), while stable Verity JE 5.7.3 is checked on CurseForge (`1591438` / `8461257`) and Modrinth (`on1Y0osD` / `yAt0wv1Z`); Verity BE 1.1.0 is checked on CurseForge (`1574632` / `8506198`); PnTMC Verity 3.2.0 is checked on CurseForge (`1575941` / `8517480`, `8517478`, `8517473`), with old 2.1.0 records (`8327253`, `8327250`, `8327242`) separated from current downloads. The browser checker can compare a local Java JAR with Modrinth's published SHA-512 without uploading it. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on maintainer-controlled records instead of being mirrored by this site.
 
 ## Local Preview
 

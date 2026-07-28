@@ -489,6 +489,51 @@ const knownProjects = [
             link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8503821"
           }
         ]
+      },
+      {
+        status: "previous-still-available",
+        filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon",
+        versionNumber: "2.1.0",
+        sizeMb: 35.4,
+        version: "Bedrock 26.30",
+        published: "June 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8327253",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253"
+          }
+        ]
+      },
+      {
+        status: "previous-still-available",
+        filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.20.mcaddon",
+        versionNumber: "2.1.0",
+        sizeMb: 35.4,
+        version: "Bedrock 26.20",
+        published: "June 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8327250",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327250"
+          }
+        ]
+      },
+      {
+        status: "previous-still-available",
+        filename: "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.10.mcaddon",
+        versionNumber: "2.1.0",
+        sizeMb: 35.4,
+        version: "Bedrock 26.13+ / 26.10 row",
+        published: "June 27, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8327242",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327242"
+          }
+        ]
       }
     ]
   },
@@ -807,6 +852,7 @@ function inspectTextSource(rawValue) {
       const matchedRelease = sourceMatch.release || releaseMatch?.release;
       const matchedRecord = sourceMatch.record || releaseMatch?.record;
       const hasPublisherHash = Boolean(releasePublisherHash(matchedRelease, "sha512"));
+      const matchedPackageType = matchedRelease?.filename ? packageType(matchedRelease.filename) : type;
       return {
         state: "verified",
         verdict: "Known project match",
@@ -814,7 +860,7 @@ function inspectTextSource(rawValue) {
         title: `${sourceMatch.project.name} ${sourceMatch.source.platform} route recognized`,
         summary: `The host and project path match the checked ${sourceMatch.project.edition} source. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`,
         source: host,
-        package: type,
+        package: type === "Not identified" ? matchedPackageType : type,
         project: `${sourceMatch.project.name} · ${projectIdentityLabel(sourceMatch.project)}`,
         hash: "",
         publisherCheck: hasPublisherHash ? "SHA-512 available for local comparison" : "Not published in the checked record",

@@ -29,6 +29,7 @@ ROUTES = [
     "/pocket-edition/",
     "/apk/",
     "/mcpedl/",
+    "/pntmc-verity-2-1-0/",
     "/pntmc-verity-3-2-0/",
     "/how-to-spawn-verity/",
     "/verity-mod-lag-fix/",
@@ -119,6 +120,13 @@ with sync_playwright() as playwright:
         assert "on1Y0osD" in result_text
         assert "SHA-512 available" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/6.0.0-beta")
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "CurseForge route recognized" in result_text
+        assert "8327253" in result_text
+        assert "Bedrock MCADDON" in result_text
 
         page.locator("#sourceInput").fill("verity-5.7.3.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")

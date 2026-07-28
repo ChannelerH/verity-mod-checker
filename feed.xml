@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T13:18:00+08:00</updated>
+  <updated>2026-07-28T13:34:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>PnTMC Verity 2.1.0 old-file route added for record 8327253 searches</title>
+    <id>https://veritymodchecker.online/updates/pntmc-verity-2-1-0-old-file-route-2026-07-28</id>
+    <link href="https://veritymodchecker.online/pntmc-verity-2-1-0/" rel="alternate" />
+    <published>2026-07-28T13:34:00+08:00</published>
+    <updated>2026-07-28T13:34:00+08:00</updated>
+    <summary>Added a dedicated old-file route after Search Console showed zero-click impressions for ThatMob's Verity 2.1.0 by PnTMC, direct CurseForge download record 8327253, verity 2.1.0, verity-2.1.0.jar, and Java/Bedrock confusion. The new page explains that records 8327253, 8327250, and 8327242 are older Bedrock MCADDON rows, not Java JAR files, and routes fresh installs to current PnTMC 3.2.0 records 8517480, 8517478, and 8517473. Point-in-time source counters now show PnTMC 7,120,528 project downloads at check. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Verity BE Bedrock route expanded after GSC showed zero-click BE intent</title>
     <id>https://veritymodchecker.online/updates/verity-be-bedrock-zero-click-2026-07-28</id>

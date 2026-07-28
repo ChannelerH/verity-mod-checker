@@ -19,6 +19,7 @@ const htmlRoutes = new Set([
   "/minecraft-verity-mod/",
   "/not-working/",
   "/play/",
+  "/pntmc-verity-2-1-0/",
   "/pntmc-verity-3-2-0/",
   "/pocket-edition/",
   "/server/",
@@ -335,6 +336,31 @@ export default {
       url.pathname.startsWith("/verity-600-jar/")
     ) {
       url.pathname = "/verity-6-0-0-jar/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/pntmc-2-1-0" ||
+      url.pathname.startsWith("/pntmc-2-1-0/") ||
+      url.pathname === "/thatmobs-verity-2-1-0" ||
+      url.pathname.startsWith("/thatmobs-verity-2-1-0/") ||
+      url.pathname === "/thatmob-verity-2-1-0" ||
+      url.pathname.startsWith("/thatmob-verity-2-1-0/") ||
+      url.pathname === "/verity-2.1.0" ||
+      url.pathname.startsWith("/verity-2.1.0/") ||
+      url.pathname === "/verity-2-1-0" ||
+      url.pathname.startsWith("/verity-2-1-0/") ||
+      url.pathname === "/verity-2.1.0.jar" ||
+      url.pathname.startsWith("/verity-2.1.0.jar/") ||
+      url.pathname === "/verity-2-1-0-jar" ||
+      url.pathname.startsWith("/verity-2-1-0-jar/") ||
+      url.pathname === "/verity-2-1-0-java" ||
+      url.pathname.startsWith("/verity-2-1-0-java/") ||
+      url.pathname === "/verity-210" ||
+      url.pathname.startsWith("/verity-210/")
+    ) {
+      url.pathname = "/pntmc-verity-2-1-0/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-28T13:12:00+08:00",
+  "checkedAt": "2026-07-28T13:34:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -130,7 +130,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 7112849,
+      "projectDownloadsAtCheck": 7120528,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -203,7 +203,49 @@
           "displayedSizeMb": 35.4,
           "recordDownloadsAtCheck": 2900000,
           "recordDownloadsApproximate": true,
-          "publishedDate": "2026-06-27"
+          "publishedDate": "2026-06-27",
+          "changelogSummary": [
+            "edit CHASE animations",
+            "reduce lag",
+            "remove or reduce a feature for better experience"
+          ]
+        },
+        {
+          "status": "previous-still-available",
+          "filename": "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.20.mcaddon",
+          "recordId": 8327250,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327250",
+          "minecraftVersion": "26.20",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 35.4,
+          "recordDownloadsAtCheck": 294500,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-06-27",
+          "changelogSummary": [
+            "edit CHASE animations",
+            "reduce lag",
+            "remove or reduce a feature for better experience"
+          ]
+        },
+        {
+          "status": "previous-still-available",
+          "filename": "ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.10.mcaddon",
+          "recordId": 8327242,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327242",
+          "minecraftVersion": "26.13+",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 35.4,
+          "recordDownloadsAtCheck": 208000,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-06-27",
+          "note": "CurseForge file page showed supported builds 26.13, 26.12, 26.11, and 26.10 at the July 28, 2026 check.",
+          "changelogSummary": [
+            "edit CHASE animations",
+            "reduce lag",
+            "remove or reduce a feature for better experience"
+          ]
         }
       ]
     },
