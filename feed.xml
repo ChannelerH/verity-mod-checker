@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T18:55:00+08:00</updated>
+  <updated>2026-07-28T20:25:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>MCPEDL and PnTMC 3.2.0 route corrected after July 28 player-question check</title>
+    <id>https://veritymodchecker.online/updates/mcpedl-pntmc-player-fix-2026-07-28</id>
+    <link href="https://veritymodchecker.online/mcpedl/" rel="alternate" />
+    <published>2026-07-28T20:25:00+08:00</published>
+    <updated>2026-07-28T20:25:00+08:00</updated>
+    <summary>Refreshed the MCPEDL and PnTMC route pages after a July 28 source check showed MCPEDL now listing ThatMob's Verity 3.2.0 by PnTMC V26.30, V26.20, and V26.10 download rows before older 3.1.0 and 3.0.0 rows. The pages no longer describe this as active 3.1.0 listing lag. Current player questions also exposed no-reply and no-monster-form confusion, so the not-working and talk routes now connect those symptoms to PnTMC wake phrase, distance, pack activation, clean-world, trigger, and feature-expectation checks. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Download and install Verity Mod route sharpened for zero-click install intent</title>
     <id>https://veritymodchecker.online/updates/download-install-route-2026-07-28</id>

@@ -36,7 +36,7 @@
             "@type": "HowTo",
             "name": "How to talk to Verity in Minecraft",
             "description": "Project-specific steps for talking to Verity in Java and Bedrock editions.",
-            "dateModified": "2026-07-26",
+            "dateModified": "2026-07-28",
             "step": [
               {"@type": "HowToStep", "name": "Identify the project", "text": "Confirm whether you installed Verity JE, Verity BE, or Verity - Bedrock Edition by PnTMC."},
               {"@type": "HowToStep", "name": "Complete required setup", "text": "Configure the Java AI provider or enable the Bedrock packs and Beta APIs required by the selected project."},
@@ -84,6 +84,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Confirm that the mod loaded, its Groq or Ollama provider is configured, and a short text prompt returns a response. Then check the installed build's controls, microphone permission, audio output, and voice dependencies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Verity not reply or transform into monster form?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "First match the exact project. For PnTMC Bedrock, test the ground chat rule, the Hey Verity inventory wake phrase, distance, active behavior and resource packs, and a clean world. A missing monster form can be a trigger or feature-expectation issue, not proof that a different download is safer."
                 }
               },
               {
@@ -346,6 +354,24 @@
               protects an important save from horror events or unexpected behavior while you learn the controls.
             </p>
           </article>
+          <article class="guide-block">
+            <h3>If Verity does not transform, prove the route before changing files</h3>
+            <p>
+              Recent PnTMC/MCPEDL player questions include a slightly different symptom: Verity may reply
+              sometimes but never changes into the expected monster form. Treat that as a trigger and feature
+              test after the base conversation works. Confirm you installed the PnTMC 3.2.0 row for your
+              Bedrock build, use a fresh world, keep Verity nearby, and test the ground and inventory states
+              separately before assuming a video scene is guaranteed in every public file.
+            </p>
+            <p>
+              If chat never appears at all, use the wake phrase, distance, pack activation, and clean-world
+              checks above. If chat appears but the scary event never starts, record the file name, record ID,
+              Bedrock build, world age, enabled experiments, and the exact actions you tried. That report is
+              useful for a project comment or support route; downloading an unrelated repost only changes the
+              evidence and makes the symptom harder to isolate.
+            </p>
+            <a href="/not-working/#reply-transform">Open the reply and transform fix map</a>
+          </article>
         </div>
       </section>
 
@@ -369,6 +395,11 @@
             <span>PnTMC</span>
             <h3>No inventory response</h3>
             <p>Use <code>Hey Verity</code>, move closer, or place him on the ground before testing chat again.</p>
+          </article>
+          <article class="error-card">
+            <span>PnTMC</span>
+            <h3>No monster form</h3>
+            <p>After chat works, test a clean world, nearby ground state, current 3.2.0 row, and documented trigger expectations before replacing the add-on.</p>
           </article>
           <article class="error-card">
             <span>Voice</span>

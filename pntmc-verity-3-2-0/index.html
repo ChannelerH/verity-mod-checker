@@ -37,9 +37,9 @@
           {
             "@type": "Article",
             "headline": "ThatMob's Verity 3.2.0 by PnTMC: V26.30, V26.20 & V26.10",
-            "description": "A source-check page for the current PnTMC Bedrock 3.2.0 file rows and MCPEDL listing confusion.",
+            "description": "A source-check page for the current PnTMC Bedrock 3.2.0 file rows, MCPEDL route state, and common setup failures.",
             "datePublished": "2026-07-27",
-            "dateModified": "2026-07-27",
+            "dateModified": "2026-07-28",
             "mainEntityOfPage": "https://veritymodchecker.online/pntmc-verity-3-2-0/",
             "author": {"@type": "Organization", "name": "Verity Mod Guide"},
             "publisher": {"@type": "Organization", "name": "Verity Mod Guide"}
@@ -64,10 +64,10 @@
               },
               {
                 "@type": "Question",
-                "name": "Why does MCPEDL still show 3.1.0 rows?",
+                "name": "Does MCPEDL now show the current PnTMC 3.2.0 rows?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The MCPEDL page was updated on July 27 and its changelog mentions 3.2.0, but its visible download rows can still show older 3.1.0 packages while the listing settles. Compare against CurseForge record 8517480 before importing."
+                  "text": "Yes. At the July 28, 2026 check, the MCPEDL page showed current 3.2.0 download rows for V26.30, V26.20, and V26.10, followed by older 3.1.0 and 3.0.0 rows. Compare the current V26.30 row against CurseForge record 8517480 before importing."
                 }
               },
               {
@@ -103,7 +103,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">PnTMC route checked July 27, 2026</p>
+          <p class="eyebrow">PnTMC route checked July 28, 2026</p>
           <h1>ThatMob's Verity 3.2.0 by PnTMC File Check</h1>
           <p class="lede">
             ThatMob's Verity 3.2.0 by PnTMC is the current checked PnTMC Bedrock route family for players
@@ -133,9 +133,9 @@
             CurseForge Verity - Bedrock Edition project, Project ID 1575941. The V26.30 file was checked as
             record 8517480 with a displayed size of 39.6 MB. The same CurseForge file list also shows current
             3.2.0 rows for V26.20 record 8517478 and V26.10-style record 8517473, so mobile and MCPE players should match their
-            Bedrock build before importing. MCPEDL also updated on July 27 with 3.2.0 changelog notes, but its
-            download list can still show older 3.1.0 rows. If two pages disagree, use the exact CurseForge row
-            before importing.
+            Bedrock build before importing. MCPEDL also updated on July 27 with 3.2.0 changelog notes, and
+            the July 28 check shows the current 3.2.0 download rows above older 3.1.0 and 3.0.0 files.
+            Use the exact CurseForge row when you need the stable record number before importing.
           </p>
           <ol class="steps">
             <li>Confirm the page names PnTMC or Verity - Bedrock Edition.</li>
@@ -189,15 +189,16 @@
           <article class="status-card primary">
             <div class="status-topline">
               <span>MCPEDL clue</span>
-              <strong>Updated July 27</strong>
+              <strong>Checked July 28</strong>
             </div>
-            <h3>MCPEDL changelog and download rows can disagree</h3>
+            <h3>MCPEDL now lists 3.2.0 first, with old rows below</h3>
             <p>
               MCPEDL shows the Verity - Bedrock Edition page by PnTMC as updated July 27 and lists a changelog
-              with bug fixes, a throw-system update, and an AI update. At the same check, its visible Downloads
-              section still included older 3.1.0 rows, while CurseForge exposed the new 3.2.0 V26.30, V26.20,
-              and V26.10-style rows.
-              That is a listing-lag problem, not a reason to import the first file name you see.
+              with bug fixes, a throw-system update, and an AI update. At the July 28 check, its visible
+              Downloads section started with ThatMob's Verity 3.2.0 rows for V26.30, V26.20, and V26.10,
+              then showed older 3.1.0 and 3.0.0 rows below. That means a fresh install should start from
+              the 3.2.0 row that matches the player's Bedrock build, while old rows are only for old-world
+              or old-video contexts.
             </p>
             <a href="/mcpedl/">Read the MCPEDL route check</a>
           </article>
@@ -270,13 +271,15 @@
             <h3>Common player problems after import</h3>
             <p>
               Current comments around the MCPEDL route show recurring confusion: Verity does not spawn, players
-              ask how to make him talk, some expect microphone input on mobile, and others are unsure whether
-              Beta APIs are enough. Those are setup and feature questions, not proof that the file is fake. After
-              you confirm record 8517480, move to the matching fix page instead of downloading random mirrors.
+              ask how to make him talk, some expect microphone input on mobile, and others report that he does
+              not always reply or never changes into the expected monster form. Those are setup, trigger, and
+              feature-expectation questions, not proof that the file is fake. After you confirm record 8517480,
+              move to the matching fix page instead of downloading random mirrors.
             </p>
             <div class="action-row">
               <a class="primary-link" href="/how-to-spawn-verity/">Fix spawning and setup</a>
               <a class="copy-button" href="/verity-mod-lag-fix/">Fix lag and delay</a>
+              <a class="copy-button" href="/not-working/#reply-transform">Reply and transform fixes</a>
               <a class="copy-button" href="/how-to-talk-to-verity/#pntmc-talk">PnTMC talk controls</a>
             </div>
           </article>
