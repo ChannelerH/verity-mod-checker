@@ -104,6 +104,78 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/verity-minecraft" ||
+      url.pathname.startsWith("/verity-minecraft/") ||
+      url.pathname === "/minecraft-verity" ||
+      url.pathname.startsWith("/minecraft-verity/") ||
+      url.pathname === "/the-verity-mod" ||
+      url.pathname.startsWith("/the-verity-mod/") ||
+      url.pathname === "/verity-mods" ||
+      url.pathname.startsWith("/verity-mods/")
+    ) {
+      url.pathname = "/minecraft-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-bedrock" ||
+      url.pathname.startsWith("/verity-bedrock/") ||
+      url.pathname === "/verity-bedrock-mod" ||
+      url.pathname.startsWith("/verity-bedrock-mod/") ||
+      url.pathname === "/verity-minecraft-bedrock" ||
+      url.pathname.startsWith("/verity-minecraft-bedrock/")
+    ) {
+      url.pathname = "/bedrock/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-java" ||
+      url.pathname.startsWith("/verity-java/") ||
+      url.pathname === "/verity-mod-java" ||
+      url.pathname.startsWith("/verity-mod-java/")
+    ) {
+      url.pathname = "/java/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/curseforge-verity" ||
+      url.pathname.startsWith("/curseforge-verity/") ||
+      url.pathname === "/curseforge-verity-mod" ||
+      url.pathname.startsWith("/curseforge-verity-mod/")
+    ) {
+      url.pathname = "/curseforge/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-horror-mod" ||
+      url.pathname.startsWith("/verity-horror-mod/") ||
+      url.pathname === "/verity-minecraft-horror-mod" ||
+      url.pathname.startsWith("/verity-minecraft-horror-mod/")
+    ) {
+      url.pathname = "/horror-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/what-is-verity" ||
+      url.pathname.startsWith("/what-is-verity/") ||
+      url.pathname === "/what-is-verity-minecraft" ||
+      url.pathname.startsWith("/what-is-verity-minecraft/")
+    ) {
+      url.pathname = "/what-is-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/how-to-install" || url.pathname.startsWith("/how-to-install/")) {
       url.pathname = "/how-to-get-verity-mod/";
       url.hash = "";

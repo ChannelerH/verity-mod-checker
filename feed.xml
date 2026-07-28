@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T11:18:00+08:00</updated>
+  <updated>2026-07-28T11:58:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Minecraft Verity Mod route refreshed for rising name variants and canonical redirects</title>
+    <id>https://veritymodchecker.online/updates/minecraft-verity-name-variants-2026-07-28</id>
+    <link href="https://veritymodchecker.online/minecraft-verity-mod/" rel="alternate" />
+    <published>2026-07-28T11:58:00+08:00</published>
+    <updated>2026-07-28T11:58:00+08:00</updated>
+    <summary>Refreshed the broad Minecraft Verity Mod route after reviewing the original related-query export and current GSC indexing state. The page now explicitly handles rising name variants such as Verity Minecraft, Minecraft Verity, the Verity Mod, Verity mods, CurseForge Verity Mod, Verity Minecraft Bedrock, Verity Mod server, and friends/server intent without creating duplicate index pages. Added 301 redirects from the variant slugs to the most relevant canonical route, kept homepage TDK unchanged, and requested GSC indexing for the high-demand /horror-mod/ page after URL Inspection showed Google did not yet know that URL.</summary>
+  </entry>
   <entry>
     <title>Verity Mod server route added for Java, Aternos, Bedrock Realms, console, and public-server checks</title>
     <id>https://veritymodchecker.online/updates/verity-mod-server-route-2026-07-28</id>
