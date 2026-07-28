@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T13:34:00+08:00</updated>
+  <updated>2026-07-28T14:30:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity JE branded route added for Java project searches</title>
+    <id>https://veritymodchecker.online/updates/verity-je-branded-route-2026-07-28</id>
+    <link href="https://veritymodchecker.online/verity-je/" rel="alternate" />
+    <published>2026-07-28T14:30:00+08:00</published>
+    <updated>2026-07-28T14:30:00+08:00</updated>
+    <summary>Added a dedicated /verity-je/ route after Search Console showed weak branded Java impressions around verity mod, verity je, verityje, verity je download, and verity mod java. The page separates the Verity JE Java route from /java/ troubleshooting: Modrinth 6.0.0-beta version 5ech0sTo is treated as a beta, stable verity-5.7.3.jar remains CurseForge record 8461257 and Modrinth yAt0wv1Z, and the older verity-3.4.1.jar NeoForge branch remains separate. Current point-in-time counters from first-party sources are Verity JE 2,258,659 CurseForge downloads and 294,551 Modrinth downloads, Modrinth beta 5,515 downloads, stable CurseForge file 8461257 at 581.0K, stable Modrinth yAt0wv1Z at 238,353, Verity BE 3,928,058, and PnTMC 7,120,528. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>PnTMC Verity 2.1.0 old-file route added for record 8327253 searches</title>
     <id>https://veritymodchecker.online/updates/pntmc-verity-2-1-0-old-file-route-2026-07-28</id>

@@ -29,6 +29,7 @@ const htmlRoutes = new Set([
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
   "/verity-6-0-0-jar/",
+  "/verity-je/",
   "/verity-exe/",
   "/verity-mod-lag-fix/",
   "/voice-not-working/",
@@ -87,12 +88,6 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
-    if (url.pathname === "/verity-je" || url.pathname.startsWith("/verity-je/")) {
-      url.pathname = "/java/";
-      url.hash = "versions";
-      return Response.redirect(url.toString(), 301);
-    }
-
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
       url.pathname = "/pocket-edition/";
       url.hash = "";
@@ -139,6 +134,43 @@ export default {
       url.pathname.startsWith("/verity-minecraft-bedrock/")
     ) {
       url.pathname = "/bedrock/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-je-download" ||
+      url.pathname.startsWith("/verity-je-download/") ||
+      url.pathname === "/verity-je-mod" ||
+      url.pathname.startsWith("/verity-je-mod/") ||
+      url.pathname === "/verity-je-modrinth" ||
+      url.pathname.startsWith("/verity-je-modrinth/") ||
+      url.pathname === "/verityje" ||
+      url.pathname.startsWith("/verityje/") ||
+      url.pathname === "/verty-je" ||
+      url.pathname.startsWith("/verty-je/") ||
+      url.pathname === "/vrity-je" ||
+      url.pathname.startsWith("/vrity-je/") ||
+      url.pathname === "/verit-je" ||
+      url.pathname.startsWith("/verit-je/") ||
+      url.pathname === "/veriti-je" ||
+      url.pathname.startsWith("/veriti-je/") ||
+      url.pathname === "/verity-j" ||
+      url.pathname.startsWith("/verity-j/") ||
+      url.pathname === "/verity-ja" ||
+      url.pathname.startsWith("/verity-ja/") ||
+      url.pathname === "/verity-jd" ||
+      url.pathname.startsWith("/verity-jd/") ||
+      url.pathname === "/verity-ej" ||
+      url.pathname.startsWith("/verity-ej/") ||
+      url.pathname === "/verity-jaba" ||
+      url.pathname.startsWith("/verity-jaba/") ||
+      url.pathname === "/varmiteyt-verity" ||
+      url.pathname.startsWith("/varmiteyt-verity/") ||
+      url.pathname === "/verity-by-varmiteyt" ||
+      url.pathname.startsWith("/verity-by-varmiteyt/")
+    ) {
+      url.pathname = "/verity-je/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

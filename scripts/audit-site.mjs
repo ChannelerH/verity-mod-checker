@@ -138,7 +138,7 @@ if (downloadSignals.some((value) => !Number.isInteger(value))) {
 }
 
 const sitemap = fs.readFileSync("sitemap.xml", "utf8");
-for (const retiredRoute of ["/verity-je/", "/mcpe/"]) {
+for (const retiredRoute of ["/mcpe/"]) {
   if (sitemap.includes(retiredRoute)) errors.push(`sitemap.xml: retired route remains listed ${retiredRoute}`);
 }
 const indexNowScript = fs.readFileSync("scripts/submit-indexnow.mjs", "utf8");
@@ -150,7 +150,7 @@ if (!indexNowScript.includes("https://api.indexnow.org/indexnow") || !indexNowKe
 }
 
 const worker = fs.readFileSync("_worker.js", "utf8");
-for (const retiredRoute of ["/verity-je", "/mcpe"]) {
+for (const retiredRoute of ["/mcpe"]) {
   if (!worker.includes(retiredRoute)) errors.push(`_worker.js: missing redirect for ${retiredRoute}`);
 }
 if (!worker.includes('url.pathname === "/data/operations-log.json"')) {

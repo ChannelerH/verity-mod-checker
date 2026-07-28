@@ -22,6 +22,7 @@ ROUTES = [
     "/horror-mod/",
     "/is-verity-real/",
     "/java/",
+    "/verity-je/",
     "/verity-6-0-0-jar/",
     "/verity-5-7-3-jar/",
     "/verity-3-4-1-jar/",
@@ -193,6 +194,7 @@ with sync_playwright() as playwright:
         result_text = page.locator("#sourceResult").inner_text()
         assert "publisher checksum match" in result_text.lower()
 
+        page.locator("#sourceInput").fill("")
         page.locator("#sourceFile").set_input_files(
             files={
                 "name": "verity-5.7.3.jar",
@@ -201,6 +203,9 @@ with sync_playwright() as playwright:
             }
         )
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        page.wait_for_function(
+            "() => document.querySelector('#sourceResult')?.innerText.toLowerCase().includes('publisher checksum mismatch')"
+        )
         result_text = page.locator("#sourceResult").inner_text()
         assert "publisher checksum mismatch" in result_text.lower()
         context.close()

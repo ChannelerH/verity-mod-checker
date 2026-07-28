@@ -15,7 +15,8 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - What is Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
 - How to get Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
-- Java download route: https://veritymodchecker.online/java/
+- Verity JE branded download route: https://veritymodchecker.online/verity-je/
+- Java setup and troubleshooting route: https://veritymodchecker.online/java/
 - Older Java 3.4.1 status route: https://veritymodchecker.online/verity-3-4-1-jar/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
 - MCPE mobile route: https://veritymodchecker.online/pocket-edition/
@@ -32,7 +33,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 ## What It Covers
 
-- Java route: Verity JE Modrinth beta `5ech0sTo` for `verity-6.0.0.jar`, stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
+- Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; Modrinth beta `5ech0sTo` for `verity-6.0.0.jar`, stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
