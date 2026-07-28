@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T22:22:12+08:00</updated>
+  <updated>2026-07-28T22:56:40+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>PnTMC Bedrock counters refreshed from official CurseForge pages</title>
+    <id>https://veritymodchecker.online/updates/pntmc-bedrock-counters-2026-07-28-2256</id>
+    <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="alternate" />
+    <published>2026-07-28T22:56:40+08:00</published>
+    <updated>2026-07-28T22:56:40+08:00</updated>
+    <summary>Refreshed point-in-time PnTMC counters from official CurseForge project and file pages after the MCPEDL support reply suggested asking relevant project authors to cite the guide where it helps user confusion. The Verity - Bedrock Edition project now shows 7,183,743 downloads; current 3.2.0 file counters are V26.30 record 8517480 at 146.5K, V26.20 record 8517478 at 13.3K, and V26.10-style record 8517473 at 11.0K. Other current project totals in the release snapshot remain Verity JE 2,273,285 CurseForge downloads, Verity BE 3,934,799, Verity Pocket Edition 53,267, and Modrinth Verity JE 308,567. Homepage TDK was not changed.</summary>
+  </entry>
   <entry>
     <title>Verity JE Modrinth counters refreshed after GA4 source-click review</title>
     <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2222</id>
