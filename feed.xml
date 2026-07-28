@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T11:58:00+08:00</updated>
+  <updated>2026-07-28T12:28:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod banned and taken-down rumor answer refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-banned-rumor-route-2026-07-28</id>
+    <link href="https://veritymodchecker.online/what-happened/" rel="alternate" />
+    <published>2026-07-28T12:28:00+08:00</published>
+    <updated>2026-07-28T12:28:00+08:00</updated>
+    <summary>Refreshed the What Happened route after current Google SERP checks exposed People also ask demand around whether Verity Mod was banned and what Minecraft horror mod was banned. The page now answers banned, deleted, private, hidden, taken-down, and 404 rumors as verifiable route-status questions instead of treating any rumor as a download instruction. Added 301 aliases from banned/taken-down query slugs to the canonical status page, refreshed the checked date to July 28, 2026 after verifying current CurseForge, Modrinth, and MCPEDL records, and kept homepage TDK unchanged.</summary>
+  </entry>
   <entry>
     <title>Minecraft Verity Mod route refreshed for rising name variants and canonical redirects</title>
     <id>https://veritymodchecker.online/updates/minecraft-verity-name-variants-2026-07-28</id>

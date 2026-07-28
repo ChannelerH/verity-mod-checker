@@ -176,6 +176,25 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/verity-mod-banned" ||
+      url.pathname.startsWith("/verity-mod-banned/") ||
+      url.pathname === "/was-verity-mod-banned" ||
+      url.pathname.startsWith("/was-verity-mod-banned/") ||
+      url.pathname === "/is-verity-mod-banned" ||
+      url.pathname.startsWith("/is-verity-mod-banned/") ||
+      url.pathname === "/did-verity-mod-get-banned" ||
+      url.pathname.startsWith("/did-verity-mod-get-banned/") ||
+      url.pathname === "/what-minecraft-horror-mod-was-banned" ||
+      url.pathname.startsWith("/what-minecraft-horror-mod-was-banned/") ||
+      url.pathname === "/verity-taken-down" ||
+      url.pathname.startsWith("/verity-taken-down/")
+    ) {
+      url.pathname = "/what-happened/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/how-to-install" || url.pathname.startsWith("/how-to-install/")) {
       url.pathname = "/how-to-get-verity-mod/";
       url.hash = "";
