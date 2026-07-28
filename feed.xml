@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T10:00:00+08:00</updated>
+  <updated>2026-07-28T10:32:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>How to play Verity Mod route selector added for Java, Bedrock, MCPE, and friends</title>
+    <id>https://veritymodchecker.online/updates/how-to-play-verity-mod-route-2026-07-28</id>
+    <link href="https://veritymodchecker.online/play/" rel="alternate" />
+    <published>2026-07-28T10:32:00+08:00</published>
+    <updated>2026-07-28T10:32:00+08:00</updated>
+    <summary>Added a dedicated how-to-play route after current Google SERP sampling showed strong video, People also ask, Reddit, TikTok, and Bedrock-result demand around how to play Verity Mod, how to use Verity Mod, and playing with friends. The new page starts with an interactive play route selector for Java, Bedrock, MCPE, solo worlds, friends, servers, talking, spawning, and broken sessions, then routes users to the Java guide, Bedrock guide, MCPE route, talk guide, spawn checklist, API fixes, voice fixes, app-safety page, and download map. Homepage TDK was not changed; sitemap, feed, worker aliases, README, and LLM summaries expose the new /play/ URL.</summary>
+  </entry>
   <entry>
     <title>Verity Mod latest version tracker added for Java, Bedrock, PnTMC, and MCPEDL updates</title>
     <id>https://veritymodchecker.online/updates/latest-version-tracker-2026-07-28</id>

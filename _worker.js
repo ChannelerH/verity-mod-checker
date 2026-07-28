@@ -18,6 +18,7 @@ const htmlRoutes = new Set([
   "/mcpedl/",
   "/minecraft-verity-mod/",
   "/not-working/",
+  "/play/",
   "/pntmc-verity-3-2-0/",
   "/pocket-edition/",
   "/status-429/",
@@ -104,6 +105,19 @@ export default {
 
     if (url.pathname === "/how-to-install" || url.pathname.startsWith("/how-to-install/")) {
       url.pathname = "/how-to-get-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/how-to-play" ||
+      url.pathname.startsWith("/how-to-play/") ||
+      url.pathname === "/how-to-use-verity-mod" ||
+      url.pathname.startsWith("/how-to-use-verity-mod/") ||
+      url.pathname === "/play-verity-mod" ||
+      url.pathname.startsWith("/play-verity-mod/")
+    ) {
+      url.pathname = "/play/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

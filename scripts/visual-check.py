@@ -13,6 +13,7 @@ ROUTES = [
     "/link/",
     "/download/",
     "/updates/",
+    "/play/",
     "/minecraft-verity-mod/",
     "/curseforge/",
     "/creators/",
@@ -78,6 +79,15 @@ with sync_playwright() as playwright:
         page.on("console", lambda message: console_errors.append(message.text) if message.type == "error" else None)
         for route in ROUTES:
             assert_layout(page, route, viewport_name)
+
+        page.goto(f"{BASE_URL}/play/", wait_until="domcontentloaded")
+        page.locator("#playEdition").select_option("bedrock")
+        page.locator("#playSession").select_option("friends")
+        page.locator("#playGoal").select_option("spawn")
+        play_text = page.locator("#routeSummary").inner_text()
+        assert "friends" in play_text
+        assert "behavior pack activation" in play_text
+        assert page.locator("#routeLink").get_attribute("href").endswith("/how-to-spawn-verity/")
 
         page.goto(f"{BASE_URL}/api-connection-failed/", wait_until="domcontentloaded")
         page.locator("#apiProvider").select_option("ollama")
@@ -183,4 +193,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, play route selector, latest updates route, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
