@@ -5,15 +5,15 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T23:16:53+08:00</updated>
+  <updated>2026-07-28T23:39:14+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>Verity JE Modrinth counters refreshed after GSC and referral review</title>
-    <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2316</id>
+    <id>https://veritymodchecker.online/updates/verity-je-modrinth-counters-2026-07-28-2339</id>
     <link href="https://veritymodchecker.online/verity-je/" rel="alternate" />
-    <published>2026-07-28T23:16:53+08:00</published>
-    <updated>2026-07-28T23:16:53+08:00</updated>
-    <summary>Refreshed current Verity JE Modrinth counters from the official API after Search Console showed the head query verity mod appearing and GA4 showed gist.github.com plus organic search bringing real sessions. Modrinth project on1Y0osD now shows 310,369 project downloads; version 5ech0sTo for verity-6.0.0.jar shows 14,204 version downloads; stable version yAt0wv1Z for verity-5.7.3.jar shows 245,371 version downloads. File size, SHA-1, SHA-512, loader, Minecraft version, and homepage TDK were unchanged.</summary>
+    <published>2026-07-28T23:39:14+08:00</published>
+    <updated>2026-07-28T23:39:14+08:00</updated>
+    <summary>Refreshed current Verity JE Modrinth counters from the official API after Search Console showed the head query verity mod appearing, GA4 showed real gist.github.com referral sessions, and the MCPEDL support thread needed current source facts. Modrinth project on1Y0osD now shows 311,208 project downloads; version 5ech0sTo for verity-6.0.0.jar shows 14,648 version downloads; stable version yAt0wv1Z for verity-5.7.3.jar remains at 245,371 version downloads. File size, SHA-1, SHA-512, loader, Minecraft version, and homepage TDK were unchanged.</summary>
   </entry>
   <entry>
     <title>PnTMC Bedrock counters refreshed from official CurseForge pages</title>
