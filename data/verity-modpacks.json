@@ -1,0 +1,51 @@
+{
+  "$schema": "https://veritymodchecker.online/data/verity-modpacks.schema.json",
+  "schemaVersion": 1,
+  "checkedAt": "2026-07-29T06:02:00+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/verity-pack/",
+  "method": "Manual comparison against public CurseForge modpack result pages surfaced for Verity Pack and Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "modpacks": [
+    {
+      "name": "Verity Pack",
+      "owner": "Firyx",
+      "projectId": 1583377,
+      "projectUrl": "https://www.curseforge.com/minecraft/modpacks/verity-beta",
+      "status": "modpack-does-not-contain-verity-file",
+      "displayedDownloadsAtCheck": 82100,
+      "displayedDownloadsApproximate": true,
+      "packageType": "modpack",
+      "minecraftVersion": "1.20.1",
+      "loader": "Forge",
+      "mainFile": "Verity™.zip",
+      "sourceNote": "The public result text says this modpack does not contain the Verity mod and that the player needs to add it separately."
+    },
+    {
+      "name": "VerityPack",
+      "owner": "Sarelsana",
+      "projectId": 1587394,
+      "projectUrl": "https://www.curseforge.com/minecraft/modpacks/veritypack",
+      "status": "separate-modpack-route",
+      "displayedDownloadsAtCheck": 120300,
+      "displayedDownloadsApproximate": true,
+      "packageType": "modpack",
+      "minecraftVersion": "1.20.1",
+      "loader": "Forge",
+      "mainFile": "VerityPack-1.0.7.zip",
+      "sourceNote": "A separate CurseForge modpack route and not the same artifact as Verity JE or Bedrock add-ons."
+    },
+    {
+      "name": "VerityPack Realistic",
+      "owner": "Firyx",
+      "projectId": 1582388,
+      "projectUrl": "https://www.curseforge.com/minecraft/modpacks/veritypack-realistic",
+      "status": "separate-realistic-modpack-route",
+      "displayedDownloadsAtCheck": 46000,
+      "displayedDownloadsApproximate": true,
+      "packageType": "modpack",
+      "minecraftVersion": "1.20.1",
+      "loader": "Forge",
+      "sourceNote": "A separate realistic profile result; not proof that the standalone Verity JE file is installed."
+    }
+  ],
+  "routePolicy": "Use modpack pages only when the player intentionally wants that profile. Use Verity JE for the standalone Java JAR and Bedrock or MCPE pages for MCADDON routes. This site does not host or mirror files."
+}

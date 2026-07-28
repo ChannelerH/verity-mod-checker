@@ -13,6 +13,7 @@ ROUTES = [
     "/",
     "/link/",
     "/download/",
+    "/verity-pack/",
     "/java-vs-bedrock/",
     "/updates/",
     "/real-verity-mod-updated/",
@@ -112,6 +113,20 @@ with sync_playwright() as playwright:
         assert "Start Ollama" in diagnosis_text
 
         page.goto(BASE_URL, wait_until="domcontentloaded")
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-beta")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        page.locator("#sourceVerdict").wait_for(state="visible")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity Pack" in result_text
+        assert "modpack" in result_text.lower()
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-pack/")
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/veritypack")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "VerityPack" in result_text
+        assert "1587394" in result_text
+
         page.locator("#sourceInput").fill("verity-6.0.1-all.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         page.locator("#sourceVerdict").wait_for(state="visible")

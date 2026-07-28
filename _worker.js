@@ -29,6 +29,7 @@ const htmlRoutes = new Set([
   "/status-429/",
   "/taken-down/",
   "/updates/",
+  "/verity-pack/",
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
   "/verity-6-0-0-jar/",
@@ -58,6 +59,8 @@ const rootFiles = new Set([
 const dataFiles = new Set([
   "/data/verity-app-claims.json",
   "/data/verity-app-claims.schema.json",
+  "/data/verity-modpacks.json",
+  "/data/verity-modpacks.schema.json",
   "/data/verity-releases.json",
   "/data/verity-releases.schema.json",
 ]);
@@ -325,6 +328,22 @@ export default {
       url.pathname.startsWith("/how-to-download-and-install-verity-for-minecraft/")
     ) {
       url.pathname = "/how-to-get-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-pack" ||
+      url.pathname === "/veritypack" ||
+      url.pathname.startsWith("/veritypack/") ||
+      url.pathname === "/verity-beta" ||
+      url.pathname.startsWith("/verity-beta/") ||
+      url.pathname === "/curseforge-verity-pack" ||
+      url.pathname.startsWith("/curseforge-verity-pack/") ||
+      url.pathname === "/veritypack-realistic" ||
+      url.pathname.startsWith("/veritypack-realistic/")
+    ) {
+      url.pathname = "/verity-pack/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

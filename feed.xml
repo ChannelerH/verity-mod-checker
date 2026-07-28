@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T05:15:20+08:00</updated>
+  <updated>2026-07-29T06:02:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Pack modpack route added for CurseForge pack confusion</title>
+    <id>https://veritymodchecker.online/updates/verity-pack-modpack-route-2026-07-29-0602</id>
+    <link href="https://veritymodchecker.online/verity-pack/" rel="alternate" />
+    <published>2026-07-29T06:02:00+08:00</published>
+    <updated>2026-07-29T06:02:00+08:00</updated>
+    <summary>Added a dedicated Verity Pack route after current SERP checks surfaced multiple CurseForge modpack results for Verity Mod searches: Verity Pack by Firyx, Project ID 1583377, about 82.1K displayed downloads, with visible text saying the pack does not contain the Verity mod and that players need to add it separately; VerityPack by Sarelsana, Project ID 1587394, about 120.3K displayed downloads; and VerityPack Realistic by Firyx, Project ID 1582388, about 46.0K displayed downloads. The new page and JSON asset separate modpack-profile intent from Verity JE, Bedrock, MCPE, and VERITY.exe routes without changing homepage TDK.</summary>
+    <category term="modpack" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity current counters and sitemap refreshed from July 29 source checks</title>
     <id>https://veritymodchecker.online/updates/current-counters-sitemap-2026-07-29-0515</id>

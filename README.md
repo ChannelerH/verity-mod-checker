@@ -19,6 +19,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity JE branded download route: https://veritymodchecker.online/verity-je/
 - Java setup and troubleshooting route: https://veritymodchecker.online/java/
 - Real Verity Mod updated route: https://veritymodchecker.online/real-verity-mod-updated/
+- Verity Pack modpack route check: https://veritymodchecker.online/verity-pack/
 - Older Java 3.4.1 status route: https://veritymodchecker.online/verity-3-4-1-jar/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
 - MCPE mobile route: https://veritymodchecker.online/pocket-edition/
@@ -38,6 +39,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
+- Verity Pack / modpack route: separates CurseForge modpacks `Verity Pack`, `VerityPack`, and `VerityPack Realistic` from the standalone Verity JE file and Bedrock add-ons, including Project IDs `1583377`, `1587394`, and `1582388`.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
 - Play route selector: Java, Bedrock, MCPE, mobile, TLauncher caveats, solo, friends, server, talk, spawn, and broken-session first steps.
@@ -52,6 +54,7 @@ These URLs are intended for players, editors, and community maintainers who need
 - Route map: https://veritymodchecker.online/sitemap.xml
 - Human update feed: https://veritymodchecker.online/feed.xml
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
+- Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
 - Current Java beta check: https://veritymodchecker.online/verity-6-0-1-jar/
 - Updated-intent explainer: https://veritymodchecker.online/real-verity-mod-updated/
 
