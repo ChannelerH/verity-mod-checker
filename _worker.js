@@ -24,6 +24,7 @@ const htmlRoutes = new Set([
   "/taken-down/",
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
+  "/verity-6-0-0-jar/",
   "/verity-exe/",
   "/verity-mod-lag-fix/",
   "/voice-not-working/",
@@ -132,6 +133,21 @@ export default {
       url.pathname.startsWith("/verity-573-jar/")
     ) {
       url.pathname = "/verity-5-7-3-jar/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-6.0.0.jar" ||
+      url.pathname.startsWith("/verity-6.0.0.jar/") ||
+      url.pathname === "/verity-6.0.0" ||
+      url.pathname.startsWith("/verity-6.0.0/") ||
+      url.pathname === "/verity-6.0.0-jar" ||
+      url.pathname.startsWith("/verity-6.0.0-jar/") ||
+      url.pathname === "/verity-600-jar" ||
+      url.pathname.startsWith("/verity-600-jar/")
+    ) {
+      url.pathname = "/verity-6-0-0-jar/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

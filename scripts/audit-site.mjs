@@ -13,13 +13,15 @@ const errors = [];
 const titles = new Map();
 const descriptions = new Map();
 const releaseSnapshot = JSON.parse(fs.readFileSync("data/verity-releases.json", "utf8"));
-const currentJavaRelease = releaseSnapshot.projects
-  .find((project) => project.name === "Verity JE")
-  ?.releases.find((release) => release.status === "current");
-const currentJavaModrinth = releaseSnapshot.projects
-  .find((project) => project.name === "Verity JE")
-  ?.verifiedAlternateSources?.find((source) => source.host === "Modrinth" && source.status === "current");
-const currentJavaModrinthRelease = currentJavaModrinth?.releases.find((release) => release.status === "current");
+const javaProject = releaseSnapshot.projects.find((project) => project.name === "Verity JE");
+const currentJavaRelease = javaProject?.releases.find((release) => release.status === "current");
+const currentJavaModrinth = javaProject?.verifiedAlternateSources?.find((source) => source.host === "Modrinth" && source.status === "current");
+const currentJavaModrinthReleases =
+  currentJavaModrinth?.releases.filter((release) => ["current", "beta", "stable-current"].includes(release.status)) || [];
+const currentJavaModrinthRelease =
+  currentJavaModrinthReleases.find((release) => release.status === "beta") ||
+  currentJavaModrinthReleases.find((release) => release.status === "stable-current") ||
+  currentJavaModrinthReleases.find((release) => release.status === "current");
 const currentBedrockRelease = releaseSnapshot.projects
   .find((project) => project.name === "Verity BE")
   ?.releases.find((release) => release.status === "current");
@@ -85,18 +87,23 @@ if (!currentJavaRelease?.filename || !currentJavaRelease?.recordId) {
   }
 }
 
-if (!currentJavaModrinth?.projectId || !currentJavaModrinthRelease?.recordId || !currentJavaModrinthRelease?.hashes?.sha512) {
-  errors.push("data/verity-releases.json: missing current Verity JE Modrinth project, version, or SHA-512");
+if (!currentJavaModrinth?.projectId || currentJavaModrinthReleases.length === 0) {
+  errors.push("data/verity-releases.json: missing current Verity JE Modrinth project or releases");
 } else {
-  const expectedSignals = [String(currentJavaModrinth.projectId), String(currentJavaModrinthRelease.recordId)];
+  const expectedSignals = [
+    String(currentJavaModrinth.projectId),
+    ...currentJavaModrinthReleases.flatMap((release) => [String(release.recordId), release.filename]),
+  ];
   for (const file of ["index.html", "download/index.html", "java/index.html", "script.js", "feed.xml", "llms.txt"]) {
     const content = fs.readFileSync(file, "utf8");
     for (const signal of expectedSignals) {
       if (!content.includes(signal)) errors.push(`${file}: missing current Modrinth signal ${signal}`);
     }
   }
-  if (!/^[a-f0-9]{128}$/.test(currentJavaModrinthRelease.hashes.sha512)) {
-    errors.push("data/verity-releases.json: current Verity JE Modrinth SHA-512 is malformed");
+  for (const release of currentJavaModrinthReleases) {
+    if (!/^[a-f0-9]{128}$/.test(release.hashes?.sha512 || "")) {
+      errors.push(`data/verity-releases.json: Verity JE Modrinth SHA-512 is malformed for ${release.recordId}`);
+    }
   }
 }
 

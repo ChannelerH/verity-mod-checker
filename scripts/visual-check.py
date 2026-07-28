@@ -19,6 +19,7 @@ ROUTES = [
     "/horror-mod/",
     "/is-verity-real/",
     "/java/",
+    "/verity-6-0-0-jar/",
     "/verity-5-7-3-jar/",
     "/verity-3-4-1-jar/",
     "/bedrock/",
@@ -85,6 +86,21 @@ with sync_playwright() as playwright:
         assert "Start Ollama" in diagnosis_text
 
         page.goto(BASE_URL, wait_until="domcontentloaded")
+        page.locator("#sourceInput").fill("verity-6.0.0.jar")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        page.locator("#sourceVerdict").wait_for(state="visible")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity JE" in result_text
+        assert "5ech0sTo" in result_text
+
+        page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/6.0.0-beta")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Modrinth route recognized" in result_text
+        assert "on1Y0osD" in result_text
+        assert "SHA-512 available" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/6.0.0-beta")
+
         page.locator("#sourceInput").fill("verity-5.7.3.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         page.locator("#sourceVerdict").wait_for(state="visible")
@@ -137,6 +153,13 @@ with sync_playwright() as playwright:
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/files/8517478")
 
         page.locator("#sourceInput").fill(
+            "c8b282be27ab4a0f19da6e834c4ee70602cef98bb5a81fe848932c1ca0edd98c41904602fe02b357d0a65265fba352860df6e06da669de6404143a224ce40afb"
+        )
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "publisher checksum match" in result_text.lower()
+
+        page.locator("#sourceInput").fill(
             "15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81"
         )
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -159,4 +182,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes, 6.0.0 beta route, status 429 route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

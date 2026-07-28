@@ -325,7 +325,26 @@ const knownProjects = [
     ],
     releases: [
       {
-        status: "current",
+        status: "beta",
+        filename: "verity-6.0.0.jar",
+        versionNumber: "6.0.0-beta",
+        sizeMb: 235.11,
+        version: "Minecraft 1.20.1 · Forge",
+        published: "July 27, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "5ech0sTo",
+            link: "https://modrinth.com/mod/verity-je-official/version/6.0.0-beta",
+            hashes: {
+              sha1: "87f39573ea29e796ad856d96fd056b8dfe0043d9",
+              sha512: "c8b282be27ab4a0f19da6e834c4ee70602cef98bb5a81fe848932c1ca0edd98c41904602fe02b357d0a65265fba352860df6e06da669de6404143a224ce40afb"
+            }
+          }
+        ]
+      },
+      {
+        status: "stable-current",
         filename: "verity-5.7.3.jar",
         versionNumber: "5.7.3",
         sizeMb: 235.06,
@@ -553,7 +572,7 @@ function releaseRecordLink(project, release, preferredPlatform = "") {
 function releaseRecordLabel(release, record) {
   if (!record) return "files";
   if (record.id === "files") return "files tab";
-  return record.platform === "CurseForge" ? `record #${record.id}` : `version ${release.versionNumber}`;
+  return record.platform === "CurseForge" ? `record #${record.id}` : `version ${release.versionNumber} (${record.id})`;
 }
 
 function findKnownSourceUrl(parsedUrl) {
