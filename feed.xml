@@ -5,8 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-28T12:28:00+08:00</updated>
+  <updated>2026-07-28T13:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod download and Bedrock route freshness refreshed</title>
+    <id>https://veritymodchecker.online/updates/download-bedrock-freshness-2026-07-28</id>
+    <link href="https://veritymodchecker.online/download/" rel="alternate" />
+    <published>2026-07-28T13:18:00+08:00</published>
+    <updated>2026-07-28T13:18:00+08:00</updated>
+    <summary>Refreshed current download-route freshness after GSC showed /download/, /bedrock/, and /taken-down/ receiving impressions but no clicks, and current SERP checks showed Verity Mod download results mixing Modrinth, CurseForge, Google Play, YouTube, MCPEDL, VERITY.exe, and Bedrock add-on intent. The update refreshes point-in-time source counters from first-party pages and APIs without changing homepage TDK: Verity JE 2,254,835 CurseForge downloads and 291,456 Modrinth downloads, Modrinth beta 3,706 downloads, stable Modrinth 237,360 downloads, stable CurseForge file 8461257 at 578.1K, Verity BE 3,925,180 with file 8506198 at 132.6K, and PnTMC 7,112,849 with file 8517480 at 106.5K. The Bedrock route dateModified now reflects the July 28 source check.</summary>
+  </entry>
   <entry>
     <title>Verity Mod banned and taken-down rumor answer refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-mod-banned-rumor-route-2026-07-28</id>
