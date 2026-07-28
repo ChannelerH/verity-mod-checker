@@ -177,6 +177,27 @@ export default {
     }
 
     if (
+      url.pathname === "/real-verity-mod" ||
+      url.pathname.startsWith("/real-verity-mod/") ||
+      url.pathname === "/the-real-verity-mod" ||
+      url.pathname.startsWith("/the-real-verity-mod/") ||
+      url.pathname === "/real-verity-mod-download" ||
+      url.pathname.startsWith("/real-verity-mod-download/") ||
+      url.pathname === "/real-verity-mod-minecraft-download" ||
+      url.pathname.startsWith("/real-verity-mod-minecraft-download/") ||
+      url.pathname === "/original-verity-mod" ||
+      url.pathname.startsWith("/original-verity-mod/") ||
+      url.pathname === "/official-verity-mod" ||
+      url.pathname.startsWith("/official-verity-mod/") ||
+      url.pathname === "/is-verity-mod-real" ||
+      url.pathname.startsWith("/is-verity-mod-real/")
+    ) {
+      url.pathname = "/is-verity-real/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/verity-mod-banned" ||
       url.pathname.startsWith("/verity-mod-banned/") ||
       url.pathname === "/was-verity-mod-banned" ||
