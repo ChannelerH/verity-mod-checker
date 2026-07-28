@@ -486,7 +486,13 @@ export default {
       return notFound();
     }
 
-    const assetResponse = await env.ASSETS.fetch(request);
+    const assetUrl = new URL(request.url);
+    if (isKnownRoute) {
+      assetUrl.pathname = url.pathname === "/" ? "/index.html" : `${url.pathname}index.html`;
+    }
+
+    const assetRequest = new Request(assetUrl.toString(), request);
+    const assetResponse = await env.ASSETS.fetch(assetRequest);
     const headers = new Headers(assetResponse.headers);
     const contentType = headers.get("content-type") || "";
 
