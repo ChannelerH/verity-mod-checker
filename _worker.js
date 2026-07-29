@@ -364,8 +364,18 @@ export default {
       url.pathname.startsWith("/the-real-verity-mod/") ||
       url.pathname === "/real-verity-mod-download" ||
       url.pathname.startsWith("/real-verity-mod-download/") ||
+      url.pathname === "/real-verity-mod-java" ||
+      url.pathname.startsWith("/real-verity-mod-java/") ||
+      url.pathname === "/real-verity-mod-bedrock" ||
+      url.pathname.startsWith("/real-verity-mod-bedrock/") ||
+      url.pathname === "/real-verity-mod-minecraft" ||
+      url.pathname.startsWith("/real-verity-mod-minecraft/") ||
       url.pathname === "/real-verity-mod-minecraft-download" ||
       url.pathname.startsWith("/real-verity-mod-minecraft-download/") ||
+      url.pathname === "/real-verity-minecraft-mod" ||
+      url.pathname.startsWith("/real-verity-minecraft-mod/") ||
+      url.pathname === "/the-real-verity-mod-in-minecraft" ||
+      url.pathname.startsWith("/the-real-verity-mod-in-minecraft/") ||
       url.pathname === "/original-verity-mod" ||
       url.pathname.startsWith("/original-verity-mod/") ||
       url.pathname === "/official-verity-mod" ||

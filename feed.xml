@@ -5,8 +5,19 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T12:25:00+08:00</updated>
+  <updated>2026-07-29T12:48:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Real Verity Mod route refreshed after video-led SERP review</title>
+    <id>https://veritymodchecker.online/updates/real-verity-mod-video-serp-refresh-2026-07-29-1248</id>
+    <link href="https://veritymodchecker.online/is-verity-real/" rel="alternate" />
+    <link href="https://veritymodchecker.online/real-verity-mod-updated/" rel="related" />
+    <published>2026-07-29T12:48:00+08:00</published>
+    <updated>2026-07-29T12:48:00+08:00</updated>
+    <summary>Refreshed the Real Verity Mod and Real Verity Mod Updated routes after current SERP checks showed the head query dominated by official project pages, videos, Reddit, Google Play, and Fandom, while real/update wording was strongly video-led. The homepage now gives the Real Verity Mod reality-check page a main-content route entry, new 301 aliases keep real Verity Java, Bedrock, and Minecraft variants on the canonical reality-check page, and the updated route explains why video titles, Java, Bedrock, MCPE, app, and modpack results are not one universal download. First-party checks at 12:48 showed Modrinth project on1Y0osD at 324,115 downloads, stable yAt0wv1Z at 256,971 downloads, CurseForge Verity JE Project ID 1591438 at 2,323,592 project downloads, and file 8461257 at 630.6K displayed downloads. Homepage title and description were not changed.</summary>
+    <category term="real-verity-mod" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>API connection failed route expanded for 403 and invalid API key searches</title>
     <id>https://veritymodchecker.online/updates/api-403-invalid-key-route-2026-07-29-1225</id>
