@@ -1397,7 +1397,7 @@ export default {
       url.pathname === "/llms.txt" ||
       url.pathname === "/llms-full.txt"
     ) {
-      headers.set("cache-control", "public, max-age=3600, must-revalidate");
+      headers.set("cache-control", "public, max-age=0, must-revalidate");
     } else if (contentType.includes("text/html")) {
       headers.set("cache-control", "public, max-age=0, must-revalidate");
     }
