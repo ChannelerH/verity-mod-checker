@@ -31,6 +31,7 @@ const htmlRoutes = new Set([
   "/real-verity-mod/",
   "/routes/",
   "/server/",
+  "/source-map/",
   "/status-401/",
   "/status-429/",
   "/taken-down/",
@@ -76,6 +77,9 @@ const dataFiles = new Set([
   "/data/verity-modpacks.schema.json",
   "/data/verity-releases.json",
   "/data/verity-releases.schema.json",
+  "/data/verity-source-map.csv",
+  "/data/verity-source-map.json",
+  "/data/verity-source-map.schema.json",
 ]);
 
 function notFound() {
@@ -204,6 +208,25 @@ export default {
       url.pathname.startsWith("/verity-mod-route-index/")
     ) {
       url.pathname = "/routes/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-source-map" ||
+      url.pathname.startsWith("/verity-source-map/") ||
+      url.pathname === "/verity-mod-source-map" ||
+      url.pathname.startsWith("/verity-mod-source-map/") ||
+      url.pathname === "/verity-mod-data" ||
+      url.pathname.startsWith("/verity-mod-data/")
+    ) {
+      url.pathname = "/source-map/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (url.pathname === "/verity-mod-csv" || url.pathname.startsWith("/verity-mod-csv/")) {
+      url.pathname = "/data/verity-source-map.csv";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
