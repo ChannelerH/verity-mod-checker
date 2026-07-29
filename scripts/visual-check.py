@@ -16,6 +16,7 @@ ROUTES = [
     "/verity-pack/",
     "/java-vs-bedrock/",
     "/updates/",
+    "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/play/",
     "/routes/",

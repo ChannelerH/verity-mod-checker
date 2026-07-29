@@ -35,6 +35,7 @@ const htmlRoutes = new Set([
   "/status-429/",
   "/taken-down/",
   "/updates/",
+  "/verity-mod-downloads/",
   "/verity-pack/",
   "/verity-groq-api-key/",
   "/verity-map/",
@@ -190,6 +191,31 @@ export default {
       url.pathname.startsWith("/verity-mod-for-minecraft-download/")
     ) {
       url.pathname = "/download/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-mod-download-count" ||
+      url.pathname.startsWith("/verity-mod-download-count/") ||
+      url.pathname === "/verity-mod-downloads-count" ||
+      url.pathname.startsWith("/verity-mod-downloads-count/") ||
+      url.pathname === "/how-many-downloads-does-verity-mod-have" ||
+      url.pathname.startsWith("/how-many-downloads-does-verity-mod-have/") ||
+      url.pathname === "/verity-mod-4-9-million" ||
+      url.pathname.startsWith("/verity-mod-4-9-million/") ||
+      url.pathname === "/verity-mod-4-9-million-downloads" ||
+      url.pathname.startsWith("/verity-mod-4-9-million-downloads/") ||
+      url.pathname === "/verity-mod-viral" ||
+      url.pathname.startsWith("/verity-mod-viral/") ||
+      url.pathname === "/verity-viral-mod" ||
+      url.pathname.startsWith("/verity-viral-mod/") ||
+      url.pathname === "/viral-verity-mod" ||
+      url.pathname.startsWith("/viral-verity-mod/") ||
+      url.pathname === "/verity-mod-viral-downloads" ||
+      url.pathname.startsWith("/verity-mod-viral-downloads/")
+    ) {
+      url.pathname = "/verity-mod-downloads/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
