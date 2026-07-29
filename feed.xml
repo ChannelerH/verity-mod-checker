@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T17:58:00+08:00</updated>
+  <updated>2026-07-29T18:12:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod command map added for Bedrock and Java confusion</title>
+    <id>https://veritymodchecker.online/updates/commands-route-2026-07-29-1812</id>
+    <link href="https://veritymodchecker.online/commands/" rel="alternate" />
+    <link href="https://veritymodchecker.online/how-to-talk-to-verity/" rel="related" />
+    <link href="https://veritymodchecker.online/how-to-spawn-verity/" rel="related" />
+    <published>2026-07-29T18:12:00+08:00</published>
+    <updated>2026-07-29T18:12:00+08:00</updated>
+    <summary>Added a focused /commands/ route after current SERP checks showed command-led Verity searches and official Bedrock sources exposed separate command paths. The new page separates Verity BE's Verity chat prefix and debugger connect setup, PnTMC's /verity_language and Hey Verity inventory wake behavior, Pocket Edition debugger connect setup, and Java Verity JE provider-first troubleshooting. Internal links were added from the homepage, route index, FAQ, Bedrock, Verity BE, MCPEDL, Pocket Edition, PnTMC 3.2.0, talk, and spawn pages; homepage TDK was not changed.</summary>
+    <category term="commands" />
+    <category term="bedrock" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity BE Error: No Purpose route added</title>
     <id>https://veritymodchecker.online/updates/error-no-purpose-route-2026-07-29-1758</id>

@@ -4,6 +4,7 @@ const htmlRoutes = new Set([
   "/api-connection-failed/",
   "/apk/",
   "/bedrock/",
+  "/commands/",
   "/creators/",
   "/curseforge/",
   "/download/",
@@ -111,6 +112,33 @@ export default {
 
     if (url.pathname === "/app" || url.pathname.startsWith("/app/")) {
       url.pathname = "/apk/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-mod-commands" ||
+      url.pathname.startsWith("/verity-mod-commands/") ||
+      url.pathname === "/verity-commands" ||
+      url.pathname.startsWith("/verity-commands/") ||
+      url.pathname === "/verity-command" ||
+      url.pathname.startsWith("/verity-command/") ||
+      url.pathname === "/minecraft-verity-command" ||
+      url.pathname.startsWith("/minecraft-verity-command/") ||
+      url.pathname === "/minecraft-verity-commands" ||
+      url.pathname.startsWith("/minecraft-verity-commands/") ||
+      url.pathname === "/verity-mod-command" ||
+      url.pathname.startsWith("/verity-mod-command/") ||
+      url.pathname === "/script-debugger-connect-verity" ||
+      url.pathname.startsWith("/script-debugger-connect-verity/") ||
+      url.pathname === "/verity-debugger-connect" ||
+      url.pathname.startsWith("/verity-debugger-connect/") ||
+      url.pathname === "/verity-language-command" ||
+      url.pathname.startsWith("/verity-language-command/") ||
+      url.pathname === "/verity-language" ||
+      url.pathname.startsWith("/verity-language/")
+    ) {
+      url.pathname = "/commands/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
