@@ -49,7 +49,7 @@
 - [How to Talk to Verity Mod](https://veritymodchecker.online/how-to-talk-to-verity/): Project-specific microphone and talk guide for Verity JE controls, Groq/API key text-first testing, Verity BE chat prefix, PnTMC wake phrase and distance rules, VERITY.exe voice chat/direct chat, and no-reply/no-monster-form checks.
 - [Verity Mod Doesn't Respond](https://veritymodchecker.online/verity-doesnt-respond/): Focused no-response route for `verity doesn't respond`, `verity not responding`, no reply, no talk, dots-only, silent voice, and missing monster-form searches; separates Java AI provider failures from Bedrock pack setup, PnTMC wake phrase/distance, MCPE imports, and modpack assumptions.
 - [Verity Mod Not Working](https://veritymodchecker.online/not-working/): Fixes for crashes, box not spawning, dialogue missing, and broken setup.
-- [Verity Mod Voice Not Working](https://veritymodchecker.online/voice-not-working/): Voice and audio troubleshooting.
+- [Verity Mod Voice Not Working](https://veritymodchecker.online/voice-not-working/): Voice, microphone, Simple Voice Chat, TTS, no-sound, chat-works-but-no-voice, Bedrock resource-audio, MCPE sound, and Java speech-to-text troubleshooting.
 - [Verity Mod Taken Down or 404](https://veritymodchecker.online/taken-down/): Recovery checklist for old links, mirrors, and removed pages.
 - [Verified Release Data](https://veritymodchecker.online/data/verity-releases.json): Machine-readable owners, project IDs, current file records, versions, sizes, dates, and source URLs.
 - [Verified App Claims Data](https://veritymodchecker.online/data/verity-app-claims.json): Machine-readable Google Play package IDs, publisher names, store signals, and third-party app-claim notes for current Verity Mod mobile search results.

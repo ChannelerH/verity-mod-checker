@@ -5,8 +5,20 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T17:18:00+08:00</updated>
+  <updated>2026-07-29T17:42:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Voice and microphone route refreshed for fresh no-sound demand</title>
+    <id>https://veritymodchecker.online/updates/voice-microphone-no-sound-2026-07-29-1742</id>
+    <link href="https://veritymodchecker.online/voice-not-working/" rel="alternate" />
+    <link href="https://veritymodchecker.online/how-to-talk-to-verity/" rel="related" />
+    <published>2026-07-29T17:42:00+08:00</published>
+    <updated>2026-07-29T17:42:00+08:00</updated>
+    <summary>Refreshed the existing /voice-not-working/ route after GA4 showed the voice page receiving 32 views in the 7-day page-title card and current SERP checks showed fresh Reddit, YouTube, Simple Voice Chat, VERITY.exe, and microphone setup demand around Verity Mod voice not working, how to use microphone in Verity Mod, and chat works but no sound. The update keeps homepage TDK unchanged, updates the page source date to July 29, separates typed reply, microphone capture, speech-to-text, TTS, and sound output layers, adds no-microphone guidance, and redirects natural no-sound aliases such as /verity-mod-voice-not-working/, /verity-mod-no-sound/, /verity-chat-works-no-voice/, /simple-voice-chat-verity/, and /verity-tts-not-working/ to the canonical voice fix page.</summary>
+    <category term="voice" />
+    <category term="microphone" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Status 429 route refreshed for the one-minute failure pattern</title>
     <id>https://veritymodchecker.online/updates/status-429-one-minute-loop-2026-07-29-1718</id>

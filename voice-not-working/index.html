@@ -6,7 +6,7 @@
     <title>Verity Mod Voice Not Working - Chat Works But No Sound Fix</title>
     <meta
       name="description"
-      content="Fix Verity Mod voice not working when chat appears but no sound plays. Check Java TTS, Bedrock resources, audio sliders, and setup order."
+      content="Fix Verity Mod voice not working when chat appears but no sound plays. Check Java microphone input, Simple Voice Chat, TTS, Bedrock resources, and audio output."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/voice-not-working/" />
@@ -80,6 +80,14 @@
               "@type": "Answer",
               "text": "Not by itself. If Simple Voice Chat shows that your microphone works, that only proves the voice chat layer can hear you. For Verity JE, first confirm a typed prompt works, then check the installed talk control, English speech-to-text support, provider setup, and server-side requirements for the exact build."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I talk to Verity without a microphone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes, depending on the route. Test typed chat or direct chat first. A microphone is only relevant after the installed Java build, modpack, or server profile supports live speech input and the text/AI path already replies."
+            }
           }
         ]
       }
@@ -91,7 +99,7 @@
         "@id": "https://veritymodchecker.online/voice-not-working/#webpage",
         "url": "https://veritymodchecker.online/voice-not-working/",
         "name": "Verity Mod Voice Not Working - Chat Works But No Sound Fix",
-        "dateModified": "2026-07-26",
+        "dateModified": "2026-07-29",
         "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
         "about": ["Verity Mod voice", "Verity BE text-to-speech", "Minecraft audio troubleshooting"]
       }
@@ -118,7 +126,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Voice troubleshooting</p>
+          <p class="eyebrow">Voice troubleshooting checked July 29, 2026</p>
           <h1>Verity Mod Voice Not Working</h1>
           <p class="lede">
             Use this page when Verity messages appear in chat but you cannot hear the voice. That symptom
@@ -256,6 +264,15 @@
             </p>
           </article>
           <article class="error-card">
+            <span>Microphone tutorial</span>
+            <h3>A video says to use the microphone but text still fails</h3>
+            <p>
+              Do not debug microphone input until typed chat works. If a short typed prompt does not produce a
+              Verity reply, fix the provider, key, quota, model, or installed route before changing the selected
+              microphone or voice-chat dependency.
+            </p>
+          </article>
+          <article class="error-card">
             <span>Bedrock</span>
             <h3>Dialogue appears but audio is missing</h3>
             <p>
@@ -368,6 +385,11 @@
                 <td>Microphone audio works but the Java mod does not receive or answer it</td>
                 <td>Test typed prompts, talk control, English STT, provider, and server-side setup</td>
               </tr>
+              <tr>
+                <td>how to use microphone in Verity Mod</td>
+                <td>Voice input setup is being mixed with AI response and sound output</td>
+                <td>Use typed chat first, then check controls, selected mic, OS permission, and Simple Voice Chat separately</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -423,6 +445,21 @@
               English voice phrase because the official project notes speech-to-text and text-to-speech were tested
               in English. On a multiplayer server, confirm the matching required files and dependencies are present
               server-side as well as client-side before assuming the public CurseForge file is broken.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>No microphone does not always block Verity</h3>
+            <p>
+              A microphone is not the first requirement for every Verity route. Many setups can be tested with
+              typed chat, direct chat, or a local TTS command before live speech input matters. If you do not have
+              a microphone, use the text path to prove the file, provider, and world setup first. If text works,
+              the remaining question is whether your exact Java build, modpack, or server profile supports live
+              microphone input.
+            </p>
+            <p>
+              This matters because current videos can show voice-over, private settings, or a different route.
+              Do not install a "voice fix" package only because a video used microphone controls. Match the route,
+              then debug one layer at a time: text reply, microphone capture, speech-to-text, and sound output.
             </p>
           </article>
           <article class="guide-block">
@@ -530,8 +567,11 @@
 
       <aside class="source-strip" aria-label="Voice troubleshooting references">
         <strong>Check the base route before changing voice components:</strong>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE language notes</a>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" target="_blank" rel="noopener noreferrer">Verity JE current record</a>
         <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" target="_blank" rel="noopener noreferrer">Verity BE 1.1.0 current record</a>
+        <a href="https://modrepo.de/minecraft/voicechat/wiki/troubleshooting" target="_blank" rel="noopener noreferrer">Simple Voice Chat troubleshooting</a>
+        <a href="https://www.curseforge.com/minecraft/modpacks/verity-exe" target="_blank" rel="noopener noreferrer">VERITY.exe voice chat notes</a>
         <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq setup reference</a>
       </aside>
     </main>

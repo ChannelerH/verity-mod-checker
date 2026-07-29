@@ -728,6 +728,37 @@ export default {
     }
 
     if (
+      url.pathname === "/verity-mod-voice-not-working" ||
+      url.pathname.startsWith("/verity-mod-voice-not-working/") ||
+      url.pathname === "/verity-voice-not-working" ||
+      url.pathname.startsWith("/verity-voice-not-working/") ||
+      url.pathname === "/verity-mod-no-voice" ||
+      url.pathname.startsWith("/verity-mod-no-voice/") ||
+      url.pathname === "/verity-no-voice" ||
+      url.pathname.startsWith("/verity-no-voice/") ||
+      url.pathname === "/verity-mod-no-sound" ||
+      url.pathname.startsWith("/verity-mod-no-sound/") ||
+      url.pathname === "/verity-no-sound" ||
+      url.pathname.startsWith("/verity-no-sound/") ||
+      url.pathname === "/verity-chat-works-no-voice" ||
+      url.pathname.startsWith("/verity-chat-works-no-voice/") ||
+      url.pathname === "/verity-text-works-no-voice" ||
+      url.pathname.startsWith("/verity-text-works-no-voice/") ||
+      url.pathname === "/simple-voice-chat-verity-not-working" ||
+      url.pathname.startsWith("/simple-voice-chat-verity-not-working/") ||
+      url.pathname === "/simple-voice-chat-verity" ||
+      url.pathname.startsWith("/simple-voice-chat-verity/") ||
+      url.pathname === "/verity-mod-tts-not-working" ||
+      url.pathname.startsWith("/verity-mod-tts-not-working/") ||
+      url.pathname === "/verity-tts-not-working" ||
+      url.pathname.startsWith("/verity-tts-not-working/")
+    ) {
+      url.pathname = "/voice-not-working/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/verity-doesnt-respond" ||
       url.pathname === "/verity-mod-doesnt-respond" ||
       url.pathname.startsWith("/verity-mod-doesnt-respond/") ||
