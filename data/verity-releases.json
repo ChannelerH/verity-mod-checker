@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-29T21:25:00+08:00",
+  "checkedAt": "2026-07-29T21:40:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -117,7 +117,7 @@
           "loader": "NeoForge",
           "packageType": "jar",
           "displayedSizeMb": 156,
-          "recordDownloadsAtCheck": 269800,
+          "recordDownloadsAtCheck": 276800,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-06-30",
           "maven": "curse.maven:verity-je-1591438:8346795"

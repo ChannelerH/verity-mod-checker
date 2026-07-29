@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T21:25:00+08:00</updated>
+  <updated>2026-07-29T21:40:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>verity-3.4.1.jar page refreshed for sandbox-result SERP context</title>
+    <id>https://veritymodchecker.online/updates/verity-3-4-1-jar-sandbox-context-2026-07-29-2140</id>
+    <link href="https://veritymodchecker.online/verity-3-4-1-jar/" rel="alternate" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8346795" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <published>2026-07-29T21:40:00+08:00</published>
+    <updated>2026-07-29T21:40:00+08:00</updated>
+    <summary>Refreshed /verity-3-4-1-jar/ after live Search Console showed the exact verity-3.4.1.jar query with 13 impressions and 1 click, while current public SERP sampling mixed the official CurseForge file page with third-party sandbox or malware-analysis results. The page now records CurseForge file 8346795 at 276.8K displayed file downloads, keeps Minecraft 1.21.1 NeoForge and 156.0 MB source facts, and adds a section explaining that a sandbox result is context rather than the publisher file page or a universal malware verdict. Homepage TDK was not changed.</summary>
+    <category term="java-file" />
+    <category term="source-refresh" />
+    <category term="sandbox-context" />
+  </entry>
   <entry>
     <title>Current source counters refreshed and install aliases hardened</title>
     <id>https://veritymodchecker.online/updates/source-counters-install-aliases-2026-07-29-2125</id>
