@@ -37,6 +37,7 @@ const htmlRoutes = new Set([
   "/verity-6-0-0-jar/",
   "/verity-6-0-1-jar/",
   "/verity-doesnt-respond/",
+  "/verity-be/",
   "/verity-je/",
   "/verity-exe/",
   "/verity-mod-lag-fix/",
@@ -151,20 +152,33 @@ export default {
       url.pathname.startsWith("/verity-bedrock/") ||
       url.pathname === "/verity-bedrock-mod" ||
       url.pathname.startsWith("/verity-bedrock-mod/") ||
-      url.pathname === "/verity-be" ||
-      url.pathname.startsWith("/verity-be/") ||
-      url.pathname === "/verity-be-download" ||
-      url.pathname.startsWith("/verity-be-download/") ||
-      url.pathname === "/verity-be-bedrock" ||
-      url.pathname.startsWith("/verity-be-bedrock/") ||
-      url.pathname === "/vertiy-be" ||
-      url.pathname.startsWith("/vertiy-be/") ||
       url.pathname === "/verity-mod-bedrock-download" ||
       url.pathname.startsWith("/verity-mod-bedrock-download/") ||
       url.pathname === "/verity-minecraft-bedrock" ||
       url.pathname.startsWith("/verity-minecraft-bedrock/")
     ) {
       url.pathname = "/bedrock/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-be-download" ||
+      url.pathname.startsWith("/verity-be-download/") ||
+      url.pathname === "/verity-be-bedrock" ||
+      url.pathname.startsWith("/verity-be-bedrock/") ||
+      url.pathname === "/verity-be-official" ||
+      url.pathname.startsWith("/verity-be-official/") ||
+      url.pathname === "/official-verity-be" ||
+      url.pathname.startsWith("/official-verity-be/") ||
+      url.pathname === "/verity-be-8506198" ||
+      url.pathname.startsWith("/verity-be-8506198/") ||
+      url.pathname === "/verity-be-1-1-0" ||
+      url.pathname.startsWith("/verity-be-1-1-0/") ||
+      url.pathname === "/vertiy-be" ||
+      url.pathname.startsWith("/vertiy-be/")
+    ) {
+      url.pathname = "/verity-be/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -32,6 +32,7 @@ ROUTES = [
     "/verity-6-0-0-jar/",
     "/verity-5-7-3-jar/",
     "/verity-3-4-1-jar/",
+    "/verity-be/",
     "/bedrock/",
     "/pocket-edition/",
     "/apk/",
@@ -198,6 +199,12 @@ with sync_playwright() as playwright:
         assert "8406293" in result_text
 
         page.locator("#sourceInput").fill("Verity (Stable) (1.1.0)-(26.3#).mcaddon")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity BE" in result_text
+        assert "8506198" in result_text
+
+        page.locator("#sourceInput").fill("verity be official")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity BE" in result_text

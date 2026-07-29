@@ -437,7 +437,15 @@ const knownProjects = [
       {
         status: "current",
         filename: "Verity (Stable) (1.1.0)-(26.3).mcaddon",
-        aliases: ["Verity (Stable) (1.1.0)-(26.3#).mcaddon"],
+        aliases: [
+          "Verity (Stable) (1.1.0)-(26.3#).mcaddon",
+          "verity be",
+          "verity be official",
+          "verity be download",
+          "verity be 1.1.0",
+          "verity be 8506198",
+          "vertiy be"
+        ],
         versionNumber: "1.1.0",
         sizeMb: 21.3,
         version: "Bedrock 26.30",

@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T11:06:08+08:00</updated>
+  <updated>2026-07-29T11:28:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE official route added after zero-click GSC review</title>
+    <id>https://veritymodchecker.online/updates/verity-be-official-route-2026-07-29-1128</id>
+    <link href="https://veritymodchecker.online/verity-be/" rel="alternate" />
+    <published>2026-07-29T11:28:30+08:00</published>
+    <updated>2026-07-29T11:28:30+08:00</updated>
+    <summary>Added a dedicated /verity-be/ route after Search Console showed the exact `verity be` query with 9 impressions, 0 clicks, and average position 4.1, while broader Bedrock pages were already competing with PnTMC, MCPE, and Java-intent results. The new page maps Verity BE (Official) to CurseForge Project ID 1574632, file record 8506198, Stable 1.1.0, Bedrock 26.30, 4,000,539 project downloads, and 177.9K displayed file downloads, then answers dots-only, missing dialogue, Beta APIs, cheats, debugger connect, PnTMC separation, and Java mixups. Homepage TDK was not changed.</summary>
+    <category term="bedrock" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>verity-5.7.3.jar official download route refreshed after zero-click GSC review</title>
     <id>https://veritymodchecker.online/updates/verity-573-official-download-route-2026-07-29-1106</id>

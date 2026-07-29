@@ -21,6 +21,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity JE branded download route: https://veritymodchecker.online/verity-je/
 - Java setup and troubleshooting route: https://veritymodchecker.online/java/
 - Real Verity Mod updated route: https://veritymodchecker.online/real-verity-mod-updated/
+- Verity BE official Bedrock route: https://veritymodchecker.online/verity-be/
 - VERITY.exe modpack route: https://veritymodchecker.online/verity-exe/
 - Verity Pack modpack route check: https://veritymodchecker.online/verity-pack/
 - Older Java 3.4.1 status route: https://veritymodchecker.online/verity-3-4-1-jar/
@@ -45,6 +46,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, free publisher-route guidance, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
 - Meaning route: separates `what is Verity`, `what is Verity Minecraft`, `who is Verity`, and `what is Verity Mod` into character, video/story, Java, Bedrock, Pocket Edition, VERITY.exe, Verity Pack, APK/app, and safe-download layers.
 - Broad Minecraft route: separates `minecraft verity mod`, `verity minecraft`, `minecraft verity`, and `verity mod for minecraft` from stale video links, old Bedrock rows, Java beta 404 pages, modpacks, app claims, and true current download records.
+- Verity BE official route: exact `verity be`, `verity be official`, `verity be download`, `vertiy be`, Project ID `1574632`, file record `8506198`, Bedrock 26.30, Beta APIs, dots-only replies, missing dialogue, debugger connect setup, and PnTMC separation.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
 - VERITY.exe / modpack route: separates the current CurseForge `VERITY.exe` modpack from standalone Java and Bedrock downloads, including Project ID `1585389`, Forge file record `8526843`, older visible NeoForge record `8385443`, and Groq/API-key/voice-chat caveats.
@@ -67,12 +69,13 @@ These URLs are intended for players, editors, and community maintainers who need
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
 - Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
 - Stable Java file route: https://veritymodchecker.online/verity-5-7-3-jar/
+- Exact Verity BE route: https://veritymodchecker.online/verity-be/
 - Current Java beta check: https://veritymodchecker.online/verity-6-0-1-jar/
 - Updated-intent explainer: https://veritymodchecker.online/real-verity-mod-updated/
 
 The updated-intent page is for searches like "real Verity Mod updated" where players are trying to reconcile new videos, Modrinth beta files, CurseForge Java records, Bedrock add-ons, and MCPEDL/PnTMC rows. It does not host downloads. It points readers back to first-party project records and explains which current route matches Java, Bedrock, MCPE, or video-driven instructions.
 
-The checker verifies identity signals against the public metadata recorded on July 29, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current release map. Stable Verity JE 5.7.3 is checked on CurseForge (`1591438` / `8461257`) and Modrinth (`on1Y0osD` / `yAt0wv1Z`); the observed Verity JE 6.0.1 and 6.0.0 beta records (`YLEoXe6t`, `5ech0sTo`) now return 404 and are treated as stale-link status records. Verity BE 1.1.0 is checked on CurseForge (`1574632` / `8506198`); PnTMC Verity 3.2.0 is checked on CurseForge (`1575941` / `8517480`, `8517478`, `8517473`), with old 2.1.0 records (`8327253`, `8327250`, `8327242`) separated from current downloads. The browser checker can compare a local Java JAR with Modrinth's published SHA-512 without uploading it. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on maintainer-controlled records instead of being mirrored by this site.
+The checker verifies identity signals against the public metadata recorded on July 29, 2026. The reusable snapshot is published at [`/data/verity-releases.json`](https://veritymodchecker.online/data/verity-releases.json), with route updates in [`/feed.xml`](https://veritymodchecker.online/feed.xml). The daily health job fails when that snapshot is more than 72 hours old or when the homepage, checker, download page, Java guide, and feed disagree about the current release map. Stable Verity JE 5.7.3 is checked on CurseForge (`1591438` / `8461257`) and Modrinth (`on1Y0osD` / `yAt0wv1Z`); the observed Verity JE 6.0.1 and 6.0.0 beta records (`YLEoXe6t`, `5ech0sTo`) now return 404 and are treated as stale-link status records. Verity BE 1.1.0 is checked on CurseForge (`1574632` / `8506198`) with 4,000,539 project downloads and 177.9K file downloads at the July 29 source check; PnTMC Verity 3.2.0 is checked on CurseForge (`1575941` / `8517480`, `8517478`, `8517473`), with old 2.1.0 records (`8327253`, `8327250`, `8327242`) separated from current downloads. The browser checker can compare a local Java JAR with Modrinth's published SHA-512 without uploading it. A filename, size, URL, or hash result is not a malware verdict. Downloads remain on maintainer-controlled records instead of being mirrored by this site.
 
 ## Local Preview
 
