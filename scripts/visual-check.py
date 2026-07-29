@@ -18,6 +18,7 @@ ROUTES = [
     "/updates/",
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
+    "/verity-souls/",
     "/source-map/",
     "/verity-dweller/",
     "/play/",
@@ -123,6 +124,13 @@ with sync_playwright() as playwright:
         assert "One-word replies" in ai_model_text
         assert "model-context problem" in ai_model_text
         assert "timheinrich2011/verity-3b" in ai_model_text
+
+        page.goto(f"{BASE_URL}/verity-souls/", wait_until="domcontentloaded")
+        souls_text = page.locator("main").inner_text()
+        assert "Verity Souls Mod Status" in souls_text
+        assert "No checked Project ID" in souls_text
+        assert "unconfirmed" in souls_text.lower()
+        assert page.locator('a[href="/data/verity-rumors.json"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
@@ -338,4 +346,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, and checksum branches")

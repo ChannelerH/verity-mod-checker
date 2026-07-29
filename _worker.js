@@ -38,6 +38,7 @@ const htmlRoutes = new Set([
   "/updates/",
   "/verity-mod-downloads/",
   "/verity-pack/",
+  "/verity-souls/",
   "/verity-groq-api-key/",
   "/verity-map/",
   "/verity-3-4-1-jar/",
@@ -76,6 +77,8 @@ const dataFiles = new Set([
   "/data/verity-app-claims.schema.json",
   "/data/verity-modpacks.json",
   "/data/verity-modpacks.schema.json",
+  "/data/verity-rumors.json",
+  "/data/verity-rumors.schema.json",
   "/data/verity-lookalikes.json",
   "/data/verity-lookalikes.schema.json",
   "/data/verity-releases.json",
@@ -264,6 +267,25 @@ export default {
       url.pathname.startsWith("/modrinth-verity-dweller/")
     ) {
       url.pathname = "/verity-dweller/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-souls-mod" ||
+      url.pathname.startsWith("/verity-souls-mod/") ||
+      url.pathname === "/verity-souls-download" ||
+      url.pathname.startsWith("/verity-souls-download/") ||
+      url.pathname === "/verity-souls-minecraft" ||
+      url.pathname.startsWith("/verity-souls-minecraft/") ||
+      url.pathname === "/is-verity-souls-real" ||
+      url.pathname.startsWith("/is-verity-souls-real/") ||
+      url.pathname === "/official-verity-souls" ||
+      url.pathname.startsWith("/official-verity-souls/") ||
+      url.pathname === "/what-is-verity-souls" ||
+      url.pathname.startsWith("/what-is-verity-souls/")
+    ) {
+      url.pathname = "/verity-souls/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -5,8 +5,22 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T01:56:00+08:00</updated>
+  <updated>2026-07-30T02:42:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Souls rumor-status route added for unconfirmed download searches</title>
+    <id>https://veritymodchecker.online/updates/verity-souls-rumor-status-2026-07-30-0242</id>
+    <link href="https://veritymodchecker.online/verity-souls/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-rumors.json" rel="related" />
+    <link href="https://veritymodchecker.online/what-happened/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <published>2026-07-30T02:42:00+08:00</published>
+    <updated>2026-07-30T02:42:00+08:00</updated>
+    <summary>Added /verity-souls/ after current public SERP sampling showed Verity Souls wording in Reddit discussion, Instagram snippets, Facebook video text, and a YouTube community-post snippet. The checked CurseForge thatmobyt profile currently shows visible Verity-related projects for Verity - Bedrock Edition, Verity BE, and Verity JE, but no checked CurseForge, Modrinth, MCPEDL, Project ID, file record, package type, or checksum was found for a Verity Souls download route. The new page and /data/verity-rumors.json tell users to treat Verity Souls as an unconfirmed name/status signal until a maintainer-controlled project page exists, and route searchers back to Verity JE, Bedrock, MCPE, VERITY.exe, and current download checks. Homepage title and description were not changed.</summary>
+    <category term="verity-souls" />
+    <category term="rumor-status" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>AI model route expanded for Verity JE one-word reply symptoms</title>
     <id>https://veritymodchecker.online/updates/ai-model-one-word-replies-2026-07-30-0156</id>

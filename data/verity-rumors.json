@@ -1,0 +1,70 @@
+{
+  "$schema": "https://veritymodchecker.online/data/verity-rumors.schema.json",
+  "schemaVersion": 1,
+  "checkedAt": "2026-07-30T02:42:00+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/verity-souls/",
+  "method": "Public search-result and source-page comparison. Rumor entries record observed discussion signals and authoritative-route checks; they are not download confirmations and not proof of maintainer endorsement.",
+  "rumors": [
+    {
+      "name": "Verity Souls",
+      "canonicalGuideUrl": "https://veritymodchecker.online/verity-souls/",
+      "status": "unconfirmed-name-rumor-no-official-download-route-found",
+      "observedPhrases": [
+        "Verity Souls",
+        "Verity Souls mod",
+        "Verity Souls Minecraft",
+        "official Verity Souls",
+        "Verity mod made by ThatMob and voice actor"
+      ],
+      "whatIsConfirmed": [
+        "Current public SERP sampling shows Verity Souls wording in Reddit discussion, Instagram reels, Facebook video text, and a YouTube community-post snippet.",
+        "Current public discussion connects the phrase with a possible future Verity-related Minecraft project.",
+        "The checked CurseForge thatmobyt profile currently lists three visible Verity-related projects: Verity - Bedrock Edition, Verity BE, and Verity JE."
+      ],
+      "whatIsNotConfirmed": [
+        "No checked CurseForge, Modrinth, MCPEDL, or official project page was found with the exact Verity Souls title.",
+        "No official Project ID, file record, version ID, package type, or checksum was found for a Verity Souls download route.",
+        "Social posts and Reddit comments are discussion signals, not a safe download source."
+      ],
+      "authoritativeChecks": [
+        {
+          "sourceName": "CurseForge thatmobyt projects profile",
+          "url": "https://www.curseforge.com/members/thatmobyt/projects",
+          "result": "Visible profile check showed three projects and did not show a Verity Souls project title at check time."
+        },
+        {
+          "sourceName": "CurseForge Verity JE",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
+          "result": "Current official Java adaptation route remains Verity JE, not Verity Souls."
+        }
+      ],
+      "publicDiscussionSignals": [
+        {
+          "sourceName": "Reddit r/HorrorMinecraft discussion",
+          "url": "https://www.reddit.com/r/HorrorMinecraft/comments/1u09yu3/is_anyone_able_to_create_the_verity_horror_mod_or/",
+          "signal": "Thread includes recent player comments about a possible future Verity Souls name and many download-confusion comments."
+        },
+        {
+          "sourceName": "Instagram Verity Souls snippets",
+          "url": "https://www.instagram.com/reel/Da3FWyYSGKv/",
+          "signal": "Public search snippet repeats the claim that the mod may be called Verity Souls."
+        },
+        {
+          "sourceName": "Facebook BlastNit video snippet",
+          "url": "https://www.facebook.com/BlastNit/videos/making-verity-a-real-mod-final-part-blastnit-fyp-horror-verity-minecraft/992726406876433/",
+          "signal": "Public search snippet references Verity Souls in a making-a-real-mod context."
+        },
+        {
+          "sourceName": "YouTube community-post snippet",
+          "url": "https://www.youtube.com/post/UgkxXtABwDcZTUs9a4qYC0ZbSXL9_mUJYRQy",
+          "signal": "Public search snippet says a mod called Verity Souls is coming out."
+        }
+      ],
+      "safeUserAction": [
+        "Do not download a file only because a video or comment says Verity Souls.",
+        "Wait for a maintainer-controlled project page with owner, Project ID, file record, version, package type, and setup notes.",
+        "Use Verity JE, Verity BE, PnTMC Bedrock, MCPE, VERITY.exe, or Remastered routes when the source page names those existing projects instead."
+      ]
+    }
+  ]
+}

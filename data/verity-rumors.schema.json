@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-rumors.schema.json",
+  "title": "Verity rumor and unreleased-name status snapshot",
+  "type": "object",
+  "required": ["schemaVersion", "checkedAt", "canonicalUrl", "rumors"],
+  "properties": {
+    "schemaVersion": { "type": "integer" },
+    "checkedAt": { "type": "string" },
+    "canonicalUrl": { "type": "string", "format": "uri" },
+    "method": { "type": "string" },
+    "rumors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status", "whatIsConfirmed", "whatIsNotConfirmed"],
+        "properties": {
+          "name": { "type": "string" },
+          "canonicalGuideUrl": { "type": "string", "format": "uri" },
+          "status": { "type": "string" },
+          "observedPhrases": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "whatIsConfirmed": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "whatIsNotConfirmed": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "authoritativeChecks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["sourceName", "url", "result"],
+              "properties": {
+                "sourceName": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "result": { "type": "string" }
+              }
+            }
+          },
+          "publicDiscussionSignals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["sourceName", "url", "signal"],
+              "properties": {
+                "sourceName": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "signal": { "type": "string" }
+              }
+            }
+          },
+          "safeUserAction": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
