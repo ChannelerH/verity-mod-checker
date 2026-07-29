@@ -232,7 +232,17 @@ export default {
       url.pathname === "/curseforge-verity" ||
       url.pathname.startsWith("/curseforge-verity/") ||
       url.pathname === "/curseforge-verity-mod" ||
-      url.pathname.startsWith("/curseforge-verity-mod/")
+      url.pathname.startsWith("/curseforge-verity-mod/") ||
+      url.pathname === "/curseforge-verity-mod-download" ||
+      url.pathname.startsWith("/curseforge-verity-mod-download/") ||
+      url.pathname === "/curseforge-verity-download" ||
+      url.pathname.startsWith("/curseforge-verity-download/") ||
+      url.pathname === "/verity-curseforge" ||
+      url.pathname.startsWith("/verity-curseforge/") ||
+      url.pathname === "/verity-mod-curseforge" ||
+      url.pathname.startsWith("/verity-mod-curseforge/") ||
+      url.pathname === "/verity-mod-curseforge-download" ||
+      url.pathname.startsWith("/verity-mod-curseforge-download/")
     ) {
       url.pathname = "/curseforge/";
       url.hash = "";

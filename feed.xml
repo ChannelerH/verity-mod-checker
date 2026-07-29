@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T06:45:00+08:00</updated>
+  <updated>2026-07-29T09:08:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>CurseForge Verity Mod download route guide expanded for search-result confusion</title>
+    <id>https://veritymodchecker.online/updates/curseforge-verity-mod-route-refresh-2026-07-29-0908</id>
+    <link href="https://veritymodchecker.online/curseforge/" rel="alternate" />
+    <published>2026-07-29T09:08:00+08:00</published>
+    <updated>2026-07-29T09:08:00+08:00</updated>
+    <summary>Expanded the CurseForge route after the original Google Trends export showed `curseforge verity` and `curseforge verity mod` as rising searches and current official checks showed SERP confusion across Verity JE, Verity BE, PnTMC Bedrock, Pocket Edition, VERITY.exe, and Verity Pack style modpacks. The page now leads with CurseForge Verity Mod download intent, separates Minecraft Mods, Minecraft Bedrock Addons, and Minecraft Modpacks categories, adds VERITY.exe Project ID 1585389 and record 8526843 as a modpack warning, adds Pocket Edition record 8406293, and keeps homepage TDK unchanged.</summary>
+    <category term="curseforge" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity Groq API key setup route added for AI provider intent</title>
     <id>https://veritymodchecker.online/updates/verity-groq-api-key-route-2026-07-29-0645</id>
