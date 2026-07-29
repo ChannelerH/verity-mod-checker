@@ -5,8 +5,22 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T02:49:00+08:00</updated>
+  <updated>2026-07-30T03:52:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity monster form route added for Body Overhaul and modpack phase searches</title>
+    <id>https://veritymodchecker.online/updates/verity-monster-form-body-overhaul-2026-07-30-0352</id>
+    <link href="https://veritymodchecker.online/verity-monster-form/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-lookalikes.json" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <published>2026-07-30T03:52:00+08:00</published>
+    <updated>2026-07-30T03:52:00+08:00</updated>
+    <summary>Added /verity-monster-form/ after current SERP and player-question review showed demand around monster form, scary body, all phases, Body Overhaul, Verity May Be, and VerityCraft rather than only generic download intent. The page separates Verity Body Overhaul (CurseForge Project ID 1629639, file 8530009, requires Verity JE), Verity May Be (Project ID 1583253, file 8365755), VerityCraft (Project ID 1600389), Horror Ultimate Selection, Verity World, Endless Horror Experience, Verity + Factories, Bedrock missing-monster setup, and the separate veritycf fan project (Project ID 1600657, file 8503252). The browser checker now recognizes these URLs, Project IDs, and exact file names; the source map builder now reads modpack and lookalike JSON dynamically instead of stopping at the old fixed 21 rows. Homepage title and description were not changed. GSC and GA4 API reads remained blocked by disabled Google APIs, so no new search-performance numbers are claimed.</summary>
+    <category term="monster-form" />
+    <category term="body-overhaul" />
+    <category term="modpack-route" />
+  </entry>
   <entry>
     <title>Verity Mod Wiki hub added and source counters refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-mod-wiki-source-refresh-2026-07-30-0249</id>

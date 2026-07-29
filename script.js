@@ -893,6 +893,254 @@ const knownProjects = [
     ]
   },
   {
+    name: "Verity May Be",
+    edition: "Java modpack",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1583253",
+        slugs: ["/minecraft/modpacks/verity-may-be"],
+        link: "https://www.curseforge.com/minecraft/modpacks/verity-may-be"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-monster-form-modpack-route",
+        filename: "Verity May Be 1.3(The Brand New Lurkers).zip",
+        aliases: ["Verity May Be", "verity may be", "Brand New Lurkers", "yellow ball monster form"],
+        versionNumber: "1.3",
+        sizeMb: null,
+        version: "Minecraft 1.21.1 / 1.20.1 · NeoForge / Forge modpack",
+        published: "July 3, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8365755",
+            link: "https://www.curseforge.com/minecraft/modpacks/verity-may-be/files/8365755"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "VerityCraft",
+    edition: "Java modpack",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1600389",
+        slugs: ["/minecraft/modpacks/veritycraft"],
+        link: "https://www.curseforge.com/minecraft/modpacks/veritycraft"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-monster-form-modpack-route",
+        filename: "VerityCraft - MC 1.20.1 - 4.0.0",
+        aliases: ["VerityCraft", "verity craft"],
+        versionNumber: "4.0.0",
+        sizeMb: null,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 28, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "files",
+            link: "/verity-monster-form/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Horror Ultimate Selection",
+    edition: "Java modpack",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1370274",
+        slugs: ["/minecraft/modpacks/horror-ultimate-selection"],
+        link: "https://www.curseforge.com/minecraft/modpacks/horror-ultimate-selection"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-horror-modpack-with-verity-route",
+        filename: "Horror Ultimate Selection MC 1.20.1-7.9.0",
+        aliases: ["Horror Ultimate Selection", "horror ultimate verity"],
+        versionNumber: "7.9.0",
+        sizeMb: null,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 28, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "files",
+            link: "/verity-monster-form/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Verity World - AI Horror Adventure with Verity",
+    edition: "Java modpack",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1598871",
+        slugs: ["/minecraft/modpacks/verity-falsity"],
+        link: "https://www.curseforge.com/minecraft/modpacks/verity-falsity"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-ai-horror-world-modpack-route",
+        filename: "VerityWorld MC 1.20.1-1.3.0",
+        aliases: ["Verity World", "VerityWorld", "AI Horror Adventure with Verity"],
+        versionNumber: "1.3.0",
+        sizeMb: null,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 20, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8473476",
+            link: "https://www.curseforge.com/minecraft/modpacks/verity-falsity/files/8473476"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Verity Endless Horror Experience",
+    edition: "Java modpack",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1611801",
+        slugs: ["/minecraft/modpacks/verity-je-horror-experience"],
+        link: "https://www.curseforge.com/minecraft/modpacks/verity-je-horror-experience"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-verity-je-horror-modpack-route",
+        filename: "VERITY JE PACK.zip",
+        aliases: ["Verity Endless Horror Experience", "VERITY JE PACK"],
+        versionNumber: "July 2026 profile",
+        sizeMb: 0.5,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 15, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8440180",
+            link: "https://www.curseforge.com/minecraft/modpacks/verity-je-horror-experience/files/8440180"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Verity + Factories",
+    edition: "Java modpack",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1612710",
+        slugs: ["/minecraft/modpacks/verityfactory"],
+        link: "https://www.curseforge.com/minecraft/modpacks/verityfactory"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-create-and-verity-modpack-route",
+        filename: "Verity And Create (Official Verity Mod) v0.4 BETA.zip",
+        aliases: ["Verity + Factories", "Verity And Create", "verityfactory"],
+        versionNumber: "v0.4 BETA",
+        sizeMb: 0.38,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 20, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8473142",
+            link: "https://www.curseforge.com/minecraft/modpacks/verityfactory/files/8473142"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Verity Body Overhaul",
+    edition: "Similar-name route",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1629639",
+        slugs: ["/minecraft/mc-mods/verity-body-overhaul"],
+        link: "https://www.curseforge.com/minecraft/mc-mods/verity-body-overhaul"
+      }
+    ],
+    releases: [
+      {
+        status: "visual-add-on-requires-verity-je",
+        filename: "Verity Body Overhaul.jar",
+        aliases: ["Verity Body Overhaul", "verity body overhaul", "body overhaul", "monster body overhaul"],
+        versionNumber: "1.0",
+        sizeMb: 3.4,
+        version: "Minecraft 1.20.1 · Forge add-on",
+        published: "July 28, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8530009",
+            link: "https://www.curseforge.com/minecraft/mc-mods/verity-body-overhaul/files/8530009"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "verity.jar fan project",
+    edition: "Similar-name route",
+    route: "/verity-monster-form/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1600657",
+        slugs: ["/minecraft/mc-mods/veritycf"],
+        link: "https://www.curseforge.com/minecraft/mc-mods/veritycf"
+      }
+    ],
+    releases: [
+      {
+        status: "fan-project-not-associated-with-official-verity-team",
+        filename: "VerityV1.1.0.jar",
+        aliases: ["VerityV1.1.0.jar", "veritycf", "Lucas_the_Cool Verity", "human responses verity"],
+        versionNumber: "1.1.0",
+        sizeMb: 14.4,
+        version: "Minecraft 1.21.1 · NeoForge",
+        published: "July 25, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8503252",
+            link: "https://www.curseforge.com/minecraft/mc-mods/veritycf/files/8503252"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "Verity Dweller",
     edition: "Similar-name route",
     route: "/verity-dweller/",
@@ -1054,6 +1302,7 @@ function modpackRoute(project) {
 
 function modpackRouteLabel(project) {
   if (project.route === "/falsity-mod/") return "Open Falsity route check";
+  if (project.route === "/verity-monster-form/") return "Open monster-form route check";
   return project.route === "/verity-exe/" ? "Open VERITY.exe route check" : "Open Verity Pack route check";
 }
 
@@ -1086,6 +1335,13 @@ function modpackChecks(project) {
       "If you need the standalone FALSITY [SMILEY] mod or Verity JE file, open the source-check page first."
     ];
   }
+  if (project.route === "/verity-monster-form/") {
+    return [
+      "The project path matches a checked monster-form or horror-profile route.",
+      "Use it only when you intentionally want that body, phase, or full modpack profile.",
+      "If you need the standalone Java or Bedrock file, open Verity JE or the Bedrock route instead."
+    ];
+  }
   return [
     "The project path matches a Verity Pack-style modpack result.",
     "Use the modpack only when you intentionally want that prepared Forge profile.",
@@ -1106,6 +1362,9 @@ function modpackSummary(project, projectId) {
   if (project.route === "/falsity-mod/") {
     return `This URL matches the checked ${project.name} CurseForge modpack route, Project ID ${projectId}. Treat it as a profile route for Verity or Falsity searches, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, or Bedrock add-on.`;
   }
+  if (project.route === "/verity-monster-form/") {
+    return `This URL matches the checked ${project.name} monster-form or horror-profile route, Project ID ${projectId}. Treat it as a separate profile, body, or phase route rather than the default standalone Verity JE Java file, Verity BE add-on, or PnTMC Bedrock route.`;
+  }
   return `This URL matches a checked modpack route for ${project.name}, Project ID ${projectId}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`;
 }
 
@@ -1118,10 +1377,25 @@ function similarNameRoute(project) {
 }
 
 function similarNameRouteLabel(project) {
+  if (project.route === "/verity-monster-form/") return "Open monster-form route check";
   return project.name === "Verity Paper plugin" ? "Open similar-name route check" : "Open Verity Dweller route check";
 }
 
 function similarNameChecks(project) {
+  if (project.name === "Verity Body Overhaul") {
+    return [
+      "The CurseForge project path and Project ID 1629639 match Verity Body Overhaul.",
+      "This is a visual add-on that requires Verity JE; it is not the standalone Verity JE file.",
+      "Use the monster-form route to check body add-on order, modpack phase confusion, and Bedrock setup differences."
+    ];
+  }
+  if (project.name === "verity.jar fan project") {
+    return [
+      "The CurseForge project path and Project ID 1600657 match a separate fan project.",
+      "The source page says it is not associated with the official Verity Team.",
+      "Use this only when the player specifically selected the veritycf page or VerityV1.1.0.jar record."
+    ];
+  }
   if (project.name === "Verity Dweller") {
     return [
       "The Modrinth project path and Project ID eZW2ZX0U match Verity Dweller.",
@@ -1151,6 +1425,12 @@ function similarNameChecks(project) {
 }
 
 function similarNameSummary(project, projectId) {
+  if (project.name === "Verity Body Overhaul") {
+    return `This URL matches the checked Verity Body Overhaul CurseForge route, Project ID ${projectId || "1629639"}. The July 30 source check maps the current file to record 8530009 and treats it as a visual add-on for Verity JE on Forge 1.20.1, not as the main Verity Mod download.`;
+  }
+  if (project.name === "verity.jar fan project") {
+    return `This URL matches the checked verity.jar fan-project route, Project ID ${projectId || "1600657"}. The July 30 source check maps it to file record 8503252 and keeps it separate from Verity JE, Verity BE, and PnTMC.`;
+  }
   if (project.name === "Verity Dweller") {
     return `This URL matches the checked Verity Dweller Modrinth route, Project ID ${projectId || "eZW2ZX0U"}. The July 30 source check maps its latest file to verity-1.0.0.jar for Fabric, so it should be handled as a similar-name project rather than the current Verity JE or Bedrock download.`;
   }
@@ -1528,7 +1808,7 @@ function inspectTextSource(rawValue) {
           state: "caution",
           verdict: "Similar-name route",
           risk: "Not the main Verity Mod",
-          title: `${sourceMatch.project.name} Modrinth route recognized`,
+          title: `${sourceMatch.project.name} ${sourceMatch.source.platform} route recognized`,
           summary: similarNameSummary(sourceMatch.project, sourceMatch.source.id),
           source: host,
           package: type === "Not identified" ? matchedPackageType : type,

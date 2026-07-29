@@ -1,9 +1,9 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-lookalikes.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T01:10:00+08:00",
+  "checkedAt": "2026-07-30T03:44:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-dweller/",
-  "method": "Manual comparison against public Modrinth project APIs and version APIs for similar-name Verity results surfaced in current SERP sampling. These records explain routing confusion; they are not endorsements, safety verdicts, or mirrors.",
+  "method": "Manual comparison against public Modrinth project APIs, Modrinth version APIs, and CurseForge project/file pages for similar-name, add-on, and monster-form Verity results surfaced in current SERP sampling. These records explain routing confusion; they are not endorsements, safety verdicts, or mirrors.",
   "projects": [
     {
       "name": "Verity Dweller",
@@ -70,7 +70,47 @@
       "publishedAt": "2026-01-20",
       "lastUpdate": "2026-01-20",
       "sourceNote": "A Paper server management plugin with the same word in the title. It is not the Minecraft horror Verity Mod download, not Verity JE, and not a Bedrock add-on."
+    },
+    {
+      "name": "Verity Body Overhaul",
+      "host": "CurseForge",
+      "owner": "VoidStriker404",
+      "projectId": "1629639",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-body-overhaul",
+      "status": "visual-add-on-requires-verity-je",
+      "projectType": "mod",
+      "displayedDownloadsAtCheck": 576,
+      "displayedDownloadsApproximate": false,
+      "packageType": "jar",
+      "minecraftVersion": "1.20.1",
+      "loader": "Forge",
+      "mainFile": "Verity Body Overhaul.jar",
+      "mainFileRecord": "8530009",
+      "mainFileUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-body-overhaul/files/8530009",
+      "mainFileDownloadsAtCheck": 576,
+      "lastUpdate": "2026-07-28",
+      "sourceNote": "A visual add-on route for Verity JE that replaces the Verity Demon body appearance while keeping the original gameplay, attacks, sounds, and behavior. It requires Minecraft 1.20.1, Forge, and Verity JE, so it is not a replacement for the standalone Verity Mod file."
+    },
+    {
+      "name": "verity.jar",
+      "host": "CurseForge",
+      "owner": "Lucas_the_Cool",
+      "projectId": "1600657",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/veritycf",
+      "status": "fan-project-not-associated-with-official-verity-team",
+      "projectType": "mod",
+      "displayedDownloadsAtCheck": 3514,
+      "displayedDownloadsApproximate": false,
+      "packageType": "jar",
+      "minecraftVersion": "1.21.1",
+      "loader": "NeoForge",
+      "mainFile": "VerityV1.1.0.jar",
+      "mainFileRecord": "8503252",
+      "mainFileUrl": "https://www.curseforge.com/minecraft/mc-mods/veritycf/files/8503252",
+      "mainFileDownloadsAtCheck": 1000,
+      "lastUpdate": "2026-07-25",
+      "sourceNote": "A separate fan project whose source text says it is not associated with the official Verity Team and replaces AI responses with human responses. Treat it as a separate route, not as Verity JE, Verity BE, or PnTMC."
     }
   ],
-  "routePolicy": "Use /verity-dweller/ when a search result says Verity Dweller, Horrorland with Verity, or a generic Modrinth Verity plugin and the player needs to know whether it is the same as Verity Mod. Use /download/ for the current standalone Verity JE, Verity BE, PnTMC, and Pocket Edition routes."
+  "routePolicy": "Use /verity-dweller/ when a search result says Verity Dweller, Horrorland with Verity, or a generic Modrinth Verity plugin and the player needs to know whether it is the same as Verity Mod. Use /verity-monster-form/ when the result names Verity Body Overhaul, monster form, Verity May Be, or another route that changes or packages the monster-form experience. Use /download/ for the current standalone Verity JE, Verity BE, PnTMC, and Pocket Edition routes."
 }

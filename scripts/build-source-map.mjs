@@ -32,18 +32,6 @@ function alternateByHost(project, host) {
   return source;
 }
 
-function modpackByProjectId(projectId) {
-  const modpack = modpacks.modpacks.find((entry) => entry.projectId === projectId);
-  if (!modpack) throw new Error(`Missing modpack project: ${projectId}`);
-  return modpack;
-}
-
-function lookalikeByProjectId(projectId) {
-  const project = lookalikes.projects.find((entry) => entry.projectId === projectId);
-  if (!project) throw new Error(`Missing similar-name project: ${projectId}`);
-  return project;
-}
-
 const java = projectByName("Verity JE");
 const javaStable = releaseByStatus(java, "current");
 const javaLegacy = releaseByRecord(java, 8346795);
@@ -56,15 +44,43 @@ const verityBeCurrent = releaseByStatus(verityBe, "current");
 const pntmc = projectByName("Verity - Bedrock Edition");
 const pocket = projectByName("Verity Pocket Edition (Be)");
 const pocketCurrent = releaseByStatus(pocket, "current");
-const exe = modpackByProjectId(1585389);
-const remasteredExe = modpackByProjectId("L5qUPsXS");
-const verityPack = modpackByProjectId(1583377);
-const sarelsanaPack = modpackByProjectId(1587394);
-const realisticPack = modpackByProjectId(1596649);
-const survivePack = modpackByProjectId(1583260);
-const verityDweller = lookalikeByProjectId("eZW2ZX0U");
-const horrorlandPack = lookalikeByProjectId("mJcQB7OR");
-const verityPaperPlugin = lookalikeByProjectId("DYiZP3fM");
+
+function routeIdSegment(value) {
+  return String(value).replace(/[^A-Za-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function modpackGuideUrl(item) {
+  if (item.name === "VERITY.exe" || item.name === "VERITY.exe Remastered") return `${site}/verity-exe/`;
+  if (item.name === "Survive from VERITY or FALSITY") return `${site}/falsity-mod/`;
+  if (
+    [
+      "Verity May Be",
+      "VerityCraft",
+      "Horror Ultimate Selection",
+      "Verity World - AI Horror Adventure with Verity",
+      "Verity Endless Horror Experience",
+      "Verity + Factories"
+    ].includes(item.name)
+  ) {
+    return `${site}/verity-monster-form/`;
+  }
+  return `${site}/verity-pack/`;
+}
+
+function modpackRecommendedUse(item) {
+  if (item.name === "VERITY.exe") return "Use only when the player intentionally wants the VERITY.exe modpack profile.";
+  if (item.name === "VERITY.exe Remastered") return "Use only when the player intentionally selected the Modrinth VERITY.exe Remastered MRPACK route.";
+  if (item.name === "Survive from VERITY or FALSITY") return "Use when the player intentionally selected the separate Verity or Falsity modpack profile.";
+  if (modpackGuideUrl(item).endsWith("/verity-monster-form/")) {
+    return "Use when the player intentionally wants a monster-form or horror-profile route rather than the standalone Verity JE or Bedrock file.";
+  }
+  return "Use only when the player intentionally selected this separate modpack result.";
+}
+
+function lookalikeGuideUrl(item) {
+  if (item.name === "Verity Body Overhaul" || item.name === "verity.jar") return `${site}/verity-monster-form/`;
+  return `${site}/verity-dweller/`;
+}
 
 const records = [
   {
@@ -254,15 +270,8 @@ const records = [
     caution: "Do not confuse this with Verity BE or PnTMC Bedrock.",
     localGuideUrl: `${site}/pocket-edition/`
   },
-  ...[
-    [exe, "current-modpack-route", `${site}/verity-exe/`],
-    [remasteredExe, "separate-modrinth-remastered-modpack-route", `${site}/verity-exe/`],
-    [verityPack, "modpack-does-not-contain-standalone-file", `${site}/verity-pack/`],
-    [sarelsanaPack, "separate-modpack-route", `${site}/verity-pack/`],
-    [realisticPack, "separate-realistic-modpack-route", `${site}/verity-pack/`],
-    [survivePack, "separate-verity-falsity-modpack-route", `${site}/verity-pack/`]
-  ].map(([item, status, localGuideUrl]) => ({
-    routeId: `modpack-${item.projectId}`,
+  ...modpacks.modpacks.map((item) => ({
+    routeId: `modpack-${routeIdSegment(item.projectId)}`,
     routeName: item.name,
     edition: "Modpack",
     host: item.host || "CurseForge",
@@ -279,17 +288,13 @@ const records = [
     publishedDate: item.lastUpdate || "",
     fileSizeMb: item.mainFileSizeBytes ? Number((item.mainFileSizeBytes / 1024 / 1024).toFixed(2)) : "",
     fileDownloadsAtCheck: item.mainFileDownloadsAtCheck || "",
-    status,
-    recommendedUse: item.name === "VERITY.exe" ? "Use only when the player intentionally wants the VERITY.exe modpack profile." : item.name === "VERITY.exe Remastered" ? "Use only when the player intentionally selected the Modrinth VERITY.exe Remastered MRPACK route." : "Use only when the player intentionally selected this separate modpack result.",
+    status: item.status,
+    recommendedUse: modpackRecommendedUse(item),
     caution: item.sourceNote,
-    localGuideUrl
+    localGuideUrl: modpackGuideUrl(item)
   })),
-  ...[
-    [verityDweller, `${site}/verity-dweller/`],
-    [horrorlandPack, `${site}/verity-dweller/`],
-    [verityPaperPlugin, `${site}/verity-dweller/`]
-  ].map(([item, localGuideUrl]) => ({
-    routeId: `lookalike-${item.projectId}`,
+  ...lookalikes.projects.map((item) => ({
+    routeId: `lookalike-${routeIdSegment(item.projectId)}`,
     routeName: item.name,
     edition: item.projectType === "modpack" ? "Modpack" : "Similar-name project",
     host: item.host,
@@ -309,7 +314,7 @@ const records = [
     status: item.status,
     recommendedUse: "Use only when the player intentionally selected this similar-name result and needs to know whether it is the same as the current Verity Mod.",
     caution: item.sourceNote,
-    localGuideUrl
+    localGuideUrl: lookalikeGuideUrl(item)
   }))
 ];
 

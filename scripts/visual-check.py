@@ -23,6 +23,7 @@ ROUTES = [
     "/verity-1-0-0-jar/",
     "/source-map/",
     "/verity-dweller/",
+    "/verity-monster-form/",
     "/play/",
     "/routes/",
     "/server/",
@@ -116,10 +117,13 @@ with sync_playwright() as playwright:
         assert "VERITY.exe" in source_map_text
         assert "VERITY.exe Remastered" in source_map_text
         assert "Verity Dweller" in source_map_text
+        assert "Verity Body Overhaul" in source_map_text
+        assert "Verity May Be" in source_map_text
+        assert "VerityCraft" in source_map_text
         assert "stale-beta-endpoint-404" in source_map_text
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
-        assert page.locator("tbody tr").count() == 21
+        assert page.locator("tbody tr").count() == 29
 
         page.goto(f"{BASE_URL}/verity-mod-wiki/", wait_until="domcontentloaded")
         wiki_text = page.locator("main").inner_text()
@@ -127,10 +131,12 @@ with sync_playwright() as playwright:
         assert "Java JE #8461257" in wiki_text
         assert "Bedrock BE #8506198" in wiki_text
         assert "PnTMC #8517480" in wiki_text
+        assert "Monster form" in wiki_text
         assert page.locator('a[href="/download/"]').count() >= 1
         assert page.locator('a[href="/updates/"]').count() >= 1
         assert page.locator('a[href="/creators/"]').count() >= 1
         assert page.locator('a[href="/source-map/"]').count() >= 1
+        assert page.locator('a[href="/verity-monster-form/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/ai-model/", wait_until="domcontentloaded")
         ai_model_text = page.locator("main").inner_text()
@@ -163,7 +169,23 @@ with sync_playwright() as playwright:
         assert "Verity Dweller" in dweller_text
         assert "eZW2ZX0U" in dweller_text
         assert "Horrorland" in dweller_text
+        assert "Verity Body Overhaul" in dweller_text
+        assert "1629639" in dweller_text
         assert page.locator('a[href="/data/verity-lookalikes.json"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/verity-monster-form/", wait_until="domcontentloaded")
+        monster_text = page.locator("main").inner_text()
+        assert "Verity Monster Form Route Check" in monster_text
+        assert "Verity Body Overhaul" in monster_text
+        assert "1629639" in monster_text
+        assert "8530009" in monster_text
+        assert "Verity May Be" in monster_text
+        assert "1583253" in monster_text
+        assert "VerityCraft" in monster_text
+        assert page.locator('a[href="/verity-je/"]').count() >= 1
+        assert page.locator('a[href="/verity-pack/"]').count() >= 1
+        assert page.locator('a[href="/not-working/"]').count() >= 1
+        assert page.locator('a[href="/source-map/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/play/", wait_until="domcontentloaded")
         page.locator("#playEdition").select_option("bedrock")
@@ -297,6 +319,29 @@ with sync_playwright() as playwright:
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity Dweller" in result_text
         assert "not the main verity mod" in result_text.lower()
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/mc-mods/verity-body-overhaul/files/8530009")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity Body Overhaul" in result_text
+        assert "1629639" in result_text
+        assert "visual add-on" in result_text.lower()
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-monster-form/"
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-may-be/files/8365755")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity May Be" in result_text
+        assert "1583253" in result_text
+        assert "monster-form" in result_text.lower() or "horror-profile" in result_text.lower()
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-monster-form/"
+
+        page.locator("#sourceInput").fill("VerityV1.1.0.jar")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "verity.jar fan project" in result_text
+        assert "1600657" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-monster-form/"
 
         page.locator("#sourceInput").fill("Horrorland with Verity - MC 1.20.1 9.3.0.mrpack")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")

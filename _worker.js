@@ -49,6 +49,7 @@ const htmlRoutes = new Set([
   "/verity-6-0-1-jar/",
   "/verity-doesnt-respond/",
   "/verity-dweller/",
+  "/verity-monster-form/",
   "/verity-be/",
   "/verity-je/",
   "/verity-exe/",
@@ -271,6 +272,27 @@ export default {
       url.pathname.startsWith("/modrinth-verity-dweller/")
     ) {
       url.pathname = "/verity-dweller/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/monster-form" ||
+      url.pathname.startsWith("/monster-form/") ||
+      url.pathname === "/verity-monster" ||
+      url.pathname.startsWith("/verity-monster/") ||
+      url.pathname === "/verity-mod-monster-form" ||
+      url.pathname.startsWith("/verity-mod-monster-form/") ||
+      url.pathname === "/verity-all-phases" ||
+      url.pathname.startsWith("/verity-all-phases/") ||
+      url.pathname === "/verity-body-overhaul" ||
+      url.pathname.startsWith("/verity-body-overhaul/") ||
+      url.pathname === "/verity-may-be" ||
+      url.pathname.startsWith("/verity-may-be/") ||
+      url.pathname === "/veritycraft" ||
+      url.pathname.startsWith("/veritycraft/")
+    ) {
+      url.pathname = "/verity-monster-form/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
