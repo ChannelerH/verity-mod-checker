@@ -504,7 +504,31 @@ export default {
       url.pathname === "/verity-5.7.3-jar" ||
       url.pathname.startsWith("/verity-5.7.3-jar/") ||
       url.pathname === "/verity-573-jar" ||
-      url.pathname.startsWith("/verity-573-jar/")
+      url.pathname.startsWith("/verity-573-jar/") ||
+      url.pathname === "/verity.jar" ||
+      url.pathname.startsWith("/verity.jar/") ||
+      url.pathname === "/verity-jar" ||
+      url.pathname.startsWith("/verity-jar/") ||
+      url.pathname === "/verity-java-download" ||
+      url.pathname.startsWith("/verity-java-download/") ||
+      url.pathname === "/verity-download-java" ||
+      url.pathname.startsWith("/verity-download-java/") ||
+      url.pathname === "/verity-mod-java-download-free" ||
+      url.pathname.startsWith("/verity-mod-java-download-free/") ||
+      url.pathname === "/verity-mod-minecraft-java-download" ||
+      url.pathname.startsWith("/verity-mod-minecraft-java-download/") ||
+      url.pathname === "/mod-verity-1-20-1" ||
+      url.pathname.startsWith("/mod-verity-1-20-1/") ||
+      url.pathname === "/verity-mod-1-20-1" ||
+      url.pathname.startsWith("/verity-mod-1-20-1/") ||
+      url.pathname === "/verity-mod-1.20.1" ||
+      url.pathname.startsWith("/verity-mod-1.20.1/") ||
+      url.pathname === "/forge-verity" ||
+      url.pathname.startsWith("/forge-verity/") ||
+      url.pathname === "/verity-forge" ||
+      url.pathname.startsWith("/verity-forge/") ||
+      url.pathname === "/verity-je-mod-download" ||
+      url.pathname.startsWith("/verity-je-mod-download/")
     ) {
       url.pathname = "/verity-5-7-3-jar/";
       url.hash = "";

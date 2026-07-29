@@ -168,6 +168,13 @@ with sync_playwright() as playwright:
         assert "Verity JE" in result_text
         assert "8461257" in result_text
 
+        page.locator("#sourceInput").fill("verity.jar")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity JE" in result_text
+        assert "8461257" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/files/8461257")
+
         page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/5.7.3")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()

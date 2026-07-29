@@ -367,6 +367,23 @@ const knownProjects = [
       {
         status: "stable-current",
         filename: "verity-5.7.3.jar",
+        aliases: [
+          "verity 5.7.3",
+          "verity 5.7.3 jar",
+          "verity.jar",
+          "verity jar",
+          "verity java download",
+          "verity download java",
+          "verity mod java download free",
+          "verity mod minecraft java download",
+          "mod verity 1.20.1",
+          "verity mod 1.20.1",
+          "verity mod 1.20 1",
+          "verity mod for java edition",
+          "verity je mod download",
+          "forge verity",
+          "verity forge"
+        ],
         versionNumber: "5.7.3",
         sizeMb: 235.06,
         version: "Minecraft 1.20.1 · Forge",

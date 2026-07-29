@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T10:40:00+08:00</updated>
+  <updated>2026-07-29T11:06:08+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>verity-5.7.3.jar official download route refreshed after zero-click GSC review</title>
+    <id>https://veritymodchecker.online/updates/verity-573-official-download-route-2026-07-29-1106</id>
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />
+    <published>2026-07-29T11:06:08+08:00</published>
+    <updated>2026-07-29T11:06:08+08:00</updated>
+    <summary>Refreshed the exact /verity-5-7-3-jar/ route after Search Console showed zero-click impressions for verity-5.7.3.jar and verity 5.7.3, while live SERP sampling showed competing results using direct download language. The page now leads with verity-5.7.3.jar Download: Official Java Forge Route, explains that the file is free on publisher source pages, adds no-mirror and no-countdown guidance, refreshes official counters to CurseForge project 2,319,624 downloads, CurseForge file 8461257 at 627.6K, Modrinth project 322,324, and Modrinth version yAt0wv1Z at 255,273, and adds canonical redirects for verity.jar, verity java download, Forge, and 1.20.1 variants. Homepage TDK was not changed.</summary>
+    <category term="java-download" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>VERITY.exe Groq API key and voice-chat route refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-exe-groq-route-refresh-2026-07-29-1040</id>

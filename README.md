@@ -42,7 +42,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 ## What It Covers
 
-- Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
+- Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, free publisher-route guidance, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
 - Meaning route: separates `what is Verity`, `what is Verity Minecraft`, `who is Verity`, and `what is Verity Mod` into character, video/story, Java, Bedrock, Pocket Edition, VERITY.exe, Verity Pack, APK/app, and safe-download layers.
 - Broad Minecraft route: separates `minecraft verity mod`, `verity minecraft`, `minecraft verity`, and `verity mod for minecraft` from stale video links, old Bedrock rows, Java beta 404 pages, modpacks, app claims, and true current download records.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
@@ -66,6 +66,7 @@ These URLs are intended for players, editors, and community maintainers who need
 - Human update feed: https://veritymodchecker.online/feed.xml
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
 - Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
+- Stable Java file route: https://veritymodchecker.online/verity-5-7-3-jar/
 - Current Java beta check: https://veritymodchecker.online/verity-6-0-1-jar/
 - Updated-intent explainer: https://veritymodchecker.online/real-verity-mod-updated/
 
