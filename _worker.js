@@ -49,6 +49,7 @@ const htmlRoutes = new Set([
   "/verity-6-jar/",
   "/verity-6-0-0-jar/",
   "/verity-6-0-1-jar/",
+  "/verity-mod-vercel-app/",
   "/verity-doesnt-respond/",
   "/verity-dweller/",
   "/verity-monster-form/",
@@ -1010,6 +1011,28 @@ export default {
       url.pathname.startsWith("/verity-je-mod-download/")
     ) {
       url.pathname = "/verity-5-7-3-jar/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-mod-vercel" ||
+      url.pathname.startsWith("/verity-mod-vercel/") ||
+      url.pathname === "/verity-vercel" ||
+      url.pathname.startsWith("/verity-vercel/") ||
+      url.pathname === "/verity-mod-vercel-app" ||
+      url.pathname === "/is-verity-mod-vercel-app-safe" ||
+      url.pathname.startsWith("/is-verity-mod-vercel-app-safe/") ||
+      url.pathname === "/verity-mod-virus" ||
+      url.pathname.startsWith("/verity-mod-virus/") ||
+      url.pathname === "/verity-mod-fake-virus" ||
+      url.pathname.startsWith("/verity-mod-fake-virus/") ||
+      url.pathname === "/download-verity-v2-6" ||
+      url.pathname.startsWith("/download-verity-v2-6/") ||
+      url.pathname === "/verity-v2-6" ||
+      url.pathname.startsWith("/verity-v2-6/")
+    ) {
+      url.pathname = "/verity-mod-vercel-app/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -1610,6 +1610,44 @@ function legacyVerity100Result({ source, packageName, hash = "", hashLabel = "SH
   };
 }
 
+function isVercelRiskSignal(value, parsedUrl = null) {
+  const clean = normalizeSignal(value);
+  const host = parsedUrl?.hostname.replace(/^www\./, "").toLowerCase() || "";
+  return (
+    host === "verity-mod.vercel.app" ||
+    clean.includes("verity-mod.vercel.app") ||
+    clean.includes("download verity v2.6") ||
+    clean.includes("download verity v2 6") ||
+    clean.includes("verity v2.6") ||
+    clean.includes("verity v2 6") ||
+    (clean.includes("forge 1.21") && clean.includes("fabric 1.21") && clean.includes("verity"))
+  );
+}
+
+function vercelRiskResult({ source, packageName }) {
+  return {
+    state: "danger",
+    verdict: "Unverified landing page",
+    risk: "Do not install from this route",
+    title: "verity-mod.vercel.app does not match a checked Verity Mod source record",
+    summary:
+      "The input matches the Vercel-hosted Verity Mod v2.6 / Minecraft 1.21+ claim seen in current search results. The checked page did not expose a Modrinth ID, CurseForge Project ID, file record, version ID, checksum, or maintainer-controlled source trail for the download button.",
+    source,
+    package: packageName,
+    project: "No checked Modrinth or CurseForge record",
+    hash: "",
+    publisherCheck: "Missing source proof",
+    checks: [
+      "Do not use a v2.6 download button as proof of an official route.",
+      "Current checked Java evidence is Modrinth verity-6.jar for Forge 1.20.1, plus the CurseForge 5.7.3 comparison route.",
+      "If you already downloaded a file, compare its checksum locally before installing."
+    ],
+    link: "/verity-mod-vercel-app/",
+    linkLabel: "Open Vercel app risk check",
+    external: false
+  };
+}
+
 function findKnownProject(value) {
   const clean = normalizeSignal(value);
   const releaseMatch = findKnownRelease(value);
@@ -1686,6 +1724,13 @@ function inspectTextSource(rawValue) {
     parsedUrl = new URL(value);
   } catch {
     parsedUrl = null;
+  }
+
+  if (isVercelRiskSignal(value, parsedUrl)) {
+    return vercelRiskResult({
+      source: parsedUrl?.hostname.replace(/^www\./, "") || "Vercel, v2.6, or Forge/Fabric 1.21.x claim",
+      packageName: type === "Not identified" ? "Landing page or unknown package" : type
+    });
   }
 
   if (isLegacyVerity100Signal(value, parsedUrl)) {

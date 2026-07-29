@@ -5,8 +5,24 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T04:02:00+08:00</updated>
+  <updated>2026-07-30T04:48:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>verity-mod.vercel.app risk-check route added after Vercel v2.6 SERP</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-vercel-app-risk-check-2026-07-30-0448</id>
+    <link href="https://veritymodchecker.online/verity-mod-vercel-app/" rel="alternate" />
+    <link href="https://veritymodchecker.online/link/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="related" />
+    <published>2026-07-30T04:48:00+08:00</published>
+    <updated>2026-07-30T04:48:00+08:00</updated>
+    <summary>Current SERP and player-question review showed a Vercel-hosted page at verity-mod.vercel.app claiming Download Verity v2.6, Minecraft 1.21+, Forge 1.21.x, Fabric 1.21.x, NeoForge 1.21.x, 2.4M+ downloads, and a 4.9 rating, while a Reddit thread asked whether the exact link was official or a virus and Google displayed a warning path for the URL. Added /verity-mod-vercel-app/ as a risk and source-check route that compares those claims with checked official records: Modrinth Verity JE 6 is project on1Y0osD, version CXsEzVwJ, file verity-6.jar, Forge 1.20.1, 254,898,104 bytes, and 1,302 version downloads; CurseForge still exposes Verity JE 5.7.3 as file record 8461257; Modrinth project downloads are now 341,962 and the 5.7.3 Modrinth route yAt0wv1Z has 272,933 version downloads. The homepage, route index, link checker, browser checker, sitemap, feed, README, and LLM summaries now link to the new route. GSC and GA4 reads remained blocked in this run by unavailable authenticated API or browser context, so no new search-performance metric is claimed.</summary>
+    <category term="verity-mod-vercel-app" />
+    <category term="risk-check" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity JE 6 verity-6.jar route added from Modrinth</title>
     <id>https://veritymodchecker.online/updates/verity-je-6-jar-modrinth-2026-07-30-0402</id>
@@ -18,7 +34,7 @@
     <link href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="related" />
     <published>2026-07-30T04:02:00+08:00</published>
     <updated>2026-07-30T04:02:00+08:00</updated>
-    <summary>Official Modrinth source checks found Verity JE 6 exposed as version CXsEzVwJ with file verity-6.jar, Forge 1.20.1, 254,898,104 bytes, 912 version downloads, and publisher SHA-1 plus SHA-512 hashes. CurseForge still shows Verity JE 5.7.3 as verity-5.7.3.jar, file record 8461257, with 661.9K displayed file downloads and 2,364,772 project downloads, while Modrinth keeps yAt0wv1Z as the 5.7.3 checksum route with 272,752 version downloads. Current project counters in the public route map are 2,364,772 Verity JE CurseForge, 341,471 Verity JE Modrinth, 4,052,032 Verity BE, and 7,399,789 PnTMC; Verity Pocket Edition is 57,784. Added /verity-6-jar/, exact aliases such as /verity-6.jar and /verity-je-6, updated Java/download/home/source-map/LLM summaries, and kept the old 6.0.1 and 6.0.0 beta pages as stale-link checks. GSC and GA4 API reads remained blocked by disabled Google APIs, so no new search-performance metric is claimed.</summary>
+    <summary>Official Modrinth source checks found Verity JE 6 exposed as version CXsEzVwJ with file verity-6.jar, Forge 1.20.1, 254,898,104 bytes, 1,302 version downloads, and publisher SHA-1 plus SHA-512 hashes. CurseForge still shows Verity JE 5.7.3 as verity-5.7.3.jar, file record 8461257, with 661.9K displayed file downloads and 2,364,772 project downloads, while Modrinth keeps yAt0wv1Z as the 5.7.3 checksum route with 272,933 version downloads. Current project counters in the public route map are 2,364,772 Verity JE CurseForge, 341,962 Verity JE Modrinth, 4,052,032 Verity BE, and 7,399,789 PnTMC; Verity Pocket Edition is 57,784. Added /verity-6-jar/, exact aliases such as /verity-6.jar and /verity-je-6, updated Java/download/home/source-map/LLM summaries, and kept the old 6.0.1 and 6.0.0 beta pages as stale-link checks. GSC and GA4 API reads remained blocked by disabled Google APIs, so no new search-performance metric is claimed.</summary>
     <category term="verity-6.jar" />
     <category term="modrinth" />
     <category term="source-refresh" />

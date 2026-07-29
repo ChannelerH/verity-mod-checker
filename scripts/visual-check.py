@@ -17,6 +17,7 @@ ROUTES = [
     "/java-vs-bedrock/",
     "/updates/",
     "/verity-mod-wiki/",
+    "/verity-mod-vercel-app/",
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/verity-souls/",
@@ -169,6 +170,14 @@ with sync_playwright() as playwright:
         assert "CXsEzVwJ" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/verity-mod-vercel-app/", wait_until="domcontentloaded")
+        vercel_text = page.locator("main").inner_text()
+        assert "Is verity-mod.vercel.app Safe?" in vercel_text
+        assert "Download Verity v2.6" in vercel_text
+        assert "Forge 1.21.x" in vercel_text
+        assert "unverified" in vercel_text.lower()
+        assert page.locator('a[href="/verity-6-jar/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
