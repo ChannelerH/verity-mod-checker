@@ -5,8 +5,23 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T02:38:00+08:00</updated>
+  <updated>2026-07-30T02:49:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod Wiki hub added and source counters refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-wiki-source-refresh-2026-07-30-0249</id>
+    <link href="https://veritymodchecker.online/verity-mod-wiki/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <published>2026-07-30T02:49:00+08:00</published>
+    <updated>2026-07-30T02:49:00+08:00</updated>
+    <summary>Added /verity-mod-wiki/ after current SERP and competitor review showed broad wiki, story, creator, version, and download intent around the Verity Mod head term. The new page is a route hub, not a duplicate download page: it sends Java users to Verity JE, Bedrock and MCPE users to add-on records, creators to source notes, latest-version users to /updates/, and broken sessions to symptom pages. The same source pass refreshed current public counters: Verity JE 2,358,767 CurseForge downloads, Modrinth project on1Y0osD 340,202 downloads, stable Modrinth yAt0wv1Z 272,419 downloads, Verity BE 4,048,008 CurseForge downloads, PnTMC Verity - Bedrock Edition 7,383,790 downloads, and VERITY.exe 130,082 downloads. Homepage title and description were not changed, no file mirrors were added, and GSC/GA4 API reads remained blocked by disabled Google APIs.</summary>
+    <category term="wiki" />
+    <category term="source-refresh" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Old verity-1.0.0.jar and Drive-link check added</title>
     <id>https://veritymodchecker.online/updates/verity-1-0-0-jar-legacy-check-2026-07-30-0238</id>

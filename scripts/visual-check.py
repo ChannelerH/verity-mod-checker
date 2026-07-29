@@ -16,6 +16,7 @@ ROUTES = [
     "/verity-pack/",
     "/java-vs-bedrock/",
     "/updates/",
+    "/verity-mod-wiki/",
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/verity-souls/",
@@ -119,6 +120,17 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
         assert page.locator("tbody tr").count() == 21
+
+        page.goto(f"{BASE_URL}/verity-mod-wiki/", wait_until="domcontentloaded")
+        wiki_text = page.locator("main").inner_text()
+        assert "Verity Mod Wiki" in wiki_text
+        assert "Java JE #8461257" in wiki_text
+        assert "Bedrock BE #8506198" in wiki_text
+        assert "PnTMC #8517480" in wiki_text
+        assert page.locator('a[href="/download/"]').count() >= 1
+        assert page.locator('a[href="/updates/"]').count() >= 1
+        assert page.locator('a[href="/creators/"]').count() >= 1
+        assert page.locator('a[href="/source-map/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/ai-model/", wait_until="domcontentloaded")
         ai_model_text = page.locator("main").inner_text()

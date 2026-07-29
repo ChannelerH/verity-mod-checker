@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-modpacks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T01:42:00+08:00",
+  "checkedAt": "2026-07-30T02:49:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-pack/",
   "method": "Manual comparison against public CurseForge modpack result pages surfaced for Verity Pack, VERITY.exe, Falsity, and Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
   "modpacks": [
@@ -12,7 +12,7 @@
       "projectId": 1585389,
       "projectUrl": "https://www.curseforge.com/minecraft/modpacks/verity-exe",
       "status": "current-verity-exe-modpack-route",
-      "displayedDownloadsAtCheck": 129885,
+      "displayedDownloadsAtCheck": 130082,
       "displayedDownloadsApproximate": false,
       "packageType": "modpack",
       "minecraftVersion": "1.20.1",

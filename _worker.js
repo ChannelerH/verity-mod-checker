@@ -37,6 +37,7 @@ const htmlRoutes = new Set([
   "/taken-down/",
   "/updates/",
   "/verity-1-0-0-jar/",
+  "/verity-mod-wiki/",
   "/verity-mod-downloads/",
   "/verity-pack/",
   "/verity-souls/",
@@ -657,6 +658,19 @@ export default {
       url.pathname.startsWith("/verity-minecraft-horror-mod/")
     ) {
       url.pathname = "/horror-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/wiki" ||
+      url.pathname.startsWith("/wiki/") ||
+      url.pathname === "/verity-wiki" ||
+      url.pathname.startsWith("/verity-wiki/") ||
+      url.pathname === "/minecraft-verity-wiki" ||
+      url.pathname.startsWith("/minecraft-verity-wiki/")
+    ) {
+      url.pathname = "/verity-mod-wiki/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
