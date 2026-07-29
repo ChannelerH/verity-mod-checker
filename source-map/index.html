@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Mod Source Map: Project IDs, Files &amp; CSV Data</title>
+    <meta
+      name="description"
+      content="Cite the current Verity Mod source map with Project IDs, file records, owners, Java and Bedrock routes, VERITY.exe modpack data, JSON, and CSV."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/source-map/" />
+    <link rel="alternate" type="application/json" title="Verity Mod source map JSON" href="/data/verity-source-map.json" />
+    <link rel="alternate" type="text/csv" title="Verity Mod source map CSV" href="/data/verity-source-map.csv" />
+    <meta property="og:title" content="Verity Mod Source Map" />
+    <meta property="og:description" content="A citation-ready source map for Verity Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, and VERITY.exe routes." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/source-map/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+                {
+                        "@type": "Dataset",
+                        "@id": "https://veritymodchecker.online/source-map/#dataset",
+                        "name": "Verity Mod source map",
+                        "description": "Citation-ready table of current Verity project routes, owners, Project IDs, file records, package types, status, and local guide URLs.",
+                        "url": "https://veritymodchecker.online/source-map/",
+                        "distribution": [
+                                {
+                                        "@type": "DataDownload",
+                                        "encodingFormat": "application/json",
+                                        "contentUrl": "https://veritymodchecker.online/data/verity-source-map.json"
+                                },
+                                {
+                                        "@type": "DataDownload",
+                                        "encodingFormat": "text/csv",
+                                        "contentUrl": "https://veritymodchecker.online/data/verity-source-map.csv"
+                                }
+                        ],
+                        "dateModified": "2026-07-29",
+                        "isBasedOn": [
+                                "https://veritymodchecker.online/data/verity-releases.json",
+                                "https://veritymodchecker.online/data/verity-modpacks.json"
+                        ],
+                        "creator": {
+                                "@type": "Organization",
+                                "name": "Verity Mod Checker"
+                        },
+                        "keywords": [
+                                "verity mod source map",
+                                "verity mod project id",
+                                "verity mod csv",
+                                "verity mod data"
+                        ]
+                },
+                {
+                        "@type": "CollectionPage",
+                        "@id": "https://veritymodchecker.online/source-map/#webpage",
+                        "url": "https://veritymodchecker.online/source-map/",
+                        "name": "Verity Mod Source Map: Project IDs, Files and CSV Data",
+                        "isPartOf": {
+                                "@id": "https://veritymodchecker.online/#website"
+                        },
+                        "about": [
+                                "Verity Mod",
+                                "Minecraft Java",
+                                "Minecraft Bedrock",
+                                "CurseForge",
+                                "Modrinth",
+                                "MCPEDL"
+                        ]
+                },
+                {
+                        "@type": "ItemList",
+                        "@id": "https://veritymodchecker.online/source-map/#routes",
+                        "name": "Verity source map routes",
+                        "itemListElement": [
+                                {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Verity JE stable CurseForge file",
+                                        "url": "https://veritymodchecker.online/verity-5-7-3-jar/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Verity JE stable Modrinth version",
+                                        "url": "https://veritymodchecker.online/verity-5-7-3-jar/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 3,
+                                        "name": "Verity JE 6.0.1 beta observed record",
+                                        "url": "https://veritymodchecker.online/verity-6-0-1-jar/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 4,
+                                        "name": "Verity JE 6.0.0 beta observed record",
+                                        "url": "https://veritymodchecker.online/verity-6-0-0-jar/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 5,
+                                        "name": "Verity JE 3.4.1 legacy NeoForge file",
+                                        "url": "https://veritymodchecker.online/verity-3-4-1-jar/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 6,
+                                        "name": "Verity BE official Bedrock file",
+                                        "url": "https://veritymodchecker.online/verity-be/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 7,
+                                        "name": "PnTMC Verity Bedrock file 8517480",
+                                        "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 8,
+                                        "name": "PnTMC Verity Bedrock file 8517478",
+                                        "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 9,
+                                        "name": "PnTMC Verity Bedrock file 8517473",
+                                        "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 10,
+                                        "name": "PnTMC Verity Bedrock file 8503821",
+                                        "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
+                                }
+                        ]
+                },
+                {
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                                {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Verity Mod Guide",
+                                        "item": "https://veritymodchecker.online/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Source Map",
+                                        "item": "https://veritymodchecker.online/source-map/"
+                                }
+                        ]
+                },
+                {
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                                {
+                                        "@type": "Question",
+                                        "name": "Can I cite this Verity source map?",
+                                        "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "Yes. Cite the page, JSON, or CSV when you need a stable route table for Verity project IDs, owners, file records, and package types. The data is a point-in-time source map, not a file mirror or malware verdict."
+                                        }
+                                },
+                                {
+                                        "@type": "Question",
+                                        "name": "Does the source map host Verity Mod files?",
+                                        "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "No. The source map only links to public maintainer project pages and local guide pages. It does not mirror Java JARs, Bedrock MCADDONs, modpacks, or APKs."
+                                        }
+                                }
+                        ]
+                }
+        ]
+}
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Guide home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/updates/">Updates</a>
+        <a href="/routes/">Routes</a>
+        <a href="/source-map/">Source map</a>
+        <a href="/faq/">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Citation asset checked July 29, 2026</p>
+          <h1>Verity Mod Source Map</h1>
+          <p class="lede">
+            This page is built for editors, video creators, server owners, wiki maintainers, and players who
+            need one reliable Verity Mod reference without copying files from a mirror. It normalizes the
+            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, and VERITY.exe routes into a single
+            source map. Use it to answer which Project ID belongs to which owner, which file record is current,
+            which package type should be installed, and which stale record should only be used for diagnosis.
+          </p>
+          <div class="trust-strip" aria-label="Source map principles">
+            <span>JSON and CSV</span>
+            <span>Project IDs first</span>
+            <span>No file mirrors</span>
+            <span>Point-in-time data</span>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Reusable asset</span>
+          </div>
+          <h2>Use the source map when you need to cite records, not download files</h2>
+          <p>
+            The current checked snapshot lists 17 route records. It includes the stable Verity JE
+            CurseForge file, the Modrinth checksum route, observed beta records that now return 404, Verity BE,
+            PnTMC Bedrock rows, Pocket Edition, and separate modpack routes. The CSV is useful for spreadsheets,
+            public notes, and community comparison tables. The JSON is useful for bots, route checkers, and editors.
+          </p>
+          <ol class="steps">
+            <li>Choose the row by edition and package type before using a file name.</li>
+            <li>Match Project ID and record ID when a tutorial is vague.</li>
+            <li>Cite the page, JSON, or CSV instead of uploading a copied file.</li>
+            <li>Do not quote platform counters as unique players or safety proof.</li>
+          </ol>
+          <div class="action-row">
+            <a class="primary-link" href="/data/verity-source-map.csv">Open CSV</a>
+            <a class="copy-button" href="/data/verity-source-map.json">Open JSON</a>
+            <a class="copy-button" href="/download/">Download map</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intent-table" aria-label="Verity source map table">
+        <div class="section-heading">
+          <p class="eyebrow">Route records</p>
+          <h2>Project IDs, file records, and local guide pages</h2>
+          <p>
+            A copied title can be misleading. The same Verity wording can point to a Java JAR, a Bedrock
+            MCADDON, a Pocket Edition listing, a separate modpack, or an old beta link. The table below keeps
+            the identity signals together so a reader can verify a source path before installing or citing it.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Route</th>
+                <th>Edition / host</th>
+                <th>Owner / project</th>
+                <th>File or page</th>
+                <th>Record</th>
+                <th>Status</th>
+                <th>Guide</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Verity JE stable CurseForge file</td>
+                <td>Java · CurseForge</td>
+                <td>VarmiteYT · 1591438</td>
+                <td>verity-5.7.3.jar</td>
+                <td>8461257</td>
+                <td>current-stable</td>
+                <td><a href="https://veritymodchecker.online/verity-5-7-3-jar/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity JE stable Modrinth version</td>
+                <td>Java · Modrinth</td>
+                <td>Varmite · on1Y0osD</td>
+                <td>verity-5.7.3.jar</td>
+                <td>yAt0wv1Z</td>
+                <td>current-stable</td>
+                <td><a href="https://veritymodchecker.online/verity-5-7-3-jar/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity JE 6.0.1 beta observed record</td>
+                <td>Java · Modrinth</td>
+                <td>Varmite · on1Y0osD</td>
+                <td>verity-6.0.1-all.jar</td>
+                <td>YLEoXe6t</td>
+                <td>stale-beta-endpoint-404</td>
+                <td><a href="https://veritymodchecker.online/verity-6-0-1-jar/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity JE 6.0.0 beta observed record</td>
+                <td>Java · Modrinth</td>
+                <td>Varmite · on1Y0osD</td>
+                <td>verity-6.0.0.jar</td>
+                <td>5ech0sTo</td>
+                <td>stale-beta-endpoint-404</td>
+                <td><a href="https://veritymodchecker.online/verity-6-0-0-jar/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity JE 3.4.1 legacy NeoForge file</td>
+                <td>Java · CurseForge</td>
+                <td>VarmiteYT · 1591438</td>
+                <td>verity-3.4.1.jar</td>
+                <td>8346795</td>
+                <td>legacy-deprecated-branch</td>
+                <td><a href="https://veritymodchecker.online/verity-3-4-1-jar/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity BE official Bedrock file</td>
+                <td>Bedrock · CurseForge</td>
+                <td>Undertaletalelover · 1574632</td>
+                <td>Verity (Stable) (1.1.0)-(26.3).mcaddon</td>
+                <td>8506198</td>
+                <td>current-bedrock-addon</td>
+                <td><a href="https://veritymodchecker.online/verity-be/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>PnTMC Verity Bedrock file 8517480</td>
+                <td>Bedrock · CurseForge</td>
+                <td>PnTMC · 1575941</td>
+                <td>ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon</td>
+                <td>8517480</td>
+                <td>current</td>
+                <td><a href="https://veritymodchecker.online/pntmc-verity-3-2-0/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>PnTMC Verity Bedrock file 8517478</td>
+                <td>Bedrock · CurseForge</td>
+                <td>PnTMC · 1575941</td>
+                <td>ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon</td>
+                <td>8517478</td>
+                <td>current-version-other-bedrock-build</td>
+                <td><a href="https://veritymodchecker.online/pntmc-verity-3-2-0/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>PnTMC Verity Bedrock file 8517473</td>
+                <td>Bedrock · CurseForge</td>
+                <td>PnTMC · 1575941</td>
+                <td>ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon</td>
+                <td>8517473</td>
+                <td>current-version-other-bedrock-build</td>
+                <td><a href="https://veritymodchecker.online/pntmc-verity-3-2-0/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>PnTMC Verity Bedrock file 8503821</td>
+                <td>Bedrock · CurseForge</td>
+                <td>PnTMC · 1575941</td>
+                <td>ThatMob's Verity 3.1.0 by PnTMC [Add-on] - V26.30.mcaddon</td>
+                <td>8503821</td>
+                <td>previous-still-available</td>
+                <td><a href="https://veritymodchecker.online/pntmc-verity-3-2-0/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>PnTMC Verity Bedrock file 8327253</td>
+                <td>Bedrock · CurseForge</td>
+                <td>PnTMC · 1575941</td>
+                <td>ThatMob's Verity 2.1.0 by PnTMC [Add-on] - V26.30.mcaddon</td>
+                <td>8327253</td>
+                <td>previous-still-available</td>
+                <td><a href="https://veritymodchecker.online/pntmc-verity-2-1-0/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity Pocket Edition separate Bedrock listing</td>
+                <td>Bedrock · CurseForge</td>
+                <td>vexi1111_ · 1596246</td>
+                <td>Verity (1.0.2) — (26.3).mcaddon</td>
+                <td>8406293</td>
+                <td>similar-pocket-edition-route</td>
+                <td><a href="https://veritymodchecker.online/pocket-edition/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>VERITY.exe</td>
+                <td>Modpack · CurseForge</td>
+                <td>SkyeTheFox · 1585389</td>
+                <td>VERITY.exe.zip</td>
+                <td>8526843</td>
+                <td>current-modpack-route</td>
+                <td><a href="https://veritymodchecker.online/verity-exe/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity Pack</td>
+                <td>Modpack · CurseForge</td>
+                <td>Firyx · 1583377</td>
+                <td>Verity™.zip</td>
+                <td>Project</td>
+                <td>modpack-does-not-contain-standalone-file</td>
+                <td><a href="https://veritymodchecker.online/verity-pack/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>VerityPack</td>
+                <td>Modpack · CurseForge</td>
+                <td>Sarelsana · 1587394</td>
+                <td>VerityPack-1.0.7.zip</td>
+                <td>Project</td>
+                <td>separate-modpack-route</td>
+                <td><a href="https://veritymodchecker.online/verity-pack/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>VerityPack Realistic</td>
+                <td>Modpack · CurseForge</td>
+                <td>Firyx · 1582388</td>
+                <td>Project page</td>
+                <td>Project</td>
+                <td>separate-realistic-modpack-route</td>
+                <td><a href="https://veritymodchecker.online/verity-pack/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Survive from VERITY or FALSITY</td>
+                <td>Modpack · CurseForge</td>
+                <td>kanthbuymi · 1583260</td>
+                <td>VERITY 1-1.6.1.zip</td>
+                <td>Project</td>
+                <td>separate-verity-falsity-modpack-route</td>
+                <td><a href="https://veritymodchecker.online/verity-pack/">Guide</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">How to use the data</p>
+          <h2>Good citations solve the player problem faster</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Use the row that matches the edition</h3>
+            <p>
+              Most bad Verity Mod advice starts with a shortcut: a title says "latest," a video says
+              "updated," or a reposted file name looks familiar. That shortcut skips the most important
+              question, which is whether the player is on Java, Bedrock, MCPE, or a modpack profile. A
+              Java JAR cannot be imported into Bedrock. A Bedrock MCADDON does not belong in a Java mods
+              folder. A ZIP can be a modpack instead of the standalone file. A copied beta URL can keep
+              circulating after the maintainer removes the active version record.
+            </p>
+            <p>
+              The source map keeps those differences visible. Each row names the host, owner, Project ID,
+              current or historical record, package type, local guide page, and caution note. If you write
+              a community answer, cite the row and tell the reader why it matches their edition. If you
+              maintain a spreadsheet or wiki, use the CSV and keep the local guide URL beside the official
+              project URL. If you run a bot or route checker, use the JSON and check the generated timestamp
+              before showing a verdict.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>What the CSV is for</h3>
+            <p>
+              The CSV version is intentionally flat. It is easier to paste into a Google Sheet, a Discord
+              moderation note, a wiki draft, or a content calendar. Columns such as <code>projectId</code>,
+              <code>recordId</code>, <code>packageType</code>, and <code>localGuideUrl</code> are designed
+              for quick comparison. If a user says "I downloaded Verity" without more detail, filter by
+              package type first, then match the owner and record number.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>What the JSON is for</h3>
+            <p>
+              The JSON version preserves the same route fields with a schema URL and source snapshot links.
+              It is better for scripts, bots, and automated site checks because each record has a stable
+              <code>routeId</code>. The JSON also carries the platform-counter summary: 13,778,868
+              displayed downloads across the four tracked CurseForge project pages, or 14,113,486
+              when the official Modrinth Verity JE project counter is added. Those are platform counters,
+              not unique players.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Maintenance rules for reuse</h3>
+            <p>
+              Treat the generated timestamp as the freshness boundary. If a maintainer changes the current
+              file, removes a version, updates a Bedrock build row, or changes a project description, the
+              source snapshots should be checked first and this map should be rebuilt from those facts. Do
+              not manually edit a single CSV cell in a public copy and call it current. That creates a forked
+              reference where the page, JSON, CSV, and update feed disagree. A good community note should
+              keep three links together: the official project or file record, the matching local guide page,
+              and this normalized map. That gives players a path back to the maintainer page while still
+              explaining why a similarly named result is Java-only, Bedrock-only, stale, or a separate
+              modpack. If the question is about malware, privacy, payment, or account security, use this
+              table only for source identity and run a separate security review.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>What not to do with it</h3>
+            <p>
+              Do not use this source map as permission to mirror files, reupload jars, sell download packs,
+              or claim that a metadata match proves a file is safe. It is a routing and citation asset. A
+              player still needs to open the maintainer page, check the edition, install the correct loader
+              or addon type, and follow the official setup notes. If a page hides the final URL behind a
+              short-link chain, downloader, password archive, or APK installer, treat that as a separate
+              source-risk problem.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="status-section">
+        <div class="section-heading">
+          <p class="eyebrow">Copy-safe reference</p>
+          <h2>Short summary for editors and creators</h2>
+          <p>
+            Verity Mod is not one universal download. The checked Java route is Verity JE on CurseForge and
+            Modrinth; the checked Bedrock routes include Verity BE and PnTMC's Verity - Bedrock Edition;
+            Pocket Edition and VERITY.exe are separate route contexts. For citations, use
+            <a href="/source-map/">the source map page</a>, <a href="/data/verity-source-map.json">JSON</a>, or
+            <a href="/data/verity-source-map.csv">CSV</a>. This site links to public project records and does
+            not host or mirror downloads.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-routes" aria-label="Footer route links">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/routes/">All routes</a>
+        <a href="/source-map/">Source map</a>
+        <a href="/data/verity-source-map.json">Source JSON</a>
+        <a href="/data/verity-source-map.csv">Source CSV</a>
+        <a href="/feed.xml">Updates feed</a>
+      </nav>
+      <p>Independent Verity Mod source map. Minecraft is a trademark of Mojang Studios. This site is not official and does not host files.</p>
+    </footer>
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

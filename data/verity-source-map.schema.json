@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-source-map.schema.json",
+  "title": "Verity source map",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "canonicalUrl",
+    "method",
+    "sourceSnapshots",
+    "downloadCounterSummary",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "canonicalUrl": { "type": "string", "format": "uri" },
+    "method": { "type": "string" },
+    "sourceSnapshots": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "downloadCounterSummary": {
+      "type": "object",
+      "required": [
+        "curseforgeTrackedProjectDownloads",
+        "curseforgePlusModrinthProjectDownloads",
+        "note"
+      ],
+      "properties": {
+        "curseforgeTrackedProjectDownloads": { "type": "integer", "minimum": 0 },
+        "curseforgePlusModrinthProjectDownloads": { "type": "integer", "minimum": 0 },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "routeId",
+          "routeName",
+          "edition",
+          "host",
+          "owner",
+          "projectId",
+          "projectUrl",
+          "projectDownloadsAtCheck",
+          "packageType",
+          "fileName",
+          "recordId",
+          "recordUrl",
+          "minecraftVersion",
+          "loader",
+          "publishedDate",
+          "fileSizeMb",
+          "fileDownloadsAtCheck",
+          "status",
+          "recommendedUse",
+          "caution",
+          "localGuideUrl"
+        ],
+        "properties": {
+          "routeId": { "type": "string" },
+          "routeName": { "type": "string" },
+          "edition": { "type": "string" },
+          "host": { "type": "string" },
+          "owner": { "type": "string" },
+          "projectId": { "type": ["integer", "string"] },
+          "projectUrl": { "type": "string", "format": "uri" },
+          "projectDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "packageType": { "type": "string" },
+          "fileName": { "type": "string" },
+          "recordId": { "type": ["integer", "string"] },
+          "recordUrl": { "type": "string", "format": "uri" },
+          "minecraftVersion": { "type": "string" },
+          "loader": { "type": ["string", "null"] },
+          "publishedDate": { "type": "string" },
+          "fileSizeMb": { "type": ["number", "string", "null"] },
+          "fileDownloadsAtCheck": { "type": ["integer", "string"], "minimum": 0 },
+          "status": { "type": "string" },
+          "recommendedUse": { "type": "string" },
+          "caution": { "type": "string" },
+          "localGuideUrl": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

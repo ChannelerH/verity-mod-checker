@@ -10,6 +10,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 - Download route: https://veritymodchecker.online/download/
 - Complete route index: https://veritymodchecker.online/routes/
+- Source map and CSV data: https://veritymodchecker.online/source-map/
 - Minecraft Verity Mod broad route: https://veritymodchecker.online/minecraft-verity-mod/
 - Java vs Bedrock download chooser: https://veritymodchecker.online/java-vs-bedrock/
 - Latest version tracker: https://veritymodchecker.online/updates/
@@ -75,6 +76,9 @@ These URLs are intended for players, editors, and community maintainers who need
 - Route map: https://veritymodchecker.online/sitemap.xml
 - Human-readable route index: https://veritymodchecker.online/routes/
 - Human update feed: https://veritymodchecker.online/feed.xml
+- Citation-ready source map: https://veritymodchecker.online/source-map/
+- Machine-readable source map JSON: https://veritymodchecker.online/data/verity-source-map.json
+- Machine-readable source map CSV: https://veritymodchecker.online/data/verity-source-map.csv
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
 - Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
 - Machine-readable Falsity route snapshot: https://veritymodchecker.online/data/falsity-releases.json

@@ -5,8 +5,23 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T22:14:00+08:00</updated>
+  <updated>2026-07-29T23:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Added a citation-ready Verity Mod source map with JSON and CSV data</title>
+    <id>https://veritymodchecker.online/updates/source-map-csv-json-2026-07-29-2345</id>
+    <link href="https://veritymodchecker.online/source-map/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.schema.json" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <published>2026-07-29T23:45:00+08:00</published>
+    <updated>2026-07-29T23:45:00+08:00</updated>
+    <summary>Added /source-map/ as a citation-ready Verity Mod route asset after GA4 showed that useful public data references can send real referral sessions. The new page publishes 17 normalized route records across Verity JE, Modrinth stable and observed beta records, Verity BE, PnTMC Bedrock rows, Pocket Edition, VERITY.exe, and separate modpack routes. It also exposes /data/verity-source-map.json, /data/verity-source-map.csv, and a schema file for editors, bots, creators, wiki maintainers, and community moderators who need Project IDs, owners, file records, package types, route status, and local guide URLs without mirroring files. Internal entrances were added from the homepage, download page, latest updates page, route index, footer links, README, LLM summaries, sitemap, and redirect aliases. Homepage TDK was not changed.</summary>
+    <category term="source-map" />
+    <category term="csv" />
+    <category term="data-asset" />
+  </entry>
   <entry>
     <title>Source counters refreshed for Verity BE, MCPEDL, Modrinth, and VERITY.exe</title>
     <id>https://veritymodchecker.online/updates/source-counters-2026-07-29-2214</id>
