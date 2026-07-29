@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T16:48:00+08:00</updated>
+  <updated>2026-07-29T16:49:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Source counters refreshed after Verity Mod query appeared in GSC</title>
+    <id>https://veritymodchecker.online/updates/source-counter-refresh-2026-07-29-1649</id>
+    <link href="https://veritymodchecker.online/download/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <published>2026-07-29T16:49:00+08:00</published>
+    <updated>2026-07-29T16:49:00+08:00</updated>
+    <summary>Refreshed source counters after Search Console showed the exact `verity mod` query appearing with 2 clicks and 3 impressions, while the live SERP was still led by official Bedrock, install-guide, and real-mod result types. Current first-party checks recorded Verity JE at 2,329,091 CurseForge project downloads, file 8461257 at 634.7K displayed file downloads, Modrinth project on1Y0osD at 328,562 downloads, Modrinth version yAt0wv1Z at 261,245 downloads, Verity BE at 4,014,672 CurseForge project downloads with file 8506198 at 165.5K, and PnTMC Verity - Bedrock Edition at 7,316,926 CurseForge project downloads with current 3.2.0 records 8517480, 8517478, and 8517473 at 214.6K, 20.1K, and 15.3K displayed file downloads. MCPEDL displayed 7.3M listing downloads for the same PnTMC route. Homepage title and description were not changed.</summary>
+    <category term="source-refresh" />
+    <category term="gsc" />
+    <category term="download-counters" />
+  </entry>
   <entry>
     <title>Complete Verity Mod route index added for crawl and user discovery</title>
     <id>https://veritymodchecker.online/updates/complete-route-index-2026-07-29-1648</id>
