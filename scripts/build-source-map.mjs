@@ -57,6 +57,7 @@ const pntmc = projectByName("Verity - Bedrock Edition");
 const pocket = projectByName("Verity Pocket Edition (Be)");
 const pocketCurrent = releaseByStatus(pocket, "current");
 const exe = modpackByProjectId(1585389);
+const remasteredExe = modpackByProjectId("L5qUPsXS");
 const verityPack = modpackByProjectId(1583377);
 const sarelsanaPack = modpackByProjectId(1587394);
 const realisticPack = modpackByProjectId(1596649);
@@ -255,6 +256,7 @@ const records = [
   },
   ...[
     [exe, "current-modpack-route", `${site}/verity-exe/`],
+    [remasteredExe, "separate-modrinth-remastered-modpack-route", `${site}/verity-exe/`],
     [verityPack, "modpack-does-not-contain-standalone-file", `${site}/verity-pack/`],
     [sarelsanaPack, "separate-modpack-route", `${site}/verity-pack/`],
     [realisticPack, "separate-realistic-modpack-route", `${site}/verity-pack/`],
@@ -263,7 +265,7 @@ const records = [
     routeId: `modpack-${item.projectId}`,
     routeName: item.name,
     edition: "Modpack",
-    host: "CurseForge",
+    host: item.host || "CurseForge",
     owner: item.owner,
     projectId: item.projectId,
     projectUrl: item.projectUrl,
@@ -271,14 +273,14 @@ const records = [
     packageType: item.packageType,
     fileName: item.mainFile || "",
     recordId: item.mainFileRecord || "",
-    recordUrl: item.mainFileRecord ? `${item.projectUrl}/files/${item.mainFileRecord}` : item.projectUrl,
+    recordUrl: item.mainFileUrl || (item.mainFileRecord ? `${item.projectUrl}/files/${item.mainFileRecord}` : item.projectUrl),
     minecraftVersion: item.minecraftVersion || "",
     loader: item.loader || "",
     publishedDate: item.lastUpdate || "",
-    fileSizeMb: "",
+    fileSizeMb: item.mainFileSizeBytes ? Number((item.mainFileSizeBytes / 1024 / 1024).toFixed(2)) : "",
     fileDownloadsAtCheck: item.mainFileDownloadsAtCheck || "",
     status,
-    recommendedUse: item.name === "VERITY.exe" ? "Use only when the player intentionally wants the VERITY.exe modpack profile." : "Use only when the player intentionally selected this separate modpack result.",
+    recommendedUse: item.name === "VERITY.exe" ? "Use only when the player intentionally wants the VERITY.exe modpack profile." : item.name === "VERITY.exe Remastered" ? "Use only when the player intentionally selected the Modrinth VERITY.exe Remastered MRPACK route." : "Use only when the player intentionally selected this separate modpack result.",
     caution: item.sourceNote,
     localGuideUrl
   })),

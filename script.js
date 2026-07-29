@@ -661,6 +661,37 @@ const knownProjects = [
     ]
   },
   {
+    name: "VERITY.exe Remastered",
+    edition: "Java modpack",
+    route: "/verity-exe/",
+    sources: [
+      {
+        platform: "Modrinth",
+        id: "L5qUPsXS",
+        slugs: ["/modpack/verity.exe-remastered", "/project/L5qUPsXS"],
+        link: "https://modrinth.com/modpack/verity.exe-remastered"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-modrinth-remastered-modpack-route",
+        filename: "VERITY.exe Remastered 1.0.0.mrpack",
+        aliases: ["VERITY.exe Remastered", "verity exe remastered", "verity.exe remastered", "remastered verity.exe"],
+        versionNumber: "1.0.0",
+        sizeMb: 0.01,
+        version: "Minecraft 1.20.1 · Forge MRPACK",
+        published: "July 1, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "4N4vQrK7",
+            link: "https://modrinth.com/modpack/verity.exe-remastered/version/4N4vQrK7"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "FALSITY [SMILEY]",
     edition: "Java mod",
     route: "/falsity-mod/",
@@ -1020,7 +1051,7 @@ function modpackRoute(project) {
 
 function modpackRouteLabel(project) {
   if (project.route === "/falsity-mod/") return "Open Falsity route check";
-  return project.name === "VERITY.exe" ? "Open VERITY.exe route check" : "Open Verity Pack route check";
+  return project.route === "/verity-exe/" ? "Open VERITY.exe route check" : "Open Verity Pack route check";
 }
 
 function modpackChecks(project) {
@@ -1029,6 +1060,13 @@ function modpackChecks(project) {
       "The project path matches the checked VERITY.exe CurseForge modpack result.",
       "Use this route only when you intentionally want the prepared Forge modpack profile.",
       "If Groq, API key, or voice chat fails, debug the provider/profile layer before replacing files."
+    ];
+  }
+  if (project.name === "VERITY.exe Remastered") {
+    return [
+      "The project path matches the checked Modrinth VERITY.exe Remastered result.",
+      "Use this route only when you intentionally want the separate MRPACK profile by ScootBuckley.",
+      "Do not confuse it with CurseForge VERITY.exe Project ID 1585389, Verity JE, or any Bedrock add-on."
     ];
   }
   if (project.name === "FALSITY [SMILEY]") {
@@ -1056,13 +1094,16 @@ function modpackSummary(project, projectId) {
   if (project.name === "VERITY.exe") {
     return `This URL matches the checked VERITY.exe CurseForge modpack route, Project ID ${projectId}. The July 29 source check maps the current main file to Forge Port 2.1.2 record 8526843, while Groq, API key, and voice issues should be debugged in provider or profile setup rather than by using random replacement files.`;
   }
+  if (project.name === "VERITY.exe Remastered") {
+    return `This URL matches the checked VERITY.exe Remastered Modrinth modpack route, Project ID ${projectId}. The July 30 source check maps it to Modrinth version 4N4vQrK7 and file VERITY.exe Remastered 1.0.0.mrpack, so use it only as a separate MRPACK profile rather than the CurseForge VERITY.exe route, Verity JE, or Bedrock.`;
+  }
   if (project.name === "FALSITY [SMILEY]") {
     return `This URL matches the checked standalone FALSITY [SMILEY] route, Project ID ${projectId}. The July 29 source check maps the current file to FALSITY-SMILEYARCHIVE-9.0.jar, CurseForge file 8528006, Modrinth project r8Qz0Ic2, and Modrinth version tNOLeN6v; use it only for Falsity Forge 1.20.1 intent, not Verity JE, Bedrock, or modpack installs.`;
   }
   if (project.route === "/falsity-mod/") {
     return `This URL matches the checked ${project.name} CurseForge modpack route, Project ID ${projectId}. Treat it as a profile route for Verity or Falsity searches, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, or Bedrock add-on.`;
   }
-  return `This URL matches a checked CurseForge modpack route for ${project.name}, Project ID ${projectId}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`;
+  return `This URL matches a checked modpack route for ${project.name}, Project ID ${projectId}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`;
 }
 
 function isSimilarNameRoute(project) {
@@ -1424,11 +1465,11 @@ function inspectTextSource(rawValue) {
           state: "caution",
           verdict: "Known modpack route",
           risk: "Separate from Verity Mod file",
-          title: `${sourceMatch.project.name} CurseForge modpack recognized`,
+          title: `${sourceMatch.project.name} ${sourceMatch.source.platform} modpack recognized`,
           summary: modpackSummary(sourceMatch.project, sourceMatch.source.id),
           source: host,
-          package: "CurseForge modpack profile",
-          project: `${sourceMatch.project.name} · CurseForge Project ID ${sourceMatch.source.id}`,
+          package: sourceMatch.source.platform === "Modrinth" ? "Modrinth MRPACK profile" : "CurseForge modpack profile",
+          project: `${sourceMatch.project.name} · ${sourceMatch.source.platform} Project ID ${sourceMatch.source.id}`,
           hash: "",
           publisherCheck: "Not a JAR checksum route",
           checks: modpackChecks(sourceMatch.project),
@@ -1601,14 +1642,15 @@ function inspectTextSource(rawValue) {
       };
     }
     if (project.edition === "Java modpack") {
+      const primaryPlatform = project.sources[0]?.platform || "Project";
       return {
         state: "caution",
         verdict: "Known modpack signal",
         risk: "Separate from Verity Mod file",
         title: `${project.name} is a checked modpack route`,
-        summary: `The text matches ${project.name} or its CurseForge Project ID. Treat it as a modpack/profile route, not as the current standalone Verity JE Java file and not as a Bedrock add-on.`,
+        summary: `The text matches ${project.name} or its ${primaryPlatform} Project ID. Treat it as a modpack/profile route, not as the current standalone Verity JE Java file and not as a Bedrock add-on.`,
         source: "Text or Project ID",
-        package: type === "Not identified" ? "CurseForge modpack profile" : type,
+        package: type === "Not identified" ? (primaryPlatform === "Modrinth" ? "Modrinth MRPACK profile" : "CurseForge modpack profile") : type,
         project: `${project.name} · ${projectIdentityLabel(project)}`,
         hash: "",
         publisherCheck: "Not a JAR checksum route",

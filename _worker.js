@@ -235,6 +235,21 @@ export default {
     }
 
     if (
+      url.pathname === "/verity-exe-remastered" ||
+      url.pathname.startsWith("/verity-exe-remastered/") ||
+      url.pathname === "/verity.exe-remastered" ||
+      url.pathname.startsWith("/verity.exe-remastered/") ||
+      url.pathname === "/modrinth-verity-exe-remastered" ||
+      url.pathname.startsWith("/modrinth-verity-exe-remastered/") ||
+      url.pathname === "/verity-remastered" ||
+      url.pathname.startsWith("/verity-remastered/")
+    ) {
+      url.pathname = "/verity-exe/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/the-verity-dweller" ||
       url.pathname.startsWith("/the-verity-dweller/") ||
       url.pathname === "/verity-dweller-mod" ||
@@ -1121,7 +1136,23 @@ export default {
       url.pathname === "/verity-3b-ollama" ||
       url.pathname.startsWith("/verity-3b-ollama/") ||
       url.pathname === "/timheinrich2011-verity-3b" ||
-      url.pathname.startsWith("/timheinrich2011-verity-3b/")
+      url.pathname.startsWith("/timheinrich2011-verity-3b/") ||
+      url.pathname === "/verity-je-only-one-word" ||
+      url.pathname.startsWith("/verity-je-only-one-word/") ||
+      url.pathname === "/verity-only-says-one-word" ||
+      url.pathname.startsWith("/verity-only-says-one-word/") ||
+      url.pathname === "/verity-says-one-word" ||
+      url.pathname.startsWith("/verity-says-one-word/") ||
+      url.pathname === "/verity-mod-one-word" ||
+      url.pathname.startsWith("/verity-mod-one-word/") ||
+      url.pathname === "/verity-je-dumb" ||
+      url.pathname.startsWith("/verity-je-dumb/") ||
+      url.pathname === "/verity-mod-dumb" ||
+      url.pathname.startsWith("/verity-mod-dumb/") ||
+      url.pathname === "/verity-bad-ai-replies" ||
+      url.pathname.startsWith("/verity-bad-ai-replies/") ||
+      url.pathname === "/verity-poor-ai-replies" ||
+      url.pathname.startsWith("/verity-poor-ai-replies/")
     ) {
       url.pathname = "/ai-model/";
       url.hash = "";

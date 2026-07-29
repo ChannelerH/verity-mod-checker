@@ -39,7 +39,8 @@
         "properties": {
           "name": { "type": "string" },
           "owner": { "type": "string" },
-          "projectId": { "type": "integer" },
+          "host": { "type": "string" },
+          "projectId": { "type": ["integer", "string"] },
           "projectUrl": { "type": "string", "format": "uri" },
           "status": { "type": "string" },
           "displayedDownloadsAtCheck": { "type": "integer", "minimum": 0 },
@@ -48,9 +49,11 @@
           "minecraftVersion": { "type": "string" },
           "loader": { "type": "string" },
           "mainFile": { "type": "string" },
-          "mainFileRecord": { "type": "integer" },
-          "secondaryFileRecord": { "type": "integer" },
+          "mainFileRecord": { "type": ["integer", "string"] },
+          "mainFileUrl": { "type": "string", "format": "uri" },
+          "secondaryFileRecord": { "type": ["integer", "string"] },
           "mainFileDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "mainFileSizeBytes": { "type": "integer", "minimum": 0 },
           "lastUpdate": { "type": "string" },
           "sourceNote": { "type": "string" }
         },

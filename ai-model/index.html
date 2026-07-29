@@ -74,6 +74,14 @@
               },
               {
                 "@type": "Question",
+                "name": "Why does Verity JE only answer with one word?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "One-word or low-quality replies usually mean the text-generation layer is working but the selected model, prompt context, language, or provider route is not producing useful answers. Test one short typed English prompt, compare the exact model outside Minecraft, and only then change model or provider settings."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "Is timheinrich2011/verity-3b the official best model for Verity Mod?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -305,6 +313,68 @@
         </div>
       </section>
 
+      <section class="guide-section" id="one-word-replies">
+        <div class="section-heading">
+          <p class="eyebrow">Bad answers</p>
+          <h2>One-word replies are usually a model-context problem, not a microphone problem</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Read the symptom before changing the file</h3>
+            <p>
+              Current player reports around Verity JE include cases where the mod loads, the API key is present,
+              and Verity responds, but the answer is only one word, off-topic, or mechanically repeats a weak line.
+              That is different from a crash, a missing entity, status 401, status 429, or silent voice output.
+              In this case the Java file probably reached the AI layer; the next check is the selected model,
+              prompt context, language, and provider configuration.
+            </p>
+            <p>
+              Start with one short typed English prompt in a clean world, then run the same prompt against the
+              model outside Minecraft if the provider allows it. If the outside response is also weak, the model
+              choice is the issue. If the outside response is useful but the in-game answer is poor, check the
+              Verity JE config, accepted model ID, prompt template, context length, and whether the build is
+              stripping messages before they reach the provider.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>One-word reply checklist</h3>
+            <div class="table-wrap compact-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Symptom</th>
+                    <th>Likely layer</th>
+                    <th>Next test</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Verity answers with one word or generic filler</td>
+                    <td>Model quality, context, or prompt formatting</td>
+                    <td>Test the same prompt outside Minecraft and compare a stronger supported model.</td>
+                  </tr>
+                  <tr>
+                    <td>Verity answers in text but says nothing aloud</td>
+                    <td>Voice, audio output, or TTS</td>
+                    <td>Use the voice route after text response is proven.</td>
+                  </tr>
+                  <tr>
+                    <td>Verity worked briefly, then pauses or errors</td>
+                    <td>Provider quota or rate limit</td>
+                    <td>Check status 429 and wait for the provider reset window.</td>
+                  </tr>
+                  <tr>
+                    <td>Verity does not load, spawn, or appear</td>
+                    <td>Java loader, Minecraft version, dependency, or profile</td>
+                    <td>Return to the Java route before changing AI model settings.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="guide-section">
         <div class="section-heading">
           <p class="eyebrow">Model selection</p>
@@ -477,6 +547,14 @@
           <p>
             Separate text response from voice output. If text works, check audio, microphone, dependency,
             and language support before switching AI models.
+          </p>
+        </details>
+        <details>
+          <summary>Why does Verity JE only answer with one word?</summary>
+          <p>
+            Treat this as a text-generation quality issue first. Prove the Java route loads, send one short typed
+            English prompt, test the same model outside Minecraft, and compare a stronger supported model before
+            changing the file. If text is coherent but speech is silent, move to the voice checklist instead.
           </p>
         </details>
         <details>

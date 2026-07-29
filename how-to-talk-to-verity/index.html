@@ -88,6 +88,14 @@
               },
               {
                 "@type": "Question",
+                "name": "Why does Verity answer with one word instead of talking normally?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "If Verity JE returns one-word or poor text answers, treat it as a model-context issue first, not a microphone issue. Test one short typed English prompt, compare the selected model outside Minecraft, and use the AI model page before changing voice settings."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "Can Verity understand languages other than English?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -289,6 +297,12 @@
               path work. If the log shows <code>API connection failed</code>, stop testing voice and use the
               <a href="/api-connection-failed/">status-code guide</a>. A 401, 429, unavailable model, or local Ollama
               connection problem cannot be repaired by changing a microphone setting.
+            </p>
+            <p>
+              If Verity JE does answer but only says one word, repeats filler, or sounds much weaker than the setup
+              video, do not start with microphone permissions. That is still a text-generation symptom. Use the
+              <a href="/ai-model/#one-word-replies">AI model checklist</a> to compare the selected model, prompt
+              context, language, and provider route before changing the installed file.
             </p>
           </article>
           <article class="guide-block">
@@ -577,6 +591,14 @@
             The Verity BE project says dots may mean its debugger connect command was not run or the backend failed.
             Recheck Beta APIs, the current connection instructions, and maintainer status. Do not assume this diagnosis
             applies to the separate PnTMC project or Java.
+          </p>
+        </details>
+        <details>
+          <summary>Why does Verity answer with one word instead of talking normally?</summary>
+          <p>
+            If Verity JE returns one-word or low-quality text, test the model route first. Send one short typed
+            English prompt, compare the same model outside Minecraft, and then use the AI model checklist. Microphone
+            settings are only the likely cause when text is coherent but speech input or audio output fails.
           </p>
         </details>
         <details>

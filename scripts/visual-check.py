@@ -111,11 +111,23 @@ with sync_playwright() as playwright:
         assert "Open JSON" in source_map_text
         assert "Similar-name JSON" in source_map_text
         assert "VERITY.exe" in source_map_text
+        assert "VERITY.exe Remastered" in source_map_text
         assert "Verity Dweller" in source_map_text
         assert "stale-beta-endpoint-404" in source_map_text
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
-        assert page.locator("tbody tr").count() == 20
+        assert page.locator("tbody tr").count() == 21
+
+        page.goto(f"{BASE_URL}/ai-model/", wait_until="domcontentloaded")
+        ai_model_text = page.locator("main").inner_text()
+        assert "One-word replies" in ai_model_text
+        assert "model-context problem" in ai_model_text
+        assert "timheinrich2011/verity-3b" in ai_model_text
+
+        page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
+        talk_text = page.locator("main").inner_text()
+        assert "only says one word" in talk_text
+        assert "AI model checklist" in talk_text
 
         page.goto(f"{BASE_URL}/verity-dweller/", wait_until="domcontentloaded")
         dweller_text = page.locator("main").inner_text()
@@ -169,6 +181,20 @@ with sync_playwright() as playwright:
         assert "1585389" in result_text
         assert "8526843" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
+
+        page.locator("#sourceInput").fill("https://modrinth.com/modpack/verity.exe-remastered/version/4N4vQrK7")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "VERITY.exe Remastered" in result_text
+        assert "L5qUPsXS" in result_text
+        assert "Modrinth MRPACK profile" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
+
+        page.locator("#sourceInput").fill("VERITY.exe Remastered 1.0.0.mrpack")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "VERITY.exe Remastered" in result_text
+        assert "Modrinth MRPACK" in result_text
 
         page.locator("#sourceInput").fill("verity-6.0.1-all.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -312,4 +338,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Dweller route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, and checksum branches")
