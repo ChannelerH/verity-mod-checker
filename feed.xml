@@ -5,16 +5,16 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T20:36:00+08:00</updated>
+  <updated>2026-07-29T20:30:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>Verity Mod download-count page added for viral 4.9M searches</title>
-    <id>https://veritymodchecker.online/updates/verity-download-counts-2026-07-29-2036</id>
+    <id>https://veritymodchecker.online/updates/verity-download-counts-2026-07-29-2030</id>
     <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="alternate" />
     <link href="https://veritymodchecker.online/download/" rel="related" />
     <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
-    <published>2026-07-29T20:36:00+08:00</published>
-    <updated>2026-07-29T20:36:00+08:00</updated>
+    <published>2026-07-29T20:30:00+08:00</published>
+    <updated>2026-07-29T20:30:00+08:00</updated>
     <summary>Added a focused /verity-mod-downloads/ page after current SERP checks showed media and competitor pages still using the older 4.9M viral-download framing while first-party project pages had moved ahead. The page now records Verity JE at 2,339,762 CurseForge project downloads and 332,321 Modrinth project downloads, stable yAt0wv1Z at 264,756 Modrinth version downloads, Verity BE at 4,024,803 CurseForge project downloads, PnTMC Verity - Bedrock Edition at 7,340,670 CurseForge project downloads with current V26.30 file 8517480 at 228.5K displayed file downloads, and Verity Pocket Edition (Be) at 56,652 CurseForge project downloads. It explains that the four tracked CurseForge project pages sum to 13,761,887 displayed project downloads, and that adding Modrinth gives a 14,094,208 platform-counter sum, not a unique-player, install, or safety claim. Homepage TDK was not changed.</summary>
     <category term="download-counts" />
     <category term="viral-search" />
