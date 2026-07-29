@@ -48,6 +48,22 @@
               "@type": "Answer",
               "text": "Most Java crashes come from a Minecraft version mismatch, wrong loader, missing dependencies, or debugging AI setup before the base mod loads."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Verity not appear after installing the Java JAR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use one source route, create the matching Forge or NeoForge profile, launch that profile once before adding Verity, then put the selected JAR in that profile's mods folder. Do not mix a copied old JAR, a CurseForge route, and a Modrinth route in the same test."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if the CurseForge app download fails?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Do not switch to random mirrors. Open the exact CurseForge file page in the browser, try the matching Modrinth route when appropriate, and keep the Minecraft version and loader tied to the file record you actually selected."
+            }
           }
         ]
       }
@@ -156,6 +172,65 @@
         </aside>
       </section>
 
+      <section class="guide-section" id="java-install-help">
+        <div class="section-heading">
+          <p class="eyebrow">New-player install help</p>
+          <h2>If you are helping a child install Verity on Java</h2>
+          <p>
+            Recent player questions show the same pattern: a parent or new Java player downloads an old
+            JAR, the CurseForge app fails, Verity does not appear in game, and then the player starts
+            searching for another copy. That usually makes the problem worse. Treat it as a profile and
+            source-route problem first.
+          </p>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Use one clean route before changing files</h3>
+            <p>
+              Choose one route for the first test. For the current Modrinth route, use Project ID
+              <code>on1Y0osD</code>, version <code>CXsEzVwJ</code>, file <code>verity-6.jar</code>,
+              Minecraft 1.20.1, and Forge. For the CurseForge-visible stable route, use Project ID
+              <code>1591438</code>, file record <code>8461257</code>, <code>verity-5.7.3.jar</code>,
+              Minecraft 1.20.1, and Forge. The older 1.21.1 NeoForge branch exists, but the project
+              description warns that it is deprecated and has many bugs.
+            </p>
+            <p>
+              If a video, comment, or app installed a different old JAR such as a 5.6.x build, remove it
+              from the test profile before trying the current route. Two Verity JARs in one mods folder
+              can turn a simple loader mismatch into a confusing crash or no-spawn report.
+            </p>
+          </article>
+
+          <article class="guide-block">
+            <h3>Profile checklist</h3>
+            <ol class="steps">
+              <li>Install and launch the matching Minecraft version once before adding the mod.</li>
+              <li>Install the matching loader named by the source record: Forge for current Modrinth 6 or CurseForge 5.7.3.</li>
+              <li>Start that empty loader profile once, then close the game.</li>
+              <li>Put only the selected Verity JAR in that profile's <code>mods</code> folder.</li>
+              <li>Add dependencies only when the selected file page or launcher asks for them.</li>
+              <li>Test whether the box appears before configuring Groq, Ollama, voice, or other AI behavior.</li>
+            </ol>
+          </article>
+
+          <article class="guide-block">
+            <h3>When the CurseForge app fails</h3>
+            <p>
+              A launcher download failure is not proof that the mod is gone. Open the exact browser file
+              page for record <code>8461257</code> or the current Modrinth route for <code>CXsEzVwJ</code>.
+              If the browser page loads but the app still fails, keep the record ID and source page in
+              your notes, then retry from a clean profile instead of searching for MediaFire, Discord,
+              Drive, or short-link copies.
+            </p>
+            <div class="card-actions">
+              <a href="/verity-6-jar/">Check current Modrinth 6</a>
+              <a href="/verity-5-7-3-jar/">Check CurseForge 5.7.3</a>
+              <a href="/not-working/">Open full fix map</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="status-section" id="versions">
         <div class="section-heading">
           <p class="eyebrow">Current Java file map</p>
@@ -177,7 +252,7 @@
               <div><dt>Modrinth</dt><dd>Project on1Y0osD / version CXsEzVwJ</dd></div>
               <div><dt>Published</dt><dd>July 29, 2026</dd></div>
               <div><dt>Size</dt><dd>243.09 MB</dd></div>
-              <div><dt>Project reach</dt><dd>343,326 Modrinth downloads at check</dd></div>
+              <div><dt>Project reach</dt><dd>344,555 Modrinth downloads at check</dd></div>
             </dl>
             <div class="card-actions">
               <a href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="noopener" target="_blank">Open Modrinth version 6</a>
@@ -200,7 +275,7 @@
               <div><dt>Modrinth</dt><dd>yAt0wv1Z</dd></div>
               <div><dt>Published</dt><dd>July 18, 2026</dd></div>
               <div><dt>Size</dt><dd>235.06 MB</dd></div>
-              <div><dt>Project reach</dt><dd>2,367,656 CurseForge downloads at check</dd></div>
+              <div><dt>Project reach</dt><dd>2,373,477 CurseForge downloads at check</dd></div>
             </dl>
             <div class="card-actions">
               <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open CurseForge record</a>

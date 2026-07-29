@@ -6,7 +6,7 @@
     <title>Verity Mod Not Working: Java, Bedrock, Reply &amp; Transform Fixes</title>
     <meta
       name="description"
-      content="Fix Verity Mod not working issues: box not spawning, no reply, no monster form, dialogue missing, only saying dots, Java crash, AI setup, old links, and 404 pages."
+      content="Fix Verity Mod not working issues: Java JAR installed but not appearing, CurseForge download fails, duplicate Bedrock pack, no reply, dots, AI setup, and 404 pages."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/not-working/" />
@@ -56,6 +56,22 @@
               "@type": "Answer",
               "text": "Avoid random mirrors and search the project name on a known mod platform instead. A 404 can mean the file changed, moved, or was removed."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Bedrock say the Verity import failed or duplicate pack?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A duplicate-pack message usually means a behavior pack or resource pack from an older Verity install is already present. Remove the old pack entries from storage, restart Minecraft, then import the current MCADDON once and activate both packs in a clean world."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Verity not appear after installing the Java JAR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the source route, Minecraft version, loader, and profile before replacing the JAR. Use one clean Forge or NeoForge profile that matches the file page, remove copied old JARs from the mods folder, and test the base mod before configuring AI."
+            }
           }
         ]
       }
@@ -69,9 +85,9 @@
             "@id": "https://veritymodchecker.online/not-working/#webpage",
             "url": "https://veritymodchecker.online/not-working/",
             "name": "Verity Mod Not Working: Java, Bedrock, Reply & Transform Fixes",
-            "dateModified": "2026-07-29",
+            "dateModified": "2026-07-30",
             "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
-            "about": ["Verity Mod not working", "Verity only saying dots", "Verity box not spawning", "Verity Java crash", "Verity not replying", "Verity monster form"]
+            "about": ["Verity Mod not working", "Verity only saying dots", "Verity box not spawning", "Verity Java crash", "Verity not replying", "Verity monster form", "Verity duplicate pack"]
           },
           {
             "@type": "BreadcrumbList",
@@ -106,10 +122,11 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Troubleshooting updated July 29, 2026</p>
+          <p class="eyebrow">Troubleshooting updated July 30, 2026</p>
           <h1>Verity Mod Not Working Fixes</h1>
           <p class="lede">
-            Use this page when Verity Mod is not working after download, the box does not spawn,
+            Use this page when Verity Mod is not working after download, a Java JAR installs but Verity
+            does not appear, CurseForge download fails, Bedrock says duplicate pack or failed import, the box does not spawn,
             the dialogue box is missing, Verity only says "...", Verity does not reply, he never changes
             into the expected monster form, Java crashes, AI does not respond, or an old download link returns 404.
           </p>
@@ -155,6 +172,36 @@
           <h2>Pick the closest problem</h2>
         </div>
         <div class="error-grid">
+          <article class="error-card">
+            <span>Java</span>
+            <h3>Installed the JAR but Verity does not appear</h3>
+            <p>
+              Use one clean source route and one clean launcher profile. Current Modrinth 6 uses
+              <code>verity-6.jar</code>, Minecraft 1.20.1, and Forge; the CurseForge-visible stable route uses
+              <code>verity-5.7.3.jar</code>, record 8461257, Minecraft 1.20.1, and Forge. Remove copied old
+              JARs from the same mods folder before testing. If you are helping a child or new Java player,
+              use the <a href="/java/#java-install-help">Java install checklist</a> before changing downloads.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Java</span>
+            <h3>CurseForge app download fails</h3>
+            <p>
+              A launcher failure does not mean every source is unsafe or gone. Open the exact browser file
+              page, keep the Project ID and file record, then retry from a clean profile. Do not move to a
+              Drive, Discord, MediaFire, or short-link copy just because the app failed once.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Bedrock</span>
+            <h3>Import says failed or duplicate pack</h3>
+            <p>
+              A duplicate-pack error often means an older behavior pack or resource pack is already installed.
+              Remove the old Verity entries from Minecraft storage, restart the app, import the current
+              MCADDON once, and activate both packs in a clean test world. Do this before assuming the
+              CurseForge or MCPEDL link is broken.
+            </p>
+          </article>
           <article class="error-card">
             <span>Bedrock</span>
             <h3>Box not spawning</h3>

@@ -217,6 +217,22 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/verity-mod-vercel-app/"]').count() >= 1
         assert page.locator('a[href="/apk/"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/java/#java-install-help", wait_until="domcontentloaded")
+        java_help_text = page.locator("main").inner_text()
+        assert "If you are helping a child install Verity on Java" in java_help_text
+        assert "CurseForge app fails" in java_help_text
+        assert "old JAR" in java_help_text
+        assert "CXsEzVwJ" in java_help_text
+        assert "8461257" in java_help_text
+        assert page.locator('a[href="/not-working/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/not-working/", wait_until="domcontentloaded")
+        not_working_text = page.locator("main").inner_text()
+        assert "Installed the JAR but Verity does not appear" in not_working_text
+        assert "CurseForge app download fails" in not_working_text
+        assert "Import says failed or duplicate pack" in not_working_text
+        assert page.locator('a[href="/java/#java-install-help"]').count() >= 1
+
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
         assert "only says one word" in talk_text

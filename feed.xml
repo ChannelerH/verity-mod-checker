@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T06:08:12+08:00</updated>
+  <updated>2026-07-30T07:35:34+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Java install-failure and Bedrock duplicate-pack fixes expanded</title>
+    <id>https://veritymodchecker.online/updates/java-bedrock-install-fixes-2026-07-30-0735</id>
+    <link href="https://veritymodchecker.online/java/#java-install-help" rel="alternate" />
+    <link href="https://veritymodchecker.online/not-working/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <published>2026-07-30T07:35:34+08:00</published>
+    <updated>2026-07-30T07:35:34+08:00</updated>
+    <summary>Current SERP review surfaced a 23-hour-old Java help thread where a parent was helping a child install Verity, had downloaded an older JAR, saw CurseForge app download failure, and could not make Verity appear. Another current Bedrock thread showed a failed import that was actually a duplicate-pack problem. Expanded /java/ with a new-player and parent install checklist that tells users to pick one clean route, match Minecraft version and loader, launch the profile before adding the JAR, avoid mixing old copied files, and avoid random mirrors when the CurseForge app fails. Expanded /not-working/ with direct Java not-appearing, CurseForge-app-failed, and Bedrock duplicate-pack cards plus FAQ coverage. Refreshed current public counters: Modrinth Verity JE project on1Y0osD 344,555 downloads, version CXsEzVwJ 3,418 downloads, version yAt0wv1Z 273,298 downloads; CurseForge Verity JE Project ID 1591438 2,373,477 project downloads and file 8461257 668.6K displayed file downloads; Verity BE Project ID 1574632 4,064,536 project downloads and file 8506198 216.4K displayed file downloads; PnTMC Project ID 1575941 7,425,676 project downloads and file 8517480 275.6K displayed file downloads. GSC and GA4 reads remained blocked by API/OAuth issues, and the browser CDP proxy timed out today, so no new Search Console or Analytics metric is claimed.</summary>
+    <category term="java-install-fix" />
+    <category term="not-working" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>Verity Mod virus and safety check route added</title>
     <id>https://veritymodchecker.online/updates/verity-mod-virus-check-route-2026-07-30-0608</id>
