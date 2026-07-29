@@ -52,7 +52,7 @@ const pocketCurrent = releaseByStatus(pocket, "current");
 const exe = modpackByProjectId(1585389);
 const verityPack = modpackByProjectId(1583377);
 const sarelsanaPack = modpackByProjectId(1587394);
-const realisticPack = modpackByProjectId(1582388);
+const realisticPack = modpackByProjectId(1596649);
 const survivePack = modpackByProjectId(1583260);
 
 const records = [
@@ -274,9 +274,17 @@ const records = [
   }))
 ];
 
+const curseforgeTrackedProjectDownloads = [
+  java,
+  verityBe,
+  pntmc,
+  pocket
+].reduce((sum, project) => sum + Number(project.projectDownloadsAtCheck || 0), 0);
+const curseforgePlusModrinthProjectDownloads = curseforgeTrackedProjectDownloads + Number(modrinth.projectDownloadsAtCheck || 0);
+
 const summary = {
-  curseforgeTrackedProjectDownloads: 13778868,
-  curseforgePlusModrinthProjectDownloads: 14113486,
+  curseforgeTrackedProjectDownloads,
+  curseforgePlusModrinthProjectDownloads,
   note: "These are platform display counters across separate public project pages. They are not unique players, unique installs, or safety verdicts."
 };
 
@@ -343,6 +351,25 @@ function formatNumber(value) {
   return Number.isInteger(value) ? value.toLocaleString("en-US") : "";
 }
 
+function formatCheckedDate(value) {
+  const [year, month, day] = String(value).slice(0, 10).split("-").map(Number);
+  const monthName = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ][month - 1];
+  return `${monthName} ${day}, ${year}`;
+}
+
 function rowHtml(record) {
   return `              <tr>
                 <td>${escapeHtml(record.routeName)}</td>
@@ -356,6 +383,7 @@ function rowHtml(record) {
 }
 
 const tableRows = records.map(rowHtml).join("\n");
+const checkedDateLabel = formatCheckedDate(generatedAt);
 const jsonLdRecords = records.slice(0, 10).map((record, index) => ({
   "@type": "ListItem",
   position: index + 1,
@@ -417,7 +445,7 @@ const pageHtml = `<!doctype html>
                 contentUrl: `${site}/data/verity-source-map.csv`
               }
             ],
-            dateModified: "2026-07-29",
+            dateModified: generatedAt.slice(0, 10),
             isBasedOn: [`${site}/data/verity-releases.json`, `${site}/data/verity-modpacks.json`],
             creator: { "@type": "Organization", name: "Verity Mod Checker" },
             keywords: ["verity mod source map", "verity mod project id", "verity mod csv", "verity mod data"]
@@ -487,7 +515,7 @@ const pageHtml = `<!doctype html>
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Citation asset checked July 29, 2026</p>
+          <p class="eyebrow">Citation asset checked ${checkedDateLabel}</p>
           <h1>Verity Mod Source Map</h1>
           <p class="lede">
             This page is built for editors, video creators, server owners, wiki maintainers, and players who

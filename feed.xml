@@ -5,8 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T23:45:00+08:00</updated>
+  <updated>2026-07-30T00:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Current Verity source counters refreshed from July 30 checks</title>
+    <id>https://veritymodchecker.online/updates/source-counters-2026-07-30-0045</id>
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="alternate" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/updates/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <published>2026-07-30T00:45:00+08:00</published>
+    <updated>2026-07-30T00:45:00+08:00</updated>
+    <summary>Refreshed point-in-time source counters after current GSC still showed 50 clicks, 1,520 impressions, 3.3% CTR, average position 8.7, and the exact verity mod query at 2 clicks and 3 impressions, while the GA4 interface became unavailable in this run due to an account/property permission screen. Current public source checks recorded Verity JE at 2,355,730 CurseForge project downloads, verity-5.7.3.jar at 654.9K displayed CurseForge file downloads, Modrinth project on1Y0osD at 337,756 downloads, Modrinth stable yAt0wv1Z at 270,511 downloads, Verity BE at 4,040,625 CurseForge project downloads with file 8506198 at 203.9K, PnTMC Verity - Bedrock Edition at 7,376,299 CurseForge project downloads with file 8517480 at 248.9K, Verity Pocket Edition at 57,039 project downloads with file 8406293 at 49.0K, and VERITY.exe Project ID 1585389 at 129,885 CurseForge project downloads. The modpack snapshot also refreshes Verity Pack at 84.0K, VerityPack at 121.5K, and VerityPack Realistic as felixdevytofficial Project ID 1596649 at 28.6K. The four tracked CurseForge Verity project pages now sum to 13,829,693 displayed project downloads; adding Modrinth gives a 14,167,449 platform-counter sum, not unique players, installs, or a safety verdict. SERP review still showed official CurseForge/Modrinth records, veritymod.blog, Reddit player questions, YouTube setup videos, Google Play app claims, voice/API 429/no-purpose problems, and Bedrock route confusion, so this was a source-data refresh without changing homepage TDK.</summary>
+    <category term="source-refresh" />
+    <category term="download-counters" />
+    <category term="gsc-baseline" />
+  </entry>
   <entry>
     <title>Added a citation-ready Verity Mod source map with JSON and CSV data</title>
     <id>https://veritymodchecker.online/updates/source-map-csv-json-2026-07-29-2345</id>
