@@ -5,8 +5,20 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T12:48:00+08:00</updated>
+  <updated>2026-07-29T13:20:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Real Verity Mod landing route added for video-led player intent</title>
+    <id>https://veritymodchecker.online/updates/real-verity-mod-route-2026-07-29-1320</id>
+    <link href="https://veritymodchecker.online/real-verity-mod/" rel="alternate" />
+    <link href="https://veritymodchecker.online/is-verity-real/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <published>2026-07-29T13:20:00+08:00</published>
+    <updated>2026-07-29T13:20:00+08:00</updated>
+    <summary>Added a dedicated /real-verity-mod/ route after current Google SERP review showed the exact Real Verity Mod query being driven by fresh Minecraft videos, Reddit discussions, official Java and Bedrock project pages, Google Play style app results, Fandom, and VERITY.exe-style modpack intent. The page maps video titles to current Java, Bedrock, MCPE, PnTMC, VERITY.exe, APK, and symptom routes without mirroring files or changing homepage TDK. First-party checks at 13:20 showed Modrinth project on1Y0osD at 324,115 downloads and stable yAt0wv1Z at 257,468 downloads; CurseForge Verity JE Project ID 1591438 remains the checked Java publisher route.</summary>
+    <category term="real-verity-mod" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Real Verity Mod route refreshed after video-led SERP review</title>
     <id>https://veritymodchecker.online/updates/real-verity-mod-video-serp-refresh-2026-07-29-1248</id>

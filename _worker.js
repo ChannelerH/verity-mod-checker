@@ -25,6 +25,7 @@ const htmlRoutes = new Set([
   "/pntmc-verity-3-2-0/",
   "/pocket-edition/",
   "/real-verity-mod-updated/",
+  "/real-verity-mod/",
   "/server/",
   "/status-401/",
   "/status-429/",
@@ -358,10 +359,6 @@ export default {
     }
 
     if (
-      url.pathname === "/real-verity-mod" ||
-      url.pathname.startsWith("/real-verity-mod/") ||
-      url.pathname === "/the-real-verity-mod" ||
-      url.pathname.startsWith("/the-real-verity-mod/") ||
       url.pathname === "/real-verity-mod-download" ||
       url.pathname.startsWith("/real-verity-mod-download/") ||
       url.pathname === "/real-verity-mod-java" ||
@@ -375,7 +372,16 @@ export default {
       url.pathname === "/real-verity-minecraft-mod" ||
       url.pathname.startsWith("/real-verity-minecraft-mod/") ||
       url.pathname === "/the-real-verity-mod-in-minecraft" ||
+      url.pathname.startsWith("/the-real-verity-mod/") ||
       url.pathname.startsWith("/the-real-verity-mod-in-minecraft/") ||
+      url.pathname === "/the-real-verity-mod"
+    ) {
+      url.pathname = "/real-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/original-verity-mod" ||
       url.pathname.startsWith("/original-verity-mod/") ||
       url.pathname === "/official-verity-mod" ||

@@ -55,6 +55,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://veritymodchecker.online/real-verity-mod/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://veritymodchecker.online/play/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
