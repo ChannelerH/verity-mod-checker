@@ -37,6 +37,7 @@ ROUTES = [
     "/is-verity-real/",
     "/java/",
     "/verity-je/",
+    "/verity-6-jar/",
     "/verity-6-0-1-jar/",
     "/verity-6-0-0-jar/",
     "/verity-5-7-3-jar/",
@@ -120,15 +121,18 @@ with sync_playwright() as playwright:
         assert "Verity Body Overhaul" in source_map_text
         assert "Verity May Be" in source_map_text
         assert "VerityCraft" in source_map_text
+        assert "verity-6.jar" in source_map_text
+        assert "CXsEzVwJ" in source_map_text
         assert "stale-beta-endpoint-404" in source_map_text
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
-        assert page.locator("tbody tr").count() == 29
+        assert page.locator("tbody tr").count() == 30
 
         page.goto(f"{BASE_URL}/verity-mod-wiki/", wait_until="domcontentloaded")
         wiki_text = page.locator("main").inner_text()
         assert "Verity Mod Wiki" in wiki_text
-        assert "Java JE #8461257" in wiki_text
+        assert "Java JE 6 CXsEzVwJ" in wiki_text
+        assert "CurseForge #8461257" in wiki_text
         assert "Bedrock BE #8506198" in wiki_text
         assert "PnTMC #8517480" in wiki_text
         assert "Monster form" in wiki_text
@@ -158,6 +162,13 @@ with sync_playwright() as playwright:
         assert "Google Drive" in legacy_text
         assert "Verity JE" in legacy_text
         assert page.locator('a[href="/data/verity-legacy-files.json"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/verity-6-jar/", wait_until="domcontentloaded")
+        v6_text = page.locator("main").inner_text()
+        assert "verity-6.jar File Check" in v6_text
+        assert "CXsEzVwJ" in v6_text
+        assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
+        assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
@@ -251,7 +262,8 @@ with sync_playwright() as playwright:
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "legacy file signal" in result_text.lower()
-        assert "current checked Java route is Verity JE" in result_text
+        assert "Modrinth Verity JE 6" in result_text
+        assert "verity-6.jar" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-1-0-0-jar/"
 
         page.locator("#sourceInput").fill("https://drive.google.com/file/d/19n7S-TVD4Nzeu6fTGlxMYIO_LsXEzlOO/view?usp=sharing")
@@ -272,10 +284,10 @@ with sync_playwright() as playwright:
         page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-je-official/version/6.0.1-beta")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
-        assert "KNOWN RECORD, NOW UNLISTED" in result_text
+        assert "KNOWN PROJECT MATCH" in result_text
         assert "on1Y0osD" in result_text
-        assert "Historical SHA-512" in result_text
-        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-5-7-3-jar/")
+        assert "CXsEzVwJ" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/CXsEzVwJ")
 
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8327253")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")

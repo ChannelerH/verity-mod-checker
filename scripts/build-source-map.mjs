@@ -36,6 +36,7 @@ const java = projectByName("Verity JE");
 const javaStable = releaseByStatus(java, "current");
 const javaLegacy = releaseByRecord(java, 8346795);
 const modrinth = alternateByHost(java, "Modrinth");
+const modrinthCurrent = modrinth.releases.find((entry) => entry.recordId === "CXsEzVwJ");
 const modrinthStable = modrinth.releases.find((entry) => entry.recordId === "yAt0wv1Z");
 const modrinthBeta601 = modrinth.releases.find((entry) => entry.recordId === "YLEoXe6t");
 const modrinthBeta600 = modrinth.releases.find((entry) => entry.recordId === "5ech0sTo");
@@ -84,6 +85,29 @@ function lookalikeGuideUrl(item) {
 }
 
 const records = [
+  {
+    routeId: "java-modrinth-6-current",
+    routeName: "Verity JE 6 Modrinth release",
+    edition: "Java",
+    host: "Modrinth",
+    owner: modrinth.owner,
+    projectId: modrinth.projectId,
+    projectUrl: modrinth.projectUrl,
+    projectDownloadsAtCheck: modrinth.projectDownloadsAtCheck,
+    packageType: modrinthCurrent.packageType,
+    fileName: modrinthCurrent.filename,
+    recordId: modrinthCurrent.recordId,
+    recordUrl: modrinthCurrent.recordUrl,
+    minecraftVersion: modrinthCurrent.minecraftVersion,
+    loader: modrinthCurrent.loader,
+    publishedDate: modrinthCurrent.publishedDate,
+    fileSizeMb: modrinthCurrent.displayedSizeMb,
+    fileDownloadsAtCheck: modrinthCurrent.recordDownloadsAtCheck,
+    status: "current-release",
+    recommendedUse: "Use when the player intentionally follows the current Modrinth Verity JE 6 route.",
+    caution: "CurseForge still shows 5.7.3 as its visible main file, so keep the source platform in the citation.",
+    localGuideUrl: `${site}/verity-6-jar/`
+  },
   {
     routeId: "java-curseforge-stable",
     routeName: "Verity JE stable CurseForge file",

@@ -328,6 +328,34 @@ const knownProjects = [
     ],
     releases: [
       {
+        status: "current",
+        filename: "verity-6.jar",
+        aliases: [
+          "verity 6",
+          "verity 6 jar",
+          "verity je 6",
+          "verity je version 6",
+          "verity mod 6",
+          "verity mod version 6",
+          "modrinth verity 6"
+        ],
+        versionNumber: "6",
+        sizeMb: 243.09,
+        version: "Minecraft 1.20.1 · Forge",
+        published: "July 29, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "CXsEzVwJ",
+            link: "https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ",
+            hashes: {
+              sha1: "609c799d7350a657cf2193839224bd6c2f9971b2",
+              sha512: "25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e"
+            }
+          }
+        ]
+      },
+      {
         status: "unlisted-beta-observed",
         filename: "verity-6.0.1-all.jar",
         versionNumber: "6.0.1-beta",
@@ -1568,7 +1596,7 @@ function legacyVerity100Result({ source, packageName, hash = "", hashLabel = "SH
     risk: "Needs source proof",
     title: "verity-1.0.0.jar is an old or ambiguous Verity Mod file name",
     summary:
-      "The input matches an old Verity Mod 1.0.0 / Forge 1.20.1 / Drive-link search pattern. Treat it as unverified until the file maps to a maintainer-controlled record; the current checked Java route is Verity JE with verity-5.7.3.jar.",
+      "The input matches an old Verity Mod 1.0.0 / Forge 1.20.1 / Drive-link search pattern. Treat it as unverified until the file maps to a maintainer-controlled record; the current checked Java routes are Modrinth Verity JE 6 with verity-6.jar and the CurseForge 5.7.3 comparison route.",
     source,
     package: packageName,
     project: "Legacy Verity 1.0.0 claim · current route is Verity JE 1591438",
@@ -1690,11 +1718,11 @@ function inspectTextSource(rawValue) {
           publisherCheck: `${hashAlgorithm} matched an unlisted record`,
           checks: [
             releaseMatch.release.availability || "The matched record is no longer listed in the current source map.",
-            "Do not treat a historical beta checksum as the current stable route.",
-            "Open the current project versions list or use verity-5.7.3.jar for the stable Forge route."
+            "Do not treat a historical beta checksum as the current Verity JE 6 route.",
+            "Open the current verity-6.jar page, then compare against 5.7.3 if your source still uses CurseForge."
           ],
-          link: "/verity-5-7-3-jar/",
-          linkLabel: "Open current stable Java route",
+          link: "/verity-6-jar/",
+          linkLabel: "Open current Verity JE 6 route",
           external: false
         };
       }
@@ -1864,11 +1892,11 @@ function inspectTextSource(rawValue) {
           publisherCheck: hasPublisherHash ? "Historical SHA-512 recorded" : "No active publisher checksum",
           checks: [
             matchedRelease.availability || "This release is not in the current source map.",
-            "Do not use a copied 6.0 beta link as the current Verity Mod route.",
-            "Open the current Modrinth versions list or the stable 5.7.3 file check."
+            "Do not use a copied 6.0 beta link as the current verity-6.jar route.",
+            "Open the current Verity JE 6 file check, then compare against 5.7.3 when your source still names CurseForge."
           ],
-          link: "/verity-5-7-3-jar/",
-          linkLabel: "Open current stable Java route",
+          link: "/verity-6-jar/",
+          linkLabel: "Open current Verity JE 6 route",
           external: false
         };
       }

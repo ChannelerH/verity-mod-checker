@@ -46,6 +46,7 @@ const htmlRoutes = new Set([
   "/verity-map/",
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
+  "/verity-6-jar/",
   "/verity-6-0-0-jar/",
   "/verity-6-0-1-jar/",
   "/verity-doesnt-respond/",
@@ -1009,6 +1010,30 @@ export default {
       url.pathname.startsWith("/verity-je-mod-download/")
     ) {
       url.pathname = "/verity-5-7-3-jar/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-6.jar" ||
+      url.pathname.startsWith("/verity-6.jar/") ||
+      url.pathname === "/verity-6" ||
+      url.pathname.startsWith("/verity-6/") ||
+      url.pathname === "/verity-6-jar" ||
+      url.pathname === "/verity-je-6" ||
+      url.pathname.startsWith("/verity-je-6/") ||
+      url.pathname === "/verity-je-version-6" ||
+      url.pathname.startsWith("/verity-je-version-6/") ||
+      url.pathname === "/verity-je-6-download" ||
+      url.pathname.startsWith("/verity-je-6-download/") ||
+      url.pathname === "/verity-mod-6" ||
+      url.pathname.startsWith("/verity-mod-6/") ||
+      url.pathname === "/verity-mod-version-6" ||
+      url.pathname.startsWith("/verity-mod-version-6/") ||
+      url.pathname === "/modrinth-verity-6" ||
+      url.pathname.startsWith("/modrinth-verity-6/")
+    ) {
+      url.pathname = "/verity-6-jar/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
