@@ -5,8 +5,22 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T03:52:00+08:00</updated>
+  <updated>2026-07-30T03:59:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity World modpack route added for verity-falsity confusion</title>
+    <id>https://veritymodchecker.online/updates/verity-world-modpack-route-2026-07-30-0359</id>
+    <link href="https://veritymodchecker.online/verity-world/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/verity-falsity" rel="related" />
+    <published>2026-07-30T03:59:00+08:00</published>
+    <updated>2026-07-30T03:59:00+08:00</updated>
+    <summary>Added /verity-world/ after current SERP and source review showed the VoxelCore CurseForge modpack "Verity World - AI Horror Adventure with Verity" appearing beside Verity Mod and Falsity-style intent. The page separates Project ID 1598871, CurseForge slug verity-falsity, main file record 8473476, Forge 1.20.1, 44,641 project downloads, 18.9K file downloads, and a separate modpack profile from Verity JE, Verity BE, PnTMC, and standalone Falsity. The homepage title and description were not changed. GSC and GA4 API reads remained blocked by disabled Google APIs in project 398776347627, so no new search-performance metric is claimed.</summary>
+    <category term="verity-world" />
+    <category term="modpack-route" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity monster form route added for Body Overhaul and modpack phase searches</title>
     <id>https://veritymodchecker.online/updates/verity-monster-form-body-overhaul-2026-07-30-0352</id>

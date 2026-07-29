@@ -52,12 +52,12 @@ function routeIdSegment(value) {
 function modpackGuideUrl(item) {
   if (item.name === "VERITY.exe" || item.name === "VERITY.exe Remastered") return `${site}/verity-exe/`;
   if (item.name === "Survive from VERITY or FALSITY") return `${site}/falsity-mod/`;
+  if (item.name === "Verity World - AI Horror Adventure with Verity") return `${site}/verity-world/`;
   if (
     [
       "Verity May Be",
       "VerityCraft",
       "Horror Ultimate Selection",
-      "Verity World - AI Horror Adventure with Verity",
       "Verity Endless Horror Experience",
       "Verity + Factories"
     ].includes(item.name)
@@ -71,6 +71,7 @@ function modpackRecommendedUse(item) {
   if (item.name === "VERITY.exe") return "Use only when the player intentionally wants the VERITY.exe modpack profile.";
   if (item.name === "VERITY.exe Remastered") return "Use only when the player intentionally selected the Modrinth VERITY.exe Remastered MRPACK route.";
   if (item.name === "Survive from VERITY or FALSITY") return "Use when the player intentionally selected the separate Verity or Falsity modpack profile.";
+  if (item.name === "Verity World - AI Horror Adventure with Verity") return "Use only when the player intentionally wants the Verity World Forge 1.20.1 modpack route.";
   if (modpackGuideUrl(item).endsWith("/verity-monster-form/")) {
     return "Use when the player intentionally wants a monster-form or horror-profile route rather than the standalone Verity JE or Bedrock file.";
   }

@@ -506,7 +506,7 @@
       "owner": "VoxelCore",
       "projectId": 1598871,
       "projectUrl": "https://www.curseforge.com/minecraft/modpacks/verity-falsity",
-      "projectDownloadsAtCheck": 44231,
+      "projectDownloadsAtCheck": 44641,
       "packageType": "modpack",
       "fileName": "VerityWorld MC 1.20.1-1.3.0",
       "recordId": 8473476,
@@ -514,12 +514,12 @@
       "minecraftVersion": "1.20.1",
       "loader": "Forge",
       "publishedDate": "2026-07-20",
-      "fileSizeMb": "",
-      "fileDownloadsAtCheck": "",
+      "fileSizeMb": 0.63,
+      "fileDownloadsAtCheck": 18900,
       "status": "separate-ai-horror-world-modpack-route",
-      "recommendedUse": "Use when the player intentionally wants a monster-form or horror-profile route rather than the standalone Verity JE or Bedrock file.",
-      "caution": "Separate Forge profile route for an AI horror adventure with Verity wording. Treat it as a modpack route, not a direct replacement for Verity JE, Verity BE, or PnTMC.",
-      "localGuideUrl": "https://veritymodchecker.online/verity-monster-form/"
+      "recommendedUse": "Use only when the player intentionally wants the Verity World Forge 1.20.1 modpack route.",
+      "caution": "Separate Forge profile route for an AI horror adventure with Verity wording. Current public source check shows Project ID 1598871, main file record 8473476, 44,641 project downloads, and 18.9K file downloads. Treat it as a modpack route, not a direct replacement for Verity JE, Verity BE, or PnTMC.",
+      "localGuideUrl": "https://veritymodchecker.online/verity-world/"
     },
     {
       "routeId": "modpack-1611801",

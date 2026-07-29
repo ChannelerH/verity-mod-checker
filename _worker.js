@@ -40,6 +40,7 @@ const htmlRoutes = new Set([
   "/verity-mod-wiki/",
   "/verity-mod-downloads/",
   "/verity-pack/",
+  "/verity-world/",
   "/verity-souls/",
   "/verity-groq-api-key/",
   "/verity-map/",
@@ -498,9 +499,7 @@ export default {
       url.pathname === "/verity-server-map" ||
       url.pathname.startsWith("/verity-server-map/") ||
       url.pathname === "/verity-minecraft-world" ||
-      url.pathname.startsWith("/verity-minecraft-world/") ||
-      url.pathname === "/verity-world" ||
-      url.pathname.startsWith("/verity-world/")
+      url.pathname.startsWith("/verity-minecraft-world/")
     ) {
       url.pathname = "/verity-map/";
       url.hash = "";
@@ -819,6 +818,26 @@ export default {
       url.pathname.startsWith("/how-to-download-and-install-verity-for-minecraft/")
     ) {
       url.pathname = "/how-to-get-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-world" ||
+      url.pathname === "/verityworld" ||
+      url.pathname.startsWith("/verityworld/") ||
+      url.pathname === "/verity-world-modpack" ||
+      url.pathname.startsWith("/verity-world-modpack/") ||
+      url.pathname === "/verity-world-ai-horror-adventure" ||
+      url.pathname.startsWith("/verity-world-ai-horror-adventure/") ||
+      url.pathname === "/verity-falsity-modpack" ||
+      url.pathname.startsWith("/verity-falsity-modpack/") ||
+      url.pathname === "/curseforge-verity-falsity" ||
+      url.pathname.startsWith("/curseforge-verity-falsity/") ||
+      url.pathname === "/voxelcore-verity-world" ||
+      url.pathname.startsWith("/voxelcore-verity-world/")
+    ) {
+      url.pathname = "/verity-world/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

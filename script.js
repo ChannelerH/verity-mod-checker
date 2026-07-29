@@ -988,7 +988,7 @@ const knownProjects = [
   {
     name: "Verity World - AI Horror Adventure with Verity",
     edition: "Java modpack",
-    route: "/verity-monster-form/",
+    route: "/verity-world/",
     sources: [
       {
         platform: "CurseForge",
@@ -1001,9 +1001,9 @@ const knownProjects = [
       {
         status: "separate-ai-horror-world-modpack-route",
         filename: "VerityWorld MC 1.20.1-1.3.0",
-        aliases: ["Verity World", "VerityWorld", "AI Horror Adventure with Verity"],
+        aliases: ["Verity World", "VerityWorld", "AI Horror Adventure with Verity", "verity-falsity", "VoxelCore"],
         versionNumber: "1.3.0",
-        sizeMb: null,
+        sizeMb: 0.63,
         version: "Minecraft 1.20.1 · Forge modpack",
         published: "July 20, 2026",
         records: [
@@ -1302,6 +1302,7 @@ function modpackRoute(project) {
 
 function modpackRouteLabel(project) {
   if (project.route === "/falsity-mod/") return "Open Falsity route check";
+  if (project.route === "/verity-world/") return "Open Verity World route check";
   if (project.route === "/verity-monster-form/") return "Open monster-form route check";
   return project.route === "/verity-exe/" ? "Open VERITY.exe route check" : "Open Verity Pack route check";
 }
@@ -1335,6 +1336,13 @@ function modpackChecks(project) {
       "If you need the standalone FALSITY [SMILEY] mod or Verity JE file, open the source-check page first."
     ];
   }
+  if (project.route === "/verity-world/") {
+    return [
+      "The project path matches the checked Verity World CurseForge modpack route.",
+      "Use it only when you intentionally want the VoxelCore Forge 1.20.1 profile.",
+      "If you need Verity JE, Verity BE, PnTMC, or standalone Falsity, open the matching route instead."
+    ];
+  }
   if (project.route === "/verity-monster-form/") {
     return [
       "The project path matches a checked monster-form or horror-profile route.",
@@ -1361,6 +1369,9 @@ function modpackSummary(project, projectId) {
   }
   if (project.route === "/falsity-mod/") {
     return `This URL matches the checked ${project.name} CurseForge modpack route, Project ID ${projectId}. Treat it as a profile route for Verity or Falsity searches, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, or Bedrock add-on.`;
+  }
+  if (project.route === "/verity-world/") {
+    return `This URL matches the checked Verity World CurseForge modpack route, Project ID ${projectId}. The July 30 source check maps it to file record 8473476 for Minecraft 1.20.1 Forge, with 44,641 project downloads and 18.9K file downloads. Treat it as a separate profile, not as Verity JE, Verity BE, PnTMC, or standalone Falsity.`;
   }
   if (project.route === "/verity-monster-form/") {
     return `This URL matches the checked ${project.name} monster-form or horror-profile route, Project ID ${projectId}. Treat it as a separate profile, body, or phase route rather than the default standalone Verity JE Java file, Verity BE add-on, or PnTMC Bedrock route.`;
