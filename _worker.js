@@ -264,7 +264,15 @@ export default {
       url.pathname === "/what-is-verity" ||
       url.pathname.startsWith("/what-is-verity/") ||
       url.pathname === "/what-is-verity-minecraft" ||
-      url.pathname.startsWith("/what-is-verity-minecraft/")
+      url.pathname.startsWith("/what-is-verity-minecraft/") ||
+      url.pathname === "/what-is-verity-in-minecraft" ||
+      url.pathname.startsWith("/what-is-verity-in-minecraft/") ||
+      url.pathname === "/what-is-the-verity-mod" ||
+      url.pathname.startsWith("/what-is-the-verity-mod/") ||
+      url.pathname === "/who-is-verity" ||
+      url.pathname.startsWith("/who-is-verity/") ||
+      url.pathname === "/who-is-verity-minecraft" ||
+      url.pathname.startsWith("/who-is-verity-minecraft/")
     ) {
       url.pathname = "/what-is-verity-mod/";
       url.hash = "";

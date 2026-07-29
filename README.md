@@ -14,7 +14,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - How to play Verity Mod on Java, Bedrock, MCPE, mobile, and TLauncher: https://veritymodchecker.online/play/
 - Verity Mod server, friends, PS4, Xbox, and console route: https://veritymodchecker.online/server/
 - CurseForge Verity Mod download route chooser: https://veritymodchecker.online/curseforge/
-- What is Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
+- What is Verity / Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
 - How to download and install Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
 - Verity JE branded download route: https://veritymodchecker.online/verity-je/
@@ -40,6 +40,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## What It Covers
 
 - Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
+- Meaning route: separates `what is Verity`, `what is Verity Minecraft`, `who is Verity`, and `what is Verity Mod` into character, video/story, Java, Bedrock, Pocket Edition, VERITY.exe, Verity Pack, APK/app, and safe-download layers.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
 - Verity Pack / modpack route: separates CurseForge modpacks `Verity Pack`, `VerityPack`, and `VerityPack Realistic` from the standalone Verity JE file and Bedrock add-ons, including Project IDs `1583377`, `1587394`, and `1582388`.
