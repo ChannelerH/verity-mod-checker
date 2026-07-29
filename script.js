@@ -257,6 +257,7 @@ function render() {
 }
 
 function setEdition(edition) {
+  if (!versionSelect || !issueSelect || !resultLabel || !resultTitle || !resultSummary || !primaryLink || !stepsList) return;
   currentEdition = edition;
   const route = routes[edition];
   setOptions(versionSelect, route.versions);
@@ -271,39 +272,41 @@ function setEdition(edition) {
   render();
 }
 
-document.querySelectorAll(".segment").forEach((button) => {
-  button.addEventListener("click", () => {
-    setEdition(button.dataset.edition);
-    trackEvent("verity_route_edition", { edition: button.dataset.edition });
+if (versionSelect && issueSelect && voiceToggle && aiToggle && copyButton) {
+  document.querySelectorAll(".segment").forEach((button) => {
+    button.addEventListener("click", () => {
+      setEdition(button.dataset.edition);
+      trackEvent("verity_route_edition", { edition: button.dataset.edition });
+    });
   });
-});
 
-[versionSelect, issueSelect, voiceToggle, aiToggle].forEach((control) => {
-  control.addEventListener("change", () => {
-    render();
-    trackEvent("verity_route_change", { control: control.id, edition: currentEdition });
+  [versionSelect, issueSelect, voiceToggle, aiToggle].forEach((control) => {
+    control.addEventListener("change", () => {
+      render();
+      trackEvent("verity_route_change", { control: control.id, edition: currentEdition });
+    });
   });
-});
 
-copyButton.addEventListener("click", async () => {
-  const steps = Array.from(stepsList.querySelectorAll("li")).map((li, index) => `${index + 1}. ${li.textContent}`);
-  const text = `${resultTitle.textContent}\n${resultSummary.textContent}\n\n${steps.join("\n")}\n\n${primaryLink.href}`;
+  copyButton.addEventListener("click", async () => {
+    const steps = Array.from(stepsList.querySelectorAll("li")).map((li, index) => `${index + 1}. ${li.textContent}`);
+    const text = `${resultTitle.textContent}\n${resultSummary.textContent}\n\n${steps.join("\n")}\n\n${primaryLink.href}`;
 
-  try {
-    await navigator.clipboard.writeText(text);
-    copyButton.textContent = "Copied";
-    setTimeout(() => {
-      copyButton.textContent = "Copy checklist";
-    }, 1600);
-  } catch {
-    copyButton.textContent = "Copy failed";
-    setTimeout(() => {
-      copyButton.textContent = "Copy checklist";
-    }, 1600);
-  }
-});
+    try {
+      await navigator.clipboard.writeText(text);
+      copyButton.textContent = "Copied";
+      setTimeout(() => {
+        copyButton.textContent = "Copy checklist";
+      }, 1600);
+    } catch {
+      copyButton.textContent = "Copy failed";
+      setTimeout(() => {
+        copyButton.textContent = "Copy checklist";
+      }, 1600);
+    }
+  });
 
-setEdition(currentEdition);
+  setEdition(currentEdition);
+}
 
 const knownProjects = [
   {
@@ -1231,6 +1234,63 @@ function packageType(value) {
   return "Not identified";
 }
 
+function isLegacyVerity100Signal(value, parsedUrl = null) {
+  const clean = normalizeSignal(value);
+  const isExplicitSimilarName =
+    clean.includes("verity-dweller") ||
+    clean.includes("ezw2zx0u") ||
+    clean.includes("/mod/verity-dweller") ||
+    clean.includes("/project/ezw2zx0u");
+  if (isExplicitSimilarName) return false;
+
+  const driveId = "19n7s-tvd4nzeu6ftglxmyio_lsxezloo";
+  const host = parsedUrl?.hostname.replace(/^www\./, "").toLowerCase() || "";
+  const isDriveHost =
+    host === "drive.google.com" ||
+    host === "docs.google.com" ||
+    host.endsWith(".googleusercontent.com");
+  return (
+    clean.includes(driveId) ||
+    clean.includes("verity-1.0.0.jar") ||
+    clean.includes("verity 1.0.0 jar") ||
+    clean.includes("verity mod 1.0.0") ||
+    clean.includes("verity 1.0.0 forge") ||
+    clean.includes("verity forge 1.20.1") ||
+    clean.includes("verity geckolib") ||
+    (isDriveHost && clean.includes("verity")) ||
+    (isDriveHost && clean.includes(driveId))
+  );
+}
+
+function legacyVerity100Checks() {
+  return [
+    "A copied old filename does not prove owner, Project ID, release record, or checksum.",
+    "Do not install Drive, Discord, MediaFire, Mega, or repost copies unless you can connect the bytes to a trusted publisher record.",
+    "Use the current Verity JE route when the goal is to play the Java Verity Mod today."
+  ];
+}
+
+function legacyVerity100Result({ source, packageName, hash = "", hashLabel = "SHA-256", publisherCheck = "No current publisher match" }) {
+  return {
+    state: "caution",
+    verdict: "Legacy file signal",
+    risk: "Needs source proof",
+    title: "verity-1.0.0.jar is an old or ambiguous Verity Mod file name",
+    summary:
+      "The input matches an old Verity Mod 1.0.0 / Forge 1.20.1 / Drive-link search pattern. Treat it as unverified until the file maps to a maintainer-controlled record; the current checked Java route is Verity JE with verity-5.7.3.jar.",
+    source,
+    package: packageName,
+    project: "Legacy Verity 1.0.0 claim · current route is Verity JE 1591438",
+    hash,
+    hashLabel,
+    publisherCheck,
+    checks: legacyVerity100Checks(),
+    link: "/verity-1-0-0-jar/",
+    linkLabel: "Open verity-1.0.0.jar check",
+    external: false
+  };
+}
+
 function findKnownProject(value) {
   const clean = normalizeSignal(value);
   const releaseMatch = findKnownRelease(value);
@@ -1307,6 +1367,13 @@ function inspectTextSource(rawValue) {
     parsedUrl = new URL(value);
   } catch {
     parsedUrl = null;
+  }
+
+  if (isLegacyVerity100Signal(value, parsedUrl)) {
+    return legacyVerity100Result({
+      source: parsedUrl?.hostname.replace(/^www\./, "") || "Old filename, Drive ID, or install claim",
+      packageName: type === "Not identified" ? "Java JAR or Drive-hosted file" : type
+    });
   }
 
   const isVerityExeBrandSignal = project?.name === "VERITY.exe" && !parsedUrl && value.trim().toLowerCase() === "verity.exe";
@@ -1430,7 +1497,21 @@ function inspectTextSource(rawValue) {
 
   if (parsedUrl) {
     const host = parsedUrl.hostname.replace(/^www\./, "");
-    const riskyHosts = ["mediafire.com", "mega.nz", "dropbox.com", "bit.ly", "tinyurl.com", "discordapp.com", "discord.com"];
+    const riskyHosts = [
+      "drive.google.com",
+      "docs.google.com",
+      "mediafire.com",
+      "mega.nz",
+      "dropbox.com",
+      "gofile.io",
+      "pixeldrain.com",
+      "workupload.com",
+      "1drv.ms",
+      "bit.ly",
+      "tinyurl.com",
+      "discordapp.com",
+      "discord.com"
+    ];
     const isRiskyHost = riskyHosts.some((domain) => host === domain || host.endsWith(`.${domain}`));
     const isCurseForge = host === "curseforge.com" || host.endsWith(".curseforge.com");
     const isModrinth = host === "modrinth.com" || host.endsWith(".modrinth.com");
@@ -1736,6 +1817,16 @@ async function inspectLocalFile(file) {
   const publisherHashMismatch = Boolean(expectedSha512 && sha512 !== expectedSha512);
   const unavailableRelease = isUnavailableRelease(releaseMatch?.release);
   const size = `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
+
+  if (isLegacyVerity100Signal(file.name)) {
+    return legacyVerity100Result({
+      source: `Local file · ${size}`,
+      packageName: type,
+      hash,
+      hashLabel: "SHA-256",
+      publisherCheck: "Local hash calculated; no current publisher match"
+    });
+  }
 
   if (riskyExtension) {
     return {

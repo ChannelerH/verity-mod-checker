@@ -36,6 +36,7 @@ const htmlRoutes = new Set([
   "/status-429/",
   "/taken-down/",
   "/updates/",
+  "/verity-1-0-0-jar/",
   "/verity-mod-downloads/",
   "/verity-pack/",
   "/verity-souls/",
@@ -75,6 +76,8 @@ const dataFiles = new Set([
   "/data/falsity-releases.schema.json",
   "/data/verity-app-claims.json",
   "/data/verity-app-claims.schema.json",
+  "/data/verity-legacy-files.json",
+  "/data/verity-legacy-files.schema.json",
   "/data/verity-modpacks.json",
   "/data/verity-modpacks.schema.json",
   "/data/verity-rumors.json",
@@ -286,6 +289,40 @@ export default {
       url.pathname.startsWith("/what-is-verity-souls/")
     ) {
       url.pathname = "/verity-souls/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-1.0.0.jar" ||
+      url.pathname.startsWith("/verity-1.0.0.jar/") ||
+      url.pathname === "/verity-1-0-0" ||
+      url.pathname.startsWith("/verity-1-0-0/") ||
+      url.pathname === "/verity-1.0.0" ||
+      url.pathname.startsWith("/verity-1.0.0/") ||
+      url.pathname === "/verity-mod-1-0-0" ||
+      url.pathname.startsWith("/verity-mod-1-0-0/") ||
+      url.pathname === "/verity-mod-1.0.0" ||
+      url.pathname.startsWith("/verity-mod-1.0.0/") ||
+      url.pathname === "/verity-1-0-0-download" ||
+      url.pathname.startsWith("/verity-1-0-0-download/") ||
+      url.pathname === "/verity-1-0-0-jar-download" ||
+      url.pathname.startsWith("/verity-1-0-0-jar-download/") ||
+      url.pathname === "/verity-google-drive" ||
+      url.pathname.startsWith("/verity-google-drive/") ||
+      url.pathname === "/verity-drive-link" ||
+      url.pathname.startsWith("/verity-drive-link/") ||
+      url.pathname === "/verity-mod-drive-link" ||
+      url.pathname.startsWith("/verity-mod-drive-link/") ||
+      url.pathname === "/verity-forge-1-20-1" ||
+      url.pathname.startsWith("/verity-forge-1-20-1/") ||
+      url.pathname === "/verity-geckolib" ||
+      url.pathname.startsWith("/verity-geckolib/") ||
+      url.pathname === "/19n7S-TVD4Nzeu6fTGlxMYIO_LsXEzlOO" ||
+      url.pathname.toLowerCase() === "/19n7s-tvd4nzeu6ftglxmyio_lsxezloo" ||
+      url.pathname.toLowerCase().startsWith("/19n7s-tvd4nzeu6ftglxmyio_lsxezloo/")
+    ) {
+      url.pathname = "/verity-1-0-0-jar/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

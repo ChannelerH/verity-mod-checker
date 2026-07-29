@@ -19,6 +19,7 @@ ROUTES = [
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/verity-souls/",
+    "/verity-1-0-0-jar/",
     "/source-map/",
     "/verity-dweller/",
     "/play/",
@@ -132,6 +133,14 @@ with sync_playwright() as playwright:
         assert "unconfirmed" in souls_text.lower()
         assert page.locator('a[href="/data/verity-rumors.json"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/verity-1-0-0-jar/", wait_until="domcontentloaded")
+        legacy_text = page.locator("main").inner_text()
+        assert "verity-1.0.0.jar Check" in legacy_text
+        assert "Forge 1.20.1" in legacy_text
+        assert "Google Drive" in legacy_text
+        assert "Verity JE" in legacy_text
+        assert page.locator('a[href="/data/verity-legacy-files.json"]').count() >= 1
+
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
         assert "only says one word" in talk_text
@@ -203,6 +212,20 @@ with sync_playwright() as playwright:
         result_text = page.locator("#sourceResult").inner_text()
         assert "VERITY.exe Remastered" in result_text
         assert "Modrinth MRPACK" in result_text
+
+        page.locator("#sourceInput").fill("verity-1.0.0.jar")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "legacy file signal" in result_text.lower()
+        assert "current checked Java route is Verity JE" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-1-0-0-jar/"
+
+        page.locator("#sourceInput").fill("https://drive.google.com/file/d/19n7S-TVD4Nzeu6fTGlxMYIO_LsXEzlOO/view?usp=sharing")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "legacy file signal" in result_text.lower()
+        assert "Drive" in result_text or "drive.google.com" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-1-0-0-jar/"
 
         page.locator("#sourceInput").fill("verity-6.0.1-all.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -346,4 +369,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")

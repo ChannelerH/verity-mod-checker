@@ -27,6 +27,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Java setup and troubleshooting route: https://veritymodchecker.online/java/
 - Real Verity Mod updated route: https://veritymodchecker.online/real-verity-mod-updated/
 - Verity Souls rumor status: https://veritymodchecker.online/verity-souls/
+- Old verity-1.0.0.jar and Drive-link check: https://veritymodchecker.online/verity-1-0-0-jar/
 - Verity BE official Bedrock route: https://veritymodchecker.online/verity-be/
 - VERITY.exe modpack route: https://veritymodchecker.online/verity-exe/
 - Verity Pack modpack route check: https://veritymodchecker.online/verity-pack/
@@ -55,6 +56,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Meaning route: separates `what is Verity`, `what is Verity Minecraft`, `who is Verity`, and `what is Verity Mod` into character, video/story, Java, Bedrock, Pocket Edition, VERITY.exe, Verity Pack, APK/app, and safe-download layers.
 - Broad Minecraft route: separates `minecraft verity mod`, `verity minecraft`, `minecraft verity`, and `verity mod for minecraft` from stale video links, old Bedrock rows, Java beta 404 pages, modpacks, app claims, and true current download records.
 - Verity Souls rumor route: answers `Verity Souls`, `Verity Souls mod`, `official Verity Souls`, and `Verity Souls download` searches with current evidence status; as of the July 30 check it records public discussion but no verified CurseForge, Modrinth, MCPEDL, Project ID, file record, or package route.
+- Old Java 1.0.0 route: answers `verity-1.0.0.jar`, `Verity Mod 1.0.0`, Google Drive, Discord, MediaFire, Mega, Forge 1.20.1, and Geckolib mirror claims; it records the old filename as a legacy or mirror claim and routes players back to the current Verity JE 5.7.3 record instead of hosting files.
 - Download-count route: explains current public Verity Mod counter totals, older 4.9M media reports, PnTMC's 7.4M+ MCPEDL signal, and why platform counters are not unique-player or safety claims.
 - Verity BE official route: exact `verity be`, `verity be official`, `verity be download`, `vertiy be`, Project ID `1574632`, file record `8506198`, Bedrock 26.30, Beta APIs, dots-only replies, missing dialogue, debugger connect setup, and PnTMC separation.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
@@ -86,6 +88,7 @@ These URLs are intended for players, editors, and community maintainers who need
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
 - Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
 - Machine-readable rumor status snapshot: https://veritymodchecker.online/data/verity-rumors.json
+- Machine-readable legacy file status snapshot: https://veritymodchecker.online/data/verity-legacy-files.json
 - Machine-readable similar-name route snapshot: https://veritymodchecker.online/data/verity-lookalikes.json
 - Machine-readable Falsity route snapshot: https://veritymodchecker.online/data/falsity-releases.json
 - Falsity route check: https://veritymodchecker.online/falsity-mod/

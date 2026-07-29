@@ -1,0 +1,64 @@
+{
+  "$schema": "https://veritymodchecker.online/data/verity-legacy-files.schema.json",
+  "checkedAt": "2026-07-30T03:35:00+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/verity-1-0-0-jar/",
+  "legacyFiles": [
+    {
+      "filename": "verity-1.0.0.jar",
+      "status": "legacy-or-mirror-claim-not-current-official-route",
+      "riskLevel": "high-when-sourced-from-drive-discord-mediafire-or-unattributed-repost",
+      "currentOfficialRoute": {
+        "name": "Verity JE",
+        "projectId": 1591438,
+        "currentFilename": "verity-5.7.3.jar",
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je"
+      },
+      "observedClaims": [
+        {
+          "claim": "Players ask where to find the Java Verity Mod and discuss older or missing CurseForge routes.",
+          "sourceType": "public-player-discussion",
+          "sourceUrl": "https://www.reddit.com/r/HorrorMinecraft/comments/1u5vy31/where_can_i_download_the_verity_mod_for_java/"
+        },
+        {
+          "claim": "A Reddit thread repeats a Google Drive file ID for a claimed Forge 1.20.1 version and other users ask for Discord, MediaFire, or Mega sharing.",
+          "sourceType": "public-player-discussion",
+          "sourceUrl": "https://www.reddit.com/r/CurseForge/comments/1ufmlnp/verity_mod_taken_down/"
+        },
+        {
+          "claim": "Another Reddit thread repeats the same Drive ID while users ask whether the removed Java file is safe.",
+          "sourceType": "public-player-discussion",
+          "sourceUrl": "https://www.reddit.com/r/HorrorMinecraft/comments/1uffck4/what_happened_to_the_verity_mod/"
+        },
+        {
+          "claim": "A third-party Russian repost page lists verity-1.0.0.jar for Forge 1.20.1 with a 101.64 MB size and Geckolib instruction.",
+          "sourceType": "third-party-repost",
+          "sourceUrl": "https://minecraft-imba.ru/626-verity-horror.html"
+        },
+        {
+          "claim": "A competing troubleshooting page uses verity-1.0.0.jar as an install-path example, increasing the likelihood that users search the old filename directly.",
+          "sourceType": "competitor-content-signal",
+          "sourceUrl": "https://veritymod.best/troubleshooting/"
+        }
+      ],
+      "checkedSources": [
+        {
+          "name": "CurseForge Verity JE",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
+          "finding": "Current visible Java route is Verity JE Project ID 1591438 with main file verity-5.7.3.jar for Minecraft 1.20.1 Forge."
+        },
+        {
+          "name": "Modrinth Verity JE",
+          "url": "https://modrinth.com/mod/verity-je-official",
+          "finding": "Current visible Modrinth Java route is Verity JE on Forge 1.20.1; it describes itself as an official adaptation with ThatMob permission."
+        },
+        {
+          "name": "CurseForge thatmobyt projects",
+          "url": "https://www.curseforge.com/members/thatmobyt/projects",
+          "finding": "Visible maintainer inventory lists Verity - Bedrock Edition, Verity BE, and Verity JE, not an active verity-1.0.0.jar file route."
+        }
+      ],
+      "recommendedAction": "Do not install a Drive, Discord, MediaFire, Mega, or unattributed repost copy just because the filename says verity-1.0.0.jar. Open the current Verity JE page, compare the Project ID and current file, and use the route checker or local hash calculator before touching old bytes.",
+      "doNotLinkDirectDownload": true
+    }
+  ]
+}

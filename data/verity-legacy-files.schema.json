@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-legacy-files.schema.json",
+  "title": "Verity legacy file source-status data",
+  "type": "object",
+  "required": ["checkedAt", "canonicalUrl", "legacyFiles"],
+  "properties": {
+    "checkedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "canonicalUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "legacyFiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename", "status", "riskLevel", "currentOfficialRoute", "observedClaims", "checkedSources", "recommendedAction"],
+        "properties": {
+          "filename": { "type": "string" },
+          "status": { "type": "string" },
+          "riskLevel": { "type": "string" },
+          "currentOfficialRoute": {
+            "type": "object",
+            "required": ["name", "projectId", "currentFilename", "sourceUrl"],
+            "properties": {
+              "name": { "type": "string" },
+              "projectId": { "type": ["string", "number"] },
+              "currentFilename": { "type": "string" },
+              "sourceUrl": { "type": "string", "format": "uri" }
+            }
+          },
+          "observedClaims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["claim", "sourceType", "sourceUrl"],
+              "properties": {
+                "claim": { "type": "string" },
+                "sourceType": { "type": "string" },
+                "sourceUrl": { "type": "string", "format": "uri" }
+              }
+            }
+          },
+          "checkedSources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "url", "finding"],
+              "properties": {
+                "name": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "finding": { "type": "string" }
+              }
+            }
+          },
+          "recommendedAction": { "type": "string" },
+          "doNotLinkDirectDownload": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}
