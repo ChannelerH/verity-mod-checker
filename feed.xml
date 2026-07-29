@@ -5,8 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T21:58:00+08:00</updated>
+  <updated>2026-07-29T22:14:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Source counters refreshed for Verity BE, MCPEDL, Modrinth, and VERITY.exe</title>
+    <id>https://veritymodchecker.online/updates/source-counters-2026-07-29-2214</id>
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-exe/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <published>2026-07-29T22:14:00+08:00</published>
+    <updated>2026-07-29T22:14:00+08:00</updated>
+    <summary>Refreshed point-in-time source counters after live GSC remained at 50 clicks and 1,520 impressions, while GA4 still showed Organic Search as the largest acquisition channel and current public source checks showed counter movement. Current first-party/public records now show Verity BE at 4,031,221 CurseForge project downloads, MCPEDL's PnTMC Verity listing at 7.4M displayed listing downloads while the PnTMC CurseForge project remains 7,348,123, Modrinth Verity JE project on1Y0osD at 334,618 downloads with stable yAt0wv1Z at 266,986 downloads, and VERITY.exe Project ID 1585389 at 129,738 CurseForge project downloads. The four tracked CurseForge Verity project pages now sum to 13,778,868 displayed project downloads; adding Modrinth gives a 14,113,486 platform-counter sum, not unique players, installs, or a safety verdict. Homepage TDK was not changed.</summary>
+    <category term="source-refresh" />
+    <category term="download-counters" />
+    <category term="gsc-ga4-baseline" />
+  </entry>
   <entry>
     <title>Creator route refreshed for who-created Verity Mod intent</title>
     <id>https://veritymodchecker.online/updates/who-created-verity-mod-creator-route-2026-07-29-2158</id>
