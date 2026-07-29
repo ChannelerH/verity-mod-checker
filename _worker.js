@@ -195,6 +195,16 @@ export default {
       url.pathname.startsWith("/verity-be-8506198/") ||
       url.pathname === "/verity-be-1-1-0" ||
       url.pathname.startsWith("/verity-be-1-1-0/") ||
+      url.pathname === "/verity-be-duplicate-package" ||
+      url.pathname.startsWith("/verity-be-duplicate-package/") ||
+      url.pathname === "/verity-duplicate-package" ||
+      url.pathname.startsWith("/verity-duplicate-package/") ||
+      url.pathname === "/verity-mod-duplicate-package" ||
+      url.pathname.startsWith("/verity-mod-duplicate-package/") ||
+      url.pathname === "/bedrock-duplicate-package" ||
+      url.pathname.startsWith("/bedrock-duplicate-package/") ||
+      url.pathname === "/mcaddon-duplicate-package" ||
+      url.pathname.startsWith("/mcaddon-duplicate-package/") ||
       url.pathname === "/vertiy-be" ||
       url.pathname.startsWith("/vertiy-be/")
     ) {

@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-29T16:49:00+08:00",
+  "checkedAt": "2026-07-29T17:43:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -131,7 +131,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 4014672,
+      "projectDownloadsAtCheck": 4016890,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -152,7 +152,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 21.3,
-          "recordDownloadsAtCheck": 165500,
+          "recordDownloadsAtCheck": 188100,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         }

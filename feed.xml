@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T17:42:00+08:00</updated>
+  <updated>2026-07-29T17:43:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE duplicate-package update path added</title>
+    <id>https://veritymodchecker.online/updates/verity-be-duplicate-package-2026-07-29-1743</id>
+    <link href="https://veritymodchecker.online/verity-be/" rel="alternate" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <published>2026-07-29T17:43:00+08:00</published>
+    <updated>2026-07-29T17:43:00+08:00</updated>
+    <summary>Refreshed the existing Verity BE and Bedrock routes after the official CurseForge page showed Verity BE Project ID 1574632 at 4,016,890 project downloads and file 8506198 at 188.1K displayed file downloads, while current CurseForge comments exposed a duplicate-package update failure. The update keeps homepage TDK unchanged, keeps /verity-be/ as the canonical page, adds duplicate-package guidance for Bedrock package identity and clean-world testing, updates machine-readable release data, and redirects natural aliases such as /verity-be-duplicate-package/, /verity-mod-duplicate-package/, /bedrock-duplicate-package/, and /mcaddon-duplicate-package/ to the Verity BE route.</summary>
+    <category term="verity-be" />
+    <category term="bedrock" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Voice and microphone route refreshed for fresh no-sound demand</title>
     <id>https://veritymodchecker.online/updates/voice-microphone-no-sound-2026-07-29-1742</id>
