@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T13:20:00+08:00</updated>
+  <updated>2026-07-29T16:10:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>How to talk to Verity Mod route expanded for microphone and voice-chat searches</title>
+    <id>https://veritymodchecker.online/updates/how-to-talk-microphone-voice-route-2026-07-29-1610</id>
+    <link href="https://veritymodchecker.online/how-to-talk-to-verity/" rel="alternate" />
+    <link href="https://veritymodchecker.online/voice-not-working/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-exe/" rel="related" />
+    <published>2026-07-29T16:10:00+08:00</published>
+    <updated>2026-07-29T16:10:00+08:00</updated>
+    <summary>Expanded the existing /how-to-talk-to-verity/ route after GSC showed the page receiving impressions with zero clicks and current Google SERP checks showed fresh tutorial/video demand around how to talk to Verity Mod, how to use microphone in Verity Mod, API key setup, voice chat, and no-reply symptoms. The page now leads with exact Verity Mod wording, adds VERITY.exe as a separate voice-chat route, separates text response from microphone debugging, adds visible FAQ and structured FAQ coverage, and consolidates microphone/talk aliases to the canonical route. The same source pass refreshed current machine-readable counters to Modrinth project on1Y0osD at 325,258 downloads, stable yAt0wv1Z at 258,049 downloads, and VERITY.exe Project ID 1585389 at 129,221 downloads. Homepage TDK was not changed.</summary>
+    <category term="how-to-talk" />
+    <category term="microphone" />
+    <category term="voice-chat" />
+  </entry>
   <entry>
     <title>Real Verity Mod landing route added for video-led player intent</title>
     <id>https://veritymodchecker.online/updates/real-verity-mod-route-2026-07-29-1320</id>

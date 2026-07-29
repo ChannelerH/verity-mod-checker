@@ -673,6 +673,33 @@ export default {
     }
 
     if (
+      url.pathname === "/how-to-talk-to-verity-mod" ||
+      url.pathname.startsWith("/how-to-talk-to-verity-mod/") ||
+      url.pathname === "/how-to-talk-to-verity-in-minecraft" ||
+      url.pathname.startsWith("/how-to-talk-to-verity-in-minecraft/") ||
+      url.pathname === "/talk-to-verity" ||
+      url.pathname.startsWith("/talk-to-verity/") ||
+      url.pathname === "/talk-to-verity-mod" ||
+      url.pathname.startsWith("/talk-to-verity-mod/") ||
+      url.pathname === "/how-to-use-microphone-in-verity-mod" ||
+      url.pathname.startsWith("/how-to-use-microphone-in-verity-mod/") ||
+      url.pathname === "/how-to-use-voice-chat-in-verity-mod" ||
+      url.pathname.startsWith("/how-to-use-voice-chat-in-verity-mod/") ||
+      url.pathname === "/verity-mod-microphone" ||
+      url.pathname.startsWith("/verity-mod-microphone/") ||
+      url.pathname === "/verity-microphone" ||
+      url.pathname.startsWith("/verity-microphone/") ||
+      url.pathname === "/verity-mod-voice-chat" ||
+      url.pathname.startsWith("/verity-mod-voice-chat/") ||
+      url.pathname === "/verity-voice-chat" ||
+      url.pathname.startsWith("/verity-voice-chat/")
+    ) {
+      url.pathname = "/how-to-talk-to-verity/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/verity-doesnt-respond" ||
       url.pathname === "/verity-mod-doesnt-respond" ||
       url.pathname.startsWith("/verity-mod-doesnt-respond/") ||
