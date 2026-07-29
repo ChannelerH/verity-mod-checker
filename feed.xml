@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T20:38:00+08:00</updated>
+  <updated>2026-07-29T20:52:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>AI model route refreshed for Ollama verity-3b searches</title>
+    <id>https://veritymodchecker.online/updates/ai-model-verity-3b-2026-07-29-2052</id>
+    <link href="https://veritymodchecker.online/ai-model/" rel="alternate" />
+    <link href="https://ollama.com/timheinrich2011/verity-3b" rel="related" />
+    <link href="https://ollama.com/library/qwen2.5%3A3b" rel="related" />
+    <published>2026-07-29T20:52:00+08:00</published>
+    <updated>2026-07-29T20:52:00+08:00</updated>
+    <summary>Expanded the existing /ai-model/ route after current SERP checks showed best-AI-model, OpenRouter, Groq, Ollama, and `timheinrich2011/verity-3b` demand around Verity Mod Java setup. The page now explains that `timheinrich2011/verity-3b` is a public Ollama model page based on Qwen2.5:3b with a Verity-specific prompt claim, not proof that every Verity JE build officially recommends it. Added a model-claim checklist, FAQ coverage, source links to Ollama model pages, and natural redirects such as /best-ai-model-for-verity-mod/, /verity-mod-ai-model/, /verity-mod-ollama-model/, /verity-3b/, and /timheinrich2011-verity-3b/. Homepage TDK was not changed.</summary>
+    <category term="ai-model" />
+    <category term="ollama" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>APK and Google Play app safety facts refreshed from current SERP</title>
     <id>https://veritymodchecker.online/updates/apk-play-store-facts-2026-07-29-2038</id>

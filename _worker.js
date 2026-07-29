@@ -1009,6 +1009,29 @@ export default {
     }
 
     if (
+      url.pathname === "/best-ai-model-for-verity-mod" ||
+      url.pathname.startsWith("/best-ai-model-for-verity-mod/") ||
+      url.pathname === "/verity-mod-ai-model" ||
+      url.pathname.startsWith("/verity-mod-ai-model/") ||
+      url.pathname === "/verity-ai-model" ||
+      url.pathname.startsWith("/verity-ai-model/") ||
+      url.pathname === "/verity-mod-ollama-model" ||
+      url.pathname.startsWith("/verity-mod-ollama-model/") ||
+      url.pathname === "/verity-ollama-model" ||
+      url.pathname.startsWith("/verity-ollama-model/") ||
+      url.pathname === "/verity-3b" ||
+      url.pathname.startsWith("/verity-3b/") ||
+      url.pathname === "/verity-3b-ollama" ||
+      url.pathname.startsWith("/verity-3b-ollama/") ||
+      url.pathname === "/timheinrich2011-verity-3b" ||
+      url.pathname.startsWith("/timheinrich2011-verity-3b/")
+    ) {
+      url.pathname = "/ai-model/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/lag-fix" ||
       url.pathname.startsWith("/lag-fix/") ||
       url.pathname === "/verity-lag" ||

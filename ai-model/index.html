@@ -6,7 +6,7 @@
     <title>Best AI Model for Verity Mod: Groq, OpenRouter &amp; Ollama</title>
     <meta
       name="description"
-      content="Compare Groq, OpenRouter, and Ollama for Verity Mod Java. Choose a stable AI model and fix status 429, API keys, rate limits, and slow replies."
+      content="Compare Groq, OpenRouter, Ollama, and verity-3b claims for Verity Mod Java. Choose a stable AI model and fix 429, API keys, and slow replies."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/ai-model/" />
@@ -70,6 +70,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "If text works, check audio, microphone, dependency, and language support before switching AI models."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is timheinrich2011/verity-3b the official best model for Verity Mod?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Treat timheinrich2011/verity-3b as a public Ollama model claim to test, not as proof that every Verity JE build officially recommends it."
                 }
               },
               {
@@ -190,6 +198,69 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Current model claims</p>
+          <h2>Check Verity-named models before making them your default</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>What the new Ollama result actually proves</h3>
+            <p>
+              Current search results now show a public Ollama page named
+              <code>timheinrich2011/verity-3b</code>. The page says the model is based on
+              <code>qwen2.5:3b</code> and is made to comply with the prompt of the official Minecraft
+              Verity Mod. That is useful for a player testing the local Ollama route, but it is not the
+              same thing as an official Verity JE release note saying "this is the best AI model for
+              Verity Mod." Treat it as a model candidate, not a download-source or maintainer guarantee.
+            </p>
+            <p>
+              The practical test is simple: confirm Verity JE loads first, start Ollama locally, run one
+              short prompt against the model outside Minecraft, then test the same prompt inside the game.
+              If the model answers but breaks character, roleplays awkwardly through TTS, or takes too long
+              during play, switch models before changing the Java file. If Ollama itself cannot answer on
+              <code>localhost:11434</code>, the Verity Mod install is not the first layer to debug.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Model claim checklist</h3>
+            <div class="table-wrap compact-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Model or provider claim</th>
+                    <th>What it means</th>
+                    <th>Safer next step</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>timheinrich2011/verity-3b</code></td>
+                    <td>A public Ollama model page, based on Qwen2.5:3b, with a Verity-specific prompt claim.</td>
+                    <td>Test locally; do not treat the name as an official Verity Mod download route.</td>
+                  </tr>
+                  <tr>
+                    <td><code>qwen2.5:3b</code></td>
+                    <td>A small local model route that can be fast enough for testing, but personality quality varies.</td>
+                    <td>Use it as a baseline, then compare response time and in-character behavior.</td>
+                  </tr>
+                  <tr>
+                    <td>OpenRouter model IDs</td>
+                    <td>Hosted models can differ by ID, cost, provider availability, and roleplay behavior.</td>
+                    <td>Use the exact model ID your config accepts; test typed text before voice.</td>
+                  </tr>
+                  <tr>
+                    <td>Groq default route</td>
+                    <td>Verity JE public descriptions still center the AI assistant around Groq-powered setup.</td>
+                    <td>Start with the maintainer setup route, then diagnose 401 or 429 by provider layer.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -409,6 +480,14 @@
           </p>
         </details>
         <details>
+          <summary>Is timheinrich2011/verity-3b the official best model for Verity Mod?</summary>
+          <p>
+            No. It is a public Ollama model page with a Verity-specific prompt claim, not proof that every
+            Verity JE build officially recommends it. It can be worth testing if your setup supports Ollama,
+            but judge it by response speed, in-character behavior, and voice timing during actual play.
+          </p>
+        </details>
+        <details>
           <summary>Why does Verity Mod show status 429?</summary>
           <p>
             Groq status 429 means the provider rate-limited the request. Check the active model's limits and
@@ -425,6 +504,8 @@
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
         <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
+        <a href="https://ollama.com/timheinrich2011/verity-3b" target="_blank" rel="noopener noreferrer">Ollama verity-3b</a>
+        <a href="https://ollama.com/library/qwen2.5%3A3b" target="_blank" rel="noopener noreferrer">Qwen2.5 3B</a>
         <span>Use the provider flow required by your installed Verity JE build.</span>
       </aside>
     </main>
