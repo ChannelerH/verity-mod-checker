@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T09:32:00+08:00</updated>
+  <updated>2026-07-29T09:39:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Minecraft Verity Mod route expanded for current versus stale search results</title>
+    <id>https://veritymodchecker.online/updates/minecraft-verity-mod-current-stale-refresh-2026-07-29-0939</id>
+    <link href="https://veritymodchecker.online/minecraft-verity-mod/" rel="alternate" />
+    <published>2026-07-29T09:39:00+08:00</published>
+    <updated>2026-07-29T09:39:00+08:00</updated>
+    <summary>Expanded the Minecraft Verity Mod route after live GSC showed the core `verity mod` query appearing with 2 clicks and 3 impressions in the 28-day table, GA4 showed the broad Minecraft guide among active page titles, and current SERP and competitor checks showed users still seeing older or incomplete route facts. The page now explains why current official records can coexist with stale video links, old Bedrock rows, Java beta 404 pages, modpacks, and app claims, adds a current-versus-stale decision section, updates structured data to July 29, and adds clean redirects for /verity-mod-for-minecraft/, /verity-minecraft-mod/, and download-intent variants. Homepage TDK was not changed.</summary>
+    <category term="minecraft" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>What is Verity Mod guide expanded for broad Minecraft meaning searches</title>
     <id>https://veritymodchecker.online/updates/what-is-verity-mod-meaning-refresh-2026-07-29-0932</id>

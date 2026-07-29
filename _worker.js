@@ -110,10 +110,31 @@ export default {
     }
 
     if (
+      url.pathname === "/minecraft-verity-mod-download" ||
+      url.pathname.startsWith("/minecraft-verity-mod-download/") ||
+      url.pathname === "/verity-minecraft-download" ||
+      url.pathname.startsWith("/verity-minecraft-download/") ||
+      url.pathname === "/minecraft-verity-download" ||
+      url.pathname.startsWith("/minecraft-verity-download/") ||
+      url.pathname === "/verity-mod-for-minecraft-download" ||
+      url.pathname.startsWith("/verity-mod-for-minecraft-download/")
+    ) {
+      url.pathname = "/download/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/verity-minecraft" ||
       url.pathname.startsWith("/verity-minecraft/") ||
+      url.pathname === "/verity-minecraft-mod" ||
+      url.pathname.startsWith("/verity-minecraft-mod/") ||
       url.pathname === "/minecraft-verity" ||
       url.pathname.startsWith("/minecraft-verity/") ||
+      url.pathname === "/verity-mod-for-minecraft" ||
+      url.pathname.startsWith("/verity-mod-for-minecraft/") ||
+      url.pathname === "/minecraft-verity-mod-guide" ||
+      url.pathname.startsWith("/minecraft-verity-mod-guide/") ||
       url.pathname === "/the-verity-mod" ||
       url.pathname.startsWith("/the-verity-mod/") ||
       url.pathname === "/verity-mods" ||

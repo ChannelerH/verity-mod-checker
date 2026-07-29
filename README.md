@@ -9,6 +9,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## Live Routes
 
 - Download route: https://veritymodchecker.online/download/
+- Minecraft Verity Mod broad route: https://veritymodchecker.online/minecraft-verity-mod/
 - Java vs Bedrock download chooser: https://veritymodchecker.online/java-vs-bedrock/
 - Latest version tracker: https://veritymodchecker.online/updates/
 - How to play Verity Mod on Java, Bedrock, MCPE, mobile, and TLauncher: https://veritymodchecker.online/play/
@@ -41,6 +42,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 
 - Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; stable record `8461257` / `yAt0wv1Z` for `verity-5.7.3.jar`, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
 - Meaning route: separates `what is Verity`, `what is Verity Minecraft`, `who is Verity`, and `what is Verity Mod` into character, video/story, Java, Bedrock, Pocket Edition, VERITY.exe, Verity Pack, APK/app, and safe-download layers.
+- Broad Minecraft route: separates `minecraft verity mod`, `verity minecraft`, `minecraft verity`, and `verity mod for minecraft` from stale video links, old Bedrock rows, Java beta 404 pages, modpacks, app claims, and true current download records.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
 - Verity Pack / modpack route: separates CurseForge modpacks `Verity Pack`, `VerityPack`, and `VerityPack Realistic` from the standalone Verity JE file and Bedrock add-ons, including Project IDs `1583377`, `1587394`, and `1582388`.
