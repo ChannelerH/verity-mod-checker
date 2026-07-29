@@ -114,7 +114,24 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
-    if (url.pathname === "/app" || url.pathname.startsWith("/app/")) {
+    if (
+      url.pathname === "/app" ||
+      url.pathname.startsWith("/app/") ||
+      url.pathname === "/verity-mod-app" ||
+      url.pathname.startsWith("/verity-mod-app/") ||
+      url.pathname === "/verity-mod-apk" ||
+      url.pathname.startsWith("/verity-mod-apk/") ||
+      url.pathname === "/verity-apk" ||
+      url.pathname.startsWith("/verity-apk/") ||
+      url.pathname === "/verity-mod-google-play" ||
+      url.pathname.startsWith("/verity-mod-google-play/") ||
+      url.pathname === "/verity-mod-play-store" ||
+      url.pathname.startsWith("/verity-mod-play-store/") ||
+      url.pathname === "/verity-mod-android-app" ||
+      url.pathname.startsWith("/verity-mod-android-app/") ||
+      url.pathname === "/verity-mod-for-minecraft-pe-app" ||
+      url.pathname.startsWith("/verity-mod-for-minecraft-pe-app/")
+    ) {
       url.pathname = "/apk/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);

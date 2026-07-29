@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-app-claims.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-27T14:16:00+08:00",
+  "checkedAt": "2026-07-29T20:38:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/apk/",
   "method": "Manual comparison against public Google Play listing text and current maintainer MCADDON route records. App listing facts are point-in-time store disclosures, not malware verdicts and not official-project proof.",
   "normalMinecraftPackageRoutes": [
@@ -34,12 +34,15 @@
       "packageId": "com.verity.stalker.mobs.birchappsmcpe",
       "url": "https://play.google.com/store/apps/details?id=com.verity.stalker.mobs.birchappsmcpe",
       "installSignal": "500K+ downloads",
-      "updated": "2026-07-24",
-      "monetization": ["contains ads"],
+      "updated": "2026-07-23",
+      "monetization": [
+        "contains ads"
+      ],
       "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
       "listingSignals": [
         "disclaimer says it is not affiliated with Mojang, Microsoft, Verity creators, or related rights holders",
-        "data safety disclosures mention shared and collected data"
+        "data safety disclosures mention shared and collected data: Location, App activity, and 2 others",
+        "data is encrypted in transit but cannot be deleted"
       ]
     },
     {
@@ -47,24 +50,30 @@
       "publisher": "GO:KU STUDIO",
       "packageId": "com.goku.verity.horror",
       "url": "https://play.google.com/store/apps/details?id=com.goku.verity.horror",
-      "installSignal": "0+ downloads observed at check",
-      "updated": "2026-07-24",
-      "monetization": ["contains ads"],
+      "installSignal": "0+ downloads",
+      "updated": "2026-07-28",
+      "monetization": [
+        "contains ads"
+      ],
       "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
       "listingSignals": [
-        "describes itself as a content browser for community-made plugins",
+        "describes itself as a content browser for community-made add-ons",
         "says it is not affiliated with Mojang, Microsoft, or Minecraft",
-        "data-safety panel says data is not encrypted in transit and cannot be deleted"
+        "data-safety panel says Location, Personal info, and 4 other data types may be shared and collected",
+        "data is not encrypted and cannot be deleted"
       ]
     },
     {
       "title": "Verity Mod for Minecraft PE",
-      "publisher": "L13DEVSTUDIO",
+      "publisher": "I13",
       "packageId": "com.l13devstudio.verit",
       "url": "https://play.google.com/store/apps/details?id=com.l13devstudio.verit",
-      "installSignal": "100K+ downloads",
-      "updated": "2026-07-24",
-      "monetization": ["contains ads", "in-app purchases"],
+      "installSignal": "500K+ downloads",
+      "ratingSignal": "4.7 stars and 29.4K reviews observed at check",
+      "updated": "2026-07-16",
+      "monetization": [
+        "contains ads"
+      ],
       "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
       "listingSignals": [
         "disclaimer says it is an unofficial app not associated with Mojang or Microsoft",
@@ -78,7 +87,9 @@
       "url": "https://play.google.com/store/apps/details?id=verity.mod.minecraft.pemodverity",
       "installSignal": "5K+ downloads",
       "updated": "2026-07-17",
-      "monetization": ["contains ads"],
+      "monetization": [
+        "contains ads"
+      ],
       "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
       "listingSignals": [
         "says it is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft",
@@ -92,14 +103,54 @@
       "packageId": "com.richmcpe.verity",
       "url": "https://play.google.com/store/apps/details?id=com.richmcpe.verity",
       "installSignal": "100K+ downloads",
-      "ratingSignal": "4.5 stars and 1.16K reviews observed at check",
+      "ratingSignal": "4.8 stars and 1.25K reviews observed at check",
       "updated": "2026-07-05",
-      "monetization": ["contains ads"],
+      "monetization": [
+        "contains ads"
+      ],
       "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
       "listingSignals": [
         "says it is not approved by or associated with Mojang or Microsoft",
         "data-safety panel says device or other IDs may be shared with third parties",
+        "data can be encrypted in transit but cannot be deleted",
         "visible reviews include users saying the mods did not work after ads or pack activation"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "IAAMAR EL WAHA",
+      "packageId": "com.backroomsnextbots.sphermeme",
+      "url": "https://play.google.com/store/apps/details?id=com.backroomsnextbots.sphermeme",
+      "installSignal": "50K+ downloads",
+      "ratingSignal": "1.6 stars and 109 reviews observed at check",
+      "updated": "2026-07-22",
+      "monetization": [
+        "contains ads"
+      ],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "listing is categorized as a game and describes add-ons, maps, skins, textures, and resources",
+        "visible reviews say the experience was not like the mod, Verity was not found, or the entity did not spawn",
+        "data-safety panel says Location and Device or other IDs may be shared, no data is collected, data is encrypted in transit, and data cannot be deleted"
+      ]
+    },
+    {
+      "title": "Verity Mod",
+      "publisher": "SAR13",
+      "packageId": "com.sar.verity.art",
+      "url": "https://play.google.com/store/apps/details?id=com.sar.verity.art",
+      "installSignal": "0+ downloads",
+      "ratingSignal": "3.5 stars and 42 reviews observed at check",
+      "updated": "2026-07-24",
+      "monetization": [
+        "contains ads"
+      ],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "description frames the app as a horror mods hub with Verity and other Minecraft PE content",
+        "says it is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft",
+        "data-safety panel says Location, App info and performance, and Device or other IDs may be shared and collected",
+        "data is not encrypted and cannot be deleted"
       ]
     }
   ]

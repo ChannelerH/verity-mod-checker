@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T20:30:00+08:00</updated>
+  <updated>2026-07-29T20:38:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>APK and Google Play app safety facts refreshed from current SERP</title>
+    <id>https://veritymodchecker.online/updates/apk-play-store-facts-2026-07-29-2038</id>
+    <link href="https://veritymodchecker.online/apk/" rel="alternate" />
+    <link href="https://veritymodchecker.online/apk/#google-play-check" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-app-claims.json" rel="related" />
+    <published>2026-07-29T20:38:00+08:00</published>
+    <updated>2026-07-29T20:38:00+08:00</updated>
+    <summary>Refreshed the /apk/ route after current Verity Mod SERP sampling again surfaced Google Play app results for mobile users. The page and JSON data now compare seven Play Store package IDs against normal MCPE .mcaddon routes: BirchApps com.verity.stalker.mobs.birchappsmcpe, GO:KU STUDIO com.goku.verity.horror, I13 com.l13devstudio.verit, Real Games Villa verity.mod.minecraft.pemodverity, richard7 com.richmcpe.verity, IAAMAR EL WAHA com.backroomsnextbots.sphermeme, and SAR13 com.sar.verity.art. The update corrects stale store facts, adds two newly observed packages, keeps all listings framed as third-party app claims unless a maintainer project links to them, and does not change homepage TDK.</summary>
+    <category term="apk" />
+    <category term="google-play" />
+    <category term="mobile-search" />
+  </entry>
   <entry>
     <title>Verity Mod download-count page added for viral 4.9M searches</title>
     <id>https://veritymodchecker.online/updates/verity-download-counts-2026-07-29-2030</id>
