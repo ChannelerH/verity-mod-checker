@@ -108,6 +108,17 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (
+      url.pathname === "/talk-to-verity-without-microphone" ||
+      url.pathname.startsWith("/talk-to-verity-without-microphone/") ||
+      url.pathname === "/verity-mod-no-microphone" ||
+      url.pathname.startsWith("/verity-mod-no-microphone/")
+    ) {
+      url.pathname = "/how-to-talk-to-verity/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
       url.pathname = "/pocket-edition/";
       url.hash = "";
