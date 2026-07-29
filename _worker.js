@@ -26,6 +26,7 @@ const htmlRoutes = new Set([
   "/pocket-edition/",
   "/real-verity-mod-updated/",
   "/server/",
+  "/status-401/",
   "/status-429/",
   "/taken-down/",
   "/updates/",
@@ -619,6 +620,33 @@ export default {
       url.pathname.startsWith("/verity-mod-lag/")
     ) {
       url.pathname = "/verity-mod-lag-fix/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/401" ||
+      url.pathname.startsWith("/401/") ||
+      url.pathname === "/verity-401" ||
+      url.pathname.startsWith("/verity-401/") ||
+      url.pathname === "/verity-mod-401" ||
+      url.pathname.startsWith("/verity-mod-401/") ||
+      url.pathname === "/api-401" ||
+      url.pathname.startsWith("/api-401/") ||
+      url.pathname === "/api-connection-401" ||
+      url.pathname.startsWith("/api-connection-401/") ||
+      url.pathname === "/api-connection-failed-401" ||
+      url.pathname.startsWith("/api-connection-failed-401/") ||
+      url.pathname === "/verity-api-connection-failed-401" ||
+      url.pathname.startsWith("/verity-api-connection-failed-401/") ||
+      url.pathname === "/verity-error-401" ||
+      url.pathname.startsWith("/verity-error-401/") ||
+      url.pathname === "/verity-groq-401" ||
+      url.pathname.startsWith("/verity-groq-401/") ||
+      url.pathname === "/groq-401" ||
+      url.pathname.startsWith("/groq-401/")
+    ) {
+      url.pathname = "/status-401/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

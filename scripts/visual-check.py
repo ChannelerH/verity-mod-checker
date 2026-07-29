@@ -46,6 +46,7 @@ ROUTES = [
     "/ai-model/",
     "/verity-groq-api-key/",
     "/api-connection-failed/",
+    "/status-401/",
     "/status-429/",
     "/how-to-talk-to-verity/",
     "/not-working/",
@@ -237,4 +238,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 429 route, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")

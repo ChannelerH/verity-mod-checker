@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Mod Status 401 Fix: Groq API Key &amp; OpenRouter</title>
+    <meta
+      name="description"
+      content="Fix Verity Mod status 401 and API connection failed 401. Check Groq or OpenRouter keys, provider mismatch, pasted spaces, revoked keys, and safe retesting."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/status-401/" />
+    <meta property="og:title" content="Verity Mod Status 401 Fix" />
+    <meta property="og:description" content="Credential-first checklist for Verity Mod API connection failed status 401 on Groq or OpenRouter." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/status-401/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Verity Mod Status 401 Fix",
+            "description": "A credential troubleshooting guide for Verity JE API connection failed status 401 errors.",
+            "datePublished": "2026-07-29",
+            "dateModified": "2026-07-29",
+            "mainEntityOfPage": "https://veritymodchecker.online/status-401/",
+            "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
+            "author": {"@type": "Organization", "name": "Verity Mod Guide"},
+            "publisher": {"@type": "Organization", "name": "Verity Mod Guide"}
+          },
+          {
+            "@type": "HowTo",
+            "name": "How to fix Verity Mod API connection failed status 401",
+            "description": "A safe order for checking provider, API key, local configuration, and retesting without exposing private credentials.",
+            "step": [
+              {"@type": "HowToStep", "name": "Confirm provider", "text": "Identify whether the local Verity Mod Java setup is using Groq, OpenRouter, Ollama, or another supported route before changing keys."},
+              {"@type": "HowToStep", "name": "Create or rotate one key", "text": "Create the key only inside the official provider dashboard and rotate any key that appeared in a screenshot, log, chat, or public post."},
+              {"@type": "HowToStep", "name": "Paste locally", "text": "Paste the credential only into the local Verity configuration, avoiding quotes, leading spaces, trailing spaces, wrong fields, and wrong-provider keys."},
+              {"@type": "HowToStep", "name": "Retest once", "text": "Restart Minecraft and send one short typed prompt before changing the jar, model, voice setup, or provider."}
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veritymodchecker.online/"},
+              {"@type": "ListItem", "position": 2, "name": "Status 401", "item": "https://veritymodchecker.online/status-401/"}
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does Verity Mod status 401 mean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Status 401 usually means the selected AI provider did not accept the authentication credentials. The key may be missing, revoked, pasted incorrectly, from the wrong provider, or not loaded by the local configuration."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I download Verity Mod again to fix 401?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not as the first step. If Minecraft loaded Verity JE and the error appears only when the AI should answer, the immediate problem is the provider credential path rather than the jar file."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use an OpenRouter key in a Groq Verity setup?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Groq and OpenRouter issue separate credentials. Match the key to the provider selected in the local Verity Mod Java setup."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What if Verity changes from 401 to 429?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "That usually means authentication improved and the next failure is a rate or quota limit. Move from the 401 credential checklist to the status 429 troubleshooting route."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Download Guide home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/ai-model/">AI setup</a>
+        <a href="/api-connection-failed/">API errors</a>
+        <a href="/not-working/">Fixes</a>
+        <a href="/faq/">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Credential route checked July 29, 2026</p>
+          <h1>Verity Mod Status 401 Fix</h1>
+          <p class="lede">
+            Verity Mod status 401 usually means Verity JE reached its AI provider, but Groq, OpenRouter, or
+            the configured route did not accept the credential. Do not replace the jar first. Confirm the
+            provider, create or rotate one private key at the official dashboard, paste it only into the local
+            setup, and retest with one short typed prompt before changing downloads, voice, or models.
+          </p>
+          <div class="trust-strip" aria-label="401 troubleshooting scope">
+            <span>Groq key</span>
+            <span>OpenRouter key</span>
+            <span>No keys collected</span>
+            <span>One clean retest</span>
+          </div>
+          <div class="quick-routes" aria-label="401 support routes">
+            <a href="#quick-fix">Quick fix</a>
+            <a href="#provider-map">Provider map</a>
+            <a href="/verity-groq-api-key/">Groq API key setup</a>
+            <a href="/api-connection-failed/">All API errors</a>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Fast answer</span>
+          </div>
+          <h2>401 is a credential verdict</h2>
+          <p>
+            If the mod appears in Minecraft and only fails when Verity should answer, the game probably got
+            past the download layer. Treat 401 as authentication first, then move to rate limits only if the
+            code changes after a valid key is loaded.
+          </p>
+          <ol class="steps">
+            <li>Find the selected provider: Groq, OpenRouter, Ollama, or unknown.</li>
+            <li>Do not paste your API key into this site, a forum, or a screenshot.</li>
+            <li>Rotate any key that was exposed publicly.</li>
+            <li>Paste one fresh key locally, restart once, and test one short text prompt.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="guide-section" id="quick-fix">
+        <div class="section-heading">
+          <p class="eyebrow">Quick fix</p>
+          <h2>Fix API connection failed 401 before changing the Verity file</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Start with the key source</h3>
+            <p>
+              A Verity Mod API connection failed 401 message is normally later than a loader problem. A loader
+              problem stops Minecraft from starting the right profile, loading Forge or NeoForge, or showing the
+              mod at all. A 401 appears when the Java setup attempts an AI request and the selected provider says
+              the credentials were not accepted. That is why another copy of <strong>verity-5.7.3.jar</strong>
+              cannot fix the most common 401 cases.
+            </p>
+            <p>
+              The useful question is not "which mirror has a working Verity Mod download?" The useful question
+              is "which provider did this local setup try to call?" Groq credentials come from Groq Console.
+              OpenRouter credentials come from OpenRouter. A local Ollama route normally needs a running local
+              service and model instead of a cloud API key. If the provider is unknown, return to the current
+              Verity JE instructions or the setup video that matches your installed route before entering any key.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Use this order</h3>
+            <ol class="steps">
+              <li>Stop repeated prompts so the same failed request does not hide the first useful log line.</li>
+              <li>Write down provider, model, status code, and whether text ever worked in this session.</li>
+              <li>Open the official provider dashboard in a browser you trust.</li>
+              <li>Create or rotate exactly one key for the selected provider.</li>
+              <li>Paste only the key value into the local Verity configuration.</li>
+              <li>Remove quotation marks, leading spaces, trailing spaces, copied labels, and wrong fields.</li>
+              <li>Restart Minecraft once, then test one short typed prompt before testing voice.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" id="provider-map" aria-label="401 provider map">
+        <div class="section-heading">
+          <p class="eyebrow">Provider map</p>
+          <h2>Match the 401 to the right credential path</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Selected route</th>
+                <th>Likely 401 reason</th>
+                <th>Best first check</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Groq</td>
+                <td>Missing, revoked, malformed, or wrong-provider key in the Groq field</td>
+                <td>Create or rotate a key in Groq Console, paste it locally, and test one short text prompt.</td>
+              </tr>
+              <tr>
+                <td>OpenRouter</td>
+                <td>OpenRouter key missing, expired, copied incorrectly, or not used with the OpenRouter route</td>
+                <td>Confirm the OpenRouter account, key, credits or access, and exact model ID.</td>
+              </tr>
+              <tr>
+                <td>Ollama local</td>
+                <td>Usually not a cloud 401 unless the profile is still pointing at a hosted provider</td>
+                <td>Confirm the local endpoint, model name, and whether the setup actually selected Ollama.</td>
+              </tr>
+              <tr>
+                <td>Unknown route</td>
+                <td>Copied setup advice does not match the installed Verity JE build or profile</td>
+                <td>Identify the route first. Do not enter keys into random pages that mention Verity Mod.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Groq route</p>
+          <h2>How to handle Groq 401 without leaking the key</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>401 means the request is not authenticated</h3>
+            <p>
+              For a Groq setup, status 401 means the request did not include valid authentication for Groq.
+              Common player mistakes are simple: copying an old revoked key, adding a space at the beginning,
+              including quotes, pasting the label instead of the key value, putting an OpenRouter key into the
+              Groq field, or changing the wrong config file while Minecraft reads another profile. Fix those
+              before changing the model or file.
+            </p>
+            <p>
+              If a key has appeared in a Discord message, Reddit post, YouTube comment, GitHub issue, stream,
+              screenshot, launcher log, or support email screenshot, treat it as exposed. Rotate it in Groq
+              Console. Do not ask another player to test the key for you, and do not paste it into a "checker"
+              form. This website only explains the route; it never asks for or verifies private API keys.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Retest with one boring prompt</h3>
+            <p>
+              After replacing the credential, restart Minecraft once and send one short text prompt such as
+              "say hi." Do not test voice, long roleplay, a crowded modpack, or repeated retries as the first
+              check. A short text prompt tells you whether authentication works without quickly consuming a
+              rate window. If the result changes from status 401 to status 429, the key is probably accepted and
+              the next layer is provider quota. Move to the <a href="/status-429/">Verity Mod status 429 fix</a>
+              instead of creating more keys.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">OpenRouter and local routes</p>
+          <h2>Do not mix provider keys just because the error looks similar</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>OpenRouter uses its own account and model route</h3>
+            <p>
+              OpenRouter is not a backup Groq key. It has its own authentication header, key dashboard, account
+              balance or access requirements, model IDs, and upstream routing behavior. A Verity Mod status 401
+              on an OpenRouter setup should send you to the OpenRouter key and model route, not to Groq Console.
+              Likewise, a Groq setup cannot be fixed by pasting an OpenRouter token into a Groq field.
+            </p>
+            <p>
+              If OpenRouter returns a structured provider error after authentication works, read the exact model
+              ID and provider message. A credential problem, a model-access problem, an out-of-credits problem,
+              and an upstream rate limit are different fixes. Keep the Verity file stable while you separate
+              those account-layer facts.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Ollama problems often are not API-key problems</h3>
+            <p>
+              Ollama is usually the local-service route. If a guide tells you to use Ollama, confirm the service
+              is installed, running, reachable at the configured local address, and has the selected model pulled
+              before diagnosing cloud credentials. If the local service is not listening, the symptom may be
+              connection refused, timeout, blank reply, or a very slow response rather than a true hosted-provider
+              401.
+            </p>
+            <p>
+              If Ollama works in a terminal but Verity still fails, terminal success proves only that the local
+              runtime and one model can answer. Minecraft may still be using a different model name, wrong local
+              endpoint, old profile, or hosted provider route. Compare the exact local configuration before
+              rotating Groq or OpenRouter keys.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="error-section">
+        <div class="section-heading">
+          <p class="eyebrow">Avoid false fixes</p>
+          <h2>Things that usually make Verity Mod 401 harder to diagnose</h2>
+        </div>
+        <div class="error-grid">
+          <article class="error-card">
+            <span>Downloads</span>
+            <h3>Replacing the jar first</h3>
+            <p>A provider 401 usually appears after Verity JE has loaded far enough to call AI. Check the credential route before downloading again.</p>
+          </article>
+          <article class="error-card">
+            <span>Security</span>
+            <h3>Posting the key for help</h3>
+            <p>Support needs provider, model, status code, time, and sanitized log text. Revoke any key that was visible in public.</p>
+          </article>
+          <article class="error-card">
+            <span>Providers</span>
+            <h3>Using the wrong key type</h3>
+            <p>Groq and OpenRouter credentials are separate. Match the key to the provider selected in the local setup.</p>
+          </article>
+          <article class="error-card">
+            <span>Retests</span>
+            <h3>Changing too many variables</h3>
+            <p>Change one key, restart once, and test one short typed prompt. Then move to model, quota, voice, or file checks only if needed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Support-ready report</p>
+          <h2>What to share if 401 stays after a fresh private key</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Share evidence without secrets</h3>
+            <p>
+              If Verity Mod status 401 remains after one fresh private key, collect facts that help someone
+              reproduce the route without seeing your credential. Share the edition, Verity JE version, loader,
+              Minecraft version, provider, model name, exact status code, approximate time, and whether the same
+              setup ever returned one text answer. Say whether the key was created at Groq or OpenRouter, but do
+              not show the key value, partial key, dashboard screenshot, account email, or local file path.
+            </p>
+            <p>
+              A useful report is "Verity JE 5.7.3, Forge 1.20.1, Groq route, model name, status 401 at 18:20 UTC,
+              fresh key created in Groq Console, text never answered." A weak report is "Verity Mod broken, I tried
+              everything." The first report points to config loading, provider selection, or model setup. The second
+              forces helpers to ask basic questions again.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>When to leave the 401 page</h3>
+            <p>
+              Use the broader <a href="/api-connection-failed/">API connection failed</a> guide if the code is
+              403, 404, 500, 502, 503, connection refused, blank reply, or no code at all. Use the
+              <a href="/status-429/">status 429 page</a> if the key starts working but the provider rate-limits
+              the session. Use the <a href="/voice-not-working/">voice troubleshooting page</a> if text answers
+              work but speech or audio output fails. Use the <a href="/java/">Java guide</a> if Minecraft crashes
+              before Verity can make an AI request.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="status-401-faq">
+        <div class="section-heading">
+          <p class="eyebrow">Questions</p>
+          <h2 id="status-401-faq">Verity Mod status 401 FAQ</h2>
+        </div>
+        <details open>
+          <summary>What does Verity Mod status 401 mean?</summary>
+          <p>
+            It usually means the selected AI provider did not accept the authentication credentials. The key may
+            be missing, revoked, copied with extra characters, pasted into the wrong field, from the wrong
+            provider, or not loaded by the active Minecraft profile.
+          </p>
+        </details>
+        <details>
+          <summary>Where do I get the API key?</summary>
+          <p>
+            Get it only from the official provider selected by your local setup. Groq users create keys in Groq
+            Console. OpenRouter users create OpenRouter keys. Ollama users usually need a running local service
+            rather than a cloud API key.
+          </p>
+        </details>
+        <details>
+          <summary>Can this site check my Groq or OpenRouter key?</summary>
+          <p>
+            No. This site does not ask for, store, test, or forward API keys. It is safer to diagnose by provider,
+            status code, model name, and sanitized logs. Use the official provider dashboard for key creation and
+            rotation.
+          </p>
+        </details>
+        <details>
+          <summary>Why did 401 become 429 after I changed the key?</summary>
+          <p>
+            That can be progress. The provider may now accept the key, then reject later prompts because a request,
+            token, audio, model, daily, or account-level limit was reached. Continue with the status 429 route.
+          </p>
+        </details>
+      </section>
+
+      <aside class="source-strip" aria-label="Primary credential references">
+        <strong>Primary references checked July 29:</strong>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
+        <a href="https://console.groq.com/docs/api-keys" target="_blank" rel="noopener noreferrer">Groq API keys</a>
+        <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
+        <a href="https://openrouter.ai/docs/api_reference/authentication" target="_blank" rel="noopener noreferrer">OpenRouter authentication</a>
+        <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
+        <a href="/api-connection-failed/">Full API connection guide</a>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-routes" aria-label="Footer route links">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/api-connection-failed/">API errors</a>
+        <a href="/status-401/">Status 401</a>
+        <a href="/status-429/">Status 429</a>
+        <a href="/verity-groq-api-key/">Groq API key</a>
+        <a href="/ai-model/">AI model</a>
+        <a href="/voice-not-working/">Voice fixes</a>
+        <a href="/not-working/">All fixes</a>
+      </nav>
+      <p>Independent troubleshooting page. No API keys are collected. Not affiliated with the listed projects or providers.</p>
+    </footer>
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

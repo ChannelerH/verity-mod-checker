@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T09:39:00+08:00</updated>
+  <updated>2026-07-29T10:08:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod status 401 credential fix route added after GSC query review</title>
+    <id>https://veritymodchecker.online/updates/verity-status-401-credential-route-2026-07-29-1008</id>
+    <link href="https://veritymodchecker.online/status-401/" rel="alternate" />
+    <published>2026-07-29T10:08:00+08:00</published>
+    <updated>2026-07-29T10:08:00+08:00</updated>
+    <summary>Added a dedicated Verity Mod status 401 route after Search Console showed exact API connection failed 401 queries and GA4 showed the API connection page as the leading organic troubleshooting landing page. The new page treats 401 as a credential and provider-mismatch problem, separates Groq, OpenRouter, Ollama, and unknown routes, explains why players should not replace the jar first, links to the Groq API key setup and broader API error guide, and adds aliases such as /401/, /verity-mod-401/, /api-connection-failed-401/, /verity-api-connection-failed-401/, and /groq-401/. Homepage TDK was not changed.</summary>
+    <category term="api-errors" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Minecraft Verity Mod route expanded for current versus stale search results</title>
     <id>https://veritymodchecker.online/updates/minecraft-verity-mod-current-stale-refresh-2026-07-29-0939</id>

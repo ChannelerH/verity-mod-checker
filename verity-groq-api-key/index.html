@@ -138,6 +138,7 @@
           </div>
           <div class="quick-routes" aria-label="Related Verity Mod AI routes">
             <a href="/api-connection-failed/">Fix API errors</a>
+            <a href="/status-401/">Fix status 401</a>
             <a href="/status-429/">Fix status 429</a>
             <a href="/ai-model/">Choose a model</a>
           </div>
@@ -287,7 +288,7 @@
               <tr>
                 <td>401 Unauthorized</td>
                 <td>The key is missing, revoked, invalid, pasted into the wrong provider field, or includes extra spaces.</td>
-                <td>Confirm Groq vs OpenRouter, revoke exposed keys, paste one fresh key locally, then test one short prompt.</td>
+                <td>Use the <a href="/status-401/">status 401 fix</a>: confirm Groq vs OpenRouter, revoke exposed keys, paste one fresh key locally, then test one short prompt.</td>
               </tr>
               <tr>
                 <td>403 Forbidden</td>
@@ -407,12 +408,13 @@
             <h3>Next routes if this did not fix it</h3>
             <p>
               If the mod loads but Verity still does not answer, use the no-response checklist. If the error is
-              specifically 429, use the status 429 page. If you have not chosen a provider yet, compare Groq,
-              OpenRouter, and Ollama on the AI model page. If you are on Bedrock or MCPE, leave this Java API
-              key route and use the edition-specific route instead.
+              still 401, use the status 401 page; if it is specifically 429, use the status 429 page. If you
+              have not chosen a provider yet, compare Groq, OpenRouter, and Ollama on the AI model page. If you
+              are on Bedrock or MCPE, leave this Java API key route and use the edition-specific route instead.
             </p>
             <div class="action-row">
               <a class="primary-link" href="/verity-doesnt-respond/">No-response checklist</a>
+              <a class="copy-button" href="/status-401/">Status 401</a>
               <a class="copy-button" href="/bedrock/">Bedrock route</a>
               <a class="copy-button" href="/pocket-edition/">MCPE route</a>
             </div>
@@ -472,6 +474,7 @@
         <a href="/">Checker</a>
         <a href="/verity-je/">Verity JE</a>
         <a href="/api-connection-failed/">API errors</a>
+        <a href="/status-401/">Status 401</a>
         <a href="/ai-model/">AI setup</a>
         <a href="/faq/">FAQ</a>
       </nav>
