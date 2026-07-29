@@ -18,6 +18,7 @@ ROUTES = [
     "/updates/",
     "/real-verity-mod-updated/",
     "/play/",
+    "/routes/",
     "/server/",
     "/verity-map/",
     "/minecraft-verity-mod/",

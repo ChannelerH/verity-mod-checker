@@ -26,6 +26,7 @@ const htmlRoutes = new Set([
   "/pocket-edition/",
   "/real-verity-mod-updated/",
   "/real-verity-mod/",
+  "/routes/",
   "/server/",
   "/status-401/",
   "/status-429/",
@@ -109,6 +110,23 @@ export default {
 
     if (url.pathname === "/app" || url.pathname.startsWith("/app/")) {
       url.pathname = "/apk/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/route-index" ||
+      url.pathname.startsWith("/route-index/") ||
+      url.pathname === "/all-routes" ||
+      url.pathname.startsWith("/all-routes/") ||
+      url.pathname === "/verity-routes" ||
+      url.pathname.startsWith("/verity-routes/") ||
+      url.pathname === "/verity-mod-routes" ||
+      url.pathname.startsWith("/verity-mod-routes/") ||
+      url.pathname === "/verity-mod-route-index" ||
+      url.pathname.startsWith("/verity-mod-route-index/")
+    ) {
+      url.pathname = "/routes/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

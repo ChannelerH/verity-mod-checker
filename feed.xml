@@ -5,8 +5,20 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T16:38:00+08:00</updated>
+  <updated>2026-07-29T16:48:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Complete Verity Mod route index added for crawl and user discovery</title>
+    <id>https://veritymodchecker.online/updates/complete-route-index-2026-07-29-1648</id>
+    <link href="https://veritymodchecker.online/routes/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/play/" rel="related" />
+    <published>2026-07-29T16:48:00+08:00</published>
+    <updated>2026-07-29T16:48:00+08:00</updated>
+    <summary>Added a human-readable /routes/ index after the latest crawl and GSC review showed many pages indexed or submitted through sitemap data, but no standalone on-site directory explaining when each route should be used. The new page maps download, Java, Bedrock, MCPE, MCPEDL, APK, VERITY.exe, Verity Pack, play, server, talk, voice, API, status 401, status 429, lag, taken-down, map, creator reference, JSON data, and update-feed intent without creating duplicate thin pages or changing homepage TDK. Homepage and download-page entrances now link to the route index, aliases such as /verity-mod-routes/ redirect to the canonical route, and the sitemap now contains 48 HTML URLs.</summary>
+    <category term="route-index" />
+    <category term="internal-links" />
+  </entry>
   <entry>
     <title>How to play Verity Mod page expanded for in-world use intent</title>
     <id>https://veritymodchecker.online/updates/how-to-play-in-world-use-route-2026-07-29-1638</id>

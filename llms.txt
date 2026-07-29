@@ -5,6 +5,7 @@
 ## Core Pages
 
 - [Verity Mod Download for Minecraft](https://veritymodchecker.online/): Current Java and Bedrock release map plus a browser-only URL, release record, filename, displayed-size, package, and SHA-256 checker.
+- [Complete Verity Mod Route Index](https://veritymodchecker.online/routes/): Human-readable directory for Java, Bedrock, MCPE, download, play, server, voice, API, file, map, source-check, update, and troubleshooting routes.
 - [Verity Link Checker](https://veritymodchecker.online/link/): Source-check guide for official URLs, mirrors, short-link chains, filenames, Project IDs, file records, Java JARs, Bedrock MCADDONs, and modpack claims.
 - [Minecraft Verity Mod Route](https://veritymodchecker.online/minecraft-verity-mod/): Broad-intent guide for Minecraft Verity Mod, Verity Minecraft, Minecraft Verity, the Verity Mod, Verity mods, and Verity Mod for Minecraft searches, routing users to Java, Bedrock, MCPE, MCPEDL, server, API-error, source-check, and current-versus-stale result checks by edition and file record; aliases such as `/verity-mod-for-minecraft/` and `/verity-minecraft-mod/` redirect here, while download-intent variants redirect to `/download/`.
 - [Verity Mod Download Route](https://veritymodchecker.online/download/): Exact current CurseForge records for Verity JE, Verity BE, PnTMC, and Verity Pocket Edition (Be), plus the verified official Verity JE Modrinth route and route separation for VERITY.exe and VerityPack.
@@ -54,6 +55,7 @@
 - [Verified App Claims Data](https://veritymodchecker.online/data/verity-app-claims.json): Machine-readable Google Play package IDs, publisher names, store signals, and third-party app-claim notes for current Verity Mod mobile search results.
 - [Verified Modpack Route Data](https://veritymodchecker.online/data/verity-modpacks.json): Machine-readable VERITY.exe, Verity Pack, VerityPack, and VerityPack Realistic route snapshot for current CurseForge modpack-result confusion.
 - [Verified Route Update Feed](https://veritymodchecker.online/feed.xml): Atom feed for point-in-time Java and Bedrock route checks.
+- [Complete Route Index](https://veritymodchecker.online/routes/): Human-readable page map for players and crawlers that need route context, not only a raw XML sitemap.
 
 ## Current Position
 
