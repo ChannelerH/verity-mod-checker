@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T17:43:00+08:00</updated>
+  <updated>2026-07-29T17:58:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE Error: No Purpose route added</title>
+    <id>https://veritymodchecker.online/updates/error-no-purpose-route-2026-07-29-1758</id>
+    <link href="https://veritymodchecker.online/error-no-purpose/" rel="alternate" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/not-working/" rel="related" />
+    <published>2026-07-29T17:58:00+08:00</published>
+    <updated>2026-07-29T17:58:00+08:00</updated>
+    <summary>Added a focused /error-no-purpose/ route after the official Verity BE CurseForge FAQ exposed the exact Error: No Purpose phrase and linked a support video, while competitor and SERP checks showed this intent was being answered outside our site. The new page maps the error to Verity BE Project ID 1574632, file record 8506198, Bedrock 26.30, active behavior and resource packs, Beta APIs, cheats, connect setup, clean-world testing, and the official support video. Internal links were added from the Verity BE, Bedrock, not-working, and route-index pages; homepage TDK was not changed.</summary>
+    <category term="verity-be" />
+    <category term="bedrock-errors" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity BE duplicate-package update path added</title>
     <id>https://veritymodchecker.online/updates/verity-be-duplicate-package-2026-07-29-1743</id>

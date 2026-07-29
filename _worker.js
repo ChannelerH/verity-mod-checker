@@ -7,6 +7,7 @@ const htmlRoutes = new Set([
   "/creators/",
   "/curseforge/",
   "/download/",
+  "/error-no-purpose/",
   "/faq/",
   "/fabric/",
   "/horror-mod/",
@@ -209,6 +210,31 @@ export default {
       url.pathname.startsWith("/vertiy-be/")
     ) {
       url.pathname = "/verity-be/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/error-no-purpose" ||
+      (url.pathname.startsWith("/error-no-purpose/") && url.pathname !== "/error-no-purpose/") ||
+      url.pathname === "/verity-no-purpose" ||
+      url.pathname.startsWith("/verity-no-purpose/") ||
+      url.pathname === "/verity-be-no-purpose" ||
+      url.pathname.startsWith("/verity-be-no-purpose/") ||
+      url.pathname === "/verity-mod-no-purpose" ||
+      url.pathname.startsWith("/verity-mod-no-purpose/") ||
+      url.pathname === "/verity-error-no-purpose" ||
+      url.pathname.startsWith("/verity-error-no-purpose/") ||
+      url.pathname === "/verity-be-error-no-purpose" ||
+      url.pathname.startsWith("/verity-be-error-no-purpose/") ||
+      url.pathname === "/no-purpose-error" ||
+      url.pathname.startsWith("/no-purpose-error/") ||
+      url.pathname === "/no-purpose-verity" ||
+      url.pathname.startsWith("/no-purpose-verity/") ||
+      url.pathname === "/verity-purpose-error" ||
+      url.pathname.startsWith("/verity-purpose-error/")
+    ) {
+      url.pathname = "/error-no-purpose/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
