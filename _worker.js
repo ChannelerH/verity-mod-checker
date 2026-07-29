@@ -873,7 +873,19 @@ export default {
       url.pathname === "/verity-mod-429" ||
       url.pathname.startsWith("/verity-mod-429/") ||
       url.pathname === "/api-429" ||
-      url.pathname.startsWith("/api-429/")
+      url.pathname.startsWith("/api-429/") ||
+      url.pathname === "/verity-je-broken" ||
+      url.pathname.startsWith("/verity-je-broken/") ||
+      url.pathname === "/verity-je-429" ||
+      url.pathname.startsWith("/verity-je-429/") ||
+      url.pathname === "/verity-mod-status-429" ||
+      url.pathname.startsWith("/verity-mod-status-429/") ||
+      url.pathname === "/verity-works-then-fails" ||
+      url.pathname.startsWith("/verity-works-then-fails/") ||
+      url.pathname === "/verity-works-for-one-minute" ||
+      url.pathname.startsWith("/verity-works-for-one-minute/") ||
+      url.pathname === "/verity-429-glitch" ||
+      url.pathname.startsWith("/verity-429-glitch/")
     ) {
       url.pathname = "/status-429/";
       url.hash = "";

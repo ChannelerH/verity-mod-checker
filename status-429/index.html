@@ -37,7 +37,7 @@
             "headline": "Verity Mod Status 429 Fix",
             "description": "A focused rate-limit troubleshooting guide for Verity JE AI provider errors.",
             "datePublished": "2026-07-27",
-            "dateModified": "2026-07-27",
+            "dateModified": "2026-07-29",
             "mainEntityOfPage": "https://veritymodchecker.online/status-429/",
             "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
             "author": {"@type": "Organization", "name": "Verity Mod Guide"},
@@ -66,7 +66,7 @@
                 "name": "Why does Verity work briefly and then return 429?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Short successful use can consume a small request or token window. After that window is exhausted, repeated prompts can return 429 until the provider resets the limit."
+                  "text": "Short successful use can consume a small request, token, audio, or daily window. If Verity works for about a minute and then stops for 30 to 60 minutes, treat it as a rate-limit or reset-window problem before making another key."
                 }
               },
               {
@@ -111,7 +111,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Rate-limit route checked July 27, 2026</p>
+          <p class="eyebrow">Rate-limit route checked July 29, 2026</p>
           <h1>Verity Mod Status 429 Fix</h1>
           <p class="lede">
             Verity Mod status 429 usually means the Java mod reached its AI provider and the provider refused
@@ -237,10 +237,11 @@
             <h3>A small free tier can run out quickly</h3>
             <p>
               A common player pattern is: the mod loads, Verity answers once or twice, then the next prompts
-              return status 429. That pattern usually means the key is accepted but the provider reached a
-              short request or token window. It can also happen when voice or long context burns tokens faster
-              than a simple text test. The first successful replies are important evidence: they separate a
-              bad key from an exhausted limit.
+              return status 429. Current player reports include the sharper pattern where Verity works for about
+              one minute, stops for 30 minutes to an hour, then repeats. That usually means the key is accepted
+              but the provider reached a short request, token, audio, or daily window. It can also happen when
+              voice or long context burns tokens faster than a simple text test. The first successful replies are
+              important evidence: they separate a bad key from an exhausted limit.
             </p>
             <p>
               Do not use repeated retries as a test. Rapid retries can keep you inside the failing window and
@@ -315,10 +316,11 @@
           </p>
         </details>
         <details>
-          <summary>Why did it work for one minute and then fail?</summary>
+          <summary>Why did it work for one minute and then fail for 30 to 60 minutes?</summary>
           <p>
-            The early replies probably consumed enough quota to exhaust a short window. Wait for the reset and
-            test one short text prompt. Then test longer chat and voice separately.
+            The early replies probably consumed enough quota to exhaust a short request, token, audio, or daily
+            window. Wait for the provider's reset rather than repeatedly retrying, then test one short text prompt.
+            Test longer chat and voice separately after that.
           </p>
         </details>
         <details>
@@ -339,7 +341,7 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary rate-limit references">
-        <strong>Primary references checked July 27:</strong>
+        <strong>Primary references checked July 29:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>

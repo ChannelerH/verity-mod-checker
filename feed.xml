@@ -5,8 +5,20 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T16:49:00+08:00</updated>
+  <updated>2026-07-29T17:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Status 429 route refreshed for the one-minute failure pattern</title>
+    <id>https://veritymodchecker.online/updates/status-429-one-minute-loop-2026-07-29-1718</id>
+    <link href="https://veritymodchecker.online/status-429/" rel="alternate" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <published>2026-07-29T17:18:00+08:00</published>
+    <updated>2026-07-29T17:18:00+08:00</updated>
+    <summary>Refreshed the focused /status-429/ route after GSC showed exact 429-related Verity queries getting clicks, GA4 showed API troubleshooting as the leading page-title cluster, and live player discussion exposed the repeated pattern where Verity JE works for about one minute, then stops for 30 to 60 minutes. The page now names that pattern directly, updates source freshness to July 29, keeps the homepage title and description unchanged, and redirects natural long-tail slugs such as /verity-je-broken/, /verity-je-429/, /verity-mod-status-429/, /verity-works-for-one-minute/, and /verity-429-glitch/ to the canonical status 429 route.</summary>
+    <category term="status-429" />
+    <category term="api-errors" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Source counters refreshed after Verity Mod query appeared in GSC</title>
     <id>https://veritymodchecker.online/updates/source-counter-refresh-2026-07-29-1649</id>
