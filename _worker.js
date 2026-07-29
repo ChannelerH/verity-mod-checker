@@ -50,6 +50,7 @@ const htmlRoutes = new Set([
   "/verity-6-0-0-jar/",
   "/verity-6-0-1-jar/",
   "/verity-mod-vercel-app/",
+  "/verity-mod-1-21-60/",
   "/verity-doesnt-respond/",
   "/verity-dweller/",
   "/verity-monster-form/",
@@ -139,6 +140,26 @@ export default {
 
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
       url.pathname = "/pocket-edition/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-mod-1-21-60" ||
+      url.pathname === "/verity-mod-1-21-80" ||
+      url.pathname.startsWith("/verity-mod-1-21-80/") ||
+      url.pathname === "/verity-mod-1-21-100" ||
+      url.pathname.startsWith("/verity-mod-1-21-100/") ||
+      url.pathname === "/verity-mod-1-21-bedrock" ||
+      url.pathname.startsWith("/verity-mod-1-21-bedrock/") ||
+      url.pathname === "/verity-mod-1-21-mcpe" ||
+      url.pathname.startsWith("/verity-mod-1-21-mcpe/") ||
+      url.pathname === "/bedrock-1-21-60" ||
+      url.pathname.startsWith("/bedrock-1-21-60/") ||
+      url.pathname === "/mcpe-1-21-60" ||
+      url.pathname.startsWith("/mcpe-1-21-60/")
+    ) {
+      url.pathname = "/verity-mod-1-21-60/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

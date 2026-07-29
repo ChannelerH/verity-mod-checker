@@ -18,6 +18,7 @@ ROUTES = [
     "/updates/",
     "/verity-mod-wiki/",
     "/verity-mod-vercel-app/",
+    "/verity-mod-1-21-60/",
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/verity-souls/",
@@ -178,6 +179,15 @@ with sync_playwright() as playwright:
         assert "Forge 1.21.x" in vercel_text
         assert "unverified" in vercel_text.lower()
         assert page.locator('a[href="/verity-6-jar/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/verity-mod-1-21-60/", wait_until="domcontentloaded")
+        bedrock_121_text = page.locator("main").inner_text()
+        assert "Verity Mod 1.21.60 Bedrock Check" in bedrock_121_text
+        assert "1.21.80" in bedrock_121_text
+        assert "V26.30" in bedrock_121_text
+        assert "8517480" in bedrock_121_text
+        assert "8506198" in bedrock_121_text
+        assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()

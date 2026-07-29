@@ -5,8 +5,24 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T04:48:00+08:00</updated>
+  <updated>2026-07-30T05:13:43+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod 1.21.60 Bedrock route added for V26.30 and MCPE confusion</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-1-21-60-bedrock-route-2026-07-30-0513</id>
+    <link href="https://veritymodchecker.online/verity-mod-1-21-60/" rel="alternate" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-07-30T05:13:43+08:00</published>
+    <updated>2026-07-30T05:13:43+08:00</updated>
+    <summary>Current SERP and player-question checks showed a content gap around Verity Mod 1.21.60, 1.21.80, 1.21.100, and generic 1.21.x Bedrock wording. Added /verity-mod-1-21-60/ to explain that those titles are search clues, while the source records still need exact owner, Project ID, file ID, package type, and supported game version matching. Current checked source facts now show Verity JE at 2,367,656 CurseForge project downloads and 342,454 Modrinth project downloads, Modrinth verity-6.jar version CXsEzVwJ at 1,709 downloads, Modrinth yAt0wv1Z at 273,016 downloads, Verity BE Project ID 1574632 at 4,056,021 project downloads with file 8506198 at 213.7K displayed file downloads, and PnTMC Project ID 1575941 at 7,408,070 project downloads with file 8517480 at 266.3K and V26.10-style file 8517473 at 17.7K. MCPEDL still displays current 3.2.0 rows for V26.30, V26.20, and V26.10 plus player questions around no reply, spawn, and monster-form behavior. GSC and GA4 reads remained blocked because the available Google API project still has Search Console and Analytics Data APIs disabled and the active service account cannot enable them.</summary>
+    <category term="verity-mod-1-21-60" />
+    <category term="bedrock-route" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>verity-mod.vercel.app risk-check route added after Vercel v2.6 SERP</title>
     <id>https://veritymodchecker.online/updates/verity-mod-vercel-app-risk-check-2026-07-30-0448</id>
