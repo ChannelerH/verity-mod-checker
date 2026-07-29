@@ -480,6 +480,12 @@ export default {
       url.pathname.startsWith("/how-to-play/") ||
       url.pathname === "/how-to-play-verity-mod" ||
       url.pathname.startsWith("/how-to-play-verity-mod/") ||
+      url.pathname === "/how-to-play-verity-mod-in-minecraft" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-in-minecraft/") ||
+      url.pathname === "/how-to-play-verity-mod-java" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-java/") ||
+      url.pathname === "/how-to-play-verity-mod-bedrock" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-bedrock/") ||
       url.pathname === "/how-to-play-the-real-verity-mod" ||
       url.pathname.startsWith("/how-to-play-the-real-verity-mod/") ||
       url.pathname === "/how-to-play-the-real-verity-mod-in-minecraft" ||
@@ -496,6 +502,10 @@ export default {
       url.pathname.startsWith("/verity-mod-tlauncher/") ||
       url.pathname === "/how-to-use-verity-mod" ||
       url.pathname.startsWith("/how-to-use-verity-mod/") ||
+      url.pathname === "/how-to-use-verity-mod-in-minecraft" ||
+      url.pathname.startsWith("/how-to-use-verity-mod-in-minecraft/") ||
+      url.pathname === "/how-to-use-the-verity-mod" ||
+      url.pathname.startsWith("/how-to-use-the-verity-mod/") ||
       url.pathname === "/play-verity-mod" ||
       url.pathname.startsWith("/play-verity-mod/")
     ) {

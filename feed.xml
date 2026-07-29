@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T16:10:00+08:00</updated>
+  <updated>2026-07-29T16:38:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>How to play Verity Mod page expanded for in-world use intent</title>
+    <id>https://veritymodchecker.online/updates/how-to-play-in-world-use-route-2026-07-29-1638</id>
+    <link href="https://veritymodchecker.online/play/" rel="alternate" />
+    <link href="https://veritymodchecker.online/how-to-talk-to-verity/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-exe/" rel="related" />
+    <published>2026-07-29T16:38:00+08:00</published>
+    <updated>2026-07-29T16:38:00+08:00</updated>
+    <summary>Expanded the /play/ route after Search Console showed the page receiving 38 impressions and zero clicks in the last-24-hour page table, while current Google SERP sampling for how to play Verity Mod and how to use Verity Mod showed video-led demand around actual in-world use, talking, setup, and gameplay. The page now uses a more specific title and description, adds an in-world first-step section for Verity JE, Verity BE, PnTMC Bedrock, and VERITY.exe, adds visible and structured FAQ coverage for what to type when talking to Verity, and adds canonical redirects for use/play-in-Minecraft long-tail slugs. The same source refresh records the current Modrinth Verity JE project total as 326,814. Homepage TDK was not changed.</summary>
+    <category term="how-to-play" />
+    <category term="search-intent" />
+    <category term="in-world-use" />
+  </entry>
   <entry>
     <title>How to talk to Verity Mod route expanded for microphone and voice-chat searches</title>
     <id>https://veritymodchecker.online/updates/how-to-talk-microphone-voice-route-2026-07-29-1610</id>
