@@ -5,17 +5,17 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T03:35:00+08:00</updated>
+  <updated>2026-07-30T02:38:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>Old verity-1.0.0.jar and Drive-link check added</title>
-    <id>https://veritymodchecker.online/updates/verity-1-0-0-jar-legacy-check-2026-07-30-0335</id>
+    <id>https://veritymodchecker.online/updates/verity-1-0-0-jar-legacy-check-2026-07-30-0238</id>
     <link href="https://veritymodchecker.online/verity-1-0-0-jar/" rel="alternate" />
     <link href="https://veritymodchecker.online/data/verity-legacy-files.json" rel="related" />
     <link href="https://veritymodchecker.online/taken-down/" rel="related" />
     <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
-    <published>2026-07-30T03:35:00+08:00</published>
-    <updated>2026-07-30T03:35:00+08:00</updated>
+    <published>2026-07-30T02:38:00+08:00</published>
+    <updated>2026-07-30T02:38:00+08:00</updated>
     <summary>Added /verity-1-0-0-jar/ after current public SERP sampling surfaced Reddit questions, Drive-link repeats, third-party repost pages, and competitor install wording around old verity-1.0.0.jar, Forge 1.20.1, and Geckolib. The page does not mirror or link a direct download. It records the old filename as a legacy-or-mirror claim, routes players back to the current Verity JE 5.7.3 Java route, and teaches the Route checker to send Drive, Discord, MediaFire, Mega, and exact old filename inputs to a source-proof checklist. Homepage title and description were not changed.</summary>
     <category term="legacy-file" />
     <category term="verity-1.0.0.jar" />
