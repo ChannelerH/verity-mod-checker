@@ -11,6 +11,7 @@ const htmlRoutes = new Set([
   "/error-no-purpose/",
   "/faq/",
   "/fabric/",
+  "/falsity-mod/",
   "/horror-mod/",
   "/how-to-get-verity-mod/",
   "/how-to-spawn-verity/",
@@ -406,6 +407,42 @@ export default {
       url.pathname.startsWith("/verity-mod-curseforge-download/")
     ) {
       url.pathname = "/curseforge/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/falsity" ||
+      url.pathname.startsWith("/falsity/") ||
+      url.pathname === "/falsity-mod" ||
+      url.pathname === "/minecraft-falsity" ||
+      url.pathname.startsWith("/minecraft-falsity/") ||
+      url.pathname === "/minecraft-falsity-mod" ||
+      url.pathname.startsWith("/minecraft-falsity-mod/") ||
+      url.pathname === "/falsity-minecraft" ||
+      url.pathname.startsWith("/falsity-minecraft/") ||
+      url.pathname === "/falsity-minecraft-mod" ||
+      url.pathname.startsWith("/falsity-minecraft-mod/") ||
+      url.pathname === "/falsity-smiley" ||
+      url.pathname.startsWith("/falsity-smiley/") ||
+      url.pathname === "/falsity-smiley-mod" ||
+      url.pathname.startsWith("/falsity-smiley-mod/") ||
+      url.pathname === "/falsity-smiley-archive" ||
+      url.pathname.startsWith("/falsity-smiley-archive/") ||
+      url.pathname === "/verity-falsity" ||
+      url.pathname.startsWith("/verity-falsity/") ||
+      url.pathname === "/verity-vs-falsity" ||
+      url.pathname.startsWith("/verity-vs-falsity/") ||
+      url.pathname === "/verity-mod-falsity" ||
+      url.pathname.startsWith("/verity-mod-falsity/") ||
+      url.pathname === "/survive-from-verity-or-falsity" ||
+      url.pathname.startsWith("/survive-from-verity-or-falsity/") ||
+      url.pathname === "/survive-verity-falsity" ||
+      url.pathname.startsWith("/survive-verity-falsity/") ||
+      url.pathname === "/verity-or-falsity" ||
+      url.pathname.startsWith("/verity-or-falsity/")
+    ) {
+      url.pathname = "/falsity-mod/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

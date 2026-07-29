@@ -1,9 +1,9 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-modpacks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-29T15:10:00+08:00",
+  "checkedAt": "2026-07-29T20:22:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-pack/",
-  "method": "Manual comparison against public CurseForge modpack result pages surfaced for Verity Pack, VERITY.exe, and Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "method": "Manual comparison against public CurseForge modpack result pages surfaced for Verity Pack, VERITY.exe, Falsity, and Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
   "modpacks": [
     {
       "name": "VERITY.exe",
@@ -63,7 +63,22 @@
       "minecraftVersion": "1.20.1",
       "loader": "Forge",
       "sourceNote": "A separate realistic profile result; not proof that the standalone Verity JE file is installed."
+    },
+    {
+      "name": "Survive from VERITY or FALSITY",
+      "owner": "kanthbuymi",
+      "projectId": 1583260,
+      "projectUrl": "https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity",
+      "status": "separate-verity-falsity-modpack-route",
+      "displayedDownloadsAtCheck": 97742,
+      "displayedDownloadsApproximate": false,
+      "packageType": "modpack",
+      "minecraftVersion": "1.20.1",
+      "loader": "Forge",
+      "mainFile": "VERITY 1-1.6.1.zip",
+      "lastUpdate": "2026-07-09",
+      "sourceNote": "Separate CurseForge modpack route for users searching Verity or Falsity together. Treat it as a profile route, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, Verity BE, or PnTMC Bedrock file."
     }
   ],
-  "routePolicy": "Use modpack pages only when the player intentionally wants that profile. Use Verity JE for the standalone Java JAR and Bedrock or MCPE pages for MCADDON routes. This site does not host or mirror files."
+  "routePolicy": "Use modpack pages only when the player intentionally wants that profile. Use /falsity-mod/ for the standalone FALSITY [SMILEY] route, Verity JE for the standalone Java Verity JAR, and Bedrock or MCPE pages for MCADDON routes. This site does not host or mirror files."
 }

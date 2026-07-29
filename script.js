@@ -661,6 +661,37 @@ const knownProjects = [
     ]
   },
   {
+    name: "FALSITY [SMILEY]",
+    edition: "Java mod",
+    route: "/falsity-mod/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1575216",
+        slugs: ["/minecraft/mc-mods/falsity-mod"],
+        link: "https://www.curseforge.com/minecraft/mc-mods/falsity-mod"
+      }
+    ],
+    releases: [
+      {
+        status: "current-falsity-route",
+        filename: "FALSITY-SMILEYARCHIVE-9.0.jar",
+        aliases: ["FALSITY [SMILEY]", "Falsity Mod", "falsity", "smiley archive", "/connectfalsity", "/falsitysetup", "/falsityconfig"],
+        versionNumber: "9.0",
+        sizeMb: 316.1,
+        version: "Minecraft 1.20.1 · Forge",
+        published: "July 28, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8528006",
+            link: "https://www.curseforge.com/minecraft/mc-mods/falsity-mod/files/8528006"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "Verity Pack",
     edition: "Java modpack",
     route: "/verity-pack/",
@@ -749,6 +780,37 @@ const knownProjects = [
         ]
       }
     ]
+  },
+  {
+    name: "Survive from VERITY or FALSITY",
+    edition: "Java modpack",
+    route: "/falsity-mod/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1583260",
+        slugs: ["/minecraft/modpacks/survive-from-verity-or-falsity"],
+        link: "https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-verity-falsity-modpack-route",
+        filename: "VERITY 1-1.6.1.zip",
+        aliases: ["Survive from VERITY or FALSITY", "verity or falsity", "survive verity falsity", "Falsity modpack"],
+        versionNumber: "Forge 1.20.1 profile",
+        sizeMb: null,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 29, 2026 check",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "files",
+            link: "/falsity-mod/"
+          }
+        ]
+      }
+    ]
   }
 ];
 
@@ -808,6 +870,7 @@ function modpackRoute(project) {
 }
 
 function modpackRouteLabel(project) {
+  if (project.route === "/falsity-mod/") return "Open Falsity route check";
   return project.name === "VERITY.exe" ? "Open VERITY.exe route check" : "Open Verity Pack route check";
 }
 
@@ -817,6 +880,13 @@ function modpackChecks(project) {
       "The project path matches the checked VERITY.exe CurseForge modpack result.",
       "Use this route only when you intentionally want the prepared Forge modpack profile.",
       "If Groq, API key, or voice chat fails, debug the provider/profile layer before replacing files."
+    ];
+  }
+  if (project.route === "/falsity-mod/") {
+    return [
+      "The project path matches a Verity or Falsity CurseForge modpack result.",
+      "Use this route only when you intentionally want that full profile.",
+      "If you need the standalone FALSITY [SMILEY] mod or Verity JE file, open the source-check page first."
     ];
   }
   return [
@@ -829,6 +899,9 @@ function modpackChecks(project) {
 function modpackSummary(project, projectId) {
   if (project.name === "VERITY.exe") {
     return `This URL matches the checked VERITY.exe CurseForge modpack route, Project ID ${projectId}. The July 29 source check maps the current main file to Forge Port 2.1.2 record 8526843, while Groq, API key, and voice issues should be debugged in provider or profile setup rather than by using random replacement files.`;
+  }
+  if (project.route === "/falsity-mod/") {
+    return `This URL matches the checked ${project.name} CurseForge modpack route, Project ID ${projectId}. Treat it as a profile route for Verity or Falsity searches, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, or Bedrock add-on.`;
   }
   return `This URL matches a checked CurseForge modpack route for ${project.name}, Project ID ${projectId}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`;
 }
@@ -1265,13 +1338,7 @@ function inspectTextSource(rawValue) {
         project: `${project.name} · ${projectIdentityLabel(project)}`,
         hash: "",
         publisherCheck: "Not a JAR checksum route",
-        checks: project.name === "VERITY.exe"
-          ? modpackChecks(project)
-          : [
-            "Confirm the CurseForge modpack owner and Project ID.",
-            "Read whether the profile includes Verity or expects a separate Verity file.",
-            "Use the Verity Pack route page to choose between modpack, Java JAR, and Bedrock add-on intent."
-          ],
+        checks: modpackChecks(project),
         link: modpackRoute(project),
         linkLabel: modpackRouteLabel(project),
         external: false

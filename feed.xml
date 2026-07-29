@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T18:52:00+08:00</updated>
+  <updated>2026-07-29T20:22:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Falsity Mod route added for Verity and Falsity search confusion</title>
+    <id>https://veritymodchecker.online/updates/falsity-mod-route-2026-07-29-2022</id>
+    <link href="https://veritymodchecker.online/falsity-mod/" rel="alternate" />
+    <link href="https://veritymodchecker.online/verity-pack/" rel="related" />
+    <link href="https://veritymodchecker.online/curseforge/" rel="related" />
+    <published>2026-07-29T20:22:00+08:00</published>
+    <updated>2026-07-29T20:22:00+08:00</updated>
+    <summary>Added a focused /falsity-mod/ route after current SERP checks showed Falsity, FALSITY [SMILEY], and Survive from VERITY or FALSITY results appearing beside Verity Mod intent. The new page records PKFL's FALSITY [SMILEY] Project ID 1575216, file FALSITY-SMILEYARCHIVE-9.0.jar, file ID 8528006, Minecraft 1.20.1 Forge, 703,284 displayed project downloads, and the separate kanthbuymi modpack Project ID 1583260. The update adds homepage, route-index, download, CurseForge, checker, sitemap, worker aliases, LLM index, and modpack JSON support without changing homepage TDK.</summary>
+    <category term="falsity-mod" />
+    <category term="search-intent" />
+    <category term="curseforge" />
+  </entry>
   <entry>
     <title>Verity command page expanded for fanmade slash-command claims</title>
     <id>https://veritymodchecker.online/updates/commands-fanmade-claims-2026-07-29-1852</id>

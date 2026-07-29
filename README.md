@@ -26,6 +26,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity BE official Bedrock route: https://veritymodchecker.online/verity-be/
 - VERITY.exe modpack route: https://veritymodchecker.online/verity-exe/
 - Verity Pack modpack route check: https://veritymodchecker.online/verity-pack/
+- Falsity Mod and Verity/Falsity route check: https://veritymodchecker.online/falsity-mod/
 - Older Java 3.4.1 status route: https://veritymodchecker.online/verity-3-4-1-jar/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
 - MCPE mobile route: https://veritymodchecker.online/pocket-edition/
@@ -53,7 +54,8 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
 - Verity map route: separates `verity map`, `verity minecraft map`, `verity map download`, world-save, server, gallery, video, Java mod, and Bedrock add-on claims; current first-party records show mods and add-ons, not an official standalone map download.
 - VERITY.exe / modpack route: separates the current CurseForge `VERITY.exe` modpack from standalone Java and Bedrock downloads, including Project ID `1585389`, Forge file record `8526843`, older visible NeoForge record `8385443`, and Groq/API-key/voice-chat caveats.
-- Verity Pack / modpack route: separates CurseForge modpacks `Verity Pack`, `VerityPack`, and `VerityPack Realistic` from the standalone Verity JE file and Bedrock add-ons, including Project IDs `1583377`, `1587394`, and `1582388`.
+- Verity Pack / modpack route: separates CurseForge modpacks `Verity Pack`, `VerityPack`, `VerityPack Realistic`, and `Survive from VERITY or FALSITY` from the standalone Verity JE file, FALSITY [SMILEY], and Bedrock add-ons, including Project IDs `1583377`, `1587394`, `1582388`, and `1583260`.
+- Falsity route: separates `Falsity Mod`, `FALSITY [SMILEY]`, `verity or falsity`, and `Survive from VERITY or FALSITY` searches from Verity JE, Bedrock, MCPE, and modpack routes, including Project ID `1575216`, Forge file record `8528006`, and related modpack Project ID `1583260`.
 - CurseForge route chooser: separates `curseforge verity mod` and `verity mod curseforge` searches into Minecraft Mods, Minecraft Bedrock Addons, Pocket Edition, VERITY.exe, and Verity Pack-style Modpacks by Project ID and file record.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.
 - Browser checker: project URL, Project ID, release record, filename, package type, displayed file size, mirror signals, and local SHA-256.
@@ -72,6 +74,7 @@ These URLs are intended for players, editors, and community maintainers who need
 - Human update feed: https://veritymodchecker.online/feed.xml
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
 - Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
+- Falsity route check: https://veritymodchecker.online/falsity-mod/
 - API connection failed route: https://veritymodchecker.online/api-connection-failed/
 - Stable Java file route: https://veritymodchecker.online/verity-5-7-3-jar/
 - Exact Verity BE route: https://veritymodchecker.online/verity-be/
