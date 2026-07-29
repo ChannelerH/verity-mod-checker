@@ -913,16 +913,28 @@ export default {
       url.pathname.startsWith("/verity-not-responding/") ||
       url.pathname === "/verity-mod-not-responding" ||
       url.pathname.startsWith("/verity-mod-not-responding/") ||
+      url.pathname === "/verity-ai-not-responding" ||
+      url.pathname.startsWith("/verity-ai-not-responding/") ||
       url.pathname === "/verity-no-reply" ||
       url.pathname.startsWith("/verity-no-reply/") ||
       url.pathname === "/verity-not-replying" ||
       url.pathname.startsWith("/verity-not-replying/") ||
+      url.pathname === "/verity-not-talking" ||
+      url.pathname.startsWith("/verity-not-talking/") ||
       url.pathname === "/verity-doesnt-talk" ||
       url.pathname.startsWith("/verity-doesnt-talk/") ||
       url.pathname === "/verity-wont-talk" ||
       url.pathname.startsWith("/verity-wont-talk/") ||
       url.pathname === "/verity-only-says-dots" ||
-      url.pathname.startsWith("/verity-only-says-dots/")
+      url.pathname.startsWith("/verity-only-says-dots/") ||
+      url.pathname === "/verity-pocket-edition-not-responding" ||
+      url.pathname.startsWith("/verity-pocket-edition-not-responding/") ||
+      url.pathname === "/verity-pocket-edition-daily-limit" ||
+      url.pathname.startsWith("/verity-pocket-edition-daily-limit/") ||
+      url.pathname === "/verity-cloudflare-workers-limit" ||
+      url.pathname.startsWith("/verity-cloudflare-workers-limit/") ||
+      url.pathname === "/verity-cloudflare-limit" ||
+      url.pathname.startsWith("/verity-cloudflare-limit/")
     ) {
       url.pathname = "/verity-doesnt-respond/";
       url.hash = "";

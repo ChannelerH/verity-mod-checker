@@ -37,20 +37,21 @@
             "@id": "https://veritymodchecker.online/verity-doesnt-respond/#webpage",
             "url": "https://veritymodchecker.online/verity-doesnt-respond/",
             "name": "Verity Mod Doesn't Respond: Java, Bedrock & PnTMC Fix",
-            "description": "Troubleshooting route for Verity not responding, not talking, only saying dots, and missing monster form.",
+            "description": "Troubleshooting route for Verity not responding, not talking, only saying dots, Pocket Edition backend limits, and missing monster form.",
             "datePublished": "2026-07-29",
             "dateModified": "2026-07-29",
             "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
-            "about": ["Verity Mod not responding", "Verity does not reply", "Verity only says dots", "Verity monster form", "Verity voice not working"]
+            "about": ["Verity Mod not responding", "Verity does not reply", "Verity only says dots", "Verity Pocket Edition Cloudflare Workers daily limit", "Verity monster form", "Verity voice not working"]
           },
           {
             "@type": "HowTo",
             "name": "How to fix Verity not responding",
-            "description": "Edition-specific checks for Java AI provider, Bedrock pack activation, PnTMC wake phrase, and voice output.",
+            "description": "Edition-specific checks for Java AI provider, Bedrock pack activation, Pocket Edition backend limits, PnTMC wake phrase, and voice output.",
             "step": [
               {"@type": "HowToStep", "name": "Identify the route", "text": "Confirm whether the installed file is Verity JE, Verity BE, PnTMC Verity - Bedrock Edition, MCPE, or a modpack."},
               {"@type": "HowToStep", "name": "Test text before voice", "text": "Use one short typed prompt or chat phrase before diagnosing microphone or audio output."},
               {"@type": "HowToStep", "name": "Check project setup", "text": "For Java, check Groq, OpenRouter, or Ollama. For Bedrock, check behavior packs, resource packs, Beta APIs, cheats, and a clean world."},
+              {"@type": "HowToStep", "name": "Read backend-limit notes", "text": "For Verity Pocket Edition (Be), check whether the current project page names an online backend, debugger connection, or Cloudflare Workers daily limit before replacing the MCADDON."},
               {"@type": "HowToStep", "name": "Retest one layer", "text": "Change one setting at a time and retest before replacing the download."}
             ]
           },
@@ -79,6 +80,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Do not treat monster form as a universal feature trigger. First match the project, confirm PnTMC or Verity BE behavior, test the documented wake or chat rule, stay nearby when required, and use a clean world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Verity Pocket Edition stop responding for a few hours?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The public Verity Pocket Edition (Be) project page says AI may stop responding when a Cloudflare Workers daily limit is reached. If the add-on imported correctly and the clean-world setup is right, wait and retest against the current project page instead of switching to a random mirror."
                 }
               }
             ]
@@ -124,6 +133,7 @@
           <div class="trust-strip" aria-label="No-response fix coverage">
             <span>Java AI provider</span>
             <span>Bedrock pack setup</span>
+            <span>Pocket Edition limits</span>
             <span>PnTMC wake phrase</span>
             <span>Voice vs text</span>
           </div>
@@ -142,6 +152,7 @@
           <ol class="steps">
             <li>Java: verify the AI provider before changing the JAR.</li>
             <li>Bedrock: activate packs and required world options in a clean world.</li>
+            <li>Pocket Edition: check backend or daily-limit notes before reinstalling.</li>
             <li>PnTMC: use the ground chat rule or <code>Hey Verity</code> wake phrase.</li>
             <li>Voice: prove typed text works before debugging microphone or audio.</li>
           </ol>
@@ -189,8 +200,8 @@
               </tr>
               <tr>
                 <td>MCPE or mobile app claim</td>
-                <td>Wrong package type, APK instead of add-on, disabled packs, or old Minecraft build</td>
-                <td>Import a matching MCADDON/MCPACK and verify packs are active</td>
+                <td>Wrong package type, APK instead of add-on, disabled packs, old build, backend status, or Pocket Edition daily limit</td>
+                <td>Import a matching MCADDON/MCPACK, verify packs are active, then check project limit notes</td>
                 <td><a href="/pocket-edition/">MCPE route</a></td>
               </tr>
               <tr>
@@ -317,6 +328,21 @@
               Prove the current PnTMC file and setup before searching for another package.
             </p>
           </article>
+          <article class="guide-block">
+            <h3>Pocket Edition can be silent because the service is limited</h3>
+            <p>
+              The separate Verity Pocket Edition (Be) listing is not just a renamed copy of Java Verity JE
+              or the PnTMC route. Its public project notes name an online AI connection and say the AI can
+              stop responding when a Cloudflare Workers daily limit is reached. That symptom can look like a
+              broken MCADDON even when the import and world settings are already correct.
+            </p>
+            <p>
+              If this is your exact route, first prove the file by Project ID and file record, then test in a
+              fresh world with the required packs, experiments, cheats, and debugger-connect instructions.
+              When the clean setup still goes silent for hours, treat the current project page and maintainer
+              comments as the source of truth instead of replacing the add-on with an APK, repost, or mirror.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -408,7 +434,24 @@
             microphone permission, output device, language support, voice dependency, and server rules.
           </p>
         </details>
+        <details>
+          <summary>Why does Verity Pocket Edition stop responding for a few hours?</summary>
+          <p>
+            The current public Pocket Edition route says its AI may stop responding when a Cloudflare Workers
+            daily limit is reached. If your file is the Pocket Edition project and a clean world is configured
+            correctly, waiting and rechecking the official project page is more useful than installing a
+            random replacement file.
+          </p>
+        </details>
       </section>
+
+      <aside class="source-strip" aria-label="No-response source records">
+        <strong>Current no-response checks:</strong>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be" target="_blank" rel="noopener noreferrer">Pocket Edition Project #1596246</a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files/8406293" target="_blank" rel="noopener noreferrer">Pocket Edition file #8406293</a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" target="_blank" rel="noopener noreferrer">PnTMC 3.2.0 file #8517480</a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" target="_blank" rel="noopener noreferrer">Verity BE file #8506198</a>
+      </aside>
     </main>
 
     <footer class="footer">

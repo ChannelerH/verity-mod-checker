@@ -5,8 +5,20 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T20:22:00+08:00</updated>
+  <updated>2026-07-29T20:24:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Pocket Edition backend-limit branch added to no-response route</title>
+    <id>https://veritymodchecker.online/updates/no-response-pocket-edition-limit-2026-07-29-2024</id>
+    <link href="https://veritymodchecker.online/verity-doesnt-respond/" rel="alternate" />
+    <link href="https://veritymodchecker.online/pocket-edition/" rel="related" />
+    <published>2026-07-29T20:24:00+08:00</published>
+    <updated>2026-07-29T20:24:00+08:00</updated>
+    <summary>Expanded the existing /verity-doesnt-respond/ route after current source and SERP checks showed no-response demand across Java, Bedrock, Pocket Edition, and Reddit-style status symptoms. The page now distinguishes Verity Pocket Edition (Be) Project ID 1596246 from Verity JE, Verity BE, and PnTMC, and explains that its public project notes name an online AI connection plus a Cloudflare Workers daily-limit condition that can make AI stop responding for hours. Added FAQ and HowTo structured-data branches, source links to Pocket Edition file 8406293, PnTMC file 8517480, and Verity BE file 8506198, plus natural redirects such as /verity-pocket-edition-daily-limit/ and /verity-cloudflare-workers-limit/ without changing homepage TDK.</summary>
+    <category term="no-response" />
+    <category term="pocket-edition" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Falsity Mod route expanded for Bedrock, Modrinth, hashes, and commands</title>
     <id>https://veritymodchecker.online/updates/falsity-mod-route-2026-07-29-2022</id>
