@@ -431,6 +431,16 @@ export default {
       url.pathname.startsWith("/falsity-smiley-mod/") ||
       url.pathname === "/falsity-smiley-archive" ||
       url.pathname.startsWith("/falsity-smiley-archive/") ||
+      url.pathname === "/falsity-bedrock" ||
+      url.pathname.startsWith("/falsity-bedrock/") ||
+      url.pathname === "/falsity-mcpe" ||
+      url.pathname.startsWith("/falsity-mcpe/") ||
+      url.pathname === "/falsity-addon" ||
+      url.pathname.startsWith("/falsity-addon/") ||
+      url.pathname === "/falsity-mcaddon" ||
+      url.pathname.startsWith("/falsity-mcaddon/") ||
+      url.pathname === "/falsity-remake" ||
+      url.pathname.startsWith("/falsity-remake/") ||
       url.pathname === "/falsity-commands" ||
       url.pathname.startsWith("/falsity-commands/") ||
       url.pathname === "/falsity-command" ||

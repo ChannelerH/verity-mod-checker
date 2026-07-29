@@ -85,6 +85,52 @@
       },
       "additionalProperties": false
     },
+    "relatedRoutes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "routeType", "edition", "packageType", "host", "owner", "projectId", "projectUrl", "status", "downloadsAtCheck", "releases", "notes"],
+        "properties": {
+          "name": { "type": "string" },
+          "routeType": { "type": "string" },
+          "edition": { "type": "string" },
+          "packageType": { "type": "string" },
+          "host": { "type": "string" },
+          "owner": { "type": "string" },
+          "projectId": { "type": ["integer", "string"] },
+          "projectUrl": { "type": "string", "format": "uri" },
+          "status": { "type": "string" },
+          "downloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "updatedAt": { "type": "string" },
+          "license": { "type": "string" },
+          "releases": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["status", "filename", "recordId", "recordUrl", "minecraftVersion", "loader", "publishedDate"],
+              "properties": {
+                "status": { "type": "string" },
+                "filename": { "type": "string" },
+                "recordId": { "type": ["integer", "string"] },
+                "recordUrl": { "type": "string", "format": "uri" },
+                "minecraftVersion": { "type": "string" },
+                "loader": { "type": "string" },
+                "displayedSizeMb": { "type": ["number", "null"] },
+                "downloadsAtCheck": { "type": "integer", "minimum": 0 },
+                "downloadsApproximate": { "type": "boolean" },
+                "publishedDate": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
     "routePolicy": { "type": "string" }
   },
   "additionalProperties": false

@@ -707,6 +707,37 @@ const knownProjects = [
     ]
   },
   {
+    name: "Falsity Mod (Bedrock remake)",
+    edition: "Bedrock add-on",
+    route: "/falsity-mod/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1594973",
+        slugs: ["/minecraft-bedrock/addons/falsity-mod"],
+        link: "https://www.curseforge.com/minecraft-bedrock/addons/falsity-mod"
+      }
+    ],
+    releases: [
+      {
+        status: "current-bedrock-remake-route",
+        filename: "Falsity_2_0_0_Addon_updated.mcaddon",
+        aliases: ["Falsity Bedrock", "Falsity Mod Bedrock", "Falsity Remake", "Falsity MCPE", "MCMOBZ"],
+        versionNumber: "2.0.0 updated",
+        sizeMb: 23.1,
+        version: "Minecraft Bedrock 26.30 · MCADDON",
+        published: "July 17, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8449365",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/falsity-mod/files/8449365"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "Verity Pack",
     edition: "Java modpack",
     route: "/verity-pack/",
@@ -839,16 +870,26 @@ function normalizeSignal(value) {
 
 function findKnownRelease(value) {
   const clean = normalizeSignal(value);
+  const aliasMatches = [];
   for (const project of knownProjects) {
     for (const release of project.releases) {
-      const releaseNames = [release.filename, ...(release.aliases || [])].map((name) => name.toLowerCase());
       const record = release.records.find((item) =>
         clean.includes(item.id.toLowerCase()) ||
         Object.values(item.hashes || {}).some((hash) => clean.includes(hash.toLowerCase()))
       );
-      if (releaseNames.some((name) => clean.includes(name)) || record) return { project, release, record };
+      if (clean.includes(release.filename.toLowerCase()) || record) {
+        return { project, release, record, matchKind: record ? "record" : "filename" };
+      }
+      for (const alias of release.aliases || []) {
+        const normalizedAlias = alias.toLowerCase();
+        if (clean.includes(normalizedAlias)) {
+          aliasMatches.push({ project, release, record, matchKind: "alias", length: normalizedAlias.length });
+        }
+      }
     }
   }
+  aliasMatches.sort((a, b) => b.length - a.length);
+  if (aliasMatches[0]) return aliasMatches[0];
   return null;
 }
 
@@ -1253,8 +1294,11 @@ function inspectTextSource(rawValue) {
         };
       }
       const isStandaloneFalsitySource = sourceMatch.project.name === "FALSITY [SMILEY]";
+      const isBedrockFalsitySource = sourceMatch.project.name === "Falsity Mod (Bedrock remake)";
       const sourceSummary = isStandaloneFalsitySource
         ? "The host and project path match the checked standalone FALSITY [SMILEY] route. Confirm Forge 1.20.1, PKFL, CurseForge file 8528006, Modrinth version tNOLeN6v, and hashes before downloading; do not use it as a Verity JE, Bedrock, or modpack replacement."
+        : isBedrockFalsitySource
+          ? "The host and project path match the checked Falsity Mod Bedrock remake route by MCMOBZ. Confirm Bedrock 26.30, Project ID 1594973, file 8449365, and the MCADDON package before importing it; do not use it as the Java FALSITY [SMILEY] Forge JAR."
         : `The host and project path match the checked ${sourceMatch.project.edition} source. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`;
       const sourceChecks = isStandaloneFalsitySource
         ? [
@@ -1264,6 +1308,12 @@ function inspectTextSource(rawValue) {
               ? "Choose the local JAR to compare it with the publisher's SHA-512 checksum."
               : "Open the Falsity JSON or source page before trusting copied mirrors."
           ]
+        : isBedrockFalsitySource
+          ? [
+              "The CurseForge Minecraft Bedrock Addons path and Project ID 1594973 match.",
+              "This identifies the fan-made Bedrock Falsity remake, not the Java FALSITY [SMILEY] JAR.",
+              "Import MCADDON files through Bedrock or MCPE flows; do not put them in a Java mods folder."
+            ]
         : [
             `The ${sourceMatch.source.platform} host and known project path match.`,
             "This result verifies identity signals, not the contents of a downloaded file.",
@@ -1357,13 +1407,14 @@ function inspectTextSource(rawValue) {
   }
 
   if (project) {
-    const exactFile = Boolean(releaseMatch);
+    const exactFile = Boolean(releaseMatch && releaseMatch.matchKind !== "alias");
     const exactProjectId = project.sources.some((source) => value.toLowerCase() === source.id.toLowerCase());
     const matchedRecord = releaseMatch?.record || releaseMatch?.release.records[0];
     const unavailableRelease = isUnavailableRelease(releaseMatch?.release);
     const releaseDetail = releaseMatch
       ? `${releaseMatch.release.version}; ${releaseRecordLabel(releaseMatch.release, matchedRecord)}; ${releaseMatch.release.published}`
       : "No exact current file record in the input";
+    const aliasMatch = releaseMatch?.matchKind === "alias";
     if (project.edition === "Java modpack") {
       return {
         state: "caution",
@@ -1386,10 +1437,12 @@ function inspectTextSource(rawValue) {
       state: "caution",
       verdict: unavailableRelease ? "Observed beta, now unlisted" : exactFile || exactProjectId ? "Known release signal" : "Partial name match",
       risk: unavailableRelease ? "Not current" : "Name can be copied",
-      title: exactFile ? `${project.name} filename recognized` : `${project.name} record recognized`,
+      title: exactFile ? `${project.name} filename recognized` : `${project.name} route recognized`,
       summary: unavailableRelease
         ? `The text matches a previously observed beta filename or record. ${releaseMatch.release.availability} Use this as historical route context, not as the current Verity Mod download answer.`
-        : `The text matches a checked filename, project path, or Project ID. ${releaseDetail}. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.`,
+        : aliasMatch
+          ? `The text matches a checked project or route phrase. ${releaseDetail}. Use the linked publisher record to confirm the exact file before downloading or importing.`
+          : `The text matches a checked filename, project path, or Project ID. ${releaseDetail}. A filename can be copied, so use the linked publisher record to confirm that the downloaded bytes came from the same release.`,
       source: "Text or filename",
       package: type,
       project: `${project.name} · ${projectIdentityLabel(project)}`,

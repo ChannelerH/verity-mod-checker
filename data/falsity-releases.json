@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/falsity-releases.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-29T19:10:00+08:00",
+  "checkedAt": "2026-07-29T19:25:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/falsity-mod/",
   "method": "Manual comparison against public CurseForge and Modrinth project pages plus Modrinth's public project/version API. Download totals are point-in-time popularity signals, not safety verdicts.",
   "project": {
@@ -94,5 +94,40 @@
       "Do not paste provider keys into download pages, comments, or third-party forms."
     ]
   },
-  "routePolicy": "Use this Falsity snapshot only for FALSITY [SMILEY] route and command checks. Use Verity JE for standalone Verity Java files, Bedrock pages for MCADDON routes, and /verity-pack/ or /falsity-mod/ for Verity/Falsity modpack separation. This site does not host or mirror files."
+  "relatedRoutes": [
+    {
+      "name": "Falsity Mod",
+      "routeType": "Bedrock fan-made remake",
+      "edition": "Minecraft Bedrock Edition",
+      "packageType": "Bedrock MCADDON",
+      "host": "CurseForge",
+      "owner": "MCMOBZ",
+      "projectId": 1594973,
+      "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/falsity-mod",
+      "status": "separate-bedrock-remake-route",
+      "downloadsAtCheck": 70202,
+      "updatedAt": "2026-07-17",
+      "license": "Eclipse Public License - v 2.0",
+      "releases": [
+        {
+          "status": "current",
+          "filename": "Falsity_2_0_0_Addon_updated.mcaddon",
+          "recordId": 8449365,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/falsity-mod/files/8449365",
+          "minecraftVersion": "26.30",
+          "loader": "Bedrock Addon",
+          "displayedSizeMb": 23.1,
+          "downloadsAtCheck": 25500,
+          "downloadsApproximate": true,
+          "publishedDate": "2026-07-17"
+        }
+      ],
+      "notes": [
+        "The source page describes this as a Minecraft Bedrock Edition horror mod inspired by the original Falsity concept.",
+        "The source page says it is a fan-made remake and not the original mod.",
+        "Use this route only for Bedrock or MCPE-style add-on intent; do not install it as the Java FALSITY [SMILEY] Forge JAR."
+      ]
+    }
+  ],
+  "routePolicy": "Use this Falsity snapshot for FALSITY [SMILEY] Java route checks, the separate Falsity Mod Bedrock remake route, and Verity/Falsity modpack separation. Use Verity JE for standalone Verity Java files and Verity Bedrock pages for Verity MCADDON routes. This site does not host or mirror files."
 }
