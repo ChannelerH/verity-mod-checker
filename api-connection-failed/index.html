@@ -37,7 +37,7 @@
             "name": "Verity Mod API Connection Failed: Fix 401, 429 and Timeouts",
             "url": "https://veritymodchecker.online/api-connection-failed/",
             "description": "A status-code troubleshooting guide for Verity JE AI provider connection failures.",
-            "dateModified": "2026-07-27"
+            "dateModified": "2026-07-29"
           },
           {
             "@type": "BreadcrumbList",
@@ -55,6 +55,22 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "The message means Verity JE loaded but its selected AI provider did not return a usable response. The status code separates invalid credentials, provider permissions, rate limits, unavailable models, network failures, and local Ollama problems."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does Verity Mod invalid API key mean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Invalid API key usually maps to a 401-style credential problem. Match the provider, create or rotate the key in the official provider dashboard, paste it only into the local Verity configuration, and retest one short prompt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does Verity Mod status 403 mean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Status 403 means the key or account was authenticated but the requested model, route, content, organization, or provider permission is not allowed. Check provider permissions and model access before changing the Verity file."
                 }
               },
               {
@@ -132,11 +148,13 @@
           </p>
           <div class="trust-strip" aria-label="Troubleshooting scope">
             <span>401 key check</span>
+            <span>403 permission</span>
             <span>429 rate limit</span>
             <span>Ollama local check</span>
           </div>
           <div class="quick-routes" aria-label="API troubleshooting routes">
             <a href="/status-401/">Status 401 fix</a>
+            <a href="#error-map">403 permissions</a>
             <a href="/verity-groq-api-key/">Groq API key setup</a>
             <a href="/status-429/">Status 429 fix</a>
             <a href="/ai-model/">Provider setup</a>
@@ -190,7 +208,12 @@
               <tr>
                 <td>403 Forbidden</td>
                 <td>Account permission</td>
-                <td>Check model access, account restrictions, and provider permissions instead of changing Minecraft files.</td>
+                <td>Check model access, account restrictions, guardrail or moderation blocks, and provider permissions instead of changing Minecraft files.</td>
+              </tr>
+              <tr>
+                <td>Invalid API key or "change your API key"</td>
+                <td>Credential or wrong provider</td>
+                <td>Use the <a href="/status-401/">credential route</a>: match Groq versus OpenRouter, rotate exposed keys, paste one fresh key locally, and retest once.</td>
               </tr>
               <tr>
                 <td>404 Not Found</td>
@@ -522,6 +545,24 @@
           </p>
         </details>
         <details>
+          <summary>What if Verity says invalid API key or tells me to change my API key?</summary>
+          <p>
+            Treat that as a credential problem before changing the Verity file. Check whether the setup expects
+            Groq or OpenRouter, create or rotate the key only in the official provider dashboard, paste the key
+            into the local configuration without quotes or extra spaces, and retest one short typed prompt. If
+            the message changes from invalid API key to 429, move to the rate-limit route.
+          </p>
+        </details>
+        <details>
+          <summary>What does Verity Mod status 403 mean?</summary>
+          <p>
+            A 403 is not the same as an invalid password. Groq describes 403 as a permission restriction, and
+            OpenRouter describes 403 as insufficient permissions, a guardrail block, or moderation flag. The key
+            may be valid, but the selected account, organization, model, route, or request is not allowed. Check
+            provider permissions and model access before reinstalling the mod.
+          </p>
+        </details>
+        <details>
           <summary>How do I fix status 429?</summary>
           <p>
             Stop sending prompts, inspect the provider limits, identify the exhausted request, token, or audio window,
@@ -564,7 +605,7 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary troubleshooting references">
-        <strong>Primary references checked July 27:</strong>
+        <strong>Primary references checked July 29:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Maintainer setup tutorial</a>
         <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq quickstart</a>

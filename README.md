@@ -59,7 +59,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Play route selector: Java, Bedrock, MCPE, mobile, TLauncher caveats, solo, friends, server, talk, spawn, and broken-session first steps.
 - Server route selector: Java Forge servers, Aternos and free hosts, Bedrock worlds or Realms, PS4/Xbox/Switch console joiners, public server listing safety, AI provider failures, lag, and friends-session setup.
 - No-response route: exact troubleshooting for `verity doesn't respond`, `verity not responding`, `verity no reply`, `verity doesn't talk`, dots-only, silent voice, and missing monster-form searches across Java, Bedrock, MCPE, PnTMC, and modpack routes.
-- Troubleshooting: Groq API key setup, OpenRouter key separation, local Ollama setup, dedicated API status 401 credential fixes, API 429 rate-limit fixes, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
+- Troubleshooting: Groq API key setup, OpenRouter key separation, local Ollama setup, dedicated API status 401 credential fixes, API 403 permission / invalid API key / change-key wording, API 429 rate-limit fixes, box not spawning, how to spawn Verity, delayed mobs, block delay, MCPE stutter, dialogue missing, only saying "...", old links, 404s, mirrors, and unsafe downloads.
 - SEO support: canonical domain, robots.txt, sitemap.xml, Atom updates, structured release data, GA4, and GSC submission.
 
 ## Public Reference Assets
@@ -70,6 +70,7 @@ These URLs are intended for players, editors, and community maintainers who need
 - Human update feed: https://veritymodchecker.online/feed.xml
 - Machine-readable release snapshot: https://veritymodchecker.online/data/verity-releases.json
 - Machine-readable modpack route snapshot: https://veritymodchecker.online/data/verity-modpacks.json
+- API connection failed route: https://veritymodchecker.online/api-connection-failed/
 - Stable Java file route: https://veritymodchecker.online/verity-5-7-3-jar/
 - Exact Verity BE route: https://veritymodchecker.online/verity-be/
 - Verity map/world route: https://veritymodchecker.online/verity-map/

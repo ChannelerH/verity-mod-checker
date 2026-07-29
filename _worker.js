@@ -718,6 +718,29 @@ export default {
     }
 
     if (
+      url.pathname === "/invalid-api-key" ||
+      url.pathname.startsWith("/invalid-api-key/") ||
+      url.pathname === "/verity-invalid-api-key" ||
+      url.pathname.startsWith("/verity-invalid-api-key/") ||
+      url.pathname === "/verity-mod-invalid-api-key" ||
+      url.pathname.startsWith("/verity-mod-invalid-api-key/") ||
+      url.pathname === "/verity-api-key-invalid" ||
+      url.pathname.startsWith("/verity-api-key-invalid/") ||
+      url.pathname === "/verity-mod-api-error-invalid-api-key" ||
+      url.pathname.startsWith("/verity-mod-api-error-invalid-api-key/") ||
+      url.pathname === "/verity-change-api-key" ||
+      url.pathname.startsWith("/verity-change-api-key/") ||
+      url.pathname === "/verity-mod-change-api-key" ||
+      url.pathname.startsWith("/verity-mod-change-api-key/") ||
+      url.pathname === "/verity-ai-connection-error-change-api-key" ||
+      url.pathname.startsWith("/verity-ai-connection-error-change-api-key/")
+    ) {
+      url.pathname = "/status-401/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/401" ||
       url.pathname.startsWith("/401/") ||
       url.pathname === "/verity-401" ||
@@ -740,6 +763,33 @@ export default {
       url.pathname.startsWith("/groq-401/")
     ) {
       url.pathname = "/status-401/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/403" ||
+      url.pathname.startsWith("/403/") ||
+      url.pathname === "/verity-403" ||
+      url.pathname.startsWith("/verity-403/") ||
+      url.pathname === "/verity-mod-403" ||
+      url.pathname.startsWith("/verity-mod-403/") ||
+      url.pathname === "/api-403" ||
+      url.pathname.startsWith("/api-403/") ||
+      url.pathname === "/api-connection-403" ||
+      url.pathname.startsWith("/api-connection-403/") ||
+      url.pathname === "/api-connection-failed-403" ||
+      url.pathname.startsWith("/api-connection-failed-403/") ||
+      url.pathname === "/verity-api-connection-failed-403" ||
+      url.pathname.startsWith("/verity-api-connection-failed-403/") ||
+      url.pathname === "/verity-error-403" ||
+      url.pathname.startsWith("/verity-error-403/") ||
+      url.pathname === "/verity-mod-api-connection-failed-403" ||
+      url.pathname.startsWith("/verity-mod-api-connection-failed-403/") ||
+      url.pathname === "/verity-mod-api-error-403" ||
+      url.pathname.startsWith("/verity-mod-api-error-403/")
+    ) {
+      url.pathname = "/api-connection-failed/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T12:13:00+08:00</updated>
+  <updated>2026-07-29T12:25:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>API connection failed route expanded for 403 and invalid API key searches</title>
+    <id>https://veritymodchecker.online/updates/api-403-invalid-key-route-2026-07-29-1225</id>
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="alternate" />
+    <published>2026-07-29T12:25:00+08:00</published>
+    <updated>2026-07-29T12:25:00+08:00</updated>
+    <summary>Expanded the existing /api-connection-failed/ route after current SERP checks for `verity mod api connection failed` showed related demand for 403, invalid API key, change your API key, Bedrock confusion, and Groq API key searches. Groq's current error documentation maps 401 to valid authentication credentials, 403 to permission restrictions, and 429 to too many requests; OpenRouter's current documentation maps 401 to invalid credentials, 403 to insufficient permissions or guardrail/moderation blocks, and 429 to rate limiting. The update adds visible FAQ coverage, structured FAQ coverage, invalid-key and 403 canonical redirects, and source-date freshness without changing homepage TDK or splitting a thin new page.</summary>
+    <category term="api-errors" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity Minecraft map route added after GSC and SERP review</title>
     <id>https://veritymodchecker.online/updates/verity-minecraft-map-route-2026-07-29-1213</id>
