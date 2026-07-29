@@ -67,6 +67,8 @@ const rootFiles = new Set([
 ]);
 
 const dataFiles = new Set([
+  "/data/falsity-releases.json",
+  "/data/falsity-releases.schema.json",
   "/data/verity-app-claims.json",
   "/data/verity-app-claims.schema.json",
   "/data/verity-modpacks.json",
@@ -429,6 +431,24 @@ export default {
       url.pathname.startsWith("/falsity-smiley-mod/") ||
       url.pathname === "/falsity-smiley-archive" ||
       url.pathname.startsWith("/falsity-smiley-archive/") ||
+      url.pathname === "/falsity-commands" ||
+      url.pathname.startsWith("/falsity-commands/") ||
+      url.pathname === "/falsity-command" ||
+      url.pathname.startsWith("/falsity-command/") ||
+      url.pathname === "/connectfalsity" ||
+      url.pathname.startsWith("/connectfalsity/") ||
+      url.pathname === "/falsitysetup" ||
+      url.pathname.startsWith("/falsitysetup/") ||
+      url.pathname === "/falsityconfig" ||
+      url.pathname.startsWith("/falsityconfig/") ||
+      url.pathname === "/falsity-modrinth" ||
+      url.pathname.startsWith("/falsity-modrinth/") ||
+      url.pathname === "/modrinth-falsity" ||
+      url.pathname.startsWith("/modrinth-falsity/") ||
+      url.pathname === "/falsity-9-0" ||
+      url.pathname.startsWith("/falsity-9-0/") ||
+      url.pathname === "/falsity-9-0-jar" ||
+      url.pathname.startsWith("/falsity-9-0-jar/") ||
       url.pathname === "/verity-falsity" ||
       url.pathname.startsWith("/verity-falsity/") ||
       url.pathname === "/verity-vs-falsity" ||

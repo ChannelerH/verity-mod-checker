@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/falsity-releases.schema.json",
+  "title": "Falsity release route snapshot",
+  "type": "object",
+  "required": ["schemaVersion", "checkedAt", "canonicalUrl", "method", "project", "routePolicy"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "checkedAt": { "type": "string", "format": "date-time" },
+    "canonicalUrl": { "type": "string", "format": "uri" },
+    "method": { "type": "string" },
+    "project": {
+      "type": "object",
+      "required": ["name", "edition", "packageType", "primarySources", "commands", "setupNotes"],
+      "properties": {
+        "name": { "type": "string" },
+        "edition": { "type": "string" },
+        "packageType": { "type": "string" },
+        "primarySources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["host", "owner", "projectId", "projectUrl", "status", "downloadsAtCheck", "releases"],
+            "properties": {
+              "host": { "type": "string" },
+              "owner": { "type": "string" },
+              "projectId": { "type": ["integer", "string"] },
+              "projectUrl": { "type": "string", "format": "uri" },
+              "status": { "type": "string" },
+              "downloadsAtCheck": { "type": "integer", "minimum": 0 },
+              "followersAtCheck": { "type": "integer", "minimum": 0 },
+              "updatedAt": { "type": "string" },
+              "license": { "type": "string" },
+              "environment": { "type": "string" },
+              "releases": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["status", "filename", "recordId", "recordUrl", "minecraftVersion", "loader", "sizeBytes", "publishedDate"],
+                  "properties": {
+                    "status": { "type": "string" },
+                    "filename": { "type": "string" },
+                    "recordId": { "type": ["integer", "string"] },
+                    "recordUrl": { "type": "string", "format": "uri" },
+                    "downloadUrl": { "type": "string", "format": "uri" },
+                    "minecraftVersion": { "type": "string" },
+                    "loader": { "type": "string" },
+                    "displayedSizeMb": { "type": ["number", "null"] },
+                    "sizeBytes": { "type": "integer", "minimum": 0 },
+                    "downloadsAtCheck": { "type": "integer", "minimum": 0 },
+                    "downloadsApproximate": { "type": "boolean" },
+                    "publishedDate": { "type": "string" },
+                    "hashes": {
+                      "type": "object",
+                      "properties": {
+                        "sha1": { "type": "string", "pattern": "^[a-fA-F0-9]{40}$" },
+                        "sha512": { "type": "string", "pattern": "^[a-fA-F0-9]{128}$" }
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["command", "purpose"],
+            "properties": {
+              "command": { "type": "string" },
+              "purpose": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "setupNotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "routePolicy": { "type": "string" }
+  },
+  "additionalProperties": false
+}

@@ -8,17 +8,19 @@
   <updated>2026-07-29T20:22:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
-    <title>Falsity Mod route added for Verity and Falsity search confusion</title>
+    <title>Falsity Mod route expanded for Modrinth, hashes, and commands</title>
     <id>https://veritymodchecker.online/updates/falsity-mod-route-2026-07-29-2022</id>
     <link href="https://veritymodchecker.online/falsity-mod/" rel="alternate" />
     <link href="https://veritymodchecker.online/verity-pack/" rel="related" />
     <link href="https://veritymodchecker.online/curseforge/" rel="related" />
+    <link href="https://veritymodchecker.online/data/falsity-releases.json" rel="related" />
     <published>2026-07-29T20:22:00+08:00</published>
     <updated>2026-07-29T20:22:00+08:00</updated>
-    <summary>Added a focused /falsity-mod/ route after current SERP checks showed Falsity, FALSITY [SMILEY], and Survive from VERITY or FALSITY results appearing beside Verity Mod intent. The new page records PKFL's FALSITY [SMILEY] Project ID 1575216, file FALSITY-SMILEYARCHIVE-9.0.jar, file ID 8528006, Minecraft 1.20.1 Forge, 703,284 displayed project downloads, and the separate kanthbuymi modpack Project ID 1583260. The update adds homepage, route-index, download, CurseForge, checker, sitemap, worker aliases, LLM index, and modpack JSON support without changing homepage TDK.</summary>
+    <summary>Expanded the focused /falsity-mod/ route after current SERP checks showed Falsity, FALSITY [SMILEY], Modrinth, commands, and Survive from VERITY or FALSITY results appearing beside Verity Mod intent. The page records PKFL's CurseForge Project ID 1575216, file FALSITY-SMILEYARCHIVE-9.0.jar, file ID 8528006, Minecraft 1.20.1 Forge, 703,284 displayed CurseForge downloads, Modrinth project r8Qz0Ic2, version tNOLeN6v, SHA-1 and SHA-512 publisher hashes, /connectfalsity, /falsitysetup, /falsityconfig, and the separate kanthbuymi modpack Project ID 1583260. The update adds machine-readable Falsity JSON data, checker recognition, worker aliases, robots discovery, and LLM index support without changing homepage TDK.</summary>
     <category term="falsity-mod" />
     <category term="search-intent" />
     <category term="curseforge" />
+    <category term="modrinth" />
   </entry>
   <entry>
     <title>Verity command page expanded for fanmade slash-command claims</title>

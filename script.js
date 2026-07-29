@@ -670,6 +670,12 @@ const knownProjects = [
         id: "1575216",
         slugs: ["/minecraft/mc-mods/falsity-mod"],
         link: "https://www.curseforge.com/minecraft/mc-mods/falsity-mod"
+      },
+      {
+        platform: "Modrinth",
+        id: "r8Qz0Ic2",
+        slugs: ["/mod/falsity", "/project/r8Qz0Ic2"],
+        link: "https://modrinth.com/mod/falsity"
       }
     ],
     releases: [
@@ -686,6 +692,15 @@ const knownProjects = [
             platform: "CurseForge",
             id: "8528006",
             link: "https://www.curseforge.com/minecraft/mc-mods/falsity-mod/files/8528006"
+          },
+          {
+            platform: "Modrinth",
+            id: "tNOLeN6v",
+            link: "https://modrinth.com/mod/falsity/version/9.0",
+            hashes: {
+              sha1: "24660ecba1c85f818550ce65ede4f78f29c44343",
+              sha512: "4889ad30c692b8f45a0b59ab3cf0b16f9a18217223cf88e01dc9003948ed8966f0b7f472064195e4a954f332ece139b8aaf4503130d763fc932e789f64fd1d7b"
+            }
           }
         ]
       }
@@ -882,6 +897,13 @@ function modpackChecks(project) {
       "If Groq, API key, or voice chat fails, debug the provider/profile layer before replacing files."
     ];
   }
+  if (project.name === "FALSITY [SMILEY]") {
+    return [
+      "The project path matches the checked standalone FALSITY [SMILEY] Java Forge route.",
+      "Use this route only when you intentionally want the Falsity 9.0 JAR, not Verity JE or Bedrock.",
+      "Compare CurseForge 1575216, file 8528006, Modrinth r8Qz0Ic2, version tNOLeN6v, and hashes before trusting copied mirrors."
+    ];
+  }
   if (project.route === "/falsity-mod/") {
     return [
       "The project path matches a Verity or Falsity CurseForge modpack result.",
@@ -899,6 +921,9 @@ function modpackChecks(project) {
 function modpackSummary(project, projectId) {
   if (project.name === "VERITY.exe") {
     return `This URL matches the checked VERITY.exe CurseForge modpack route, Project ID ${projectId}. The July 29 source check maps the current main file to Forge Port 2.1.2 record 8526843, while Groq, API key, and voice issues should be debugged in provider or profile setup rather than by using random replacement files.`;
+  }
+  if (project.name === "FALSITY [SMILEY]") {
+    return `This URL matches the checked standalone FALSITY [SMILEY] route, Project ID ${projectId}. The July 29 source check maps the current file to FALSITY-SMILEYARCHIVE-9.0.jar, CurseForge file 8528006, Modrinth project r8Qz0Ic2, and Modrinth version tNOLeN6v; use it only for Falsity Forge 1.20.1 intent, not Verity JE, Bedrock, or modpack installs.`;
   }
   if (project.route === "/falsity-mod/") {
     return `This URL matches the checked ${project.name} CurseForge modpack route, Project ID ${projectId}. Treat it as a profile route for Verity or Falsity searches, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, or Bedrock add-on.`;
@@ -1227,24 +1252,37 @@ function inspectTextSource(rawValue) {
           external: false
         };
       }
+      const isStandaloneFalsitySource = sourceMatch.project.name === "FALSITY [SMILEY]";
+      const sourceSummary = isStandaloneFalsitySource
+        ? "The host and project path match the checked standalone FALSITY [SMILEY] route. Confirm Forge 1.20.1, PKFL, CurseForge file 8528006, Modrinth version tNOLeN6v, and hashes before downloading; do not use it as a Verity JE, Bedrock, or modpack replacement."
+        : `The host and project path match the checked ${sourceMatch.project.edition} source. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`;
+      const sourceChecks = isStandaloneFalsitySource
+        ? [
+            `The ${sourceMatch.source.platform} host and known FALSITY [SMILEY] project path match.`,
+            "This identifies the standalone Falsity Java Forge route, not Verity JE, Verity BE, or Survive from VERITY or FALSITY.",
+            hasPublisherHash
+              ? "Choose the local JAR to compare it with the publisher's SHA-512 checksum."
+              : "Open the Falsity JSON or source page before trusting copied mirrors."
+          ]
+        : [
+            `The ${sourceMatch.source.platform} host and known project path match.`,
+            "This result verifies identity signals, not the contents of a downloaded file.",
+            hasPublisherHash
+              ? "Choose the local JAR to compare it with the publisher's SHA-512 checksum."
+              : "Use the project files tab and avoid direct mirrors of an older release."
+          ];
       return {
         state: "verified",
         verdict: "Known project match",
         risk: "Identity matched",
         title: `${sourceMatch.project.name} ${sourceMatch.source.platform} route recognized`,
-        summary: `The host and project path match the checked ${sourceMatch.project.edition} source. Still confirm the exact Minecraft version, loader or add-on build, owner, and release date on the destination page before downloading.`,
+        summary: sourceSummary,
         source: host,
         package: type === "Not identified" ? matchedPackageType : type,
         project: `${sourceMatch.project.name} · ${projectIdentityLabel(sourceMatch.project)}`,
         hash: "",
         publisherCheck: hasPublisherHash ? "SHA-512 available for local comparison" : "Not published in the checked record",
-        checks: [
-          `The ${sourceMatch.source.platform} host and known project path match.`,
-          "This result verifies identity signals, not the contents of a downloaded file.",
-          hasPublisherHash
-            ? "Choose the local JAR to compare it with the publisher's SHA-512 checksum."
-            : "Use the project files tab and avoid direct mirrors of an older release."
-        ],
+        checks: sourceChecks,
         link: matchedRecord?.link || releaseRecordLink(sourceMatch.project, matchedRelease, sourceMatch.source.platform),
         linkLabel: matchedRecord
           ? `Open ${sourceMatch.source.platform} ${releaseRecordLabel(matchedRelease, matchedRecord)}`

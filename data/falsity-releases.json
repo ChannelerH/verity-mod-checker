@@ -1,0 +1,98 @@
+{
+  "$schema": "https://veritymodchecker.online/data/falsity-releases.schema.json",
+  "schemaVersion": 1,
+  "checkedAt": "2026-07-29T19:10:00+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/falsity-mod/",
+  "method": "Manual comparison against public CurseForge and Modrinth project pages plus Modrinth's public project/version API. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "project": {
+    "name": "FALSITY [SMILEY]",
+    "edition": "Minecraft Java Edition",
+    "packageType": "Forge Java mod",
+    "primarySources": [
+      {
+        "host": "CurseForge",
+        "owner": "PKFL",
+        "projectId": 1575216,
+        "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/falsity-mod",
+        "status": "current",
+        "downloadsAtCheck": 703284,
+        "followersAtCheck": 0,
+        "updatedAt": "2026-07-28",
+        "license": "Custom License",
+        "environment": "Client and Server",
+        "releases": [
+          {
+            "status": "current",
+            "filename": "FALSITY-SMILEYARCHIVE-9.0.jar",
+            "recordId": 8528006,
+            "recordUrl": "https://www.curseforge.com/minecraft/mc-mods/falsity-mod/files/8528006",
+            "minecraftVersion": "1.20.1",
+            "loader": "Forge",
+            "displayedSizeMb": 316.1,
+            "sizeBytes": 331408253,
+            "downloadsAtCheck": 1700,
+            "downloadsApproximate": true,
+            "publishedDate": "2026-07-28"
+          }
+        ]
+      },
+      {
+        "host": "Modrinth",
+        "owner": "PKFL_",
+        "projectId": "r8Qz0Ic2",
+        "projectUrl": "https://modrinth.com/mod/falsity",
+        "status": "current",
+        "downloadsAtCheck": 10240,
+        "followersAtCheck": 5,
+        "updatedAt": "2026-07-29T02:00:07.353235Z",
+        "license": "All Rights Reserved",
+        "environment": "Client and Server",
+        "releases": [
+          {
+            "status": "current",
+            "filename": "FALSITY-SMILEYARCHIVE-9.0.jar",
+            "recordId": "tNOLeN6v",
+            "recordUrl": "https://modrinth.com/mod/falsity/version/9.0",
+            "downloadUrl": "https://cdn.modrinth.com/data/r8Qz0Ic2/versions/tNOLeN6v/FALSITY-SMILEYARCHIVE-9.0.jar",
+            "minecraftVersion": "1.20.1",
+            "loader": "Forge",
+            "displayedSizeMb": 316.05,
+            "sizeBytes": 331408253,
+            "downloadsAtCheck": 489,
+            "downloadsApproximate": false,
+            "publishedDate": "2026-07-29T02:00:07.353235Z",
+            "hashes": {
+              "sha1": "24660ecba1c85f818550ce65ede4f78f29c44343",
+              "sha512": "4889ad30c692b8f45a0b59ab3cf0b16f9a18217223cf88e01dc9003948ed8966f0b7f472064195e4a954f332ece139b8aaf4503130d763fc932e789f64fd1d7b"
+            }
+          }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "/connectfalsity",
+        "purpose": "Change Falsity language."
+      },
+      {
+        "command": "/falsitysetup",
+        "purpose": "Set a custom companion name."
+      },
+      {
+        "command": "/falsityconfig",
+        "purpose": "Open the in-game configuration menu for optional AI, TTS, and STT provider settings."
+      },
+      {
+        "command": "G",
+        "purpose": "Throw Falsity according to the current public project description."
+      }
+    ],
+    "setupNotes": [
+      "Requires GeckoLib.",
+      "Optional external AI, TTS, and STT providers are setup layers, not proof that the base JAR is wrong.",
+      "The project description says external providers include OpenAI-compatible APIs, Gemini, Groq, Ollama, OpenRouter, FishAudio, and Whisper-compatible transcription.",
+      "Do not paste provider keys into download pages, comments, or third-party forms."
+    ]
+  },
+  "routePolicy": "Use this Falsity snapshot only for FALSITY [SMILEY] route and command checks. Use Verity JE for standalone Verity Java files, Bedrock pages for MCADDON routes, and /verity-pack/ or /falsity-mod/ for Verity/Falsity modpack separation. This site does not host or mirror files."
+}

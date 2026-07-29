@@ -11,6 +11,7 @@ Sitemap: https://veritymodchecker.online/sitemap.xml
 Data: https://veritymodchecker.online/data/verity-releases.json
 App-Claims-Data: https://veritymodchecker.online/data/verity-app-claims.json
 Modpack-Data: https://veritymodchecker.online/data/verity-modpacks.json
+Falsity-Data: https://veritymodchecker.online/data/falsity-releases.json
 Feed: https://veritymodchecker.online/feed.xml
 LLM-Content: https://veritymodchecker.online/llms.txt
 LLM-Full-Content: https://veritymodchecker.online/llms-full.txt
