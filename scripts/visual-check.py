@@ -20,6 +20,7 @@ ROUTES = [
     "/verity-mod-vercel-app/",
     "/verity-mod-1-21-60/",
     "/best-verity-mod-bedrock/",
+    "/verity-mod-virus-check/",
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/verity-souls/",
@@ -202,6 +203,19 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/verity-be/"]').count() >= 1
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
         assert page.locator('a[href="/mcpedl/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/verity-mod-virus-check/", wait_until="domcontentloaded")
+        safety_text = page.locator("main").inner_text()
+        assert "Is Verity Mod a Virus?" in safety_text
+        assert "No malware verdict" in safety_text
+        assert "verity-6.jar" in safety_text
+        assert "8506198" in safety_text
+        assert "8517480" in safety_text
+        assert "Vercel" in safety_text
+        assert "APK" in safety_text
+        assert page.locator('a[href="/data/verity-safety-checks.json"]').count() >= 1
+        assert page.locator('a[href="/verity-mod-vercel-app/"]').count() >= 1
+        assert page.locator('a[href="/apk/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()

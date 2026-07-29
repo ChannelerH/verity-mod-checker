@@ -58,6 +58,7 @@ const htmlRoutes = new Set([
   "/verity-be/",
   "/verity-je/",
   "/verity-exe/",
+  "/verity-mod-virus-check/",
   "/verity-mod-lag-fix/",
   "/voice-not-working/",
   "/what-happened/",
@@ -93,6 +94,8 @@ const dataFiles = new Set([
   "/data/verity-lookalikes.schema.json",
   "/data/verity-releases.json",
   "/data/verity-releases.schema.json",
+  "/data/verity-safety-checks.json",
+  "/data/verity-safety-checks.schema.json",
   "/data/verity-source-map.csv",
   "/data/verity-source-map.json",
   "/data/verity-source-map.schema.json",
@@ -141,6 +144,27 @@ export default {
 
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
       url.pathname = "/pocket-edition/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/is-verity-mod-a-virus" ||
+      url.pathname.startsWith("/is-verity-mod-a-virus/") ||
+      url.pathname === "/is-verity-mod-safe" ||
+      url.pathname.startsWith("/is-verity-mod-safe/") ||
+      url.pathname === "/verity-mod-safe-download" ||
+      url.pathname.startsWith("/verity-mod-safe-download/") ||
+      url.pathname === "/verity-mod-malware" ||
+      url.pathname.startsWith("/verity-mod-malware/") ||
+      url.pathname === "/verity-mod-virus" ||
+      url.pathname.startsWith("/verity-mod-virus/") ||
+      url.pathname === "/verity-virus" ||
+      url.pathname.startsWith("/verity-virus/") ||
+      url.pathname === "/verity-mod-warning" ||
+      url.pathname.startsWith("/verity-mod-warning/")
+    ) {
+      url.pathname = "/verity-mod-virus-check/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

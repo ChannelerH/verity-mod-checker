@@ -1,0 +1,83 @@
+{
+  "$schema": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
+  "schemaVersion": 1,
+  "checkedAt": "2026-07-30T06:08:12+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/verity-mod-virus-check/",
+  "method": "Point-in-time safety-intent routing from public SERP snippets, official project pages, and machine-readable release snapshots. This file is not an antivirus scan, malware verdict, file reputation verdict, or endorsement of any download host.",
+  "summary": {
+    "recommendedFirstMove": "Match source identity before opening or replacing files.",
+    "notEnoughEvidence": "A copied filename, high download count, Google Play description, Discord attachment, Drive link, Vercel landing page, or Reddit comment is not enough to prove a Verity file is safe.",
+    "separateChecks": [
+      "route identity",
+      "publisher and Project ID",
+      "file record or version ID",
+      "package extension",
+      "loader or Bedrock build",
+      "hash comparison when published by the source",
+      "local antivirus or sandbox scan when malware risk is the question"
+    ]
+  },
+  "routes": [
+    {
+      "question": "Is Verity Mod a virus?",
+      "safeAnswer": "This site cannot declare every file with that name safe or malicious. The useful first answer is whether the page points to a traceable route such as Verity JE, Verity BE, PnTMC, MCPEDL, VERITY.exe, or an unrelated app.",
+      "goTo": "https://veritymodchecker.online/verity-mod-virus-check/",
+      "avoid": [
+        "asking strangers for a taken-down file",
+        "opening password archives or EXE installers that claim to be a Minecraft add-on",
+        "pasting API keys into download pages",
+        "treating a copied filename as a safety verdict"
+      ]
+    },
+    {
+      "question": "The browser says the Verity JAR might harm my device.",
+      "safeAnswer": "Java JARs are executable code, so browser warnings are expected on many downloads. Do not dismiss the warning; first match the maintainer route, file record, file name, loader, and publisher hash if available.",
+      "goTo": "https://veritymodchecker.online/verity-6-jar/",
+      "fallback": "https://veritymodchecker.online/verity-5-7-3-jar/"
+    },
+    {
+      "question": "Is the Vercel Verity v2.6 page safe?",
+      "safeAnswer": "Treat it as unverified until it exposes a matching Modrinth or CurseForge project ID, file record, version ID, checksum, and maintainer account.",
+      "goTo": "https://veritymodchecker.online/verity-mod-vercel-app/"
+    },
+    {
+      "question": "Is a Google Play Verity app the official add-on?",
+      "safeAnswer": "A Google Play app can be a third-party helper or content app. It is not automatically the same as a maintainer MCADDON, JAR, MRPACK, or CurseForge/Modrinth record.",
+      "goTo": "https://veritymodchecker.online/apk/"
+    },
+    {
+      "question": "Is MCPEDL safe for Verity Bedrock?",
+      "safeAnswer": "Use MCPEDL as a discovery page, then match the current PnTMC row to a CurseForge file record before importing the MCADDON.",
+      "goTo": "https://veritymodchecker.online/mcpedl/"
+    },
+    {
+      "question": "Someone posted an old Drive, Discord, MediaFire, or Mega link.",
+      "safeAnswer": "Treat old direct-file links as source-proof problems. A current route should be rebuilt from a maintainer-controlled page, not from a copied attachment.",
+      "goTo": "https://veritymodchecker.online/verity-1-0-0-jar/"
+    }
+  ],
+  "currentKnownSourceSignals": {
+    "modrinthVerityJe": {
+      "projectId": "on1Y0osD",
+      "currentVersionId": "CXsEzVwJ",
+      "currentFile": "verity-6.jar",
+      "projectDownloadsAtCheck": 343326,
+      "currentVersionDownloadsAtCheck": 2406,
+      "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2"
+    },
+    "curseForgeVerityBe": {
+      "projectId": 1574632,
+      "currentFileId": 8506198,
+      "currentFile": "Verity (Stable) (1.1.0)-(26.3).mcaddon",
+      "projectDownloadsAtCheck": 4056021,
+      "fileDownloadsDisplayAtCheck": "213.7K"
+    },
+    "curseForgePntmc": {
+      "projectId": 1575941,
+      "currentFileId": 8517480,
+      "currentFile": "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon",
+      "projectDownloadsAtCheck": 7416933,
+      "fileDownloadsDisplayAtCheck": "266.3K"
+    }
+  }
+}

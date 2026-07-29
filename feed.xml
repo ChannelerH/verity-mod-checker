@@ -5,8 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T05:42:00+08:00</updated>
+  <updated>2026-07-30T06:08:12+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod virus and safety check route added</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-virus-check-route-2026-07-30-0608</id>
+    <link href="https://veritymodchecker.online/verity-mod-virus-check/" rel="alternate" />
+    <link href="https://veritymodchecker.online/link/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-vercel-app/" rel="related" />
+    <link href="https://veritymodchecker.online/apk/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-safety-checks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <published>2026-07-30T06:08:12+08:00</published>
+    <updated>2026-07-30T06:08:12+08:00</updated>
+    <summary>Public SERP review showed safety-intent searches around Verity Mod virus, safe download, malware, browser warnings, APK pages, old Drive or Discord links, Vercel download claims, and Reddit-style link concerns. Added /verity-mod-virus-check/ as a canonical route explaining that source identity and malware scanning are separate checks. The page routes Java JAR users to Modrinth on1Y0osD / CXsEzVwJ / verity-6.jar, Bedrock users to Verity BE 1574632 / 8506198 or PnTMC 1575941 / 8517480, Vercel users to the existing risk route, APK users to the app safety route, MCPEDL users to the row check, and old mirror users to stale-link routes. Published /data/verity-safety-checks.json and schema for citation. Official Modrinth API now reports Verity JE project on1Y0osD at 343,326 downloads, version CXsEzVwJ at 2,406 downloads, and yAt0wv1Z at 273,102 downloads. Public PnTMC CurseForge extraction now shows 7,416,933 project downloads. GSC and GA4 reads remained blocked by invalid user OAuth plus disabled Google APIs for project 398776347627.</summary>
+    <category term="verity-mod-virus-check" />
+    <category term="safety-intent" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>Best Verity Mod for Bedrock comparison route added</title>
     <id>https://veritymodchecker.online/updates/best-verity-mod-bedrock-route-2026-07-30-0542</id>

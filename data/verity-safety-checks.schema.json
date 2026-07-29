@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
+  "title": "Verity Mod safety-intent route checks",
+  "type": "object",
+  "required": ["schemaVersion", "checkedAt", "canonicalUrl", "method", "summary", "routes"],
+  "properties": {
+    "schemaVersion": {"type": "integer", "minimum": 1},
+    "checkedAt": {"type": "string"},
+    "canonicalUrl": {"type": "string", "format": "uri"},
+    "method": {"type": "string"},
+    "summary": {"type": "object"},
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question", "safeAnswer", "goTo"],
+        "properties": {
+          "question": {"type": "string"},
+          "safeAnswer": {"type": "string"},
+          "goTo": {"type": "string", "format": "uri"},
+          "fallback": {"type": "string", "format": "uri"},
+          "avoid": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "currentKnownSourceSignals": {"type": "object"}
+  },
+  "additionalProperties": true
+}
