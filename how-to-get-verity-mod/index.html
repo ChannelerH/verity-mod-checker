@@ -189,7 +189,7 @@
             <h3>1. Match Minecraft and the loader before getting the JAR</h3>
             <p>
               The checked Java project is Verity JE: CurseForge Project ID 1591438 and Modrinth Project ID on1Y0osD.
-              Checked July 22, 2026, both current records list version 5.7.3 for Minecraft 1.20.1 Forge, while CurseForge
+              Checked July 29, 2026, both current records list version 5.7.3 for Minecraft 1.20.1 Forge, while CurseForge
               also includes an older NeoForge branch for Minecraft 1.21.1.
               The project page describes the NeoForge 1.21.1 branch as deprecated and buggy, so a larger game-version
               number is not automatically the better choice. Read the current files page and changelog before selecting.
@@ -334,6 +334,43 @@
               <li>Keep the last working release until the update passes a full restart.</li>
               <li>Remove the test profile if the source or behavior becomes suspicious.</li>
             </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="install-search-result">
+        <div class="section-heading">
+          <p class="eyebrow">Search result sanity check</p>
+          <h2>If a tutorial says how to install Verity Mod in Minecraft</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Use the tutorial only after it names the exact route</h3>
+            <p>
+              Many videos and quick blog posts say how to install Verity Mod without separating Verity JE,
+              Verity BE, PnTMC's Bedrock add-on, VerityPack, or VERITY.exe. Before following a step-by-step
+              install guide, pause on the source page and write down the project name, owner, record number,
+              file type, Minecraft version, and loader or Bedrock build. A guide that says “put it in mods”
+              is a Java guide; a guide that says “enable behavior and resource packs” is a Bedrock guide.
+              Mixing those steps is the most common reason players think the download is broken.
+            </p>
+            <p>
+              For the current Java path, a reliable tutorial should still resolve to Verity JE, CurseForge
+              Project ID 1591438 or Modrinth Project ID on1Y0osD, and the stable 5.7.3 Forge 1.20.1 file
+              unless the tutorial is explicitly explaining an old or unlisted beta link. For Bedrock and
+              MCPE, a reliable tutorial should name the exact add-on owner, file record, and supported build
+              before asking you to enable experiments, cheats, scripts, or debugger connect commands.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Red flags before the first launch</h3>
+            <ul class="check-list">
+              <li>The page offers one “all editions” Verity download for Java, Bedrock, and mobile.</li>
+              <li>The file extension is EXE, APK, MSI, DMG, SCR, or ZIP when the route should be JAR or MCADDON.</li>
+              <li>The tutorial hides the source page behind a short link, file locker, countdown, or paid gate.</li>
+              <li>The instructions ask for a Microsoft password, Discord token, API key screenshot, or public log with secrets.</li>
+              <li>The Minecraft version, loader, Project ID, or file record is missing from the install steps.</li>
+            </ul>
           </article>
         </div>
       </section>

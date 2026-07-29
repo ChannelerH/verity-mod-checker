@@ -5,8 +5,22 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T21:05:00+08:00</updated>
+  <updated>2026-07-29T21:25:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Current source counters refreshed and install aliases hardened</title>
+    <id>https://veritymodchecker.online/updates/source-counters-install-aliases-2026-07-29-2125</id>
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="alternate" />
+    <link href="https://veritymodchecker.online/how-to-get-verity-mod/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="related" />
+    <published>2026-07-29T21:25:00+08:00</published>
+    <updated>2026-07-29T21:25:00+08:00</updated>
+    <summary>Refreshed the current public source snapshot after today's SERP again showed strong install/download competition from video results and exact install-guide domains. Current first-party checks now record Verity JE at 2,342,872 CurseForge project downloads, verity-5.7.3.jar at 645.1K displayed CurseForge file downloads, Modrinth project on1Y0osD at 333,842 downloads, Modrinth stable yAt0wv1Z at 266,241 downloads, Verity BE at 4,027,823 CurseForge project downloads with file 8506198 at 193.3K displayed file downloads, and PnTMC Verity - Bedrock Edition at 7,348,123 CurseForge project downloads with current 3.2.0 rows 8517480, 8517478, and 8517473 at 232.4K, 21.5K, and 16.1K displayed file downloads. The four tracked CurseForge Verity project pages now sum to 13,775,470 displayed project downloads; adding Modrinth gives a 14,109,312 platform-counter sum, not unique players or installs. Added Cloudflare Pages _redirects fallbacks for /how-to-install/, /how-to-download-verity-mod/, /how-to-download-and-install-verity-mod/, /how-to-download-verity-mod-in-minecraft/, and /how-to-download-and-install-verity-for-minecraft/ to keep install intent consolidated on the canonical installation route. Homepage TDK was not changed.</summary>
+    <category term="source-refresh" />
+    <category term="install-intent" />
+    <category term="download-counters" />
+  </entry>
   <entry>
     <title>Groq API key route expanded for AI Settings and Voice/TTS setup</title>
     <id>https://veritymodchecker.online/updates/groq-ai-settings-voice-tts-2026-07-29-2105</id>
