@@ -32,6 +32,7 @@ const htmlRoutes = new Set([
   "/updates/",
   "/verity-pack/",
   "/verity-groq-api-key/",
+  "/verity-map/",
   "/verity-3-4-1-jar/",
   "/verity-5-7-3-jar/",
   "/verity-6-0-0-jar/",
@@ -179,6 +180,31 @@ export default {
       url.pathname.startsWith("/vertiy-be/")
     ) {
       url.pathname = "/verity-be/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/verity-map" ||
+      (url.pathname.startsWith("/verity-map/") && url.pathname !== "/verity-map/") ||
+      url.pathname === "/verity-minecraft-map" ||
+      url.pathname.startsWith("/verity-minecraft-map/") ||
+      url.pathname === "/minecraft-verity-map" ||
+      url.pathname.startsWith("/minecraft-verity-map/") ||
+      url.pathname === "/verity-map-minecraft" ||
+      url.pathname.startsWith("/verity-map-minecraft/") ||
+      url.pathname === "/verity-map-download" ||
+      url.pathname.startsWith("/verity-map-download/") ||
+      url.pathname === "/verity-map-bedrock" ||
+      url.pathname.startsWith("/verity-map-bedrock/") ||
+      url.pathname === "/verity-server-map" ||
+      url.pathname.startsWith("/verity-server-map/") ||
+      url.pathname === "/verity-minecraft-world" ||
+      url.pathname.startsWith("/verity-minecraft-world/") ||
+      url.pathname === "/verity-world" ||
+      url.pathname.startsWith("/verity-world/")
+    ) {
+      url.pathname = "/verity-map/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

@@ -19,6 +19,7 @@ ROUTES = [
     "/real-verity-mod-updated/",
     "/play/",
     "/server/",
+    "/verity-map/",
     "/minecraft-verity-mod/",
     "/curseforge/",
     "/creators/",

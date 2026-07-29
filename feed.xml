@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T11:28:30+08:00</updated>
+  <updated>2026-07-29T12:18:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Minecraft map route added after GSC and SERP review</title>
+    <id>https://veritymodchecker.online/updates/verity-minecraft-map-route-2026-07-29-1218</id>
+    <link href="https://veritymodchecker.online/verity-map/" rel="alternate" />
+    <published>2026-07-29T12:18:00+08:00</published>
+    <updated>2026-07-29T12:18:00+08:00</updated>
+    <summary>Added a dedicated /verity-map/ route after Search Console showed `verity map` impressions and live SERP checks for `verity map minecraft` mixed unrelated Variety maps, CurseForge gallery pages, Verity videos, Bedrock add-ons, server-map wording, and horror wiki results. First-party checks show current public Verity routes as Java mods and Bedrock add-ons rather than an official standalone Minecraft map or world-save download. The new page tells players how to distinguish a world save, Java mod, Bedrock add-on, server setup, gallery screenshot, video scene, APK, EXE, or reposted mirror before downloading. Homepage TDK was not changed.</summary>
+    <category term="minecraft-map" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity BE official route added after zero-click GSC review</title>
     <id>https://veritymodchecker.online/updates/verity-be-official-route-2026-07-29-1128</id>
