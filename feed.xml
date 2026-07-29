@@ -5,8 +5,21 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T18:12:00+08:00</updated>
+  <updated>2026-07-29T18:52:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity command page expanded for fanmade slash-command claims</title>
+    <id>https://veritymodchecker.online/updates/commands-fanmade-claims-2026-07-29-1852</id>
+    <link href="https://veritymodchecker.online/commands/" rel="alternate" />
+    <link href="https://veritymodchecker.online/how-to-spawn-verity/" rel="related" />
+    <link href="https://veritymodchecker.online/how-to-talk-to-verity/" rel="related" />
+    <published>2026-07-29T18:52:00+08:00</published>
+    <updated>2026-07-29T18:52:00+08:00</updated>
+    <summary>Expanded the existing /commands/ route after current SERP checks showed third-party command-guide results for exact slash-command intent. The page now addresses /verity give_ball, /verity event prophecy, /verity event anomaly, and /verity status as fanmade or build-specific command claims unless a user's installed Java build exposes that namespace in maintainer notes or in-game help. New aliases such as /verity-give-ball/, /verity-event-anomaly/, /verity-status-command/, /verity-summon-command/, and /verity-command-block/ redirect to the canonical command map. Homepage TDK was not changed.</summary>
+    <category term="commands" />
+    <category term="fanmade-commands" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Verity Mod command map added for Bedrock and Java confusion</title>
     <id>https://veritymodchecker.online/updates/commands-route-2026-07-29-1812</id>

@@ -136,7 +136,23 @@ export default {
       url.pathname === "/verity-language-command" ||
       url.pathname.startsWith("/verity-language-command/") ||
       url.pathname === "/verity-language" ||
-      url.pathname.startsWith("/verity-language/")
+      url.pathname.startsWith("/verity-language/") ||
+      url.pathname === "/verity-give-ball" ||
+      url.pathname.startsWith("/verity-give-ball/") ||
+      url.pathname === "/verity-give_ball" ||
+      url.pathname.startsWith("/verity-give_ball/") ||
+      url.pathname === "/verity-event-prophecy" ||
+      url.pathname.startsWith("/verity-event-prophecy/") ||
+      url.pathname === "/verity-event-anomaly" ||
+      url.pathname.startsWith("/verity-event-anomaly/") ||
+      url.pathname === "/verity-status-command" ||
+      url.pathname.startsWith("/verity-status-command/") ||
+      url.pathname === "/verity-summon-command" ||
+      url.pathname.startsWith("/verity-summon-command/") ||
+      url.pathname === "/verity-command-block" ||
+      url.pathname.startsWith("/verity-command-block/") ||
+      url.pathname === "/verity-command-blocks" ||
+      url.pathname.startsWith("/verity-command-blocks/")
     ) {
       url.pathname = "/commands/";
       url.hash = "";

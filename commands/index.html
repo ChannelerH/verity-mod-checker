@@ -6,7 +6,7 @@
     <title>Verity Mod Commands: Bedrock, PnTMC, Java &amp; Voice</title>
     <meta
       name="description"
-      content="Use the right Verity Mod commands and chat triggers for Verity BE, PnTMC Bedrock, Pocket Edition, Java, voice, language, and debugger connect setup."
+      content="Use the right Verity Mod commands and chat triggers for Verity BE, PnTMC Bedrock, Pocket Edition, Java, voice, give_ball claims, and debugger setup."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/commands/" />
@@ -37,7 +37,7 @@
             "@id": "https://veritymodchecker.online/commands/#webpage",
             "url": "https://veritymodchecker.online/commands/",
             "name": "Verity Mod Commands: Bedrock, PnTMC, Java & Voice",
-            "description": "A source-checked command and chat-trigger guide for Verity BE, PnTMC Bedrock, Pocket Edition, Java, voice, and debugger connect setup.",
+            "description": "A source-checked command and chat-trigger guide for Verity BE, PnTMC Bedrock, Pocket Edition, Java, voice, fanmade command claims, and debugger connect setup.",
             "datePublished": "2026-07-29",
             "dateModified": "2026-07-29",
             "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
@@ -62,7 +62,7 @@
                 "name": "What is the main Verity Mod command?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "There is no single universal command. Verity BE uses a chat prefix and a debugger connect setup route. PnTMC Bedrock documents /verity_language plus chat and Hey Verity wake behavior. Pocket Edition documents the debugger connect command. Java Verity JE usually depends on AI provider setup before interaction commands matter."
+                  "text": "There is no single universal command. Verity BE uses a chat prefix and a debugger connect setup route. PnTMC Bedrock documents /verity_language plus chat and Hey Verity wake behavior. Pocket Edition documents the debugger connect command. Some fanmade Java guides mention /verity give_ball, /verity event prophecy, /verity event anomaly, and /verity status, but those should only be used when the installed build exposes that command namespace."
                 }
               },
               {
@@ -71,6 +71,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Do not assume that. The /verity_language command is documented on the PnTMC Verity - Bedrock Edition route. Use it only when the installed add-on is the PnTMC project or the maintainer notes for your exact package say to use it."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is /verity give_ball an official Verity Mod command?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Treat /verity give_ball as a fanmade or build-specific command claim unless your installed Java project lists it in its own help output, changelog, or maintainer page. Do not run it on Bedrock, PnTMC, Verity BE, Pocket Edition, or a server where you do not have operator permission."
                 }
               },
               {
@@ -122,7 +130,7 @@
             Verity Pocket Edition (Be), Verity JE, and VERITY.exe do not share one command list. The
             right answer depends on the installed file, Bedrock or Java edition, active packs, AI route,
             and whether you are trying to talk, change language, connect the backend, wake Verity, fix
-            dots, or test voice.
+            dots, restore a missing item, force an event, or test voice.
           </p>
           <div class="trust-strip" aria-label="Command scope">
             <span>Verity BE chat</span>
@@ -211,6 +219,24 @@
                 <td>Works only after the Java mod or modpack loads and the AI provider route responds.</td>
                 <td>You are trying to fix a Bedrock add-on with Java-only instructions.</td>
               </tr>
+              <tr>
+                <td><code>/verity give_ball</code></td>
+                <td>Only a Java or fanmade build that exposes this namespace</td>
+                <td>Usually described as a way to give a Verity item back for testing or recording.</td>
+                <td>You installed Verity BE, PnTMC Bedrock, Pocket Edition, VERITY.exe, or an official page that does not list it.</td>
+              </tr>
+              <tr>
+                <td><code>/verity event prophecy</code> or <code>/verity event anomaly</code></td>
+                <td>Only a Java or fanmade build whose help output confirms event commands</td>
+                <td>Usually described as forcing story or anomaly events for testing.</td>
+                <td>You are in a normal survival world, Bedrock world, Realm, public server, or unsupported file branch.</td>
+              </tr>
+              <tr>
+                <td><code>/verity status</code></td>
+                <td>Only a Java or fanmade build that documents a status subcommand</td>
+                <td>Usually described as checking day, mood, or stored state while debugging.</td>
+                <td>The command is not shown by <code>/help</code>, the namespace is unknown, or the source is only a repost.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -253,6 +279,51 @@
               reading a PnTMC tutorial. If you installed PnTMC but a tutorial says distance does not matter,
               you may be reading a Verity BE tutorial. The fix is not to keep running commands. The fix is
               to identify the project, then follow that project's current instructions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Fanmade command claims</p>
+          <h2>What if a guide says to run /verity give_ball?</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Do not treat fanmade Java commands as universal</h3>
+            <p>
+              Some third-party guides and video comments list operator commands such as
+              <code>/verity give_ball</code>, <code>/verity event prophecy</code>,
+              <code>/verity event anomaly</code>, or <code>/verity status</code>. Those lines may be useful
+              for a specific Java build, recording setup, or now-deleted fanmade branch, but they are not the
+              same as the current first-party Bedrock routes and they are not proof that every Verity Mod
+              download exposes a <code>/verity</code> command namespace.
+            </p>
+            <p>
+              Before using one, open the exact installed project page, check whether the file is Java or
+              Bedrock, and run Minecraft's own command autocomplete or <code>/help</code> in a test world
+              where you have operator permission. If the namespace is missing, stop there. Replacing the file,
+              joining a server, or forcing a story event from an unverified command list can create a harder
+              troubleshooting problem than the original missing item.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Use source order when commands conflict</h3>
+            <p>
+              Maintainer pages, file changelogs, in-game help output, and official support notes beat fan
+              summaries. For current Bedrock confusion, the documented PnTMC route is the
+              <code>/verity_language</code> language path and the <code>Hey Verity</code> wake behavior. The
+              documented Verity BE route is the chat prefix plus the Bedrock debugger connect setup. Java
+              projects should be checked through their loader, dependency, and AI provider setup before
+              assuming a slash command is the fix.
+            </p>
+            <p>
+              If your real goal is to summon Verity, restore the ball, or trigger the monster form, start with
+              the <a href="/how-to-spawn-verity/">spawn checklist</a>. If your real goal is to talk to Verity,
+              use the <a href="/how-to-talk-to-verity/">talk guide</a>. If your exact command appears in a
+              guide but not in your game, the likely answer is that the guide and your installed route are not
+              the same project.
             </p>
           </article>
         </div>
@@ -381,6 +452,15 @@
             add-ons usually need active packs and experiments before any command can affect the entity. Java
             files need the loader and mod profile to load first. Command-block videos can be entertaining, but
             they are weaker than maintainer instructions for a real install.
+          </p>
+        </details>
+        <details>
+          <summary>Why does /verity give_ball say unknown command?</summary>
+          <p>
+            That usually means your installed route does not expose that Java-style command namespace. It is
+            common when a player installed a Bedrock add-on, PnTMC file, Pocket Edition package, VERITY.exe
+            modpack, or a newer Java branch while following a fanmade command list. Check the project page
+            and in-game help output before trying more slash commands.
           </p>
         </details>
       </section>
