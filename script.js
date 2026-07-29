@@ -589,8 +589,56 @@ const knownProjects = [
     ]
   },
   {
+    name: "VERITY.exe",
+    edition: "Java modpack",
+    route: "/verity-exe/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1585389",
+        slugs: ["/minecraft/modpacks/verity-exe"],
+        link: "https://www.curseforge.com/minecraft/modpacks/verity-exe"
+      }
+    ],
+    releases: [
+      {
+        status: "current-modpack-route",
+        filename: "VERITY.exe.zip",
+        aliases: ["VERITY.exe", "verity-exe", "verity exe", "Forge Port 2.1.2"],
+        versionNumber: "Forge Port 2.1.2",
+        sizeMb: 40.3,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 28, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8526843",
+            link: "https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8526843"
+          }
+        ]
+      },
+      {
+        status: "older-visible-neoforge-file",
+        filename: "verity rework.zip",
+        aliases: ["NeoForge 1.3.3", "verity rework"],
+        versionNumber: "NeoForge 1.3.3",
+        sizeMb: 0.51,
+        version: "Minecraft 1.21.1 · NeoForge modpack",
+        published: "July 7, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8385443",
+            link: "https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8385443"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "Verity Pack",
     edition: "Java modpack",
+    route: "/verity-pack/",
     sources: [
       {
         platform: "CurseForge",
@@ -620,6 +668,7 @@ const knownProjects = [
   {
     name: "VerityPack",
     edition: "Java modpack",
+    route: "/verity-pack/",
     sources: [
       {
         platform: "CurseForge",
@@ -649,6 +698,7 @@ const knownProjects = [
   {
     name: "VerityPack Realistic",
     edition: "Java modpack",
+    route: "/verity-pack/",
     sources: [
       {
         platform: "CurseForge",
@@ -726,6 +776,36 @@ function releaseRecordLabel(release, record) {
   if (!record) return "files";
   if (record.id === "files") return "files tab";
   return record.platform === "CurseForge" ? `record #${record.id}` : `version ${release.versionNumber} (${record.id})`;
+}
+
+function modpackRoute(project) {
+  return project.route || "/verity-pack/";
+}
+
+function modpackRouteLabel(project) {
+  return project.name === "VERITY.exe" ? "Open VERITY.exe route check" : "Open Verity Pack route check";
+}
+
+function modpackChecks(project) {
+  if (project.name === "VERITY.exe") {
+    return [
+      "The project path matches the checked VERITY.exe CurseForge modpack result.",
+      "Use this route only when you intentionally want the prepared Forge modpack profile.",
+      "If Groq, API key, or voice chat fails, debug the provider/profile layer before replacing files."
+    ];
+  }
+  return [
+    "The project path matches a Verity Pack-style modpack result.",
+    "Use the modpack only when you intentionally want that prepared Forge profile.",
+    "If you need the actual Verity Mod file, choose Verity JE or the Bedrock route instead."
+  ];
+}
+
+function modpackSummary(project, projectId) {
+  if (project.name === "VERITY.exe") {
+    return `This URL matches the checked VERITY.exe CurseForge modpack route, Project ID ${projectId}. The July 29 source check maps the current main file to Forge Port 2.1.2 record 8526843, while Groq, API key, and voice issues should be debugged in provider or profile setup rather than by using random replacement files.`;
+  }
+  return `This URL matches a checked CurseForge modpack route for ${project.name}, Project ID ${projectId}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`;
 }
 
 function isUnavailableRelease(release) {
@@ -876,6 +956,8 @@ function inspectTextSource(rawValue) {
     parsedUrl = null;
   }
 
+  const isVerityExeBrandSignal = project?.name === "VERITY.exe" && !parsedUrl && value.trim().toLowerCase() === "verity.exe";
+
   if (hashAlgorithm) {
     const normalizedHash = value.toLowerCase();
     const knownChecksum = releaseMatch?.record &&
@@ -952,6 +1034,25 @@ function inspectTextSource(rawValue) {
     };
   }
 
+  if (riskyExtension && isVerityExeBrandSignal) {
+    return {
+      state: "caution",
+      verdict: "Known modpack name",
+      risk: "Do not run random EXE files",
+      title: "VERITY.exe is a modpack route name, not an instruction to run an installer",
+      summary: "The checked VERITY.exe record is a CurseForge modpack route with a current ZIP file record, not a reason to trust unrelated Windows executables. Open the modpack page and keep API key or Groq fixes inside provider/profile setup.",
+      source: "Text or name signal",
+      package: "CurseForge modpack profile",
+      project: `${project.name} · ${projectIdentityLabel(project)}`,
+      hash: "",
+      publisherCheck: "Not a JAR checksum route",
+      checks: modpackChecks(project),
+      link: modpackRoute(project),
+      linkLabel: modpackRouteLabel(project),
+      external: false
+    };
+  }
+
   if (riskyExtension) {
     return {
       state: "danger",
@@ -994,19 +1095,15 @@ function inspectTextSource(rawValue) {
           verdict: "Known modpack route",
           risk: "Separate from Verity Mod file",
           title: `${sourceMatch.project.name} CurseForge modpack recognized`,
-          summary: `This URL matches a checked CurseForge modpack route for ${sourceMatch.project.name}, Project ID ${sourceMatch.source.id}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`,
+          summary: modpackSummary(sourceMatch.project, sourceMatch.source.id),
           source: host,
           package: "CurseForge modpack profile",
           project: `${sourceMatch.project.name} · CurseForge Project ID ${sourceMatch.source.id}`,
           hash: "",
           publisherCheck: "Not a JAR checksum route",
-          checks: [
-            "The project path matches a Verity Pack-style modpack result.",
-            "Use the modpack only when you intentionally want that prepared Forge profile.",
-            "If you need the actual Verity Mod file, choose Verity JE or the Bedrock route instead."
-          ],
-          link: "/verity-pack/",
-          linkLabel: "Open Verity Pack route check",
+          checks: modpackChecks(sourceMatch.project),
+          link: modpackRoute(sourceMatch.project),
+          linkLabel: modpackRouteLabel(sourceMatch.project),
           external: false
         };
       }
@@ -1143,13 +1240,15 @@ function inspectTextSource(rawValue) {
         project: `${project.name} · ${projectIdentityLabel(project)}`,
         hash: "",
         publisherCheck: "Not a JAR checksum route",
-        checks: [
-          "Confirm the CurseForge modpack owner and Project ID.",
-          "Read whether the profile includes Verity or expects a separate Verity file.",
-          "Use the Verity Pack route page to choose between modpack, Java JAR, and Bedrock add-on intent."
-        ],
-        link: "/verity-pack/",
-        linkLabel: "Open Verity Pack route check",
+        checks: project.name === "VERITY.exe"
+          ? modpackChecks(project)
+          : [
+            "Confirm the CurseForge modpack owner and Project ID.",
+            "Read whether the profile includes Verity or expects a separate Verity file.",
+            "Use the Verity Pack route page to choose between modpack, Java JAR, and Bedrock add-on intent."
+          ],
+        link: modpackRoute(project),
+        linkLabel: modpackRouteLabel(project),
         external: false
       };
     }

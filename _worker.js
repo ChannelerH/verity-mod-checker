@@ -391,6 +391,35 @@ export default {
     }
 
     if (
+      url.pathname === "/verity.exe" ||
+      url.pathname.startsWith("/verity.exe/") ||
+      url.pathname === "/verityexe" ||
+      url.pathname.startsWith("/verityexe/") ||
+      url.pathname === "/verity-exe-download" ||
+      url.pathname.startsWith("/verity-exe-download/") ||
+      url.pathname === "/verity-exe-modpack" ||
+      url.pathname.startsWith("/verity-exe-modpack/") ||
+      url.pathname === "/verity-exe-api-key" ||
+      url.pathname.startsWith("/verity-exe-api-key/") ||
+      url.pathname === "/verity-exe-groq" ||
+      url.pathname.startsWith("/verity-exe-groq/") ||
+      url.pathname === "/verity-exe-not-talking" ||
+      url.pathname.startsWith("/verity-exe-not-talking/") ||
+      url.pathname === "/verity-exe-voicechat" ||
+      url.pathname.startsWith("/verity-exe-voicechat/") ||
+      url.pathname === "/verity-exe-voice-chat" ||
+      url.pathname.startsWith("/verity-exe-voice-chat/") ||
+      url.pathname === "/what-is-verity-exe" ||
+      url.pathname.startsWith("/what-is-verity-exe/") ||
+      url.pathname === "/verity-exe-curseforge" ||
+      url.pathname.startsWith("/verity-exe-curseforge/")
+    ) {
+      url.pathname = "/verity-exe/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/how-to-play" ||
       url.pathname.startsWith("/how-to-play/") ||
       url.pathname === "/how-to-play-verity-mod" ||

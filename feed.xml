@@ -5,8 +5,18 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T10:08:00+08:00</updated>
+  <updated>2026-07-29T10:40:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>VERITY.exe Groq API key and voice-chat route refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-exe-groq-route-refresh-2026-07-29-1040</id>
+    <link href="https://veritymodchecker.online/verity-exe/" rel="alternate" />
+    <published>2026-07-29T10:40:00+08:00</published>
+    <updated>2026-07-29T10:40:00+08:00</updated>
+    <summary>Refreshed the VERITY.exe route after GSC showed the core `verity mod` query appearing and GA4 showed API troubleshooting pages driving organic sessions, while the current CurseForge project page now lists Project ID 1585389, 129,104 project downloads, Forge Port 2.1.2 file record 8526843, and Groq/API-key/voice-chat notes. The source checker now recognizes VERITY.exe as its own modpack route, the modpack JSON snapshot includes the current and older visible file records, and aliases such as /verity-exe-groq/ and /verity-exe-not-talking/ redirect to the canonical page. Homepage TDK was not changed.</summary>
+    <category term="modpack" />
+    <category term="api-errors" />
+  </entry>
   <entry>
     <title>Verity Mod status 401 credential fix route added after GSC query review</title>
     <id>https://veritymodchecker.online/updates/verity-status-401-credential-route-2026-07-29-1008</id>

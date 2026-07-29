@@ -21,6 +21,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity JE branded download route: https://veritymodchecker.online/verity-je/
 - Java setup and troubleshooting route: https://veritymodchecker.online/java/
 - Real Verity Mod updated route: https://veritymodchecker.online/real-verity-mod-updated/
+- VERITY.exe modpack route: https://veritymodchecker.online/verity-exe/
 - Verity Pack modpack route check: https://veritymodchecker.online/verity-pack/
 - Older Java 3.4.1 status route: https://veritymodchecker.online/verity-3-4-1-jar/
 - Bedrock and MCPE route: https://veritymodchecker.online/bedrock/
@@ -46,6 +47,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Broad Minecraft route: separates `minecraft verity mod`, `verity minecraft`, `minecraft verity`, and `verity mod for minecraft` from stale video links, old Bedrock rows, Java beta 404 pages, modpacks, app claims, and true current download records.
 - Bedrock / MCPE routes: Verity BE 1.1.0 record `8506198`, PnTMC current records `8517480`, `8517478`, `8517473`, old PnTMC 2.1.0 records `8327253`, `8327250`, `8327242`, pack activation, Beta APIs, commands, and world setup.
 - Java vs Bedrock chooser: platform-first decision page for `verity mod java vs bedrock`, `bedrock vs java`, `which Verity download`, MCPE, PS4/Xbox, server, JAR, MCADDON, APK, and wrong-edition searches.
+- VERITY.exe / modpack route: separates the current CurseForge `VERITY.exe` modpack from standalone Java and Bedrock downloads, including Project ID `1585389`, Forge file record `8526843`, older visible NeoForge record `8385443`, and Groq/API-key/voice-chat caveats.
 - Verity Pack / modpack route: separates CurseForge modpacks `Verity Pack`, `VerityPack`, and `VerityPack Realistic` from the standalone Verity JE file and Bedrock add-ons, including Project IDs `1583377`, `1587394`, and `1582388`.
 - CurseForge route chooser: separates `curseforge verity mod` and `verity mod curseforge` searches into Minecraft Mods, Minecraft Bedrock Addons, Pocket Edition, VERITY.exe, and Verity Pack-style Modpacks by Project ID and file record.
 - APK / app route: separates Google Play app and APK claims from normal MCPE `.mcaddon` or `.mcpack` imports, with checks for publisher identity, permissions, ads, final host, and source trail.

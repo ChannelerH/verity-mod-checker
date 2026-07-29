@@ -48,6 +48,10 @@
           "minecraftVersion": { "type": "string" },
           "loader": { "type": "string" },
           "mainFile": { "type": "string" },
+          "mainFileRecord": { "type": "integer" },
+          "secondaryFileRecord": { "type": "integer" },
+          "mainFileDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "lastUpdate": { "type": "string" },
           "sourceNote": { "type": "string" }
         },
         "additionalProperties": false

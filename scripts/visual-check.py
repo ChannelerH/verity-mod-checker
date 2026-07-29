@@ -130,6 +130,14 @@ with sync_playwright() as playwright:
         assert "VerityPack" in result_text
         assert "1587394" in result_text
 
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8526843")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "VERITY.exe" in result_text
+        assert "1585389" in result_text
+        assert "8526843" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
+
         page.locator("#sourceInput").fill("verity-6.0.1-all.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         page.locator("#sourceVerdict").wait_for(state="visible")
