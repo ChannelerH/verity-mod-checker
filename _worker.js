@@ -45,6 +45,7 @@ const htmlRoutes = new Set([
   "/verity-6-0-0-jar/",
   "/verity-6-0-1-jar/",
   "/verity-doesnt-respond/",
+  "/verity-dweller/",
   "/verity-be/",
   "/verity-je/",
   "/verity-exe/",
@@ -75,6 +76,8 @@ const dataFiles = new Set([
   "/data/verity-app-claims.schema.json",
   "/data/verity-modpacks.json",
   "/data/verity-modpacks.schema.json",
+  "/data/verity-lookalikes.json",
+  "/data/verity-lookalikes.schema.json",
   "/data/verity-releases.json",
   "/data/verity-releases.schema.json",
   "/data/verity-source-map.csv",
@@ -227,6 +230,25 @@ export default {
 
     if (url.pathname === "/verity-mod-csv" || url.pathname.startsWith("/verity-mod-csv/")) {
       url.pathname = "/data/verity-source-map.csv";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/the-verity-dweller" ||
+      url.pathname.startsWith("/the-verity-dweller/") ||
+      url.pathname === "/verity-dweller-mod" ||
+      url.pathname.startsWith("/verity-dweller-mod/") ||
+      url.pathname === "/verity-mod-dweller" ||
+      url.pathname.startsWith("/verity-mod-dweller/") ||
+      url.pathname === "/horrorland-with-verity" ||
+      url.pathname.startsWith("/horrorland-with-verity/") ||
+      url.pathname === "/horrorland-verity" ||
+      url.pathname.startsWith("/horrorland-verity/") ||
+      url.pathname === "/modrinth-verity-dweller" ||
+      url.pathname.startsWith("/modrinth-verity-dweller/")
+    ) {
+      url.pathname = "/verity-dweller/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

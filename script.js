@@ -804,7 +804,7 @@ const knownProjects = [
     sources: [
       {
         platform: "CurseForge",
-        id: "1582388",
+        id: "1596649",
         slugs: ["/minecraft/modpacks/veritypack-realistic"],
         link: "https://www.curseforge.com/minecraft/modpacks/veritypack-realistic"
       }
@@ -853,6 +853,99 @@ const knownProjects = [
             platform: "CurseForge",
             id: "files",
             link: "/falsity-mod/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Verity Dweller",
+    edition: "Similar-name route",
+    route: "/verity-dweller/",
+    sources: [
+      {
+        platform: "Modrinth",
+        id: "eZW2ZX0U",
+        slugs: ["/mod/verity-dweller", "/project/eZW2ZX0U"],
+        link: "https://modrinth.com/mod/verity-dweller"
+      }
+    ],
+    releases: [
+      {
+        status: "similar-named-fabric-mod-not-verity-je",
+        filename: "verity-1.0.0.jar",
+        aliases: ["Verity Dweller", "the verity dweller", "verity dweller mod", "verity mod dweller"],
+        versionNumber: "2.0.0",
+        sizeMb: 0.13,
+        version: "Minecraft 26.2 · Fabric",
+        published: "July 27, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "COqUGsQr",
+            link: "https://modrinth.com/mod/verity-dweller/version/COqUGsQr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Horrorland - With Verity!",
+    edition: "Similar-name route",
+    route: "/verity-dweller/",
+    sources: [
+      {
+        platform: "Modrinth",
+        id: "mJcQB7OR",
+        slugs: ["/modpack/horrorland-modpack", "/project/mJcQB7OR"],
+        link: "https://modrinth.com/modpack/horrorland-modpack"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-modrinth-modpack-with-verity",
+        filename: "Horrorland with Verity - MC 1.20.1 9.3.0.mrpack",
+        aliases: ["Horrorland - With Verity!", "Horrorland with Verity", "horrorland verity"],
+        versionNumber: "9.3.0",
+        sizeMb: 226.0,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 27, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "L0WhiLev",
+            link: "https://modrinth.com/modpack/horrorland-modpack/version/L0WhiLev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Verity Paper plugin",
+    edition: "Similar-name route",
+    route: "/verity-dweller/",
+    sources: [
+      {
+        platform: "Modrinth",
+        id: "DYiZP3fM",
+        slugs: ["/plugin/verity", "/project/DYiZP3fM"],
+        link: "https://modrinth.com/plugin/verity"
+      }
+    ],
+    releases: [
+      {
+        status: "unrelated-paper-server-plugin-route",
+        filename: "Verity-1.7.0.jar",
+        aliases: ["verity paper plugin", "verity plugin", "Modrinth Verity plugin"],
+        versionNumber: "1.7.0",
+        sizeMb: 0.17,
+        version: "Minecraft 1.21.x · Paper",
+        published: "July 26, 2024",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "QQ8nARZM",
+            link: "https://modrinth.com/plugin/verity/version/QQ8nARZM"
           }
         ]
       }
@@ -972,6 +1065,60 @@ function modpackSummary(project, projectId) {
   return `This URL matches a checked CurseForge modpack route for ${project.name}, Project ID ${projectId}. A modpack profile is not the same artifact as the standalone Verity JE jar or a Bedrock MCADDON. Read whether the pack includes Verity or expects you to add it separately before installing.`;
 }
 
+function isSimilarNameRoute(project) {
+  return project?.edition === "Similar-name route";
+}
+
+function similarNameRoute(project) {
+  return project.route || "/verity-dweller/";
+}
+
+function similarNameRouteLabel(project) {
+  return project.name === "Verity Paper plugin" ? "Open similar-name route check" : "Open Verity Dweller route check";
+}
+
+function similarNameChecks(project) {
+  if (project.name === "Verity Dweller") {
+    return [
+      "The Modrinth project path and Project ID eZW2ZX0U match Verity Dweller.",
+      "This is a separate Fabric JAR route, not Verity JE Project ID on1Y0osD and not a Bedrock MCADDON.",
+      "Use it only when the player specifically searched for Verity Dweller or the eZW2ZX0U Modrinth page."
+    ];
+  }
+  if (project.name === "Horrorland - With Verity!") {
+    return [
+      "The Modrinth project path and Project ID mJcQB7OR match a full Horrorland modpack.",
+      "An MRPACK profile is not the standalone Verity Mod Java JAR or any Bedrock add-on.",
+      "Use the Verity Dweller route page to compare why this result appears for Verity searches."
+    ];
+  }
+  if (project.name === "Verity Paper plugin") {
+    return [
+      "The Modrinth plugin path and Project ID DYiZP3fM match a Paper server plugin.",
+      "A Paper plugin is a server route, not the Forge Verity JE mod route and not a Bedrock add-on.",
+      "Do not put this file in a Forge client mods folder while trying to install Verity Mod."
+    ];
+  }
+  return [
+    "The name or URL matches a similar-name route in the checked source map.",
+    "Similar-name search results are useful, but they are not automatically the current Verity Mod.",
+    "Compare owner, Project ID, loader, package type, and Minecraft version before installing."
+  ];
+}
+
+function similarNameSummary(project, projectId) {
+  if (project.name === "Verity Dweller") {
+    return `This URL matches the checked Verity Dweller Modrinth route, Project ID ${projectId || "eZW2ZX0U"}. The July 30 source check maps its latest file to verity-1.0.0.jar for Fabric, so it should be handled as a similar-name project rather than the current Verity JE or Bedrock download.`;
+  }
+  if (project.name === "Horrorland - With Verity!") {
+    return `This URL matches the checked Horrorland - With Verity! Modrinth modpack route, Project ID ${projectId || "mJcQB7OR"}. The July 30 source check maps the latest file to an MRPACK profile, not a standalone Verity Mod JAR or MCADDON.`;
+  }
+  if (project.name === "Verity Paper plugin") {
+    return `This URL matches the checked Verity Paper plugin route, Project ID ${projectId || "DYiZP3fM"}. It is a Paper server plugin route and should not be treated as Verity JE, Verity BE, or PnTMC's Bedrock add-on.`;
+  }
+  return `This URL matches a checked similar-name route, Project ID ${projectId || "recorded in the source map"}. Treat it as separate from the main Verity Mod until the owner, loader, edition, package, and file record all match the user's intent.`;
+}
+
 function isUnavailableRelease(release) {
   return Boolean(release?.status?.includes("unlisted") || release?.availability);
 }
@@ -1037,6 +1184,7 @@ function packageType(value) {
   if (clean.endsWith(".jar")) return "Java JAR";
   if (clean.endsWith(".mcaddon")) return "Bedrock MCADDON";
   if (clean.endsWith(".mcpack")) return "Bedrock MCPACK";
+  if (clean.endsWith(".mrpack")) return "Modrinth MRPACK";
   if (clean.endsWith(".zip")) return "ZIP archive or source";
   if (/\.(exe|msi|apk|dmg|scr)$/.test(clean)) return "Executable installer";
   return "Not identified";
@@ -1253,6 +1401,24 @@ function inspectTextSource(rawValue) {
       const matchedRecord = sourceMatch.record || releaseMatch?.record;
       const hasPublisherHash = Boolean(releasePublisherHash(matchedRelease, "sha512"));
       const matchedPackageType = matchedRelease?.filename ? packageType(matchedRelease.filename) : type;
+      if (isSimilarNameRoute(sourceMatch.project)) {
+        return {
+          state: "caution",
+          verdict: "Similar-name route",
+          risk: "Not the main Verity Mod",
+          title: `${sourceMatch.project.name} Modrinth route recognized`,
+          summary: similarNameSummary(sourceMatch.project, sourceMatch.source.id),
+          source: host,
+          package: type === "Not identified" ? matchedPackageType : type,
+          project: `${sourceMatch.project.name} · ${projectIdentityLabel(sourceMatch.project)}`,
+          hash: "",
+          publisherCheck: "Separate route, not Verity JE or Bedrock",
+          checks: similarNameChecks(sourceMatch.project),
+          link: similarNameRoute(sourceMatch.project),
+          linkLabel: similarNameRouteLabel(sourceMatch.project),
+          external: false
+        };
+      }
       if (sourceMatch.project.edition === "Java modpack") {
         return {
           state: "caution",
@@ -1411,10 +1577,29 @@ function inspectTextSource(rawValue) {
     const exactProjectId = project.sources.some((source) => value.toLowerCase() === source.id.toLowerCase());
     const matchedRecord = releaseMatch?.record || releaseMatch?.release.records[0];
     const unavailableRelease = isUnavailableRelease(releaseMatch?.release);
+    const matchedPackageType = releaseMatch?.release?.filename ? packageType(releaseMatch.release.filename) : type;
     const releaseDetail = releaseMatch
       ? `${releaseMatch.release.version}; ${releaseRecordLabel(releaseMatch.release, matchedRecord)}; ${releaseMatch.release.published}`
       : "No exact current file record in the input";
     const aliasMatch = releaseMatch?.matchKind === "alias";
+    if (isSimilarNameRoute(project)) {
+      return {
+        state: "caution",
+        verdict: "Similar-name route",
+        risk: "Not the main Verity Mod",
+        title: exactFile ? `${project.name} filename recognized` : `${project.name} route recognized`,
+        summary: similarNameSummary(project, exactProjectId ? value : project.sources[0].id),
+        source: "Text, filename, or Project ID",
+        package: type === "Not identified" ? matchedPackageType : type,
+        project: `${project.name} · ${projectIdentityLabel(project)}`,
+        hash: "",
+        publisherCheck: "Separate route, not Verity JE or Bedrock",
+        checks: similarNameChecks(project),
+        link: similarNameRoute(project),
+        linkLabel: similarNameRouteLabel(project),
+        external: false
+      };
+    }
     if (project.edition === "Java modpack") {
       return {
         state: "caution",
@@ -1543,6 +1728,29 @@ async function inspectLocalFile(file) {
   const expectedDetail = releaseMatch
     ? `${releaseMatch.release.version}; expected ${expectedSizeMb ? `${expectedSizeMb.toFixed(2)} MB` : "size not recorded"}; ${releaseRecordLabel(releaseMatch.release, matchedRecord)}`
     : "No current release metadata matched";
+
+  if (project && isSimilarNameRoute(project)) {
+    return {
+      state: publisherHashMismatch ? "danger" : "caution",
+      verdict: publisherHashMismatch ? "Publisher checksum mismatch" : exactMetadata ? "Similar-name metadata match" : "Similar-name file signal",
+      risk: publisherHashMismatch ? "Not the checked bytes" : "Not the main Verity Mod",
+      title: `${project.name} file signal found`,
+      summary: `The local file name matches ${project.name}, which the July 30 source map treats as a similar-name route rather than the main Verity Mod route. ${expectedDetail}. The browser calculated the fingerprint locally; use it to compare identity, not as a reason to install the file as Verity JE or Bedrock.`,
+      source: `Local file · ${size}`,
+      package: type,
+      project: `${project.name} · ${projectIdentityLabel(project)}`,
+      hash,
+      hashLabel: "SHA-256",
+      publisherCheck: expectedSha512 ? (publisherHashMatches ? "SHA-512 exact match" : "SHA-512 mismatch") : "Separate route; no publisher hash recorded",
+      checks: [
+        ...similarNameChecks(project),
+        exactMetadata ? "Filename and displayed size match the similar-name source-map record." : "Filename alone is not enough to prove the file came from the matched project."
+      ],
+      link: similarNameRoute(project),
+      linkLabel: similarNameRouteLabel(project),
+      external: false
+    };
+  }
 
   return {
     state: publisherHashMismatch ? "danger" : unavailableRelease ? "caution" : publisherHashMatches || exactMetadata ? "verified" : "caution",

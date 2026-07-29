@@ -3,9 +3,10 @@ import path from "node:path";
 
 const releases = JSON.parse(fs.readFileSync("data/verity-releases.json", "utf8"));
 const modpacks = JSON.parse(fs.readFileSync("data/verity-modpacks.json", "utf8"));
+const lookalikes = JSON.parse(fs.readFileSync("data/verity-lookalikes.json", "utf8"));
 
 const site = "https://veritymodchecker.online";
-const generatedAt = releases.checkedAt;
+const generatedAt = [releases.checkedAt, modpacks.checkedAt, lookalikes.checkedAt].sort().at(-1);
 
 function projectByName(name) {
   const project = releases.projects.find((entry) => entry.name === name);
@@ -37,6 +38,12 @@ function modpackByProjectId(projectId) {
   return modpack;
 }
 
+function lookalikeByProjectId(projectId) {
+  const project = lookalikes.projects.find((entry) => entry.projectId === projectId);
+  if (!project) throw new Error(`Missing similar-name project: ${projectId}`);
+  return project;
+}
+
 const java = projectByName("Verity JE");
 const javaStable = releaseByStatus(java, "current");
 const javaLegacy = releaseByRecord(java, 8346795);
@@ -54,6 +61,9 @@ const verityPack = modpackByProjectId(1583377);
 const sarelsanaPack = modpackByProjectId(1587394);
 const realisticPack = modpackByProjectId(1596649);
 const survivePack = modpackByProjectId(1583260);
+const verityDweller = lookalikeByProjectId("eZW2ZX0U");
+const horrorlandPack = lookalikeByProjectId("mJcQB7OR");
+const verityPaperPlugin = lookalikeByProjectId("DYiZP3fM");
 
 const records = [
   {
@@ -271,6 +281,33 @@ const records = [
     recommendedUse: item.name === "VERITY.exe" ? "Use only when the player intentionally wants the VERITY.exe modpack profile." : "Use only when the player intentionally selected this separate modpack result.",
     caution: item.sourceNote,
     localGuideUrl
+  })),
+  ...[
+    [verityDweller, `${site}/verity-dweller/`],
+    [horrorlandPack, `${site}/verity-dweller/`],
+    [verityPaperPlugin, `${site}/verity-dweller/`]
+  ].map(([item, localGuideUrl]) => ({
+    routeId: `lookalike-${item.projectId}`,
+    routeName: item.name,
+    edition: item.projectType === "modpack" ? "Modpack" : "Similar-name project",
+    host: item.host,
+    owner: item.owner,
+    projectId: item.projectId,
+    projectUrl: item.projectUrl,
+    projectDownloadsAtCheck: item.displayedDownloadsAtCheck,
+    packageType: item.packageType,
+    fileName: item.mainFile || "",
+    recordId: item.mainFileRecord || "",
+    recordUrl: item.mainFileUrl || item.projectUrl,
+    minecraftVersion: item.minecraftVersion || "",
+    loader: item.loader || "",
+    publishedDate: item.lastUpdate || item.publishedAt || "",
+    fileSizeMb: item.mainFileSizeBytes ? Number((item.mainFileSizeBytes / 1024 / 1024).toFixed(2)) : "",
+    fileDownloadsAtCheck: item.mainFileDownloadsAtCheck || "",
+    status: item.status,
+    recommendedUse: "Use only when the player intentionally selected this similar-name result and needs to know whether it is the same as the current Verity Mod.",
+    caution: item.sourceNote,
+    localGuideUrl
   }))
 ];
 
@@ -296,7 +333,8 @@ const sourceMap = {
   method: "Derived from the site's checked release and modpack snapshots, which are maintained from public first-party project pages, official APIs where available, and exact file records. The source map normalizes route IDs for citation and comparison; it does not mirror files.",
   sourceSnapshots: [
     `${site}/data/verity-releases.json`,
-    `${site}/data/verity-modpacks.json`
+    `${site}/data/verity-modpacks.json`,
+    `${site}/data/verity-lookalikes.json`
   ],
   downloadCounterSummary: summary,
   records
@@ -431,7 +469,7 @@ const pageHtml = `<!doctype html>
             "@type": "Dataset",
             "@id": `${site}/source-map/#dataset`,
             name: "Verity Mod source map",
-            description: "Citation-ready table of current Verity project routes, owners, Project IDs, file records, package types, status, and local guide URLs.",
+            description: "Citation-ready table of current Verity project routes, similar-name results, owners, Project IDs, file records, package types, status, and local guide URLs.",
             url: `${site}/source-map/`,
             distribution: [
               {
@@ -446,9 +484,9 @@ const pageHtml = `<!doctype html>
               }
             ],
             dateModified: generatedAt.slice(0, 10),
-            isBasedOn: [`${site}/data/verity-releases.json`, `${site}/data/verity-modpacks.json`],
+            isBasedOn: [`${site}/data/verity-releases.json`, `${site}/data/verity-modpacks.json`, `${site}/data/verity-lookalikes.json`],
             creator: { "@type": "Organization", name: "Verity Mod Checker" },
-            keywords: ["verity mod source map", "verity mod project id", "verity mod csv", "verity mod data"]
+            keywords: ["verity mod source map", "verity mod project id", "verity mod csv", "verity dweller", "verity mod data"]
           },
           {
             "@type": "CollectionPage",
@@ -520,7 +558,7 @@ const pageHtml = `<!doctype html>
           <p class="lede">
             This page is built for editors, video creators, server owners, wiki maintainers, and players who
             need one reliable Verity Mod reference without copying files from a mirror. It normalizes the
-            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, and VERITY.exe routes into a single
+            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, VERITY.exe, and similar-name routes into a single
             source map. Use it to answer which Project ID belongs to which owner, which file record is current,
             which package type should be installed, and which stale record should only be used for diagnosis.
           </p>
@@ -541,7 +579,8 @@ const pageHtml = `<!doctype html>
           <p>
             The current checked snapshot lists ${records.length} route records. It includes the stable Verity JE
             CurseForge file, the Modrinth checksum route, observed beta records that now return 404, Verity BE,
-            PnTMC Bedrock rows, Pocket Edition, and separate modpack routes. The CSV is useful for spreadsheets,
+            PnTMC Bedrock rows, Pocket Edition, separate modpack routes, and current similar-name results such
+            as Verity Dweller. The CSV is useful for spreadsheets,
             public notes, and community comparison tables. The JSON is useful for bots, route checkers, and editors.
           </p>
           <ol class="steps">
@@ -553,6 +592,7 @@ const pageHtml = `<!doctype html>
           <div class="action-row">
             <a class="primary-link" href="/data/verity-source-map.csv">Open CSV</a>
             <a class="copy-button" href="/data/verity-source-map.json">Open JSON</a>
+            <a class="copy-button" href="/data/verity-lookalikes.json">Similar-name JSON</a>
             <a class="copy-button" href="/download/">Download map</a>
           </div>
         </aside>

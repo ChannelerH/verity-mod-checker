@@ -5,8 +5,24 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T00:45:00+08:00</updated>
+  <updated>2026-07-30T01:10:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Dweller similar-name route added from current Modrinth results</title>
+    <id>https://veritymodchecker.online/updates/verity-dweller-similar-name-route-2026-07-30-0110</id>
+    <link href="https://veritymodchecker.online/verity-dweller/" rel="alternate" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-lookalikes.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <published>2026-07-30T01:10:00+08:00</published>
+    <updated>2026-07-30T01:10:00+08:00</updated>
+    <summary>Added /verity-dweller/ after current public SERP sampling surfaced Modrinth similar-name results beside Verity Mod searches. The new route separates Verity Dweller Project ID eZW2ZX0U, latest version COqUGsQr, 4,736 downloads, Fabric 26.2, and file verity-1.0.0.jar from the checked Verity JE Java AI route, Verity BE, PnTMC, and MCPE add-ons. It also records Horrorland with Verity Project ID mJcQB7OR as a Modrinth modpack route with 88,242 downloads and latest 9.3.0 version L0WhiLev, plus a generic Paper plugin result DYiZP3fM as an unrelated server-plugin route. Added machine-readable /data/verity-lookalikes.json, expanded the source map from 17 to 20 records, added internal entrances from the homepage, download page, routes index, Verity Pack page, sitemap, LLM summaries, README, and redirect aliases. Homepage title and description were not changed. GSC and GA4 browser access were not available in this sub-run, so no fresh GSC or GA4 metric is claimed.</summary>
+    <category term="similar-name-route" />
+    <category term="verity-dweller" />
+    <category term="modrinth" />
+  </entry>
   <entry>
     <title>Current Verity source counters refreshed from July 30 checks</title>
     <id>https://veritymodchecker.online/updates/source-counters-2026-07-30-0045</id>

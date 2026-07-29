@@ -38,7 +38,7 @@
                         "@type": "Dataset",
                         "@id": "https://veritymodchecker.online/source-map/#dataset",
                         "name": "Verity Mod source map",
-                        "description": "Citation-ready table of current Verity project routes, owners, Project IDs, file records, package types, status, and local guide URLs.",
+                        "description": "Citation-ready table of current Verity project routes, similar-name results, owners, Project IDs, file records, package types, status, and local guide URLs.",
                         "url": "https://veritymodchecker.online/source-map/",
                         "distribution": [
                                 {
@@ -55,7 +55,8 @@
                         "dateModified": "2026-07-30",
                         "isBasedOn": [
                                 "https://veritymodchecker.online/data/verity-releases.json",
-                                "https://veritymodchecker.online/data/verity-modpacks.json"
+                                "https://veritymodchecker.online/data/verity-modpacks.json",
+                                "https://veritymodchecker.online/data/verity-lookalikes.json"
                         ],
                         "creator": {
                                 "@type": "Organization",
@@ -65,6 +66,7 @@
                                 "verity mod source map",
                                 "verity mod project id",
                                 "verity mod csv",
+                                "verity dweller",
                                 "verity mod data"
                         ]
                 },
@@ -218,7 +220,7 @@
           <p class="lede">
             This page is built for editors, video creators, server owners, wiki maintainers, and players who
             need one reliable Verity Mod reference without copying files from a mirror. It normalizes the
-            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, and VERITY.exe routes into a single
+            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, VERITY.exe, and similar-name routes into a single
             source map. Use it to answer which Project ID belongs to which owner, which file record is current,
             which package type should be installed, and which stale record should only be used for diagnosis.
           </p>
@@ -237,9 +239,10 @@
           </div>
           <h2>Use the source map when you need to cite records, not download files</h2>
           <p>
-            The current checked snapshot lists 17 route records. It includes the stable Verity JE
+            The current checked snapshot lists 20 route records. It includes the stable Verity JE
             CurseForge file, the Modrinth checksum route, observed beta records that now return 404, Verity BE,
-            PnTMC Bedrock rows, Pocket Edition, and separate modpack routes. The CSV is useful for spreadsheets,
+            PnTMC Bedrock rows, Pocket Edition, separate modpack routes, and current similar-name results such
+            as Verity Dweller. The CSV is useful for spreadsheets,
             public notes, and community comparison tables. The JSON is useful for bots, route checkers, and editors.
           </p>
           <ol class="steps">
@@ -251,6 +254,7 @@
           <div class="action-row">
             <a class="primary-link" href="/data/verity-source-map.csv">Open CSV</a>
             <a class="copy-button" href="/data/verity-source-map.json">Open JSON</a>
+            <a class="copy-button" href="/data/verity-lookalikes.json">Similar-name JSON</a>
             <a class="copy-button" href="/download/">Download map</a>
           </div>
         </aside>
@@ -432,6 +436,33 @@
                 <td>Project</td>
                 <td>separate-verity-falsity-modpack-route</td>
                 <td><a href="https://veritymodchecker.online/verity-pack/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity Dweller</td>
+                <td>Similar-name project · Modrinth</td>
+                <td>Modrinth team zaW97nsy · eZW2ZX0U</td>
+                <td>verity-1.0.0.jar</td>
+                <td>COqUGsQr</td>
+                <td>similar-named-fabric-mod-not-verity-je</td>
+                <td><a href="https://veritymodchecker.online/verity-dweller/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Horrorland - With Verity!</td>
+                <td>Modpack · Modrinth</td>
+                <td>Flashh · mJcQB7OR</td>
+                <td>Horrorland with Verity - MC 1.20.1 9.3.0.mrpack</td>
+                <td>L0WhiLev</td>
+                <td>separate-modrinth-modpack-with-verity</td>
+                <td><a href="https://veritymodchecker.online/verity-dweller/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity</td>
+                <td>Similar-name project · Modrinth</td>
+                <td>AstroGrove · DYiZP3fM</td>
+                <td>Verity-1.7.0.jar</td>
+                <td>QQ8nARZM</td>
+                <td>unrelated-paper-server-plugin-route</td>
+                <td><a href="https://veritymodchecker.online/verity-dweller/">Guide</a></td>
               </tr>
             </tbody>
           </table>

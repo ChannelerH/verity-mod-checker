@@ -19,6 +19,7 @@ ROUTES = [
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/source-map/",
+    "/verity-dweller/",
     "/play/",
     "/routes/",
     "/server/",
@@ -90,10 +91,17 @@ with sync_playwright() as playwright:
     browser = playwright.chromium.launch(headless=True)
     console_errors = []
 
+    def record_console_error(message):
+        if message.type != "error":
+            return
+        if "Failed to load resource: net::ERR_NETWORK_CHANGED" in message.text:
+            return
+        console_errors.append(message.text)
+
     for viewport_name, viewport in VIEWPORTS.items():
         context = browser.new_context(viewport=viewport)
         page = context.new_page()
-        page.on("console", lambda message: console_errors.append(message.text) if message.type == "error" else None)
+        page.on("console", record_console_error)
         for route in ROUTES:
             assert_layout(page, route, viewport_name)
 
@@ -101,11 +109,20 @@ with sync_playwright() as playwright:
         source_map_text = page.locator("main").inner_text()
         assert "Open CSV" in source_map_text
         assert "Open JSON" in source_map_text
+        assert "Similar-name JSON" in source_map_text
         assert "VERITY.exe" in source_map_text
+        assert "Verity Dweller" in source_map_text
         assert "stale-beta-endpoint-404" in source_map_text
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
-        assert page.locator("tbody tr").count() == 17
+        assert page.locator("tbody tr").count() == 20
+
+        page.goto(f"{BASE_URL}/verity-dweller/", wait_until="domcontentloaded")
+        dweller_text = page.locator("main").inner_text()
+        assert "Verity Dweller" in dweller_text
+        assert "eZW2ZX0U" in dweller_text
+        assert "Horrorland" in dweller_text
+        assert page.locator('a[href="/data/verity-lookalikes.json"]').count() >= 1
 
         page.goto(f"{BASE_URL}/play/", wait_until="domcontentloaded")
         page.locator("#playEdition").select_option("bedrock")
@@ -198,6 +215,27 @@ with sync_playwright() as playwright:
         assert "SHA-512 available" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/version/5.7.3")
 
+        page.locator("#sourceInput").fill("https://modrinth.com/mod/verity-dweller/version/COqUGsQr")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "similar-name route" in result_text.lower()
+        assert "Verity Dweller" in result_text
+        assert "eZW2ZX0U" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-dweller/"
+
+        page.locator("#sourceInput").fill("eZW2ZX0U")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Verity Dweller" in result_text
+        assert "not the main verity mod" in result_text.lower()
+
+        page.locator("#sourceInput").fill("Horrorland with Verity - MC 1.20.1 9.3.0.mrpack")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Horrorland - With Verity!" in result_text
+        assert "mJcQB7OR" in result_text
+        assert "Modrinth MRPACK" in result_text
+
         page.locator("#sourceInput").fill("https://modrinth.com/mod/unrelated-project?file=verity-5.7.3.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
@@ -274,4 +312,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, Modrinth identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Dweller route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, and checksum branches")
