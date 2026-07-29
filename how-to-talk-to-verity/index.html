@@ -6,7 +6,7 @@
     <title>How to Talk to Verity Mod: Microphone, Voice &amp; API Key</title>
     <meta
       name="description"
-      content="Learn how to talk to Verity Mod in Minecraft Java, Bedrock, MCPE, or VERITY.exe. Set up Groq/API key, microphone, voice chat, Beta APIs, and no-reply fixes."
+      content="Learn how to talk to Verity Mod in Minecraft Java, Bedrock, MCPE, or VERITY.exe. Set up Groq/API key, microphone, text chat, voice chat, Beta APIs, and no-reply fixes."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/how-to-talk-to-verity/" />
@@ -60,6 +60,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "First prove that text chat works for the exact Verity Mod route. Then check the installed build's talk control, microphone permission, voice-chat dependency, English speech-to-text support, and provider setup. VERITY.exe says players can talk using voice chat or direct chat, while Bedrock routes may use chat commands or local TTS instead of live microphone input."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I talk to Verity without a microphone?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, if your route supports typed chat. Verity BE uses a Verity chat prefix, PnTMC documents ground chat and the Hey Verity wake phrase, VERITY.exe says direct chat is supported, and Verity JE should be tested with a short typed prompt before voice. A microphone is only needed for voice-specific features."
                 }
               },
               {
@@ -338,6 +346,20 @@
               after you know whether the route should produce audio, read text aloud, or listen to a microphone.
             </p>
           </article>
+          <article class="guide-block">
+            <h3>If you do not have a microphone, use the text route first</h3>
+            <p>
+              A microphone is not required for every Verity Mod interaction. Verity BE documents a typed
+              <code>Verity</code> prefix. PnTMC documents typed ground chat and the <code>Hey Verity</code>
+              inventory wake phrase. VERITY.exe says direct chat is available beside voice chat. For Verity JE,
+              a short typed prompt is still the first useful AI-provider test before any voice feature.
+            </p>
+            <p>
+              If typed chat works but voice does not, you have narrowed the issue to microphone permission,
+              push-to-talk controls, voice-chat dependency, speech-language support, TTS output, or provider
+              latency. If typed chat does not work, changing microphone settings will not fix the base route.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -523,6 +545,14 @@
             service, Bedrock packs, or backend connection before testing microphone input. If text works, check the
             talk key, microphone permission, selected input device, voice-chat dependency, English speech support,
             and whether your route is VERITY.exe, Verity JE, Verity BE, or PnTMC.
+          </p>
+        </details>
+        <details>
+          <summary>Can I talk to Verity without a microphone?</summary>
+          <p>
+            Yes, when the route supports typed chat. Verity BE uses the <code>Verity</code> chat prefix,
+            PnTMC uses ground chat and <code>Hey Verity</code>, VERITY.exe supports direct chat, and Verity JE
+            should pass a typed prompt before voice testing. A microphone is only for voice-specific features.
           </p>
         </details>
         <details>

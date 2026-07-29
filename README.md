@@ -18,6 +18,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity Mod server, friends, PS4, Xbox, and console route: https://veritymodchecker.online/server/
 - Verity Minecraft map and world-route check: https://veritymodchecker.online/verity-map/
 - CurseForge Verity Mod download route chooser: https://veritymodchecker.online/curseforge/
+- Who created Verity Mod and creator reference: https://veritymodchecker.online/creators/
 - What is Verity / Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
 - How to download and install Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
@@ -42,7 +43,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Groq API key setup: https://veritymodchecker.online/verity-groq-api-key/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/
 - Status 401 credential fix: https://veritymodchecker.online/status-401/
-- How to talk to Verity: https://veritymodchecker.online/how-to-talk-to-verity/
+- How to talk to Verity, with or without microphone: https://veritymodchecker.online/how-to-talk-to-verity/
 - Taken down or 404 route: https://veritymodchecker.online/taken-down/
 
 ## What It Covers

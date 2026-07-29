@@ -551,6 +551,25 @@ export default {
     }
 
     if (
+      url.pathname === "/who-created-verity-mod" ||
+      url.pathname.startsWith("/who-created-verity-mod/") ||
+      url.pathname === "/who-made-verity-mod" ||
+      url.pathname.startsWith("/who-made-verity-mod/") ||
+      url.pathname === "/who-is-the-creator-of-verity-mod" ||
+      url.pathname.startsWith("/who-is-the-creator-of-verity-mod/") ||
+      url.pathname === "/verity-mod-creator" ||
+      url.pathname.startsWith("/verity-mod-creator/") ||
+      url.pathname === "/verity-creator" ||
+      url.pathname.startsWith("/verity-creator/") ||
+      url.pathname === "/thatmob-verity-creator" ||
+      url.pathname.startsWith("/thatmob-verity-creator/")
+    ) {
+      url.pathname = "/creators/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/real-verity-mod-updated" ||
       url.pathname === "/the-real-verity-mod-updated" ||
       url.pathname.startsWith("/the-real-verity-mod-updated/") ||
@@ -899,6 +918,10 @@ export default {
       url.pathname.startsWith("/talk-to-verity/") ||
       url.pathname === "/talk-to-verity-mod" ||
       url.pathname.startsWith("/talk-to-verity-mod/") ||
+      url.pathname === "/talk-to-verity-without-microphone" ||
+      url.pathname.startsWith("/talk-to-verity-without-microphone/") ||
+      url.pathname === "/how-to-talk-to-verity-without-microphone" ||
+      url.pathname.startsWith("/how-to-talk-to-verity-without-microphone/") ||
       url.pathname === "/how-to-use-microphone-in-verity-mod" ||
       url.pathname.startsWith("/how-to-use-microphone-in-verity-mod/") ||
       url.pathname === "/how-to-use-voice-chat-in-verity-mod" ||
@@ -907,6 +930,10 @@ export default {
       url.pathname.startsWith("/verity-mod-microphone/") ||
       url.pathname === "/verity-microphone" ||
       url.pathname.startsWith("/verity-microphone/") ||
+      url.pathname === "/verity-mod-no-microphone" ||
+      url.pathname.startsWith("/verity-mod-no-microphone/") ||
+      url.pathname === "/verity-without-microphone" ||
+      url.pathname.startsWith("/verity-without-microphone/") ||
       url.pathname === "/verity-mod-voice-chat" ||
       url.pathname.startsWith("/verity-mod-voice-chat/") ||
       url.pathname === "/verity-voice-chat" ||

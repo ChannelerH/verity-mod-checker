@@ -5,8 +5,22 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T21:40:00+08:00</updated>
+  <updated>2026-07-29T21:58:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Creator route refreshed for who-created Verity Mod intent</title>
+    <id>https://veritymodchecker.online/updates/who-created-verity-mod-creator-route-2026-07-29-2158</id>
+    <link href="https://veritymodchecker.online/creators/" rel="alternate" />
+    <link href="https://veritymodchecker.online/what-is-verity-mod/" rel="related" />
+    <link href="https://veritymodchecker.online/how-to-talk-to-verity/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <published>2026-07-29T21:58:00+08:00</published>
+    <updated>2026-07-29T21:58:00+08:00</updated>
+    <summary>Expanded /creators/ after current GSC showed the page receiving impressions but zero clicks, while live SERP review showed active player and publisher confusion around what Verity Mod is, who created it, how to talk to it, and which Bedrock or Java route is being shown. The page now answers who created Verity Mod by separating ThatMob's original character and video source from public project publishers: Verity JE by VarmiteYT, Verity BE by Undertaletalelover, PnTMC's Bedrock route, and separate VERITY.exe modpack intent. The /how-to-talk-to-verity/ page also now answers no-microphone text-chat intent for Verity BE, PnTMC, VERITY.exe, and Verity JE typed prompts. Added structured FAQ coverage, visible creator and no-microphone answers, July 29 freshness, and canonical redirects for who-created and no-microphone long-tail aliases without changing homepage TDK or creating duplicate thin pages.</summary>
+    <category term="creator-intent" />
+    <category term="search-intent" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>verity-3.4.1.jar page refreshed for sandbox-result SERP context</title>
     <id>https://veritymodchecker.online/updates/verity-3-4-1-jar-sandbox-context-2026-07-29-2140</id>
