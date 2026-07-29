@@ -19,6 +19,7 @@ ROUTES = [
     "/verity-mod-wiki/",
     "/verity-mod-vercel-app/",
     "/verity-mod-1-21-60/",
+    "/best-verity-mod-bedrock/",
     "/verity-mod-downloads/",
     "/real-verity-mod-updated/",
     "/verity-souls/",
@@ -188,6 +189,19 @@ with sync_playwright() as playwright:
         assert "8517480" in bedrock_121_text
         assert "8506198" in bedrock_121_text
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/best-verity-mod-bedrock/", wait_until="domcontentloaded")
+        best_bedrock_text = page.locator("main").inner_text()
+        assert "Best Verity Mod for Bedrock" in best_bedrock_text
+        assert "Verity BE" in best_bedrock_text
+        assert "PnTMC" in best_bedrock_text
+        assert "MCPEDL" in best_bedrock_text
+        assert "8506198" in best_bedrock_text
+        assert "8517480" in best_bedrock_text
+        assert "Beta APIs" in best_bedrock_text
+        assert page.locator('a[href="/verity-be/"]').count() >= 1
+        assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
+        assert page.locator('a[href="/mcpedl/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()

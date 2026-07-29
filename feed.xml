@@ -5,8 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T05:13:43+08:00</updated>
+  <updated>2026-07-30T05:42:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Best Verity Mod for Bedrock comparison route added</title>
+    <id>https://veritymodchecker.online/updates/best-verity-mod-bedrock-route-2026-07-30-0542</id>
+    <link href="https://veritymodchecker.online/best-verity-mod-bedrock/" rel="alternate" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="related" />
+    <published>2026-07-30T05:42:00+08:00</published>
+    <updated>2026-07-30T05:42:00+08:00</updated>
+    <summary>Public SERP and player-question checks showed a clear comparison intent around best Verity Mod for Bedrock, best Verity mod for BE, and PnTMC setup where the add-on imports but nothing happens. Added /best-verity-mod-bedrock/ to compare Verity BE Project ID 1574632 / file 8506198, PnTMC Project ID 1575941 / current file 8517480, MCPEDL discovery rows, MCPE setup symptoms, Java JAR mixups, APK/app claims, Beta APIs, commands, inactive packs, and clean-world tests. Updated home, Bedrock, download, route index, sitemap, redirects, LLM summaries, visual checks, and source data. Modrinth official API now reports Verity JE project on1Y0osD at 342,883 downloads and verity-6.jar version CXsEzVwJ at 2,029 downloads, while CurseForge checked totals remain 2,367,656 Verity JE, 4,056,021 Verity BE, and 7,408,070 PnTMC from the latest available public source checks. GSC and GA4 reads remained blocked because the local user OAuth token is invalid_grant and Google Search Console / Analytics APIs are disabled for project 398776347627.</summary>
+    <category term="best-verity-mod-bedrock" />
+    <category term="bedrock-comparison" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>Verity Mod 1.21.60 Bedrock route added for V26.30 and MCPE confusion</title>
     <id>https://veritymodchecker.online/updates/verity-mod-1-21-60-bedrock-route-2026-07-30-0513</id>

@@ -4,6 +4,7 @@ const htmlRoutes = new Set([
   "/api-connection-failed/",
   "/apk/",
   "/bedrock/",
+  "/best-verity-mod-bedrock/",
   "/commands/",
   "/creators/",
   "/curseforge/",
@@ -140,6 +141,23 @@ export default {
 
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
       url.pathname = "/pocket-edition/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/best-verity-mod-for-bedrock" ||
+      url.pathname.startsWith("/best-verity-mod-for-bedrock/") ||
+      url.pathname === "/best-verity-bedrock" ||
+      url.pathname.startsWith("/best-verity-bedrock/") ||
+      url.pathname === "/best-verity-mod-be" ||
+      url.pathname.startsWith("/best-verity-mod-be/") ||
+      url.pathname === "/best-verity-mod-mcpe" ||
+      url.pathname.startsWith("/best-verity-mod-mcpe/") ||
+      url.pathname === "/best-minecraft-verity-mod-bedrock" ||
+      url.pathname.startsWith("/best-minecraft-verity-mod-bedrock/")
+    ) {
+      url.pathname = "/best-verity-mod-bedrock/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
