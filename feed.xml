@@ -5,8 +5,23 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-29T20:52:00+08:00</updated>
+  <updated>2026-07-29T21:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Groq API key route expanded for AI Settings and Voice/TTS setup</title>
+    <id>https://veritymodchecker.online/updates/groq-ai-settings-voice-tts-2026-07-29-2105</id>
+    <link href="https://veritymodchecker.online/verity-groq-api-key/" rel="alternate" />
+    <link href="https://console.groq.com/docs/text-to-speech/orpheus" rel="related" />
+    <link href="https://console.groq.com/docs/rate-limits" rel="related" />
+    <link href="https://openrouter.ai/docs/api_reference/limits" rel="related" />
+    <published>2026-07-29T21:05:00+08:00</published>
+    <updated>2026-07-29T21:05:00+08:00</updated>
+    <summary>Expanded /verity-groq-api-key/ after current SERP checks surfaced a competing AI setup article around Groq API key, voice chat, TTS, OpenRouter, and Verity Java configuration. The page now covers AI Settings order, provider selection, API Key, model or intelligence level, native/offline/cloud voice labels, microphone-first mistakes, Groq Orpheus text-to-speech, Groq audio-second rate limits, OpenRouter authentication and 429 handling, and local Ollama separation without collecting keys. Added natural redirects such as /verity-mod-ai-setup/, /verity-groq-setup/, /verity-mod-voice-tts-setup/, and /how-to-set-up-verity-mod-ai-groq-api-key-voice-tts-setup/. Homepage TDK was not changed.</summary>
+    <category term="ai-setup" />
+    <category term="groq" />
+    <category term="voice-tts" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>AI model route refreshed for Ollama verity-3b searches</title>
     <id>https://veritymodchecker.online/updates/ai-model-verity-3b-2026-07-29-2052</id>

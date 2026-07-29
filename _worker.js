@@ -1001,7 +1001,21 @@ export default {
       url.pathname === "/verity-openrouter-api-key" ||
       url.pathname.startsWith("/verity-openrouter-api-key/") ||
       url.pathname === "/openrouter-api-key" ||
-      url.pathname.startsWith("/openrouter-api-key/")
+      url.pathname.startsWith("/openrouter-api-key/") ||
+      url.pathname === "/verity-ai-setup" ||
+      url.pathname.startsWith("/verity-ai-setup/") ||
+      url.pathname === "/verity-mod-ai-setup" ||
+      url.pathname.startsWith("/verity-mod-ai-setup/") ||
+      url.pathname === "/verity-groq-setup" ||
+      url.pathname.startsWith("/verity-groq-setup/") ||
+      url.pathname === "/verity-mod-groq-setup" ||
+      url.pathname.startsWith("/verity-mod-groq-setup/") ||
+      url.pathname === "/verity-mod-voice-tts-setup" ||
+      url.pathname.startsWith("/verity-mod-voice-tts-setup/") ||
+      url.pathname === "/verity-voice-tts-setup" ||
+      url.pathname.startsWith("/verity-voice-tts-setup/") ||
+      url.pathname === "/how-to-set-up-verity-mod-ai-groq-api-key-voice-tts-setup" ||
+      url.pathname.startsWith("/how-to-set-up-verity-mod-ai-groq-api-key-voice-tts-setup/")
     ) {
       url.pathname = "/verity-groq-api-key/";
       url.hash = "";
