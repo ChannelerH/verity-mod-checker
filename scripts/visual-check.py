@@ -291,6 +291,10 @@ with sync_playwright() as playwright:
 
         page.goto(f"{BASE_URL}/java/#java-install-help", wait_until="domcontentloaded")
         java_help_text = page.locator("main").inner_text()
+        assert "Verity JE / Verity Mod Java Download" in java_help_text
+        assert "Verity JE is the Java route, but the source decides the file" in java_help_text
+        assert "Use this page when you searched Verity JE download" in java_help_text
+        assert "Do not reinstall the JAR for a provider error" in java_help_text
         assert "If you are helping a child install Verity on Java" in java_help_text
         assert "CurseForge app fails" in java_help_text
         assert "old JAR" in java_help_text
@@ -298,6 +302,8 @@ with sync_playwright() as playwright:
         assert "8461257" in java_help_text
         assert "348,596" in java_help_text
         assert "2,384,725" in java_help_text
+        assert page.locator('a[href="/verity-je/"]').count() >= 1
+        assert page.locator('a[href="/api-connection-failed/"]').count() >= 1
         assert page.locator('a[href="/not-working/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/not-working/", wait_until="domcontentloaded")

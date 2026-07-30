@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T12:31:30+08:00</updated>
+  <updated>2026-07-30T12:48:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Java route refreshed for high-impression CTR intent</title>
+    <id>https://veritymodchecker.online/updates/java-high-impression-ctr-2026-07-30-1248</id>
+    <link href="https://veritymodchecker.online/java/" rel="alternate" />
+    <link href="https://veritymodchecker.online/verity-je/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official" rel="related" />
+    <published>2026-07-30T12:48:30+08:00</published>
+    <updated>2026-07-30T12:48:30+08:00</updated>
+    <summary>GSC's visible page table shows /java/ with 13 clicks, 563 impressions, 2.3% CTR, and average position 6.8 in the delayed July 15 through July 27 window, making it the largest current page-level CTR opportunity. Query rows also show exact Java intent that is not yet strong enough: verity je download at 1 click / 2 impressions / average position 21.5, verity je at 0 / 6 / 29.3, and verity mod java at 0 / 6 / 47.0. Current SERP sampling for Verity Mod Java and Verity JE mixes official CurseForge, official Modrinth, YouTube install videos, Reddit Java-download confusion, app claims, and modpacks that include Verity JE. Refreshed /java/ without changing homepage TDK: changed only the internal Java title/description to include Verity JE, added a Java SERP answer block that separates Verity JE identity, Modrinth verity-6.jar, CurseForge verity-5.7.3.jar, and AI-provider troubleshooting, and added FAQ schema for whether Verity JE is the Java Verity Mod and which file to choose. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="java" />
+    <category term="verity-je" />
+    <category term="gsc-ctr" />
+    <category term="source-choice" />
+  </entry>
   <entry>
     <title>What-is route refreshed for high-rank zero-click intent</title>
     <id>https://veritymodchecker.online/updates/what-is-verity-high-rank-ctr-2026-07-30-1231</id>
