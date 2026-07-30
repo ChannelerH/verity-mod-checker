@@ -1768,6 +1768,35 @@ function vercelRiskResult({ source, packageName }) {
   };
 }
 
+function isTlauncherIntentSignal(value) {
+  const clean = normalizeSignal(value);
+  return clean.includes("tlauncher") && clean.includes("verity");
+}
+
+function tlauncherIntentResult({ source, packageName }) {
+  return {
+    state: "caution",
+    verdict: "TLauncher route signal",
+    risk: "Verify the Java source first",
+    title: "TLauncher does not prove a Verity Mod file is official",
+    summary:
+      "The input matches a TLauncher install or play query. Treat the launcher as a profile layer, not as source proof. Match the same Java route, Forge 1.20.1 profile, dependency list, and mods folder that a normal Verity JE install would use, and avoid mirror links or account-bypass claims.",
+    source,
+    package: packageName,
+    project: "TLauncher intent · use Java Verity JE route checks",
+    hash: "",
+    publisherCheck: "Launcher text is not a publisher checksum",
+    checks: [
+      "Use a maintainer project page or a checked file route before moving any JAR into the mods folder.",
+      "A TLauncher video, search result, or description link is not enough to prove owner, Project ID, file record, or checksum.",
+      "Test one clean Forge 1.20.1 profile before adding friends, servers, Groq, Ollama, voice, or unrelated mods."
+    ],
+    link: "/tlauncher/",
+    linkLabel: "Open TLauncher route check",
+    external: false
+  };
+}
+
 function findKnownProject(value) {
   const clean = normalizeSignal(value);
   const releaseMatch = findKnownRelease(value);
@@ -1850,6 +1879,13 @@ function inspectTextSource(rawValue) {
     return vercelRiskResult({
       source: parsedUrl?.hostname.replace(/^www\./, "") || "Vercel, v2.6, or Forge/Fabric 1.21.x claim",
       packageName: type === "Not identified" ? "Landing page or unknown package" : type
+    });
+  }
+
+  if (isTlauncherIntentSignal(value)) {
+    return tlauncherIntentResult({
+      source: parsedUrl?.hostname.replace(/^www\./, "") || "TLauncher install or play query",
+      packageName: type === "Not identified" ? "Launcher text or Java install claim" : type
     });
   }
 

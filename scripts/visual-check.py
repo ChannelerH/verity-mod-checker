@@ -29,6 +29,7 @@ ROUTES = [
     "/verity-dweller/",
     "/verity-monster-form/",
     "/play/",
+    "/tlauncher/",
     "/routes/",
     "/server/",
     "/verity-map/",
@@ -276,6 +277,16 @@ with sync_playwright() as playwright:
         assert "behavior pack activation" in play_text
         assert page.locator("#routeLink").get_attribute("href").endswith("/how-to-spawn-verity/")
 
+        page.goto(f"{BASE_URL}/tlauncher/", wait_until="domcontentloaded")
+        tlauncher_text = page.locator("main").inner_text()
+        assert "Verity Mod TLauncher Route Check" in tlauncher_text
+        assert "Do not use TLauncher as source proof" in tlauncher_text
+        assert "Forge 1.20.1" in tlauncher_text
+        assert "8461257" in tlauncher_text
+        assert "account bypass" in tlauncher_text.lower()
+        assert page.locator('a[href="/server/"]').count() >= 1
+        assert page.locator('a[href="/not-working/"]').count() >= 1
+
         page.goto(f"{BASE_URL}/server/", wait_until="domcontentloaded")
         page.locator("#serverEdition").select_option("aternos")
         page.locator("#serverGoal").select_option("ai")
@@ -365,6 +376,13 @@ with sync_playwright() as playwright:
         assert "legacy file signal" in result_text.lower()
         assert "Drive" in result_text or "drive.google.com" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href") == "/verity-1-0-0-jar/"
+
+        page.locator("#sourceInput").fill("How to Install VERITY Mod for MINECRAFT Tlauncher")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "tlauncher route signal" in result_text.lower()
+        assert "Forge 1.20.1" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/tlauncher/"
 
         page.locator("#sourceInput").fill("verity-6.0.1-all.jar")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -531,4 +549,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")

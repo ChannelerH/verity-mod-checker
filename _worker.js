@@ -37,6 +37,7 @@ const htmlRoutes = new Set([
   "/status-429/",
   "/survive-from-verity-or-falsity/",
   "/taken-down/",
+  "/tlauncher/",
   "/ultimate-verity/",
   "/updates/",
   "/verity-1-0-0-jar/",
@@ -886,6 +887,30 @@ export default {
       url.pathname.startsWith("/verity-taken-down/")
     ) {
       url.pathname = "/what-happened/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/tlauncher" ||
+      url.pathname === "/verity-mod-tlauncher" ||
+      url.pathname.startsWith("/verity-mod-tlauncher/") ||
+      url.pathname === "/tlauncher-verity-mod" ||
+      url.pathname.startsWith("/tlauncher-verity-mod/") ||
+      url.pathname === "/how-to-install-verity-mod-tlauncher" ||
+      url.pathname.startsWith("/how-to-install-verity-mod-tlauncher/") ||
+      url.pathname === "/how-to-download-verity-mod-tlauncher" ||
+      url.pathname.startsWith("/how-to-download-verity-mod-tlauncher/") ||
+      url.pathname === "/how-to-play-verity-mod-on-tlauncher" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-on-tlauncher/") ||
+      url.pathname === "/how-to-play-verity-mod-tlauncher" ||
+      url.pathname.startsWith("/how-to-play-verity-mod-tlauncher/") ||
+      url.pathname === "/verity-tlauncher" ||
+      url.pathname.startsWith("/verity-tlauncher/") ||
+      url.pathname === "/minecraft-verity-tlauncher" ||
+      url.pathname.startsWith("/minecraft-verity-tlauncher/")
+    ) {
+      url.pathname = "/tlauncher/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

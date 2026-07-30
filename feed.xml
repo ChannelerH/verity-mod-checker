@@ -5,8 +5,28 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T08:12:40+08:00</updated>
+  <updated>2026-07-30T09:00:14+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>TLauncher Java route added for Verity Mod install intent</title>
+    <id>https://veritymodchecker.online/updates/tlauncher-route-2026-07-30-0900</id>
+    <link href="https://veritymodchecker.online/tlauncher/" rel="alternate" />
+    <link href="https://veritymodchecker.online/java/" rel="related" />
+    <link href="https://veritymodchecker.online/how-to-get-verity-mod/" rel="related" />
+    <link href="https://veritymodchecker.online/server/" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <link href="https://www.youtube.com/watch?v=fKbfuMHoyRI" rel="related" />
+    <link href="https://www.youtube.com/watch?v=exk5a0IO9KY" rel="related" />
+    <link href="https://www.youtube.com/watch?v=LAysxaum2ek" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="related" />
+    <published>2026-07-30T09:00:14+08:00</published>
+    <updated>2026-07-30T09:00:14+08:00</updated>
+    <summary>Current public SERP review showed fresh TLauncher-led Verity install videos and comments, including "How to Install VERITY Mod for MINECRAFT Tlauncher", "How to Download the Verity Mod for TLauncher with Forge", and a friends-focused TLauncher guide. Added /tlauncher/ as a focused Java route explaining that TLauncher is only a launcher layer: users still need a maintainer source page, Forge 1.20.1, one checked Java JAR, dependency matching, clean profile testing, and multiplayer file matching. The page routes current Java users to Modrinth on1Y0osD / CXsEzVwJ / verity-6.jar or the CurseForge 5.7.3 comparison route 1591438 / 8461257 / verity-5.7.3.jar, separates Bedrock and MCPE from Java, warns against Drive, Discord, MediaFire, EXE, APK, password ZIP, and account-bypass claims, and links not-working, server, API, source-check, and safety routes. Updated homepage links, download table, install guide, Java guide, play page, server route, route index, redirects, source checker, sitemap, README, LLM summaries, visual checks, and IndexNow targets. Homepage TDK was not changed. GSC and GA4 API reads remain blocked by insufficient Google authentication scopes, so no new Search Console or Analytics metric is claimed.</summary>
+    <category term="tlauncher" />
+    <category term="java-install" />
+    <category term="search-intent" />
+  </entry>
   <entry>
     <title>Ultimate VERITY route cluster added for modpack and skinpack confusion</title>
     <id>https://veritymodchecker.online/updates/ultimate-verity-route-2026-07-30-0812</id>

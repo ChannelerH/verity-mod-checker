@@ -19,6 +19,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Latest version tracker: https://veritymodchecker.online/updates/
 - Download counter and viral status: https://veritymodchecker.online/verity-mod-downloads/
 - How to play Verity Mod on Java, Bedrock, MCPE, mobile, and TLauncher: https://veritymodchecker.online/play/
+- Verity Mod TLauncher Java route check: https://veritymodchecker.online/tlauncher/
 - Verity Mod server, friends, PS4, Xbox, and console route: https://veritymodchecker.online/server/
 - Verity Minecraft map and world-route check: https://veritymodchecker.online/verity-map/
 - CurseForge Verity Mod download route chooser: https://veritymodchecker.online/curseforge/
@@ -58,6 +59,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 ## What It Covers
 
 - Java route: canonical Verity JE page for `verity je`, `verityje`, and Java file-choice searches; current Modrinth record `CXsEzVwJ` for `verity-6.jar`, CurseForge record `8461257` and Modrinth `yAt0wv1Z` for `verity-5.7.3.jar`, free publisher-route guidance, observed Modrinth beta records `YLEoXe6t` and `5ech0sTo` now returning 404, older `verity-3.4.1.jar` NeoForge 1.21.1 record `8346795`, Groq, OpenRouter, Ollama, and version checks.
+- TLauncher route: answers `verity mod tlauncher`, `how to install Verity Mod TLauncher`, `how to download Verity Mod TLauncher`, and friends-video searches by treating TLauncher as a launcher layer, not source proof; it routes users back to Java Forge 1.20.1, Modrinth `on1Y0osD` / `CXsEzVwJ` / `verity-6.jar`, CurseForge `1591438` / `8461257` / `verity-5.7.3.jar`, one clean profile, dependency matching, multiplayer file matching, and no account-bypass or mirror-download help.
 - Meaning route: separates `what is Verity`, `what is Verity Minecraft`, `who is Verity`, and `what is Verity Mod` into character, video/story, Java, Bedrock, Pocket Edition, VERITY.exe, Verity Pack, APK/app, and safe-download layers.
 - Broad Minecraft route: separates `minecraft verity mod`, `verity minecraft`, `minecraft verity`, and `verity mod for minecraft` from stale video links, old Bedrock rows, Java beta 404 pages, modpacks, app claims, and true current download records.
 - Verity Souls rumor route: answers `Verity Souls`, `Verity Souls mod`, `official Verity Souls`, and `Verity Souls download` searches with current evidence status; as of the July 30 check it records public discussion but no verified CurseForge, Modrinth, MCPEDL, Project ID, file record, or package route.
@@ -107,6 +109,7 @@ These URLs are intended for players, editors, and community maintainers who need
 - Verity Mod 1.21.60 Bedrock check: https://veritymodchecker.online/verity-mod-1-21-60/
 - Verity World modpack route check: https://veritymodchecker.online/verity-world/
 - Ultimate VERITY route check: https://veritymodchecker.online/ultimate-verity/
+- TLauncher Java route check: https://veritymodchecker.online/tlauncher/
 - API connection failed route: https://veritymodchecker.online/api-connection-failed/
 - Current Modrinth Java file route: https://veritymodchecker.online/verity-6-jar/
 - Stable Java file route: https://veritymodchecker.online/verity-5-7-3-jar/
