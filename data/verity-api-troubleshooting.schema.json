@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-api-troubleshooting.schema.json",
+  "title": "Verity Mod API troubleshooting source data",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "checkedAt",
+    "canonicalUrl",
+    "method",
+    "observedDemand",
+    "currentVerityJeSource",
+    "providerSources",
+    "statusRoutes",
+    "safeSupportSummaryFields"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "checkedAt": { "type": "string", "format": "date-time" },
+    "canonicalUrl": { "type": "string", "format": "uri" },
+    "method": { "type": "string" },
+    "observedDemand": {
+      "type": "object",
+      "required": ["gscWindow", "ga4Window", "notes"],
+      "properties": {
+        "gscWindow": { "type": "string" },
+        "ga4Window": { "type": "string" },
+        "topGscRows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["query", "clicks", "impressions"],
+            "properties": {
+              "query": { "type": "string" },
+              "clicks": { "type": "integer", "minimum": 0 },
+              "impressions": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "ga4Signals": {
+          "type": "object",
+          "additionalProperties": {
+            "type": ["integer", "string"]
+          }
+        },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "currentVerityJeSource": {
+      "type": "object",
+      "required": ["projectId", "currentVersionId", "currentFile", "projectDownloadsAtCheck", "currentVersionDownloadsAtCheck", "stableVersionDownloadsAtCheck"],
+      "properties": {
+        "host": { "type": "string" },
+        "projectId": { "type": "string" },
+        "projectApiUrl": { "type": "string", "format": "uri" },
+        "currentVersionId": { "type": "string" },
+        "currentVersionApiUrl": { "type": "string", "format": "uri" },
+        "currentFile": { "type": "string" },
+        "minecraftVersion": { "type": "string" },
+        "loader": { "type": "string" },
+        "projectDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+        "currentVersionDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+        "stableVersionId": { "type": "string" },
+        "stableVersionDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+        "projectUpdatedAt": { "type": "string" },
+        "followersAtCheck": { "type": "integer", "minimum": 0 },
+        "sha1": { "type": "string" },
+        "sha512": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "providerSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["provider", "sourceUrl", "useFor"],
+        "properties": {
+          "provider": { "type": "string" },
+          "sourceUrl": { "type": "string", "format": "uri" },
+          "useFor": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "statusRoutes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["statusOrSymptom", "likelyLayer", "firstAction", "localRoute"],
+        "properties": {
+          "statusOrSymptom": { "type": "string" },
+          "likelyLayer": { "type": "string" },
+          "firstAction": { "type": "string" },
+          "localRoute": { "type": "string", "format": "uri" },
+          "avoid": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "safeSupportSummaryFields": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

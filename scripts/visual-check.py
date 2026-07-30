@@ -148,9 +148,9 @@ with sync_playwright() as playwright:
         assert "latest version depends on edition and source" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
-        assert "364,575" in versions_text
-        assert "19,766" in versions_text
-        assert "276,637" in versions_text
+        assert "365,486" in versions_text
+        assert "20,582" in versions_text
+        assert "276,683" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 1.1.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
@@ -223,15 +223,15 @@ with sync_playwright() as playwright:
         v6_text = page.locator("main").inner_text()
         assert "verity-6.jar File Check" in v6_text
         assert "CXsEzVwJ" in v6_text
-        assert "19,766" in v6_text
+        assert "20,582" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-je/", wait_until="domcontentloaded")
         verity_je_text = page.locator("main").inner_text()
         assert "Verity JE Download" in verity_je_text
-        assert "19,766" in verity_je_text
-        assert "364,575" in verity_je_text
+        assert "20,582" in verity_je_text
+        assert "365,486" in verity_je_text
         assert "2,396,299" in verity_je_text
         assert "686.1K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
@@ -265,7 +265,7 @@ with sync_playwright() as playwright:
         v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
         assert "SoftwareApplication" in v573_schema_text
         assert "686.1K" in v573_text
-        assert "276,637" in v573_text
+        assert "276,683" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
@@ -377,7 +377,7 @@ with sync_playwright() as playwright:
         assert "old JAR" in java_help_text
         assert "CXsEzVwJ" in java_help_text
         assert "8461257" in java_help_text
-        assert "364,575" in java_help_text
+        assert "365,486" in java_help_text
         assert "2,396,299" in java_help_text
         assert page.locator('a[href="/verity-je/"]').count() >= 1
         assert page.locator('a[href="/api-connection-failed/"]').count() >= 1
@@ -465,6 +465,10 @@ with sync_playwright() as playwright:
         assert "OpenRouter exposes key and credit state" in api_page_text
         assert "Groq Orpheus voice" in api_page_text
         assert "Copy a Verity Mod API connection failed report without leaking a key" in api_page_text
+        assert "Citation-ready API troubleshooting data" in api_page_text
+        assert page.locator('a[href="/data/verity-api-troubleshooting.json"]').count() >= 1
+        assert page.locator('a[href="/data/verity-api-troubleshooting.csv"]').count() >= 1
+        assert page.locator('a[href="https://gist.github.com/ChannelerH/a28dc4b2bb4a397793345e6c61afc86e"]').count() >= 1
         page.locator("#apiProvider").select_option("ollama")
         page.locator("#apiSymptom").select_option("refused")
         diagnosis_text = page.locator("#apiDiagnosisResult").inner_text()
