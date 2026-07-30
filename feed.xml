@@ -5,8 +5,24 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-31T02:45:00+08:00</updated>
+  <updated>2026-07-31T03:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Better Voice official file list mapped for older Verity JE voice fixes</title>
+    <id>https://veritymodchecker.online/updates/better-voice-file-list-2026-07-31-0345</id>
+    <link href="https://veritymodchecker.online/smileys-better-voice/#official-file-list" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-voice-addons.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-voice-addons-source-pack.md" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/all" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538" rel="related" />
+    <published>2026-07-31T03:45:00+08:00</published>
+    <updated>2026-07-31T03:45:00+08:00</updated>
+    <summary>Official CurseForge source checks now show Smiley's Better Voice by Toast5 through the files/all route at 101,848 displayed project downloads, with the current Smiley's Better Voice-4.0.0.jar row at 3.3K displayed file-list downloads, 1.4 MB, file 8536538, Minecraft 1.20.1 Forge, and a July 29, 2026 upload. The exact file page rendered 101,479 project downloads and 3.0K file downloads during the same check, so the page now states that CurseForge display counters can lag by route/page cache. Added an official version-list section covering 4.0.0, 3.1.1, 3.1.0, 3.0.0, 2.0.7, 2.0.5, 2.0.2, 2.0.1, and separate 2.0.0 Forge/NeoForge rows. Refreshed /smileys-better-voice/, source packs, voice quick-fix Markdown, troubleshooting JSON, source-map data, feed, README, and LLM summaries. Homepage TDK was not changed; no fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="smileys-better-voice" />
+    <category term="official-file-list" />
+    <category term="voice-not-working" />
+    <category term="source-data-refresh" />
+  </entry>
   <entry>
     <title>Better Voice 4.0.0 compatibility refreshed for Verity JE 6.0.0</title>
     <id>https://veritymodchecker.online/updates/better-voice-compatibility-2026-07-31-0245</id>

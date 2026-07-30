@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-voice-troubleshooting.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-31T02:45:00+08:00",
+  "checkedAt": "2026-07-31T03:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/voice-not-working/",
   "method": "Point-in-time voice troubleshooting source pack built from delayed GSC rows, GA4 page-title and channel cards, current SERP/player questions, official CurseForge project pages, Groq documentation, Simple Voice Chat documentation, and public project metadata. This file does not collect API keys, upload audio, host Verity files, or claim that a voice symptom is a malware verdict.",
   "observedDemand": {
@@ -21,6 +21,7 @@
       "The current VERITY.exe source page updated again on July 30 and explicitly separates voice chat, direct chat, TTS, and Groq issues.",
       "Current source checks show Smiley's Better Voice as a dedicated Verity JE add-on for Fish Audio, Cartesia, TTS, and voice mimicking.",
       "The current Smiley's Better Voice 4.0.0 file changelog says it supports Verity JE 6.0.0 and is incompatible with earlier Verity JE versions.",
+      "The official Smiley's Better Voice files/all page exposes older 3.x and 2.x rows, so older parent/add-on stacks should be verified from official rows instead of mirrored JAR posts.",
       "GA4 shows the voice page inside the current top page-title card, so voice fixes have active user demand even before GSC exposes many voice queries."
     ]
   },
@@ -63,12 +64,12 @@
       "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538",
       "owner": "Toast5",
       "projectId": 1608717,
-      "projectDownloadsAtCheck": 101091,
+      "projectDownloadsAtCheck": 101848,
       "currentFile": "Smiley's Better Voice-4.0.0.jar",
       "currentFileRecord": 8536538,
-      "currentFileDownloadsAtCheck": 2800,
+      "currentFileDownloadsAtCheck": 3300,
       "lastUpdate": "2026-07-29",
-      "voiceEvidence": "The project describes a Verity JE add-on for Fish Audio, Cartesia, expressive TTS, and voice mimicking. The current 4.0.0 file changelog says it supports Verity JE 6.0.0 and is incompatible with earlier Verity JE versions. Use it after the parent Verity JE route works; it is not a Bedrock route or a generic voice-fix mirror."
+      "voiceEvidence": "The project describes a Verity JE add-on for Fish Audio, Cartesia, expressive TTS, and voice mimicking. The current 4.0.0 file changelog says it supports Verity JE 6.0.0 and is incompatible with earlier Verity JE versions. At the July 31 03:45 Asia/Shanghai check, the official files/all page rendered 101,848 project downloads and 3.3K downloads for the 4.0.0 row, while the exact file page rendered 101,479 project downloads and 3.0K downloads; treat these as point-in-time CurseForge display counters. Use it after the parent Verity JE route works; it is not a Bedrock route or a generic voice-fix mirror."
     },
     {
       "route": "Smiley OpenAL Android Java audio bridge",
@@ -120,7 +121,7 @@
     {
       "symptom": "Smiley's Better Voice 4.0.0 is installed with an older Verity JE 5.x or earlier parent mod",
       "likelyLayer": "Parent mod and add-on version mismatch",
-      "firstAction": "Use Verity JE 6.0.0 for Better Voice 4.0.0, or intentionally choose an older Better Voice file that matches the older parent route.",
+      "firstAction": "Use Verity JE 6.0.0 for Better Voice 4.0.0, or intentionally choose an official older Better Voice file that matches the older parent route after opening its exact file page.",
       "avoid": "Do not diagnose this first as a microphone, Fish Audio, Cartesia, or Groq key problem."
     },
     {

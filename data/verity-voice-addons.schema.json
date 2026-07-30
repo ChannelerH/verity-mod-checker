@@ -79,6 +79,33 @@
           "mainFileDownloadsAtCheck": { "type": "integer", "minimum": 0 },
           "mainFileSizeMb": { "type": "number", "minimum": 0 },
           "mavenSnippet": { "type": "string" },
+          "versionList": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "fileName",
+                "gameVersion",
+                "loader",
+                "sizeDisplayed",
+                "downloadsDisplayed",
+                "uploaded",
+                "releaseType",
+                "routeNote"
+              ],
+              "properties": {
+                "fileName": { "type": "string" },
+                "gameVersion": { "type": "string" },
+                "loader": { "type": "string" },
+                "sizeDisplayed": { "type": "string" },
+                "downloadsDisplayed": { "type": "string" },
+                "uploaded": { "type": "string" },
+                "releaseType": { "type": "string" },
+                "routeNote": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
           "lastUpdate": { "type": "string" },
           "sourceNote": { "type": "string" },
           "requirements": {

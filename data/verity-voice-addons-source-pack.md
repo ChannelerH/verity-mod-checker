@@ -1,6 +1,6 @@
 # Smiley's Better Voice source pack for Verity JE voice add-on checks
 
-Checked: 2026-07-31 02:45 Asia/Shanghai
+Checked: 2026-07-31 03:45 Asia/Shanghai
 
 Canonical route: https://veritymodchecker.online/smileys-better-voice/
 
@@ -15,7 +15,7 @@ Machine data:
 
 Current Verity search demand is no longer only "download the mod." Search Console is beginning to show the exact head query `verity mod`, while GA4 shows active traffic on API and voice troubleshooting pages. A current public player question also describes the common symptom: Verity messages appear in chat, but no voice can be heard. At the same time, current search results surface Smiley's Better Voice as a dedicated Verity JE add-on for expressive TTS, Fish Audio, Cartesia, and voice mimicking.
 
-The July 31 source check adds an important compatibility note: the current Smiley's Better Voice 4.0.0 file changelog says it adds support for Verity JE 6.0.0 and is incompatible with earlier Verity JE versions. That means a silent or broken Better Voice install may be a parent/add-on version mismatch before it is a microphone, TTS provider, or API-key problem.
+The July 31 source check adds an important compatibility note: the current Smiley's Better Voice 4.0.0 file changelog says it adds support for Verity JE 6.0.0 and is incompatible with earlier Verity JE versions. That means a silent or broken Better Voice install may be a parent/add-on version mismatch before it is a microphone, TTS provider, or API-key problem. The official `files/all` page also exposes a compact version list, so older parent routes should be matched from official rows instead of mirrored JAR posts.
 
 This source pack gives editors, creators, server helpers, and community answer writers a citation-safe summary they can reference without reposting JAR files, collecting API keys, or guessing whether a voice issue belongs to Java, Bedrock, VERITY.exe, Fish Audio, Cartesia, Groq, or local Minecraft audio.
 
@@ -27,15 +27,34 @@ Project: Smiley's Better Voice
 - Owner: Toast5
 - Project ID: 1608717
 - Project URL: https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice
-- Project downloads at check: 101,091
+- Project downloads at check: 101,848 on the official files/all page; the exact file page rendered 101,479 during the same check
 - Main current file: `Smiley's Better Voice-4.0.0.jar`
 - File record: 8536538
 - File URL: https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538
-- File downloads at check: 2.8K displayed
-- File size: 1.41 MB
+- File downloads at check: 3.3K displayed in the official files/all row; the exact file page rendered 3.0K during the same check
+- File size: 1.4 MB in the official files/all row
 - Loader: Forge for the current 1.20.1 file
 - Project page also shows game versions 1.21.1 and 1.20.1 and loaders Forge and NeoForge
 - Maven snippet: `implementation fg.deobf("curse.maven:smileys-better-voice-1608717:8536538")`
+
+The two official CurseForge routes did not render identical counters during the July 31 03:45 Asia/Shanghai check. This source pack treats project downloads and file downloads as point-in-time display counters that can lag by page cache, not as exact real-time install counts.
+
+## Official version-list snapshot
+
+Use this snapshot as a route-selection aid. Open the exact file page before installing an older row.
+
+| Official row | Game / loader | Displayed downloads | Route note |
+| --- | --- | --- | --- |
+| `Smiley's Better Voice-4.0.0.jar` | 1.20.1 Forge | 3.3K | Current file-list row; exact file page changelog says it supports Verity JE 6.0.0 and is incompatible with earlier Verity JE versions. |
+| `Smiley's Better Voice-3.1.1.jar` | 1.20.1 Forge | 18.2K | Older official row; open its exact file/changelog before pairing it with an older parent Verity JE route. |
+| `Smiley's Better Voice-3.1.0.jar` | 1.20.1 Forge | 3.6K | Older official row for support threads that mention 3.1.x. |
+| `Smiley's Better Voice-3.0.0.jar` | 1.20.1 Forge | 14.4K | Older official row that can help when a support thread mentions 3.0.0 behavior, but still needs exact-file verification. |
+| `Smiley's Better Voice-2.0.7.jar` | 1.20.1 Forge | 9.3K | Older official Forge row for 1.20.1. |
+| `Smiley's Better Voice-2.0.5.jar` | 1.20.1 Forge | 9.8K | Older official Forge row for 1.20.1. |
+| `Smiley's Better Voice-2.0.2.jar` | 1.20.1 Forge | 10.6K | Older official Forge row for 1.20.1. |
+| `Smiley's Better Voice-2.0.1.jar` | 1.20.1 Forge | 4.9K | Older official Forge row for 1.20.1. |
+| `Smiley's Better Voice-2.0.0.jar` | 1.21.1 NeoForge | 6.1K | Separate NeoForge row; do not mix it into a 1.20.1 Forge profile. |
+| `Smiley's Better Voice-2.0.0.jar` | 1.20.1 Forge | 7.7K | Same version label as the NeoForge row, but a different loader/game row. |
 
 ## Route interpretation
 
@@ -49,6 +68,7 @@ The project page describes it as an add-on to VarmiteYT's Verity JE that changes
 - Forge 47+.
 - Verity JE 6.0.0 for the current 4.0.0 file, because the file changelog says 4.0.0 is incompatible with earlier Verity JE versions.
 - Older project-page requirement wording may still mention Verity JE 5.0+, so use the exact file page for the current file before installing.
+- If staying on an older parent Verity JE route, choose an older Better Voice row from the official files/all page only after matching Minecraft version, loader, and exact file page notes.
 - Cloth Config and GeckoLib.
 - Both Verity JE and Smiley's Better Voice installed together.
 
@@ -85,7 +105,7 @@ Safe support fields:
 ## Troubleshooting summary
 
 - Silent Verity: confirm Better Voice is enabled, Verity JE text-to-speech is on, the provider tab has a valid key plus voice ID, and the player is online.
-- Better Voice 4.0.0 with Verity JE 5.x or earlier: match the parent mod to Verity JE 6.0.0 or choose an older Better Voice file that matches the parent route.
+- Better Voice 4.0.0 with Verity JE 5.x or earlier: match the parent mod to Verity JE 6.0.0 or choose an official older Better Voice file that matches the parent route after checking its exact file page.
 - Invalid API Key: check whether the error belongs to Groq/Ollama in Verity JE instead of Fish or Cartesia.
 - Voice mimic failed: verify Fish key, credits, and about 10 seconds of clean push-to-talk speech.
 - Repeating throw scream: compare against current Better Voice and Verity JE versions because the project notes this was fixed in 3.0.0.
