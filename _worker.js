@@ -35,6 +35,7 @@ const htmlRoutes = new Set([
   "/source-map/",
   "/status-401/",
   "/status-429/",
+  "/survive-from-verity-or-falsity/",
   "/taken-down/",
   "/updates/",
   "/verity-1-0-0-jar/",
@@ -674,6 +675,30 @@ export default {
     }
 
     if (
+      url.pathname === "/survive-from-verity-or-falsity" ||
+      url.pathname === "/survive-from-verity" ||
+      url.pathname.startsWith("/survive-from-verity/") ||
+      url.pathname === "/survive-from-falsity" ||
+      url.pathname.startsWith("/survive-from-falsity/") ||
+      url.pathname === "/survive-from-verity-falsity" ||
+      url.pathname.startsWith("/survive-from-verity-falsity/") ||
+      url.pathname === "/survive-verity-falsity" ||
+      url.pathname.startsWith("/survive-verity-falsity/") ||
+      url.pathname === "/verity-or-falsity" ||
+      url.pathname.startsWith("/verity-or-falsity/") ||
+      url.pathname === "/verity-or-falsity-modpack" ||
+      url.pathname.startsWith("/verity-or-falsity-modpack/") ||
+      url.pathname === "/curseforge-survive-from-verity" ||
+      url.pathname.startsWith("/curseforge-survive-from-verity/") ||
+      url.pathname === "/curseforge-survive-from-verity-or-falsity" ||
+      url.pathname.startsWith("/curseforge-survive-from-verity-or-falsity/")
+    ) {
+      url.pathname = "/survive-from-verity-or-falsity/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/falsity" ||
       url.pathname.startsWith("/falsity/") ||
       url.pathname === "/falsity-mod" ||
@@ -724,13 +749,7 @@ export default {
       url.pathname === "/verity-vs-falsity" ||
       url.pathname.startsWith("/verity-vs-falsity/") ||
       url.pathname === "/verity-mod-falsity" ||
-      url.pathname.startsWith("/verity-mod-falsity/") ||
-      url.pathname === "/survive-from-verity-or-falsity" ||
-      url.pathname.startsWith("/survive-from-verity-or-falsity/") ||
-      url.pathname === "/survive-verity-falsity" ||
-      url.pathname.startsWith("/survive-verity-falsity/") ||
-      url.pathname === "/verity-or-falsity" ||
-      url.pathname.startsWith("/verity-or-falsity/")
+      url.pathname.startsWith("/verity-mod-falsity/")
     ) {
       url.pathname = "/falsity-mod/";
       url.hash = "";

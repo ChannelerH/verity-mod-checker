@@ -69,6 +69,7 @@ ROUTES = [
     "/voice-not-working/",
     "/taken-down/",
     "/verity-exe/",
+    "/survive-from-verity-or-falsity/",
 ]
 
 
@@ -125,6 +126,7 @@ with sync_playwright() as playwright:
         assert "Verity Body Overhaul" in source_map_text
         assert "Verity May Be" in source_map_text
         assert "VerityCraft" in source_map_text
+        assert "Survive from VERITY or FALSITY" in source_map_text
         assert "verity-6.jar" in source_map_text
         assert "CXsEzVwJ" in source_map_text
         assert "stale-beta-endpoint-404" in source_map_text

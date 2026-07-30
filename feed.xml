@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T07:35:34+08:00</updated>
+  <updated>2026-07-30T07:49:57+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Survive from VERITY or FALSITY route split from Falsity intent</title>
+    <id>https://veritymodchecker.online/updates/survive-from-verity-or-falsity-route-2026-07-30-0749</id>
+    <link href="https://veritymodchecker.online/survive-from-verity-or-falsity/" rel="alternate" />
+    <link href="https://veritymodchecker.online/falsity-mod/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-pack/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity/files/8399483" rel="related" />
+    <published>2026-07-30T07:49:57+08:00</published>
+    <updated>2026-07-30T07:49:57+08:00</updated>
+    <summary>Current SERP review showed the exact Survive from VERITY or FALSITY CurseForge modpack and YouTube descriptions appearing beside Verity Mod, Falsity, CurseForge, and Minecraft horror searches. Added /survive-from-verity-or-falsity/ as the canonical source-check route for kanthbuymi Project ID 1583260, main file VERITY 1-1.6.1.zip, file ID 8399483, Forge 1.20.1, 98,145 detailed project downloads, and 46.9K file downloads. Updated worker redirects so /survive-from-verity-or-falsity/, /survive-from-verity/, /survive-from-falsity/, /survive-verity-falsity/, and /verity-or-falsity/ resolve to this page instead of /falsity-mod/. Updated homepage, routes, download, Verity Pack, Falsity, sitemap, source-map JSON/CSV, README, and LLM files. GSC and GA4 API reads remained blocked by local Google API permissions, so no new Search Console or Analytics metric is claimed.</summary>
+    <category term="survive-from-verity-or-falsity" />
+    <category term="modpack-route" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>Java install-failure and Bedrock duplicate-pack fixes expanded</title>
     <id>https://veritymodchecker.online/updates/java-bedrock-install-fixes-2026-07-30-0735</id>

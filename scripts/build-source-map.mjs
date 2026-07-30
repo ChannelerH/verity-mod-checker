@@ -52,7 +52,7 @@ function routeIdSegment(value) {
 
 function modpackGuideUrl(item) {
   if (item.name === "VERITY.exe" || item.name === "VERITY.exe Remastered") return `${site}/verity-exe/`;
-  if (item.name === "Survive from VERITY or FALSITY") return `${site}/falsity-mod/`;
+  if (item.name === "Survive from VERITY or FALSITY") return `${site}/survive-from-verity-or-falsity/`;
   if (item.name === "Verity World - AI Horror Adventure with Verity") return `${site}/verity-world/`;
   if (
     [

@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-modpacks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T03:42:25+08:00",
+  "checkedAt": "2026-07-30T07:49:57+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-pack/",
   "method": "Manual comparison against public CurseForge and Modrinth result pages surfaced for Verity Pack, VERITY.exe, Falsity, monster-form, and broad Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
   "modpacks": [
@@ -97,14 +97,17 @@
       "projectId": 1583260,
       "projectUrl": "https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity",
       "status": "separate-verity-falsity-modpack-route",
-      "displayedDownloadsAtCheck": 98008,
+      "displayedDownloadsAtCheck": 98145,
       "displayedDownloadsApproximate": false,
       "packageType": "modpack",
       "minecraftVersion": "1.20.1",
       "loader": "Forge",
       "mainFile": "VERITY 1-1.6.1.zip",
+      "mainFileRecord": 8399483,
+      "mainFileUrl": "https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity/files/8399483",
+      "mainFileDownloadsAtCheck": 46900,
       "lastUpdate": "2026-07-09",
-      "sourceNote": "Separate CurseForge modpack route for users searching Verity or Falsity together. Treat it as a profile route, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, Verity BE, or PnTMC Bedrock file."
+      "sourceNote": "Separate CurseForge modpack route for users searching Verity or Falsity together. Current public file record is 8399483 for VERITY 1-1.6.1.zip, Minecraft 1.20.1 Forge, uploaded July 9, 2026. Treat it as a profile route, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, Verity BE, or PnTMC Bedrock file."
     },
     {
       "name": "Verity May Be",
