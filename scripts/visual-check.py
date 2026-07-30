@@ -50,6 +50,7 @@ ROUTES = [
     "/verity-3-4-1-jar/",
     "/verity-be/",
     "/bedrock/",
+    "/how-to-install-verity-bedrock/",
     "/duplicate-package/",
     "/pocket-edition/",
     "/apk/",
@@ -234,6 +235,25 @@ with sync_playwright() as playwright:
         assert "2,396,299" in verity_je_text
         assert "686.1K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/how-to-install-verity-bedrock/", wait_until="domcontentloaded")
+        bedrock_install_text = page.locator("main").inner_text()
+        assert "How to Install Verity Mod on Bedrock and MCPE" in bedrock_install_text
+        assert "Project ID 1574632" in bedrock_install_text
+        assert "record 8506198" in bedrock_install_text
+        assert "Project ID 1575941" in bedrock_install_text
+        assert "record 8517480" in bedrock_install_text
+        assert "Project ID 1596246" in bedrock_install_text
+        assert "record 8406293" in bedrock_install_text
+        assert ".mcaddon" in bedrock_install_text
+        assert "Beta APIs" in bedrock_install_text
+        assert "behavior pack" in bedrock_install_text
+        assert "resource pack" in bedrock_install_text
+        assert "Verity" in bedrock_install_text
+        assert "Hey Verity" in bedrock_install_text
+        assert page.locator('a[href="/duplicate-package/"]').count() >= 1
+        assert page.locator('a[href="/how-to-spawn-verity/"]').count() >= 1
+        assert page.locator('a[href="/source-map/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-5-7-3-jar/", wait_until="domcontentloaded")
         v573_text = page.locator("main").inner_text()

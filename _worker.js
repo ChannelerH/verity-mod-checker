@@ -15,6 +15,7 @@ const htmlRoutes = new Set([
   "/fabric/",
   "/falsity-mod/",
   "/horror-mod/",
+  "/how-to-install-verity-bedrock/",
   "/how-to-get-verity-mod/",
   "/how-to-spawn-verity/",
   "/how-to-talk-to-verity/",
@@ -149,6 +150,28 @@ export default {
 
     if (url.pathname === "/mcpe" || url.pathname.startsWith("/mcpe/")) {
       url.pathname = "/pocket-edition/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/how-to-install-verity-bedrock" ||
+      url.pathname === "/install-verity-bedrock" ||
+      url.pathname.startsWith("/install-verity-bedrock/") ||
+      url.pathname === "/verity-bedrock-install" ||
+      url.pathname.startsWith("/verity-bedrock-install/") ||
+      url.pathname === "/verity-mod-bedrock-install" ||
+      url.pathname.startsWith("/verity-mod-bedrock-install/") ||
+      url.pathname === "/how-to-install-verity-mcpe" ||
+      url.pathname.startsWith("/how-to-install-verity-mcpe/") ||
+      url.pathname === "/install-verity-mcpe" ||
+      url.pathname.startsWith("/install-verity-mcpe/") ||
+      url.pathname === "/verity-mcpe-install" ||
+      url.pathname.startsWith("/verity-mcpe-install/") ||
+      url.pathname === "/how-to-install-verity-on-phone" ||
+      url.pathname.startsWith("/how-to-install-verity-on-phone/")
+    ) {
+      url.pathname = "/how-to-install-verity-bedrock/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

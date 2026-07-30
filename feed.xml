@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T20:45:00+08:00</updated>
+  <updated>2026-07-30T20:46:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Bedrock and MCPE installation route published</title>
+    <id>https://veritymodchecker.online/updates/bedrock-mcpe-install-route-2026-07-30-2046</id>
+    <link href="https://veritymodchecker.online/how-to-install-verity-bedrock/" rel="alternate" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/pocket-edition/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-pocket-edition-be/files/8406293" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/e6ae9b7e93fe2aa577d01e61d9d57df4" rel="related" />
+    <published>2026-07-30T20:46:00+08:00</published>
+    <updated>2026-07-30T20:46:00+08:00</updated>
+    <summary>Search Console's delayed July 15 through July 28 window shows exact verity mod beginning to appear, while /bedrock/, /download/, and /how-to-get-verity-mod/ still contain zero-click or low-click install-adjacent impressions. Current SERP checks also show competitor pages winning with focused Bedrock installation intent. Published /how-to-install-verity-bedrock/ as a canonical step-by-step route for Verity BE Project ID 1574632 / record 8506198, PnTMC Project ID 1575941 / record 8517480, and Verity Pocket Edition Project ID 1596246 / record 8406293. The page covers mcaddon import, fresh-world testing, Beta APIs, behavior pack and resource pack activation, Verity prefix, Hey Verity wake phrase context, duplicate-package fixes, no-spawn and no-response routes, and device notes for mobile, Windows, console hosts, and Realms. Added homepage, Download, Bedrock, MCPE, MCPEDL, Routes, footer, sitemap, Worker, redirect, LLM entrances, and a public Bedrock install source pack at Gist e6ae9b7. No homepage TDK change, fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="bedrock-install-intent" />
+    <category term="mcpe" />
+    <category term="internal-links" />
+    <category term="schema" />
+    <category term="public-source-pack" />
+  </entry>
   <entry>
     <title>Verity Mod versions and requirements route published</title>
     <id>https://veritymodchecker.online/updates/verity-mod-versions-requirements-2026-07-30-2045</id>
