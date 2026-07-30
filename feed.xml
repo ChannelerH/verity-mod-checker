@@ -5,8 +5,27 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T17:58:00+08:00</updated>
+  <updated>2026-07-30T18:22:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Aternos server intent refreshed for availability and crash-log questions</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-aternos-server-intent-2026-07-30-1822</id>
+    <link href="https://veritymodchecker.online/server/" rel="alternate" />
+    <link href="https://veritymodchecker.online/java/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://support.aternos.org/hc/en-us/articles/360027235871-Install-mods-Minecraft-Java-Edition" rel="related" />
+    <link href="https://support.aternos.org/hc/en-us/articles/360052255311-Suggesting-new-mods-plugins-and-modpacks" rel="related" />
+    <link href="https://www.reddit.com/r/aternos/comments/1uw4wp3/can_you_play_the_verity_mod_on_aternos/" rel="related" />
+    <link href="https://www.reddit.com/r/aternos/comments/1ux3ssz/the_verity_mod_just_doesnt_work_on_aternos_the/" rel="related" />
+    <published>2026-07-30T18:22:00+08:00</published>
+    <updated>2026-07-30T18:22:00+08:00</updated>
+    <summary>Search Console's delayed July 15 through July 28 window still shows 54 clicks, 1,640 impressions, 3.3% CTR, average position 8.7, and exact verity mod at 2 clicks / 3 impressions. GA4 last-7-days checks still show 153 to 156 Organic Search sessions, 88 to 90 Referral sessions, 53 to 58 verity_outbound_project_click events, and strong gist.github.com referral contribution. Current SERP/player checks show Aternos-specific demand around whether Verity Mod can run on Aternos, why a suggestion can be blocked by popularity or support rules, and why an Aternos server crashes after the mod appears. Refreshed /server/ without changing homepage TDK: added Aternos availability, official suggestion, library-only, dependency, client/server mismatch, first crash-log, and provider-access guidance using Aternos first-party support docs plus player-question evidence; refreshed FAQ schema, visible FAQ, route selector copy, sitemap lastmod, LLM summaries, visual assertions, Worker aliases, and fallback redirects for Aternos long-tail searches. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="aternos-intent" />
+    <category term="server-route" />
+    <category term="serp-player-questions" />
+    <category term="redirect-aliases" />
+  </entry>
   <entry>
     <title>Public source map and Gist referral assets refreshed</title>
     <id>https://veritymodchecker.online/updates/source-map-gist-referral-refresh-2026-07-30-1758</id>

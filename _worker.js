@@ -1099,6 +1099,20 @@ export default {
       url.pathname.startsWith("/minecraft-verity-server/") ||
       url.pathname === "/verity-server" ||
       url.pathname.startsWith("/verity-server/") ||
+      url.pathname === "/verity-mod-aternos" ||
+      url.pathname.startsWith("/verity-mod-aternos/") ||
+      url.pathname === "/aternos-verity-mod" ||
+      url.pathname.startsWith("/aternos-verity-mod/") ||
+      url.pathname === "/verity-aternos" ||
+      url.pathname.startsWith("/verity-aternos/") ||
+      url.pathname === "/can-you-play-verity-mod-on-aternos" ||
+      url.pathname.startsWith("/can-you-play-verity-mod-on-aternos/") ||
+      url.pathname === "/verity-mod-aternos-crash" ||
+      url.pathname.startsWith("/verity-mod-aternos-crash/") ||
+      url.pathname === "/verity-mod-aternos-server" ||
+      url.pathname.startsWith("/verity-mod-aternos-server/") ||
+      url.pathname === "/aternos-verity-server" ||
+      url.pathname.startsWith("/aternos-verity-server/") ||
       url.pathname === "/play-with-friends" ||
       url.pathname.startsWith("/play-with-friends/") ||
       url.pathname === "/how-to-play-verity-mod-with-friends" ||

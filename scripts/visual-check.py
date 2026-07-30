@@ -391,6 +391,12 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/not-working/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/server/", wait_until="domcontentloaded")
+        server_main_text = page.locator("main").inner_text()
+        assert "Aternos suggestion rules" in server_main_text
+        assert "If the mod appears but crashes" in server_main_text
+        assert "can not find the project" not in server_main_text
+        assert page.locator('a[href="https://support.aternos.org/hc/en-us/articles/360027235871-Install-mods-Minecraft-Java-Edition"]').count() >= 1
+        assert page.locator('a[href="https://support.aternos.org/hc/en-us/articles/360052255311-Suggesting-new-mods-plugins-and-modpacks"]').count() >= 1
         page.locator("#serverEdition").select_option("aternos")
         page.locator("#serverGoal").select_option("ai")
         server_text = page.locator("#serverSummary").inner_text()

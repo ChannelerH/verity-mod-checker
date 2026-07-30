@@ -6,7 +6,7 @@
     <title>Verity Mod Server: Java, Bedrock, Aternos &amp; Friends</title>
     <meta
       name="description"
-      content="Plan a Verity Mod server for Java, Aternos, Bedrock Realms, MCPE, and friends. Match versions, loaders, packs, AI config, and safe public server checks."
+      content="Plan a Verity Mod server for Java, Aternos, Bedrock Realms, MCPE, and friends. Check Aternos availability, crash logs, loaders, packs, AI config, and safe public server claims."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/server/" />
@@ -69,7 +69,12 @@
               {
                 "@type": "Question",
                 "name": "Can I host Verity Mod on Aternos?",
-                "acceptedAnswer": {"@type": "Answer", "text": "Only if the free host supports the exact Minecraft version, Forge or NeoForge loader, required dependencies, file upload route, memory level, and network behavior required by the project. Test with one clean profile first."}
+                "acceptedAnswer": {"@type": "Answer", "text": "Only if Aternos offers the project in its library and the server uses a matching mod-capable software, Minecraft version, loader, dependencies, client mod set, memory profile, and network behavior. If the project is missing, use the official Aternos suggestion route instead of a mirror. If it appears but crashes, read the server log before changing files."}
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Verity Mod crash on Aternos?",
+                "acceptedAnswer": {"@type": "Answer", "text": "A crash can come from a mismatched Minecraft version, mismatched loader, missing dependencies, different client and server mod versions, config differences, host limits, or a project that does not support server use. Prove the same file locally, then compare the first Aternos server log line with the client profile and official project page."}
               },
               {
                 "@type": "Question",
@@ -212,9 +217,9 @@
               </tr>
               <tr>
                 <td>Verity Mod Aternos</td>
-                <td>Free-host compatibility check</td>
-                <td>Forge or NeoForge support, enough memory, upload permissions, provider access</td>
-                <td>Assuming every local Java mod works on a free host</td>
+                <td>Availability, suggestion, or crash-log route</td>
+                <td>Aternos library availability, loader version, dependencies, client match, server log, provider access</td>
+                <td>Assuming an available panel result proves the mod supports that host</td>
               </tr>
               <tr>
                 <td>Verity Mod TLauncher with friends</td>
@@ -299,30 +304,44 @@
             <h3>Free hosting is a compatibility question, not a yes-or-no keyword</h3>
             <p>
               Players search for Verity Mod Aternos because free hosting is the fastest way to try a session with
-              friends. The practical answer is: it can work only when the host supports the exact route. For Java,
-              that means the host must support the right Minecraft version, Forge or NeoForge loader, upload method,
-              dependencies, memory, and startup flags. For Bedrock, it means the host or Realm route must support
-              add-ons, behavior packs, resource packs, script requirements, and any experimental toggles required by
-              the selected project. If one requirement is missing, the fix is often changing the host route, not
-              downloading a different file from a mirror.
+              friends. Current public player threads are more specific than a generic download question: one user
+              asks whether Aternos can play the mod at all, another reports that the mod is visible but the Aternos
+              server crashes on startup. Treat both as host-support questions, not as proof that a different Verity
+              file is needed. Aternos' own mod docs separate the route into mod-capable server software, the Aternos
+              mod library, dependencies, matching client and server versions, and support tickets when the log still
+              fails.
             </p>
             <p>
-              Before spending time on a free server panel, prove the mod locally. Then create a clean server with no
-              unrelated optimization stack, no old horror pack, and no copied world. Upload only the file and dependencies
-              that match the selected project page. If the host hides the mods folder, blocks the loader, kills the server
-              during startup, or prevents outbound provider connections, document that as a host limitation. Do not share
-              private tokens to make someone else "fix" the panel for you.
+              If the Aternos panel cannot find the project, use Aternos' official suggestion path and the supported
+              CurseForge or Modrinth project link. Their suggestion rules mention manual review, popularity, active
+              development, direct supported-site downloads, technical compatibility, and author distribution settings.
+              Do not solve a missing-library result with a mirrored JAR, a Discord ZIP, or a file someone uploads for
+              you. If the panel does show Verity but the server crashes, the next useful evidence is the shared server
+              log, the selected Forge or NeoForge version, the client mod list, and whether the project route actually
+              supports servers.
             </p>
+            <div class="quick-routes" aria-label="Aternos official checks">
+              <a href="https://support.aternos.org/hc/en-us/articles/360027235871-Install-mods-Minecraft-Java-Edition" target="_blank" rel="noopener">Aternos install mods docs</a>
+              <a href="https://support.aternos.org/hc/en-us/articles/360052255311-Suggesting-new-mods-plugins-and-modpacks" target="_blank" rel="noopener">Aternos suggestion rules</a>
+              <a href="/java/">Java source route</a>
+              <a href="/api-connection-failed/">Provider checks</a>
+            </div>
           </article>
           <article class="guide-block">
-            <h3>Use a small test matrix before blaming the mod</h3>
+            <h3>Use a small Aternos test matrix before blaming the mod</h3>
             <p>
-              A free host can fail because of memory, CPU, file upload limits, startup time, network policy, or a loader
-              option that differs from your local launcher. Test one change at a time: base Forge server, dependency set,
-              Verity file, one joining client, then AI or voice behavior. Keep a copy of the latest server log after each
-              step. If a public tutorial promises a one-click Verity Mod server download but does not show the project
-              record, loader, version, and host panel, treat it as entertainment until the facts match.
+              A free host can fail because of memory, CPU, file-library rules, startup time, network policy, a dependency
+              that was not installed, or a loader option that differs from your local launcher. Test one change at a time:
+              base Forge or NeoForge server, dependency set, Verity file, one joining client, then AI or voice behavior.
+              Keep a copy of the latest server log after each step. If a public tutorial promises a one-click Verity Mod
+              Aternos server but does not show the project record, loader, version, host panel, and first failed log line,
+              treat it as entertainment until the facts match.
             </p>
+            <ol class="steps">
+              <li>If Aternos says the mod is not available, follow the suggestion route instead of using a mirror.</li>
+              <li>If the mod appears but crashes, compare the first Aternos log error with the same file in a local Forge or NeoForge test.</li>
+              <li>If the server starts but Verity does not answer, move to provider access, API key, 401, 429, and local Ollama checks.</li>
+            </ol>
             <div class="quick-routes" aria-label="Free host next checks">
               <a href="/download/">Download map</a>
               <a href="/verity-map/">Map or world check</a>
@@ -445,11 +464,21 @@
         <details>
           <summary>Does Aternos support Verity Mod?</summary>
           <p>
-            It depends on the exact route and current host capabilities. Check whether the panel supports the Minecraft
-            version, Forge or NeoForge loader, dependencies, upload rules, memory, and network behavior needed by the
-            project. Test one clean server before inviting players.
-          </p>
-        </details>
+                    It depends on the exact route and current host capabilities. Check whether Aternos offers the project in
+                    its library, then match the Minecraft version, Forge or NeoForge loader, dependencies, client mod list,
+                    memory, and network behavior needed by the project. If the project is missing, use the official suggestion
+                    route. If it appears but crashes, read the server log before replacing the Verity file.
+                  </p>
+                </details>
+                <details>
+                  <summary>Why does Verity Mod crash on Aternos?</summary>
+                  <p>
+                    The common causes are mismatched Minecraft versions, mismatched loader versions, missing dependencies,
+                    different client and server mod versions, config differences, host limits, or a project that does not
+                    support server use. Prove the same file locally first, then compare the first failing Aternos log line
+                    with the official project record and one clean client profile.
+                  </p>
+                </details>
         <details>
           <summary>Can Bedrock or MCPE players join a Java Verity server?</summary>
           <p>
@@ -535,36 +564,36 @@
             ]
           }
         },
-        aternos: {
-          host: {
-            title: "Aternos route: confirm exact Forge support before upload",
-            summary: "Free hosts can work only when they support the selected Minecraft version, loader, dependencies, and network behavior.",
-            link: "/not-working/",
-            steps: [
-              "Prove the selected file locally in a clean client first.",
-              "Create a fresh host profile that matches the loader exactly.",
-              "Read the startup log before replacing the Verity file."
-            ]
-          },
-          download: {
-            title: "Aternos download route: do not use one-click mirrors blindly",
-            summary: "A real server route should still show the Verity project record, file name, version, and host requirements.",
-            link: "/download/",
-            steps: [
-              "Check the Java file record before using any server panel guide.",
-              "Avoid pages that force a launcher, EXE, or password ZIP.",
-              "Keep a copy of the host log for the first failed start."
-            ]
-          },
-          ai: {
-            title: "Aternos AI route: free hosts may block the provider layer",
-            summary: "If the server starts but Verity does not answer, provider access or key handling may be the blocker.",
-            link: "/api-connection-failed/",
-            steps: [
-              "Check whether the host can reach the provider endpoint.",
-              "Never paste private keys in public support screenshots.",
-              "Retest with one short prompt before adding voice."
-            ]
+                aternos: {
+                  host: {
+                    title: "Aternos route: check availability, then crash logs",
+                    summary: "Aternos is a host-support check: the project must be in the library, the loader must match, and the first crash log matters more than a mirrored file.",
+                    link: "/not-working/",
+                    steps: [
+                      "If the project is missing, use the Aternos suggestion route instead of a third-party mirror.",
+                      "If it appears but crashes, compare the first server log line with one local Forge or NeoForge test.",
+                      "Only invite friends after the base host boots with the same client mod set."
+                    ]
+                  },
+                  download: {
+                    title: "Aternos download route: library result before server claims",
+                    summary: "A real Aternos route should show the Verity project record, file name, version, loader, and host status before any download advice.",
+                    link: "/download/",
+                    steps: [
+                      "Check the Java file record before following a server panel guide.",
+                      "Use Aternos suggestion status when the mod is missing from the library.",
+                      "Avoid pages that force a launcher, EXE, password ZIP, or unofficial upload."
+                    ]
+                  },
+                  ai: {
+                    title: "Aternos AI route: free hosts may block the provider layer",
+                    summary: "If the Aternos server starts but Verity does not answer, provider access, key handling, or host network policy may be the blocker.",
+                    link: "/api-connection-failed/",
+                    steps: [
+                      "Check whether the host can reach the provider endpoint after the base mod boots.",
+                      "Never paste private keys in public support screenshots.",
+                      "Retest with one short prompt before adding voice."
+                    ]
           },
           lag: {
             title: "Aternos lag route: test host capacity before changing files",
