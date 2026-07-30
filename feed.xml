@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T19:05:00+08:00</updated>
+  <updated>2026-07-30T19:48:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>AI model and status 429 public source packs published</title>
+    <id>https://veritymodchecker.online/updates/public-ai-model-status-429-source-packs-2026-07-30-1948</id>
+    <link href="https://veritymodchecker.online/ai-model/" rel="alternate" />
+    <link href="https://veritymodchecker.online/status-429/" rel="related" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/3e49041bceac147afbf8b93daf89d26f" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/860e342df2f84581f5f630b9f6c4cab1" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official" rel="related" />
+    <link href="https://console.groq.com/docs/rate-limits" rel="related" />
+    <link href="https://console.groq.com/docs/errors" rel="related" />
+    <link href="https://openrouter.ai/docs/api_reference/errors-and-debugging" rel="related" />
+    <link href="https://docs.ollama.com/quickstart" rel="related" />
+    <published>2026-07-30T19:48:00+08:00</published>
+    <updated>2026-07-30T19:48:00+08:00</updated>
+    <summary>GA4 still shows real Gist referral traffic and Search Console still exposes Verity Mod API/status-code intent in the delayed July 15 through July 28 window, while SERP checks show active player questions around status 429 and AI model choice. Published a new public Gist source pack for Verity Mod AI model comparison across Groq, OpenRouter, Ollama, Qwen, Llama, Gemma, and verity-3b, and refreshed the existing public status 429 Gist with July 30 provider-limit evidence. Added source-pack links back into /ai-model/ and /status-429/ without changing homepage TDK or hosting mirrored files. Current Modrinth API checks show Verity JE project on1Y0osD at 359,778 downloads, current version CXsEzVwJ / verity-6.jar at 15,766 version downloads, and stable version yAt0wv1Z / verity-5.7.3.jar at 275,972 version downloads. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="public-source-pack" />
+    <category term="gist-referral" />
+    <category term="ai-model" />
+    <category term="status-429" />
+  </entry>
   <entry>
     <title>AI model route refreshed for Qwen, Llama, Gemma, and verity-3b comparison intent</title>
     <id>https://veritymodchecker.online/updates/best-ai-model-player-comparison-2026-07-30-1905</id>

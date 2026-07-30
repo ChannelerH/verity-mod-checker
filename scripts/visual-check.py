@@ -172,6 +172,7 @@ with sync_playwright() as playwright:
         assert "Three-prompt comparison" in ai_model_text
         assert "breaks character" in ai_model_text
         assert page.locator('a[href="https://www.reddit.com/r/CurseForge/comments/1uvmyqi/what_do_you_think_is_the_best_ai_model_for_verity/"]').count() >= 1
+        assert page.locator('a[href="https://gist.github.com/ChannelerH/3e49041bceac147afbf8b93daf89d26f"]').count() >= 1
 
         page.goto(f"{BASE_URL}/what-is-verity-mod/", wait_until="domcontentloaded")
         what_is_text = page.locator("main").inner_text()
@@ -429,6 +430,7 @@ with sync_playwright() as playwright:
         assert "official rate-limit evidence" in status_429_text.lower()
         assert "OpenRouter 429 can come from the platform" in status_429_text
         assert "Groq Orpheus voice" in status_429_text
+        assert page.locator('a[href="https://gist.github.com/ChannelerH/860e342df2f84581f5f630b9f6c4cab1"]').count() >= 1
 
         page.goto(BASE_URL, wait_until="domcontentloaded")
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-beta")
