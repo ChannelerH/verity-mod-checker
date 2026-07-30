@@ -5,11 +5,11 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T09:48:29+08:00</updated>
+  <updated>2026-07-30T09:57:20+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>Verity JE Java route refreshed from GSC zero-click signals</title>
-    <id>https://veritymodchecker.online/updates/verity-je-java-gsc-refresh-2026-07-30-0948</id>
+    <id>https://veritymodchecker.online/updates/verity-je-java-gsc-refresh-2026-07-30-0957</id>
     <link href="https://veritymodchecker.online/verity-je/" rel="alternate" />
     <link href="https://veritymodchecker.online/java/" rel="related" />
     <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
@@ -26,9 +26,9 @@
     <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="related" />
     <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="related" />
     <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
-    <published>2026-07-30T09:48:29+08:00</published>
-    <updated>2026-07-30T09:48:29+08:00</updated>
-    <summary>Search Console visible query data showed verity je at 6 impressions and 0 clicks plus verity mod java at 6 impressions and 0 clicks. Refreshed the existing Java and Verity JE routes rather than changing homepage TDK or creating a duplicate Java page. Official source checks now show the Modrinth Verity JE project on1Y0osD at 346,451 downloads, current version CXsEzVwJ / verity-6.jar at 4,936 version downloads, stable Modrinth yAt0wv1Z at 273,714 version downloads, CurseForge Project ID 1591438 at 2,380,765 project downloads, and CurseForge file 8461257 / verity-5.7.3.jar at 674.3K displayed file downloads. Updated /verity-je/, /java/, /verity-6-jar/, /verity-5-7-3-jar/, /download/, /updates/, /verity-mod-downloads/, source-map JSON/CSV, release JSON, safety JSON, README, LLM summaries, visual checks, and this feed entry. GSC and GA4 API reads remain blocked by insufficient Google authentication scopes; no GSC API URL submission or GA4 event change is claimed. No forced external-link posting was done.</summary>
+    <published>2026-07-30T09:57:20+08:00</published>
+    <updated>2026-07-30T09:57:20+08:00</updated>
+    <summary>Search Console visible query data showed verity je at 6 impressions and 0 clicks plus verity mod java at 6 impressions and 0 clicks. Refreshed the existing Java and Verity JE routes rather than changing homepage TDK or creating a duplicate Java page. Official source checks now show the Modrinth Verity JE project on1Y0osD at 347,028 downloads, current version CXsEzVwJ / verity-6.jar at 5,391 version downloads, stable Modrinth yAt0wv1Z at 273,714 version downloads, CurseForge Project ID 1591438 at 2,380,765 project downloads, and CurseForge file 8461257 / verity-5.7.3.jar at 674.3K displayed file downloads. Updated /verity-je/, /java/, /verity-6-jar/, /verity-5-7-3-jar/, /download/, /updates/, /verity-mod-downloads/, source-map JSON/CSV, release JSON, safety JSON, README, LLM summaries, visual checks, and this feed entry. GSC and GA4 API reads remain blocked by insufficient Google authentication scopes; no GSC API URL submission or GA4 event change is claimed. No forced external-link posting was done.</summary>
     <category term="verity-je" />
     <category term="verity-mod-java" />
     <category term="gsc-opportunity" />
