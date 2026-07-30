@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T13:36:44+08:00",
+  "checkedAt": "2026-07-30T13:55:03+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-mod-virus-check/",
   "method": "Point-in-time safety-intent routing from public SERP snippets, official project pages, and machine-readable release snapshots. This file is not an antivirus scan, malware verdict, file reputation verdict, or endorsement of any download host.",
   "summary": {
@@ -61,23 +61,23 @@
       "projectId": "on1Y0osD",
       "currentVersionId": "CXsEzVwJ",
       "currentFile": "verity-6.jar",
-      "projectDownloadsAtCheck": 351162,
-      "currentVersionDownloadsAtCheck": 8765,
+      "projectDownloadsAtCheck": 351991,
+      "currentVersionDownloadsAtCheck": 9419,
       "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2"
     },
     "curseForgeVerityBe": {
       "projectId": 1574632,
       "currentFileId": 8506198,
       "currentFile": "Verity (Stable) (1.1.0)-(26.3).mcaddon",
-      "projectDownloadsAtCheck": 4083390,
-      "fileDownloadsDisplayAtCheck": "230.8K"
+      "projectDownloadsAtCheck": 4086111,
+      "fileDownloadsDisplayAtCheck": "232.5K"
     },
     "curseForgePntmc": {
       "projectId": 1575941,
       "currentFileId": 8517480,
       "currentFile": "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon",
-      "projectDownloadsAtCheck": 7465247,
-      "fileDownloadsDisplayAtCheck": "293.3K"
+      "projectDownloadsAtCheck": 7471823,
+      "fileDownloadsDisplayAtCheck": "300.2K"
     }
   }
 }

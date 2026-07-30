@@ -5,8 +5,33 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T13:36:44+08:00</updated>
+  <updated>2026-07-30T13:55:03+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Java and Bedrock source counters refreshed</title>
+    <id>https://veritymodchecker.online/updates/java-bedrock-source-counters-2026-07-30-1355</id>
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="alternate" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-je/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/644bd4fc7f229b7ff646f399956c29fb" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-07-30T13:55:03+08:00</published>
+    <updated>2026-07-30T13:55:03+08:00</updated>
+    <summary>Search Console still shows the delayed July 15 through July 27 window with 50 clicks, 1,520 impressions, 3.3% CTR, and average position 8.7. GA4 still shows 156 Organic Search sessions and 73 gist.github.com referral sessions in the last 7 days, so the public source-map data asset remains worth keeping current. Fresh first-party source checks changed current counters: Modrinth Verity JE project on1Y0osD now reports 351,991 downloads, version CXsEzVwJ / verity-6.jar reports 9,419 downloads, stable version yAt0wv1Z / verity-5.7.3.jar reports 274,512 downloads, CurseForge Verity JE Project ID 1591438 reports 2,388,191 project downloads, file 8461257 / verity-5.7.3.jar displays 679.9K downloads, Verity BE Project ID 1574632 reports 4,086,111 project downloads, PnTMC Project ID 1575941 reports 7,471,823 project downloads, PnTMC file 8517480 displays 300.2K downloads, and VERITY.exe Project ID 1585389 reports 130,665 downloads. Updated release JSON, modpack JSON, safety JSON, source-map JSON and CSV, download-count math, Java/Bedrock/download pages, LLM summaries, visual assertions, this feed, /updates/, and the public Gist data files. Homepage TDK was not changed, and no fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="source-refresh" />
+    <category term="verity-je" />
+    <category term="bedrock" />
+    <category term="source-map" />
+    <category term="external-data-asset" />
+  </entry>
   <entry>
     <title>Verity Java and modpack source counters refreshed</title>
     <id>https://veritymodchecker.online/updates/java-modpack-source-counters-2026-07-30-1336</id>
