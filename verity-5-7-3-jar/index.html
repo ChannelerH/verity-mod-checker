@@ -44,6 +44,14 @@
           },
           {
             "@type": "Question",
+            "name": "Which source should I open if I only need verity-5.7.3.jar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open CurseForge file record 8461257 for the normal publisher download route. Open Modrinth version yAt0wv1Z when you need the second publisher record, SHA-1, SHA-512, or byte-size identity data. Avoid countdown pages, short-link chains, and mirrors that hide the final project record."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Is Verity 5.7.3 still the stable Java file?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -64,6 +72,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "The checked publisher route is public and free on CurseForge file record 8461257 and Modrinth version yAt0wv1Z. This site does not sell, host, or repackage the jar, and players should avoid paid mirrors or countdown file lockers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does this page not host a direct verity-5.7.3.jar download?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hosting or repackaging the jar would remove the maintainer-controlled source context. This page identifies the exact official records, dependencies, and checksum route, then sends players to CurseForge or Modrinth."
             }
           },
           {
@@ -104,7 +120,30 @@
             "name": "verity-5.7.3.jar Download: Official Java Forge Route",
             "dateModified": "2026-07-30",
             "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
-            "about": ["verity-5.7.3.jar", "Verity Mod Java", "Verity JE", "Forge 1.20.1", "Modrinth checksum"]
+            "about": ["verity-5.7.3.jar", "Verity Mod Java", "Verity JE", "Forge 1.20.1", "Modrinth checksum"],
+            "mainEntity": { "@id": "https://veritymodchecker.online/verity-5-7-3-jar/#software" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://veritymodchecker.online/verity-5-7-3-jar/#software",
+            "name": "Verity JE 5.7.3",
+            "alternateName": "verity-5.7.3.jar",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Minecraft Java Edition 1.20.1 with Forge",
+            "softwareVersion": "5.7.3",
+            "isAccessibleForFree": true,
+            "url": "https://veritymodchecker.online/verity-5-7-3-jar/",
+            "sameAs": [
+              "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257",
+              "https://modrinth.com/mod/verity-je-official/version/5.7.3"
+            ],
+            "identifier": [
+              { "@type": "PropertyValue", "propertyID": "CurseForge Project ID", "value": "1591438" },
+              { "@type": "PropertyValue", "propertyID": "CurseForge File ID", "value": "8461257" },
+              { "@type": "PropertyValue", "propertyID": "Modrinth Project ID", "value": "on1Y0osD" },
+              { "@type": "PropertyValue", "propertyID": "Modrinth Version ID", "value": "yAt0wv1Z" }
+            ],
+            "softwareRequirements": "Minecraft Java Edition 1.20.1, Forge, GeckoLib, YetAnotherConfigLib"
           },
           {
             "@type": "BreadcrumbList",
@@ -187,6 +226,58 @@
             <a class="copy-button" href="https://www.curseforge.com/minecraft/mc-mods/verity-je/relations/dependencies" rel="noopener" target="_blank">Open dependencies</a>
           </div>
         </aside>
+      </section>
+
+      <section class="intent-table" id="source-choice" aria-label="Exact filename search answer">
+        <div class="section-heading">
+          <p class="eyebrow">Exact file search</p>
+          <h2>If you searched verity-5.7.3.jar, choose the source by job</h2>
+          <p>
+            Current search results mix official file pages, tutorial links, and third-party download pages.
+            The fastest safe answer is not a new mirror button; it is the exact source choice. Use
+            CurseForge when you want the normal publisher download page. Use Modrinth when you want the
+            checksum record. Use the checker only when a file is already on your computer or came from an
+            unclear URL.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Search phrase</th>
+                <th>Likely need</th>
+                <th>Best click</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>verity-5.7.3.jar</td>
+                <td>You want the stable Forge 1.20.1 Java file without sorting a long files list.</td>
+                <td><a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open CurseForge file #8461257</a></td>
+              </tr>
+              <tr>
+                <td>verity 5.7.3</td>
+                <td>You need the version record, supported Minecraft version, loader, and hashes.</td>
+                <td><a href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="noopener" target="_blank">Open Modrinth yAt0wv1Z</a></td>
+              </tr>
+              <tr>
+                <td>verity-5.7.3.jar safe</td>
+                <td>You found a copied file name on a mirror, Discord attachment, Drive link, or short-link page.</td>
+                <td><a href="/#checker">Check the local file identity</a></td>
+              </tr>
+              <tr>
+                <td>verity 5.7.3 dependencies</td>
+                <td>The game starts badly, crashes, or does not show the mod because required libraries are missing.</td>
+                <td><a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/relations/dependencies" rel="noopener" target="_blank">Open GeckoLib and YACL dependencies</a></td>
+              </tr>
+              <tr>
+                <td>verity 5.7.3 not working</td>
+                <td>The file may already be correct, but the profile, API key, model, voice, or output layer is failing.</td>
+                <td><a href="/api-connection-failed/">Use the API and voice troubleshooting route</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="status-section" id="official-records">
@@ -461,6 +552,15 @@
           </p>
         </details>
         <details>
+          <summary>Which source should I open if I only need the file?</summary>
+          <p>
+            Use CurseForge file record 8461257 for the normal publisher download route. Use Modrinth
+            version yAt0wv1Z when you need a second publisher record, SHA-1, SHA-512, or exact byte size.
+            Avoid pages that hide the final source behind a countdown, copied CDN link, short link, or
+            password archive.
+          </p>
+        </details>
+        <details>
           <summary>Is Verity 5.7.3 still the stable Java file?</summary>
           <p>
             Yes for the checked CurseForge Forge route. At the July 30, 2026 check, Verity JE 5.7.3 remains the
@@ -501,6 +601,14 @@
             Do not pay a mirror, countdown page, or file locker for <strong>verity-5.7.3.jar</strong>.
             This site does not sell, host, or repackage the jar; it points to the source records and
             shows what to compare before opening them.
+          </p>
+        </details>
+        <details>
+          <summary>Why is there no direct mirrored download button?</summary>
+          <p>
+            A mirror would make this page less useful. The problem searchers need solved is source identity:
+            which project, which record, which loader, which dependencies, and which checksum route. The
+            file should stay on the maintainer-controlled CurseForge or Modrinth page.
           </p>
         </details>
         <details>

@@ -5,8 +5,24 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T11:58:17+08:00</updated>
+  <updated>2026-07-30T12:16:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Exact verity-5.7.3.jar source-choice section added</title>
+    <id>https://veritymodchecker.online/updates/verity-573-source-choice-2026-07-30-1216</id>
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="related" />
+    <link href="https://veritymoddownload.wiki/" rel="related" />
+    <published>2026-07-30T12:16:30+08:00</published>
+    <updated>2026-07-30T12:16:30+08:00</updated>
+    <summary>GSC's visible query table still shows exact Java-file demand with weak CTR: verity-5.7.3.jar has 52 impressions and 0 clicks, and verity 5.7.3 has 20 impressions and 0 clicks in the delayed July 15 through July 27 window. Current SERP sampling shows official CurseForge and Modrinth records plus competitor pages using direct "Download Verity JE 5.7.3" wording. Updated /verity-5-7-3-jar/ without changing homepage TDK or hosting a mirror: added an above-the-fold source-choice table for exact file, version, safety, dependencies, and not-working intent; added SoftwareApplication JSON-LD tied to CurseForge Project ID 1591438, file 8461257, Modrinth on1Y0osD, and version yAt0wv1Z; expanded FAQ for which source to open and why there is no direct mirrored download button. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="verity-5.7.3.jar" />
+    <category term="gsc-zero-click" />
+    <category term="source-choice" />
+    <category term="structured-data" />
+  </entry>
   <entry>
     <title>Voice and microphone route refreshed from player demand</title>
     <id>https://veritymodchecker.online/updates/voice-microphone-player-demand-2026-07-30-1158</id>

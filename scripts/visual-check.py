@@ -194,7 +194,12 @@ with sync_playwright() as playwright:
         page.goto(f"{BASE_URL}/verity-5-7-3-jar/", wait_until="domcontentloaded")
         v573_text = page.locator("main").inner_text()
         assert "verity-5.7.3.jar Download" in v573_text
+        assert "If you searched verity-5.7.3.jar, choose the source by job" in v573_text
         assert "Open official download source" in v573_text
+        assert "Open CurseForge file #8461257" in v573_text
+        assert "Open Modrinth yAt0wv1Z" in v573_text
+        v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
+        assert "SoftwareApplication" in v573_schema_text
         assert "677.2K" in v573_text
         assert "273,976" in v573_text
         assert "GeckoLib" in v573_text

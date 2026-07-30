@@ -1044,15 +1044,27 @@ details p {
   }
 
   .intent-table:not(#route-table) td:nth-child(1)::before {
-    content: "Store listing";
+    content: "Item";
   }
 
   .intent-table:not(#route-table) td:nth-child(2)::before {
-    content: "Publisher and package";
+    content: "Meaning";
   }
 
   .intent-table:not(#route-table) td:nth-child(3)::before {
-    content: "Signals to check";
+    content: "Next step";
+  }
+
+  #source-choice td:nth-child(1)::before {
+    content: "Search phrase";
+  }
+
+  #source-choice td:nth-child(2)::before {
+    content: "Likely need";
+  }
+
+  #source-choice td:nth-child(3)::before {
+    content: "Best click";
   }
 
   #route-table td:nth-child(1)::before {
