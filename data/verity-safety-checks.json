@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T11:39:05+08:00",
+  "checkedAt": "2026-07-30T13:04:07+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-mod-virus-check/",
   "method": "Point-in-time safety-intent routing from public SERP snippets, official project pages, and machine-readable release snapshots. This file is not an antivirus scan, malware verdict, file reputation verdict, or endorsement of any download host.",
   "summary": {
@@ -61,8 +61,8 @@
       "projectId": "on1Y0osD",
       "currentVersionId": "CXsEzVwJ",
       "currentFile": "verity-6.jar",
-      "projectDownloadsAtCheck": 348596,
-      "currentVersionDownloadsAtCheck": 6687,
+      "projectDownloadsAtCheck": 350528,
+      "currentVersionDownloadsAtCheck": 8251,
       "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2"
     },
     "curseForgeVerityBe": {
