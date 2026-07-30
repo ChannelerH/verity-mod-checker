@@ -5,8 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T12:16:30+08:00</updated>
+  <updated>2026-07-30T12:31:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>What-is route refreshed for high-rank zero-click intent</title>
+    <id>https://veritymodchecker.online/updates/what-is-verity-high-rank-ctr-2026-07-30-1231</id>
+    <link href="https://veritymodchecker.online/what-is-verity-mod/" rel="alternate" />
+    <link href="https://veritymodchecker.online/is-verity-real/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-je/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="related" />
+    <published>2026-07-30T12:31:30+08:00</published>
+    <updated>2026-07-30T12:31:30+08:00</updated>
+    <summary>GSC's visible page table shows /what-is-verity-mod/ with 9 impressions, 0 clicks, and average position 1.2 in the delayed July 15 through July 27 window, which is a CTR problem rather than an indexing problem. Current SERP sampling for what-is/real/official intent mixes Fandom lore, YouTube, Reddit, official CurseForge Java and Bedrock pages, Google Play app claims, PCGamesN, and BisectHosting's older explainer. Refreshed /what-is-verity-mod/ without changing homepage TDK: updated the internal page title/description for real-story/download intent, changed freshness to July 30, added a short-answer section separating real, official, and downloadable claims, added official-project and creator-answer FAQ coverage, and strengthened internal routes to /verity-je/, /download/, /is-verity-real/, and /horror-mod/. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="what-is-verity-mod" />
+    <category term="gsc-zero-click" />
+    <category term="ctr-refresh" />
+    <category term="official-claims" />
+  </entry>
   <entry>
     <title>Exact verity-5.7.3.jar source-choice section added</title>
     <id>https://veritymodchecker.online/updates/verity-573-source-choice-2026-07-30-1216</id>

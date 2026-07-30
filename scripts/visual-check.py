@@ -159,6 +159,15 @@ with sync_playwright() as playwright:
         assert "model-context problem" in ai_model_text
         assert "timheinrich2011/verity-3b" in ai_model_text
 
+        page.goto(f"{BASE_URL}/what-is-verity-mod/", wait_until="domcontentloaded")
+        what_is_text = page.locator("main").inner_text()
+        assert "What Is the Verity Mod?" in what_is_text
+        assert "Real, official, and downloadable are three separate questions" in what_is_text
+        assert "explicit permission and agreement from ThatMob" in what_is_text
+        assert "Who made Verity Mod?" in what_is_text
+        assert page.locator('a[href="/verity-je/"]').count() >= 1
+        assert page.locator('a[href="/download/"]').count() >= 1
+
         page.goto(f"{BASE_URL}/verity-souls/", wait_until="domcontentloaded")
         souls_text = page.locator("main").inner_text()
         assert "Verity Souls Mod Status" in souls_text
