@@ -109,6 +109,9 @@ const dataFiles = new Set([
   "/data/verity-source-map.csv",
   "/data/verity-source-map.json",
   "/data/verity-source-map.schema.json",
+  "/data/verity-voice-troubleshooting.json",
+  "/data/verity-voice-troubleshooting.schema.json",
+  "/data/verity-voice-troubleshooting-source-pack.md",
 ]);
 
 function notFound() {

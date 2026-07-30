@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-voice-troubleshooting.schema.json",
+  "title": "Verity Mod voice troubleshooting source data",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "checkedAt",
+    "canonicalUrl",
+    "method",
+    "observedDemand",
+    "currentProjectSignals",
+    "providerAndVoiceSources",
+    "diagnosisLayers",
+    "safeSupportSummaryFields"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "checkedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "canonicalUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "method": {
+      "type": "string"
+    },
+    "observedDemand": {
+      "type": "object"
+    },
+    "currentProjectSignals": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "providerAndVoiceSources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "diagnosisLayers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "safeSupportSummaryFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicGists": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -5,8 +5,27 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T23:05:00+08:00</updated>
+  <updated>2026-07-30T23:25:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>VERITY.exe 2.1.3 and voice source pack refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-exe-voice-source-pack-2026-07-30-2325</id>
+    <link href="https://veritymodchecker.online/voice-not-working/" rel="alternate" />
+    <link href="https://veritymodchecker.online/verity-exe/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-voice-troubleshooting.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8539885" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-addons/smiley-openal" rel="related" />
+    <link href="https://console.groq.com/docs/speech-to-text" rel="related" />
+    <link href="https://console.groq.com/docs/text-to-speech/orpheus" rel="related" />
+    <published>2026-07-30T23:25:00+08:00</published>
+    <updated>2026-07-30T23:25:00+08:00</updated>
+    <summary>GSC remains on the delayed July 15 through July 28 window with 54 clicks, 1,640 impressions, 3.3% CTR, average position 8.7, and exact verity mod at 2 clicks / 3 impressions. GA4 last-7-days still shows 328 active users, 156 Organic Search sessions, 90 Referral sessions, 73 gist.github.com referral sessions, 58 verity_outbound_project_click events, and 29 voice-page views. Current SERP/player checks show voice, microphone, API key, and setup tutorial demand. Official source checks changed the VERITY.exe route again: CurseForge Project ID 1585389 now shows 131,185 project downloads, Forge Port 2.1.3, file 8539885, 90 file downloads, and a July 30 update, while older tutorials may still mention Forge Port 2.1.2 file 8526843. Smiley OpenAL now shows Project ID 1615985, main file smiley-openal-1.2.1.jar, 314 downloads, and Android Java launcher voice routing notes. Published /data/verity-voice-troubleshooting.json, /data/verity-voice-troubleshooting-source-pack.md, refreshed the VERITY.exe data snapshot, source map, visible pages, LLM summaries, and public Gist assets. Homepage TDK was not changed; no fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="voice-not-working" />
+    <category term="verity-exe" />
+    <category term="public-source-pack" />
+    <category term="source-data-refresh" />
+  </entry>
   <entry>
     <title>Verity Mod official source counters refreshed again</title>
     <id>https://veritymodchecker.online/updates/verity-mod-official-source-counters-2026-07-30-2305</id>

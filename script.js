@@ -660,7 +660,23 @@ const knownProjects = [
       {
         status: "current-modpack-route",
         filename: "VERITY.exe.zip",
-        aliases: ["VERITY.exe", "verity-exe", "verity exe", "Forge Port 2.1.2"],
+        aliases: ["VERITY.exe", "verity-exe", "verity exe", "Forge Port 2.1.3", "Forge Port 2.1.2"],
+        versionNumber: "Forge Port 2.1.3",
+        sizeMb: 40.3,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 30, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8539885",
+            link: "https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8539885"
+          }
+        ]
+      },
+      {
+        status: "previous-forge-modpack-route",
+        filename: "VERITY.exe.zip",
+        aliases: ["Forge Port 2.1.2", "VERITY.exe 2.1.2"],
         versionNumber: "Forge Port 2.1.2",
         sizeMb: 40.3,
         version: "Minecraft 1.20.1 · Forge modpack",
@@ -1501,7 +1517,7 @@ function modpackChecks(project) {
 
 function modpackSummary(project, projectId) {
   if (project.name === "VERITY.exe") {
-    return `This URL matches the checked VERITY.exe CurseForge modpack route, Project ID ${projectId}. The July 29 source check maps the current main file to Forge Port 2.1.2 record 8526843, while Groq, API key, and voice issues should be debugged in provider or profile setup rather than by using random replacement files.`;
+    return `This URL matches the checked VERITY.exe CurseForge modpack route, Project ID ${projectId}. The July 30 23:25 source check maps the current main file to Forge Port 2.1.3 record 8539885, while older tutorials may still mention Forge Port 2.1.2 record 8526843; Groq, API key, and voice issues should be debugged in provider or profile setup rather than by using random replacement files.`;
   }
   if (project.name === "VERITY.exe Remastered") {
     return `This URL matches the checked VERITY.exe Remastered Modrinth modpack route, Project ID ${projectId}. The July 30 source check maps it to Modrinth version 4N4vQrK7 and file VERITY.exe Remastered 1.0.0.mrpack, so use it only as a separate MRPACK profile rather than the CurseForge VERITY.exe route, Verity JE, or Bedrock.`;

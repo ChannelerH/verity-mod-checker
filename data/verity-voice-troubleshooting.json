@@ -1,0 +1,133 @@
+{
+  "$schema": "https://veritymodchecker.online/data/verity-voice-troubleshooting.schema.json",
+  "schemaVersion": 1,
+  "checkedAt": "2026-07-30T23:25:00+08:00",
+  "canonicalUrl": "https://veritymodchecker.online/voice-not-working/",
+  "method": "Point-in-time voice troubleshooting source pack built from delayed GSC rows, GA4 page-title and channel cards, current SERP/player questions, official CurseForge project pages, Groq documentation, Simple Voice Chat documentation, and public project metadata. This file does not collect API keys, upload audio, host Verity files, or claim that a voice symptom is a malware verdict.",
+  "observedDemand": {
+    "gscWindow": "2026-07-15 through 2026-07-28 delayed Search Console data",
+    "ga4Window": "Last 7 days checked July 30, 2026 at 23:25 Asia/Shanghai",
+    "ga4Signals": {
+      "voiceNotWorkingPageViews": 29,
+      "apiConnectionFailedPageViews": 158,
+      "organicSearchSessions": 156,
+      "referralSessions": 90,
+      "gistGithubReferralSessions": 73,
+      "verityOutboundProjectClickEvents": 58
+    },
+    "searchAndPlayerSignals": [
+      "A current Reddit thread asks why Verity messages appear in chat but no voice can be heard.",
+      "Current video results include API key, microphone, voice, and setup tutorial wording around Verity Mod.",
+      "The current VERITY.exe source page updated again on July 30 and explicitly separates voice chat, direct chat, TTS, and Groq issues.",
+      "GA4 shows the voice page inside the current top page-title card, so voice fixes have active user demand even before GSC exposes many voice queries."
+    ]
+  },
+  "currentProjectSignals": [
+    {
+      "route": "VERITY.exe CurseForge modpack",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/verity-exe",
+      "owner": "SkyeTheFox",
+      "projectId": 1585389,
+      "projectDownloadsAtCheck": 131185,
+      "currentFile": "VERITY.exe.zip",
+      "currentFileLabel": "Forge Port 2.1.3",
+      "currentFileRecord": 8539885,
+      "currentFileUrl": "https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8539885",
+      "currentFileDownloadsAtCheck": 90,
+      "lastUpdate": "2026-07-30",
+      "voiceEvidence": "The source page says the pack supports voice chat, uses text-to-speech, supports direct chat, and that Groq issues are outside the pack author's control."
+    },
+    {
+      "route": "Verity JE CurseForge standalone Java mod",
+      "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
+      "owner": "VarmiteYT",
+      "projectId": 1591438,
+      "projectDownloadsAtCheck": 2411115,
+      "currentFile": "verity-5.7.3.jar",
+      "currentFileRecord": 8461257,
+      "voiceEvidence": "Use this as the standalone Java mod route; do not assume Simple Voice Chat or a modpack tutorial proves the standalone JAR voice path."
+    },
+    {
+      "route": "Verity BE official Bedrock addon",
+      "sourceUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198",
+      "owner": "Undertaletalelover",
+      "projectId": 1574632,
+      "currentFile": "Verity (Stable) (1.1.0)-(26.3).mcaddon",
+      "currentFileRecord": 8506198,
+      "voiceEvidence": "Local TTS is controlled by /verity:tts on and /verity:tts off; this is not the same as live Java microphone input."
+    },
+    {
+      "route": "Smiley OpenAL Android Java audio bridge",
+      "sourceUrl": "https://www.curseforge.com/minecraft/mc-addons/smiley-openal",
+      "owner": "EzequielDevTeam",
+      "projectId": 1615985,
+      "projectDownloadsAtCheck": 314,
+      "currentFile": "smiley-openal-1.2.1.jar",
+      "lastUpdate": "2026-07-29",
+      "voiceEvidence": "The source page says it routes Verity microphone input and TTS through OpenAL for Android Java launchers and does not contain or redistribute Verity code."
+    }
+  ],
+  "providerAndVoiceSources": [
+    {
+      "source": "Groq Speech to Text",
+      "sourceUrl": "https://console.groq.com/docs/speech-to-text",
+      "useFor": "Separate microphone capture and speech-to-text from ordinary text-chat response failures. Groq documents audio transcription and translation endpoints plus supported Whisper models."
+    },
+    {
+      "source": "Groq Orpheus Text to Speech",
+      "sourceUrl": "https://console.groq.com/docs/text-to-speech/orpheus",
+      "useFor": "Separate TTS output, voice choice, input length, and response format from Verity Java download identity. Groq documents the audio/speech endpoint and Orpheus model IDs."
+    },
+    {
+      "source": "Simple Voice Chat troubleshooting",
+      "sourceUrl": "https://modrepo.de/minecraft/voicechat/wiki/troubleshooting",
+      "useFor": "Separate generic voice-chat connection, microphone, speaker, UDP, proxy, and server-hosting checks from Verity-specific AI/provider behavior."
+    }
+  ],
+  "diagnosisLayers": [
+    {
+      "symptom": "Messages appear but no voice plays",
+      "likelyLayer": "TTS, output device, Minecraft audio, resource pack, or voice dependency",
+      "firstAction": "Keep the current file installed, test one short text prompt, then check Minecraft/device output and route-specific TTS or voice dependencies.",
+      "avoid": "Do not reinstall from mirrors when typed chat already works."
+    },
+    {
+      "symptom": "Microphone works in Simple Voice Chat but Verity does not react",
+      "likelyLayer": "Verity talk control, STT route, provider response, or server-side dependency",
+      "firstAction": "Prove typed Verity chat first, then test one short English voice phrase and server/client dependency parity.",
+      "avoid": "Do not treat a generic voice-chat pass as proof that Verity received speech as a prompt."
+    },
+    {
+      "symptom": "VERITY.exe does not talk or says API key problem",
+      "likelyLayer": "Modpack profile, Groq key, TTS tokens, provider quota, or voice-chat profile setup",
+      "firstAction": "Open the current VERITY.exe project and file record, prove direct chat/text first, then debug Groq and voice chat separately.",
+      "avoid": "Do not use unrelated EXE installers or replacement ZIPs as a voice fix."
+    },
+    {
+      "symptom": "Verity BE dialogue appears but audio is silent",
+      "likelyLayer": "Local TTS command, resource pack activation, device audio, or Bedrock world state",
+      "firstAction": "Run /verity:tts on, activate the resource pack with the behavior pack, then test a clean Bedrock world.",
+      "avoid": "Do not switch to a Java JAR for a Bedrock TTS issue."
+    },
+    {
+      "symptom": "Android Java launcher says no compatible microphone",
+      "likelyLayer": "Android Java audio runtime or OpenAL bridge",
+      "firstAction": "Keep Verity JE installed, verify launcher microphone permission, and inspect the current Smiley OpenAL add-on route separately.",
+      "avoid": "Do not confuse Android Java launchers with MCPE Bedrock imports."
+    }
+  ],
+  "safeSupportSummaryFields": [
+    "edition and project route",
+    "file name and record ID",
+    "whether typed chat works",
+    "whether microphone capture works outside Verity",
+    "whether TTS or sound output works elsewhere",
+    "provider and status code if shown",
+    "sanitized log line with no API key and no private audio"
+  ],
+  "publicGists": [
+    "https://gist.github.com/ChannelerH/165f38d454a0c9f0e5db07f912f70e6d",
+    "https://gist.github.com/ChannelerH/2973744adf4c694e03ba6ae67421564d",
+    "https://gist.github.com/ChannelerH/4e020077e1abd592a87c23b5e40738b1"
+  ]
+}

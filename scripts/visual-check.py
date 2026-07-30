@@ -127,6 +127,7 @@ with sync_playwright() as playwright:
         assert "Similar-name JSON" in source_map_text
         assert "VERITY.exe" in source_map_text
         assert "VERITY.exe Remastered" in source_map_text
+        assert "8539885" in source_map_text
         assert "Verity Dweller" in source_map_text
         assert "Verity Body Overhaul" in source_map_text
         assert "Verity May Be" in source_map_text
@@ -395,9 +396,16 @@ with sync_playwright() as playwright:
         assert "CURRENT PLAYER SIGNALS" in voice_text
         assert "microphone tutorial did not make Verity talk" in voice_text
         assert "VERITY.exe CurseForge page" in voice_text
+        assert "8539885" in voice_text
+        assert "smiley-openal-1.2.1.jar" in voice_text
         assert "Simple Voice Chat hears you but Verity does not react" in voice_text
         assert page.locator('a[href="https://www.reddit.com/r/Minecraft/comments/1utpwov/verity_mod_voice_not_working/"]').count() >= 1
         assert page.locator('a[href="https://www.curseforge.com/minecraft/modpacks/verity-exe"]').count() >= 1
+        assert page.locator('a[href="https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8539885"]').count() >= 1
+        assert page.locator('a[href="https://console.groq.com/docs/speech-to-text"]').count() >= 1
+        assert page.locator('a[href="https://console.groq.com/docs/text-to-speech/orpheus"]').count() >= 1
+        assert page.locator('a[href="/data/verity-voice-troubleshooting.json"]').count() >= 1
+        assert page.locator('a[href="/data/verity-voice-troubleshooting-source-pack.md"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
@@ -514,12 +522,22 @@ with sync_playwright() as playwright:
         assert "VerityPack" in result_text
         assert "1587394" in result_text
 
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8539885")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "VERITY.exe" in result_text
+        assert "1585389" in result_text
+        assert "8539885" in result_text
+        assert "2.1.3" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
+
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8526843")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "VERITY.exe" in result_text
         assert "1585389" in result_text
         assert "8526843" in result_text
+        assert "2.1.2" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
 
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/ultimate-verity/files/8467605")
