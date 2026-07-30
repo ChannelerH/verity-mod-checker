@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T13:04:07+08:00",
+  "checkedAt": "2026-07-30T13:19:04+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-mod-virus-check/",
   "method": "Point-in-time safety-intent routing from public SERP snippets, official project pages, and machine-readable release snapshots. This file is not an antivirus scan, malware verdict, file reputation verdict, or endorsement of any download host.",
   "summary": {

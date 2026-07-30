@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T13:04:07+08:00</updated>
+  <updated>2026-07-30T13:19:04+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Modrinth stable 5.7.3 checksum count refreshed</title>
+    <id>https://veritymodchecker.online/updates/modrinth-stable-573-checksum-2026-07-30-1319</id>
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/644bd4fc7f229b7ff646f399956c29fb" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="related" />
+    <published>2026-07-30T13:19:04+08:00</published>
+    <updated>2026-07-30T13:19:04+08:00</updated>
+    <summary>The official Modrinth API still shows Verity JE project on1Y0osD at 350,528 downloads and current version CXsEzVwJ / verity-6.jar at 8,251 downloads, while the stable checksum route yAt0wv1Z / verity-5.7.3.jar increased to 274,399 downloads. Refreshed release JSON, source-map JSON and CSV, the exact 5.7.3 file page, Java/download route references, LLM summaries, visual assertions, this feed, /updates/, and the public Gist data asset. Search Console remains on the delayed July 15 through July 27 window, GA4 still shows 153 Organic Search sessions and 73 gist.github.com referral sessions in the last 7 days, and no homepage TDK change or forced backlink posting was made.</summary>
+    <category term="modrinth-api" />
+    <category term="verity-5.7.3.jar" />
+    <category term="source-map" />
+    <category term="external-data-asset" />
+  </entry>
   <entry>
     <title>Modrinth Verity JE counters and source-map asset refreshed</title>
     <id>https://veritymodchecker.online/updates/modrinth-java-source-map-2026-07-30-1304</id>

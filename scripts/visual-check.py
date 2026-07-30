@@ -210,7 +210,7 @@ with sync_playwright() as playwright:
         v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
         assert "SoftwareApplication" in v573_schema_text
         assert "677.2K" in v573_text
-        assert "274,279" in v573_text
+        assert "274,399" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
