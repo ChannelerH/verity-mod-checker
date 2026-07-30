@@ -197,16 +197,16 @@ with sync_playwright() as playwright:
         v6_text = page.locator("main").inner_text()
         assert "verity-6.jar File Check" in v6_text
         assert "CXsEzVwJ" in v6_text
-        assert "13,087" in v6_text
+        assert "13,782" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-je/", wait_until="domcontentloaded")
         verity_je_text = page.locator("main").inner_text()
         assert "Verity JE Download" in verity_je_text
-        assert "13,087" in verity_je_text
-        assert "356,475" in verity_je_text
-        assert "2,391,732" in verity_je_text
+        assert "13,782" in verity_je_text
+        assert "357,310" in verity_je_text
+        assert "2,393,891" in verity_je_text
         assert "681.2K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
 
@@ -220,7 +220,7 @@ with sync_playwright() as playwright:
         v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
         assert "SoftwareApplication" in v573_schema_text
         assert "681.2K" in v573_text
-        assert "275,288" in v573_text
+        assert "275,402" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
@@ -254,6 +254,17 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/verity-be/"]').count() >= 1
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
         assert page.locator('a[href="/mcpedl/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/how-to-get-verity-mod/", wait_until="domcontentloaded")
+        how_to_get_text = page.locator("main").inner_text()
+        assert "How to Get Verity Mod in Minecraft" in how_to_get_text
+        assert "How to get Verity Mod depends on your edition" in how_to_get_text
+        assert "Get Verity Mod Java from a Verity JE source record" in how_to_get_text
+        assert "Get Verity Mod Bedrock from an add-on project" in how_to_get_text
+        assert "How to get Verity Mod in Minecraft?" in how_to_get_text
+        assert page.locator('a[href="/download/"]').count() >= 1
+        assert page.locator('a[href="/java/"]').count() >= 1
+        assert page.locator('a[href="/bedrock/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/mcpedl/", wait_until="domcontentloaded")
         mcpedl_text = page.locator("main").inner_text()
@@ -310,8 +321,8 @@ with sync_playwright() as playwright:
         assert "old JAR" in java_help_text
         assert "CXsEzVwJ" in java_help_text
         assert "8461257" in java_help_text
-        assert "356,475" in java_help_text
-        assert "2,391,732" in java_help_text
+        assert "357,310" in java_help_text
+        assert "2,393,891" in java_help_text
         assert page.locator('a[href="/verity-je/"]').count() >= 1
         assert page.locator('a[href="/api-connection-failed/"]').count() >= 1
         assert page.locator('a[href="/not-working/"]').count() >= 1
