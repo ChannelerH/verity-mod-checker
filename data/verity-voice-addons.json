@@ -1,30 +1,31 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-voice-addons.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T23:55:00+08:00",
+  "checkedAt": "2026-07-31T02:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/smileys-better-voice/",
   "method": "Point-in-time route snapshot built from current GSC and GA4 voice/search signals, current SERP checks for Verity voice questions, the official Smiley's Better Voice CurseForge project page, the exact CurseForge file record, the Verity JE parent project page, the VERITY.exe voice notes page, and a public Reddit player question about chat working while voice is silent. This file never hosts JARs, records API keys, uploads audio, or treats a voice add-on as an official Verity JE replacement.",
   "observedDemand": {
     "gscWindow": "2026-07-15 through 2026-07-28 delayed Search Console data",
     "gscSignals": {
       "totalClicks": 54,
-      "totalImpressions": 1640,
+      "totalImpressions": 1644,
       "averageCtr": "3.3%",
       "averagePosition": 8.7,
       "headQueryVerityMod": "2 clicks / 3 impressions"
     },
-    "ga4Window": "Last 7 days checked July 30, 2026 at 23:55 Asia/Shanghai",
+    "ga4Window": "Last 7 days checked July 31, 2026 at 02:45 Asia/Shanghai",
     "ga4Signals": {
-      "activeUsers": 328,
-      "organicSearchSessions": 156,
-      "referralSessions": 90,
-      "gistGithubReferralSessions": 73,
-      "voiceNotWorkingPageViews": 29,
-      "verityOutboundProjectClickEvents": 58
+      "activeUsers": 315,
+      "organicSearchSessions": 142,
+      "referralSessions": 86,
+      "gistGithubReferralSessions": 70,
+      "voiceNotWorkingPageViews": 30,
+      "verityOutboundProjectClickEvents": 60
     },
     "searchAndPlayerSignals": [
       "A recent Reddit player report asks why Verity messages appear in chat but no voice can be heard.",
-      "Current search results surface Smiley's Better Voice as a Verity JE add-on for voice, TTS, and voice mimicking.",
+      "Current search results surface Smiley's Better Voice as a Verity JE add-on for voice, TTS, voice mimicking, Fish Audio, and Cartesia setup.",
+      "The current Smiley's Better Voice 4.0.0 file changelog says it adds support for Verity JE 6.0.0 and is incompatible with earlier Verity JE versions.",
       "The existing voice troubleshooting route already receives user attention in GA4, so a dedicated add-on route can satisfy deeper voice and TTS intent without changing homepage TDK."
     ]
   },
@@ -36,23 +37,24 @@
       "projectId": 1608717,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice",
       "status": "current-verity-je-voice-addon-route",
-      "displayedDownloadsAtCheck": 100498,
+      "displayedDownloadsAtCheck": 101091,
       "displayedDownloadsApproximate": false,
       "packageType": "jar-addon",
-      "minecraftVersion": "1.20.1 primary Forge route; older 1.21.1 NeoForge row also visible",
+      "minecraftVersion": "1.20.1 current Forge file; file changelog says support for Verity JE 6.0.0 and incompatible with earlier Verity JE versions; older 1.21.1 NeoForge row also visible",
       "loader": "Forge / NeoForge",
       "mainFile": "Smiley's Better Voice-4.0.0.jar",
       "mainFileRecord": 8536538,
       "mainFileUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538",
-      "mainFileDownloadsAtCheck": 2400,
-      "mainFileSizeMb": 1.4,
+      "mainFileDownloadsAtCheck": 2800,
+      "mainFileSizeMb": 1.41,
       "mavenSnippet": "implementation fg.deobf(\"curse.maven:smileys-better-voice-1608717:8536538\")",
       "lastUpdate": "2026-07-29",
-      "sourceNote": "Official CurseForge project route for Smiley's Better Voice by Toast5. The page describes it as an add-on to VarmiteYT's Verity JE for more expressive TTS voices and voice mimicking, not as a replacement for Verity JE, not as a Bedrock MCADDON, not as VERITY.exe, and not as a file mirror.",
+      "sourceNote": "Official CurseForge project route for Smiley's Better Voice by Toast5. The page describes it as an add-on to VarmiteYT's Verity JE for more expressive TTS voices and voice mimicking, not as a replacement for Verity JE, not as a Bedrock MCADDON, not as VERITY.exe, and not as a file mirror. The current 4.0.0 file changelog says it adds support for Verity JE 6.0.0 and is incompatible with earlier Verity JE versions.",
       "requirements": [
         "Minecraft 1.20.1 for the current 4.0.0 Forge file",
         "Forge 47+ for the current 1.20.1 file",
-        "Verity JE 5.0+ according to the project requirement table",
+        "Verity JE 6.0.0 for the current 4.0.0 file according to the file changelog; do not use 4.0.0 with earlier Verity JE versions",
+        "Older project-page requirement wording may still mention Verity JE 5.0+, so use the exact file page for the current file before installing",
         "Cloth Config and GeckoLib",
         "Both Verity JE and Smiley's Better Voice installed together"
       ],
@@ -68,6 +70,7 @@
       ],
       "troubleshooting": [
         "Invalid API Key while talking to Verity may be a Groq or Ollama key problem in Verity JE rather than a Fish or Cartesia key problem.",
+        "If Better Voice 4.0.0 is installed with Verity JE 5.x or an earlier parent mod, match Verity JE 6.0.0 or use an older Better Voice file that matches the parent route.",
         "Silent Verity should be checked by enabling Better Voice, enabling Verity JE text-to-speech, confirming provider key plus voice ID, and testing online.",
         "Voice mimic failure usually needs a valid Fish key, enough credits, and roughly 10 seconds of clean push-to-talk speech.",
         "Throw scream repeating after landing was documented as fixed in 3.0.0, so old behavior should be checked against the current file."
@@ -80,7 +83,7 @@
       "host": "CurseForge",
       "owner": "Toast5",
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-vision",
-      "displayedDownloadsAtCheck": 61600,
+      "displayedDownloadsAtCheck": 61926,
       "sourceNote": "Related Verity JE add-on that lets Verity see the Minecraft world; useful as context but not a voice/TTS fix."
     },
     {
@@ -88,7 +91,7 @@
       "host": "CurseForge",
       "owner": "Toast5",
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-brain",
-      "displayedDownloadsAtCheck": 59700,
+      "displayedDownloadsAtCheck": 59900,
       "sourceNote": "Related Verity JE add-on for smarter behavior; useful as context but not the Better Voice file route."
     },
     {
@@ -96,7 +99,7 @@
       "host": "CurseForge",
       "owner": "Toast5",
       "projectUrl": "https://www.curseforge.com/minecraft/modpacks/smileys-collection",
-      "displayedDownloadsAtCheck": 9500,
+      "displayedDownloadsAtCheck": 9600,
       "sourceNote": "Related modpack that combines speak, see, and think add-ons for Verity JE; treat it as a separate modpack profile."
     }
   ],

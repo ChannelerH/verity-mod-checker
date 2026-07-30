@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-source-map.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T23:55:00+08:00",
+  "generatedAt": "2026-07-31T02:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/source-map/",
   "method": "Derived from the site's checked release and modpack snapshots, which are maintained from public first-party project pages, official APIs where available, and exact file records. The source map normalizes route IDs for citation and comparison; it does not mirror files.",
   "sourceSnapshots": [
@@ -13,7 +13,7 @@
   "downloadCounterSummary": {
     "curseforgeTrackedProjectDownloads": 14112806,
     "curseforgePlusModrinthProjectDownloads": 14479965,
-    "trackedVoiceAddonProjectDownloads": 100498,
+    "trackedVoiceAddonProjectDownloads": 101091,
     "note": "These are platform display counters across separate public project pages. They are not unique players, unique installs, or safety verdicts."
   },
   "records": [
@@ -784,19 +784,19 @@
       "owner": "Toast5",
       "projectId": 1608717,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice",
-      "projectDownloadsAtCheck": 100498,
+      "projectDownloadsAtCheck": 101091,
       "packageType": "jar-addon",
       "fileName": "Smiley's Better Voice-4.0.0.jar",
       "recordId": 8536538,
       "recordUrl": "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538",
-      "minecraftVersion": "1.20.1 primary Forge route; older 1.21.1 NeoForge row also visible",
+      "minecraftVersion": "1.20.1 current Forge file; file changelog says support for Verity JE 6.0.0 and incompatible with earlier Verity JE versions; older 1.21.1 NeoForge row also visible",
       "loader": "Forge / NeoForge",
       "publishedDate": "2026-07-29",
-      "fileSizeMb": 1.4,
-      "fileDownloadsAtCheck": 2400,
+      "fileSizeMb": 1.41,
+      "fileDownloadsAtCheck": 2800,
       "status": "current-verity-je-voice-addon-route",
       "recommendedUse": "Use when the player intentionally wants the Verity JE voice add-on route for Fish Audio, Cartesia, TTS, or voice mimicking.",
-      "caution": "Official CurseForge project route for Smiley's Better Voice by Toast5. The page describes it as an add-on to VarmiteYT's Verity JE for more expressive TTS voices and voice mimicking, not as a replacement for Verity JE, not as a Bedrock MCADDON, not as VERITY.exe, and not as a file mirror.",
+      "caution": "Official CurseForge project route for Smiley's Better Voice by Toast5. The page describes it as an add-on to VarmiteYT's Verity JE for more expressive TTS voices and voice mimicking, not as a replacement for Verity JE, not as a Bedrock MCADDON, not as VERITY.exe, and not as a file mirror. The current 4.0.0 file changelog says it adds support for Verity JE 6.0.0 and is incompatible with earlier Verity JE versions.",
       "localGuideUrl": "https://veritymodchecker.online/smileys-better-voice/"
     }
   ]

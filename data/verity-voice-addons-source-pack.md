@@ -1,6 +1,6 @@
 # Smiley's Better Voice source pack for Verity JE voice add-on checks
 
-Checked: 2026-07-30 23:55 Asia/Shanghai
+Checked: 2026-07-31 02:45 Asia/Shanghai
 
 Canonical route: https://veritymodchecker.online/smileys-better-voice/
 
@@ -13,7 +13,9 @@ Machine data:
 
 ## Why this source pack exists
 
-Current Verity search demand is no longer only "download the mod." Search Console is beginning to show the exact head query `verity mod`, while GA4 shows active traffic on API and voice troubleshooting pages. A current public player question also describes the common symptom: Verity messages appear in chat, but no voice can be heard. At the same time, current search results surface Smiley's Better Voice as a dedicated Verity JE add-on for expressive TTS and voice mimicking.
+Current Verity search demand is no longer only "download the mod." Search Console is beginning to show the exact head query `verity mod`, while GA4 shows active traffic on API and voice troubleshooting pages. A current public player question also describes the common symptom: Verity messages appear in chat, but no voice can be heard. At the same time, current search results surface Smiley's Better Voice as a dedicated Verity JE add-on for expressive TTS, Fish Audio, Cartesia, and voice mimicking.
+
+The July 31 source check adds an important compatibility note: the current Smiley's Better Voice 4.0.0 file changelog says it adds support for Verity JE 6.0.0 and is incompatible with earlier Verity JE versions. That means a silent or broken Better Voice install may be a parent/add-on version mismatch before it is a microphone, TTS provider, or API-key problem.
 
 This source pack gives editors, creators, server helpers, and community answer writers a citation-safe summary they can reference without reposting JAR files, collecting API keys, or guessing whether a voice issue belongs to Java, Bedrock, VERITY.exe, Fish Audio, Cartesia, Groq, or local Minecraft audio.
 
@@ -25,12 +27,12 @@ Project: Smiley's Better Voice
 - Owner: Toast5
 - Project ID: 1608717
 - Project URL: https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice
-- Project downloads at check: 100,498
+- Project downloads at check: 101,091
 - Main current file: `Smiley's Better Voice-4.0.0.jar`
 - File record: 8536538
 - File URL: https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538
-- File downloads at check: 2.4K displayed
-- File size: 1.4 MB
+- File downloads at check: 2.8K displayed
+- File size: 1.41 MB
 - Loader: Forge for the current 1.20.1 file
 - Project page also shows game versions 1.21.1 and 1.20.1 and loaders Forge and NeoForge
 - Maven snippet: `implementation fg.deobf("curse.maven:smileys-better-voice-1608717:8536538")`
@@ -39,13 +41,14 @@ Project: Smiley's Better Voice
 
 Smiley's Better Voice is a Verity JE add-on. It is not a replacement for Verity JE, not a Bedrock MCADDON, not a VERITY.exe modpack, not a generic "voice fix" mirror, and not a place to paste private API keys.
 
-The project page describes it as an add-on to VarmiteYT's Verity JE that changes how Verity sounds. It adds provider-specific TTS options and voice mimicking while Verity JE remains the parent mod.
+The project page describes it as an add-on to VarmiteYT's Verity JE that changes how Verity sounds. It adds provider-specific TTS options and voice mimicking while Verity JE remains the parent mod. The current file page changelog is more specific than the broad project-page requirement wording: for `Smiley's Better Voice-4.0.0.jar`, match Verity JE 6.0.0 and do not use that file with earlier Verity JE versions.
 
 ## Requirements from the checked project page
 
 - Minecraft 1.20.1 for the current 4.0.0 Forge file.
 - Forge 47+.
-- Verity JE 5.0+.
+- Verity JE 6.0.0 for the current 4.0.0 file, because the file changelog says 4.0.0 is incompatible with earlier Verity JE versions.
+- Older project-page requirement wording may still mention Verity JE 5.0+, so use the exact file page for the current file before installing.
 - Cloth Config and GeckoLib.
 - Both Verity JE and Smiley's Better Voice installed together.
 
@@ -82,6 +85,7 @@ Safe support fields:
 ## Troubleshooting summary
 
 - Silent Verity: confirm Better Voice is enabled, Verity JE text-to-speech is on, the provider tab has a valid key plus voice ID, and the player is online.
+- Better Voice 4.0.0 with Verity JE 5.x or earlier: match the parent mod to Verity JE 6.0.0 or choose an older Better Voice file that matches the parent route.
 - Invalid API Key: check whether the error belongs to Groq/Ollama in Verity JE instead of Fish or Cartesia.
 - Voice mimic failed: verify Fish key, credits, and about 10 seconds of clean push-to-talk speech.
 - Repeating throw scream: compare against current Better Voice and Verity JE versions because the project notes this was fixed in 3.0.0.
