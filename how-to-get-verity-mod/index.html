@@ -39,8 +39,8 @@
             "totalTime": "PT20M",
             "step": [
               {"@type": "HowToStep", "name": "Identify your Minecraft edition", "text": "Confirm whether you use Minecraft Java Edition or Bedrock/MCPE before downloading."},
-              {"@type": "HowToStep", "name": "Open the matching project page", "text": "Use Verity JE for the checked Java route or a checked Bedrock add-on project for Bedrock and MCPE."},
-              {"@type": "HowToStep", "name": "Match version and loader", "text": "For Java, match Minecraft and Forge or NeoForge. For Bedrock, match the supported game build and add-on package."},
+              {"@type": "HowToStep", "name": "Open the matching project page", "text": "Use Modrinth Verity JE 6, the CurseForge Verity JE 5.7.3 stable record, or a checked Bedrock add-on project; keep the source platform visible before downloading."},
+              {"@type": "HowToStep", "name": "Match version and loader", "text": "For Java, match Minecraft 1.20.1 and Forge unless the selected file record says otherwise. For Bedrock, match the supported game build and add-on package."},
               {"@type": "HowToStep", "name": "Install in a clean test environment", "text": "Use a fresh Java profile or Bedrock world before adding unrelated mods or opening an important save."},
               {"@type": "HowToStep", "name": "Configure optional features last", "text": "Add Groq, Ollama, voice, commands, cheats, or experimental settings only after the base project loads."}
             ]
@@ -61,12 +61,17 @@
               {
                 "@type": "Question",
                 "name": "How do I install Verity Mod on Java?",
-                "acceptedAnswer": {"@type": "Answer", "text": "Create a Minecraft Java profile with the exact supported Forge or NeoForge loader, run it once, place the matching JAR in that profile's mods folder, and test the base mod before configuring AI or voice."}
+                "acceptedAnswer": {"@type": "Answer", "text": "Create a Minecraft Java profile with the exact supported Forge loader, run it once, place either the Modrinth Verity JE 6 JAR or the source-specific CurseForge 5.7.3 JAR in that profile's mods folder, and test the base mod before configuring AI or voice."}
               },
               {
                 "@type": "Question",
                 "name": "How do I install Verity Mod on Bedrock or MCPE?",
                 "acceptedAnswer": {"@type": "Answer", "text": "Download a Bedrock MCADDON or MCPACK from the selected project, import it into Minecraft, activate its behavior and resource packs, enable required world options, and test in a fresh world."}
+              },
+              {
+                "@type": "Question",
+                "name": "Should I use Verity JE 6 or verity-5.7.3.jar?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Use Verity JE 6 when the source is Modrinth version CXsEzVwJ and the file is verity-6.jar. Use verity-5.7.3.jar when the source is CurseForge record 8461257 or the Modrinth stable checksum route yAt0wv1Z. Both are Java Forge 1.20.1 routes, but they are different source records."}
               }
             ]
           }
@@ -118,23 +123,97 @@
             <span class="status-dot" aria-hidden="true"></span>
             <span>Fast route</span>
           </div>
-          <h2>Java players download Verity JE; Bedrock players need a separate add-on</h2>
+          <h2>Java players choose a Verity JE source; Bedrock players need a separate add-on</h2>
           <p>
-            Do not download until you can name the edition, Minecraft version, and loader or add-on project. That one
-            minute of checking prevents most wrong-file, crash, failed-import, and missing-feature problems.
+            Do not download until you can name the edition, Minecraft version, loader or add-on project, and exact
+            source record. That one minute of checking prevents most wrong-file, crash, failed-import, and
+            missing-feature problems.
           </p>
           <ol class="steps">
-            <li>Java 1.20.1: check the current Verity JE Forge branch.</li>
+            <li>Java 1.20.1: Modrinth currently exposes Verity JE 6 as <code>verity-6.jar</code>.</li>
+            <li>Java 1.20.1 stable guides: CurseForge still exposes <code>verity-5.7.3.jar</code>.</li>
             <li>Java 1.21.1: read the NeoForge deprecation warning first.</li>
             <li>Bedrock or MCPE: choose one Bedrock add-on project.</li>
             <li>Use a clean profile or fresh world for the first launch.</li>
           </ol>
           <div class="action-row">
-            <a class="primary-link" href="/download/">Open download map</a>
-            <a class="copy-button" href="/play/">Open play route</a>
-            <a class="copy-button" href="/tlauncher/">TLauncher route</a>
+            <a class="primary-link" href="/verity-6-jar/">Check Verity JE 6</a>
+            <a class="copy-button" href="/verity-5-7-3-jar/">Compare 5.7.3</a>
+            <a class="copy-button" href="/bedrock/">Bedrock route</a>
           </div>
         </aside>
+      </section>
+
+      <section class="status-section">
+        <div class="section-heading">
+          <p class="eyebrow">Current source snapshot</p>
+          <h2>Open the actual Verity Mod route before installing</h2>
+          <p>
+            Checked July 30, 2026 at 10:39 +08:00 against Modrinth's public API and the current public project pages.
+            Search results, YouTube guides, and repost pages may still say only "download Verity Mod"; use the source
+            record below to decide which file belongs to your launcher or world.
+          </p>
+        </div>
+        <div class="status-grid">
+          <article class="status-card primary">
+            <div class="status-topline">
+              <span>Newest visible Java release</span>
+              <strong>CXsEzVwJ</strong>
+            </div>
+            <h3>Modrinth Verity JE 6</h3>
+            <p>
+              Use this route when your source names Modrinth, Verity JE 6, or <code>verity-6.jar</code>. The official
+              Modrinth project <code>on1Y0osD</code> reports 347,554 project downloads and 5,824 downloads for
+              version <code>CXsEzVwJ</code>. It is a Forge 1.20.1 Java JAR, not Bedrock, MCPE, APK, or EXE.
+            </p>
+            <dl class="route-facts">
+              <div><dt>File</dt><dd><code>verity-6.jar</code></dd></div>
+              <div><dt>Loader</dt><dd>Forge 1.20.1</dd></div>
+              <div><dt>Size</dt><dd>254,898,104 bytes</dd></div>
+              <div><dt>Local guide</dt><dd><a href="/verity-6-jar/">Verify verity-6.jar</a></dd></div>
+            </dl>
+            <a href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="noopener" target="_blank">Open Modrinth version 6</a>
+          </article>
+
+          <article class="status-card primary">
+            <div class="status-topline">
+              <span>Visible stable Java record</span>
+              <strong>8461257</strong>
+            </div>
+            <h3>CurseForge Verity JE 5.7.3</h3>
+            <p>
+              Use this route when a guide, launcher profile, or Maven snippet points to CurseForge Project ID 1591438
+              or file record 8461257. CurseForge still shows <code>verity-5.7.3.jar</code> as the visible Forge
+              1.20.1 main file with 674.3K displayed file downloads and 2,380,765 project downloads.
+            </p>
+            <dl class="route-facts">
+              <div><dt>File</dt><dd><code>verity-5.7.3.jar</code></dd></div>
+              <div><dt>Loader</dt><dd>Forge 1.20.1</dd></div>
+              <div><dt>Modrinth checksum</dt><dd><code>yAt0wv1Z</code> / 273,819 downloads</dd></div>
+              <div><dt>Local guide</dt><dd><a href="/verity-5-7-3-jar/">Verify 5.7.3</a></dd></div>
+            </dl>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="noopener" target="_blank">Open CurseForge record</a>
+          </article>
+
+          <article class="status-card">
+            <div class="status-topline">
+              <span>Bedrock and MCPE</span>
+              <strong>MCADDON</strong>
+            </div>
+            <h3>Do not use a Java JAR for Bedrock</h3>
+            <p>
+              Bedrock players should choose a Bedrock add-on project such as Verity BE or PnTMC's Verity - Bedrock
+              Edition, then match the supported build and package file. MCPEDL currently lists PnTMC 3.2.0 rows for
+              V26.30, V26.20, and V26.10; those are not substitutes for the Java Verity JE JAR.
+            </p>
+            <dl class="route-facts">
+              <div><dt>Package</dt><dd>MCADDON or MCPACK</dd></div>
+              <div><dt>World setup</dt><dd>Activate behavior and resource packs</dd></div>
+              <div><dt>Local guide</dt><dd><a href="/mcpedl/">Check MCPEDL route</a></dd></div>
+            </dl>
+            <a href="/bedrock/">Open Bedrock comparison</a>
+          </article>
+        </div>
       </section>
 
       <section class="intent-table" aria-label="Edition selector">
@@ -149,7 +228,7 @@
               <tr>
                 <td>Minecraft Java 1.20.1</td>
                 <td>Forge JAR</td>
-                <td><a href="/verity-je/">Verity JE on CurseForge or Modrinth</a></td>
+                <td><a href="/verity-6-jar/">Modrinth Verity JE 6</a> or <a href="/verity-5-7-3-jar/">CurseForge 5.7.3</a></td>
                 <td>MCADDON, <a href="/apk/">APK</a>, or unrelated EXE</td>
               </tr>
               <tr>
@@ -197,10 +276,15 @@
             <h3>1. Match Minecraft and the loader before getting the JAR</h3>
             <p>
               The checked Java project is Verity JE: CurseForge Project ID 1591438 and Modrinth Project ID on1Y0osD.
-              Checked July 29, 2026, both current records list version 5.7.3 for Minecraft 1.20.1 Forge, while CurseForge
-              also includes an older NeoForge branch for Minecraft 1.21.1.
-              The project page describes the NeoForge 1.21.1 branch as deprecated and buggy, so a larger game-version
-              number is not automatically the better choice. Read the current files page and changelog before selecting.
+              Checked July 30, 2026, Modrinth exposes Verity JE 6 as version CXsEzVwJ with file
+              <code>verity-6.jar</code>, while CurseForge still exposes Verity JE 5.7.3 as file record 8461257 with
+              <code>verity-5.7.3.jar</code>. Both checked Java routes are for Minecraft 1.20.1 Forge, so the right
+              answer depends on which source page your guide or launcher profile names.
+            </p>
+            <p>
+              CurseForge also includes an older NeoForge branch for Minecraft 1.21.1. The project page describes the
+              NeoForge 1.21.1 branch as deprecated and buggy, so a larger game-version number is not automatically the
+              better choice. Read the exact files page and changelog before selecting.
             </p>
             <p>
               Create a separate launcher profile for the exact Minecraft version. Install the corresponding Forge or
@@ -212,15 +296,18 @@
           <article class="guide-block">
             <h3>2. Add only the base project and required dependencies</h3>
             <p>
-              Download the matching JAR from the Verity JE project files record. Put the JAR in the mods folder used by
-              the same profile; do not extract it. Add only dependencies explicitly named for that release. Launch a test
-              world without unrelated content mods, shaders, optimization stacks, or old configuration copied from a
-              different Minecraft version.
+              Download the matching JAR from the Verity JE project files record: Modrinth version CXsEzVwJ for
+              <code>verity-6.jar</code>, CurseForge file 8461257 for <code>verity-5.7.3.jar</code>, or the matching
+              Modrinth stable checksum record yAt0wv1Z when you need a publisher hash for 5.7.3. Put the JAR in the
+              mods folder used by the same profile; do not extract it. Add only dependencies explicitly named for that
+              release. Launch a test world without unrelated content mods, shaders, optimization stacks, or old
+              configuration copied from a different Minecraft version.
             </p>
             <ul class="check-list">
               <li>The profile says Minecraft 1.20.1 or the exact supported release.</li>
               <li>The loader label matches Forge or NeoForge on the file record.</li>
               <li>The JAR came from Project ID 1591438 or on1Y0osD, not a filename-only mirror.</li>
+              <li>The source record matches the filename: CXsEzVwJ for Verity JE 6 or 8461257/yAt0wv1Z for 5.7.3.</li>
               <li>Required dependencies use the same Minecraft and loader versions.</li>
               <li>The first test uses a new world or a world you can discard.</li>
             </ul>
@@ -363,9 +450,10 @@
               Mixing those steps is the most common reason players think the download is broken.
             </p>
             <p>
-              For the current Java path, a reliable tutorial should still resolve to Verity JE, CurseForge
-              Project ID 1591438 or Modrinth Project ID on1Y0osD, and the stable 5.7.3 Forge 1.20.1 file
-              unless the tutorial is explicitly explaining an old or unlisted beta link. For Bedrock and
+              For the current Java path, a reliable tutorial should resolve to Verity JE, CurseForge
+              Project ID 1591438 or Modrinth Project ID on1Y0osD. It should then say whether it means
+              Modrinth Verity JE 6 / <code>verity-6.jar</code> or the source-specific 5.7.3 Forge 1.20.1 file.
+              For Bedrock and
               MCPE, a reliable tutorial should name the exact add-on owner, file record, and supported build
               before asking you to enable experiments, cheats, scripts, or debugger connect commands.
             </p>
@@ -422,6 +510,15 @@
             JAR for their Minecraft and loader version, and test it in a clean profile. Bedrock and MCPE users should
             download an MCADDON or MCPACK from the selected Bedrock project, import it into Minecraft, activate both
             packs, and test in a fresh world before adding other content.
+          </p>
+        </details>
+        <details>
+          <summary>Should I use Verity JE 6 or verity-5.7.3.jar?</summary>
+          <p>
+            Use Verity JE 6 when your route is Modrinth version CXsEzVwJ and the file is
+            <code>verity-6.jar</code>. Use <code>verity-5.7.3.jar</code> when your route is CurseForge record
+            8461257 or the Modrinth stable checksum record yAt0wv1Z. Do not mix the labels: a newer Modrinth
+            release does not automatically change the CurseForge file record named by an older guide.
           </p>
         </details>
         <details>

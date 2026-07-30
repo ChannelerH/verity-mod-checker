@@ -5,8 +5,35 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T10:09:30+08:00</updated>
+  <updated>2026-07-30T10:39:55+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>How-to install route refreshed with current Verity JE source split</title>
+    <id>https://veritymodchecker.online/updates/how-to-install-source-split-2026-07-30-1039</id>
+    <link href="https://veritymodchecker.online/how-to-get-verity-mod/" rel="alternate" />
+    <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-je/" rel="related" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/updates/" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-safety-checks.json" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
+    <link href="https://mcpedl.com/verity-bedrock-edition/" rel="related" />
+    <published>2026-07-30T10:39:55+08:00</published>
+    <updated>2026-07-30T10:39:55+08:00</updated>
+    <summary>Search Console visible page data showed /how-to-get-verity-mod/ with impressions but no clicks, while current SERP checks still show download and install intent mixing official CurseForge, Modrinth, MCPEDL, YouTube, and app-style results. Refreshed the install page so the first screen and Java install section now separate Modrinth Verity JE 6 / CXsEzVwJ / verity-6.jar from the CurseForge 5.7.3 file record 8461257 and Bedrock MCADDON routes. Official Modrinth API checks now show project on1Y0osD at 347,554 downloads, current version CXsEzVwJ at 5,824 version downloads, and stable yAt0wv1Z at 273,819 version downloads. Updated /how-to-get-verity-mod/, /updates/, release JSON, safety JSON, source-map JSON and CSV, source-map HTML, README, LLM summaries, visual checks, and this feed entry. Homepage TDK was not changed. GA4 UI access remains unavailable in the current Google account context, and no forced external-link posting is claimed.</summary>
+    <category term="how-to-get-verity-mod" />
+    <category term="verity-je" />
+    <category term="install-intent" />
+    <category term="gsc-opportunity" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>PnTMC and MCPEDL Bedrock route refreshed from GSC and source checks</title>
     <id>https://veritymodchecker.online/updates/pntmc-mcpedl-gsc-refresh-2026-07-30-1009</id>
