@@ -181,6 +181,16 @@ with sync_playwright() as playwright:
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/verity-5-7-3-jar/", wait_until="domcontentloaded")
+        v573_text = page.locator("main").inner_text()
+        assert "verity-5.7.3.jar Download" in v573_text
+        assert "Open official download source" in v573_text
+        assert "670.5K" in v573_text
+        assert "273,629" in v573_text
+        assert "GeckoLib" in v573_text
+        assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
+        assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
+
         page.goto(f"{BASE_URL}/verity-mod-vercel-app/", wait_until="domcontentloaded")
         vercel_text = page.locator("main").inner_text()
         assert "Is verity-mod.vercel.app Safe?" in vercel_text

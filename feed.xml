@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T09:00:14+08:00</updated>
+  <updated>2026-07-30T09:17:10+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>verity-5.7.3.jar route refreshed from GSC and source counters</title>
+    <id>https://veritymodchecker.online/updates/verity-573-gsc-refresh-2026-07-30-0917</id>
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://veritymodchecker.online/verity-je/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="related" />
+    <published>2026-07-30T09:17:10+08:00</published>
+    <updated>2026-07-30T09:17:10+08:00</updated>
+    <summary>Search Console visible query data showed exact Java-file demand still earning impressions, led by verity-5.7.3.jar at 52 impressions and 0 clicks plus verity 5.7.3 at 20 impressions and 0 clicks. Refreshed the focused /verity-5-7-3-jar/ page with current first-party counters and clearer source-click wording: CurseForge file 8461257 now displays 670.5K file downloads and 2,376,055 project downloads; the official Modrinth API reports project on1Y0osD at 345,922 downloads, current version CXsEzVwJ at 4,495 downloads, and stable version yAt0wv1Z at 273,629 downloads. Updated homepage release counters, download and Java route facts, Verity JE comparison facts, source-map JSON/CSV, release JSON, safety data, README, LLM summaries, visual checks, and this feed entry. Homepage TDK was not changed. No forced external-link posting was done for this update; changed URLs are suitable for IndexNow submission.</summary>
+    <category term="gsc-opportunity" />
+    <category term="verity-5.7.3.jar" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>TLauncher Java route added for Verity Mod install intent</title>
     <id>https://veritymodchecker.online/updates/tlauncher-route-2026-07-30-0900</id>
