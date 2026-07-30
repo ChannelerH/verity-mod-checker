@@ -154,6 +154,15 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/source-map/"]').count() >= 1
         assert page.locator('a[href="/verity-monster-form/"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/creators/#author-outreach", wait_until="domcontentloaded")
+        creators_text = page.locator("main").inner_text()
+        assert "Where a reference link helps without replacing official downloads" in creators_text
+        assert "source / version checker" in creators_text
+        assert "Suggested one-line placement" in creators_text
+        assert page.locator("#author-outreach").count() == 1
+        assert page.locator('a[href="/mcpedl/"]').count() >= 1
+        assert page.locator('a[href="/taken-down/"]').count() >= 1
+
         page.goto(f"{BASE_URL}/ai-model/", wait_until="domcontentloaded")
         ai_model_text = page.locator("main").inner_text()
         assert "One-word replies" in ai_model_text

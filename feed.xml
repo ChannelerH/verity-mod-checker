@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T16:22:00+08:00</updated>
+  <updated>2026-07-30T16:46:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Creator reference refreshed for author citation outreach</title>
+    <id>https://veritymodchecker.online/updates/creator-reference-author-outreach-2026-07-30-1646</id>
+    <link href="https://veritymodchecker.online/creators/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/taken-down/" rel="related" />
+    <link href="https://www.curseforge.com/members/pntmc/projects" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="related" />
+    <published>2026-07-30T16:46:00+08:00</published>
+    <updated>2026-07-30T16:46:00+08:00</updated>
+    <summary>Search Console still shows the delayed July 15 through July 27 window with 50 clicks, 1,520 impressions, 3.3% CTR, average position 8.7, and the /creators/ page among zero-click impression pages. GA4 still shows 328 active users, 156 Organic Search sessions, 90 Referral sessions, 58 verity_outbound_project_click events, and 73 gist.github.com referral sessions in the last 7 days. Current SERP and source checks show active creator and project-owner confusion: PnTMC's public CurseForge author profile is active today with 2.4K followers and 11.8M total downloads, while the PnTMC Verity Bedrock route is a separate Project ID 1575941 route from Verity BE and Verity JE. Refreshed /creators/ without changing homepage TDK: added an author-outreach section that tells maintainers and video creators to keep official downloads on CurseForge, Modrinth, MCPEDL, or author-owned pages and use this site only as a source/version checker for Java, Bedrock, MCPE, and removed-link confusion. This change supports targeted creator outreach and avoids mirror links, paid links, comment spam, fake traffic, CAPTCHA bypass, or GitHub directory PR outreach.</summary>
+    <category term="creator-intent" />
+    <category term="author-outreach" />
+    <category term="gsc-ga4" />
+    <category term="ethical-distribution" />
+  </entry>
   <entry>
     <title>verity-3.4.1.jar exact-file search result triage refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-341-exact-file-serp-2026-07-30-1622</id>

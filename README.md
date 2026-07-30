@@ -23,7 +23,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity Mod server, friends, PS4, Xbox, and console route: https://veritymodchecker.online/server/
 - Verity Minecraft map and world-route check: https://veritymodchecker.online/verity-map/
 - CurseForge Verity Mod download route chooser: https://veritymodchecker.online/curseforge/
-- Who created Verity Mod and creator reference: https://veritymodchecker.online/creators/
+- Who created Verity Mod and creator reference: https://veritymodchecker.online/creators/ (includes July 30 author-outreach placement notes for creators who want a source/version checker without replacing official download links)
 - What is Verity / Verity Mod?: https://veritymodchecker.online/what-is-verity-mod/
 - Verity horror mod guide: https://veritymodchecker.online/horror-mod/
 - How to download and install Verity Mod: https://veritymodchecker.online/how-to-get-verity-mod/
