@@ -5,8 +5,28 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T21:20:00+08:00</updated>
+  <updated>2026-07-30T21:55:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod API connection failed support-summary tool added</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-api-support-summary-tool-2026-07-30-2155</id>
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="alternate" />
+    <link href="https://veritymodchecker.online/status-401/" rel="related" />
+    <link href="https://veritymodchecker.online/status-429/" rel="related" />
+    <link href="https://veritymodchecker.online/voice-not-working/" rel="related" />
+    <link href="https://console.groq.com/docs/errors" rel="related" />
+    <link href="https://console.groq.com/docs/rate-limits" rel="related" />
+    <link href="https://openrouter.ai/docs/api-reference/errors" rel="related" />
+    <link href="https://docs.ollama.com/api" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <published>2026-07-30T21:55:00+08:00</published>
+    <updated>2026-07-30T21:55:00+08:00</updated>
+    <summary>GSC's delayed July 15 through July 28 window still shows API-error demand in the top query rows, including verity api connection failed 401 and api connection failed status 429 verity. GA4 last-7-days shows /api-connection-failed/ as the highest-viewed page at 158 views, with 156 Organic Search sessions and 58 verity_outbound_project_click events. Added a local-only support-summary tool to /api-connection-failed/ so players can copy provider, status code, model, Minecraft profile, text-test state, and key-safety state without exposing an API key. Also refreshed official Modrinth facts: project on1Y0osD now reports 364,575 downloads, current version CXsEzVwJ / verity-6.jar reports 19,766 downloads, and stable version yAt0wv1Z / verity-5.7.3.jar reports 276,637 downloads. Updated release JSON, safety JSON, source-map JSON/CSV, visible counters, LLM summaries, and visual assertions. No homepage TDK churn, fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="api-connection-failed" />
+    <category term="support-summary-tool" />
+    <category term="gsc-query-intent" />
+    <category term="source-data-refresh" />
+  </entry>
   <entry>
     <title>Verity Mod all versions and downloads intent refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-mod-all-versions-downloads-refresh-2026-07-30-2120</id>

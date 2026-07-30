@@ -170,6 +170,7 @@
             <a href="/status-429/">Status 429 fix</a>
             <a href="/ai-model/">Provider setup</a>
             <a href="#temporary-provider-errors">503 / 529 check</a>
+            <a href="#safe-support-summary">Copy safe support summary</a>
             <a href="/voice-not-working/">Voice after text</a>
           </div>
         </div>
@@ -311,6 +312,88 @@
               <li>Check whether requests, tokens, audio, or daily quota reached a ceiling.</li>
               <li>Send one short text prompt after the reset before testing voice.</li>
             </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section api-support-section" id="safe-support-summary">
+        <div class="section-heading">
+          <p class="eyebrow">Support summary tool</p>
+          <h2>Copy a Verity Mod API connection failed report without leaking a key</h2>
+          <p>
+            Players often ask for help with a screenshot that exposes a token or hides the useful details. Use
+            this local-only builder to turn the Verity Mod API connection failed error into a short support
+            summary with provider, code, model, profile, and text-or-voice state. It never asks for an API key
+            and does not send the fields anywhere.
+          </p>
+        </div>
+        <div class="api-diagnosis-grid api-support-grid">
+          <form class="guide-block api-diagnosis-form" id="apiSupportForm">
+            <div class="field-grid api-support-fields">
+              <label>
+                Provider
+                <select id="supportProvider">
+                  <option value="Groq">Groq</option>
+                  <option value="OpenRouter">OpenRouter</option>
+                  <option value="Ollama">Ollama</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </label>
+              <label>
+                Error
+                <select id="supportStatus">
+                  <option value="401 Unauthorized">401 Unauthorized</option>
+                  <option value="403 Forbidden">403 Forbidden</option>
+                  <option value="404 model or endpoint not found">404 model or endpoint not found</option>
+                  <option value="429 Too Many Requests">429 Too Many Requests</option>
+                  <option value="503 service unavailable">503 service unavailable</option>
+                  <option value="529 overloaded or upstream capacity">529 overloaded or upstream capacity</option>
+                  <option value="connection refused">Connection refused</option>
+                  <option value="null or blank reply">Null or blank reply</option>
+                  <option value="text works but voice fails">Text works but voice fails</option>
+                </select>
+              </label>
+              <label>
+                Model name
+                <input id="supportModel" type="text" autocomplete="off" placeholder="Example: llama-3.1-8b or unknown" />
+              </label>
+              <label>
+                Minecraft profile
+                <input id="supportProfile" type="text" autocomplete="off" placeholder="Example: Forge 1.20.1, Verity JE 6" />
+              </label>
+              <label>
+                Text test
+                <select id="supportTextState">
+                  <option value="Text prompt has not worked yet">Text prompt has not worked yet</option>
+                  <option value="One short text prompt worked">One short text prompt worked</option>
+                  <option value="Text works, voice does not">Text works, voice does not</option>
+                  <option value="Not tested after the change">Not tested after the change</option>
+                </select>
+              </label>
+              <label>
+                Key safety
+                <select id="supportKeyState">
+                  <option value="No API key is shown in the message or screenshot">No key shown</option>
+                  <option value="A key may have been exposed and should be revoked">Key may be exposed</option>
+                  <option value="Ollama local route; no cloud key involved">Ollama local route</option>
+                </select>
+              </label>
+            </div>
+            <button class="primary-link api-diagnosis-button" type="submit">Build summary</button>
+            <p class="api-privacy-note">Keep the generated text. Delete or revoke any key that appeared in a public log, screenshot, or chat.</p>
+          </form>
+          <article class="guide-block api-diagnosis-result api-support-output" aria-live="polite">
+            <span class="result-status">Safe to paste after review</span>
+            <h3>Support-ready summary</h3>
+            <textarea id="supportSummaryText" readonly rows="9">Verity Mod API connection failed
+Provider: Groq
+Error: 401 Unauthorized
+Model: unknown
+Minecraft profile: Forge 1.20.1 / Verity JE
+Text test: Text prompt has not worked yet
+Key safety: No API key is shown in the message or screenshot
+Need help with the provider/status-code layer before changing the Verity Mod file.</textarea>
+            <button class="copy-button support-copy-button" id="copySupportSummary" type="button">Copy summary</button>
           </article>
         </div>
       </section>
@@ -882,6 +965,69 @@
         form.addEventListener("submit", renderAdvice);
         provider.addEventListener("change", renderAdvice);
         symptom.addEventListener("change", renderAdvice);
+      })();
+
+      (() => {
+        const form = document.querySelector("#apiSupportForm");
+        const provider = document.querySelector("#supportProvider");
+        const status = document.querySelector("#supportStatus");
+        const model = document.querySelector("#supportModel");
+        const profile = document.querySelector("#supportProfile");
+        const textState = document.querySelector("#supportTextState");
+        const keyState = document.querySelector("#supportKeyState");
+        const output = document.querySelector("#supportSummaryText");
+        const copyButton = document.querySelector("#copySupportSummary");
+        if (!form || !provider || !status || !model || !profile || !textState || !keyState || !output || !copyButton) return;
+
+        function clean(value, fallback) {
+          const trimmed = value.trim().replace(/\s+/g, " ");
+          return trimmed || fallback;
+        }
+
+        function buildSummary(event) {
+          event?.preventDefault();
+          const providerValue = provider.value;
+          const statusValue = status.value;
+          const modelValue = clean(model.value, "unknown");
+          const profileValue = clean(profile.value, "not stated");
+          const lines = [
+            "Verity Mod API connection failed",
+            `Provider: ${providerValue}`,
+            `Error: ${statusValue}`,
+            `Model: ${modelValue}`,
+            `Minecraft profile: ${profileValue}`,
+            `Text test: ${textState.value}`,
+            `Key safety: ${keyState.value}`,
+            "Need help with the provider/status-code layer before changing the Verity Mod file.",
+          ];
+          output.value = lines.join("\n");
+          window.gtag?.("event", "verity_api_support_summary_build", {
+            provider: providerValue.toLowerCase().replace(/\s+/g, "_"),
+            status: statusValue.split(" ")[0].toLowerCase(),
+          });
+        }
+
+        form.addEventListener("submit", buildSummary);
+        [provider, status, textState, keyState].forEach((control) => {
+          control.addEventListener("change", buildSummary);
+        });
+
+        copyButton.addEventListener("click", async () => {
+          buildSummary();
+          try {
+            await navigator.clipboard.writeText(output.value);
+            copyButton.textContent = "Copied";
+            window.gtag?.("event", "verity_api_support_summary_copy", {
+              provider: provider.value.toLowerCase().replace(/\s+/g, "_"),
+              status: status.value.split(" ")[0].toLowerCase(),
+            });
+          } catch {
+            copyButton.textContent = "Copy failed";
+          }
+          setTimeout(() => {
+            copyButton.textContent = "Copy summary";
+          }, 1600);
+        });
       })();
     </script>
   </body>
