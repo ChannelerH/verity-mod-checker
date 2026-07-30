@@ -1753,7 +1753,11 @@ export default {
       return notFound();
     }
 
-    const assetResponse = await env.ASSETS.fetch(request);
+    const assetRequest =
+      request.method === "HEAD"
+        ? new Request(request, { method: "GET" })
+        : request;
+    const assetResponse = await env.ASSETS.fetch(assetRequest);
     const headers = new Headers(assetResponse.headers);
     const contentType = headers.get("content-type") || "";
 
@@ -1783,7 +1787,7 @@ export default {
       headers.set("cache-control", "public, max-age=0, must-revalidate");
     }
 
-    return new Response(assetResponse.body, {
+    return new Response(request.method === "HEAD" ? null : assetResponse.body, {
       status: assetResponse.status,
       statusText: assetResponse.statusText,
       headers,
