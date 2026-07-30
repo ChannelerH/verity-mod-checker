@@ -178,15 +178,25 @@ with sync_playwright() as playwright:
         v6_text = page.locator("main").inner_text()
         assert "verity-6.jar File Check" in v6_text
         assert "CXsEzVwJ" in v6_text
+        assert "4,936" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/verity-je/", wait_until="domcontentloaded")
+        verity_je_text = page.locator("main").inner_text()
+        assert "Verity JE Download" in verity_je_text
+        assert "4,936" in verity_je_text
+        assert "346,451" in verity_je_text
+        assert "2,380,765" in verity_je_text
+        assert "674.3K" in verity_je_text
+        assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-5-7-3-jar/", wait_until="domcontentloaded")
         v573_text = page.locator("main").inner_text()
         assert "verity-5.7.3.jar Download" in v573_text
         assert "Open official download source" in v573_text
-        assert "670.5K" in v573_text
-        assert "273,629" in v573_text
+        assert "674.3K" in v573_text
+        assert "273,714" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
@@ -250,6 +260,8 @@ with sync_playwright() as playwright:
         assert "old JAR" in java_help_text
         assert "CXsEzVwJ" in java_help_text
         assert "8461257" in java_help_text
+        assert "346,451" in java_help_text
+        assert "2,380,765" in java_help_text
         assert page.locator('a[href="/not-working/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/not-working/", wait_until="domcontentloaded")
