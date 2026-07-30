@@ -37,7 +37,7 @@
             "headline": "Verity Mod Status 401 Fix",
             "description": "A credential troubleshooting guide for Verity JE API connection failed status 401 errors.",
             "datePublished": "2026-07-29",
-            "dateModified": "2026-07-29",
+            "dateModified": "2026-07-30",
             "mainEntityOfPage": "https://veritymodchecker.online/status-401/",
             "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
             "author": {"@type": "Organization", "name": "Verity Mod Guide"},
@@ -122,7 +122,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Credential route checked July 29, 2026</p>
+          <p class="eyebrow">Credential route checked July 30, 2026</p>
           <h1>Verity Mod Status 401 Fix</h1>
           <p class="lede">
             Verity Mod status 401 usually means Verity JE reached its AI provider, but Groq, OpenRouter, or
@@ -138,6 +138,7 @@
           </div>
           <div class="quick-routes" aria-label="401 support routes">
             <a href="#quick-fix">Quick fix</a>
+            <a href="#credential-evidence">Provider evidence</a>
             <a href="#provider-map">Provider map</a>
             <a href="/verity-groq-api-key/">Groq API key setup</a>
             <a href="/api-connection-failed/">All API errors</a>
@@ -199,6 +200,50 @@
               <li>Restart Minecraft once, then test one short typed prompt before testing voice.</li>
             </ol>
           </article>
+        </div>
+      </section>
+
+      <section class="intent-table" id="credential-evidence" aria-label="Official credential evidence">
+        <div class="section-heading">
+          <p class="eyebrow">Official credential evidence</p>
+          <h2>Read status 401 as a provider credential rejection</h2>
+          <p>
+            A Verity Mod status 401 is useful because it narrows the problem after the Java mod reaches the AI
+            provider. Treat it as a private credential and route-matching issue before changing the Verity file.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Official signal</th>
+                <th>What to check locally</th>
+                <th>Do not do this</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Groq documents 401 as an authentication failure when valid credentials are not present.</td>
+                <td>Confirm the setup selected Groq, rotate any exposed key, paste only the current Groq key value, and remove copied spaces or labels.</td>
+                <td>Do not paste the key into a website, comment, support ticket, screenshot, or shared log.</td>
+              </tr>
+              <tr>
+                <td>OpenRouter separates invalid credentials from credit and permission problems.</td>
+                <td>Check the OpenRouter account, key state, credits, model ID, and whether the selected route is actually OpenRouter.</td>
+                <td>Do not fix an OpenRouter 402, 403, or model-route problem by replacing the Verity jar.</td>
+              </tr>
+              <tr>
+                <td>Ollama is normally a local-service route, not a cloud key route.</td>
+                <td>Verify the local service, host, model name, and selected Verity profile before searching for an API key.</td>
+                <td>Do not enter a Groq or OpenRouter key when the profile is meant to use local Ollama.</td>
+              </tr>
+              <tr>
+                <td>A 401-to-429 change after a new key is a different class of evidence.</td>
+                <td>Authentication may now work, but the account, key, model, audio, request, or token window may be exhausted.</td>
+                <td>Do not keep rotating keys. Move to the <a href="/status-429/">status 429 rate-limit guide</a>.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -422,12 +467,14 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary credential references">
-        <strong>Primary references checked July 29:</strong>
+        <strong>Primary references checked July 30:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://console.groq.com/docs/api-keys" target="_blank" rel="noopener noreferrer">Groq API keys</a>
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
         <a href="https://openrouter.ai/docs/api_reference/authentication" target="_blank" rel="noopener noreferrer">OpenRouter authentication</a>
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://openrouter.ai/docs/api_reference/limits" target="_blank" rel="noopener noreferrer">OpenRouter limits</a>
+        <a href="https://github.com/ollama/ollama/blob/main/docs/api.md" target="_blank" rel="noopener noreferrer">Ollama API</a>
         <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
         <a href="/api-connection-failed/">Full API connection guide</a>
       </aside>

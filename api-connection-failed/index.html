@@ -37,7 +37,7 @@
             "name": "Verity Mod API Connection Failed: Fix 401, 429 and Timeouts",
             "url": "https://veritymodchecker.online/api-connection-failed/",
             "description": "A status-code troubleshooting guide for Verity JE AI provider connection failures.",
-            "dateModified": "2026-07-29"
+            "dateModified": "2026-07-30"
           },
           {
             "@type": "BreadcrumbList",
@@ -139,7 +139,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Live problem route checked July 27, 2026</p>
+          <p class="eyebrow">Live problem route checked July 30, 2026</p>
           <h1>Verity Mod API Connection Failed</h1>
           <p class="lede">
             Do not reinstall the jar until you read the status code. An API connection failed message usually
@@ -155,6 +155,7 @@
           <div class="quick-routes" aria-label="API troubleshooting routes">
             <a href="/status-401/">Status 401 fix</a>
             <a href="#error-map">403 permissions</a>
+            <a href="#official-provider-evidence">Provider evidence</a>
             <a href="/verity-groq-api-key/">Groq API key setup</a>
             <a href="/status-429/">Status 429 fix</a>
             <a href="/ai-model/">Provider setup</a>
@@ -297,6 +298,56 @@
               <li>Send one short text prompt after the reset before testing voice.</li>
             </ol>
           </article>
+        </div>
+      </section>
+
+      <section class="intent-table" id="official-provider-evidence" aria-label="Official API provider evidence">
+        <div class="section-heading">
+          <p class="eyebrow">Official provider evidence</p>
+          <h2>Use current provider facts before changing Verity files</h2>
+          <p>
+            The same "API connection failed" screen can come from credentials, permission, credit, rate-limit,
+            streaming, voice, or local-service layers. These source-checked facts keep the Verity Mod fix tied
+            to the selected provider instead of guessing from a copied screenshot.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Provider fact</th>
+                <th>What it means for Verity Mod</th>
+                <th>First useful action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Groq status codes separate 401, 403, 404, 429, and 5xx errors.</td>
+                <td>A Verity Mod 401 is a credential problem, 403 is permission or policy, and 429 is rate limiting after the request reached Groq.</td>
+                <td>Follow <a href="/status-401/">status 401</a> or <a href="/status-429/">status 429</a> before replacing the jar.</td>
+              </tr>
+              <tr>
+                <td>Groq limits can include requests, tokens, audio seconds, images, and daily windows at organization level.</td>
+                <td>Repeated Minecraft prompts, voice tests, or long context can exhaust a shared limit even when one key was just created.</td>
+                <td>Stop retries, open the provider limits page, use the reset window, and retest one short typed prompt.</td>
+              </tr>
+              <tr>
+                <td>OpenRouter exposes key and credit state, and 429 can come from OpenRouter itself or the upstream model provider.</td>
+                <td>Making another OpenRouter key may not fix a drained balance, per-key cap, model route issue, or upstream provider limit.</td>
+                <td>Check the exact error body, key endpoint, credits, model ID, and any Retry-After value.</td>
+              </tr>
+              <tr>
+                <td>Ollama uses local API routes such as generate or chat with a local model name.</td>
+                <td>A local Ollama failure is often service, host, model, or profile configuration, not a missing cloud API key.</td>
+                <td>Confirm Ollama answers outside Minecraft, then match the exact local endpoint and model in the Verity profile.</td>
+              </tr>
+              <tr>
+                <td>Groq Orpheus voice uses a separate speech endpoint and short voice input limits.</td>
+                <td>Text can work while voice fails because TTS, audio limits, voice names, and output format are a separate layer.</td>
+                <td>Test text first. If text works, use the <a href="/voice-not-working/">voice-not-working route</a> instead of changing keys.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -605,14 +656,17 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary troubleshooting references">
-        <strong>Primary references checked July 29:</strong>
+        <strong>Primary references checked July 30:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://youtu.be/_i4O7pyMlks" target="_blank" rel="noopener noreferrer">Maintainer setup tutorial</a>
         <a href="https://console.groq.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Groq quickstart</a>
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
         <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
+        <a href="https://console.groq.com/docs/text-to-speech/orpheus" target="_blank" rel="noopener noreferrer">Groq Orpheus TTS</a>
         <a href="https://openrouter.ai/docs/api_reference/authentication" target="_blank" rel="noopener noreferrer">OpenRouter authentication</a>
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://openrouter.ai/docs/api_reference/limits" target="_blank" rel="noopener noreferrer">OpenRouter limits</a>
+        <a href="https://github.com/ollama/ollama/blob/main/docs/api.md" target="_blank" rel="noopener noreferrer">Ollama API</a>
         <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
         <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
         <a href="/status-401/">Status 401 fix</a>

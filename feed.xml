@@ -5,8 +5,31 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T11:02:58+08:00</updated>
+  <updated>2026-07-30T11:21:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>API error routes refreshed from 401 and 429 demand</title>
+    <id>https://veritymodchecker.online/updates/api-error-provider-evidence-2026-07-30-1121</id>
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="alternate" />
+    <link href="https://veritymodchecker.online/status-401/" rel="related" />
+    <link href="https://veritymodchecker.online/status-429/" rel="related" />
+    <link href="https://veritymodchecker.online/voice-not-working/" rel="related" />
+    <link href="https://veritymodchecker.online/ai-model/" rel="related" />
+    <link href="https://console.groq.com/docs/errors" rel="related" />
+    <link href="https://console.groq.com/docs/rate-limits" rel="related" />
+    <link href="https://console.groq.com/docs/text-to-speech/orpheus" rel="related" />
+    <link href="https://openrouter.ai/docs/api_reference/errors-and-debugging" rel="related" />
+    <link href="https://openrouter.ai/docs/api_reference/limits" rel="related" />
+    <link href="https://github.com/ollama/ollama/blob/main/docs/api.md" rel="related" />
+    <published>2026-07-30T11:21:00+08:00</published>
+    <updated>2026-07-30T11:21:00+08:00</updated>
+    <summary>Search Console and GA4 showed the API troubleshooting cluster producing real demand, including visible clicks and page views around API connection failed, status 401, and status 429. Refreshed /api-connection-failed/, /status-401/, and /status-429/ without changing TDK: added source-checked provider evidence from Groq error and rate-limit docs, OpenRouter error and limit docs, Ollama API docs, and Groq Orpheus TTS docs; clarified that 401 is credential evidence, 429 is limit evidence, local Ollama is a service route, and voice/TTS can fail separately from text. Updated sitemap, LLM summaries, /updates/, and this feed entry. No forced external-link posting or ranking claim is made.</summary>
+    <category term="api-connection-failed" />
+    <category term="status-401" />
+    <category term="status-429" />
+    <category term="gsc-opportunity" />
+    <category term="provider-evidence" />
+  </entry>
   <entry>
     <title>GA4 baseline and official source counters refreshed</title>
     <id>https://veritymodchecker.online/updates/ga4-source-counter-refresh-2026-07-30-1102</id>

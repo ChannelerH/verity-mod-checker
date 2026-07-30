@@ -348,11 +348,27 @@ with sync_playwright() as playwright:
         assert page.locator("#serverLink").get_attribute("href").endswith("/api-connection-failed/")
 
         page.goto(f"{BASE_URL}/api-connection-failed/", wait_until="domcontentloaded")
+        api_page_text = page.locator("main").inner_text()
+        assert "official provider evidence" in api_page_text.lower()
+        assert "OpenRouter exposes key and credit state" in api_page_text
+        assert "Groq Orpheus voice" in api_page_text
         page.locator("#apiProvider").select_option("ollama")
         page.locator("#apiSymptom").select_option("refused")
         diagnosis_text = page.locator("#apiDiagnosisResult").inner_text()
         assert "Ollama: Connection refused" in diagnosis_text
         assert "Start Ollama" in diagnosis_text
+
+        page.goto(f"{BASE_URL}/status-401/", wait_until="domcontentloaded")
+        status_401_text = page.locator("main").inner_text()
+        assert "official credential evidence" in status_401_text.lower()
+        assert "OpenRouter separates invalid credentials" in status_401_text
+        assert "401-to-429" in status_401_text
+
+        page.goto(f"{BASE_URL}/status-429/", wait_until="domcontentloaded")
+        status_429_text = page.locator("main").inner_text()
+        assert "official rate-limit evidence" in status_429_text.lower()
+        assert "OpenRouter 429 can come from the platform" in status_429_text
+        assert "Groq Orpheus voice" in status_429_text
 
         page.goto(BASE_URL, wait_until="domcontentloaded")
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-beta")
@@ -602,4 +618,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes with provider evidence, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")

@@ -37,7 +37,7 @@
             "headline": "Verity Mod Status 429 Fix",
             "description": "A focused rate-limit troubleshooting guide for Verity JE AI provider errors.",
             "datePublished": "2026-07-27",
-            "dateModified": "2026-07-29",
+            "dateModified": "2026-07-30",
             "mainEntityOfPage": "https://veritymodchecker.online/status-429/",
             "image": "https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp",
             "author": {"@type": "Organization", "name": "Verity Mod Guide"},
@@ -111,7 +111,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Rate-limit route checked July 29, 2026</p>
+          <p class="eyebrow">Rate-limit route checked July 30, 2026</p>
           <h1>Verity Mod Status 429 Fix</h1>
           <p class="lede">
             Verity Mod status 429 usually means the Java mod reached its AI provider and the provider refused
@@ -126,6 +126,7 @@
           </div>
           <div class="quick-routes" aria-label="429 support routes">
             <a href="#quick-fix">Quick fix</a>
+            <a href="#limit-evidence">Provider evidence</a>
             <a href="#works-then-fails">Works then fails</a>
             <a href="/api-connection-failed/">All API errors</a>
             <a href="/ai-model/">Provider setup</a>
@@ -221,6 +222,56 @@
                 <td>Unknown provider</td>
                 <td>Setup tutorial, profile config, or copied advice does not match the installed route</td>
                 <td>Return to the Verity JE project setup notes and identify the selected provider first.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="intent-table" id="limit-evidence" aria-label="Official rate-limit evidence">
+        <div class="section-heading">
+          <p class="eyebrow">Official rate-limit evidence</p>
+          <h2>429 is a limit signal, not a file signal</h2>
+          <p>
+            Verity Mod status 429 usually appears after Java, Forge, the Verity jar, and the selected AI route
+            have already moved far enough to make a provider request. Use provider evidence to identify the
+            exhausted window before changing downloads or keys.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Official signal</th>
+                <th>Why it matters for Verity Mod</th>
+                <th>Best next test</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Groq rate limits can be requests, tokens, audio seconds, daily totals, and organization-level ceilings.</td>
+                <td>One player can trigger 429 by retrying, using long prompts, testing voice repeatedly, or sharing a small org-level quota across keys.</td>
+                <td>Wait for the documented reset and send one short typed prompt before voice or long context.</td>
+              </tr>
+              <tr>
+                <td>Groq may return Retry-After only when a request is actually rate limited.</td>
+                <td>The first 429 response body and headers are more useful than a later Minecraft log after repeated retries.</td>
+                <td>Save the sanitized first error line, then stop prompting until the reset window passes.</td>
+              </tr>
+              <tr>
+                <td>OpenRouter 429 can come from the platform or the upstream model provider, with rate-limit headers and Retry-After.</td>
+                <td>A model can fail even when the account has a key, so switching models or waiting may be smarter than rotating credentials.</td>
+                <td>Check credits, per-key limits, model ID, returned headers, and whether a fallback route is available.</td>
+              </tr>
+              <tr>
+                <td>Groq Orpheus voice uses a speech endpoint with short input and audio-specific constraints.</td>
+                <td>Voice testing can make a text route look broken if the TTS layer is the part that hit limits or format constraints.</td>
+                <td>Disable voice, prove text works, then continue with <a href="/voice-not-working/">voice troubleshooting</a>.</td>
+              </tr>
+              <tr>
+                <td>Ollama local routes should not normally produce a hosted provider 429.</td>
+                <td>If a local Ollama profile shows cloud-style 429, the Verity setup may still be pointed at Groq or OpenRouter.</td>
+                <td>Confirm the local endpoint, installed model, and selected profile outside Minecraft.</td>
               </tr>
             </tbody>
           </table>
@@ -341,11 +392,14 @@
       </section>
 
       <aside class="source-strip" aria-label="Primary rate-limit references">
-        <strong>Primary references checked July 29:</strong>
+        <strong>Primary references checked July 30:</strong>
         <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je" target="_blank" rel="noopener noreferrer">Verity JE project</a>
         <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Groq rate limits</a>
         <a href="https://console.groq.com/docs/errors" target="_blank" rel="noopener noreferrer">Groq error codes</a>
+        <a href="https://console.groq.com/docs/text-to-speech/orpheus" target="_blank" rel="noopener noreferrer">Groq Orpheus TTS</a>
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
+        <a href="https://openrouter.ai/docs/api_reference/limits" target="_blank" rel="noopener noreferrer">OpenRouter limits</a>
+        <a href="https://github.com/ollama/ollama/blob/main/docs/api.md" target="_blank" rel="noopener noreferrer">Ollama API</a>
         <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
         <a href="/api-connection-failed/">Full API connection guide</a>
       </aside>
