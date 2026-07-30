@@ -130,6 +130,7 @@
             <a href="#works-then-fails">Works then fails</a>
             <a href="/api-connection-failed/">All API errors</a>
             <a href="/ai-model/">Provider setup</a>
+            <a href="/api-connection-failed/#temporary-provider-errors">503 / 529 check</a>
           </div>
         </div>
 
@@ -351,6 +352,12 @@
               <a href="/verity-5-7-3-jar/">CurseForge 5.7.3 route</a>. A 429 after Verity appears in game is
               later than that. Keep the source stable and debug the provider path.
             </p>
+            <p>
+              If the code is 503 or a provider-specific 529 overload message, do not treat it as the same as
+              429. Use the <a href="/api-connection-failed/#temporary-provider-errors">temporary provider error
+              checklist</a>, because availability and upstream capacity need a wait-and-retry test rather than
+              another key or file swap.
+            </p>
           </article>
         </div>
       </section>
@@ -380,6 +387,14 @@
           <p>
             Not as the first step. A new key may share the same account or organization ceiling. Create or rotate
             a key when the old key is invalid, exposed, copied incorrectly, or from the wrong provider.
+          </p>
+        </details>
+        <details>
+          <summary>Is 529 the same as Verity Mod status 429?</summary>
+          <p>
+            No. A 429 is a rate or quota limit. A provider-specific 529 usually means upstream overload or
+            temporary capacity pressure. Use the broader <a href="/api-connection-failed/">API connection failed
+            guide</a> if the exact code is 500, 502, 503, 529, connection refused, blank reply, or no code.
           </p>
         </details>
         <details>

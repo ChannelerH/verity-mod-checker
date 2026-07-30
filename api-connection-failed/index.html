@@ -83,6 +83,14 @@
               },
               {
                 "@type": "Question",
+                "name": "What if Verity Mod shows 503 or 529?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Status 503 usually points to provider or upstream service availability. If a provider route surfaces a 529 overloaded-style error, treat it as temporary capacity pressure rather than a broken jar or invalid key, then wait, check provider status, and retry one short prompt later."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "Does API connection failed mean the Verity file is broken?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -150,6 +158,7 @@
             <span>401 key check</span>
             <span>403 permission</span>
             <span>429 rate limit</span>
+            <span>503 / 529 overload</span>
             <span>Ollama local check</span>
           </div>
           <div class="quick-routes" aria-label="API troubleshooting routes">
@@ -159,6 +168,7 @@
             <a href="/verity-groq-api-key/">Groq API key setup</a>
             <a href="/status-429/">Status 429 fix</a>
             <a href="/ai-model/">Provider setup</a>
+            <a href="#temporary-provider-errors">503 / 529 check</a>
             <a href="/voice-not-working/">Voice after text</a>
           </div>
         </div>
@@ -175,6 +185,7 @@
             <li><strong>403:</strong> the account or key lacks permission for that request.</li>
             <li><strong>404:</strong> the selected endpoint or model may no longer exist.</li>
             <li><strong>429:</strong> a request, token, or audio rate limit was reached.</li>
+            <li><strong>503 / 529:</strong> provider availability, overload, or upstream capacity.</li>
             <li><strong>No code:</strong> check network, provider selection, local service, and logs.</li>
           </ol>
           <div class="action-row">
@@ -227,9 +238,9 @@
                 <td>Stop retrying, inspect the exact limit and reset window, then test after the reset.</td>
               </tr>
               <tr>
-                <td>500, 502, or 503</td>
+                <td>500, 502, 503, or provider 529</td>
                 <td>Provider service</td>
-                <td>Wait and retry once later. Check provider status before rotating keys or reinstalling.</td>
+                <td>Wait and retry once later. Check provider or upstream status before rotating keys or reinstalling.</td>
               </tr>
               <tr>
                 <td>Connection refused</td>
@@ -276,6 +287,7 @@
                   <option value="403">403 Forbidden</option>
                   <option value="404">404 Model or endpoint not found</option>
                   <option value="5xx">500, 502, or 503</option>
+                  <option value="overload">529 overloaded or upstream capacity</option>
                   <option value="refused">Connection refused</option>
                   <option value="blank">Null, blank, or silent reply</option>
                   <option value="voice">Text works but voice does not</option>
@@ -346,8 +358,52 @@
                 <td>Text can work while voice fails because TTS, audio limits, voice names, and output format are a separate layer.</td>
                 <td>Test text first. If text works, use the <a href="/voice-not-working/">voice-not-working route</a> instead of changing keys.</td>
               </tr>
+              <tr>
+                <td>Groq documents 503 as service unavailable, while OpenRouter can expose provider-side 5xx availability failures.</td>
+                <td>If Verity reports 503, or an upstream route surfaces a provider-specific 529 overload message, the useful diagnosis is capacity or availability, not another Java download.</td>
+                <td>Check provider status, wait, and retry one short text prompt before changing keys, models, or files.</td>
+              </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section class="guide-section" id="temporary-provider-errors">
+        <div class="section-heading">
+          <p class="eyebrow">Temporary provider errors</p>
+          <h2>Handle 503 or 529 separately from 429</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>503 means availability, not authentication</h3>
+            <p>
+              A 503-style Verity Mod API connection failed message usually means the selected AI service or
+              routed model is not ready to handle the request. Groq documents 503 as service unavailable, and
+              OpenRouter documents 503 when no provider is available before streaming begins. That is different
+              from 401, where the provider rejected the key, and different from 429, where a usage window was
+              exhausted.
+            </p>
+            <p>
+              Do not rotate a valid key or reinstall the same jar for a provider availability error. Pause
+              prompts, check the provider status or model route, then retry one short text prompt later. If the
+              error changes to 401, move to the credential route. If it changes to 429, move to the rate-limit
+              route.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>529 is provider-specific overload evidence</h3>
+            <p>
+              Some setup videos and logs mention 529 because an upstream AI provider can use it for overload.
+              It is not a universal Groq code in the current Groq error table, so read the provider name before
+              applying advice. If the message comes through an OpenRouter or upstream model route, treat 529 as
+              temporary capacity pressure unless that provider's documentation says otherwise.
+            </p>
+            <p>
+              The clean test is the same: wait, avoid repeated retries, then send one short typed prompt. If the
+              provider recovers and text works, your Java file and key were probably not the issue. If text
+              works but voice fails, continue with the <a href="/voice-not-working/">voice route</a>.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -623,6 +679,14 @@
           </p>
         </details>
         <details>
+          <summary>What if the error is 503 or 529 instead of 429?</summary>
+          <p>
+            Treat 503 as provider availability or no available provider, not as an invalid key. Treat 529 as a
+            provider-specific overload signal when it appears in an upstream route. Wait, check provider status,
+            and retry one short text prompt later before replacing files or rotating keys.
+          </p>
+        </details>
+        <details>
           <summary>Does API connection failed mean the Verity file is broken?</summary>
           <p>
             Usually not. The error normally appears after the mod has loaded far enough to call its AI provider. Check
@@ -667,6 +731,7 @@
         <a href="https://openrouter.ai/docs/api_reference/authentication" target="_blank" rel="noopener noreferrer">OpenRouter authentication</a>
         <a href="https://openrouter.ai/docs/api_reference/errors-and-debugging" target="_blank" rel="noopener noreferrer">OpenRouter errors</a>
         <a href="https://openrouter.ai/docs/api_reference/limits" target="_blank" rel="noopener noreferrer">OpenRouter limits</a>
+        <a href="https://platform.claude.com/docs/en/api/errors" target="_blank" rel="noopener noreferrer">Provider 529 example</a>
         <a href="https://github.com/ollama/ollama/blob/main/docs/api.md" target="_blank" rel="noopener noreferrer">Ollama API</a>
         <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
         <a href="https://docs.ollama.com/troubleshooting" target="_blank" rel="noopener noreferrer">Ollama troubleshooting</a>
@@ -755,6 +820,15 @@
               "Wait and retry once later instead of spamming prompts.",
               "Check the provider status or incident page.",
               "If the error persists after the provider recovers, collect a sanitized log and profile details.",
+            ],
+          },
+          overload: {
+            title: "529 is usually upstream overload, not a bad jar",
+            summary: "A provider-specific 529 overload message means the upstream AI service is temporarily at capacity. Diagnose it separately from 401 credentials and 429 rate limits.",
+            steps: [
+              "Confirm which provider or upstream model produced the 529 message.",
+              "Wait and avoid repeated retries while the provider is overloaded.",
+              "Retry one short text prompt later, then test voice only after text succeeds.",
             ],
           },
           refused: {

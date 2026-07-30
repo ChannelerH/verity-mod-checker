@@ -278,10 +278,11 @@
         </details>
 
         <details>
-          <summary>Why does Verity Mod show an API connection failed or 429 error?</summary>
+          <summary>Why does Verity Mod show an API connection failed, 429, 503, or 529 error?</summary>
           <p>
             A 429 status usually means the configured AI provider has rate limited the request. On Java, check
-            the provider key, selected model, endpoint, quota, and retry timing. Do not solve a 429 by
+            the provider key, selected model, endpoint, quota, and retry timing. A 503 or provider-specific 529
+            usually points to availability or upstream overload rather than credentials. Do not solve these codes by
             downloading random replacement files. Use the <a href="/api-connection-failed/">API connection
             failed guide</a> for the full error map or the focused <a href="/status-429/">status 429 fix</a>
             when Verity works briefly and then stops answering.
