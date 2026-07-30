@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verity Mod Duplicate Package Error: Bedrock Import Fix</title>
+    <meta
+      name="description"
+      content="Fix the Verity Mod duplicate package error on Bedrock and MCPE: remove old packs, confirm the right project, import one mcaddon, and test a clean world."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/duplicate-package/" />
+    <meta property="og:title" content="Verity Mod Duplicate Package Error Fix" />
+    <meta property="og:description" content="Step-by-step Bedrock and MCPE duplicate package fix for Verity BE, PnTMC, Pocket Edition, old packs, and wrong-file imports." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/duplicate-package/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does Verity Mod say duplicate package on Bedrock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A duplicate package error usually means Minecraft Bedrock still has an older Verity behavior pack or resource pack with the same package identity. Remove the old pack from world settings and storage, restart Minecraft, then import the current mcaddon once."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I download another Verity Mod file to fix duplicate package?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. First confirm the exact project route, remove stale packs, and test a clean world. Downloading a mirror, APK, Java JAR, or different Bedrock project can add a second conflict."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is duplicate package a Java Verity JE problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Duplicate package is a Bedrock or MCPE add-on import symptom. Java Verity JE uses JAR files and loader profiles, not Bedrock behavior and resource packs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Verity Bedrock project should I use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the project named by your tutorial: Verity BE, Verity - Bedrock Edition by PnTMC, or Verity Pocket Edition (Be). They are separate routes with different owners, Project IDs, file records, commands, and support notes."
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://veritymodchecker.online/duplicate-package/#webpage",
+            "url": "https://veritymodchecker.online/duplicate-package/",
+            "name": "Verity Mod Duplicate Package Error: Bedrock Import Fix",
+            "dateModified": "2026-07-30",
+            "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
+            "about": ["Verity Mod duplicate package", "Verity BE duplicate package", "Minecraft Bedrock add-on import", "MCPE behavior pack conflict"]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Verity Mod Guide", "item": "https://veritymodchecker.online/" },
+              { "@type": "ListItem", "position": 2, "name": "Duplicate Package Fix", "item": "https://veritymodchecker.online/duplicate-package/" }
+            ]
+          },
+          {
+            "@type": "HowTo",
+            "name": "Fix Verity Mod duplicate package on Bedrock",
+            "description": "Remove stale Verity Bedrock packs, confirm the correct project route, import one current mcaddon, and test in a clean world.",
+            "step": [
+              { "@type": "HowToStep", "name": "Identify the route", "text": "Confirm whether the file is Verity BE, PnTMC Verity - Bedrock Edition, or Verity Pocket Edition (Be)." },
+              { "@type": "HowToStep", "name": "Back up the world", "text": "Make a copy before removing old packs from a save that matters." },
+              { "@type": "HowToStep", "name": "Remove stale packs", "text": "Remove old Verity behavior and resource packs from world settings and Minecraft storage." },
+              { "@type": "HowToStep", "name": "Restart and import once", "text": "Restart Minecraft, import the current mcaddon once, and avoid mixing different Verity projects." },
+              { "@type": "HowToStep", "name": "Test a clean world", "text": "Create a fresh Bedrock world, activate both packs, enable required settings, and test before changing files." }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Download Checker home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/verity-be/">Verity BE</a>
+        <a href="/bedrock/">Bedrock</a>
+        <a href="/pocket-edition/">MCPE</a>
+        <a href="/not-working/">Fixes</a>
+        <a href="/routes/">Routes</a>
+        <a href="/faq/">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Bedrock import fix updated July 30, 2026</p>
+          <h1>Verity Mod Duplicate Package Error Fix</h1>
+          <p class="lede">
+            Use this page when Minecraft Bedrock or MCPE says the Verity Mod import failed, a duplicate package
+            already exists, or an update still conflicts after you deleted an older add-on. This is a Bedrock
+            package identity problem first, not a reason to install a Java JAR, APK, EXE, or mirror copy.
+          </p>
+          <div class="trust-strip" aria-label="Page purpose">
+            <span>Bedrock + MCPE</span>
+            <span>Behavior pack cleanup</span>
+            <span>No mirror downloads</span>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Quick answer</span>
+          </div>
+          <h2>Remove the old pack identity before importing again</h2>
+          <p>
+            A Verity duplicate package error usually means Minecraft still sees an older behavior pack or
+            resource pack with the same internal identity. Back up the world, remove old Verity packs from
+            the world and storage list, restart Minecraft, import one current MCADDON, then test in a fresh
+            world before changing sources.
+          </p>
+          <ol class="steps">
+            <li>Confirm the exact Bedrock project: Verity BE, PnTMC, or Pocket Edition.</li>
+            <li>Back up the save before deleting packs.</li>
+            <li>Remove older Verity behavior and resource packs.</li>
+            <li>Restart Minecraft and import the current MCADDON once.</li>
+            <li>Activate both packs in a clean world and retest.</li>
+          </ol>
+          <div class="action-row">
+            <a class="primary-link" href="/bedrock/">Open Bedrock route</a>
+            <a class="copy-button" href="/verity-be/">Verity BE exact route</a>
+            <a class="copy-button" href="/best-verity-mod-bedrock/">Compare Bedrock projects</a>
+            <a class="copy-button" href="/not-working/">All fixes</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="error-section">
+        <div class="section-heading">
+          <p class="eyebrow">Why it happens</p>
+          <h2>Duplicate package means Bedrock still sees a conflicting pack</h2>
+        </div>
+        <div class="error-grid">
+          <article class="error-card">
+            <span>Old import</span>
+            <h3>A previous Verity pack is still installed</h3>
+            <p>
+              Bedrock add-ons can leave behavior packs and resource packs in storage even after you remove
+              them from one world. If a new Verity Mod package uses the same identity, Minecraft can reject
+              the import as a duplicate. Remove both old pack layers, not only the visible world entry.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Wrong route</span>
+            <h3>Different Verity projects are being mixed</h3>
+            <p>
+              Verity BE, PnTMC's Verity - Bedrock Edition, and Verity Pocket Edition (Be) are separate
+              Bedrock-looking routes. They have different owners, Project IDs, file records, package names,
+              and support notes. Installing one and following another tutorial can create duplicate or
+              missing-pack symptoms.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Old world</span>
+            <h3>The save still has stale settings</h3>
+            <p>
+              An old world can keep experiment toggles, inactive packs, or script state that makes a good
+              import look broken. Testing in a clean world is not busywork; it tells you whether the file
+              imports correctly before you risk a real save.
+            </p>
+          </article>
+          <article class="error-card">
+            <span>Bad fix</span>
+            <h3>A mirror can add a second conflict</h3>
+            <p>
+              Downloading a random MCADDON, ZIP, APK, or Java file can stack more package identities on top
+              of the original issue. A duplicate package error should be cleaned up from Minecraft storage
+              first, then reported to the maintainer if the official file still conflicts in a new world.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="status-section">
+        <div class="section-heading">
+          <p class="eyebrow">Step-by-step fix</p>
+          <h2>Use this order before replacing the Verity Mod file</h2>
+        </div>
+        <div class="status-grid">
+          <article class="status-card primary">
+            <span class="route-code">1</span>
+            <h3>Identify the exact project route</h3>
+            <p>
+              Open the page named by your tutorial and write down the project name before you touch storage.
+              Verity BE is Project ID 1574632. PnTMC's Verity - Bedrock Edition is Project ID 1575941.
+              Verity Pocket Edition (Be) is Project ID 1596246. A search result that only says Verity Mod
+              is not specific enough for a package cleanup.
+            </p>
+            <p>
+              If you are on Java Edition, stop here and use the <a href="/java/">Java route</a>. Java files
+              are JARs for Forge or NeoForge profiles. They do not fix Bedrock duplicate packages.
+            </p>
+          </article>
+          <article class="status-card">
+            <span class="route-code">2</span>
+            <h3>Back up the world and remove old packs</h3>
+            <p>
+              Make a copy of any world you care about. Then open the world settings and remove old Verity
+              behavior packs and resource packs. After that, check global Minecraft storage or the packs list
+              for older Verity entries. Remove stale copies from both behavior and resource areas when the
+              platform exposes them.
+            </p>
+          </article>
+          <article class="status-card">
+            <span class="route-code">3</span>
+            <h3>Restart Minecraft before importing again</h3>
+            <p>
+              Restarting matters because Bedrock can cache pack lists. After restart, import only one current
+              MCADDON from the project you chose. Do not import Verity BE and PnTMC in the same test unless
+              you are deliberately comparing projects in separate worlds.
+            </p>
+          </article>
+          <article class="status-card">
+            <span class="route-code">4</span>
+            <h3>Activate both packs in a clean world</h3>
+            <p>
+              Create a fresh test world, activate the behavior pack and resource pack from the same import,
+              enable required experiments or Beta APIs if the project says so, enable cheats when commands
+              are required, then test. If the clean world works, your old save needs careful migration.
+              If the clean world still says duplicate package, report the exact file and device to the project.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" aria-label="Duplicate package decision table">
+        <div class="section-heading">
+          <p class="eyebrow">Decision table</p>
+          <h2>Match the symptom to the next action</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Symptom</th>
+                <th>Likely cause</th>
+                <th>Best next step</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Duplicate package while importing Verity BE</td>
+                <td>Old Verity BE pack identity remains in storage or a world</td>
+                <td>Remove old behavior/resource packs, restart, import the current Verity BE MCADDON once</td>
+              </tr>
+              <tr>
+                <td>Duplicate package after trying PnTMC and Verity BE</td>
+                <td>Two separate Bedrock routes were mixed in one setup</td>
+                <td>Pick one route and test it in a fresh world; compare projects on <a href="/best-verity-mod-bedrock/">Best Bedrock route</a></td>
+              </tr>
+              <tr>
+                <td>Import works, but Verity does not appear</td>
+                <td>Packs may be inactive or commands/settings are missing</td>
+                <td>Use the <a href="/how-to-spawn-verity/">spawn checklist</a> after pack cleanup</td>
+              </tr>
+              <tr>
+                <td>Import works, but Verity only shows dots or no purpose</td>
+                <td>Backend, command, Beta API, or project-specific setup issue</td>
+                <td>Open <a href="/error-no-purpose/">Error: No Purpose</a> and <a href="/commands/">command map</a></td>
+              </tr>
+              <tr>
+                <td>A tutorial says to install a JAR</td>
+                <td>The tutorial is for Java Verity JE, not Bedrock</td>
+                <td>Use <a href="/java-vs-bedrock/">Java vs Bedrock</a> before changing files</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Route-specific notes</p>
+          <h2>Do not merge Verity BE, PnTMC, and Pocket Edition advice</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block">
+            <h3>Verity BE</h3>
+            <p>
+              Use <a href="/verity-be/">Verity BE</a> when the owner, Project ID, and file record match that
+              route. At the latest checked snapshot, the current file record for Verity BE was 8506198 for
+              Bedrock 26.30. Its setup notes mention behavior and resource packs, Beta APIs, cheats, and a
+              project-specific support route. A duplicate package report belongs in that Bedrock context.
+            </p>
+            <p>
+              If you already imported an older Verity BE file, remove old Verity BE packs before importing
+              the current file. Do not fix a Verity BE duplicate package by moving to a PnTMC package unless
+              the tutorial and world setup are meant to switch projects.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>PnTMC Verity - Bedrock Edition</h3>
+            <p>
+              Use <a href="/pntmc-verity-3-2-0/">PnTMC 3.2.0</a> or the <a href="/mcpedl/">MCPEDL route</a>
+              when the guide names PnTMC, ThatMob's Verity, or the CurseForge project ID 1575941. This route
+              has its own file records, supported Bedrock builds, comments, and version history. It should be
+              tested separately from Verity BE.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>MCPE and mobile imports</h3>
+            <p>
+              On MCPE, storage and import behavior can vary by device. The cleanup principle is the same:
+              remove stale packs, restart the app, import one current package, then activate both behavior and
+              resource packs in a fresh test world. Use the <a href="/pocket-edition/">Pocket Edition route</a>
+              if your search result specifically says mobile, MCPE, or Pocket Edition.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>When to contact the maintainer</h3>
+            <p>
+              Contact the project only after a clean-world import still fails. Include the project name, file
+              record or version, Minecraft version, device, whether old packs were removed, and the exact text
+              of the duplicate package error. That report is more useful than saying "Verity Mod does not work"
+              or linking a mirror.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Duplicate package questions</h2>
+        </div>
+        <details>
+          <summary>Is a Verity Mod duplicate package error dangerous?</summary>
+          <p>
+            The error itself usually means Minecraft found a conflicting add-on package identity. It does not
+            automatically prove malware or a fake file. Still, it is a reason to stop and verify the source
+            before importing anything else.
+          </p>
+        </details>
+        <details>
+          <summary>Can I keep old and new Verity packs active?</summary>
+          <p>
+            Not for a first test. Keep one current behavior pack and one matching resource pack active. After
+            a clean world works, you can migrate carefully, but testing multiple similar Verity packages at
+            once makes the duplicate error harder to diagnose.
+          </p>
+        </details>
+        <details>
+          <summary>Will reinstalling Minecraft fix it?</summary>
+          <p>
+            Reinstalling is usually unnecessary. Remove stale world and storage pack entries first. If the
+            platform does not expose storage clearly, export or back up the world before deeper cleanup.
+          </p>
+        </details>
+        <details>
+          <summary>Where should I go after the duplicate package is fixed?</summary>
+          <p>
+            If Verity imports but does not spawn, open <a href="/how-to-spawn-verity/">How to spawn Verity</a>.
+            If it imports but does not reply, open <a href="/verity-doesnt-respond/">Verity doesn't respond</a>.
+            If the issue is sound or speech, open <a href="/voice-not-working/">Voice not working</a>.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-routes" aria-label="Footer route links">
+        <a href="/routes/">All routes</a>
+        <a href="/bedrock/">Bedrock route</a>
+        <a href="/verity-be/">Verity BE</a>
+        <a href="/best-verity-mod-bedrock/">Best Bedrock route</a>
+        <a href="/not-working/">Not working</a>
+        <a href="/source-map/">Source map</a>
+      </nav>
+      <p>Independent troubleshooting guide. Not affiliated with Mojang, Microsoft, CurseForge, MCPEDL, or Verity maintainers.</p>
+    </footer>
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

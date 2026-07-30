@@ -9,6 +9,7 @@ const htmlRoutes = new Set([
   "/creators/",
   "/curseforge/",
   "/download/",
+  "/duplicate-package/",
   "/error-no-purpose/",
   "/faq/",
   "/fabric/",
@@ -185,6 +186,26 @@ export default {
       url.pathname.startsWith("/best-minecraft-verity-mod-bedrock/")
     ) {
       url.pathname = "/best-verity-mod-bedrock/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/duplicate-package" ||
+      url.pathname === "/verity-duplicate-package" ||
+      url.pathname.startsWith("/verity-duplicate-package/") ||
+      url.pathname === "/verity-mod-duplicate-package" ||
+      url.pathname.startsWith("/verity-mod-duplicate-package/") ||
+      url.pathname === "/bedrock-duplicate-package" ||
+      url.pathname.startsWith("/bedrock-duplicate-package/") ||
+      url.pathname === "/verity-be-duplicate-package" ||
+      url.pathname.startsWith("/verity-be-duplicate-package/") ||
+      url.pathname === "/duplicate-pack" ||
+      url.pathname.startsWith("/duplicate-pack/") ||
+      url.pathname === "/duplicate-pack-error" ||
+      url.pathname.startsWith("/duplicate-pack-error/")
+    ) {
+      url.pathname = "/duplicate-package/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

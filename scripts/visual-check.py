@@ -49,6 +49,7 @@ ROUTES = [
     "/verity-3-4-1-jar/",
     "/verity-be/",
     "/bedrock/",
+    "/duplicate-package/",
     "/pocket-edition/",
     "/apk/",
     "/mcpedl/",
