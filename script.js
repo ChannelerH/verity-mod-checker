@@ -454,6 +454,50 @@ const knownProjects = [
     ]
   },
   {
+    name: "Smiley's Better Voice",
+    edition: "Java add-on",
+    route: "/smileys-better-voice/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1608717",
+        slugs: ["/minecraft/mc-mods/smileys-better-voice"],
+        link: "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice"
+      }
+    ],
+    releases: [
+      {
+        status: "current-verity-je-voice-addon-route",
+        filename: "Smiley's Better Voice-4.0.0.jar",
+        aliases: [
+          "Smiley's Better Voice",
+          "smileys better voice",
+          "smiley better voice",
+          "better voice verity",
+          "verity better voice",
+          "verity voice mimic",
+          "verity mod voice mimic",
+          "Fish Audio",
+          "Cartesia",
+          "verity fish audio",
+          "verity cartesia",
+          "verity tts addon"
+        ],
+        versionNumber: "4.0.0",
+        sizeMb: 1.4,
+        version: "Minecraft 1.20.1 · Forge add-on",
+        published: "July 29, 2026",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8536538",
+            link: "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "Verity BE",
     edition: "Bedrock",
     sources: [
@@ -1618,6 +1662,32 @@ function similarNameSummary(project, projectId) {
   return `This URL matches a checked similar-name route, Project ID ${projectId || "recorded in the source map"}. Treat it as separate from the main Verity Mod until the owner, loader, edition, package, and file record all match the user's intent.`;
 }
 
+function isJavaAddonRoute(project) {
+  return project?.edition === "Java add-on";
+}
+
+function javaAddonChecks(project) {
+  if (project.name === "Smiley's Better Voice") {
+    return [
+      "The host, project path, or file record matches the checked Smiley's Better Voice add-on route.",
+      "Use it only after the parent Verity JE Java route, loader, and dependencies are already matched.",
+      "Fish Audio, Cartesia, Groq, and Ollama keys belong to different setup layers; do not paste any provider key into this checker."
+    ];
+  }
+  return [
+    "The input matches a checked Java add-on route.",
+    "Confirm the parent Java mod before adding this file.",
+    "Use the local guide to separate add-on setup from the default download route."
+  ];
+}
+
+function javaAddonSummary(project, projectId) {
+  if (project.name === "Smiley's Better Voice") {
+    return `This URL or text matches the checked Smiley's Better Voice CurseForge route, Project ID ${projectId || "1608717"}. The July 30 source check maps the current file to Smiley's Better Voice-4.0.0.jar, record 8536538, for Minecraft 1.20.1 Forge. Treat it as a Verity JE voice/TTS add-on for Fish Audio, Cartesia, and voice mimicking, not as the parent Verity JE download, a Bedrock MCADDON, or VERITY.exe.`;
+  }
+  return `This input matches a checked Java add-on route, Project ID ${projectId || "recorded in the source map"}. Treat it as separate from the default Verity Mod download until the parent mod, loader, package type, and file record match the user's intent.`;
+}
+
 function isUnavailableRelease(release) {
   return Boolean(release?.status?.includes("unlisted") || release?.availability);
 }
@@ -2077,6 +2147,27 @@ function inspectTextSource(rawValue) {
           external: false
         };
       }
+      if (isJavaAddonRoute(sourceMatch.project)) {
+        const matchedRecordNote = matchedRecord
+          ? ` The matched file record is ${matchedRecord.id} (${matchedRelease?.filename || "checked file"}).`
+          : "";
+        return {
+          state: "caution",
+          verdict: "Known Java add-on route",
+          risk: "Install after parent Verity JE",
+          title: `${sourceMatch.project.name} ${sourceMatch.source.platform} route recognized`,
+          summary: `${javaAddonSummary(sourceMatch.project, sourceMatch.source.id)}${matchedRecordNote}`,
+          source: host,
+          package: type === "Not identified" ? matchedPackageType : type,
+          project: `${sourceMatch.project.name} · ${sourceMatch.source.platform} Project ID ${sourceMatch.source.id}${matchedRecord ? ` · File ID ${matchedRecord.id}` : ""}`,
+          hash: "",
+          publisherCheck: "Add-on route, not the parent Verity JE download",
+          checks: javaAddonChecks(sourceMatch.project),
+          link: sourceMatch.project.route,
+          linkLabel: "Open Better Voice route check",
+          external: false
+        };
+      }
       if (sourceMatch.project.edition === "Java modpack" || sourceMatch.project.route === "/ultimate-verity/") {
         const matchedRecordNote = matchedRecord
           ? ` The matched file record is ${matchedRecord.id} (${matchedRelease?.filename || "checked file"}).`
@@ -2286,6 +2377,25 @@ function inspectTextSource(rawValue) {
         checks: modpackChecks(project),
         link: modpackRoute(project),
         linkLabel: modpackRouteLabel(project),
+        external: false
+      };
+    }
+    if (isJavaAddonRoute(project)) {
+      const matchedRecordNote = matchedRecord ? ` Matched file record: ${matchedRecord.id}.` : "";
+      return {
+        state: "caution",
+        verdict: "Known Java add-on signal",
+        risk: "Install after parent Verity JE",
+        title: `${project.name} is a checked add-on route`,
+        summary: `${javaAddonSummary(project, project.sources[0]?.id)}${matchedRecordNote}`,
+        source: "Text or Project ID",
+        package: type === "Not identified" ? "Java JAR add-on" : type,
+        project: `${project.name} · ${projectIdentityLabel(project)}${matchedRecord ? ` · File ID ${matchedRecord.id}` : ""}`,
+        hash: "",
+        publisherCheck: "Add-on route, not the parent Verity JE download",
+        checks: javaAddonChecks(project),
+        link: project.route,
+        linkLabel: "Open Better Voice route check",
         external: false
       };
     }

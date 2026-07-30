@@ -35,6 +35,7 @@ const htmlRoutes = new Set([
   "/routes/",
   "/server/",
   "/source-map/",
+  "/smileys-better-voice/",
   "/status-401/",
   "/status-429/",
   "/survive-from-verity-or-falsity/",
@@ -109,6 +110,9 @@ const dataFiles = new Set([
   "/data/verity-source-map.csv",
   "/data/verity-source-map.json",
   "/data/verity-source-map.schema.json",
+  "/data/verity-voice-addons.json",
+  "/data/verity-voice-addons.schema.json",
+  "/data/verity-voice-addons-source-pack.md",
   "/data/verity-voice-troubleshooting.json",
   "/data/verity-voice-troubleshooting.schema.json",
   "/data/verity-voice-troubleshooting-source-pack.md",
@@ -1377,6 +1381,40 @@ export default {
       url.pathname.startsWith("/verity-doesnt-spawn/")
     ) {
       url.pathname = "/how-to-spawn-verity/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/smileys-better-voice" ||
+      url.pathname === "/smiley-better-voice" ||
+      url.pathname.startsWith("/smiley-better-voice/") ||
+      url.pathname === "/smileys-better-voice-mod" ||
+      url.pathname.startsWith("/smileys-better-voice-mod/") ||
+      url.pathname === "/smileys-better-voice-verity" ||
+      url.pathname.startsWith("/smileys-better-voice-verity/") ||
+      url.pathname === "/smiley-voice" ||
+      url.pathname.startsWith("/smiley-voice/") ||
+      url.pathname === "/verity-better-voice" ||
+      url.pathname.startsWith("/verity-better-voice/") ||
+      url.pathname === "/verity-mod-better-voice" ||
+      url.pathname.startsWith("/verity-mod-better-voice/") ||
+      url.pathname === "/better-voice-verity" ||
+      url.pathname.startsWith("/better-voice-verity/") ||
+      url.pathname === "/better-voice-verity-mod" ||
+      url.pathname.startsWith("/better-voice-verity-mod/") ||
+      url.pathname === "/verity-voice-mimic" ||
+      url.pathname.startsWith("/verity-voice-mimic/") ||
+      url.pathname === "/verity-mod-voice-mimic" ||
+      url.pathname.startsWith("/verity-mod-voice-mimic/") ||
+      url.pathname === "/verity-fish-audio" ||
+      url.pathname.startsWith("/verity-fish-audio/") ||
+      url.pathname === "/verity-cartesia" ||
+      url.pathname.startsWith("/verity-cartesia/") ||
+      url.pathname === "/verity-tts-addon" ||
+      url.pathname.startsWith("/verity-tts-addon/")
+    ) {
+      url.pathname = "/smileys-better-voice/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

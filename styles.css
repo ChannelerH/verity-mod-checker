@@ -414,6 +414,12 @@ textarea {
 }
 
 .copy-button {
+  color: var(--charcoal);
+  background: #fffef8;
+  border-color: var(--line);
+}
+
+.result-panel .copy-button {
   color: #fffef8;
   background: transparent;
   border-color: rgba(255, 254, 248, 0.36);

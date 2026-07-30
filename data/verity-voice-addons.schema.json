@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veritymodchecker.online/data/verity-voice-addons.schema.json",
+  "title": "Verity Mod voice add-on route snapshot",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "checkedAt",
+    "canonicalUrl",
+    "method",
+    "observedDemand",
+    "addons",
+    "relatedProjects",
+    "routePolicy"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "checkedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "canonicalUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "method": {
+      "type": "string"
+    },
+    "observedDemand": {
+      "type": "object"
+    },
+    "addons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "host",
+          "owner",
+          "projectId",
+          "projectUrl",
+          "status",
+          "displayedDownloadsAtCheck",
+          "displayedDownloadsApproximate",
+          "packageType",
+          "minecraftVersion",
+          "loader",
+          "mainFile",
+          "mainFileRecord",
+          "mainFileUrl",
+          "mainFileDownloadsAtCheck",
+          "mainFileSizeMb",
+          "lastUpdate",
+          "sourceNote",
+          "requirements",
+          "providers",
+          "privacyNotes",
+          "troubleshooting"
+        ],
+        "properties": {
+          "name": { "type": "string" },
+          "host": { "type": "string" },
+          "owner": { "type": "string" },
+          "projectId": { "type": ["integer", "string"] },
+          "projectUrl": { "type": "string", "format": "uri" },
+          "status": { "type": "string" },
+          "displayedDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "displayedDownloadsApproximate": { "type": "boolean" },
+          "packageType": { "type": "string" },
+          "minecraftVersion": { "type": "string" },
+          "loader": { "type": "string" },
+          "mainFile": { "type": "string" },
+          "mainFileRecord": { "type": ["integer", "string"] },
+          "mainFileUrl": { "type": "string", "format": "uri" },
+          "mainFileDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "mainFileSizeMb": { "type": "number", "minimum": 0 },
+          "mavenSnippet": { "type": "string" },
+          "lastUpdate": { "type": "string" },
+          "sourceNote": { "type": "string" },
+          "requirements": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "providers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "privacyNotes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "troubleshooting": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "relatedProjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "host", "owner", "projectUrl", "displayedDownloadsAtCheck", "sourceNote"],
+        "properties": {
+          "name": { "type": "string" },
+          "host": { "type": "string" },
+          "owner": { "type": "string" },
+          "projectUrl": { "type": "string", "format": "uri" },
+          "displayedDownloadsAtCheck": { "type": "integer", "minimum": 0 },
+          "sourceNote": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "publicGists": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "routePolicy": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -43,6 +43,7 @@ ROUTES = [
     "/is-verity-real/",
     "/java/",
     "/verity-je/",
+    "/smileys-better-voice/",
     "/verity-6-jar/",
     "/verity-6-0-1-jar/",
     "/verity-6-0-0-jar/",
@@ -99,6 +100,7 @@ def assert_layout(page, route, viewport_name):
     page.screenshot(
         path=f"/tmp/verity-{screenshot_name}-{viewport_name}.png",
         full_page=True,
+        timeout=60000,
     )
 
 
@@ -116,6 +118,7 @@ with sync_playwright() as playwright:
     for viewport_name, viewport in VIEWPORTS.items():
         context = browser.new_context(viewport=viewport)
         page = context.new_page()
+        page.set_default_timeout(60000)
         page.on("console", record_console_error)
         for route in ROUTES:
             assert_layout(page, route, viewport_name)
@@ -130,6 +133,9 @@ with sync_playwright() as playwright:
         assert "8539885" in source_map_text
         assert "Verity Dweller" in source_map_text
         assert "Verity Body Overhaul" in source_map_text
+        assert "Smiley's Better Voice" in source_map_text
+        assert "1608717" in source_map_text
+        assert "8536538" in source_map_text
         assert "Verity May Be" in source_map_text
         assert "VerityCraft" in source_map_text
         assert "Survive from VERITY or FALSITY" in source_map_text
@@ -141,7 +147,7 @@ with sync_playwright() as playwright:
         assert "stale-beta-endpoint-404" in source_map_text
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
-        assert page.locator("tbody tr").count() == 33
+        assert page.locator("tbody tr").count() == 34
 
         page.goto(f"{BASE_URL}/versions/", wait_until="domcontentloaded")
         versions_text = page.locator("main").inner_text()
@@ -236,6 +242,24 @@ with sync_playwright() as playwright:
         assert "2,411,115" in verity_je_text
         assert "697.2K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/smileys-better-voice/", wait_until="domcontentloaded")
+        better_voice_text = page.locator("main").inner_text()
+        assert "Smiley's Better Voice for Verity JE" in better_voice_text
+        assert "Project ID 1608717" in better_voice_text
+        assert "8536538" in better_voice_text
+        assert "Smiley's Better Voice-4.0.0.jar" in better_voice_text
+        assert "Fish Audio" in better_voice_text
+        assert "Cartesia" in better_voice_text
+        assert "voice mimicking" in better_voice_text
+        assert "No API keys collected" in better_voice_text
+        assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice"]').count() >= 1
+        assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538"]').count() >= 1
+        assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je"]').count() >= 1
+        assert page.locator('a[href="/verity-je/"]').count() >= 1
+        assert page.locator('a[href="/data/verity-voice-addons.json"]').count() >= 1
+        assert page.locator('a[href="/data/verity-voice-addons-source-pack.md"]').count() >= 1
+        assert page.locator('a[href="https://gist.github.com/ChannelerH/d5c697e15f451982d489dff268d0ac3c"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-install-verity-bedrock/", wait_until="domcontentloaded")
         bedrock_install_text = page.locator("main").inner_text()
@@ -398,6 +422,8 @@ with sync_playwright() as playwright:
         assert "VERITY.exe CurseForge page" in voice_text
         assert "8539885" in voice_text
         assert "smiley-openal-1.2.1.jar" in voice_text
+        assert "Smiley's Better Voice" in voice_text
+        assert "8536538" in voice_text
         assert "Simple Voice Chat hears you but Verity does not react" in voice_text
         assert page.locator('a[href="https://www.reddit.com/r/Minecraft/comments/1utpwov/verity_mod_voice_not_working/"]').count() >= 1
         assert page.locator('a[href="https://www.curseforge.com/minecraft/modpacks/verity-exe"]').count() >= 1
@@ -406,6 +432,7 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="https://console.groq.com/docs/text-to-speech/orpheus"]').count() >= 1
         assert page.locator('a[href="/data/verity-voice-troubleshooting.json"]').count() >= 1
         assert page.locator('a[href="/data/verity-voice-troubleshooting-source-pack.md"]').count() >= 1
+        assert page.locator('a[href="/smileys-better-voice/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
@@ -530,6 +557,15 @@ with sync_playwright() as playwright:
         assert "8539885" in result_text
         assert "2.1.3" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Smiley's Better Voice" in result_text
+        assert "1608717" in result_text
+        assert "8536538" in result_text
+        assert "JAVA ADD-ON" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/smileys-better-voice/"
 
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-exe/files/8526843")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -765,4 +801,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes with provider evidence, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis and support summary tool, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Smiley's Better Voice route and checker intent, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes with provider evidence, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis and support summary tool, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")

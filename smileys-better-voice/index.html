@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smiley's Better Voice for Verity Mod: TTS &amp; Voice Mimic</title>
+    <meta
+      name="description"
+      content="Check Smiley's Better Voice for Verity JE: Project ID 1608717, file 8536538, Fish Audio, Cartesia, voice mimic setup, requirements, and silent voice fixes."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://veritymodchecker.online/smileys-better-voice/" />
+    <link rel="alternate" type="application/json" title="Verity voice add-on data" href="/data/verity-voice-addons.json" />
+    <meta property="og:title" content="Smiley's Better Voice for Verity JE" />
+    <meta property="og:description" content="Source-checked route for Smiley's Better Voice, Fish Audio, Cartesia, and voice mimic setup without mirroring files or collecting API keys." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://veritymodchecker.online/smileys-better-voice/" />
+    <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#171611" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37FVY65SR5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-37FVY65SR5');
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Smiley's Better Voice for Verity Mod: TTS and Voice Mimic Route",
+            "description": "A source-checked guide for Smiley's Better Voice, the Verity JE add-on for Fish Audio, Cartesia, expressive TTS, and voice mimicking.",
+            "datePublished": "2026-07-30",
+            "dateModified": "2026-07-30",
+            "mainEntityOfPage": "https://veritymodchecker.online/smileys-better-voice/",
+            "author": {"@type": "Organization", "name": "Verity Mod Guide"},
+            "publisher": {"@type": "Organization", "name": "Verity Mod Guide"}
+          },
+          {
+            "@type": "Dataset",
+            "@id": "https://veritymodchecker.online/smileys-better-voice/#dataset",
+            "name": "Smiley's Better Voice source-check data",
+            "description": "Point-in-time source data for Smiley's Better Voice Project ID 1608717, file 8536538, requirements, providers, and troubleshooting notes.",
+            "url": "https://veritymodchecker.online/smileys-better-voice/",
+            "distribution": [
+              {
+                "@type": "DataDownload",
+                "encodingFormat": "application/json",
+                "contentUrl": "https://veritymodchecker.online/data/verity-voice-addons.json"
+              }
+            ],
+            "dateModified": "2026-07-30",
+            "isBasedOn": [
+              "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice",
+              "https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538",
+              "https://www.curseforge.com/minecraft/mc-mods/verity-je"
+            ],
+            "keywords": ["Smiley's Better Voice", "Verity voice mimic", "Verity TTS", "Fish Audio", "Cartesia", "Verity JE add-on"]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Verity Mod Guide", "item": "https://veritymodchecker.online/" },
+              { "@type": "ListItem", "position": 2, "name": "Voice Not Working", "item": "https://veritymodchecker.online/voice-not-working/" },
+              { "@type": "ListItem", "position": 3, "name": "Smiley's Better Voice", "item": "https://veritymodchecker.online/smileys-better-voice/" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Smiley's Better Voice the official Verity JE download?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Smiley's Better Voice is an unofficial add-on for Verity JE. Install it only after choosing the parent Verity JE route and matching Minecraft, loader, and dependency requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the current Smiley's Better Voice file?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "At the July 30, 2026 check, the current 1.20.1 Forge file on CurseForge was Smiley's Better Voice-4.0.0.jar, file record 8536538, Project ID 1608717."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which provider should I use: Fish Audio or Cartesia?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use Fish Audio when emotion and voice mimicking are the priority. Use Cartesia when response speed and pronunciation are the priority. The provider key and voice ID are separate from Groq or Ollama keys used by Verity JE."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Verity silent after installing Better Voice?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Confirm Better Voice is enabled, Verity JE text-to-speech is on, the selected provider tab has a valid key and voice ID, the player is online, and the base Verity JE text reply works before replacing files."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="/" aria-label="Verity Mod Guide home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Verity Mod Guide</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/">Checker</a>
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/verity-je/">Verity JE</a>
+        <a href="/how-to-talk-to-verity/">Talk</a>
+        <a href="/voice-not-working/">Voice</a>
+        <a href="/source-map/">Source map</a>
+        <a href="/faq/">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero route-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Voice add-on checked July 30, 2026</p>
+          <h1>Smiley's Better Voice for Verity JE</h1>
+          <p class="lede">
+            Smiley's Better Voice is a separate Verity JE add-on for players who want more expressive
+            text-to-speech, Fish Audio or Cartesia voices, and optional voice mimicking. Use this page when
+            you searched for a better Verity voice, Fish Audio setup, Cartesia setup, a voice mimic feature,
+            or a silent Better Voice install. It is not the default Verity Mod download, not a Bedrock add-on,
+            not VERITY.exe, and not a file mirror. Start here to confirm Project ID <strong>1608717</strong>,
+            file record <strong>8536538</strong>, the current file name, required parent mod, provider split,
+            and safe troubleshooting order before opening any download page.
+          </p>
+          <div class="trust-strip" aria-label="Better Voice route facts">
+            <span>Project ID 1608717</span>
+            <span>File 8536538</span>
+            <span>Fish Audio</span>
+            <span>Cartesia</span>
+            <span>No API keys collected</span>
+          </div>
+        </div>
+
+        <aside class="result-panel">
+          <div class="result-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Fast route answer</span>
+          </div>
+          <h2>Install only after Verity JE is already matched</h2>
+          <p>
+            The checked CurseForge route names <strong>Smiley's Better Voice-4.0.0.jar</strong> as the current
+            1.20.1 Forge file. It works alongside Verity JE. If your base Java route, loader, dependencies,
+            or provider setup is wrong, a TTS add-on will not fix the parent mod.
+          </p>
+          <ol class="steps">
+            <li>Confirm you are on Java and have Verity JE installed.</li>
+            <li>Match Minecraft 1.20.1 and Forge 47+ for the current 4.0.0 file.</li>
+            <li>Add Cloth Config and GeckoLib with the parent mod.</li>
+            <li>Choose Fish Audio for emotion or Cartesia for speed.</li>
+            <li>Do not paste API keys into this checker or public comments.</li>
+          </ol>
+          <div class="action-row">
+            <a class="primary-link" href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538" rel="noopener" target="_blank">Open file 8536538</a>
+            <a class="copy-button" href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice" rel="noopener" target="_blank">Open project</a>
+            <a class="copy-button" href="/data/verity-voice-addons.json">Open JSON</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intent-table" aria-label="Current source signals">
+        <div class="section-heading">
+          <p class="eyebrow">Source facts</p>
+          <h2>What the official project pages say</h2>
+          <p>
+            The goal is not to outrank official project pages by copying them. The useful job is to answer
+            the searcher's confusion: which project is this, which file record is current, which parent mod
+            is required, which provider key belongs where, and what to do when chat works but voice is silent.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Checked item</th>
+                <th>Current fact</th>
+                <th>Why it matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Project identity</td>
+                <td>Smiley's Better Voice by Toast5, CurseForge Project ID <code>1608717</code>, 100,498 project downloads at check.</td>
+                <td>This confirms a real add-on route, but it does not replace Verity JE or prove a Bedrock install path.</td>
+              </tr>
+              <tr>
+                <td>Current file</td>
+                <td><code>Smiley's Better Voice-4.0.0.jar</code>, file record <code>8536538</code>, uploaded July 29, 2026, 1.4 MB, 1.20.1 Forge.</td>
+                <td>Use the exact file page when a video, comment, or Discord message mentions Better Voice without a link.</td>
+              </tr>
+              <tr>
+                <td>Parent route</td>
+                <td>Verity JE by VarmiteYT remains the parent Java project, with Project ID <code>1591438</code> on CurseForge.</td>
+                <td>Better Voice needs Verity JE. If Verity JE does not load or reply to text, fix the base route first.</td>
+              </tr>
+              <tr>
+                <td>Provider split</td>
+                <td>Fish Audio is the default voice/emotion route; Cartesia is the faster pronunciation route.</td>
+                <td>Fish, Cartesia, Groq, and Ollama keys solve different layers. A wrong key error may not be a Better Voice key.</td>
+              </tr>
+              <tr>
+                <td>Voice mimic</td>
+                <td>The project describes private Fish voice mimics built from about 10 seconds of clean captured speech.</td>
+                <td>Players should not post API keys, voice IDs, or private audio publicly while asking for help.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="status-section" id="download-decision">
+        <div class="section-heading">
+          <p class="eyebrow">Download decision</p>
+          <h2>Use Better Voice when the installed Java route already works</h2>
+        </div>
+        <div class="status-grid">
+          <article class="status-card primary">
+            <div class="status-topline"><span>Use it for</span><strong>TTS and mimic</strong></div>
+            <h3>Better voices after base Verity JE replies</h3>
+            <p>
+              This add-on is for sound quality, provider choice, emotion tags, and optional voice mimicking.
+              The clean path is simple: install Verity JE correctly, confirm one typed prompt gets a reply,
+              then add Better Voice and configure the provider tab. If a player has never seen Verity appear,
+              cannot enter a world, or sees an API connection failed message before audio starts, the first
+              stop is the Java, provider, or not-working route rather than this add-on.
+            </p>
+            <a href="/verity-je/">Check the parent Verity JE route</a>
+          </article>
+
+          <article class="status-card primary">
+            <div class="status-topline"><span>Do not use it for</span><strong>Wrong edition</strong></div>
+            <h3>Bedrock, MCPE, and VERITY.exe are separate</h3>
+            <p>
+              A JAR add-on does not import into Minecraft Bedrock or MCPE. Bedrock users should use Verity BE,
+              PnTMC, or Pocket Edition pages. VERITY.exe players should keep the modpack profile and debug
+              voice chat, direct chat, and Groq setup inside that profile. Installing Better Voice because a
+              Bedrock world is silent will only create another mismatch.
+            </p>
+            <a href="/java-vs-bedrock/">Compare Java and Bedrock routes</a>
+          </article>
+
+          <article class="status-card">
+            <div class="status-topline"><span>Safety rule</span><strong>No mirrors</strong></div>
+            <h3>Use the project page instead of copied JARs</h3>
+            <p>
+              File names can be copied. The useful identifiers are Project ID <code>1608717</code>, file
+              record <code>8536538</code>, owner Toast5, and the official CurseForge URL. This site publishes
+              route data and a source pack so support helpers can cite facts without uploading a replacement
+              JAR or asking players for private keys.
+            </p>
+            <a href="/source-map/">Open the source map</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="setup-order">
+        <div class="section-heading">
+          <p class="eyebrow">Setup order</p>
+          <h2>Install and test in layers</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Layer one: parent mod and loader</h3>
+            <p>
+              Start with a clean Java profile. For the current Better Voice file, the checked route is Minecraft
+              1.20.1 Forge. The project requirement table names Forge 47+, Verity JE 5.0+, Cloth Config, and
+              GeckoLib. Add only the needed parent mod and dependencies first. Launch the profile and confirm
+              the game opens before adding extra horror packs, server-side utilities, visual mods, or provider
+              experiments. This protects you from diagnosing a sound issue when the real issue is a loader,
+              dependency, or version mismatch.
+            </p>
+            <p>
+              After the parent Verity JE route loads, test one short typed prompt. If the text response fails,
+              check Groq, Ollama, OpenRouter, status 401, status 429, local server state, or model behavior.
+              If the text response works but voice does not, Better Voice, Minecraft audio, TTS provider,
+              voice ID, internet access, or provider credits become the likely layer.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Layer two: Fish Audio</h3>
+            <p>
+              Fish Audio is the quality and emotion path. It uses its own API key and a voice or reference ID.
+              Voice mimicking also belongs to this side. If the mimic fails, the checked project notes point to
+              common causes such as invalid Fish key, insufficient credits, or not enough clean push-to-talk
+              speech. Do not post the Fish key, the full voice ID, or a private audio sample when asking for help.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Layer three: Cartesia</h3>
+            <p>
+              Cartesia is the speed and pronunciation path. It has its own API key and Voice ID in a separate
+              config tab. If a player changes providers and Verity becomes silent, confirm that the provider
+              was actually switched, the right tab has a key and voice ID, Minecraft is online, and the account
+              has access to the selected voice. Do not reuse a Groq key in a Cartesia field.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Layer four: audio output</h3>
+            <p>
+              When chat works and provider settings look right, check ordinary output. Raise Minecraft master
+              volume, voice or sound sliders, operating-system output, headset routing, resource packs, and
+              server/client parity. If the player is on a server, confirm the add-on and dependencies are present
+              where the feature expects them. A working text response means the problem may be after the AI layer.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" id="silent-fix" aria-label="Silent Better Voice fixes">
+        <div class="section-heading">
+          <p class="eyebrow">Silent voice fix</p>
+          <h2>What to check when Better Voice is installed but Verity is quiet</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Symptom</th>
+                <th>Likely layer</th>
+                <th>First useful action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Text appears in chat but no voice plays</td>
+                <td>TTS provider, Minecraft audio, Better Voice toggle, Verity JE TTS toggle, output device</td>
+                <td>Confirm Better Voice is enabled, Use text to speech is on, provider key plus voice ID are filled, and a short line is tested online.</td>
+              </tr>
+              <tr>
+                <td>"Invalid API Key" appears when talking</td>
+                <td>Could be Groq/Ollama in Verity JE rather than Fish or Cartesia</td>
+                <td>Identify which config tab produced the error before replacing the Better Voice file.</td>
+              </tr>
+              <tr>
+                <td>Voice mimic does not work</td>
+                <td>Fish key, credits, captured speech quality, or server-stored mimic state</td>
+                <td>Use about 10 seconds of clean push-to-talk speech and check Fish account status without posting private audio.</td>
+              </tr>
+              <tr>
+                <td>Throw scream repeats after landing</td>
+                <td>Old Better Voice or old parent mod behavior</td>
+                <td>Compare installed versions with current Better Voice 4.0.0 and the current Verity JE route.</td>
+              </tr>
+              <tr>
+                <td>Bedrock world has no TTS</td>
+                <td>Wrong edition</td>
+                <td>Use the Verity BE or PnTMC Bedrock page instead. Do not import a Java JAR into Bedrock.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section" id="privacy">
+        <div class="section-heading">
+          <p class="eyebrow">Key and voice safety</p>
+          <h2>Do not expose provider secrets while asking for help</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>Useful support summaries avoid private data</h3>
+            <p>
+              A good Better Voice support message should name the route, Minecraft version, loader, parent
+              Verity JE version, Better Voice file record, selected provider, whether typed text works, and the
+              exact non-secret error text. It should not include a Fish API key, Cartesia API key, Groq key,
+              Ollama endpoint credential, OpenRouter key, full voice ID, session token, or private audio sample.
+              If a helper asks for a full key in public, stop and move to a safer support channel.
+            </p>
+            <p>
+              Voice mimicking deserves extra care because it can involve captured speech. The checked project
+              page describes Fish-based mimics as private to the player's Fish account and stored server-side
+              for multiplayer. That is not a reason to panic, but it is a reason to avoid public uploads of
+              voice samples, log files containing account data, or screenshots that show provider dashboards.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Copy this safe support outline</h3>
+            <ul class="check-list">
+              <li>Project: Verity JE plus Smiley's Better Voice.</li>
+              <li>File: Better Voice record 8536538 or another exact record.</li>
+              <li>Minecraft and loader: for example 1.20.1 Forge.</li>
+              <li>Provider: Fish Audio or Cartesia, without the key.</li>
+              <li>Text test: whether Verity JE replies in chat before voice.</li>
+              <li>Audio test: whether any Minecraft sounds and other TTS output work.</li>
+              <li>Error: sanitized toast or log line with secrets removed.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="intent-table" id="related-routes" aria-label="Related Verity voice routes">
+        <div class="section-heading">
+          <p class="eyebrow">Related routes</p>
+          <h2>Do not confuse Better Voice with other Verity add-ons</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Result name</th>
+                <th>What it is</th>
+                <th>Use this site route</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Smiley's Better Vision</td>
+                <td>A related Verity JE add-on for seeing the Minecraft world, not a voice/TTS fix.</td>
+                <td><a href="/source-map/">Source map</a></td>
+              </tr>
+              <tr>
+                <td>Smiley's Better Brain</td>
+                <td>A related Verity JE add-on for smarter behavior, not the current Better Voice file.</td>
+                <td><a href="/ai-model/">AI model route</a></td>
+              </tr>
+              <tr>
+                <td>Smiley's Collection</td>
+                <td>A modpack combining speak, see, and think add-ons, not a standalone voice add-on record.</td>
+                <td><a href="/verity-pack/">Modpack route</a></td>
+              </tr>
+              <tr>
+                <td>VERITY.exe</td>
+                <td>A separate CurseForge modpack route with voice chat and direct chat notes.</td>
+                <td><a href="/verity-exe/">VERITY.exe guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity BE local TTS</td>
+                <td>A Bedrock add-on behavior controlled through the Bedrock route, not a Java provider add-on.</td>
+                <td><a href="/verity-be/">Verity BE guide</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="section-heading">
+          <p class="eyebrow">Source references</p>
+          <h2>Open the source, data, or next fix</h2>
+        </div>
+        <div class="action-row">
+          <a class="primary-link" href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice" rel="noopener" target="_blank">Official Better Voice project</a>
+          <a class="copy-button" href="https://www.curseforge.com/minecraft/mc-mods/smileys-better-voice/files/8536538" rel="noopener" target="_blank">File record 8536538</a>
+          <a class="copy-button" href="https://www.curseforge.com/minecraft/mc-mods/verity-je" rel="noopener" target="_blank">Parent Verity JE project</a>
+          <a class="copy-button" href="/voice-not-working/">Voice not working</a>
+          <a class="copy-button" href="/how-to-talk-to-verity/">How to talk to Verity</a>
+          <a class="copy-button" href="/data/verity-voice-addons.json">Voice add-on JSON</a>
+          <a class="copy-button" href="/data/verity-voice-addons-source-pack.md">Source pack</a>
+          <a class="copy-button" href="https://gist.github.com/ChannelerH/d5c697e15f451982d489dff268d0ac3c" rel="noopener" target="_blank">Public Gist</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/download/">Download</a>
+        <a href="/java/">Java</a>
+        <a href="/verity-je/">Verity JE</a>
+        <a href="/voice-not-working/">Voice fix</a>
+        <a href="/source-map/">Source map</a>
+        <a href="/updates/">Updates</a>
+      </nav>
+      <p>Independent source-checking page. Not affiliated with Mojang, Microsoft, CurseForge, Verity JE, or Smiley's Better Voice maintainers.</p>
+    </footer>
+
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

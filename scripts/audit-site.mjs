@@ -5,7 +5,7 @@ const pageFiles = [
   "index.html",
   ...fs
     .readdirSync(".")
-    .filter((name) => name !== "dist-cf" && fs.existsSync(path.join(name, "index.html")))
+    .filter((name) => !name.startsWith("dist-cf") && fs.existsSync(path.join(name, "index.html")))
     .map((name) => path.join(name, "index.html"))
     .sort(),
 ];

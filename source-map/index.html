@@ -56,7 +56,8 @@
                         "isBasedOn": [
                                 "https://veritymodchecker.online/data/verity-releases.json",
                                 "https://veritymodchecker.online/data/verity-modpacks.json",
-                                "https://veritymodchecker.online/data/verity-lookalikes.json"
+                                "https://veritymodchecker.online/data/verity-lookalikes.json",
+                                "https://veritymodchecker.online/data/verity-voice-addons.json"
                         ],
                         "creator": {
                                 "@type": "Organization",
@@ -67,6 +68,7 @@
                                 "verity mod project id",
                                 "verity mod csv",
                                 "verity dweller",
+                                "smiley's better voice",
                                 "verity mod data"
                         ]
                 },
@@ -220,7 +222,7 @@
           <p class="lede">
             This page is built for editors, video creators, server owners, wiki maintainers, and players who
             need one reliable Verity Mod reference without copying files from a mirror. It normalizes the
-            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, VERITY.exe, and similar-name routes into a single
+            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, VERITY.exe, voice add-on, and similar-name routes into a single
             source map. Use it to answer which Project ID belongs to which owner, which file record is current,
             which package type should be installed, and which stale record should only be used for diagnosis.
           </p>
@@ -239,10 +241,10 @@
           </div>
           <h2>Use the source map when you need to cite records, not download files</h2>
           <p>
-            The current checked snapshot lists 33 route records. It includes the stable Verity JE
+            The current checked snapshot lists 34 route records. It includes the stable Verity JE
             CurseForge file, the Modrinth checksum route, observed beta records that now return 404, Verity BE,
-            PnTMC Bedrock rows, Pocket Edition, separate modpack routes, and current similar-name results such
-            as Verity Dweller. The CSV is useful for spreadsheets,
+            PnTMC Bedrock rows, Pocket Edition, separate modpack routes, Smiley's Better Voice, and current
+            similar-name results such as Verity Dweller. The CSV is useful for spreadsheets,
             public notes, and community comparison tables. The JSON is useful for bots, route checkers, and editors.
           </p>
           <ol class="steps">
@@ -581,6 +583,15 @@
                 <td>fan-project-not-associated-with-official-verity-team</td>
                 <td><a href="https://veritymodchecker.online/verity-monster-form/">Guide</a></td>
               </tr>
+              <tr>
+                <td>Smiley's Better Voice</td>
+                <td>Java add-on · CurseForge</td>
+                <td>Toast5 · 1608717</td>
+                <td>Smiley's Better Voice-4.0.0.jar</td>
+                <td>8536538</td>
+                <td>current-verity-je-voice-addon-route</td>
+                <td><a href="https://veritymodchecker.online/smileys-better-voice/">Guide</a></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -598,9 +609,10 @@
               Most bad Verity Mod advice starts with a shortcut: a title says "latest," a video says
               "updated," or a reposted file name looks familiar. That shortcut skips the most important
               question, which is whether the player is on Java, Bedrock, MCPE, or a modpack profile. A
-              Java JAR cannot be imported into Bedrock. A Bedrock MCADDON does not belong in a Java mods
-              folder. A ZIP can be a modpack instead of the standalone file. A copied beta URL can keep
-              circulating after the maintainer removes the active version record.
+            Java JAR cannot be imported into Bedrock. A Bedrock MCADDON does not belong in a Java mods
+            folder. A ZIP can be a modpack instead of the standalone file. A voice add-on such as Smiley's
+            Better Voice is not the parent Verity JE route. A copied beta URL can keep circulating after the
+            maintainer removes the active version record.
             </p>
             <p>
               The source map keeps those differences visible. Each row names the host, owner, Project ID,
@@ -628,8 +640,9 @@
               It is better for scripts, bots, and automated site checks because each record has a stable
               <code>routeId</code>. The JSON also carries the platform-counter summary: 14,112,806
               displayed downloads across the four tracked CurseForge project pages, or 14,479,965
-              when the official Modrinth Verity JE project counter is added. Those are platform counters,
-              not unique players.
+              when the official Modrinth Verity JE project counter is added. The tracked voice add-on rows add
+              100,498 displayed project downloads for the
+              current add-on data. Those are platform counters, not unique players.
             </p>
           </article>
           <article class="guide-block">

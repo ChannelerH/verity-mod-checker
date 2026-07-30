@@ -4,9 +4,10 @@ import path from "node:path";
 const releases = JSON.parse(fs.readFileSync("data/verity-releases.json", "utf8"));
 const modpacks = JSON.parse(fs.readFileSync("data/verity-modpacks.json", "utf8"));
 const lookalikes = JSON.parse(fs.readFileSync("data/verity-lookalikes.json", "utf8"));
+const voiceAddons = JSON.parse(fs.readFileSync("data/verity-voice-addons.json", "utf8"));
 
 const site = "https://veritymodchecker.online";
-const generatedAt = [releases.checkedAt, modpacks.checkedAt, lookalikes.checkedAt].sort().at(-1);
+const generatedAt = [releases.checkedAt, modpacks.checkedAt, lookalikes.checkedAt, voiceAddons.checkedAt].sort().at(-1);
 
 function projectByName(name) {
   const project = releases.projects.find((entry) => entry.name === name);
@@ -85,6 +86,11 @@ function modpackRecommendedUse(item) {
 function lookalikeGuideUrl(item) {
   if (item.name === "Verity Body Overhaul" || item.name === "verity.jar") return `${site}/verity-monster-form/`;
   return `${site}/verity-dweller/`;
+}
+
+function voiceAddonGuideUrl(item) {
+  if (item.name === "Smiley's Better Voice") return `${site}/smileys-better-voice/`;
+  return `${site}/voice-not-working/`;
 }
 
 const records = [
@@ -343,6 +349,29 @@ const records = [
     recommendedUse: "Use only when the player intentionally selected this similar-name result and needs to know whether it is the same as the current Verity Mod.",
     caution: item.sourceNote,
     localGuideUrl: lookalikeGuideUrl(item)
+  })),
+  ...voiceAddons.addons.map((item) => ({
+    routeId: `voice-addon-${routeIdSegment(item.projectId)}`,
+    routeName: item.name,
+    edition: "Java add-on",
+    host: item.host,
+    owner: item.owner,
+    projectId: item.projectId,
+    projectUrl: item.projectUrl,
+    projectDownloadsAtCheck: item.displayedDownloadsAtCheck,
+    packageType: item.packageType,
+    fileName: item.mainFile,
+    recordId: item.mainFileRecord,
+    recordUrl: item.mainFileUrl,
+    minecraftVersion: item.minecraftVersion,
+    loader: item.loader,
+    publishedDate: item.lastUpdate,
+    fileSizeMb: item.mainFileSizeMb,
+    fileDownloadsAtCheck: item.mainFileDownloadsAtCheck,
+    status: item.status,
+    recommendedUse: "Use when the player intentionally wants the Verity JE voice add-on route for Fish Audio, Cartesia, TTS, or voice mimicking.",
+    caution: item.sourceNote,
+    localGuideUrl: voiceAddonGuideUrl(item)
   }))
 ];
 
@@ -353,10 +382,12 @@ const curseforgeTrackedProjectDownloads = [
   pocket
 ].reduce((sum, project) => sum + Number(project.projectDownloadsAtCheck || 0), 0);
 const curseforgePlusModrinthProjectDownloads = curseforgeTrackedProjectDownloads + Number(modrinth.projectDownloadsAtCheck || 0);
+const trackedVoiceAddonProjectDownloads = voiceAddons.addons.reduce((sum, item) => sum + Number(item.displayedDownloadsAtCheck || 0), 0);
 
 const summary = {
   curseforgeTrackedProjectDownloads,
   curseforgePlusModrinthProjectDownloads,
+  trackedVoiceAddonProjectDownloads,
   note: "These are platform display counters across separate public project pages. They are not unique players, unique installs, or safety verdicts."
 };
 
@@ -369,7 +400,8 @@ const sourceMap = {
   sourceSnapshots: [
     `${site}/data/verity-releases.json`,
     `${site}/data/verity-modpacks.json`,
-    `${site}/data/verity-lookalikes.json`
+    `${site}/data/verity-lookalikes.json`,
+    `${site}/data/verity-voice-addons.json`
   ],
   downloadCounterSummary: summary,
   records
@@ -519,9 +551,9 @@ const pageHtml = `<!doctype html>
               }
             ],
             dateModified: generatedAt.slice(0, 10),
-            isBasedOn: [`${site}/data/verity-releases.json`, `${site}/data/verity-modpacks.json`, `${site}/data/verity-lookalikes.json`],
+            isBasedOn: [`${site}/data/verity-releases.json`, `${site}/data/verity-modpacks.json`, `${site}/data/verity-lookalikes.json`, `${site}/data/verity-voice-addons.json`],
             creator: { "@type": "Organization", name: "Verity Mod Checker" },
-            keywords: ["verity mod source map", "verity mod project id", "verity mod csv", "verity dweller", "verity mod data"]
+            keywords: ["verity mod source map", "verity mod project id", "verity mod csv", "verity dweller", "smiley's better voice", "verity mod data"]
           },
           {
             "@type": "CollectionPage",
@@ -593,7 +625,7 @@ const pageHtml = `<!doctype html>
           <p class="lede">
             This page is built for editors, video creators, server owners, wiki maintainers, and players who
             need one reliable Verity Mod reference without copying files from a mirror. It normalizes the
-            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, VERITY.exe, and similar-name routes into a single
+            current Java, Bedrock, MCPE, PnTMC, Modrinth, CurseForge, VERITY.exe, voice add-on, and similar-name routes into a single
             source map. Use it to answer which Project ID belongs to which owner, which file record is current,
             which package type should be installed, and which stale record should only be used for diagnosis.
           </p>
@@ -614,8 +646,8 @@ const pageHtml = `<!doctype html>
           <p>
             The current checked snapshot lists ${records.length} route records. It includes the stable Verity JE
             CurseForge file, the Modrinth checksum route, observed beta records that now return 404, Verity BE,
-            PnTMC Bedrock rows, Pocket Edition, separate modpack routes, and current similar-name results such
-            as Verity Dweller. The CSV is useful for spreadsheets,
+            PnTMC Bedrock rows, Pocket Edition, separate modpack routes, Smiley's Better Voice, and current
+            similar-name results such as Verity Dweller. The CSV is useful for spreadsheets,
             public notes, and community comparison tables. The JSON is useful for bots, route checkers, and editors.
           </p>
           <ol class="steps">
@@ -675,9 +707,10 @@ ${tableRows}
               Most bad Verity Mod advice starts with a shortcut: a title says "latest," a video says
               "updated," or a reposted file name looks familiar. That shortcut skips the most important
               question, which is whether the player is on Java, Bedrock, MCPE, or a modpack profile. A
-              Java JAR cannot be imported into Bedrock. A Bedrock MCADDON does not belong in a Java mods
-              folder. A ZIP can be a modpack instead of the standalone file. A copied beta URL can keep
-              circulating after the maintainer removes the active version record.
+            Java JAR cannot be imported into Bedrock. A Bedrock MCADDON does not belong in a Java mods
+            folder. A ZIP can be a modpack instead of the standalone file. A voice add-on such as Smiley's
+            Better Voice is not the parent Verity JE route. A copied beta URL can keep circulating after the
+            maintainer removes the active version record.
             </p>
             <p>
               The source map keeps those differences visible. Each row names the host, owner, Project ID,
@@ -705,8 +738,9 @@ ${tableRows}
               It is better for scripts, bots, and automated site checks because each record has a stable
               <code>routeId</code>. The JSON also carries the platform-counter summary: ${formatNumber(summary.curseforgeTrackedProjectDownloads)}
               displayed downloads across the four tracked CurseForge project pages, or ${formatNumber(summary.curseforgePlusModrinthProjectDownloads)}
-              when the official Modrinth Verity JE project counter is added. Those are platform counters,
-              not unique players.
+              when the official Modrinth Verity JE project counter is added. The tracked voice add-on rows add
+              ${formatNumber(summary.trackedVoiceAddonProjectDownloads)} displayed project downloads for the
+              current add-on data. Those are platform counters, not unique players.
             </p>
           </article>
           <article class="guide-block">
