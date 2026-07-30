@@ -432,6 +432,9 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="https://console.groq.com/docs/text-to-speech/orpheus"]').count() >= 1
         assert page.locator('a[href="/data/verity-voice-troubleshooting.json"]').count() >= 1
         assert page.locator('a[href="/data/verity-voice-troubleshooting-source-pack.md"]').count() >= 1
+        assert page.locator('a[href="/how-to-talk-to-verity/"]').count() >= 1
+        assert page.locator('a[href="/commands/"]').count() >= 1
+        assert page.locator('a[href="/api-connection-failed/"]').count() >= 1
         assert page.locator('a[href="/smileys-better-voice/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
