@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T22:45:00+08:00</updated>
+  <updated>2026-07-30T23:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod official source counters refreshed again</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-official-source-counters-2026-07-30-2305</id>
+    <link href="https://veritymodchecker.online/source-map/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/CXsEzVwJ" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/yAt0wv1Z" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-07-30T23:05:00+08:00</published>
+    <updated>2026-07-30T23:05:00+08:00</updated>
+    <summary>GSC remains on the delayed July 15 through July 28 window with 54 clicks, 1,640 impressions, 3.3% CTR, average position 8.7, and exact verity mod at 2 clicks / 3 impressions. GA4 last-7-days still shows 328 active users, 156 Organic Search sessions, 90 Referral sessions, 73 gist.github.com referral sessions, and 58 verity_outbound_project_click events, so this round keeps the homepage TDK stable and refreshes the citation assets already helping referral discovery. Fresh first-party source checks changed current counters again: Modrinth Verity JE project on1Y0osD reports 367,159 downloads, current version CXsEzVwJ / verity-6.jar reports 22,116 downloads, stable version yAt0wv1Z / verity-5.7.3.jar reports 276,733 downloads, CurseForge Verity JE Project ID 1591438 reports 2,411,115 project downloads with file 8461257 at 697.2K displayed downloads and legacy file 8346795 at 282.5K, Verity BE Project ID 1574632 reports 4,109,692 project downloads with file 8506198 at 248.5K, PnTMC Project ID 1575941 reports 7,532,156 project downloads with file 8517480 at 333.7K, and Verity Pocket Edition Project ID 1596246 reports 59,843 project downloads with file 8406293 at 52.1K. The four tracked CurseForge project pages now sum to 14,112,806 displayed project-counter downloads; adding the official Modrinth Java project gives 14,479,965 platform-counter downloads. Refreshed release JSON, safety JSON, source-map JSON/CSV, visible counters, README, LLM summaries, visual assertions, the API troubleshooting source pack, and public Gist source data. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="source-data-refresh" />
+    <category term="download-counters" />
+    <category term="public-source-pack" />
+    <category term="gsc-ga4" />
+  </entry>
   <entry>
     <title>Verity Mod indexing and head-term source refresh</title>
     <id>https://veritymodchecker.online/updates/verity-mod-indexing-head-term-source-refresh-2026-07-30-2245</id>

@@ -1,6 +1,6 @@
 # Verity Mod API Connection Failed Source Pack
 
-Checked: 2026-07-30 22:45 Asia/Shanghai
+Checked: 2026-07-30 23:05 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/api-connection-failed/
 
@@ -37,9 +37,9 @@ Official Modrinth API checks on July 30 show:
 - Current version: `CXsEzVwJ`
 - Current file: `verity-6.jar`
 - Loader / game version: Forge 1.20.1
-- Project downloads at check: 366,354
-- Current version downloads at check: 21,380
-- Stable 5.7.3 version downloads at check: 276,683
+- Project downloads at check: 367,159
+- Current version downloads at check: 22,116
+- Stable 5.7.3 version downloads at check: 276,733
 - Project updated: 2026-07-29T18:50:58.960032Z
 - Followers at check: 121
 - SHA-1 for `verity-6.jar`: `609c799d7350a657cf2193839224bd6c2f9971b2`

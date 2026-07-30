@@ -1,12 +1,12 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-api-troubleshooting.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T22:45:00+08:00",
+  "checkedAt": "2026-07-30T23:05:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/api-connection-failed/",
   "method": "Point-in-time troubleshooting source pack built from Google Search Console query rows, GA4 landing-page and event signals, official provider documentation, and the official Modrinth public API. This file does not collect API keys, host Verity downloads, or claim that an API error is a malware verdict.",
   "observedDemand": {
     "gscWindow": "2026-07-15 through 2026-07-28 delayed Search Console data",
-    "ga4Window": "Last 7 days checked July 30, 2026 at 22:45 Asia/Shanghai",
+    "ga4Window": "Last 7 days checked July 30, 2026 at 23:05 Asia/Shanghai",
     "topGscRows": [
       {
         "query": "verity mod",
@@ -81,10 +81,10 @@
     "currentFile": "verity-6.jar",
     "minecraftVersion": "1.20.1",
     "loader": "Forge",
-    "projectDownloadsAtCheck": 366354,
-    "currentVersionDownloadsAtCheck": 21380,
+    "projectDownloadsAtCheck": 367159,
+    "currentVersionDownloadsAtCheck": 22116,
     "stableVersionId": "yAt0wv1Z",
-    "stableVersionDownloadsAtCheck": 276683,
+    "stableVersionDownloadsAtCheck": 276733,
     "projectUpdatedAt": "2026-07-29T18:50:58.960032Z",
     "followersAtCheck": 121,
     "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2",
