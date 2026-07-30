@@ -5,8 +5,27 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T21:15:00+08:00</updated>
+  <updated>2026-07-30T21:20:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod all versions and downloads intent refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-all-versions-downloads-refresh-2026-07-30-2120</id>
+    <link href="https://veritymodchecker.online/versions/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/a3d1ff2db71f6f47a3c396c3cd662bd2" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/yAt0wv1Z" rel="related" />
+    <published>2026-07-30T21:20:00+08:00</published>
+    <updated>2026-07-30T21:20:00+08:00</updated>
+    <summary>Bing's visible broad-query sample for verity mod includes an all-versions/downloads competitor result, while Search Console's delayed July 15 through July 28 window still shows /download/ and /how-to-get-verity-mod/ at 0 clicks / 16 impressions each. Refreshed /versions/ without changing homepage TDK: title, description, H1, schema, first-screen copy, FAQ, and visible table wording now target Verity Mod all versions and downloads directly while keeping source IDs, file records, package types, and requirements visible. The official Modrinth API still shows project on1Y0osD at 363,515 downloads and current version CXsEzVwJ / verity-6.jar at 18,863 downloads; stable version yAt0wv1Z / verity-5.7.3.jar now shows 276,540 downloads. Updated release JSON, safety JSON, source-map JSON/CSV, README, LLM summaries, and visual assertions. No fake traffic, paid links, comment spam, CAPTCHA bypass, homepage TDK churn, or GitHub directory PR outreach is claimed.</summary>
+    <category term="all-versions-intent" />
+    <category term="downloads-intent" />
+    <category term="bing-serp" />
+    <category term="source-data-refresh" />
+  </entry>
   <entry>
     <title>verity-mod.vercel.app risk route refreshed after Bing-visible result</title>
     <id>https://veritymodchecker.online/updates/verity-mod-vercel-app-bing-risk-refresh-2026-07-30-2115</id>

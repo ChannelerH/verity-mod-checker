@@ -144,13 +144,13 @@ with sync_playwright() as playwright:
 
         page.goto(f"{BASE_URL}/versions/", wait_until="domcontentloaded")
         versions_text = page.locator("main").inner_text()
-        assert "Verity Mod Versions and Requirements" in versions_text
+        assert "Verity Mod All Versions and Downloads" in versions_text
         assert "latest version depends on edition and source" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
         assert "363,515" in versions_text
         assert "18,863" in versions_text
-        assert "276,405" in versions_text
+        assert "276,540" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 1.1.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
@@ -265,7 +265,7 @@ with sync_playwright() as playwright:
         v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
         assert "SoftwareApplication" in v573_schema_text
         assert "686.1K" in v573_text
-        assert "276,405" in v573_text
+        assert "276,540" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
