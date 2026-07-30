@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T16:46:00+08:00</updated>
+  <updated>2026-07-30T17:22:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity link intent aliases and source counters refreshed</title>
+    <id>https://veritymodchecker.online/updates/link-intent-aliases-source-refresh-2026-07-30-1722</id>
+    <link href="https://veritymodchecker.online/link/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-safety-checks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/CXsEzVwJ" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/yAt0wv1Z" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-07-30T17:22:00+08:00</published>
+    <updated>2026-07-30T17:22:00+08:00</updated>
+    <summary>Search Console still shows the delayed July 15 through July 27 window with 50 clicks, 1,520 impressions, 3.3% CTR, average position 8.7, exact verity mod at 2 clicks / 3 impressions, and a new exact verity link row at 1 click / 1 impression / average position 3.0. Page rows show /java/ at 13 clicks / 563 impressions and /api-connection-failed/ at 18 clicks / 290 impressions, so this round strengthens link intent without changing homepage TDK. GA4 shows 327 active users, 153 Organic Search sessions, 88 Referral sessions, 53 verity_outbound_project_click events, and 73 gist.github.com referral sessions in the last 7 days. Current first-party source checks changed live counters: Modrinth Verity JE project on1Y0osD reports 356,475 downloads, current version CXsEzVwJ / verity-6.jar reports 13,087 downloads, stable version yAt0wv1Z / verity-5.7.3.jar reports 275,288 downloads, CurseForge Verity JE Project ID 1591438 reports 2,391,732 downloads, Verity BE Project ID 1574632 reports 4,094,168 downloads with file 8506198 at 238.0K displayed downloads, and PnTMC Project ID 1575941 reports 7,492,433 downloads with file 8517480 at 311.5K displayed downloads. Added canonical /link/ support for verity-link, verity-mod-link, official-verity-link, official-verity-mod-link, safe-verity-link, safe-verity-mod-link, verity-download-link, and verity-mod-download-link 301 aliases, refreshed release/safety/source-map data, visible counters, LLM summaries, visual assertions, Atom feed, and /updates/. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="link-intent" />
+    <category term="gsc-ga4" />
+    <category term="source-refresh" />
+    <category term="redirect-aliases" />
+  </entry>
   <entry>
     <title>Creator reference refreshed for author citation outreach</title>
     <id>https://veritymodchecker.online/updates/creator-reference-author-outreach-2026-07-30-1646</id>

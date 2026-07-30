@@ -443,6 +443,29 @@ export default {
     }
 
     if (
+      url.pathname === "/verity-link" ||
+      url.pathname.startsWith("/verity-link/") ||
+      url.pathname === "/verity-mod-link" ||
+      url.pathname.startsWith("/verity-mod-link/") ||
+      url.pathname === "/official-verity-link" ||
+      url.pathname.startsWith("/official-verity-link/") ||
+      url.pathname === "/official-verity-mod-link" ||
+      url.pathname.startsWith("/official-verity-mod-link/") ||
+      url.pathname === "/safe-verity-link" ||
+      url.pathname.startsWith("/safe-verity-link/") ||
+      url.pathname === "/safe-verity-mod-link" ||
+      url.pathname.startsWith("/safe-verity-mod-link/") ||
+      url.pathname === "/verity-download-link" ||
+      url.pathname.startsWith("/verity-download-link/") ||
+      url.pathname === "/verity-mod-download-link" ||
+      url.pathname.startsWith("/verity-mod-download-link/")
+    ) {
+      url.pathname = "/link/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
       url.pathname === "/minecraft-verity-mod-download" ||
       url.pathname.startsWith("/minecraft-verity-mod-download/") ||
       url.pathname === "/verity-minecraft-download" ||
