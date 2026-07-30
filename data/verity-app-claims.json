@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-app-claims.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-29T20:38:00+08:00",
+  "checkedAt": "2026-07-30T20:05:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/apk/",
   "method": "Manual comparison against public Google Play listing text and current maintainer MCADDON route records. App listing facts are point-in-time store disclosures, not malware verdicts and not official-project proof.",
   "normalMinecraftPackageRoutes": [
@@ -34,6 +34,7 @@
       "packageId": "com.verity.stalker.mobs.birchappsmcpe",
       "url": "https://play.google.com/store/apps/details?id=com.verity.stalker.mobs.birchappsmcpe",
       "installSignal": "500K+ downloads",
+      "ratingSignal": "3.5 stars and 2.78K reviews observed at check",
       "updated": "2026-07-23",
       "monetization": [
         "contains ads"
@@ -69,8 +70,8 @@
       "packageId": "com.l13devstudio.verit",
       "url": "https://play.google.com/store/apps/details?id=com.l13devstudio.verit",
       "installSignal": "500K+ downloads",
-      "ratingSignal": "4.7 stars and 29.4K reviews observed at check",
-      "updated": "2026-07-16",
+      "ratingSignal": "4.5 stars and 30.7K reviews observed at check",
+      "updated": "2026-07-17",
       "monetization": [
         "contains ads"
       ],
@@ -85,7 +86,7 @@
       "publisher": "Real Games Villa",
       "packageId": "verity.mod.minecraft.pemodverity",
       "url": "https://play.google.com/store/apps/details?id=verity.mod.minecraft.pemodverity",
-      "installSignal": "5K+ downloads",
+      "installSignal": "10K+ downloads",
       "updated": "2026-07-17",
       "monetization": [
         "contains ads"
@@ -103,7 +104,7 @@
       "packageId": "com.richmcpe.verity",
       "url": "https://play.google.com/store/apps/details?id=com.richmcpe.verity",
       "installSignal": "100K+ downloads",
-      "ratingSignal": "4.8 stars and 1.25K reviews observed at check",
+      "ratingSignal": "4.6 stars and 1.28K reviews observed at check",
       "updated": "2026-07-05",
       "monetization": [
         "contains ads"
@@ -122,7 +123,7 @@
       "packageId": "com.backroomsnextbots.sphermeme",
       "url": "https://play.google.com/store/apps/details?id=com.backroomsnextbots.sphermeme",
       "installSignal": "50K+ downloads",
-      "ratingSignal": "1.6 stars and 109 reviews observed at check",
+      "ratingSignal": "1.6 stars and 110 reviews observed at check",
       "updated": "2026-07-22",
       "monetization": [
         "contains ads"
@@ -140,7 +141,7 @@
       "packageId": "com.sar.verity.art",
       "url": "https://play.google.com/store/apps/details?id=com.sar.verity.art",
       "installSignal": "0+ downloads",
-      "ratingSignal": "3.5 stars and 42 reviews observed at check",
+      "ratingSignal": "3.4 stars and 70 reviews observed at check",
       "updated": "2026-07-24",
       "monetization": [
         "contains ads"
@@ -151,6 +152,82 @@
         "says it is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft",
         "data-safety panel says Location, App info and performance, and Device or other IDs may be shared and collected",
         "data is not encrypted and cannot be deleted"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "APP SYSTEM PIOTR MOSTOWSKI",
+      "packageId": "com.appsystemdev.verity",
+      "url": "https://play.google.com/store/apps/details?id=com.appsystemdev.verity",
+      "installSignal": "0+ downloads",
+      "ratingSignal": "4.5 stars and 251 reviews observed at check",
+      "updated": "2026-07-27",
+      "monetization": [
+        "contains ads"
+      ],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "description says it is a collection of horror mods and addons built around Verity, Falsity, Cruelity, Lovity, and other hunters",
+        "disclaimer says it is an unofficial Minecraft Pocket Edition application not associated with Mojang or supported by Mojang",
+        "data-safety panel says no data is shared and no data is collected",
+        "data is encrypted in transit but cannot be deleted",
+        "visible reviews include users saying ads are present, mods did not work, or installation failed"
+      ]
+    },
+    {
+      "title": "Verity Mods for Minecraft PE",
+      "publisher": "Stratovia Consulting LLC",
+      "packageId": "com.stratoviac.verity.mods.minecraft",
+      "url": "https://play.google.com/store/apps/details?id=com.stratoviac.verity.mods.minecraft",
+      "installSignal": "50K+ downloads",
+      "ratingSignal": "4.8 stars and 1.94K reviews observed at check",
+      "updated": "2026-07-28",
+      "monetization": [
+        "contains ads"
+      ],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "description says it is a utility to discover, manage, and install compatible community-created content",
+        "disclaimer says it is not affiliated with Mojang, Microsoft, the creators of Verity, or other rights holders",
+        "data-safety panel says Location, App activity, and two other data types may be shared",
+        "data-safety panel says no data is collected and data is encrypted in transit",
+        "visible reviews include users saying there were no add-ons or maps and another review calling it fanmade Verity"
+      ]
+    },
+    {
+      "title": "Verity Mod for Minecraft PE",
+      "publisher": "LasoStudio",
+      "packageId": "com.verity.modeveritteryaretewe",
+      "url": "https://play.google.com/store/apps/details?id=com.verity.modeveritteryaretewe",
+      "installSignal": "10K+ downloads",
+      "updated": "2026-07-17",
+      "monetization": [
+        "contains ads"
+      ],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "description frames the app as a Verity Mod for Minecraft PE discovery and one-tap installation route",
+        "disclaimer says it is not affiliated with, endorsed by, sponsored by, or approved by Mojang AB or Microsoft",
+        "data-safety panel says App activity and Device or other IDs may be shared and collected",
+        "data is not encrypted and cannot be deleted"
+      ]
+    },
+    {
+      "title": "Verity Mods for Minecraft PE",
+      "publisher": "Nexa Core Dev",
+      "packageId": "com.nexacore.veritymodsforminecraftpe",
+      "url": "https://play.google.com/store/apps/details?id=com.nexacore.veritymodsforminecraftpe",
+      "installSignal": "0+ downloads",
+      "updated": "2026-07-26",
+      "monetization": [
+        "contains ads"
+      ],
+      "relationshipStatus": "third-party app claim unless an official Verity project page links to it",
+      "listingSignals": [
+        "description says direct files hand off to Minecraft while page-based entries open the creator's original listing",
+        "description states the app is an independent fan-made catalog and not an official Minecraft product",
+        "description states the app is a browsing and download companion, not a Minecraft client",
+        "data-safety panel says no data is shared, no data is collected, data is encrypted in transit, and data cannot be deleted"
       ]
     }
   ]

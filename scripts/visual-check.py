@@ -315,6 +315,17 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/verity-mod-vercel-app/"]').count() >= 1
         assert page.locator('a[href="/apk/"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/apk/", wait_until="domcontentloaded")
+        apk_text = page.locator("main").inner_text()
+        assert "Verity Mod APK and Google Play App Safety Check" in apk_text
+        assert "Eleven current Verity app listings" in apk_text
+        assert "com.appsystemdev.verity" in apk_text
+        assert "com.stratoviac.verity.mods.minecraft" in apk_text
+        assert "com.verity.modeveritteryaretewe" in apk_text
+        assert "com.nexacore.veritymodsforminecraftpe" in apk_text
+        assert page.locator('a[href="/data/verity-app-claims.json"]').count() >= 1
+        assert page.locator('a[href="https://gist.github.com/ChannelerH/c53a910674ccbd4e0f32008415a5c271"]').count() >= 1
+
         page.goto(f"{BASE_URL}/java/#java-install-help", wait_until="domcontentloaded")
         java_help_text = page.locator("main").inner_text()
         assert "Verity JE / Verity Mod Java Download" in java_help_text

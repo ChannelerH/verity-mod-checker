@@ -245,10 +245,20 @@ export default {
       url.pathname.startsWith("/verity-mod-google-play/") ||
       url.pathname === "/verity-mod-play-store" ||
       url.pathname.startsWith("/verity-mod-play-store/") ||
+      url.pathname === "/google-play-verity-mod" ||
+      url.pathname.startsWith("/google-play-verity-mod/") ||
+      url.pathname === "/google-play-verity-mod-app" ||
+      url.pathname.startsWith("/google-play-verity-mod-app/") ||
+      url.pathname === "/verity-mod-apk-download" ||
+      url.pathname.startsWith("/verity-mod-apk-download/") ||
+      url.pathname === "/verity-mod-for-minecraft-pe-apk" ||
+      url.pathname.startsWith("/verity-mod-for-minecraft-pe-apk/") ||
       url.pathname === "/verity-mod-android-app" ||
       url.pathname.startsWith("/verity-mod-android-app/") ||
       url.pathname === "/verity-mod-for-minecraft-pe-app" ||
-      url.pathname.startsWith("/verity-mod-for-minecraft-pe-app/")
+      url.pathname.startsWith("/verity-mod-for-minecraft-pe-app/") ||
+      url.pathname === "/verity-mod-for-minecraft-pe-apps" ||
+      url.pathname.startsWith("/verity-mod-for-minecraft-pe-apps/")
     ) {
       url.pathname = "/apk/";
       url.hash = "";

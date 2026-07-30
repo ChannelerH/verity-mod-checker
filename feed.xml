@@ -5,8 +5,28 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T19:48:00+08:00</updated>
+  <updated>2026-07-30T20:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod app claims expanded to eleven current Play Store package IDs</title>
+    <id>https://veritymodchecker.online/updates/google-play-app-claims-source-pack-2026-07-30-2005</id>
+    <link href="https://veritymodchecker.online/apk/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-app-claims.json" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/c53a910674ccbd4e0f32008415a5c271" rel="related" />
+    <link href="https://play.google.com/store/apps/details?id=com.appsystemdev.verity" rel="related" />
+    <link href="https://play.google.com/store/apps/details?id=com.stratoviac.verity.mods.minecraft" rel="related" />
+    <link href="https://play.google.com/store/apps/details?id=com.verity.modeveritteryaretewe" rel="related" />
+    <link href="https://play.google.com/store/apps/details?id=com.nexacore.veritymodsforminecraftpe" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-07-30T20:05:00+08:00</published>
+    <updated>2026-07-30T20:05:00+08:00</updated>
+    <summary>Current Verity Mod mobile SERP checks surfaced additional Google Play app results beside APK mirrors and normal Bedrock add-on routes. Refreshed /apk/ and /data/verity-app-claims.json from seven to eleven observed package IDs by adding APP SYSTEM com.appsystemdev.verity, Stratovia com.stratoviac.verity.mods.minecraft, LasoStudio com.verity.modeveritteryaretewe, and Nexa Core com.nexacore.veritymodsforminecraftpe. Published a public source pack at Gist c53a910 with the package list, comparison method, and MCADDON route context, while keeping the page framed as third-party app-claim triage rather than a malware verdict or file mirror. No homepage TDK change, fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="apk-app-intent" />
+    <category term="google-play" />
+    <category term="public-source-pack" />
+    <category term="mobile-serp" />
+  </entry>
   <entry>
     <title>AI model and status 429 public source packs published</title>
     <id>https://veritymodchecker.online/updates/public-ai-model-status-429-source-packs-2026-07-30-1948</id>
