@@ -52,6 +52,7 @@ function routeIdSegment(value) {
 
 function modpackGuideUrl(item) {
   if (item.name === "VERITY.exe" || item.name === "VERITY.exe Remastered") return `${site}/verity-exe/`;
+  if (["Ultimate VERITY.", "Ultimate Verity Horror", "Ultimate Verity Skinpack"].includes(item.name)) return `${site}/ultimate-verity/`;
   if (item.name === "Survive from VERITY or FALSITY") return `${site}/survive-from-verity-or-falsity/`;
   if (item.name === "Verity World - AI Horror Adventure with Verity") return `${site}/verity-world/`;
   if (
@@ -71,6 +72,8 @@ function modpackGuideUrl(item) {
 function modpackRecommendedUse(item) {
   if (item.name === "VERITY.exe") return "Use only when the player intentionally wants the VERITY.exe modpack profile.";
   if (item.name === "VERITY.exe Remastered") return "Use only when the player intentionally selected the Modrinth VERITY.exe Remastered MRPACK route.";
+  if (item.name === "Ultimate VERITY." || item.name === "Ultimate Verity Horror") return "Use only when the player intentionally selected this Ultimate Verity modpack profile.";
+  if (item.name === "Ultimate Verity Skinpack") return "Use only when the player intentionally selected the cosmetic Bedrock Ultimate Verity Skinpack route.";
   if (item.name === "Survive from VERITY or FALSITY") return "Use when the player intentionally selected the separate Verity or Falsity modpack profile.";
   if (item.name === "Verity World - AI Horror Adventure with Verity") return "Use only when the player intentionally wants the Verity World Forge 1.20.1 modpack route.";
   if (modpackGuideUrl(item).endsWith("/verity-monster-form/")) {
@@ -298,7 +301,7 @@ const records = [
   ...modpacks.modpacks.map((item) => ({
     routeId: `modpack-${routeIdSegment(item.projectId)}`,
     routeName: item.name,
-    edition: "Modpack",
+    edition: item.packageType === "skinpack" ? "Bedrock Skinpack" : "Modpack",
     host: item.host || "CurseForge",
     owner: item.owner,
     projectId: item.projectId,

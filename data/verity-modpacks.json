@@ -1,9 +1,9 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-modpacks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T07:49:57+08:00",
+  "checkedAt": "2026-07-30T08:12:40+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-pack/",
-  "method": "Manual comparison against public CurseForge and Modrinth result pages surfaced for Verity Pack, VERITY.exe, Falsity, monster-form, and broad Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "method": "Manual comparison against public CurseForge and Modrinth result pages surfaced for Verity Pack, Ultimate VERITY, VERITY.exe, Falsity, monster-form, skinpack, and broad Verity Mod searches. Download totals are point-in-time popularity signals, not safety verdicts.",
   "modpacks": [
     {
       "name": "VERITY.exe",
@@ -43,6 +43,67 @@
       "mainFileSizeBytes": 14353,
       "lastUpdate": "2026-07-01",
       "sourceNote": "Separate Modrinth remastered modpack route inspired by the original VERITY.exe modpack. Treat it as its own MRPACK profile by ScootBuckley, not as the CurseForge VERITY.exe Project ID 1585389 route, not as Verity JE, and not as a Bedrock add-on."
+    },
+    {
+      "name": "Ultimate VERITY.",
+      "host": "CurseForge",
+      "owner": "Julian_moto",
+      "projectId": 1584643,
+      "projectUrl": "https://www.curseforge.com/minecraft/modpacks/ultimate-verity",
+      "status": "separate-ultimate-verity-modpack-route",
+      "displayedDownloadsAtCheck": 28242,
+      "displayedDownloadsApproximate": false,
+      "packageType": "modpack",
+      "minecraftVersion": "1.20.1",
+      "loader": "Forge",
+      "mainFile": "Ultimate VERITY.-1.20.zip",
+      "mainFileRecord": 8467605,
+      "mainFileUrl": "https://www.curseforge.com/minecraft/modpacks/ultimate-verity/files/8467605",
+      "mainFileDownloadsAtCheck": 3300,
+      "mainFileSizeBytes": 102195,
+      "lastUpdate": "2026-07-19",
+      "sourceNote": "Separate CurseForge horror modpack route. The source description says the author did not create the Verity mod and points bug reports to an old standalone Verity URL, so treat this as a profile route rather than the default Verity JE file, Bedrock add-on, or Skinpack."
+    },
+    {
+      "name": "Ultimate Verity Horror",
+      "host": "CurseForge",
+      "owner": "Alfredo420",
+      "projectId": 1616028,
+      "projectUrl": "https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror",
+      "status": "separate-ultimate-verity-horror-modpack-route",
+      "displayedDownloadsAtCheck": 3241,
+      "displayedDownloadsApproximate": false,
+      "packageType": "modpack",
+      "minecraftVersion": "1.21.1 / 1.20.1",
+      "loader": "NeoForge / Forge",
+      "mainFile": "Ultimate Verity Horror.zip",
+      "mainFileRecord": 8464466,
+      "mainFileUrl": "https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror/files/8464466",
+      "secondaryFileRecord": 8461753,
+      "mainFileDownloadsAtCheck": 2400,
+      "mainFileSizeBytes": 16589,
+      "lastUpdate": "2026-07-19",
+      "sourceNote": "Separate CurseForge horror profile route with NeoForge 1.21.1 and Forge 1.20.1 files. Treat it as a full modpack profile, not as Verity JE, Ultimate VERITY Project ID 1584643, Verity BE, PnTMC, or the Bedrock Skinpack."
+    },
+    {
+      "name": "Ultimate Verity Skinpack",
+      "host": "CurseForge",
+      "owner": "BedrockForge",
+      "projectId": 1599807,
+      "projectUrl": "https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack",
+      "status": "separate-ultimate-verity-bedrock-skinpack-route",
+      "displayedDownloadsAtCheck": 33237,
+      "displayedDownloadsApproximate": false,
+      "packageType": "skinpack",
+      "minecraftVersion": "26.30 / 26.20",
+      "loader": "Bedrock Skins",
+      "mainFile": "UltimateVeritySkinPack.mcpack",
+      "mainFileRecord": 8472780,
+      "mainFileUrl": "https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack/files/8472780",
+      "mainFileDownloadsAtCheck": 10800,
+      "mainFileSizeBytes": 8909,
+      "lastUpdate": "2026-07-20",
+      "sourceNote": "Separate CurseForge Bedrock Skins route. Treat this MCPACK as cosmetic skin-pack context, not as the Ultimate VERITY Java modpack, Ultimate Verity Horror, Verity JE, Verity BE, or a PnTMC gameplay add-on."
     },
     {
       "name": "Verity Pack",
@@ -219,5 +280,5 @@
       "sourceNote": "Separate Create-plus-Verity profile. The source text says setup is needed because Verity connects to real AI, so do not treat it as a one-file standalone download."
     }
   ],
-  "routePolicy": "Use modpack pages only when the player intentionally wants that profile. Use /falsity-mod/ for the standalone FALSITY [SMILEY] route, /verity-monster-form/ for monster-form and Body Overhaul confusion, Verity JE for the standalone Java Verity JAR, and Bedrock or MCPE pages for MCADDON routes. This site does not host or mirror files."
+  "routePolicy": "Use modpack and skinpack pages only when the player intentionally wants that profile or cosmetic pack. Use /ultimate-verity/ for Ultimate VERITY, Ultimate Verity Horror, or Ultimate Verity Skinpack distinctions, /falsity-mod/ for the standalone FALSITY [SMILEY] route, /verity-monster-form/ for monster-form and Body Overhaul confusion, Verity JE for the standalone Java Verity JAR, and Bedrock or MCPE pages for MCADDON gameplay routes. This site does not host or mirror files."
 }

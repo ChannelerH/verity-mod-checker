@@ -5,8 +5,31 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T07:49:57+08:00</updated>
+  <updated>2026-07-30T08:12:40+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Ultimate VERITY route cluster added for modpack and skinpack confusion</title>
+    <id>https://veritymodchecker.online/updates/ultimate-verity-route-2026-07-30-0812</id>
+    <link href="https://veritymodchecker.online/ultimate-verity/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-pack/" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-modpacks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/ultimate-verity" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/ultimate-verity/files/8467605" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror/files/8464466" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack/files/8472780" rel="related" />
+    <published>2026-07-30T08:12:40+08:00</published>
+    <updated>2026-07-30T08:12:40+08:00</updated>
+    <summary>Current SERP review showed Ultimate VERITY, Ultimate Verity Horror, and Ultimate Verity Skinpack appearing as separate CurseForge results beside broad Verity Mod searches. Added /ultimate-verity/ as the canonical route cluster for Julian_moto Project ID 1584643, main file Ultimate VERITY.-1.20.zip, file ID 8467605, Forge 1.20.1, 28,242 project downloads, and 3.3K file downloads; Alfredo420 Ultimate Verity Horror Project ID 1616028 with file records 8464466 and 8461753; and BedrockForge Ultimate Verity Skinpack Project ID 1599807 with MCPACK file record 8472780. Updated homepage, route index, download map, Verity Pack page, taken-down and what-happened pages, source checker, modpack JSON, source-map JSON/CSV, sitemap, README, LLM summaries, and visual checks. Homepage TDK was not changed. GSC and GA4 API reads remain blocked by local Google API/OAuth permissions, so no new Search Console or Analytics metric is claimed.</summary>
+    <category term="ultimate-verity" />
+    <category term="modpack-route" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>Survive from VERITY or FALSITY route split from Falsity intent</title>
     <id>https://veritymodchecker.online/updates/survive-from-verity-or-falsity-route-2026-07-30-0749</id>

@@ -800,6 +800,104 @@ const knownProjects = [
     ]
   },
   {
+    name: "Ultimate VERITY.",
+    edition: "Java modpack",
+    route: "/ultimate-verity/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1584643",
+        slugs: ["/minecraft/modpacks/ultimate-verity"],
+        link: "https://www.curseforge.com/minecraft/modpacks/ultimate-verity"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-ultimate-verity-modpack-route",
+        filename: "Ultimate VERITY.-1.20.zip",
+        aliases: ["Ultimate VERITY", "ultimate verity", "ultimate verity modpack"],
+        versionNumber: "Forge 1.20.1 profile",
+        sizeMb: 0.1,
+        version: "Minecraft 1.20.1 · Forge modpack",
+        published: "July 30, 2026 check",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8467605",
+            link: "https://www.curseforge.com/minecraft/modpacks/ultimate-verity/files/8467605"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Ultimate Verity Horror",
+    edition: "Java modpack",
+    route: "/ultimate-verity/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1616028",
+        slugs: ["/minecraft/modpacks/ultimate-verity-horror"],
+        link: "https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-ultimate-verity-horror-modpack-route",
+        filename: "Ultimate Verity Horror.zip",
+        aliases: ["Ultimate Verity Horror", "ultimate verity horror", "Verity horror profile"],
+        versionNumber: "NeoForge 1.21.1 / Forge 1.20.1 profile",
+        sizeMb: 0.02,
+        version: "Minecraft 1.21.1 / 1.20.1 · NeoForge / Forge modpack",
+        published: "July 30, 2026 check",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8464466",
+            link: "https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror/files/8464466"
+          },
+          {
+            platform: "CurseForge",
+            id: "8461753",
+            link: "https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror/files/8461753"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "Ultimate Verity Skinpack",
+    edition: "Bedrock skin pack",
+    route: "/ultimate-verity/",
+    sources: [
+      {
+        platform: "CurseForge",
+        id: "1599807",
+        slugs: ["/minecraft-bedrock/skins/ultimate-verity-skinpack"],
+        link: "https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack"
+      }
+    ],
+    releases: [
+      {
+        status: "separate-ultimate-verity-bedrock-skinpack-route",
+        filename: "UltimateVeritySkinPack.mcpack",
+        aliases: ["Ultimate Verity Skinpack", "ultimate verity skinpack", "UltimateVeritySkinPack", "ultimate verity skins"],
+        versionNumber: "Bedrock skin pack",
+        sizeMb: 0.01,
+        version: "Minecraft Bedrock 26.30 / 26.20 · MCPACK skin pack",
+        published: "July 30, 2026 check",
+        records: [
+          {
+            platform: "CurseForge",
+            id: "8472780",
+            link: "https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack/files/8472780"
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: "Verity Pack",
     edition: "Java modpack",
     route: "/verity-pack/",
@@ -892,7 +990,7 @@ const knownProjects = [
   {
     name: "Survive from VERITY or FALSITY",
     edition: "Java modpack",
-    route: "/falsity-mod/",
+    route: "/survive-from-verity-or-falsity/",
     sources: [
       {
         platform: "CurseForge",
@@ -907,14 +1005,14 @@ const knownProjects = [
         filename: "VERITY 1-1.6.1.zip",
         aliases: ["Survive from VERITY or FALSITY", "verity or falsity", "survive verity falsity", "Falsity modpack"],
         versionNumber: "Forge 1.20.1 profile",
-        sizeMb: null,
+        sizeMb: 0.02,
         version: "Minecraft 1.20.1 · Forge modpack",
-        published: "July 29, 2026 check",
+        published: "July 30, 2026 check",
         records: [
           {
             platform: "CurseForge",
-            id: "files",
-            link: "/falsity-mod/"
+            id: "8399483",
+            link: "https://www.curseforge.com/minecraft/modpacks/survive-from-verity-or-falsity/files/8399483"
           }
         ]
       }
@@ -1329,6 +1427,8 @@ function modpackRoute(project) {
 }
 
 function modpackRouteLabel(project) {
+  if (project.route === "/ultimate-verity/") return "Open Ultimate VERITY route check";
+  if (project.route === "/survive-from-verity-or-falsity/") return "Open Survive or Falsity route check";
   if (project.route === "/falsity-mod/") return "Open Falsity route check";
   if (project.route === "/verity-world/") return "Open Verity World route check";
   if (project.route === "/verity-monster-form/") return "Open monster-form route check";
@@ -1355,6 +1455,20 @@ function modpackChecks(project) {
       "The project path matches the checked standalone FALSITY [SMILEY] Java Forge route.",
       "Use this route only when you intentionally want the Falsity 9.0 JAR, not Verity JE or Bedrock.",
       "Compare CurseForge 1575216, file 8528006, Modrinth r8Qz0Ic2, version tNOLeN6v, and hashes before trusting copied mirrors."
+    ];
+  }
+  if (project.route === "/survive-from-verity-or-falsity/") {
+    return [
+      "The project path matches the checked Survive from VERITY or FALSITY CurseForge modpack route.",
+      "Use this route only when you intentionally want the kanthbuymi Forge 1.20.1 profile.",
+      "If you need standalone Verity JE, FALSITY [SMILEY], Bedrock, MCPE, APK, or EXE routes, open the matching source-check page instead."
+    ];
+  }
+  if (project.route === "/ultimate-verity/") {
+    return [
+      "The project path matches a checked Ultimate Verity CurseForge route.",
+      "Use this route only when you intentionally want that full Java profile or Bedrock skin pack context.",
+      "If you need Verity JE, Verity BE, PnTMC, or the standalone Falsity route, open the matching source-check page instead."
     ];
   }
   if (project.route === "/falsity-mod/") {
@@ -1394,6 +1508,12 @@ function modpackSummary(project, projectId) {
   }
   if (project.name === "FALSITY [SMILEY]") {
     return `This URL matches the checked standalone FALSITY [SMILEY] route, Project ID ${projectId}. The July 29 source check maps the current file to FALSITY-SMILEYARCHIVE-9.0.jar, CurseForge file 8528006, Modrinth project r8Qz0Ic2, and Modrinth version tNOLeN6v; use it only for Falsity Forge 1.20.1 intent, not Verity JE, Bedrock, or modpack installs.`;
+  }
+  if (project.route === "/survive-from-verity-or-falsity/") {
+    return `This URL matches the checked Survive from VERITY or FALSITY CurseForge modpack route, Project ID ${projectId}. The July 30 source check maps it to file record 8399483, VERITY 1-1.6.1.zip, Minecraft 1.20.1 Forge, 98,145 detailed project downloads, and 46.9K file downloads. Treat it as a separate profile, not as Verity JE, FALSITY [SMILEY], Bedrock, MCPE, APK, or EXE.`;
+  }
+  if (project.route === "/ultimate-verity/") {
+    return `This URL matches the checked ${project.name} route, Project ID ${projectId}. The July 30 source check separates Ultimate VERITY Project ID 1584643, Ultimate Verity Horror Project ID 1616028, and the Bedrock Skinpack Project ID 1599807 from Verity JE, Verity BE, PnTMC, and mirror downloads. Treat this as a profile or skin context, not the default Verity Mod file.`;
   }
   if (project.route === "/falsity-mod/") {
     return `This URL matches the checked ${project.name} CurseForge modpack route, Project ID ${projectId}. Treat it as a profile route for Verity or Falsity searches, not as the standalone FALSITY [SMILEY] mod, Verity JE Java file, or Bedrock add-on.`;
@@ -1905,16 +2025,24 @@ function inspectTextSource(rawValue) {
           external: false
         };
       }
-      if (sourceMatch.project.edition === "Java modpack") {
+      if (sourceMatch.project.edition === "Java modpack" || sourceMatch.project.route === "/ultimate-verity/") {
+        const matchedRecordNote = matchedRecord
+          ? ` The matched file record is ${matchedRecord.id} (${matchedRelease?.filename || "checked file"}).`
+          : "";
+        const packageLabel = sourceMatch.project.edition === "Bedrock skin pack"
+          ? "CurseForge Bedrock skin pack"
+          : sourceMatch.source.platform === "Modrinth"
+            ? "Modrinth MRPACK profile"
+            : "CurseForge modpack profile";
         return {
           state: "caution",
-          verdict: "Known modpack route",
+          verdict: sourceMatch.project.route === "/ultimate-verity/" ? "Known Ultimate route" : "Known modpack route",
           risk: "Separate from Verity Mod file",
-          title: `${sourceMatch.project.name} ${sourceMatch.source.platform} modpack recognized`,
-          summary: modpackSummary(sourceMatch.project, sourceMatch.source.id),
+          title: `${sourceMatch.project.name} ${sourceMatch.source.platform} route recognized`,
+          summary: `${modpackSummary(sourceMatch.project, sourceMatch.source.id)}${matchedRecordNote}`,
           source: host,
-          package: sourceMatch.source.platform === "Modrinth" ? "Modrinth MRPACK profile" : "CurseForge modpack profile",
-          project: `${sourceMatch.project.name} · ${sourceMatch.source.platform} Project ID ${sourceMatch.source.id}`,
+          package: packageLabel,
+          project: `${sourceMatch.project.name} · ${sourceMatch.source.platform} Project ID ${sourceMatch.source.id}${matchedRecord ? ` · File ID ${matchedRecord.id}` : ""}`,
           hash: "",
           publisherCheck: "Not a JAR checksum route",
           checks: modpackChecks(sourceMatch.project),
@@ -2086,17 +2214,21 @@ function inspectTextSource(rawValue) {
         external: false
       };
     }
-    if (project.edition === "Java modpack") {
+    if (project.edition === "Java modpack" || project.route === "/ultimate-verity/") {
       const primaryPlatform = project.sources[0]?.platform || "Project";
+      const matchedRecordNote = matchedRecord ? ` Matched file record: ${matchedRecord.id}.` : "";
+      const packageLabel = project.edition === "Bedrock skin pack"
+        ? "CurseForge Bedrock skin pack"
+        : primaryPlatform === "Modrinth" ? "Modrinth MRPACK profile" : "CurseForge modpack profile";
       return {
         state: "caution",
-        verdict: "Known modpack signal",
+        verdict: project.route === "/ultimate-verity/" ? "Known Ultimate signal" : "Known modpack signal",
         risk: "Separate from Verity Mod file",
-        title: `${project.name} is a checked modpack route`,
-        summary: `The text matches ${project.name} or its ${primaryPlatform} Project ID. Treat it as a modpack/profile route, not as the current standalone Verity JE Java file and not as a Bedrock add-on.`,
+        title: `${project.name} is a checked route`,
+        summary: `${modpackSummary(project, project.sources[0]?.id)}${matchedRecordNote}`,
         source: "Text or Project ID",
-        package: type === "Not identified" ? (primaryPlatform === "Modrinth" ? "Modrinth MRPACK profile" : "CurseForge modpack profile") : type,
-        project: `${project.name} · ${projectIdentityLabel(project)}`,
+        package: type === "Not identified" ? packageLabel : type,
+        project: `${project.name} · ${projectIdentityLabel(project)}${matchedRecord ? ` · File ID ${matchedRecord.id}` : ""}`,
         hash: "",
         publisherCheck: "Not a JAR checksum route",
         checks: modpackChecks(project),

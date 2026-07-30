@@ -70,6 +70,7 @@ ROUTES = [
     "/taken-down/",
     "/verity-exe/",
     "/survive-from-verity-or-falsity/",
+    "/ultimate-verity/",
 ]
 
 
@@ -127,12 +128,15 @@ with sync_playwright() as playwright:
         assert "Verity May Be" in source_map_text
         assert "VerityCraft" in source_map_text
         assert "Survive from VERITY or FALSITY" in source_map_text
+        assert "Ultimate VERITY" in source_map_text
+        assert "Ultimate Verity Horror" in source_map_text
+        assert "Ultimate Verity Skinpack" in source_map_text
         assert "verity-6.jar" in source_map_text
         assert "CXsEzVwJ" in source_map_text
         assert "stale-beta-endpoint-404" in source_map_text
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
-        assert page.locator("tbody tr").count() == 30
+        assert page.locator("tbody tr").count() == 33
 
         page.goto(f"{BASE_URL}/verity-mod-wiki/", wait_until="domcontentloaded")
         wiki_text = page.locator("main").inner_text()
@@ -308,6 +312,30 @@ with sync_playwright() as playwright:
         assert "1585389" in result_text
         assert "8526843" in result_text
         assert page.locator("#sourceProjectLink").get_attribute("href").endswith("/verity-exe/")
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/ultimate-verity/files/8467605")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Ultimate VERITY" in result_text
+        assert "1584643" in result_text
+        assert "8467605" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/ultimate-verity/"
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/ultimate-verity-horror/files/8464466")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Ultimate Verity Horror" in result_text
+        assert "1616028" in result_text
+        assert "8464466" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/ultimate-verity/"
+
+        page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft-bedrock/skins/ultimate-verity-skinpack/files/8472780")
+        page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
+        result_text = page.locator("#sourceResult").inner_text()
+        assert "Ultimate Verity Skinpack" in result_text
+        assert "1599807" in result_text
+        assert "8472780" in result_text
+        assert page.locator("#sourceProjectLink").get_attribute("href") == "/ultimate-verity/"
 
         page.locator("#sourceInput").fill("https://modrinth.com/modpack/verity.exe-remastered/version/4N4vQrK7")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
@@ -503,4 +531,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Verity Souls status route, old verity-1.0.0.jar route, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")

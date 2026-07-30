@@ -37,6 +37,7 @@ const htmlRoutes = new Set([
   "/status-429/",
   "/survive-from-verity-or-falsity/",
   "/taken-down/",
+  "/ultimate-verity/",
   "/updates/",
   "/verity-1-0-0-jar/",
   "/verity-mod-wiki/",
@@ -902,6 +903,26 @@ export default {
       url.pathname.startsWith("/how-to-download-and-install-verity-for-minecraft/")
     ) {
       url.pathname = "/how-to-get-verity-mod/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/ultimate-verity" ||
+      url.pathname === "/ultimate-verity-modpack" ||
+      url.pathname.startsWith("/ultimate-verity-modpack/") ||
+      url.pathname === "/ultimate-verity-horror" ||
+      url.pathname.startsWith("/ultimate-verity-horror/") ||
+      url.pathname === "/ultimate-verity-skinpack" ||
+      url.pathname.startsWith("/ultimate-verity-skinpack/") ||
+      url.pathname === "/ultimate-verity-skin-pack" ||
+      url.pathname.startsWith("/ultimate-verity-skin-pack/") ||
+      url.pathname === "/ultimate-verity-skins" ||
+      url.pathname.startsWith("/ultimate-verity-skins/") ||
+      url.pathname === "/curseforge-ultimate-verity" ||
+      url.pathname.startsWith("/curseforge-ultimate-verity/")
+    ) {
+      url.pathname = "/ultimate-verity/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }
