@@ -1,6 +1,6 @@
 # Verity Mod API Connection Failed Source Pack
 
-Checked: 2026-07-30 22:13 Asia/Shanghai
+Checked: 2026-07-30 22:45 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/api-connection-failed/
 
@@ -15,9 +15,11 @@ This source pack is for community editors, video creators, support helpers, and 
 
 ## Why this exists
 
-The latest delayed Search Console sample for veritymodchecker.online shows player demand around API errors, including these query rows:
+The latest delayed Search Console sample for veritymodchecker.online shows the head query beginning to appear and continued player demand around API errors, including these query rows:
 
+- `verity mod`: 2 clicks / 3 impressions
 - `verity api connection failed 401`: 2 clicks / 2 impressions
+- `verity-3.4.1.jar`: 1 click / 13 impressions
 - `api connection failed status 429 verity`: 1 click / 4 impressions
 - `api connection failed 429 verity mod`: 1 click / 2 impressions
 - `verity mod status 429`: 1 click / 2 impressions
@@ -35,8 +37,8 @@ Official Modrinth API checks on July 30 show:
 - Current version: `CXsEzVwJ`
 - Current file: `verity-6.jar`
 - Loader / game version: Forge 1.20.1
-- Project downloads at check: 365,486
-- Current version downloads at check: 20,582
+- Project downloads at check: 366,354
+- Current version downloads at check: 21,380
 - Stable 5.7.3 version downloads at check: 276,683
 - Project updated: 2026-07-29T18:50:58.960032Z
 - Followers at check: 121

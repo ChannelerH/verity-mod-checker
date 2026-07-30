@@ -1,20 +1,63 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-api-troubleshooting.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T22:13:00+08:00",
+  "checkedAt": "2026-07-30T22:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/api-connection-failed/",
   "method": "Point-in-time troubleshooting source pack built from Google Search Console query rows, GA4 landing-page and event signals, official provider documentation, and the official Modrinth public API. This file does not collect API keys, host Verity downloads, or claim that an API error is a malware verdict.",
   "observedDemand": {
     "gscWindow": "2026-07-15 through 2026-07-28 delayed Search Console data",
-    "ga4Window": "Last 7 days checked July 30, 2026",
+    "ga4Window": "Last 7 days checked July 30, 2026 at 22:45 Asia/Shanghai",
     "topGscRows": [
-      { "query": "verity api connection failed 401", "clicks": 2, "impressions": 2 },
-      { "query": "api connection failed status 429 verity", "clicks": 1, "impressions": 4 },
-      { "query": "api connection failed 429 verity mod", "clicks": 1, "impressions": 2 },
-      { "query": "verity mod status 429", "clicks": 1, "impressions": 2 },
-      { "query": "api connection failed 401 verity mod", "clicks": 1, "impressions": 1 },
-      { "query": "verity error 401", "clicks": 1, "impressions": 1 },
-      { "query": "api connection failed status 429 verity mod", "clicks": 1, "impressions": 1 }
+      {
+        "query": "verity mod",
+        "clicks": 2,
+        "impressions": 3
+      },
+      {
+        "query": "verity api connection failed 401",
+        "clicks": 2,
+        "impressions": 2
+      },
+      {
+        "query": "verity-3.4.1.jar",
+        "clicks": 1,
+        "impressions": 13
+      },
+      {
+        "query": "api connection failed status 429 verity",
+        "clicks": 1,
+        "impressions": 4
+      },
+      {
+        "query": "api connection failed 429 verity mod",
+        "clicks": 1,
+        "impressions": 2
+      },
+      {
+        "query": "verity mod status 429",
+        "clicks": 1,
+        "impressions": 2
+      },
+      {
+        "query": "verity je download",
+        "clicks": 1,
+        "impressions": 2
+      },
+      {
+        "query": "api connection failed 401 verity mod",
+        "clicks": 1,
+        "impressions": 1
+      },
+      {
+        "query": "verity error 401",
+        "clicks": 1,
+        "impressions": 1
+      },
+      {
+        "query": "api connection failed status 429 verity mod",
+        "clicks": 1,
+        "impressions": 1
+      }
     ],
     "ga4Signals": {
       "apiConnectionFailedPageViews": 158,
@@ -24,9 +67,9 @@
       "verityOutboundProjectClickEvents": 58
     },
     "notes": [
-      "API troubleshooting demand is already visible in query rows, while the broad head term remains sparse.",
-      "The API page is the highest-viewed page in the latest GA4 page-title sample.",
-      "Gist referral traffic is visible, so public source packs are a verified non-spam growth path for this site."
+      "The head term verity mod is now visible in GSC with 2 clicks and 3 impressions in the delayed July 15 through July 28 window.",
+      "API troubleshooting demand remains visible in query rows and the API page is the highest-viewed page in the latest GA4 page-title sample.",
+      "Gist referral traffic is visible, so public source packs remain a verified non-spam growth path for this site."
     ]
   },
   "currentVerityJeSource": {
@@ -38,8 +81,8 @@
     "currentFile": "verity-6.jar",
     "minecraftVersion": "1.20.1",
     "loader": "Forge",
-    "projectDownloadsAtCheck": 365486,
-    "currentVersionDownloadsAtCheck": 20582,
+    "projectDownloadsAtCheck": 366354,
+    "currentVersionDownloadsAtCheck": 21380,
     "stableVersionId": "yAt0wv1Z",
     "stableVersionDownloadsAtCheck": 276683,
     "projectUpdatedAt": "2026-07-29T18:50:58.960032Z",

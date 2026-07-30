@@ -148,8 +148,8 @@ with sync_playwright() as playwright:
         assert "latest version depends on edition and source" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
-        assert "365,486" in versions_text
-        assert "20,582" in versions_text
+        assert "366,354" in versions_text
+        assert "21,380" in versions_text
         assert "276,683" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 1.1.0" in versions_text
@@ -223,15 +223,15 @@ with sync_playwright() as playwright:
         v6_text = page.locator("main").inner_text()
         assert "verity-6.jar File Check" in v6_text
         assert "CXsEzVwJ" in v6_text
-        assert "20,582" in v6_text
+        assert "21,380" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-je/", wait_until="domcontentloaded")
         verity_je_text = page.locator("main").inner_text()
         assert "Verity JE Download" in verity_je_text
-        assert "20,582" in verity_je_text
-        assert "365,486" in verity_je_text
+        assert "21,380" in verity_je_text
+        assert "366,354" in verity_je_text
         assert "2,396,299" in verity_je_text
         assert "686.1K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
@@ -377,7 +377,7 @@ with sync_playwright() as playwright:
         assert "old JAR" in java_help_text
         assert "CXsEzVwJ" in java_help_text
         assert "8461257" in java_help_text
-        assert "365,486" in java_help_text
+        assert "366,354" in java_help_text
         assert "2,396,299" in java_help_text
         assert page.locator('a[href="/verity-je/"]').count() >= 1
         assert page.locator('a[href="/api-connection-failed/"]').count() >= 1

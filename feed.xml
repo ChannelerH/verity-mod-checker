@@ -5,8 +5,26 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T22:13:00+08:00</updated>
+  <updated>2026-07-30T22:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod indexing and head-term source refresh</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-indexing-head-term-source-refresh-2026-07-30-2245</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-api-troubleshooting.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/CXsEzVwJ" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/yAt0wv1Z" rel="related" />
+    <published>2026-07-30T22:45:00+08:00</published>
+    <updated>2026-07-30T22:45:00+08:00</updated>
+    <summary>GSC's delayed July 15 through July 28 performance report now shows the head query verity mod with 2 clicks / 3 impressions, total web-search performance at 54 clicks, 1,640 impressions, 3.3% CTR, and average position 8.7. GA4 last-7-days still shows 328 active users, 156 Organic Search sessions, 90 Referral sessions, 73 gist.github.com referral sessions, and 58 verity_outbound_project_click events. The page-indexing report still shows 11 indexed URLs and 11 not indexed URLs, with 6 crawled-not-indexed pages, 2 discovered-not-indexed pages, and a stale sitemap read dated 2026/7/24. Because the pages are already substantial and internally linked, this update avoids homepage TDK churn and instead refreshes source data, machine-readable files, sitemap signals, and representative inspection requests. Official Modrinth API facts were refreshed: project on1Y0osD now reports 366,354 downloads, current version CXsEzVwJ / verity-6.jar reports 21,380 downloads, stable version yAt0wv1Z / verity-5.7.3.jar reports 276,683 downloads, and followers remain 121. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="gsc-head-term" />
+    <category term="indexing" />
+    <category term="source-data-refresh" />
+    <category term="sitemap" />
+  </entry>
   <entry>
     <title>Verity Mod API troubleshooting source pack published</title>
     <id>https://veritymodchecker.online/updates/verity-mod-api-source-pack-2026-07-30-2213</id>
