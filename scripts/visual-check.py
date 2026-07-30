@@ -13,6 +13,7 @@ ROUTES = [
     "/",
     "/link/",
     "/download/",
+    "/versions/",
     "/verity-pack/",
     "/java-vs-bedrock/",
     "/updates/",
@@ -139,6 +140,25 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
         assert page.locator('a[href="/data/verity-source-map.json"]').count() >= 1
         assert page.locator("tbody tr").count() == 33
+
+        page.goto(f"{BASE_URL}/versions/", wait_until="domcontentloaded")
+        versions_text = page.locator("main").inner_text()
+        assert "Verity Mod Versions and Requirements" in versions_text
+        assert "latest version depends on edition and source" in versions_text
+        assert "verity-6.jar" in versions_text
+        assert "CXsEzVwJ" in versions_text
+        assert "360,661" in versions_text
+        assert "16,488" in versions_text
+        assert "276,110" in versions_text
+        assert "stale beta" in versions_text.lower()
+        assert "Verity BE 1.1.0" in versions_text
+        assert "PnTMC Verity 3.2.0" in versions_text
+        assert "Verity Pocket Edition (Be)" in versions_text
+        assert "Java requirements" in versions_text
+        assert "Bedrock and MCPE requirements" in versions_text
+        assert page.locator('a[href="/download/"]').count() >= 1
+        assert page.locator('a[href="/java-vs-bedrock/"]').count() >= 1
+        assert page.locator('a[href="https://gist.github.com/ChannelerH/a3d1ff2db71f6f47a3c396c3cd662bd2"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-mod-wiki/", wait_until="domcontentloaded")
         wiki_text = page.locator("main").inner_text()

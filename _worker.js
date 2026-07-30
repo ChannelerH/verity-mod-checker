@@ -45,6 +45,7 @@ const htmlRoutes = new Set([
   "/verity-mod-wiki/",
   "/verity-mod-downloads/",
   "/verity-pack/",
+  "/versions/",
   "/verity-world/",
   "/verity-souls/",
   "/verity-groq-api-key/",
@@ -321,6 +322,26 @@ export default {
       url.pathname.startsWith("/verity-mod-route-index/")
     ) {
       url.pathname = "/routes/";
+      url.hash = "";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (
+      url.pathname === "/versions" ||
+      url.pathname === "/all-versions" ||
+      url.pathname.startsWith("/all-versions/") ||
+      url.pathname === "/verity-mod-versions" ||
+      url.pathname.startsWith("/verity-mod-versions/") ||
+      url.pathname === "/verity-mod-all-versions" ||
+      url.pathname.startsWith("/verity-mod-all-versions/") ||
+      url.pathname === "/verity-mod-version" ||
+      url.pathname.startsWith("/verity-mod-version/") ||
+      url.pathname === "/verity-mod-requirements" ||
+      url.pathname.startsWith("/verity-mod-requirements/") ||
+      url.pathname === "/verity-mod-download-requirements" ||
+      url.pathname.startsWith("/verity-mod-download-requirements/")
+    ) {
+      url.pathname = "/versions/";
       url.hash = "";
       return Response.redirect(url.toString(), 301);
     }

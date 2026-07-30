@@ -5,8 +5,27 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T20:05:00+08:00</updated>
+  <updated>2026-07-30T20:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod versions and requirements route published</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-versions-requirements-2026-07-30-2045</id>
+    <link href="https://veritymodchecker.online/versions/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/routes/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/a3d1ff2db71f6f47a3c396c3cd662bd2" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/CXsEzVwJ" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/yAt0wv1Z" rel="related" />
+    <published>2026-07-30T20:45:00+08:00</published>
+    <updated>2026-07-30T20:45:00+08:00</updated>
+    <summary>Current SERP checks show competitor pages using versions/downloads wording to capture broad Verity Mod intent, while GSC still shows /download/ and /how-to-get-verity-mod/ impressions with zero clicks. Published /versions/ as a focused version and requirements matrix instead of changing homepage TDK: it separates Modrinth Verity JE 6 / verity-6.jar, CurseForge and Modrinth 5.7.3, stale 6.0.1 and 6.0.0 beta links, legacy 3.4.1, Verity BE 1.1.0, PnTMC 3.2.0 rows, old PnTMC records, and Verity Pocket Edition (Be). Added homepage, Download, Routes, Wiki, footer, Worker alias, sitemap, LLM, and visual-test entrances, plus a public version source pack at Gist a3d1ff2. Official Modrinth API checks show project on1Y0osD at 360,661 downloads, Verity JE 6 / CXsEzVwJ at 16,488 downloads, and yAt0wv1Z / 5.7.3 at 276,110 downloads. No homepage TDK change, fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="versions-intent" />
+    <category term="requirements" />
+    <category term="public-source-pack" />
+    <category term="internal-links" />
+  </entry>
   <entry>
     <title>Verity Mod app claims expanded to eleven current Play Store package IDs</title>
     <id>https://veritymodchecker.online/updates/google-play-app-claims-source-pack-2026-07-30-2005</id>
