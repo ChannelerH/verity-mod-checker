@@ -197,17 +197,17 @@ with sync_playwright() as playwright:
         v6_text = page.locator("main").inner_text()
         assert "verity-6.jar File Check" in v6_text
         assert "CXsEzVwJ" in v6_text
-        assert "13,782" in v6_text
+        assert "14,425" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-je/", wait_until="domcontentloaded")
         verity_je_text = page.locator("main").inner_text()
         assert "Verity JE Download" in verity_je_text
-        assert "13,782" in verity_je_text
-        assert "357,310" in verity_je_text
-        assert "2,393,891" in verity_je_text
-        assert "681.2K" in verity_je_text
+        assert "14,425" in verity_je_text
+        assert "358,151" in verity_je_text
+        assert "2,396,299" in verity_je_text
+        assert "686.1K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-5-7-3-jar/", wait_until="domcontentloaded")
@@ -219,8 +219,8 @@ with sync_playwright() as playwright:
         assert "Open Modrinth yAt0wv1Z" in v573_text
         v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
         assert "SoftwareApplication" in v573_schema_text
-        assert "681.2K" in v573_text
-        assert "275,402" in v573_text
+        assert "686.1K" in v573_text
+        assert "275,551" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
@@ -270,8 +270,8 @@ with sync_playwright() as playwright:
         mcpedl_text = page.locator("main").inner_text()
         assert "Verity Mod MCPEDL Route" in mcpedl_text
         assert "citation helper" in mcpedl_text.lower()
-        assert "7,492,433" in mcpedl_text
-        assert "311.5K" in mcpedl_text
+        assert "7,498,066" in mcpedl_text
+        assert "314.6K" in mcpedl_text
         assert "8517480" in mcpedl_text
         assert "8327253" in mcpedl_text
         assert "PnTMC YouTube" in mcpedl_text
@@ -282,7 +282,7 @@ with sync_playwright() as playwright:
         pntmc_320_text = page.locator("main").inner_text()
         pntmc_320_dom_text = page.locator("main").text_content()
         assert "ThatMob's Verity 3.2.0 by PnTMC" in pntmc_320_text
-        assert "311.5K" in pntmc_320_text
+        assert "314.6K" in pntmc_320_text
         assert "does not reply or never transforms" in pntmc_320_text
         assert "no-reply" in pntmc_320_dom_text
         assert "no-monster-form" in pntmc_320_dom_text
@@ -292,7 +292,7 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,094,168" in verity_be_text
+        assert "4,096,382" in verity_be_text
         assert "238.0K" in verity_be_text
         assert "8506198" in verity_be_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198"]').count() >= 1
@@ -321,8 +321,8 @@ with sync_playwright() as playwright:
         assert "old JAR" in java_help_text
         assert "CXsEzVwJ" in java_help_text
         assert "8461257" in java_help_text
-        assert "357,310" in java_help_text
-        assert "2,393,891" in java_help_text
+        assert "358,151" in java_help_text
+        assert "2,396,299" in java_help_text
         assert page.locator('a[href="/verity-je/"]').count() >= 1
         assert page.locator('a[href="/api-connection-failed/"]').count() >= 1
         assert page.locator('a[href="/not-working/"]').count() >= 1
