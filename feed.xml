@@ -5,8 +5,28 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T16:00:00+08:00</updated>
+  <updated>2026-07-30T16:22:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>verity-3.4.1.jar exact-file search result triage refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-341-exact-file-serp-2026-07-30-1622</id>
+    <link href="https://veritymodchecker.online/verity-3-4-1-jar/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/644bd4fc7f229b7ff646f399956c29fb" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/dc15bf49a5d21769325012bd8fdb494f" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/b665791a7ea7208d47db6ab0b001687c" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8346795" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/yAt0wv1Z" rel="related" />
+    <published>2026-07-30T16:22:00+08:00</published>
+    <updated>2026-07-30T16:22:00+08:00</updated>
+    <summary>Search Console now shows the delayed July 15 through July 28 window with 54 clicks, 1,640 impressions, 3.3% CTR, and average position 8.7. Exact verity-3.4.1.jar remains visible with 13 impressions, while GA4 still shows 328 active users, 156 Organic Search sessions, 90 Referral sessions, 58 verity_outbound_project_click events, and 73 gist.github.com referral sessions in the last 7 days. Current SERP checks for verity-3.4.1.jar mix the official CurseForge file page, CurseForge file-list rows, sandbox or malware-analysis pages, and copied file-host results. The official CurseForge file page now shows Verity JE Project ID 1591438 at 2,391,732 downloads and file record 8346795 / verity-3.4.1.jar at 280.8K displayed downloads; Modrinth version yAt0wv1Z / verity-5.7.3.jar now shows 275,151 version downloads. Refreshed the 3.4.1 status page with exact-file search-result triage, updated release and safety JSON, rebuilt source-map JSON/CSV, updated visible counters, LLM summaries, visual assertions, public Gist source assets, Atom feed, and /updates/. Homepage TDK was not changed, and no fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="exact-filename" />
+    <category term="verity-je" />
+    <category term="source-refresh" />
+    <category term="gsc-ga4" />
+  </entry>
   <entry>
     <title>API 503 and provider 529 split added to Verity troubleshooting</title>
     <id>https://veritymodchecker.online/updates/api-provider-503-529-counters-2026-07-30-1600</id>
