@@ -5,8 +5,37 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T09:57:20+08:00</updated>
+  <updated>2026-07-30T10:09:30+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>PnTMC and MCPEDL Bedrock route refreshed from GSC and source checks</title>
+    <id>https://veritymodchecker.online/updates/pntmc-mcpedl-gsc-refresh-2026-07-30-1009</id>
+    <link href="https://veritymodchecker.online/mcpedl/" rel="alternate" />
+    <link href="https://veritymodchecker.online/pntmc-verity-3-2-0/" rel="related" />
+    <link href="https://veritymodchecker.online/pntmc-verity-2-1-0/" rel="related" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/best-verity-mod-bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-safety-checks.json" rel="related" />
+    <link href="https://mcpedl.com/verity-bedrock-edition/" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <link href="https://www.youtube.com/@PnTMCvn" rel="related" />
+    <published>2026-07-30T10:09:30+08:00</published>
+    <updated>2026-07-30T10:09:30+08:00</updated>
+    <summary>Search Console visible data now shows verity mod with 2 clicks from 3 impressions, while old PnTMC and exact Bedrock queries still have weak or zero-click visibility, including the long PnTMC 2.1.0 file-name query at 6 impressions and 0 clicks. Refreshed the MCPEDL and PnTMC Bedrock routes from first-party source checks: CurseForge now shows PnTMC Project ID 1575941 at 7,450,575 project downloads and current file 8517480 / ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon at 289.2K displayed file downloads; MCPEDL still lists current 3.2.0 rows first and player comments still include no-reply, no-spawn, and no-monster-form reports. Added a citation helper to /mcpedl/ for project descriptions, pinned comments, wiki notes, and support replies, exposed the same facts through release JSON and source-map CSV, linked the PnTMC YouTube/community feedback route named by the project description, and updated /updates/, /pntmc-verity-3-2-0/, /download/, /verity-mod-downloads/, source-map files, README, and LLM summaries. MCPEDL support has replied that the guide can exist as a reference but project-page links must be added by the project owner, so no further MCPEDL support follow-up or forced external-link posting is claimed. Homepage TDK was not changed. GSC and GA4 API reads remain blocked by insufficient local Google OAuth scopes, and GA4 UI access is currently unavailable.</summary>
+    <category term="pntmc" />
+    <category term="mcpedl" />
+    <category term="bedrock" />
+    <category term="gsc-opportunity" />
+    <category term="outreach-ready" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>Verity JE Java route refreshed from GSC zero-click signals</title>
     <id>https://veritymodchecker.online/updates/verity-je-java-gsc-refresh-2026-07-30-0957</id>

@@ -231,6 +231,28 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
         assert page.locator('a[href="/mcpedl/"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/mcpedl/", wait_until="domcontentloaded")
+        mcpedl_text = page.locator("main").inner_text()
+        assert "Verity Mod MCPEDL Route" in mcpedl_text
+        assert "citation helper" in mcpedl_text.lower()
+        assert "7,450,575" in mcpedl_text
+        assert "289.2K" in mcpedl_text
+        assert "8517480" in mcpedl_text
+        assert "8327253" in mcpedl_text
+        assert "PnTMC YouTube" in mcpedl_text
+        assert page.locator('a[href="/data/verity-source-map.csv"]').count() >= 1
+        assert page.locator('a[href="https://www.youtube.com/@PnTMCvn"]').count() >= 1
+
+        page.goto(f"{BASE_URL}/pntmc-verity-3-2-0/", wait_until="domcontentloaded")
+        pntmc_320_text = page.locator("main").inner_text()
+        pntmc_320_dom_text = page.locator("main").text_content()
+        assert "ThatMob's Verity 3.2.0 by PnTMC" in pntmc_320_text
+        assert "289.2K" in pntmc_320_text
+        assert "does not reply or never transforms" in pntmc_320_text
+        assert "no-reply" in pntmc_320_dom_text
+        assert "no-monster-form" in pntmc_320_dom_text
+        assert page.locator('a[href="https://www.youtube.com/@PnTMCvn"]').count() >= 1
+
         page.goto(f"{BASE_URL}/verity-be/", wait_until="domcontentloaded")
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
