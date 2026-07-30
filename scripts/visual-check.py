@@ -221,6 +221,15 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
         assert page.locator('a[href="/mcpedl/"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/verity-be/", wait_until="domcontentloaded")
+        verity_be_text = page.locator("main").inner_text()
+        assert "Verity BE Official Download" in verity_be_text
+        assert "Open official Verity BE download source" in verity_be_text
+        assert "4,068,689" in verity_be_text
+        assert "221.8K" in verity_be_text
+        assert "8506198" in verity_be_text
+        assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198"]').count() >= 1
+
         page.goto(f"{BASE_URL}/verity-mod-virus-check/", wait_until="domcontentloaded")
         safety_text = page.locator("main").inner_text()
         assert "Is Verity Mod a Virus?" in safety_text

@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T09:17:10+08:00</updated>
+  <updated>2026-07-30T09:34:26+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE source route refreshed from GSC and CurseForge counters</title>
+    <id>https://veritymodchecker.online/updates/verity-be-gsc-refresh-2026-07-30-0934</id>
+    <link href="https://veritymodchecker.online/verity-be/" rel="alternate" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-safety-checks.json" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198" rel="related" />
+    <published>2026-07-30T09:34:26+08:00</published>
+    <updated>2026-07-30T09:34:26+08:00</updated>
+    <summary>Search Console visible query data showed verity be at 9 impressions and 0 clicks, so this update focused on the existing exact /verity-be/ route instead of changing homepage TDK or creating a thin duplicate page. The official CurseForge Verity BE project now shows Project ID 1574632 with 4,068,689 project downloads and the current file record 8506198 now shows 221.8K displayed file downloads, 21.3 MB, Bedrock 26.30, and Jul 25, 2026 upload data. Refreshed /verity-be/, /bedrock/, /download/, /verity-mod-downloads/, source-map JSON/CSV, release JSON, safety JSON, README, LLM summaries, visual checks, and this feed entry. The primary Verity BE call to action now says Open official Verity BE download source. GSC and GA4 API reads remain blocked by insufficient Google authentication scopes, so no API metric or GSC URL-submission claim is made. No forced external-link posting was done.</summary>
+    <category term="verity-be" />
+    <category term="gsc-opportunity" />
+    <category term="source-refresh" />
+  </entry>
   <entry>
     <title>verity-5.7.3.jar route refreshed from GSC and source counters</title>
     <id>https://veritymodchecker.online/updates/verity-573-gsc-refresh-2026-07-30-0917</id>
