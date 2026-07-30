@@ -5,8 +5,25 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-31T03:45:00+08:00</updated>
+  <updated>2026-07-31T05:04:18+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod versions refreshed with official file-list freshness proof</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-versions-file-list-refresh-2026-07-31-0504</id>
+    <link href="https://veritymodchecker.online/versions/#freshness-proof" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-versions-source-pack.md" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/a3d1ff2db71f6f47a3c396c3cd662bd2" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all" rel="related" />
+    <published>2026-07-31T05:04:18+08:00</published>
+    <updated>2026-07-31T05:04:18+08:00</updated>
+    <summary>GSC and GA4 live UI access was blocked by the browser/proxy check in this run, so the latest retained baseline remains the delayed July 15 through July 28 GSC view with 54 clicks, 1,644 impressions, 3.3% CTR, average position 8.7, exact verity mod at 2 clicks / 3 impressions, and the prior GA4 last-7-days baseline with Organic Search and Gist referral as active channels. Because current SERP sampling still shows broad all-versions and downloads pages competing around verity mod, this update strengthens /versions/ instead of changing homepage TDK. Official source checks now show Modrinth Verity JE project on1Y0osD at 375,170 downloads, 128 followers, and current visible version CXsEzVwJ / verity-6.jar at 29,457 downloads with version type beta; CurseForge Verity JE Project ID 1591438 shows 2,429,399 downloads and file 8461257 at 711.0K; Verity BE Project ID 1574632 shows 4,129,163 downloads and file 8506198 at 261.1K; PnTMC Project ID 1575941 shows 7,568,188 downloads, files/all shows 19 rows, and current 3.2.0 V26.30 file 8517480 shows 357.2K; MCPEDL displays 7.6M; Pocket Edition Project ID 1596246 shows 60,674 downloads and file 8406293 at 51.3K. Refreshed release JSON, /versions/ freshness proof, README, LLM summaries, and the public version source pack. No fake traffic, paid links, comment spam, CAPTCHA bypass, homepage TDK churn, or GitHub directory PR outreach is claimed.</summary>
+    <category term="all-versions-intent" />
+    <category term="official-file-list" />
+    <category term="source-data-refresh" />
+    <category term="public-source-pack" />
+  </entry>
   <entry>
     <title>Better Voice official file list mapped for older Verity JE voice fixes</title>
     <id>https://veritymodchecker.online/updates/better-voice-file-list-2026-07-31-0345</id>

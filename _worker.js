@@ -111,6 +111,7 @@ const dataFiles = new Set([
   "/data/verity-source-map.csv",
   "/data/verity-source-map.json",
   "/data/verity-source-map.schema.json",
+  "/data/verity-versions-source-pack.md",
   "/data/verity-voice-addons.json",
   "/data/verity-voice-addons.schema.json",
   "/data/verity-voice-addons-source-pack.md",

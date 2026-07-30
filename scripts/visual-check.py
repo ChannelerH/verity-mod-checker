@@ -155,9 +155,9 @@ with sync_playwright() as playwright:
         assert "latest version depends on edition and source" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
-        assert "367,159" in versions_text
-        assert "22,116" in versions_text
-        assert "276,733" in versions_text
+        assert "375,170" in versions_text
+        assert "29,457" in versions_text
+        assert "277,196" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 1.1.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
