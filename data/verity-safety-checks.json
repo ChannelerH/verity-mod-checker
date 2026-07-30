@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T17:58:00+08:00",
+  "checkedAt": "2026-07-30T21:15:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-mod-virus-check/",
   "method": "Point-in-time safety-intent routing from public SERP snippets, official project pages, and machine-readable release snapshots. This file is not an antivirus scan, malware verdict, file reputation verdict, or endorsement of any download host.",
   "summary": {
@@ -37,8 +37,10 @@
     },
     {
       "question": "Is the Vercel Verity v2.6 page safe?",
-      "safeAnswer": "Treat it as unverified until it exposes a matching Modrinth or CurseForge project ID, file record, version ID, checksum, and maintainer account.",
-      "goTo": "https://veritymodchecker.online/verity-mod-vercel-app/"
+      "safeAnswer": "Treat it as unverified until it exposes a matching Modrinth or CurseForge project ID, file record, version ID, checksum, and maintainer account. The July 30 Bing sample made this a high-visibility Verity Mod risk route, so compare it with official source records before clicking any download button.",
+      "goTo": "https://veritymodchecker.online/verity-mod-vercel-app/",
+      "sourcePack": "https://gist.github.com/ChannelerH/e82290f3f8cad78c9b7d10b976865ef8",
+      "currentSearchSignal": "Bing visible main-result sample for broad verity mod query included verity-mod.vercel.app beside official CurseForge, video, MCPEDL, MCPE mirror, and app-style results."
     },
     {
       "question": "Is a Google Play Verity app the official add-on?",
@@ -61,9 +63,10 @@
       "projectId": "on1Y0osD",
       "currentVersionId": "CXsEzVwJ",
       "currentFile": "verity-6.jar",
-      "projectDownloadsAtCheck": 358151,
-      "currentVersionDownloadsAtCheck": 14425,
-      "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2"
+      "projectDownloadsAtCheck": 363515,
+      "currentVersionDownloadsAtCheck": 18863,
+      "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2",
+      "stableVersionDownloadsAtCheck": 276405
     },
     "curseForgeVerityBe": {
       "projectId": 1574632,
