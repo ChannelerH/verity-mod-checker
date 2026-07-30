@@ -5,8 +5,34 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T10:39:55+08:00</updated>
+  <updated>2026-07-30T11:02:58+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>GA4 baseline and official source counters refreshed</title>
+    <id>https://veritymodchecker.online/updates/ga4-source-counter-refresh-2026-07-30-1102</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-safety-checks.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.csv" rel="related" />
+    <link href="https://veritymodchecker.online/source-map/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-6-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-5-7-3-jar/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/CXsEzVwJ" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official/version/5.7.3" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="related" />
+    <published>2026-07-30T11:02:58+08:00</published>
+    <updated>2026-07-30T11:02:58+08:00</updated>
+    <summary>GA4 UI access is now readable for property 545836630. The last-7-day baseline showed 327 active users, 153 Organic Search sessions, 88 Referral sessions, 54 key events, and 53 verity_outbound_project_click events, which strongly indicates the official-project outbound click is already being counted as the key event. GSC remains on the same July 15 to July 27 data window with verity mod visible at 2 clicks from 3 impressions. Refreshed only factual source counters: Modrinth project on1Y0osD now shows 348,093 downloads, current version CXsEzVwJ shows 6,282 downloads, stable yAt0wv1Z shows 273,893 downloads, and CurseForge Verity BE Project ID 1574632 shows 4,076,778 project downloads. Updated release JSON, safety JSON, source-map JSON and CSV, source-map HTML, download-counter pages, README, LLM summaries, visual checks, and this feed entry. Homepage TDK was not changed, and no forced external-link posting is claimed.</summary>
+    <category term="ga4-baseline" />
+    <category term="gsc-baseline" />
+    <category term="source-refresh" />
+    <category term="verity-je" />
+    <category term="verity-be" />
+  </entry>
   <entry>
     <title>How-to install route refreshed with current Verity JE source split</title>
     <id>https://veritymodchecker.online/updates/how-to-install-source-split-2026-07-30-1039</id>
