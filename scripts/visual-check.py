@@ -538,6 +538,19 @@ with sync_playwright() as playwright:
         assert page.locator('a[href="https://gist.github.com/ChannelerH/860e342df2f84581f5f630b9f6c4cab1"]').count() >= 1
 
         page.goto(BASE_URL, wait_until="domcontentloaded")
+        home_text = page.locator("main").inner_text()
+        home_text_lower = home_text.lower()
+        assert "Run the Verity Mod setup and fix checker" in home_text
+        assert "compatibility and troubleshooting" in home_text_lower
+        assert "Download and install" in home_text
+        assert page.locator('a[href="#route-checker"]').count() >= 1
+        page.locator('button[data-edition="bedrock"]').click()
+        page.locator("#issueSelect").select_option("not working")
+        route_result_text = page.locator(".result-panel").inner_text()
+        assert "Bedrock addon route" in route_result_text
+        assert "Beta APIs" in route_result_text
+        assert "Open project page" in route_result_text
+
         page.locator("#sourceInput").fill("https://www.curseforge.com/minecraft/modpacks/verity-beta")
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         page.locator("#sourceVerdict").wait_for(state="visible")
@@ -804,4 +817,4 @@ with sync_playwright() as playwright:
 
     assert not console_errors, f"browser console errors: {console_errors}"
 
-print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, Smiley's Better Voice route and checker intent, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes with provider evidence, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis and support summary tool, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")
+print("VISUAL_CHECK_OK desktop+mobile routes including source map CSV/JSON table, homepage setup/fix checker intent, Smiley's Better Voice route and checker intent, Verity Souls status route, old verity-1.0.0.jar route, TLauncher route and checker intent, AI model one-word replies, how-to-talk AI model routing, Verity Dweller route, VERITY.exe Remastered route, Ultimate VERITY route cluster, Real Verity Mod updated, Fabric, play and server route selectors, latest updates route, 6.0.1 beta route, 6.0.0 previous beta route, status 401 and 429 routes with provider evidence, Groq API key route, 3.4.1 status route, lag route, spawn route, PnTMC 3.2.0 route, API diagnosis and support summary tool, aliases, similar-name Modrinth identity, legacy Drive-link identity, and checksum branches")

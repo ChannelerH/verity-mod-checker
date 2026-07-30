@@ -1932,6 +1932,41 @@ details p {
   font-size: clamp(1.55rem, 3vw, 2.7rem);
 }
 
+.checker-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.checker-shortcuts a {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  padding: 14px;
+  color: #eef7ee;
+  text-decoration: none;
+  background: #101610;
+  border: 1px solid rgba(244, 202, 72, 0.28);
+  border-radius: 8px;
+}
+
+.checker-shortcuts a:hover,
+.checker-shortcuts a:focus-visible {
+  border-color: rgba(244, 202, 72, 0.72);
+}
+
+.checker-shortcuts strong {
+  color: #ffffff;
+  font-size: 0.98rem;
+}
+
+.checker-shortcuts span {
+  color: #c4d3c4;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 .route-code {
   margin-left: auto;
   color: #121812;
@@ -2154,6 +2189,7 @@ details p {
   .verification-log,
   .source-checker-workspace,
   .checker-workspace,
+  .checker-shortcuts,
   .api-diagnosis-grid,
   .route-index-grid,
   .evidence-grid,

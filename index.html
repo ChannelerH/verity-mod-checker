@@ -77,6 +77,17 @@
           },
           {
             "@type": "WebApplication",
+            "@id": "https://veritymodchecker.online/#route-checker",
+            "name": "Verity Mod Setup and Fix Checker",
+            "url": "https://veritymodchecker.online/#route-checker",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Any",
+            "isAccessibleForFree": true,
+            "description": "An edition-aware Verity Mod setup checker that routes Java, Bedrock, and MCPE players to the right project page and first troubleshooting steps for download, not working, voice, AI setup, spawn, and source-trust questions.",
+            "dateModified": "2026-07-31"
+          },
+          {
+            "@type": "WebApplication",
             "@id": "https://veritymodchecker.online/#checker",
             "name": "Verity Mod Source and File Checker",
             "url": "https://veritymodchecker.online/#checker",
@@ -159,7 +170,7 @@
         <a href="/not-working/">Fixes</a>
         <a href="/routes/">Routes</a>
         <a href="/faq/">FAQ</a>
-        <a class="nav-tool" href="#checker">File checker</a>
+        <a class="nav-tool" href="#route-checker">Setup checker</a>
       </nav>
     </header>
 
@@ -185,9 +196,10 @@
             the Verity AI horror character. Compare the current projects, match your game version, and
             open the maintainer page before downloading.
           </p>
-          <div class="hero-actions" aria-label="Primary download routes">
+          <div class="hero-actions" aria-label="Primary Verity Mod routes">
+            <a class="hero-action primary" href="#route-checker">Run setup checker</a>
             <a
-              class="hero-action primary"
+              class="hero-action secondary"
               href="https://www.curseforge.com/minecraft/mc-mods/verity-je"
               rel="noopener"
               target="_blank"
@@ -488,9 +500,13 @@
 
       <section class="checker-section" id="route-checker" aria-labelledby="checker-title">
         <div class="section-heading home-heading checker-heading">
-          <p class="eyebrow">Setup route chooser</p>
-          <h2 id="checker-title">Not sure which Verity Mod file you need?</h2>
-          <p>Select your edition and problem. The result links to a maintainer project page and gives a short setup order.</p>
+          <p class="eyebrow">Compatibility and troubleshooting</p>
+          <h2 id="checker-title">Run the Verity Mod setup and fix checker</h2>
+          <p>
+            Choose Java, Bedrock, or MCPE, then pick the symptom players actually hit: download,
+            not working, voice, AI setup, box or spawn problems, or source trust. The result links to
+            the matching maintainer project route and gives the first checks to run before reinstalling.
+          </p>
         </div>
 
         <div class="checker-workspace">
@@ -549,6 +565,13 @@
               <button type="button" class="copy-button" id="copyButton">Copy checklist</button>
             </div>
           </aside>
+        </div>
+
+        <div class="checker-shortcuts" aria-label="Common Verity Mod setup and fix paths">
+          <a href="/how-to-get-verity-mod/"><strong>Download and install</strong><span>Start here when you only know the name Verity Mod.</span></a>
+          <a href="/not-working/"><strong>Not working</strong><span>Fix crashes, silence, dots, spawn, and connection failures.</span></a>
+          <a href="/voice-not-working/"><strong>Voice problems</strong><span>Separate microphone, add-on, server, and provider setup issues.</span></a>
+          <a href="/java-vs-bedrock/"><strong>Java or Bedrock?</strong><span>Choose JAR, MCADDON, MCPE, modpack, or app route before installing.</span></a>
         </div>
       </section>
 
