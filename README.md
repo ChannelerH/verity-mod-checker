@@ -49,7 +49,7 @@ Cloudflare Pages fallback URL: https://verity-mod-checker.pages.dev/
 - Verity Mod lag fix: https://veritymodchecker.online/verity-mod-lag-fix/
 - Verity Mod does not respond fix: https://veritymodchecker.online/verity-doesnt-respond/
 - Not working and 404 fixes: https://veritymodchecker.online/not-working/
-- Voice not working fix: https://veritymodchecker.online/voice-not-working/
+- Voice and microphone not working fix: https://veritymodchecker.online/voice-not-working/ (chat works but no sound, microphone not reacting, Simple Voice Chat, TTS, VERITY.exe voice/direct-chat, and Groq/API-key voice confusion)
 - Groq API key setup: https://veritymodchecker.online/verity-groq-api-key/
 - API connection failed: https://veritymodchecker.online/api-connection-failed/
 - Status 401 credential fix: https://veritymodchecker.online/status-401/

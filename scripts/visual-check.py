@@ -293,6 +293,15 @@ with sync_playwright() as playwright:
         assert "Import says failed or duplicate pack" in not_working_text
         assert page.locator('a[href="/java/#java-install-help"]').count() >= 1
 
+        page.goto(f"{BASE_URL}/voice-not-working/", wait_until="domcontentloaded")
+        voice_text = page.locator("main").inner_text()
+        assert "CURRENT PLAYER SIGNALS" in voice_text
+        assert "microphone tutorial did not make Verity talk" in voice_text
+        assert "VERITY.exe CurseForge page" in voice_text
+        assert "Simple Voice Chat hears you but Verity does not react" in voice_text
+        assert page.locator('a[href="https://www.reddit.com/r/Minecraft/comments/1utpwov/verity_mod_voice_not_working/"]').count() >= 1
+        assert page.locator('a[href="https://www.curseforge.com/minecraft/modpacks/verity-exe"]').count() >= 1
+
         page.goto(f"{BASE_URL}/how-to-talk-to-verity/", wait_until="domcontentloaded")
         talk_text = page.locator("main").inner_text()
         assert "only says one word" in talk_text

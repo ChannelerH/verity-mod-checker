@@ -6,12 +6,12 @@
     <title>Verity Mod Voice Not Working - Chat Works But No Sound Fix</title>
     <meta
       name="description"
-      content="Fix Verity Mod voice not working when chat appears but no sound plays. Check Java microphone input, Simple Voice Chat, TTS, Bedrock resources, and audio output."
+      content="Fix Verity Mod voice not working, microphone not reacting, VERITY.exe does not talk, or chat works but no sound plays. Check Java voice chat, TTS, Bedrock packs, and API setup."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://veritymodchecker.online/voice-not-working/" />
     <meta property="og:title" content="Verity Mod Voice Not Working Fix" />
-    <meta property="og:description" content="Troubleshoot Verity Mod voice issues for Java, Bedrock, and MCPE when messages appear but audio is silent." />
+    <meta property="og:description" content="Troubleshoot Verity Mod voice, microphone, TTS, VERITY.exe, Java, Bedrock, and MCPE issues when messages appear but audio is silent." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://veritymodchecker.online/voice-not-working/" />
     <meta property="og:image" content="https://veritymodchecker.online/assets/images/verity-mod-share-v1.webp" />
@@ -47,6 +47,22 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Usually no. If the mod loads and chat appears, the base download is probably working. Focus on audio settings, resource packs, voice dependencies, provider settings, or world/profile conflicts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Verity not talk when my microphone works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A working microphone only proves that the operating system or voice chat layer can capture audio. Verity still needs the correct project route, talk control, speech-to-text path, AI provider response, and sound output. Test typed chat first, then debug microphone input."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do after following a Verity microphone tutorial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the tutorial as one route-specific clue, not a universal fix. Confirm your exact project, test one typed prompt, check the selected microphone and Minecraft controls, then verify whether the installed route supports live voice chat, direct chat, or only local TTS."
             }
           },
           {
@@ -99,7 +115,7 @@
         "@id": "https://veritymodchecker.online/voice-not-working/#webpage",
         "url": "https://veritymodchecker.online/voice-not-working/",
         "name": "Verity Mod Voice Not Working - Chat Works But No Sound Fix",
-        "dateModified": "2026-07-29",
+        "dateModified": "2026-07-30",
         "isPartOf": { "@id": "https://veritymodchecker.online/#website" },
         "about": ["Verity Mod voice", "Verity BE text-to-speech", "Minecraft audio troubleshooting"]
       }
@@ -126,12 +142,14 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Voice troubleshooting checked July 29, 2026</p>
+          <p class="eyebrow">Voice troubleshooting checked July 30, 2026</p>
           <h1>Verity Mod Voice Not Working</h1>
           <p class="lede">
-            Use this page when Verity messages appear in chat but you cannot hear the voice. That symptom
-            usually means the base mod or addon is loaded, so the fix should focus on the audio, TTS,
-            resource pack, or provider layer instead of downloading random copies.
+            Use this page when Verity messages appear in chat but you cannot hear the voice, a microphone
+            tutorial did not make Verity talk, Simple Voice Chat hears you but Verity does not react, or
+            VERITY.exe reports a Groq/API-key voice problem. That symptom usually means the base mod or
+            addon is loaded, so the fix should focus on the audio, TTS, resource pack, microphone, voice
+            chat, or provider layer instead of downloading random copies.
           </p>
           <div class="trust-strip" aria-label="Voice fix principles">
             <span>Chat works</span>
@@ -161,6 +179,63 @@
             <a class="copy-button" href="/">Run checker</a>
           </div>
         </aside>
+      </section>
+
+      <section class="intent-table" aria-label="Current voice search signals">
+        <div class="section-heading">
+          <p class="eyebrow">Current player signals</p>
+          <h2>Why the voice and microphone fix needs its own path</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Current signal</th>
+                <th>What users are really asking</th>
+                <th>Best first answer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  A recent Reddit player report describes Verity messages showing in chat while the voice is silent.
+                  <a href="https://www.reddit.com/r/Minecraft/comments/1utpwov/verity_mod_voice_not_working/" target="_blank" rel="noopener noreferrer">Open report</a>
+                </td>
+                <td>Chat works but no sound plays, so the base interaction is not the first suspect.</td>
+                <td>Separate text response, microphone capture, speech-to-text, TTS, resource pack, and output device.</td>
+              </tr>
+              <tr>
+                <td>
+                  The VERITY.exe CurseForge page says the profile uses text-to-speech and can be used through voice chat
+                  or direct chat, while Groq/API-key issues remain provider-side.
+                  <a href="https://www.curseforge.com/minecraft/modpacks/verity-exe" target="_blank" rel="noopener noreferrer">Open VERITY.exe notes</a>
+                </td>
+                <td>Players mix standalone Java, modpack voice chat, direct chat, TTS, and Groq setup into one issue.</td>
+                <td>Pick the installed route first: standalone Verity JE, VERITY.exe profile, Verity BE, or PnTMC Bedrock.</td>
+              </tr>
+              <tr>
+                <td>
+                  Verity JE still has active CurseForge discussion and a current 1.20.1 Forge record, but the comments
+                  area is not a replacement for setup evidence.
+                  <a href="https://www.curseforge.com/minecraft/mc-mods/verity-je/comments" target="_blank" rel="noopener noreferrer">Open Verity JE comments</a>
+                </td>
+                <td>Players see many voice complaints and assume the official file is wrong or missing.</td>
+                <td>Keep file identity separate from voice quality, language support, provider limits, and local audio.</td>
+              </tr>
+              <tr>
+                <td>New microphone tutorials and recent comments ask how to make Verity respond to spoken input.</td>
+                <td>A tutorial can name one build or control, but it does not prove every public route supports live voice.</td>
+                <td>Make a typed prompt work first, then test the selected microphone, control binding, and voice-chat layer.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The important SEO and support distinction is this: "Verity does not talk" can mean no text reply,
+          a silent audio output, a microphone that never becomes a prompt, a Groq or OpenRouter response problem,
+          a Bedrock resource-pack issue, or a VERITY.exe profile setup issue. One generic reinstall answer misses
+          the user intent and can push players toward unsafe voice-fix mirrors.
+        </p>
       </section>
 
       <section class="status-section" aria-labelledby="bedrock-tts-title">
