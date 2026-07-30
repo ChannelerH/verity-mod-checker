@@ -53,7 +53,15 @@
                 "name": "What is the best Groq model for Verity Mod?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Start with the model recommended by the installed Verity JE build. If no exact model is required, prefer a fast, stable model before testing larger or slower options."
+                  "text": "Start with the model recommended by the installed Verity JE build. If no exact model is required, prefer a fast hosted text model that answers reliably before testing larger or slower options. Rate limits and voice output should be checked separately."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which local model should I try first for Verity Mod?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For Ollama, start with a small model your computer can run quickly, then compare roleplay quality. Current player reports mention Qwen, Llama, and Gemma routes with different character and formatting problems, so no public local model should be treated as universally best."
                 }
               },
               {
@@ -86,6 +94,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "No. Treat timheinrich2011/verity-3b as a public Ollama model claim to test, not as proof that every Verity JE build officially recommends it."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does a model make Verity break character?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "If Verity answers but behaves like a generic chatbot, exposes reasoning text, overdoes roleplay markers, or changes mood unexpectedly, the AI route is working but the selected model and prompt behavior are not good enough for the character. Test the same prompt outside Minecraft and switch model before changing the JAR."
                 }
               },
               {
@@ -152,6 +168,7 @@
             <li>Groq: best when you want a hosted response path and low local hardware requirements.</li>
             <li>OpenRouter: useful only when your installed configuration supports its key and model IDs.</li>
             <li>Ollama: best when you want local control and your machine can run the model.</li>
+            <li>Local model tests: judge Qwen, Llama, Gemma, and verity-3b by response speed and character behavior, not the name.</li>
             <li>Voice: test chat response first, then speech or microphone behavior.</li>
             <li>Credentials: keep keys inside the provider or mod config, never on a download site.</li>
           </ol>
@@ -198,6 +215,11 @@
                 <td>Verity answers in chat but has no voice</td>
                 <td>Voice checklist</td>
                 <td>Audio output, microphone permission, voice dependency, and language support.</td>
+              </tr>
+              <tr>
+                <td>Verity responds but acts like a generic chatbot</td>
+                <td>Model comparison route</td>
+                <td>Qwen/Gemma/Llama character drift, reasoning text, roleplay markers, and prompt formatting.</td>
               </tr>
               <tr>
                 <td>Verity does not appear at all</td>
@@ -256,6 +278,16 @@
                     <td>Use it as a baseline, then compare response time and in-character behavior.</td>
                   </tr>
                   <tr>
+                    <td>Qwen 3 local models</td>
+                    <td>Current player reports say some tests exposed reasoning or thinking text in a way the game could not use cleanly.</td>
+                    <td>Reject the route if Verity reads system-like reasoning instead of an in-character answer.</td>
+                  </tr>
+                  <tr>
+                    <td>Gemma 3:4B and Llama 3.x tests</td>
+                    <td>Players are comparing them for roleplay, but reports mention odd behavior, weak context, or mood drift.</td>
+                    <td>Use the same three-prompt test before assuming a model is better because it is larger.</td>
+                  </tr>
+                  <tr>
                     <td>OpenRouter model IDs</td>
                     <td>Hosted models can differ by ID, cost, provider availability, and roleplay behavior.</td>
                     <td>Use the exact model ID your config accepts; test typed text before voice.</td>
@@ -268,6 +300,46 @@
                 </tbody>
               </table>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="player-model-tests">
+        <div class="section-heading">
+          <p class="eyebrow">Live player questions</p>
+          <h2>What current Qwen, Llama, and Gemma reports mean</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-block guide-lead">
+            <h3>There is no single public winner yet</h3>
+            <p>
+              Current player discussion asks which AI model works best for Verity Mod after trying hosted
+              OpenRouter and local Ollama routes. The useful signal is not that one model name wins. The signal
+              is that players are judging four different failure modes: reasoning text leaking into replies,
+              generic chatbot behavior, weak Minecraft context, and sudden personality or karma changes.
+            </p>
+            <p>
+              If a model makes Verity answer quickly but breaks character, the mod has reached the AI layer and
+              the next fix is model behavior, not another download. If a model stays in character but takes too
+              long, it can still feel broken in Minecraft because voice and gameplay wait on text completion.
+              Treat the best AI model for Verity Mod as a playability decision: stable setup, fast response,
+              enough context, and no unsafe file or credential advice.
+            </p>
+          </article>
+          <article class="guide-block">
+            <h3>Three-prompt comparison</h3>
+            <ol class="steps">
+              <li>Ask one short factual prompt to prove the provider and model return usable text.</li>
+              <li>Ask one Minecraft-context prompt, such as biome, nearby structure, inventory, or coordinate help.</li>
+              <li>Ask one safety prompt about downloads or API keys; reject models that recommend mirrors or key sharing.</li>
+              <li>Repeat the same prompts in the same world before comparing Groq, OpenRouter, Ollama, Qwen, Llama, Gemma, or verity-3b.</li>
+            </ol>
+            <p>
+              Keep each result short: model name, provider, average response delay, whether the answer stayed
+              in character, whether voice still worked, and whether any API error appeared. This makes the
+              comparison useful even when the "best" model changes with hardware, provider limits, or a new
+              Verity JE build.
+            </p>
           </article>
         </div>
       </section>
@@ -536,6 +608,14 @@
           </p>
         </details>
         <details>
+          <summary>Which local model should I try first for Verity Mod?</summary>
+          <p>
+            Try the smallest model that answers fast enough on your hardware, then compare roleplay quality.
+            Current player tests mention Qwen, Llama, and Gemma routes with different problems, so use the
+            same three prompts before calling any local model the best AI model for Verity Mod.
+          </p>
+        </details>
+        <details>
           <summary>Can I run Verity Mod fully local?</summary>
           <p>
             Use the Ollama route only if your build supports it and your hardware can run the selected model.
@@ -566,6 +646,14 @@
           </p>
         </details>
         <details>
+          <summary>Why does a model make Verity break character?</summary>
+          <p>
+            The AI route is probably working, but the model or prompt behavior is not. If Verity exposes
+            reasoning text, behaves like a generic chatbot, adds awkward roleplay markers, or changes mood
+            unexpectedly, compare another supported model before replacing the JAR or changing microphone setup.
+          </p>
+        </details>
+        <details>
           <summary>Why does Verity Mod show status 429?</summary>
           <p>
             Groq status 429 means the provider rate-limited the request. Check the active model's limits and
@@ -584,6 +672,7 @@
         <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer">Ollama quickstart</a>
         <a href="https://ollama.com/timheinrich2011/verity-3b" target="_blank" rel="noopener noreferrer">Ollama verity-3b</a>
         <a href="https://ollama.com/library/qwen2.5%3A3b" target="_blank" rel="noopener noreferrer">Qwen2.5 3B</a>
+        <a href="https://www.reddit.com/r/CurseForge/comments/1uvmyqi/what_do_you_think_is_the_best_ai_model_for_verity/" target="_blank" rel="noopener noreferrer">Current model comparison thread</a>
         <span>Use the provider flow required by your installed Verity JE build.</span>
       </aside>
     </main>

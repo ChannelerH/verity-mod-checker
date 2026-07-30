@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-30T18:22:00+08:00</updated>
+  <updated>2026-07-30T19:05:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>AI model route refreshed for Qwen, Llama, Gemma, and verity-3b comparison intent</title>
+    <id>https://veritymodchecker.online/updates/best-ai-model-player-comparison-2026-07-30-1905</id>
+    <link href="https://veritymodchecker.online/ai-model/" rel="alternate" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-groq-api-key/" rel="related" />
+    <link href="https://veritymodchecker.online/status-429/" rel="related" />
+    <link href="https://veritymodchecker.online/voice-not-working/" rel="related" />
+    <link href="https://modrinth.com/mod/verity-je-official" rel="related" />
+    <link href="https://www.reddit.com/r/CurseForge/comments/1uvmyqi/what_do_you_think_is_the_best_ai_model_for_verity/" rel="related" />
+    <link href="https://console.groq.com/docs/rate-limits" rel="related" />
+    <link href="https://openrouter.ai/docs/api_reference/errors-and-debugging" rel="related" />
+    <link href="https://docs.ollama.com/quickstart" rel="related" />
+    <published>2026-07-30T19:05:00+08:00</published>
+    <updated>2026-07-30T19:05:00+08:00</updated>
+    <summary>Search Console's delayed July 15 through July 28 window still shows 54 clicks, 1,640 impressions, 3.3% CTR, average position 8.7, and exact verity mod at 2 clicks / 3 impressions. GA4 last-7-days checks show 327 active users, 153 Organic Search sessions, 88 Referral sessions, 73 gist.github.com referral sessions, and 57 views on the Best AI Model page, while SERP checks now surface a current player question asking which AI model works best for Verity Mod after testing OpenRouter, Ollama, Qwen, Llama, and Gemma routes. Refreshed /ai-model/ without changing homepage TDK: added Qwen/Llama/Gemma player-report interpretation, a three-prompt comparison workflow, model-breaks-character FAQ/schema coverage, and current Modrinth Verity JE source facts showing 358,949 project downloads, CXsEzVwJ / verity-6.jar at 15,106 version downloads, and yAt0wv1Z / verity-5.7.3.jar at 275,829 version downloads. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach is claimed.</summary>
+    <category term="ai-model-intent" />
+    <category term="player-questions" />
+    <category term="gsc-ga4" />
+    <category term="schema-refresh" />
+  </entry>
   <entry>
     <title>Aternos server intent refreshed for availability and crash-log questions</title>
     <id>https://veritymodchecker.online/updates/verity-mod-aternos-server-intent-2026-07-30-1822</id>

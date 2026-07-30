@@ -168,6 +168,10 @@ with sync_playwright() as playwright:
         assert "One-word replies" in ai_model_text
         assert "model-context problem" in ai_model_text
         assert "timheinrich2011/verity-3b" in ai_model_text
+        assert "What current Qwen, Llama, and Gemma reports mean" in ai_model_text
+        assert "Three-prompt comparison" in ai_model_text
+        assert "breaks character" in ai_model_text
+        assert page.locator('a[href="https://www.reddit.com/r/CurseForge/comments/1uvmyqi/what_do_you_think_is_the_best_ai_model_for_verity/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/what-is-verity-mod/", wait_until="domcontentloaded")
         what_is_text = page.locator("main").inner_text()
