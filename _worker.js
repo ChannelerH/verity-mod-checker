@@ -100,6 +100,7 @@ const dataFiles = new Set([
   "/data/verity-mod-voice-not-working-fix.md",
   "/data/verity-modpacks.json",
   "/data/verity-modpacks.schema.json",
+  "/data/verity-be-2-0-0-source-pack.md",
   "/data/verity-rumors.json",
   "/data/verity-rumors.schema.json",
   "/data/verity-lookalikes.json",

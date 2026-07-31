@@ -1,6 +1,6 @@
 # Verity Mod Version Matrix Source Pack
 
-Checked: 2026-07-31 07:43 Asia/Shanghai
+Checked: 2026-07-31 08:44 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/versions/
 
@@ -9,6 +9,8 @@ Machine-readable data:
 - Release JSON: https://veritymodchecker.online/data/verity-releases.json
 - Source-map JSON: https://veritymodchecker.online/data/verity-source-map.json
 - Source-map CSV: https://veritymodchecker.online/data/verity-source-map.csv
+- Verity BE 2.0.0 source pack: https://veritymodchecker.online/data/verity-be-2-0-0-source-pack.md
+- Public Verity BE 2.0.0 Gist copy: https://gist.github.com/ChannelerH/92901d32f1848ca2d737a237433dd23b
 
 Purpose: this source pack gives editors, moderators, video creators, wiki contributors, and Minecraft community helpers a citation-safe version matrix for Verity Mod searches. It does not host Verity files, mirror downloads, bypass official pages, collect API keys, or claim that download counters are malware verdicts.
 
@@ -79,10 +81,10 @@ At the July 31 check:
 
 - Owner: `Undertaletalelover`
 - Project ID: `1574632`
-- Project downloads: `4137146`
+- Project downloads: `4145277`
 - Current file: `Verity (Stable) (2.0.0)-(26.3).mcaddon`
 - File record: `8543534`
-- File downloads: `617`
+- File downloads: `4.5K` displayed
 - File size: `23.7 MB`
 - Supported build: `26.30`
 - What's new: new responses and local AI support.
@@ -101,7 +103,7 @@ At the July 31 check:
 
 - Owner: `PnTMC`
 - Project ID: `1575941`
-- CurseForge project downloads: `7568188`
+- CurseForge project downloads: `7609359`
 - MCPEDL displayed listing downloads: `7.6M`
 - CurseForge files/all showed `1-19 of 19 results`
 - MCPEDL listed the three 3.2.0 downloads above older 3.1.0 and 3.0.0 rows
@@ -110,21 +112,21 @@ Current 3.2.0 rows:
 
 | Bedrock row | File record | Displayed downloads | File size | Uploaded |
 | --- | ---: | ---: | ---: | --- |
-| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon` | 8517480 | 357.2K | 39.6 MB | 2026-07-27 |
-| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon` | 8517478 | 31.3K | 39.6 MB | 2026-07-27 |
-| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon` | 8517473 | 22.2K | 39.6 MB | 2026-07-27 |
+| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon` | 8517480 | 375.1K | 39.6 MB | 2026-07-27 |
+| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon` | 8517478 | 32.8K | 39.6 MB | 2026-07-27 |
+| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon` | 8517473 | 23.2K | 39.6 MB | 2026-07-27 |
 
 Older rows still visible and relevant to old videos:
 
-- 3.1.0 V26.30 record `8503821`, 257.7K displayed downloads
-- 3.1.0 V26.20 row, 40.1K displayed downloads
-- 3.1.0 V26.10 row, 29.0K displayed downloads
-- 3.0.0 V26.30 row, 99.6K displayed downloads
-- 3.0.0 V26.20 row, 33.5K displayed downloads
-- 3.0.0 V26.10 row, 29.0K displayed downloads
+- 3.1.0 V26.30 record `8503821`, 258.6K displayed downloads
+- 3.1.0 V26.20 row, 40.8K displayed downloads
+- 3.1.0 V26.10 row, 29.6K displayed downloads
+- 3.0.0 V26.30 row, 100.3K displayed downloads
+- 3.0.0 V26.20 row, 34.1K displayed downloads
+- 3.0.0 V26.10 row, 29.6K displayed downloads
 - 2.1.0 V26.30 record `8327253`, 2.9M displayed downloads
-- 2.1.0 V26.20 record `8327250`, 305.3K displayed downloads
-- 2.1.0 V26.10 record `8327242`, 218.8K displayed downloads
+- 2.1.0 V26.20 record `8327250`, 306.1K displayed downloads
+- 2.1.0 V26.10 record `8327242`, 219.6K displayed downloads
 
 MCPEDL comments at this check still include real player questions around no reply, no spawn with Beta API on, how to talk, voice, monster form, and whether the add-on is good. Those are user-need signals for troubleshooting pages, not reasons to mirror files.
 

@@ -362,9 +362,11 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,137,146" in verity_be_text
-        assert "617" in verity_be_text
+        assert "4,145,277" in verity_be_text
+        assert "4.5K" in verity_be_text
+        assert "Verity BE 2.0.0 source pack" in verity_be_text
         assert "8543534" in verity_be_text
+        assert page.locator('a[href="/data/verity-be-2-0-0-source-pack.md"]').count() >= 1
         assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-mod-virus-check/", wait_until="domcontentloaded")

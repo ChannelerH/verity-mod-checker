@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-31T07:43:25+08:00",
+  "checkedAt": "2026-07-31T08:44:42+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -204,7 +204,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 4137146,
+      "projectDownloadsAtCheck": 4145277,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -230,8 +230,8 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 23.7,
-          "recordDownloadsAtCheck": 617,
-          "recordDownloadsApproximate": false,
+          "recordDownloadsAtCheck": 4500,
+          "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-30",
           "changelogSummary": [
             "adds new responses",
@@ -268,7 +268,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 7568188,
+      "projectDownloadsAtCheck": 7609359,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -280,7 +280,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.6,
-          "recordDownloadsAtCheck": 357200,
+          "recordDownloadsAtCheck": 375100,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-27",
           "changelogSummary": [
@@ -298,7 +298,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.6,
-          "recordDownloadsAtCheck": 31300,
+          "recordDownloadsAtCheck": 32800,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-27",
           "note": "CurseForge file list showed this current 3.2.0 V26.20 row and download route /8517478 on July 27, 2026; use the exact file page when opening the final download."
@@ -312,7 +312,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.6,
-          "recordDownloadsAtCheck": 22200,
+          "recordDownloadsAtCheck": 23200,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-27",
           "note": "CurseForge file list showed the V26.10 row under 26.13 plus three additional supported builds and download route /8517473 on July 27, 2026."
@@ -326,7 +326,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.7,
-          "recordDownloadsAtCheck": 257700,
+          "recordDownloadsAtCheck": 258600,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25"
         },
@@ -357,7 +357,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 35.4,
-          "recordDownloadsAtCheck": 305300,
+          "recordDownloadsAtCheck": 306100,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-06-27",
           "changelogSummary": [
@@ -375,7 +375,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 35.4,
-          "recordDownloadsAtCheck": 218800,
+          "recordDownloadsAtCheck": 219600,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-06-27",
           "note": "CurseForge file page showed supported builds 26.13, 26.12, 26.11, and 26.10 at the July 28, 2026 check.",
