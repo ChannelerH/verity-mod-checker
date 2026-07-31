@@ -1,6 +1,6 @@
 # Verity Mod API Connection Failed Source Pack
 
-Checked: 2026-07-30 23:05 Asia/Shanghai
+Checked: 2026-07-31 09:31 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/api-connection-failed/
 
@@ -9,6 +9,7 @@ Machine-readable data:
 - JSON: https://veritymodchecker.online/data/verity-api-troubleshooting.json
 - CSV: https://veritymodchecker.online/data/verity-api-troubleshooting.csv
 - Schema: https://veritymodchecker.online/data/verity-api-troubleshooting.schema.json
+- Focused 429 source pack: https://veritymodchecker.online/data/verity-je-status-429-source-pack.md
 - Public Gist: https://gist.github.com/ChannelerH/a28dc4b2bb4a397793345e6c61afc86e
 
 This source pack is for community editors, video creators, support helpers, and players who need to cite the Verity Mod API connection failed route without mirroring files or collecting API keys. It separates provider errors from Minecraft install errors.
@@ -27,21 +28,25 @@ The latest delayed Search Console sample for veritymodchecker.online shows the h
 - `verity error 401`: 1 click / 1 impression
 - `api connection failed status 429 verity mod`: 1 click / 1 impression
 
-GA4 last-7-days data checked July 30 shows `/api-connection-failed/` as the highest-viewed page in the page-title sample, with 158 page views. The same GA4 check shows 156 Organic Search sessions, 90 Referral sessions, 73 `gist.github.com / referral` sessions, and 58 `verity_outbound_project_click` events.
+GA4 last-7-days data checked July 31 shows `/api-connection-failed/` as the highest-viewed page in the page-title sample, with 139 page views. The same GA4 check shows 315 active users, 143 Organic Search sessions, 86 Referral sessions, 70 `gist.github.com / referral` sessions, 16 `google / organic` sessions, 9 `bing / organic` sessions, 92 `yandex.ru / referral` sessions, 60 `verity_outbound_project_click` events, and 61 key events.
+
+## Current player signal
+
+A current public player-question check still shows rate-limit confusion around Verity JE, especially sessions where the mod answers briefly and then fails with status 429 for a reset window. This source pack treats that as provider/quota intent, not as a new download source, mirror recommendation, malware verdict, or API-key collection flow.
 
 ## Current Verity JE source facts
 
-Official Modrinth API checks on July 30 show:
+Official Modrinth API checks on July 31 show:
 
 - Project: `on1Y0osD`
 - Current version: `CXsEzVwJ`
 - Current file: `verity-6.jar`
 - Loader / game version: Forge 1.20.1
-- Project downloads at check: 367,159
-- Current version downloads at check: 22,116
-- Stable 5.7.3 version downloads at check: 276,733
+- Project downloads at check: 378,725
+- Current version downloads at check: 31,646
+- Stable 5.7.3 version downloads at check: 278,452
 - Project updated: 2026-07-29T18:50:58.960032Z
-- Followers at check: 121
+- Followers at check: 131
 - SHA-1 for `verity-6.jar`: `609c799d7350a657cf2193839224bd6c2f9971b2`
 - SHA-512 for `verity-6.jar`: `25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e`
 

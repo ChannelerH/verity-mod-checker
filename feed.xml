@@ -5,8 +5,28 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-31T09:15:00+08:00</updated>
+  <updated>2026-07-31T09:31:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity Mod status 429 source pack refreshed from GSC and GA4 signals</title>
+    <id>https://veritymodchecker.online/updates/verity-mod-status-429-source-pack-2026-07-31-0931</id>
+    <link href="https://veritymodchecker.online/status-429/" rel="alternate" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-je-status-429-source-pack.md" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-api-troubleshooting.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-api-troubleshooting-source-pack.md" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/860e342df2f84581f5f630b9f6c4cab1" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://console.groq.com/docs/rate-limits" rel="related" />
+    <link href="https://openrouter.ai/docs/api_reference/limits" rel="related" />
+    <published>2026-07-31T09:31:00+08:00</published>
+    <updated>2026-07-31T09:31:00+08:00</updated>
+    <summary>GSC domain property access through the signed-in browser now shows the delayed July 15 through July 28 report at 54 clicks, 1,640 impressions, 3.3% CTR, average position 8.7, exact verity mod at 2 clicks / 3 impressions, and 429 query rows such as api connection failed status 429 verity, api connection failed 429 verity mod, and verity mod status 429. GA4 last-7-days shows 315 active users, 143 Organic Search sessions, 86 Referral sessions, 70 gist.github.com referral sessions, 16 google organic sessions, 9 bing organic sessions, 139 API Connection Failed page-title views, 60 verity_outbound_project_click events, and 61 key events. Refreshed the API troubleshooting JSON and source pack, added /data/verity-je-status-429-source-pack.md, linked it from /status-429/ and /api-connection-failed/, and updated the public 429 Gist. Current official Modrinth API facts show project on1Y0osD at 378,725 downloads, 131 followers, current version CXsEzVwJ / verity-6.jar at 31,646 downloads, and stable yAt0wv1Z / verity-5.7.3.jar at 278,452 downloads. Homepage TDK was not changed; no fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory outreach is claimed.</summary>
+    <category term="status-429" />
+    <category term="api-connection-failed" />
+    <category term="gsc-ga4" />
+    <category term="public-source-pack" />
+  </entry>
   <entry>
     <title>Verity BE 2.0.0 source pack and Bedrock counters refreshed</title>
     <id>https://veritymodchecker.online/updates/verity-be-2-0-0-source-pack-2026-07-31-0915</id>

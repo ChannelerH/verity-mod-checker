@@ -1,12 +1,12 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-api-troubleshooting.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-30T23:05:00+08:00",
+  "checkedAt": "2026-07-31T09:31:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/api-connection-failed/",
   "method": "Point-in-time troubleshooting source pack built from Google Search Console query rows, GA4 landing-page and event signals, official provider documentation, and the official Modrinth public API. This file does not collect API keys, host Verity downloads, or claim that an API error is a malware verdict.",
   "observedDemand": {
     "gscWindow": "2026-07-15 through 2026-07-28 delayed Search Console data",
-    "ga4Window": "Last 7 days checked July 30, 2026 at 23:05 Asia/Shanghai",
+    "ga4Window": "Last 7 days checked July 31, 2026 at 09:31 Asia/Shanghai",
     "topGscRows": [
       {
         "query": "verity mod",
@@ -60,15 +60,20 @@
       }
     ],
     "ga4Signals": {
-      "apiConnectionFailedPageViews": 158,
-      "organicSearchSessions": 156,
-      "referralSessions": 90,
-      "gistGithubReferralSessions": 73,
-      "verityOutboundProjectClickEvents": 58
+      "activeUsers": 315,
+      "apiConnectionFailedPageViews": 139,
+      "organicSearchSessions": 143,
+      "referralSessions": 86,
+      "gistGithubReferralSessions": 70,
+      "googleOrganicSessions": 16,
+      "bingOrganicSessions": 9,
+      "yandexReferralSessions": 92,
+      "verityOutboundProjectClickEvents": 60,
+      "keyEvents": 61
     },
     "notes": [
-      "The head term verity mod is now visible in GSC with 2 clicks and 3 impressions in the delayed July 15 through July 28 window.",
-      "API troubleshooting demand remains visible in query rows and the API page is the highest-viewed page in the latest GA4 page-title sample.",
+      "The head term verity mod remains visible in GSC with 2 clicks and 3 impressions in the delayed July 15 through July 28 window.",
+      "API troubleshooting demand remains visible in query rows and the API page is still the highest-viewed page in the latest GA4 page-title sample.",
       "Gist referral traffic is visible, so public source packs remain a verified non-spam growth path for this site."
     ]
   },
@@ -81,12 +86,12 @@
     "currentFile": "verity-6.jar",
     "minecraftVersion": "1.20.1",
     "loader": "Forge",
-    "projectDownloadsAtCheck": 367159,
-    "currentVersionDownloadsAtCheck": 22116,
+    "projectDownloadsAtCheck": 378725,
+    "currentVersionDownloadsAtCheck": 31646,
     "stableVersionId": "yAt0wv1Z",
-    "stableVersionDownloadsAtCheck": 276733,
+    "stableVersionDownloadsAtCheck": 278452,
     "projectUpdatedAt": "2026-07-29T18:50:58.960032Z",
-    "followersAtCheck": 121,
+    "followersAtCheck": 131,
     "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2",
     "sha512": "25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e"
   },

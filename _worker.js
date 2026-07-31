@@ -95,6 +95,7 @@ const dataFiles = new Set([
   "/data/verity-api-troubleshooting.json",
   "/data/verity-api-troubleshooting.schema.json",
   "/data/verity-api-troubleshooting-source-pack.md",
+  "/data/verity-je-status-429-source-pack.md",
   "/data/verity-legacy-files.json",
   "/data/verity-legacy-files.schema.json",
   "/data/verity-mod-voice-not-working-fix.md",

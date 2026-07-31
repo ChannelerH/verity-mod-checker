@@ -10,6 +10,7 @@ Allow: /
 Sitemap: https://veritymodchecker.online/sitemap.xml
 Data: https://veritymodchecker.online/data/verity-releases.json
 API-Troubleshooting-Data: https://veritymodchecker.online/data/verity-api-troubleshooting.json
+Status-429-Source-Pack: https://veritymodchecker.online/data/verity-je-status-429-source-pack.md
 App-Claims-Data: https://veritymodchecker.online/data/verity-app-claims.json
 Modpack-Data: https://veritymodchecker.online/data/verity-modpacks.json
 Falsity-Data: https://veritymodchecker.online/data/falsity-releases.json
