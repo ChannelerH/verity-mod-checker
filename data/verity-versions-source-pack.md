@@ -1,6 +1,6 @@
 # Verity Mod Version Matrix Source Pack
 
-Checked: 2026-07-31 09:15 Asia/Shanghai
+Checked: 2026-07-31 09:50 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/versions/
 
@@ -75,20 +75,21 @@ The project description says Verity JE is an official adaptation created and pub
 
 Project URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be
 
-File URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534
+File URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453
 
 At the July 31 check:
 
 - Owner: `Undertaletalelover`
 - Project ID: `1574632`
-- Project downloads: `4154630`
+- Project downloads: `4163458`
 - Current file: `Verity (Stable) (2.0.0)-(26.3).mcaddon`
-- File record: `8543534`
-- File downloads: `8.9K` displayed
+- File record: `8544453`
+- File downloads: `0` displayed at the check
 - File size: `23.7 MB`
 - Supported build: `26.30`
-- What's new: new responses and local AI support.
+- What's new: hot fix.
 - Setup notes: enable Beta APIs, run the route-specific connect command, use cheats, and type `Verity` before the chat message.
+- Same-day old-link route: record `8543534`, the earlier visible Stable 2.0.0 file, remains useful for old tutorials and cached snippets but is not the current hot fix recommendation.
 - Previous visible route: record `8506198`, `Verity (Stable) (1.1.0)-(26.3).mcaddon`, remains useful for old-video and old-file diagnosis but is no longer the current file recommendation.
 
 ### PnTMC Verity - Bedrock Edition

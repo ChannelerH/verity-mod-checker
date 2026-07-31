@@ -5,8 +5,30 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-31T09:31:00+08:00</updated>
+  <updated>2026-07-31T09:50:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE July 31 hot fix file record mapped</title>
+    <id>https://veritymodchecker.online/updates/verity-be-hot-fix-file-record-2026-07-31-0950</id>
+    <link href="https://veritymodchecker.online/verity-be/" rel="alternate" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/versions/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-mod-downloads/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-be-2-0-0-source-pack.md" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://gist.github.com/ChannelerH/92901d32f1848ca2d737a237433dd23b" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453" rel="related" />
+    <published>2026-07-31T09:50:00+08:00</published>
+    <updated>2026-07-31T09:50:00+08:00</updated>
+    <summary>Official CurseForge checks now show Verity BE Project ID 1574632 at 4,163,458 project downloads, Last Update July 31, 2026, and current file record 8544453, Verity (Stable) (2.0.0)-(26.3).mcaddon, 23.7 MB, Bedrock 26.30, release type R, uploaded July 31, 2026, with a hot fix changelog and 0 displayed file downloads at check. Record 8543534 is kept only as same-day old-link context for cached snippets, Discord answers, and older tutorials. Refreshed release JSON, safety JSON, source-map JSON/CSV, the Verity BE source pack, /verity-be/, /bedrock/, /download/, /versions/, /verity-mod-downloads/, script route matching, README, LLM summaries, and public Gist assets. GSC delayed July 15 through July 28 still shows 54 clicks, 1,640 impressions, 3.3% CTR, average position 8.7, and exact verity mod at 2 clicks / 3 impressions. GA4 last-7-days shows 315 active users, 143 Organic Search sessions, 86 Referral sessions, 70 gist.github.com referral sessions, 60 verity_outbound_project_click events, and 61 key events. No homepage TDK change, fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory outreach is claimed.</summary>
+    <category term="verity-be" />
+    <category term="bedrock" />
+    <category term="hot-fix" />
+    <category term="official-file-route" />
+  </entry>
   <entry>
     <title>Verity Mod status 429 source pack refreshed from GSC and GA4 signals</title>
     <id>https://veritymodchecker.online/updates/verity-mod-status-429-source-pack-2026-07-31-0931</id>

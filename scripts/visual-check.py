@@ -173,7 +173,7 @@ with sync_playwright() as playwright:
         assert "Verity Mod Wiki" in wiki_text
         assert "Java JE 6 CXsEzVwJ" in wiki_text
         assert "CurseForge #8461257" in wiki_text
-        assert "Bedrock BE #8543534" in wiki_text
+        assert "Bedrock BE #8544453" in wiki_text
         assert "PnTMC #8517480" in wiki_text
         assert "Monster form" in wiki_text
         assert page.locator('a[href="/download/"]').count() >= 1
@@ -265,7 +265,7 @@ with sync_playwright() as playwright:
         bedrock_install_text = page.locator("main").inner_text()
         assert "How to Install Verity Mod on Bedrock and MCPE" in bedrock_install_text
         assert "Project ID 1574632" in bedrock_install_text
-        assert "record 8543534" in bedrock_install_text
+        assert "record 8544453" in bedrock_install_text
         assert "Project ID 1575941" in bedrock_install_text
         assert "record 8517480" in bedrock_install_text
         assert "Project ID 1596246" in bedrock_install_text
@@ -309,7 +309,7 @@ with sync_playwright() as playwright:
         assert "1.21.80" in bedrock_121_text
         assert "V26.30" in bedrock_121_text
         assert "8517480" in bedrock_121_text
-        assert "8543534" in bedrock_121_text
+        assert "8544453" in bedrock_121_text
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/best-verity-mod-bedrock/", wait_until="domcontentloaded")
@@ -318,7 +318,7 @@ with sync_playwright() as playwright:
         assert "Verity BE" in best_bedrock_text
         assert "PnTMC" in best_bedrock_text
         assert "MCPEDL" in best_bedrock_text
-        assert "8543534" in best_bedrock_text
+        assert "8544453" in best_bedrock_text
         assert "8517480" in best_bedrock_text
         assert "Beta APIs" in best_bedrock_text
         assert page.locator('a[href="/verity-be/"]').count() >= 1
@@ -340,8 +340,8 @@ with sync_playwright() as playwright:
         mcpedl_text = page.locator("main").inner_text()
         assert "Verity Mod MCPEDL Route" in mcpedl_text
         assert "citation helper" in mcpedl_text.lower()
-        assert "7,532,156" in mcpedl_text
-        assert "333.7K" in mcpedl_text
+        assert "7,601,349" in mcpedl_text
+        assert "370.7K" in mcpedl_text
         assert "8517480" in mcpedl_text
         assert "8327253" in mcpedl_text
         assert "PnTMC YouTube" in mcpedl_text
@@ -352,7 +352,7 @@ with sync_playwright() as playwright:
         pntmc_320_text = page.locator("main").inner_text()
         pntmc_320_dom_text = page.locator("main").text_content()
         assert "ThatMob's Verity 3.2.0 by PnTMC" in pntmc_320_text
-        assert "333.7K" in pntmc_320_text
+        assert "370.7K" in pntmc_320_text
         assert "does not reply or never transforms" in pntmc_320_text
         assert "no-reply" in pntmc_320_dom_text
         assert "no-monster-form" in pntmc_320_dom_text
@@ -362,19 +362,20 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,154,630" in verity_be_text
-        assert "8.9K" in verity_be_text
+        assert "4,163,458" in verity_be_text
+        assert "0 displayed" in verity_be_text
+        assert "hot fix" in verity_be_text
         assert "Verity BE 2.0.0 source pack" in verity_be_text
-        assert "8543534" in verity_be_text
+        assert "8544453" in verity_be_text
         assert page.locator('a[href="/data/verity-be-2-0-0-source-pack.md"]').count() >= 1
-        assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534"]').count() >= 1
+        assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-mod-virus-check/", wait_until="domcontentloaded")
         safety_text = page.locator("main").inner_text()
         assert "Is Verity Mod a Virus?" in safety_text
         assert "No malware verdict" in safety_text
         assert "verity-6.jar" in safety_text
-        assert "8543534" in safety_text
+        assert "8544453" in safety_text
         assert "8517480" in safety_text
         assert "Vercel" in safety_text
         assert "APK" in safety_text
@@ -767,7 +768,7 @@ with sync_playwright() as playwright:
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity BE" in result_text
-        assert "8543534" in result_text
+        assert "8544453" in result_text
 
         page.locator("#sourceInput").fill(
             "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480"
