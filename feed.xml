@@ -5,11 +5,11 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-31T08:44:42+08:00</updated>
+  <updated>2026-07-31T09:15:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
   <entry>
     <title>Verity BE 2.0.0 source pack and Bedrock counters refreshed</title>
-    <id>https://veritymodchecker.online/updates/verity-be-2-0-0-source-pack-2026-07-31-0844</id>
+    <id>https://veritymodchecker.online/updates/verity-be-2-0-0-source-pack-2026-07-31-0915</id>
     <link href="https://veritymodchecker.online/verity-be/" rel="alternate" />
     <link href="https://veritymodchecker.online/data/verity-be-2-0-0-source-pack.md" rel="related" />
     <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
@@ -20,9 +20,9 @@
     <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="related" />
     <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534" rel="related" />
     <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/all" rel="related" />
-    <published>2026-07-31T08:44:42+08:00</published>
-    <updated>2026-07-31T08:44:42+08:00</updated>
-    <summary>Official CurseForge source checks now show Verity BE Project ID 1574632 at 4,145,277 project downloads, current file record 8543534, Verity (Stable) (2.0.0)-(26.3).mcaddon, 23.7 MB, Bedrock 26.30, and 4.5K displayed file downloads. The PnTMC route remains a separate Bedrock project, Project ID 1575941, now showing 7,609,359 project downloads, 19 visible files/all rows, and current V26.30 file 8517480 at 375.1K displayed downloads. Published a citation-ready Verity BE 2.0.0 source pack plus a public Gist copy at https://gist.github.com/ChannelerH/92901d32f1848ca2d737a237433dd23b, refreshed release JSON, safety JSON, source-map JSON/CSV, visible Bedrock counters, README, LLM summaries, and the update feed without changing homepage TDK or claiming fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach.</summary>
+    <published>2026-07-31T09:15:00+08:00</published>
+    <updated>2026-07-31T09:15:00+08:00</updated>
+    <summary>Official CurseForge source checks now show Verity BE Project ID 1574632 at 4,154,630 project downloads, current file record 8543534, Verity (Stable) (2.0.0)-(26.3).mcaddon, 23.7 MB, Bedrock 26.30, and 8.9K displayed file downloads. The PnTMC route remains a separate Bedrock project, Project ID 1575941, now showing 7,601,349 project downloads, 19 visible files/all rows, and current V26.30 file 8517480 at 370.7K displayed downloads. The same API check shows Modrinth Verity JE Project ID on1Y0osD at 378,260 project downloads, 130 followers, and current version CXsEzVwJ at 31,352 downloads. Published a citation-ready Verity BE 2.0.0 source pack plus a public Gist copy at https://gist.github.com/ChannelerH/92901d32f1848ca2d737a237433dd23b, refreshed release JSON, safety JSON, source-map JSON/CSV, visible Bedrock counters, README, LLM summaries, and the update feed without changing homepage TDK or claiming fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach.</summary>
     <category term="verity-be" />
     <category term="bedrock" />
     <category term="source-pack" />

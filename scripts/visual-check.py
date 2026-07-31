@@ -155,9 +155,9 @@ with sync_playwright() as playwright:
         assert "latest version depends on edition and source" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
-        assert "375,170" in versions_text
-        assert "29,457" in versions_text
-        assert "277,196" in versions_text
+        assert "378,260" in versions_text
+        assert "31,352" in versions_text
+        assert "278,299" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 2.0.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
@@ -362,8 +362,8 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,145,277" in verity_be_text
-        assert "4.5K" in verity_be_text
+        assert "4,154,630" in verity_be_text
+        assert "8.9K" in verity_be_text
         assert "Verity BE 2.0.0 source pack" in verity_be_text
         assert "8543534" in verity_be_text
         assert page.locator('a[href="/data/verity-be-2-0-0-source-pack.md"]').count() >= 1

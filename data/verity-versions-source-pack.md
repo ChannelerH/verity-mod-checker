@@ -1,6 +1,6 @@
 # Verity Mod Version Matrix Source Pack
 
-Checked: 2026-07-31 08:44 Asia/Shanghai
+Checked: 2026-07-31 09:15 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/versions/
 
@@ -34,8 +34,8 @@ API URL: https://api.modrinth.com/v2/project/on1Y0osD
 At the July 31 check, the Modrinth project showed:
 
 - Project ID: `on1Y0osD`
-- Project downloads: `375170`
-- Followers: `128`
+- Project downloads: `378260`
+- Followers: `130`
 - Updated: `2026-07-29T18:50:58.960032Z`
 - Visible version IDs: `5QXbQ4rF`, `7qhItxce`, `yAt0wv1Z`, `CXsEzVwJ`
 
@@ -45,8 +45,8 @@ Visible versions at this check:
 
 | Version | Version ID | File | Downloads | Loader | Game version | Type |
 | --- | --- | --- | ---: | --- | --- | --- |
-| 6 | `CXsEzVwJ` | `verity-6.jar` | 29457 | Forge | 1.20.1 | beta |
-| 5.7.3 | `yAt0wv1Z` | `verity-5.7.3.jar` | 277196 | Forge | 1.20.1 | release |
+| 6 | `CXsEzVwJ` | `verity-6.jar` | 31352 | Forge | 1.20.1 | beta |
+| 5.7.3 | `yAt0wv1Z` | `verity-5.7.3.jar` | 278299 | Forge | 1.20.1 | release |
 | 5.7.2 | `7qhItxce` | `verity-5.7.2.jar` | 38985 | Forge | 1.20.1 | release |
 | 5.6.2 | `5QXbQ4rF` | `verity-5.6.2.jar` | 13731 | Forge | 1.20.1 | release |
 
@@ -81,10 +81,10 @@ At the July 31 check:
 
 - Owner: `Undertaletalelover`
 - Project ID: `1574632`
-- Project downloads: `4145277`
+- Project downloads: `4154630`
 - Current file: `Verity (Stable) (2.0.0)-(26.3).mcaddon`
 - File record: `8543534`
-- File downloads: `4.5K` displayed
+- File downloads: `8.9K` displayed
 - File size: `23.7 MB`
 - Supported build: `26.30`
 - What's new: new responses and local AI support.
@@ -103,7 +103,7 @@ At the July 31 check:
 
 - Owner: `PnTMC`
 - Project ID: `1575941`
-- CurseForge project downloads: `7609359`
+- CurseForge project downloads: `7601349`
 - MCPEDL displayed listing downloads: `7.6M`
 - CurseForge files/all showed `1-19 of 19 results`
 - MCPEDL listed the three 3.2.0 downloads above older 3.1.0 and 3.0.0 rows
@@ -112,9 +112,9 @@ Current 3.2.0 rows:
 
 | Bedrock row | File record | Displayed downloads | File size | Uploaded |
 | --- | ---: | ---: | ---: | --- |
-| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon` | 8517480 | 375.1K | 39.6 MB | 2026-07-27 |
-| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon` | 8517478 | 32.8K | 39.6 MB | 2026-07-27 |
-| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon` | 8517473 | 23.2K | 39.6 MB | 2026-07-27 |
+| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon` | 8517480 | 370.7K | 39.6 MB | 2026-07-27 |
+| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.20.mcaddon` | 8517478 | 26.7K | 39.6 MB | 2026-07-27 |
+| `ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.10.mcaddon` | 8517473 | 19.4K | 39.6 MB | 2026-07-27 |
 
 Older rows still visible and relevant to old videos:
 
