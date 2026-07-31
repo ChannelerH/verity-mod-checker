@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-07-31T05:04:18+08:00",
+  "checkedAt": "2026-07-31T07:43:25+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
   "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
@@ -204,20 +204,49 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 4129163,
+      "projectDownloadsAtCheck": 4137146,
       "projectDownloadsApproximate": false,
       "releases": [
         {
           "status": "current",
-          "filename": "Verity (Stable) (1.1.0)-(26.3).mcaddon",
+          "filename": "Verity (Stable) (2.0.0)-(26.3).mcaddon",
           "aliases": [
-            "Verity (Stable) (1.1.0)-(26.3#).mcaddon",
+            "Verity (Stable) (2.0.0)-(26.3#).mcaddon",
             "verity be",
             "verity be official",
             "verity be download",
+            "verity be 2.0.0",
+            "verity be 8543534",
+            "verity stable 2.0.0",
+            "verity stable 8543534",
+            "verity v2",
             "verity be 1.1.0",
             "verity be 8506198",
             "vertiy be"
+          ],
+          "recordId": 8543534,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534",
+          "minecraftVersion": "26.30",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 23.7,
+          "recordDownloadsAtCheck": 617,
+          "recordDownloadsApproximate": false,
+          "publishedDate": "2026-07-30",
+          "changelogSummary": [
+            "adds new responses",
+            "adds local AI support"
+          ]
+        },
+        {
+          "status": "previous-visible",
+          "filename": "Verity (Stable) (1.1.0)-(26.3).mcaddon",
+          "aliases": [
+            "Verity (Stable) (1.1.0)-(26.3#).mcaddon",
+            "verity be 1.1.0",
+            "verity be 8506198",
+            "old verity be",
+            "previous verity be"
           ],
           "recordId": 8506198,
           "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198",
@@ -227,7 +256,8 @@
           "displayedSizeMb": 21.3,
           "recordDownloadsAtCheck": 261100,
           "recordDownloadsApproximate": true,
-          "publishedDate": "2026-07-25"
+          "publishedDate": "2026-07-25",
+          "note": "Kept for old-video and old-file diagnosis. The current July 31, 2026 source check moved the main Verity BE route to record 8543534 / Stable 2.0.0."
         }
       ]
     },

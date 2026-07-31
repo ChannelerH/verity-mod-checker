@@ -251,7 +251,7 @@ const records = [
     fileSizeMb: verityBeCurrent.displayedSizeMb,
     fileDownloadsAtCheck: verityBeCurrent.recordDownloadsAtCheck,
     status: "current-bedrock-addon",
-    recommendedUse: "Use when the selected page names Verity BE, Undertaletalelover, or record 8506198.",
+    recommendedUse: `Use when the selected page names Verity BE, Undertaletalelover, or record ${verityBeCurrent.recordId}.`,
     caution: "This is a Bedrock MCADDON route, not a Java JAR.",
     localGuideUrl: `${site}/verity-be/`
   },

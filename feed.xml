@@ -5,8 +5,27 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-07-31T05:04:18+08:00</updated>
+  <updated>2026-07-31T07:43:25+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>Verity BE 2.0.0 official Bedrock file route refreshed</title>
+    <id>https://veritymodchecker.online/updates/verity-be-2-0-0-current-route-2026-07-31-0743</id>
+    <link href="https://veritymodchecker.online/verity-be/" rel="alternate" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/versions/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-versions-source-pack.md" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534" rel="related" />
+    <published>2026-07-31T07:43:25+08:00</published>
+    <updated>2026-07-31T07:43:25+08:00</updated>
+    <summary>Official CurseForge source checks now show Verity BE Project ID 1574632 at 4,137,146 project downloads with the current main file moved to Verity (Stable) (2.0.0)-(26.3).mcaddon, file record 8543534, Bedrock 26.30, 23.7 MB, 617 file downloads, uploaded July 30, 2026. The previous record 8506198 / Verity (Stable) (1.1.0)-(26.3).mcaddon is kept as old-video and old-file diagnosis context, but it is no longer the current Bedrock recommendation. Refreshed release JSON, source-map JSON/CSV, the Verity BE page, Download page, Bedrock install route, versions matrix, troubleshooting entrances, README, LLM summaries, and the public source pack without changing homepage TDK or claiming fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory PR outreach.</summary>
+    <category term="verity-be" />
+    <category term="bedrock" />
+    <category term="source-data-refresh" />
+    <category term="official-file-route" />
+  </entry>
   <entry>
     <title>Verity Mod versions refreshed with official file-list freshness proof</title>
     <id>https://veritymodchecker.online/updates/verity-mod-versions-file-list-refresh-2026-07-31-0504</id>

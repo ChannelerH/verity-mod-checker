@@ -618,6 +618,10 @@ export default {
       url.pathname.startsWith("/verity-be-official/") ||
       url.pathname === "/official-verity-be" ||
       url.pathname.startsWith("/official-verity-be/") ||
+      url.pathname === "/verity-be-8543534" ||
+      url.pathname.startsWith("/verity-be-8543534/") ||
+      url.pathname === "/verity-be-2-0-0" ||
+      url.pathname.startsWith("/verity-be-2-0-0/") ||
       url.pathname === "/verity-be-8506198" ||
       url.pathname.startsWith("/verity-be-8506198/") ||
       url.pathname === "/verity-be-1-1-0" ||

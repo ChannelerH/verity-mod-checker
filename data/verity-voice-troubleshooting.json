@@ -52,12 +52,12 @@
     },
     {
       "route": "Verity BE official Bedrock addon",
-      "sourceUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198",
+      "sourceUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534",
       "owner": "Undertaletalelover",
       "projectId": 1574632,
-      "currentFile": "Verity (Stable) (1.1.0)-(26.3).mcaddon",
-      "currentFileRecord": 8506198,
-      "voiceEvidence": "Local TTS is controlled by /verity:tts on and /verity:tts off; this is not the same as live Java microphone input."
+      "currentFile": "Verity (Stable) (2.0.0)-(26.3).mcaddon",
+      "currentFileRecord": 8543534,
+      "voiceEvidence": "Current Verity BE is a Bedrock MCADDON route. Verify the current file before diagnosing local TTS, resource-pack audio, or any voice behavior; this is not the same as live Java microphone input."
     },
     {
       "route": "Smiley's Better Voice Verity JE voice add-on",

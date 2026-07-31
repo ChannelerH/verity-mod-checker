@@ -159,7 +159,7 @@ with sync_playwright() as playwright:
         assert "29,457" in versions_text
         assert "277,196" in versions_text
         assert "stale beta" in versions_text.lower()
-        assert "Verity BE 1.1.0" in versions_text
+        assert "Verity BE 2.0.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
         assert "Verity Pocket Edition (Be)" in versions_text
         assert "Java requirements" in versions_text
@@ -173,7 +173,7 @@ with sync_playwright() as playwright:
         assert "Verity Mod Wiki" in wiki_text
         assert "Java JE 6 CXsEzVwJ" in wiki_text
         assert "CurseForge #8461257" in wiki_text
-        assert "Bedrock BE #8506198" in wiki_text
+        assert "Bedrock BE #8543534" in wiki_text
         assert "PnTMC #8517480" in wiki_text
         assert "Monster form" in wiki_text
         assert page.locator('a[href="/download/"]').count() >= 1
@@ -265,7 +265,7 @@ with sync_playwright() as playwright:
         bedrock_install_text = page.locator("main").inner_text()
         assert "How to Install Verity Mod on Bedrock and MCPE" in bedrock_install_text
         assert "Project ID 1574632" in bedrock_install_text
-        assert "record 8506198" in bedrock_install_text
+        assert "record 8543534" in bedrock_install_text
         assert "Project ID 1575941" in bedrock_install_text
         assert "record 8517480" in bedrock_install_text
         assert "Project ID 1596246" in bedrock_install_text
@@ -309,7 +309,7 @@ with sync_playwright() as playwright:
         assert "1.21.80" in bedrock_121_text
         assert "V26.30" in bedrock_121_text
         assert "8517480" in bedrock_121_text
-        assert "8506198" in bedrock_121_text
+        assert "8543534" in bedrock_121_text
         assert page.locator('a[href="/pntmc-verity-3-2-0/"]').count() >= 1
 
         page.goto(f"{BASE_URL}/best-verity-mod-bedrock/", wait_until="domcontentloaded")
@@ -318,7 +318,7 @@ with sync_playwright() as playwright:
         assert "Verity BE" in best_bedrock_text
         assert "PnTMC" in best_bedrock_text
         assert "MCPEDL" in best_bedrock_text
-        assert "8506198" in best_bedrock_text
+        assert "8543534" in best_bedrock_text
         assert "8517480" in best_bedrock_text
         assert "Beta APIs" in best_bedrock_text
         assert page.locator('a[href="/verity-be/"]').count() >= 1
@@ -362,17 +362,17 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,109,692" in verity_be_text
-        assert "248.5K" in verity_be_text
-        assert "8506198" in verity_be_text
-        assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8506198"]').count() >= 1
+        assert "4,137,146" in verity_be_text
+        assert "617" in verity_be_text
+        assert "8543534" in verity_be_text
+        assert page.locator('a[href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8543534"]').count() >= 1
 
         page.goto(f"{BASE_URL}/verity-mod-virus-check/", wait_until="domcontentloaded")
         safety_text = page.locator("main").inner_text()
         assert "Is Verity Mod a Virus?" in safety_text
         assert "No malware verdict" in safety_text
         assert "verity-6.jar" in safety_text
-        assert "8506198" in safety_text
+        assert "8543534" in safety_text
         assert "8517480" in safety_text
         assert "Vercel" in safety_text
         assert "APK" in safety_text
@@ -765,7 +765,7 @@ with sync_playwright() as playwright:
         page.locator("#sourceCheckForm").evaluate("form => form.requestSubmit()")
         result_text = page.locator("#sourceResult").inner_text()
         assert "Verity BE" in result_text
-        assert "8506198" in result_text
+        assert "8543534" in result_text
 
         page.locator("#sourceInput").fill(
             "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480"
