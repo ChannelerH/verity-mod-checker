@@ -1,6 +1,6 @@
 # Verity Mod setup and fix checker source pack
 
-Checked: July 31, 2026 at 06:21 Asia/Shanghai
+Checked: August 1, 2026 at 09:31 Asia/Shanghai
 
 Canonical checker: https://veritymodchecker.online/#route-checker
 
@@ -32,8 +32,8 @@ Official Modrinth API check for Verity JE:
 - Project URL: https://api.modrinth.com/v2/project/on1Y0osD
 - Project ID: on1Y0osD
 - Title: Verity JE
-- Downloads at check: 375,928
-- Followers at check: 128
+- Downloads at check: 410,205
+- Followers at check: 146
 - Last updated: 2026-07-29T18:50:58.960032Z
 
 Current Modrinth version route:
@@ -43,7 +43,7 @@ Current Modrinth version route:
 - Version number: 6
 - File: verity-6.jar
 - Loader and game version: Forge, Minecraft 1.20.1
-- Version downloads at check: 29,921
+- Version downloads at check: 50,555
 - SHA-1: 609c799d7350a657cf2193839224bd6c2f9971b2
 - SHA-512: 25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e
 
@@ -53,7 +53,7 @@ Stable 5.7.3 Modrinth route:
 - Version ID: yAt0wv1Z
 - File: verity-5.7.3.jar
 - Loader and game version: Forge, Minecraft 1.20.1
-- Version downloads at check: 277,585
+- Version downloads at check: 290,077
 - SHA-1: da28115bbad0478d9ed9c97f2466b67d46d13d51
 - SHA-512: 15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81
 
@@ -96,4 +96,4 @@ Do not ask for:
 - Token-bearing URLs
 - Payment or reciprocal links
 
-Latest retained analytics context from prior same-day source packs: Google Search Console delayed July 15 through July 28 showed 54 clicks, 1,644 impressions, 3.3 percent CTR, average position 8.7, and exact `verity mod` at 2 clicks / 3 impressions. GA4 last 7 days showed Organic Search and Gist referral traffic active. The July 31 06:21 command-line Google token lacked Search Console and GA4 Data API scopes, so this pack does not claim a fresh API metrics read.
+Latest retained analytics context from prior source packs: Google Search Console delayed July 15 through July 28 showed 54 clicks, 1,644 impressions, 3.3 percent CTR, average position 8.7, and exact `verity mod` at 2 clicks / 3 impressions. GA4 last 7 days showed Organic Search and Gist referral traffic active. The August 1 browser/account check and command-line Google token check did not provide fresh Search Console or GA4 Data API access, so this pack does not claim a fresh analytics metrics read.

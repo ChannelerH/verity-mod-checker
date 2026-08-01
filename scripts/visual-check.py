@@ -155,9 +155,9 @@ with sync_playwright() as playwright:
         assert "latest version depends on edition and source" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
-        assert "378,260" in versions_text
-        assert "31,352" in versions_text
-        assert "278,299" in versions_text
+        assert "410,205" in versions_text
+        assert "50,555" in versions_text
+        assert "290,077" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 2.0.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
@@ -340,8 +340,8 @@ with sync_playwright() as playwright:
         mcpedl_text = page.locator("main").inner_text()
         assert "Verity Mod MCPEDL Route" in mcpedl_text
         assert "citation helper" in mcpedl_text.lower()
-        assert "7,601,349" in mcpedl_text
-        assert "370.7K" in mcpedl_text
+        assert "7,787,633" in mcpedl_text
+        assert "470.7K" in mcpedl_text
         assert "8517480" in mcpedl_text
         assert "8327253" in mcpedl_text
         assert "PnTMC YouTube" in mcpedl_text
@@ -352,7 +352,7 @@ with sync_playwright() as playwright:
         pntmc_320_text = page.locator("main").inner_text()
         pntmc_320_dom_text = page.locator("main").text_content()
         assert "ThatMob's Verity 3.2.0 by PnTMC" in pntmc_320_text
-        assert "370.7K" in pntmc_320_text
+        assert "470.7K" in pntmc_320_text
         assert "does not reply or never transforms" in pntmc_320_text
         assert "no-reply" in pntmc_320_dom_text
         assert "no-monster-form" in pntmc_320_dom_text
@@ -362,8 +362,8 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,163,458" in verity_be_text
-        assert "0 displayed" in verity_be_text
+        assert "4,259,383" in verity_be_text
+        assert "17.0K" in verity_be_text
         assert "hot fix" in verity_be_text
         assert "Verity BE 2.0.0 source pack" in verity_be_text
         assert "8544453" in verity_be_text

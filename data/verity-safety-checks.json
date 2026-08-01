@@ -1,7 +1,7 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-safety-checks.schema.json",
   "schemaVersion": 1,
-  "checkedAt": "2026-07-31T09:50:00+08:00",
+  "checkedAt": "2026-08-01T09:31:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/verity-mod-virus-check/",
   "method": "Point-in-time safety-intent routing from public SERP snippets, official project pages, and machine-readable release snapshots. This file is not an antivirus scan, malware verdict, file reputation verdict, or endorsement of any download host.",
   "summary": {
@@ -63,17 +63,17 @@
       "projectId": "on1Y0osD",
       "currentVersionId": "CXsEzVwJ",
       "currentFile": "verity-6.jar",
-      "projectDownloadsAtCheck": 378260,
-      "currentVersionDownloadsAtCheck": 31352,
+      "projectDownloadsAtCheck": 410205,
+      "currentVersionDownloadsAtCheck": 50555,
       "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2",
-      "stableVersionDownloadsAtCheck": 278299
+      "stableVersionDownloadsAtCheck": 290077
     },
     "curseForgeVerityBe": {
       "projectId": 1574632,
       "currentFileId": 8544453,
       "currentFile": "Verity (Stable) (2.0.0)-(26.3).mcaddon",
-      "projectDownloadsAtCheck": 4163458,
-      "fileDownloadsDisplayAtCheck": "0",
+      "projectDownloadsAtCheck": 4259383,
+      "fileDownloadsDisplayAtCheck": "17.0K",
       "replacedSameDayFileId": 8543534,
       "currentFileStatusNote": "CurseForge file 8544453 is the July 31, 2026 hot fix; 8543534 remains useful only for same-day old-link diagnosis."
     },
@@ -81,8 +81,8 @@
       "projectId": 1575941,
       "currentFileId": 8517480,
       "currentFile": "ThatMob's Verity 3.2.0 by PnTMC [Add-on] - V26.30.mcaddon",
-      "projectDownloadsAtCheck": 7601349,
-      "fileDownloadsDisplayAtCheck": "370.7K"
+      "projectDownloadsAtCheck": 7787633,
+      "fileDownloadsDisplayAtCheck": "470.7K"
     },
     "curseForgeVerityJe": {
       "projectId": 1591438,
@@ -90,9 +90,9 @@
       "currentCurseForgeFile": "verity-5.7.3.jar",
       "olderNeoForgeFileId": 8346795,
       "olderNeoForgeFile": "verity-3.4.1.jar",
-      "projectDownloadsAtCheck": 2429399,
+      "projectDownloadsAtCheck": 2500089,
       "olderNeoForgeDownloadsDisplayAtCheck": "282.5K",
-      "currentCurseForgeFileDownloadsDisplayAtCheck": "711.0K"
+      "currentCurseForgeFileDownloadsDisplayAtCheck": "765.0K"
     }
   }
 }
