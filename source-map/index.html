@@ -52,7 +52,7 @@
                                         "contentUrl": "https://veritymodchecker.online/data/verity-source-map.csv"
                                 }
                         ],
-                        "dateModified": "2026-08-01",
+                        "dateModified": "2026-08-02",
                         "isBasedOn": [
                                 "https://veritymodchecker.online/data/verity-releases.json",
                                 "https://veritymodchecker.online/data/verity-modpacks.json",
@@ -97,61 +97,61 @@
                                 {
                                         "@type": "ListItem",
                                         "position": 1,
-                                        "name": "Verity JE 6 Modrinth release",
-                                        "url": "https://veritymodchecker.online/verity-6-jar/"
+                                        "name": "Verity JE 6.1 Modrinth release",
+                                        "url": "https://veritymodchecker.online/verity-6-1-jar/"
                                 },
                                 {
                                         "@type": "ListItem",
                                         "position": 2,
+                                        "name": "Verity JE 6 Modrinth previous visible release",
+                                        "url": "https://veritymodchecker.online/verity-6-jar/"
+                                },
+                                {
+                                        "@type": "ListItem",
+                                        "position": 3,
                                         "name": "Verity JE stable CurseForge file",
                                         "url": "https://veritymodchecker.online/verity-5-7-3-jar/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 3,
+                                        "position": 4,
                                         "name": "Verity JE stable Modrinth version",
                                         "url": "https://veritymodchecker.online/verity-5-7-3-jar/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 4,
+                                        "position": 5,
                                         "name": "Verity JE 6.0.1 beta observed record",
                                         "url": "https://veritymodchecker.online/verity-6-0-1-jar/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 5,
+                                        "position": 6,
                                         "name": "Verity JE 6.0.0 beta observed record",
                                         "url": "https://veritymodchecker.online/verity-6-0-0-jar/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 6,
+                                        "position": 7,
                                         "name": "Verity JE 3.4.1 legacy NeoForge file",
                                         "url": "https://veritymodchecker.online/verity-3-4-1-jar/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 7,
+                                        "position": 8,
                                         "name": "Verity BE official Bedrock file",
                                         "url": "https://veritymodchecker.online/verity-be/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 8,
+                                        "position": 9,
                                         "name": "PnTMC Verity Bedrock file 8517480",
                                         "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
                                 },
                                 {
                                         "@type": "ListItem",
-                                        "position": 9,
-                                        "name": "PnTMC Verity Bedrock file 8517478",
-                                        "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
-                                },
-                                {
-                                        "@type": "ListItem",
                                         "position": 10,
-                                        "name": "PnTMC Verity Bedrock file 8517473",
+                                        "name": "PnTMC Verity Bedrock file 8517478",
                                         "url": "https://veritymodchecker.online/pntmc-verity-3-2-0/"
                                 }
                         ]
@@ -217,7 +217,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Citation asset checked August 1, 2026</p>
+          <p class="eyebrow">Citation asset checked August 2, 2026</p>
           <h1>Verity Mod Source Map</h1>
           <p class="lede">
             This page is built for editors, video creators, server owners, wiki maintainers, and players who
@@ -241,7 +241,7 @@
           </div>
           <h2>Use the source map when you need to cite records, not download files</h2>
           <p>
-            The current checked snapshot lists 34 route records. It includes the stable Verity JE
+            The current checked snapshot lists 35 route records. It includes the stable Verity JE
             CurseForge file, the Modrinth checksum route, observed beta records that now return 404, Verity BE,
             PnTMC Bedrock rows, Pocket Edition, separate modpack routes, Smiley's Better Voice, and current
             similar-name results such as Verity Dweller. The CSV is useful for spreadsheets,
@@ -287,12 +287,21 @@
             </thead>
             <tbody>
               <tr>
-                <td>Verity JE 6 Modrinth release</td>
+                <td>Verity JE 6.1 Modrinth release</td>
+                <td>Java · Modrinth</td>
+                <td>Varmite · on1Y0osD</td>
+                <td>verity-6.1.jar</td>
+                <td>6jRN8Exp</td>
+                <td>current-beta-release</td>
+                <td><a href="https://veritymodchecker.online/verity-6-1-jar/">Guide</a></td>
+              </tr>
+              <tr>
+                <td>Verity JE 6 Modrinth previous visible release</td>
                 <td>Java · Modrinth</td>
                 <td>Varmite · on1Y0osD</td>
                 <td>verity-6.jar</td>
                 <td>CXsEzVwJ</td>
-                <td>current-release</td>
+                <td>previous-visible-beta</td>
                 <td><a href="https://veritymodchecker.online/verity-6-jar/">Guide</a></td>
               </tr>
               <tr>
@@ -638,8 +647,8 @@
             <p>
               The JSON version preserves the same route fields with a schema URL and source snapshot links.
               It is better for scripts, bots, and automated site checks because each record has a stable
-              <code>routeId</code>. The JSON also carries the platform-counter summary: 14,611,517
-              displayed downloads across the four tracked CurseForge project pages, or 15,021,722
+              <code>routeId</code>. The JSON also carries the platform-counter summary: 14,975,247
+              displayed downloads across the four tracked CurseForge project pages, or 15,416,896
               when the official Modrinth Verity JE project counter is added. The tracked voice add-on rows add
               101,848 displayed project downloads for the
               current add-on data. Those are platform counters, not unique players.

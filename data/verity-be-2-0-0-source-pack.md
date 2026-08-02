@@ -1,6 +1,6 @@
 # Verity BE 2.0.0 official Bedrock source pack
 
-Checked: August 1, 2026 at 09:31 Asia/Shanghai
+Checked: August 2, 2026 at 10:53 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/verity-be/
 
@@ -18,13 +18,13 @@ This source pack is for wiki editors, Minecraft community helpers, forum answers
 
 Verity BE is a Bedrock `mcaddon` route, not a Java JAR, APK, EXE, modpack ZIP, or PnTMC file row.
 
-At the August 1, 2026 source check, the official CurseForge project page showed:
+At the August 2, 2026 source check, the official CurseForge project page showed:
 
 - Project name: Verity BE (Official)
 - Owner: Undertaletalelover
 - Project ID: `1574632`
 - Project URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be
-- Project downloads: `4259383`
+- Project downloads: `4350204`
 - Last update: July 31, 2026
 - Game versions shown: 26.30 and 26.20
 - Main file: `Verity (Stable) (2.0.0)-(26.3).mcaddon`
@@ -33,7 +33,7 @@ The exact current file page showed:
 
 - File record: `8544453`
 - File URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453
-- File downloads: `17.0K` displayed at the check
+- File downloads: `109.6K` displayed at the check
 - File size: `23.7 MB`
 - Package type: `mcaddon`
 - Supported game version: `26.30`

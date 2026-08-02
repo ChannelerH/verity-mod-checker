@@ -329,6 +329,34 @@ const knownProjects = [
     releases: [
       {
         status: "current",
+        filename: "verity-6.1.jar",
+        aliases: [
+          "verity 6.1",
+          "verity 6.1 jar",
+          "verity je 6.1",
+          "verity je version 6.1",
+          "verity mod 6.1",
+          "verity mod version 6.1",
+          "modrinth verity 6.1"
+        ],
+        versionNumber: "6.1",
+        sizeMb: 243.09,
+        version: "Minecraft 1.20.1 · Forge",
+        published: "August 1, 2026",
+        records: [
+          {
+            platform: "Modrinth",
+            id: "6jRN8Exp",
+            link: "https://modrinth.com/mod/verity-je-official/version/6jRN8Exp",
+            hashes: {
+              sha1: "72f974905772b020c51e9605d35777be1a542e62",
+              sha512: "4e721c8709c30230ee9b9a59eca2f70410c841244baa6ec473170cb0528562e369d277f78c20a155dcd863dabaa93897290e2cf0402804107bca93a98aa1b189"
+            }
+          }
+        ]
+      },
+      {
+        status: "previous-visible",
         filename: "verity-6.jar",
         aliases: [
           "verity 6",
@@ -343,6 +371,7 @@ const knownProjects = [
         sizeMb: 243.09,
         version: "Minecraft 1.20.1 · Forge",
         published: "July 29, 2026",
+        availability: "Still visible in the Modrinth versions list on August 2, 2026, but Verity JE 6.1 is the newer current Modrinth route.",
         records: [
           {
             platform: "Modrinth",
@@ -1852,7 +1881,7 @@ function legacyVerity100Result({ source, packageName, hash = "", hashLabel = "SH
     risk: "Needs source proof",
     title: "verity-1.0.0.jar is an old or ambiguous Verity Mod file name",
     summary:
-      "The input matches an old Verity Mod 1.0.0 / Forge 1.20.1 / Drive-link search pattern. Treat it as unverified until the file maps to a maintainer-controlled record; the current checked Java routes are Modrinth Verity JE 6 with verity-6.jar and the CurseForge 5.7.3 comparison route.",
+      "The input matches an old Verity Mod 1.0.0 / Forge 1.20.1 / Drive-link search pattern. Treat it as unverified until the file maps to a maintainer-controlled record; the current checked Java routes are Modrinth Verity JE 6.1 with verity-6.1.jar and the CurseForge 5.7.3 comparison route.",
     source,
     package: packageName,
     project: "Legacy Verity 1.0.0 claim · current route is Verity JE 1591438",
@@ -1895,7 +1924,7 @@ function vercelRiskResult({ source, packageName }) {
     publisherCheck: "Missing source proof",
     checks: [
       "Do not use a v2.6 download button as proof of an official route.",
-      "Current checked Java evidence is Modrinth verity-6.jar for Forge 1.20.1, plus the CurseForge 5.7.3 comparison route.",
+      "Current checked Java evidence is Modrinth verity-6.1.jar for Forge 1.20.1, plus the CurseForge 5.7.3 comparison route.",
       "If you already downloaded a file, compare its checksum locally before installing."
     ],
     link: "/verity-mod-vercel-app/",
@@ -2055,11 +2084,11 @@ function inspectTextSource(rawValue) {
           publisherCheck: `${hashAlgorithm} matched an unlisted record`,
           checks: [
             releaseMatch.release.availability || "The matched record is no longer listed in the current source map.",
-            "Do not treat a historical beta checksum as the current Verity JE 6 route.",
-            "Open the current verity-6.jar page, then compare against 5.7.3 if your source still uses CurseForge."
+            "Do not treat a historical beta checksum as the current Verity JE 6.1 route.",
+            "Open the current verity-6.1.jar page, then compare against 5.7.3 if your source still uses CurseForge."
           ],
-          link: "/verity-6-jar/",
-          linkLabel: "Open current Verity JE 6 route",
+          link: "/verity-6-1-jar/",
+          linkLabel: "Open current Verity JE 6.1 route",
           external: false
         };
       }
@@ -2258,11 +2287,11 @@ function inspectTextSource(rawValue) {
           publisherCheck: hasPublisherHash ? "Historical SHA-512 recorded" : "No active publisher checksum",
           checks: [
             matchedRelease.availability || "This release is not in the current source map.",
-            "Do not use a copied 6.0 beta link as the current verity-6.jar route.",
-            "Open the current Verity JE 6 file check, then compare against 5.7.3 when your source still names CurseForge."
+            "Do not use a copied 6.0 beta link as the current verity-6.1.jar route.",
+            "Open the current Verity JE 6.1 file check, then compare against 5.7.3 when your source still names CurseForge."
           ],
-          link: "/verity-6-jar/",
-          linkLabel: "Open current Verity JE 6 route",
+          link: "/verity-6-1-jar/",
+          linkLabel: "Open current Verity JE 6.1 route",
           external: false
         };
       }

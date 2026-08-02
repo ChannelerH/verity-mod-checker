@@ -37,7 +37,8 @@ const java = projectByName("Verity JE");
 const javaStable = releaseByStatus(java, "current");
 const javaLegacy = releaseByRecord(java, 8346795);
 const modrinth = alternateByHost(java, "Modrinth");
-const modrinthCurrent = modrinth.releases.find((entry) => entry.recordId === "CXsEzVwJ");
+const modrinthCurrent = modrinth.releases.find((entry) => entry.recordId === modrinth.latestApiVisibleRelease);
+const modrinthV6 = modrinth.releases.find((entry) => entry.recordId === "CXsEzVwJ");
 const modrinthStable = modrinth.releases.find((entry) => entry.recordId === "yAt0wv1Z");
 const modrinthBeta601 = modrinth.releases.find((entry) => entry.recordId === "YLEoXe6t");
 const modrinthBeta600 = modrinth.releases.find((entry) => entry.recordId === "5ech0sTo");
@@ -95,8 +96,8 @@ function voiceAddonGuideUrl(item) {
 
 const records = [
   {
-    routeId: "java-modrinth-6-current",
-    routeName: "Verity JE 6 Modrinth release",
+    routeId: "java-modrinth-61-current",
+    routeName: "Verity JE 6.1 Modrinth release",
     edition: "Java",
     host: "Modrinth",
     owner: modrinth.owner,
@@ -112,9 +113,32 @@ const records = [
     publishedDate: modrinthCurrent.publishedDate,
     fileSizeMb: modrinthCurrent.displayedSizeMb,
     fileDownloadsAtCheck: modrinthCurrent.recordDownloadsAtCheck,
-    status: "current-release",
-    recommendedUse: "Use when the player intentionally follows the current Modrinth Verity JE 6 route.",
+    status: "current-beta-release",
+    recommendedUse: "Use when the player intentionally follows the current Modrinth Verity JE 6.1 route.",
     caution: "CurseForge still shows 5.7.3 as its visible main file, so keep the source platform in the citation.",
+    localGuideUrl: `${site}/verity-6-1-jar/`
+  },
+  {
+    routeId: "java-modrinth-6-previous",
+    routeName: "Verity JE 6 Modrinth previous visible release",
+    edition: "Java",
+    host: "Modrinth",
+    owner: modrinth.owner,
+    projectId: modrinth.projectId,
+    projectUrl: modrinth.projectUrl,
+    projectDownloadsAtCheck: modrinth.projectDownloadsAtCheck,
+    packageType: modrinthV6.packageType,
+    fileName: modrinthV6.filename,
+    recordId: modrinthV6.recordId,
+    recordUrl: modrinthV6.recordUrl,
+    minecraftVersion: modrinthV6.minecraftVersion,
+    loader: modrinthV6.loader,
+    publishedDate: modrinthV6.publishedDate,
+    fileSizeMb: modrinthV6.displayedSizeMb,
+    fileDownloadsAtCheck: modrinthV6.recordDownloadsAtCheck,
+    status: "previous-visible-beta",
+    recommendedUse: "Use only when the player or log names the exact Verity JE 6 record, CXsEzVwJ, or verity-6.jar.",
+    caution: "A newer Modrinth 6.1 record is visible; do not call this the latest Modrinth route after the August 2 check.",
     localGuideUrl: `${site}/verity-6-jar/`
   },
   {

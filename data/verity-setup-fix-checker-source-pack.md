@@ -1,6 +1,6 @@
 # Verity Mod setup and fix checker source pack
 
-Checked: August 1, 2026 at 09:31 Asia/Shanghai
+Checked: August 2, 2026 at 10:53 Asia/Shanghai
 
 Canonical checker: https://veritymodchecker.online/#route-checker
 
@@ -32,20 +32,20 @@ Official Modrinth API check for Verity JE:
 - Project URL: https://api.modrinth.com/v2/project/on1Y0osD
 - Project ID: on1Y0osD
 - Title: Verity JE
-- Downloads at check: 410,205
-- Followers at check: 146
-- Last updated: 2026-07-29T18:50:58.960032Z
+- Downloads at check: 441,649
+- Followers at check: 157
+- Last updated: 2026-08-01T16:26:35.375695Z
 
 Current Modrinth version route:
 
-- Version URL: https://api.modrinth.com/v2/version/CXsEzVwJ
-- Version ID: CXsEzVwJ
-- Version number: 6
-- File: verity-6.jar
+- Version URL: https://api.modrinth.com/v2/version/6jRN8Exp
+- Version ID: 6jRN8Exp
+- Version number: 6.1
+- File: verity-6.1.jar
 - Loader and game version: Forge, Minecraft 1.20.1
-- Version downloads at check: 50,555
-- SHA-1: 609c799d7350a657cf2193839224bd6c2f9971b2
-- SHA-512: 25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e
+- Version downloads at check: 5,015
+- SHA-1: 72f974905772b020c51e9605d35777be1a542e62
+- SHA-512: 4e721c8709c30230ee9b9a59eca2f70410c841244baa6ec473170cb0528562e369d277f78c20a155dcd863dabaa93897290e2cf0402804107bca93a98aa1b189
 
 Stable 5.7.3 Modrinth route:
 
@@ -53,7 +53,7 @@ Stable 5.7.3 Modrinth route:
 - Version ID: yAt0wv1Z
 - File: verity-5.7.3.jar
 - Loader and game version: Forge, Minecraft 1.20.1
-- Version downloads at check: 290,077
+- Version downloads at check: 301,968
 - SHA-1: da28115bbad0478d9ed9c97f2466b67d46d13d51
 - SHA-512: 15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81
 
@@ -96,4 +96,4 @@ Do not ask for:
 - Token-bearing URLs
 - Payment or reciprocal links
 
-Latest retained analytics context from prior source packs: Google Search Console delayed July 15 through July 28 showed 54 clicks, 1,644 impressions, 3.3 percent CTR, average position 8.7, and exact `verity mod` at 2 clicks / 3 impressions. GA4 last 7 days showed Organic Search and Gist referral traffic active. The August 1 browser/account check and command-line Google token check did not provide fresh Search Console or GA4 Data API access, so this pack does not claim a fresh analytics metrics read.
+Latest analytics context: Google Search Console delayed July 15 through July 30 showed 60 clicks, 1,830 impressions, 3.3 percent CTR, average position 8.6, and exact `verity mod` at 2 clicks / 3 impressions. GA4 last 7 days showed 290 active users, 134 Organic Search sessions, 83 Referral sessions, 68 `gist.github.com / referral` sessions, and 60 `verity_outbound_project_click` key events. Public DNS for the canonical domain currently returns no A answer while RDAP showed `server hold`, so registrar-side domain recovery is the traffic-critical blocker before canonical index pings or fresh external submissions can work reliably.
