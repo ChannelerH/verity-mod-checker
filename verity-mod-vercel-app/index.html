@@ -69,7 +69,7 @@
                 "name": "Does the site prove Verity Mod v2.6 for Forge, Fabric, and NeoForge 1.21.x?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. The checked official Modrinth Verity JE route exposes verity-6.jar for Minecraft 1.20.1 Forge, while CurseForge still shows verity-5.7.3.jar for Forge 1.20.1. The Vercel page's v2.6, Forge 1.21.x, Fabric 1.21.x, and NeoForge 1.21.x claims were not tied to a checked publisher record."
+                  "text": "No. The checked official Modrinth Verity JE route exposes verity-6.jar for Minecraft 1.20.1 Forge, while CurseForge now shows verity-6.1.jar; previous verity-5.7.3.jar for Forge 1.20.1. The Vercel page's v2.6, Forge 1.21.x, Fabric 1.21.x, and NeoForge 1.21.x claims were not tied to a checked publisher record."
                 }
               },
               {
@@ -236,11 +236,11 @@
           <article class="guide-block">
             <h3>The official records answer a different question</h3>
             <p>
-              The official Modrinth API check on August 2 showed project <code>on1Y0osD</code> at
-              <strong>441,649</strong> project downloads, current version <code>6jRN8Exp</code> /
-              <code>verity-6.1.jar</code> at <strong>5,015</strong> version downloads, previous visible
-              version <code>CXsEzVwJ</code> / <code>verity-6.jar</code> at <strong>64,408</strong>, and stable checksum
-              route <code>yAt0wv1Z</code> / <code>verity-5.7.3.jar</code> at <strong>301,968</strong>
+              The official Modrinth API check on August 4 showed project <code>on1Y0osD</code> at
+              <strong>497,260</strong> project downloads, current version <code>6jRN8Exp</code> /
+              <code>verity-6.1.jar</code> at <strong>37,617</strong> version downloads, previous visible
+              version <code>CXsEzVwJ</code> / <code>verity-6.jar</code> at <strong>67,187</strong>, and stable checksum
+              route <code>yAt0wv1Z</code> / <code>verity-5.7.3.jar</code> at <strong>320,353</strong>
               downloads. Those are source-page counters and exact records. They do not prove every Verity Mod
               file is safe, but they do prove what a traceable route looks like.
             </p>
@@ -291,14 +291,14 @@
               <tr>
                 <td>Java current route</td>
                 <td>Claims v2.6 for Minecraft 1.21+.</td>
-                <td>Modrinth project <code>on1Y0osD</code> exposes Verity JE 6.1 as <code>verity-6.1.jar</code>, version <code>6jRN8Exp</code>, for Minecraft 1.20.1 Forge. The API shows 441,649 project downloads and 5,015 version downloads at this check.</td>
+                <td>Modrinth project <code>on1Y0osD</code> exposes Verity JE 6.1 as <code>verity-6.1.jar</code>, version <code>6jRN8Exp</code>, for Minecraft 1.20.1 Forge. The API shows 497,260 project downloads and 37,617 version downloads at this check.</td>
                 <td>Use the Modrinth record when your source says Verity JE 6.1; do not convert that into a Vercel v2.6 claim.</td>
               </tr>
               <tr>
-                <td>CurseForge visible route</td>
-                <td>No CurseForge file record visible in checked page text.</td>
-                <td>CurseForge Project ID 1591438 still shows <code>verity-5.7.3.jar</code>, file record 8461257, for Forge 1.20.1.</td>
-                <td>Use 5.7.3 only when your guide or profile follows CurseForge.</td>
+                <td>CurseForge source route</td>
+                <td>The checked Vercel page does not expose a matching CurseForge file record.</td>
+                <td>CurseForge Project ID 1591438 now shows <code>verity-6.1.jar</code>, file record 8555265, for Forge 1.20.1; record 8461257 remains previous 5.7.3 context.</td>
+                <td>Use the CurseForge record only when the source page or profile explicitly matches that record.</td>
               </tr>
               <tr>
                 <td>Fabric claim</td>
@@ -340,7 +340,7 @@
             <p>
               Start with the Verity JE route. For current Modrinth evidence, compare project on1Y0osD,
               version 6jRN8Exp, file <code>verity-6.1.jar</code>, Minecraft 1.20.1, Forge, 254,897,895 bytes,
-              441,649 project downloads, 5,015 version downloads, and the published SHA-1 or SHA-512. For the CurseForge-visible route, compare Project ID
+              497,260 project downloads, 37,617 version downloads, and the published SHA-1 or SHA-512. For the CurseForge-visible route, compare Project ID
               1591438 and file record 8461257 for <code>verity-5.7.3.jar</code>. Those records do not make
               the mod risk-free, but they preserve identity. A verity-mod.vercel.app button does not provide
               the same proof.

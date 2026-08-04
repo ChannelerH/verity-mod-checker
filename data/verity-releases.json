@@ -1,9 +1,9 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-08-02T10:53:00+08:00",
+  "checkedAt": "2026-08-04T09:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
-  "method": "Manual comparison against linked maintainer project pages, exact file records, and official public project APIs. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "method": "Manual comparison against linked maintainer project pages, exact file records, official public project APIs, and current first-party page snapshots. Download totals are point-in-time popularity signals, not safety verdicts.",
   "projects": [
     {
       "name": "Verity JE",
@@ -12,7 +12,7 @@
       "projectId": 1591438,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
       "status": "current",
-      "projectDownloadsAtCheck": 2565881,
+      "projectDownloadsAtCheck": 2695452,
       "projectDownloadsApproximate": false,
       "verifiedAlternateSources": [
         {
@@ -22,7 +22,7 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 441649,
+          "projectDownloadsAtCheck": 497260,
           "projectDownloadsApproximate": false,
           "releases": [
             {
@@ -44,13 +44,13 @@
               "packageType": "jar",
               "displayedSizeMb": 243.09,
               "sizeBytes": 254897895,
-              "recordDownloadsAtCheck": 5015,
+              "recordDownloadsAtCheck": 37617,
               "publishedDate": "2026-08-01",
               "versionType": "beta",
               "changelogSummary": [
-                "new Verity JE 6.1 beta release visible in the official Modrinth API",
-                "use as the current Modrinth route after the August 2 source check",
-                "compare against verity-6.jar when a guide or log still names the older version 6 record"
+                "Verity JE 6.1 remains the current visible Modrinth route in the August 4 source check",
+                "CurseForge now also exposes verity-6.1.jar as its visible main Forge 1.20.1 file",
+                "compare host-specific labels because Modrinth marks the version type beta while CurseForge labels the file release"
               ],
               "hashes": {
                 "sha1": "72f974905772b020c51e9605d35777be1a542e62",
@@ -76,7 +76,7 @@
               "packageType": "jar",
               "displayedSizeMb": 243.09,
               "sizeBytes": 254898104,
-              "recordDownloadsAtCheck": 64408,
+              "recordDownloadsAtCheck": 67187,
               "publishedDate": "2026-07-29",
               "versionType": "beta",
               "changelogSummary": [
@@ -90,7 +90,7 @@
                 "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2",
                 "sha512": "25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e"
               },
-              "currentApiStatus": "Still visible in the official Modrinth project versions list at the August 2, 2026 source check, but no longer the latest API-visible release because Verity JE 6.1 / 6jRN8Exp is newer."
+              "currentApiStatus": "Still visible in the official Modrinth project versions list at the August 4, 2026 source check, but no longer the latest API-visible release because Verity JE 6.1 / 6jRN8Exp is newer."
             },
             {
               "status": "unlisted-beta-observed",
@@ -133,7 +133,7 @@
               "currentApiStatus": "Version endpoint returned HTTP 404 and the project versions list no longer included this ID at the July 30, 2026 source check."
             },
             {
-              "status": "stable-current",
+              "status": "previous-stable",
               "filename": "verity-5.7.3.jar",
               "recordId": "yAt0wv1Z",
               "recordUrl": "https://modrinth.com/mod/verity-je-official/version/5.7.3",
@@ -143,7 +143,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 301968,
+              "recordDownloadsAtCheck": 320353,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
@@ -197,13 +197,28 @@
             "6jRN8Exp"
           ],
           "latestApiVisibleRelease": "6jRN8Exp",
-          "followersAtCheck": 157,
+          "followersAtCheck": 176,
           "projectUpdatedAt": "2026-08-01T16:26:35.375695Z"
         }
       ],
       "releases": [
         {
           "status": "current",
+          "filename": "verity-6.1.jar",
+          "recordId": 8555265,
+          "recordUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8555265",
+          "minecraftVersion": "1.20.1",
+          "loader": "Forge",
+          "packageType": "jar",
+          "displayedSizeMb": 243.1,
+          "recordDownloadsAtCheck": 27000,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-08-01",
+          "maven": "curse.maven:verity-je-1591438:8555265",
+          "note": "Current visible CurseForge main file at the August 4, 2026 source check. The same file name and version are visible on Modrinth as 6jRN8Exp, where Modrinth marks the version type beta."
+        },
+        {
+          "status": "previous-stable",
           "filename": "verity-5.7.3.jar",
           "recordId": 8461257,
           "recordUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257",
@@ -211,9 +226,10 @@
           "loader": "Forge",
           "packageType": "jar",
           "displayedSizeMb": 235.1,
-          "recordDownloadsAtCheck": 809200,
+          "recordDownloadsAtCheck": 866600,
           "recordDownloadsApproximate": true,
-          "publishedDate": "2026-07-18"
+          "publishedDate": "2026-07-18",
+          "note": "CurseForge now shows verity-6.1.jar / file 8555265 as the visible main Forge 1.20.1 route; keep 5.7.3 for guides, logs, or file checks that explicitly name record 8461257."
         },
         {
           "status": "deprecated-buggy",
@@ -238,7 +254,7 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 4350204,
+      "projectDownloadsAtCheck": 4490032,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -264,7 +280,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 23.7,
-          "recordDownloadsAtCheck": 109600,
+          "recordDownloadsAtCheck": 193700,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-31",
           "changelogSummary": [
@@ -327,7 +343,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 7991055,
+      "projectDownloadsAtCheck": 8325618,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -339,7 +355,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.6,
-          "recordDownloadsAtCheck": 578300,
+          "recordDownloadsAtCheck": 756300,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-27",
           "changelogSummary": [
@@ -446,7 +462,7 @@
         }
       ],
       "mcpedlListingUrl": "https://mcpedl.com/verity-bedrock-edition/",
-      "mcpedlListingDownloadsAtCheck": 7600000,
+      "mcpedlListingDownloadsAtCheck": 8300000,
       "mcpedlUpdatedDate": "2026-07-27",
       "mcpedlRatingAtCheck": 3.8,
       "mcpedlTopVisibleCommentAtCheck": "2nd most popular MCPEDL upload as of now",
@@ -454,7 +470,8 @@
         "Verity just doesn't reply to me ALWAYS and Verity just doesn't and never transforms into his monster form",
         "verity doesn't spawn even with beta api on",
         "how did you make him talk",
-        "how do I talk it does not say anything when I chat"
+        "how do I talk it does not say anything when I chat",
+        "August 3 comment asks for a 1.21.131-compatible version; current official rows still need exact build matching."
       ],
       "projectAuthorFeedbackRouteAtCheck": "The current CurseForge project description says further questions should go to the PnTMC YouTube channel and that feedback there is easier for the author to read.",
       "mcpedlListingDownloadsApproximate": true

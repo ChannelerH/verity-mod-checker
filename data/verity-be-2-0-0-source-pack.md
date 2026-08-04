@@ -24,7 +24,7 @@ At the August 2, 2026 source check, the official CurseForge project page showed:
 - Owner: Undertaletalelover
 - Project ID: `1574632`
 - Project URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be
-- Project downloads: `4350204`
+- Project downloads: `4490032`
 - Last update: July 31, 2026
 - Game versions shown: 26.30 and 26.20
 - Main file: `Verity (Stable) (2.0.0)-(26.3).mcaddon`
@@ -33,7 +33,7 @@ The exact current file page showed:
 
 - File record: `8544453`
 - File URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453
-- File downloads: `109.6K` displayed at the check
+- File downloads: `193.7K` displayed at the check
 - File size: `23.7 MB`
 - Package type: `mcaddon`
 - Supported game version: `26.30`

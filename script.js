@@ -2,7 +2,7 @@ const routes = {
   java: {
     label: "Java setup route",
     readout: "Java",
-    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257",
+    link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8555265",
     versions: ["1.21.1 NeoForge", "1.20.1 Forge", "I am not sure"],
     issues: ["download", "not working", "voice not working", "AI setup", "is it real"],
     summaries: {
@@ -352,6 +352,11 @@ const knownProjects = [
               sha1: "72f974905772b020c51e9605d35777be1a542e62",
               sha512: "4e721c8709c30230ee9b9a59eca2f70410c841244baa6ec473170cb0528562e369d277f78c20a155dcd863dabaa93897290e2cf0402804107bca93a98aa1b189"
             }
+          },
+          {
+            platform: "CurseForge",
+            id: "8555265",
+            link: "https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8555265"
           }
         ]
       },
@@ -371,7 +376,7 @@ const knownProjects = [
         sizeMb: 243.09,
         version: "Minecraft 1.20.1 · Forge",
         published: "July 29, 2026",
-        availability: "Still visible in the Modrinth versions list on August 2, 2026, but Verity JE 6.1 is the newer current Modrinth route.",
+        availability: "Still visible in the Modrinth versions list on August 4, 2026, but Verity JE 6.1 is the newer current Modrinth route.",
         records: [
           {
             platform: "Modrinth",

@@ -34,7 +34,8 @@ function alternateByHost(project, host) {
 }
 
 const java = projectByName("Verity JE");
-const javaStable = releaseByStatus(java, "current");
+const javaCurrent = releaseByStatus(java, "current");
+const javaStable = releaseByRecord(java, 8461257);
 const javaLegacy = releaseByRecord(java, 8346795);
 const modrinth = alternateByHost(java, "Modrinth");
 const modrinthCurrent = modrinth.releases.find((entry) => entry.recordId === modrinth.latestApiVisibleRelease);
@@ -115,7 +116,7 @@ const records = [
     fileDownloadsAtCheck: modrinthCurrent.recordDownloadsAtCheck,
     status: "current-beta-release",
     recommendedUse: "Use when the player intentionally follows the current Modrinth Verity JE 6.1 route.",
-    caution: "CurseForge still shows 5.7.3 as its visible main file, so keep the source platform in the citation.",
+    caution: "CurseForge and Modrinth both expose Verity JE 6.1, but Modrinth marks the version type as beta while CurseForge labels the file release; keep the source platform in the citation.",
     localGuideUrl: `${site}/verity-6-1-jar/`
   },
   {
@@ -138,12 +139,35 @@ const records = [
     fileDownloadsAtCheck: modrinthV6.recordDownloadsAtCheck,
     status: "previous-visible-beta",
     recommendedUse: "Use only when the player or log names the exact Verity JE 6 record, CXsEzVwJ, or verity-6.jar.",
-    caution: "A newer Modrinth 6.1 record is visible; do not call this the latest Modrinth route after the August 2 check.",
+    caution: "A newer Modrinth 6.1 record is visible; do not call this the latest Modrinth route after the August 4 check.",
     localGuideUrl: `${site}/verity-6-jar/`
   },
   {
-    routeId: "java-curseforge-stable",
-    routeName: "Verity JE stable CurseForge file",
+    routeId: "java-curseforge-61-current",
+    routeName: "Verity JE 6.1 CurseForge release",
+    edition: "Java",
+    host: "CurseForge",
+    owner: java.owner,
+    projectId: java.projectId,
+    projectUrl: java.projectUrl,
+    projectDownloadsAtCheck: java.projectDownloadsAtCheck,
+    packageType: javaCurrent.packageType,
+    fileName: javaCurrent.filename,
+    recordId: javaCurrent.recordId,
+    recordUrl: javaCurrent.recordUrl,
+    minecraftVersion: javaCurrent.minecraftVersion,
+    loader: javaCurrent.loader,
+    publishedDate: javaCurrent.publishedDate,
+    fileSizeMb: javaCurrent.displayedSizeMb,
+    fileDownloadsAtCheck: javaCurrent.recordDownloadsAtCheck,
+    status: "current-release",
+    recommendedUse: "Use when the player intentionally follows the current CurseForge Verity JE 6.1 route.",
+    caution: "Do not replace this with a Bedrock MCADDON or a copied mirror link.",
+    localGuideUrl: `${site}/verity-6-1-jar/`
+  },
+  {
+    routeId: "java-curseforge-573-previous-stable",
+    routeName: "Verity JE 5.7.3 previous CurseForge file",
     edition: "Java",
     host: "CurseForge",
     owner: java.owner,
@@ -159,9 +183,9 @@ const records = [
     publishedDate: javaStable.publishedDate,
     fileSizeMb: javaStable.displayedSizeMb,
     fileDownloadsAtCheck: javaStable.recordDownloadsAtCheck,
-    status: "current-stable",
-    recommendedUse: "Use when the player needs the stable Java Forge 1.20.1 file.",
-    caution: "Do not replace this with a Bedrock MCADDON or a copied beta link.",
+    status: "previous-stable",
+    recommendedUse: "Use when a guide, log, or copied link explicitly names Verity JE 5.7.3 or CurseForge record 8461257.",
+    caution: "A newer CurseForge 6.1 file is now the visible main Forge 1.20.1 route, so do not call 5.7.3 the latest Java download.",
     localGuideUrl: `${site}/verity-5-7-3-jar/`
   },
   {

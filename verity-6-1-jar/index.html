@@ -39,7 +39,7 @@
             "headline": "verity-6.1.jar: Verity JE 6.1 Latest Modrinth File Check",
             "description": "A source-check page for the current Modrinth Verity JE 6.1 release, exact file identity, hashes, setup changes, and older 6 / 6.0 beta-link confusion.",
             "datePublished": "2026-08-02",
-            "dateModified": "2026-08-02",
+            "dateModified": "2026-08-04",
             "mainEntityOfPage": "https://veritymodchecker.online/verity-6-1-jar/",
             "author": { "@type": "Organization", "name": "Verity Mod Guide" },
             "publisher": { "@type": "Organization", "name": "Verity Mod Guide" }
@@ -59,7 +59,7 @@
                 "name": "Is verity-6.1.jar a current Verity JE file?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. At the August 2, 2026 source check, the official Modrinth project on1Y0osD exposed Verity JE 6.1 as version 6jRN8Exp with primary file verity-6.1.jar for Minecraft 1.20.1 Forge and version type beta. CurseForge still showed verity-5.7.3.jar as its visible main file, so keep the platform distinction clear."
+                  "text": "Yes. At the August 4, 2026 source check, the official Modrinth project on1Y0osD exposed Verity JE 6.1 as version 6jRN8Exp with primary file verity-6.1.jar for Minecraft 1.20.1 Forge and version type beta. CurseForge now also shows verity-6.1.jar as file record 8555265, so keep host-specific labels and version-type wording clear."
                 }
               },
               {
@@ -105,7 +105,7 @@
     <main>
       <section class="hero route-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Verity JE 6.1 checked August 2, 2026</p>
+          <p class="eyebrow">Verity JE 6.1 checked August 4, 2026</p>
           <h1>verity-6.1.jar File Check</h1>
           <p class="lede">
             <strong>verity-6.1.jar</strong> is the newest visible Verity JE 6.1 release on the official Modrinth project
@@ -131,17 +131,17 @@
           </div>
           <h2>Use this route only when your source names Modrinth Verity JE 6.1</h2>
           <p>
-            The August 2 source check found Modrinth version <strong>6jRN8Exp</strong>, version number
+            The August 4 source check found Modrinth version <strong>6jRN8Exp</strong>, version number
             <strong>6.1</strong>, primary file <strong>verity-6.1.jar</strong>, Minecraft <strong>1.20.1</strong>,
             loader <strong>Forge</strong>, displayed size <strong>243.09 MB</strong>, version type <strong>beta</strong>, and
-            <strong>5,015</strong> version downloads at check. CurseForge still showed record 8461257,
-            <strong>verity-5.7.3.jar</strong>, as its visible main file, so do not merge the two records into
-            one source claim.
+            <strong>37,617</strong> version downloads at check. CurseForge now shows record 8555265 with
+            <strong>verity-6.1.jar</strong>, while record 8461257 remains the previous 5.7.3 file for old
+            guides. Keep the host and record ID in the source claim.
           </p>
           <ol class="steps">
             <li>Open the official Modrinth version page before trusting a copied JAR.</li>
             <li>Confirm the file name, version ID, loader, Minecraft version, size, and SHA-512 hash.</li>
-            <li>Use the 5.7.3 route when your tutorial or launcher profile specifically follows CurseForge.</li>
+            <li>Use the 5.7.3 route only when your tutorial or launcher profile specifically names record 8461257 or yAt0wv1Z.</li>
             <li>Do not import this JAR into Bedrock, MCPE, or an Android APK workflow.</li>
           </ol>
           <div class="action-row">
@@ -226,18 +226,18 @@
         </div>
         <div class="guide-grid">
           <article class="guide-block guide-lead">
-            <h3>Modrinth latest and CurseForge visible main file are different signals</h3>
+            <h3>CurseForge and Modrinth now point to the same 6.1 filename</h3>
             <p>
               A search engine result can show both Modrinth and CurseForge for Verity JE. At this check,
-              Modrinth has the new version 6.1 release, while the previous visible Modrinth version 6 page still exists and CurseForge still shows <code>verity-5.7.3.jar</code>
-              as its visible main file. That is not automatically a conflict. It means players need to keep
-              the source platform in the sentence. "Verity JE 6.1 is current on Modrinth," "verity-6.jar is the previous Modrinth 6 file," and "CurseForge still
-              shows 5.7.3 as the main Java file" are all useful facts. Saying only "download the latest Verity
+              Modrinth and CurseForge both now show the 6.1 release, while the previous visible Modrinth version 6 page and the older 5.7.3 records still exist
+              for old guides and copied links. That is not automatically a conflict. It means players need to keep
+              the source platform in the sentence. "Verity JE 6.1 is current on Modrinth," "CurseForge record 8555265 is the current CurseForge 6.1 file,"
+              and "verity-6.jar is the previous Modrinth 6 file" are all useful facts. Saying only "download the latest Verity
               Mod" is less helpful because it hides the platform and version ID.
             </p>
             <p>
               If your tutorial explicitly opens the Modrinth project, uses version ID <code>6jRN8Exp</code>,
-              or says Verity JE 6.1, start with this page. If the source still names <code>CXsEzVwJ</code> or
+              opens CurseForge record <code>8555265</code>, or says Verity JE 6.1, start with this page. If the source still names <code>CXsEzVwJ</code> or
               <code>verity-6.jar</code>, open the previous version 6 page and check whether the guide has updated. If your tutorial says CurseForge Project ID 1591438,
               file record 8461257, or a Maven coordinate ending in 8461257, use the 5.7.3 identity page. If
               a mirror says "latest" but names neither platform, neither project ID, nor a published hash,
@@ -303,7 +303,7 @@
               </tr>
               <tr>
                 <td><code>verity-5.7.3.jar</code></td>
-                <td>CurseForge main file and Modrinth stable comparison route.</td>
+                <td>Previous CurseForge file and Modrinth stable comparison route.</td>
                 <td>Use 5.7.3 when your source names CurseForge record 8461257.</td>
               </tr>
               <tr>
@@ -325,9 +325,9 @@
           <details open>
             <summary>Should I update from 5.7.3 to verity-6.1.jar?</summary>
             <p>
-              Use the version that matches your source and profile. If you intentionally follow Modrinth, version
+              Use the version that matches your source and profile. If you intentionally follow Modrinth or current CurseForge, version
               6.1 is the newest visible release at this check. If your setup guide, server, or dependency list
-              is built around CurseForge record 8461257, stay with the 5.7.3 route until you can test the new
+              is built around CurseForge record 8461257, keep the 5.7.3 route until you can test the new
               build in a clean profile. Do not update inside a heavily modded profile first.
             </p>
           </details>
@@ -341,12 +341,12 @@
             </p>
           </details>
           <details>
-            <summary>Why is CurseForge still showing 5.7.3?</summary>
+            <summary>Why did CurseForge change from 5.7.3 to 6.1?</summary>
             <p>
-              Different publisher platforms can update at different times. At this check, CurseForge still listed
-              <code>verity-5.7.3.jar</code> as record 8461257, while Modrinth exposed <code>verity-6.1.jar</code>
-              as version <code>6jRN8Exp</code>. Keep both facts in the route map instead of replacing one with
-              the other.
+              Different publisher platforms can update at different times. At the August 4 check, CurseForge listed
+              <code>verity-6.1.jar</code> as record 8555265, while Modrinth exposed the same filename as
+              version <code>6jRN8Exp</code>. Keep the older 5.7.3 records in the route map for old guides,
+              but do not call them the latest Java file after this check.
             </p>
           </details>
           <details>
