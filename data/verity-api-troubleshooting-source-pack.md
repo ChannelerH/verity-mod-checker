@@ -1,6 +1,6 @@
 # Verity Mod API Connection Failed Source Pack
 
-Checked: 2026-08-04 09:45 Asia/Shanghai
+Checked: 2026-08-05 09:45 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/api-connection-failed/
 
@@ -28,7 +28,7 @@ The latest delayed Search Console sample for veritymodchecker.online shows the h
 - `verity error 401`: 1 click / 1 impression
 - `api connection failed status 429 verity mod`: 1 click / 1 impression
 
-GA4 past-28-days data checked August 4 shows 865 sessions, 404 engaged sessions, 321 Organic Search sessions, 182 Referral sessions, 146 `gist.github.com / referral` sessions, 60 `google / organic` sessions, 27 `bing / organic` sessions, 190 `yandex.ru / referral` sessions, 91 `verity_outbound_project_click` events, and 85 key events. Landing-page data still puts `/api-connection-failed/` among the strongest non-homepage routes.
+GA4 data checked August 5 shows 865 past-28-days sessions, `/api-connection-failed/` at 220 landing sessions, 91 `verity_outbound_project_click` events, 17 `verity_source_check` events, 74 `verity_api_error_diagnosis` events, and 85 key events. The last-7-days channel view shows 86 Organic Search sessions, 55 Referral sessions, 10 `google / organic` sessions, 12 `bing / organic` sessions, 58 `yandex.ru / referral` sessions, and 45 `gist.github.com / referral` sessions.
 
 ## Current player signal
 
@@ -36,17 +36,17 @@ A current public player-question check still shows rate-limit confusion around V
 
 ## Current Verity JE source facts
 
-Official Modrinth API checks on August 4 show:
+Official Modrinth API checks on August 5 show:
 
 - Project: `on1Y0osD`
 - Current version: `6jRN8Exp`
 - Current file: `verity-6.1.jar`
 - Loader / game version: Forge 1.20.1
-- Project downloads at check: 497,260
-- Current version downloads at check: 37,617
-- Stable 5.7.3 version downloads at check: 320,353
+- Project downloads at check: 520,619
+- Current version downloads at check: 51,731
+- Stable 5.7.3 version downloads at check: 328,223
 - Project updated: 2026-08-01T16:26:35.375695Z
-- Followers at check: 176
+- Followers at check: 189
 - SHA-1 for `verity-6.1.jar`: `72f974905772b020c51e9605d35777be1a542e62`
 - SHA-512 for `verity-6.1.jar`: `4e721c8709c30230ee9b9a59eca2f70410c841244baa6ec473170cb0528562e369d277f78c20a155dcd863dabaa93897290e2cf0402804107bca93a98aa1b189`
 

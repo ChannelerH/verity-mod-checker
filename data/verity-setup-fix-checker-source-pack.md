@@ -1,6 +1,6 @@
 # Verity Mod setup and fix checker source pack
 
-Checked: August 2, 2026 at 10:53 Asia/Shanghai
+Checked: August 5, 2026 at 09:45 Asia/Shanghai
 
 Canonical checker: https://veritymodchecker.online/#route-checker
 
@@ -32,8 +32,8 @@ Official Modrinth API check for Verity JE:
 - Project URL: https://api.modrinth.com/v2/project/on1Y0osD
 - Project ID: on1Y0osD
 - Title: Verity JE
-- Downloads at check: 497,260
-- Followers at check: 176
+- Downloads at check: 520,619
+- Followers at check: 189
 - Last updated: 2026-08-01T16:26:35.375695Z
 
 Current Modrinth version route:
@@ -43,7 +43,7 @@ Current Modrinth version route:
 - Version number: 6.1
 - File: verity-6.1.jar
 - Loader and game version: Forge, Minecraft 1.20.1
-- Version downloads at check: 37,617
+- Version downloads at check: 51,731
 - SHA-1: 72f974905772b020c51e9605d35777be1a542e62
 - SHA-512: 4e721c8709c30230ee9b9a59eca2f70410c841244baa6ec473170cb0528562e369d277f78c20a155dcd863dabaa93897290e2cf0402804107bca93a98aa1b189
 
@@ -53,7 +53,7 @@ Stable 5.7.3 Modrinth route:
 - Version ID: yAt0wv1Z
 - File: verity-5.7.3.jar
 - Loader and game version: Forge, Minecraft 1.20.1
-- Version downloads at check: 320,353
+- Version downloads at check: 328,223
 - SHA-1: da28115bbad0478d9ed9c97f2466b67d46d13d51
 - SHA-512: 15cd8d895788f4859ecf442b7a970c8bca3b30db99aa170639b5f003a18b0f0255bdf5b042eb95a686ac51ecec80afbfeb766654c3471f5cc890664982cd9c81
 

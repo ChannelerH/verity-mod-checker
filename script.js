@@ -376,7 +376,7 @@ const knownProjects = [
         sizeMb: 243.09,
         version: "Minecraft 1.20.1 · Forge",
         published: "July 29, 2026",
-        availability: "Still visible in the Modrinth versions list on August 4, 2026, but Verity JE 6.1 is the newer current Modrinth route.",
+        availability: "Still visible in the Modrinth versions list on August 5, 2026, but Verity JE 6.1 is the newer current Modrinth route.",
         records: [
           {
             platform: "Modrinth",

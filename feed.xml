@@ -5,8 +5,29 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-08-04T09:45:00+08:00</updated>
+  <updated>2026-08-05T09:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>August 5 source counters, GSC, GA4, and DNS blocker refresh</title>
+    <id>https://veritymodchecker.online/updates/source-counters-gsc-ga4-dns-hold-2026-08-05-0945</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <link href="https://veritymodchecker.online/versions/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/api-connection-failed/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/6jRN8Exp" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8555265" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-08-05T09:45:00+08:00</published>
+    <updated>2026-08-05T09:45:00+08:00</updated>
+    <summary>Official Modrinth API shows Verity JE project on1Y0osD at 520,619 downloads, 189 followers, current version 6jRN8Exp / verity-6.1.jar at 51,731 downloads, previous visible version CXsEzVwJ / verity-6.jar at 67,807 downloads, and stable yAt0wv1Z at 328,223 downloads. First-party CurseForge pages show Verity JE Project ID 1591438 at 2,756,272 downloads with current file 8555265 / verity-6.1.jar at 70.8K, Verity BE Project ID 1574632 at 4,493,311 downloads with file 8544453 at 199.3K, and PnTMC Project ID 1575941 at 8,467,529 downloads with V26.30 file 8517480 at 831.3K. GSC last 28 days shows 66 clicks, 2,030 impressions, 3.3% CTR, average position 8.7, exact verity mod at 2 clicks / 3 impressions, and 127 query rows. GA4 past 28 days shows 865 sessions, 91 verity_outbound_project_click events, 17 verity_source_check events, 74 verity_api_error_diagnosis events, and 85 key events. Public DNS for veritymodchecker.online and www still returns no A answer while RDAP status remains server hold, so registrar-side recovery remains the traffic-critical blocker before canonical-domain index pings or fresh external submissions can work reliably. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory outreach is claimed.</summary>
+    <category term="source-data-refresh" />
+    <category term="gsc-ga4" />
+    <category term="dns-blocker" />
+  </entry>
   <entry>
     <title>August 4 CurseForge 6.1, analytics, and DNS blocker refresh</title>
     <id>https://veritymodchecker.online/updates/curseforge-verity-je-6-1-analytics-dns-hold-2026-08-04-0945</id>

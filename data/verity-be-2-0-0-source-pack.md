@@ -1,6 +1,6 @@
 # Verity BE 2.0.0 official Bedrock source pack
 
-Checked: August 2, 2026 at 10:53 Asia/Shanghai
+Checked: August 5, 2026 at 09:45 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/verity-be/
 
@@ -18,13 +18,13 @@ This source pack is for wiki editors, Minecraft community helpers, forum answers
 
 Verity BE is a Bedrock `mcaddon` route, not a Java JAR, APK, EXE, modpack ZIP, or PnTMC file row.
 
-At the August 2, 2026 source check, the official CurseForge project page showed:
+At the August 5, 2026 source check, the official CurseForge project page showed:
 
 - Project name: Verity BE (Official)
 - Owner: Undertaletalelover
 - Project ID: `1574632`
 - Project URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be
-- Project downloads: `4490032`
+- Project downloads: `4493311`
 - Last update: July 31, 2026
 - Game versions shown: 26.30 and 26.20
 - Main file: `Verity (Stable) (2.0.0)-(26.3).mcaddon`
@@ -33,7 +33,7 @@ The exact current file page showed:
 
 - File record: `8544453`
 - File URL: https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453
-- File downloads: `193.7K` displayed at the check
+- File downloads: `199.3K` displayed at the check
 - File size: `23.7 MB`
 - Package type: `mcaddon`
 - Supported game version: `26.30`
@@ -60,7 +60,7 @@ Use this Verity BE source pack when the selected page or tutorial names Undertal
 | Verity BE (Official) | CurseForge Project ID `1574632`, Undertaletalelover | `8544453`, Stable 2.0.0 hot fix, Bedrock 26.30, 23.7 MB | The player asks for Verity BE, Verity BE official, Verity BE download, dots, Error: No Purpose, duplicate package, or Bedrock 26.30 setup. |
 | PnTMC Verity - Bedrock Edition | CurseForge Project ID `1575941`, PnTMC | Current 3.2.0 rows include `8517480`, `8517478`, and `8517473` | The tutorial names PnTMC, ThatMob's Verity 3.2.0, MCPEDL, V26.30, V26.20, or V26.10-style build rows. |
 | Verity Pocket Edition (Be) | CurseForge Project ID `1596246`, vexi1111_ | `8406293`, Verity 1.0.2 for 26.30 | The page names Pocket Edition (Be) or the MCPE-specific listing. |
-| Verity JE | CurseForge Project ID `1591438` or Modrinth `on1Y0osD` | Java JAR files such as `verity-5.7.3.jar` or `verity-6.jar` | The player is on Minecraft Java Edition with Forge or a matching Java route. |
+| Verity JE | CurseForge Project ID `1591438` or Modrinth `on1Y0osD` | Java JAR files such as current `verity-6.1.jar`, previous `verity-6.jar`, or old-guide `verity-5.7.3.jar` | The player is on Minecraft Java Edition with Forge or a matching Java route. |
 
 ## Setup facts to preserve
 

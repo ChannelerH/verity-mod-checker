@@ -162,9 +162,9 @@ with sync_playwright() as playwright:
         assert "6jRN8Exp" in versions_text
         assert "verity-6.jar" in versions_text
         assert "CXsEzVwJ" in versions_text
-        assert "497,260" in versions_text
-        assert "37,617" in versions_text
-        assert "320,353" in versions_text
+        assert "520,619" in versions_text
+        assert "51,731" in versions_text
+        assert "328,223" in versions_text
         assert "stale beta" in versions_text.lower()
         assert "Verity BE 2.0.0" in versions_text
         assert "PnTMC Verity 3.2.0" in versions_text
@@ -237,7 +237,7 @@ with sync_playwright() as playwright:
         v61_text = page.locator("main").inner_text()
         assert "verity-6.1.jar File Check" in v61_text
         assert "6jRN8Exp" in v61_text
-        assert "37,617" in v61_text
+        assert "51,731" in v61_text
         assert "72f974905772b020c51e9605d35777be1a542e62" in v61_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/6jRN8Exp"]').count() >= 1
         assert page.locator('a[href="/verity-6-jar/"]').count() >= 1
@@ -247,7 +247,7 @@ with sync_playwright() as playwright:
         assert "verity-6.jar File Check" in v6_text
         assert "Previous" in v6_text
         assert "CXsEzVwJ" in v6_text
-        assert "67,187" in v6_text
+        assert "67,807" in v6_text
         assert "609c799d7350a657cf2193839224bd6c2f9971b2" in v6_text
         assert page.locator('a[href="/verity-6-1-jar/"]').count() >= 1
         assert page.locator('a[href="/verity-5-7-3-jar/"]').count() >= 1
@@ -257,9 +257,9 @@ with sync_playwright() as playwright:
         assert "Verity JE Download" in verity_je_text
         assert "verity-6.1.jar" in verity_je_text
         assert "6jRN8Exp" in verity_je_text
-        assert "37,617" in verity_je_text
-        assert "497,260" in verity_je_text
-        assert "2,695,452" in verity_je_text
+        assert "51,731" in verity_je_text
+        assert "520,619" in verity_je_text
+        assert "2,756,272" in verity_je_text
         assert "866.6K" in verity_je_text
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/6jRN8Exp"]').count() >= 1
 
@@ -310,7 +310,7 @@ with sync_playwright() as playwright:
         v573_schema_text = page.locator('script[type="application/ld+json"]').nth(1).text_content()
         assert "SoftwareApplication" in v573_schema_text
         assert "866.6K" in v573_text
-        assert "320,353" in v573_text
+        assert "328,223" in v573_text
         assert "GeckoLib" in v573_text
         assert page.locator('a[href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8461257"]').count() >= 1
         assert page.locator('a[href="https://modrinth.com/mod/verity-je-official/version/5.7.3"]').count() >= 1
@@ -360,8 +360,8 @@ with sync_playwright() as playwright:
         mcpedl_text = page.locator("main").inner_text()
         assert "Verity Mod MCPEDL Route" in mcpedl_text
         assert "citation helper" in mcpedl_text.lower()
-        assert "8,325,618" in mcpedl_text
-        assert "756.3K" in mcpedl_text
+        assert "8,467,529" in mcpedl_text
+        assert "831.3K" in mcpedl_text
         assert "8517480" in mcpedl_text
         assert "8327253" in mcpedl_text
         assert "PnTMC YouTube" in mcpedl_text
@@ -372,7 +372,7 @@ with sync_playwright() as playwright:
         pntmc_320_text = page.locator("main").inner_text()
         pntmc_320_dom_text = page.locator("main").text_content()
         assert "ThatMob's Verity 3.2.0 by PnTMC" in pntmc_320_text
-        assert "756.3K" in pntmc_320_text
+        assert "831.3K" in pntmc_320_text
         assert "does not reply or never transforms" in pntmc_320_text
         assert "no-reply" in pntmc_320_dom_text
         assert "no-monster-form" in pntmc_320_dom_text
@@ -382,8 +382,8 @@ with sync_playwright() as playwright:
         verity_be_text = page.locator("main").inner_text()
         assert "Verity BE Official Download" in verity_be_text
         assert "Open official Verity BE download source" in verity_be_text
-        assert "4,490,032" in verity_be_text
-        assert "193.7K" in verity_be_text
+        assert "4,493,311" in verity_be_text
+        assert "199.3K" in verity_be_text
         assert "hot fix" in verity_be_text
         assert "Verity BE 2.0.0 source pack" in verity_be_text
         assert "8544453" in verity_be_text
@@ -426,8 +426,8 @@ with sync_playwright() as playwright:
         assert "old JAR" in java_help_text
         assert "6jRN8Exp" in java_help_text
         assert "8461257" in java_help_text
-        assert "497,260" in java_help_text
-        assert "2,695,452" in java_help_text
+        assert "520,619" in java_help_text
+        assert "2,756,272" in java_help_text
         assert page.locator('a[href="/verity-je/"]').count() >= 1
         assert page.locator('a[href="/api-connection-failed/"]').count() >= 1
         assert page.locator('a[href="/not-working/"]').count() >= 1

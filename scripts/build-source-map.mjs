@@ -139,7 +139,7 @@ const records = [
     fileDownloadsAtCheck: modrinthV6.recordDownloadsAtCheck,
     status: "previous-visible-beta",
     recommendedUse: "Use only when the player or log names the exact Verity JE 6 record, CXsEzVwJ, or verity-6.jar.",
-    caution: "A newer Modrinth 6.1 record is visible; do not call this the latest Modrinth route after the August 4 check.",
+    caution: "A newer Modrinth 6.1 record is visible; do not call this the latest Modrinth route after the August 5 check.",
     localGuideUrl: `${site}/verity-6-jar/`
   },
   {
