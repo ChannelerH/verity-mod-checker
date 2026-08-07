@@ -1,6 +1,6 @@
 # Site Operations Profile
 
-> Last updated: 2026-08-05 09:45 Asia/Shanghai
+> Last updated: 2026-08-07 09:45 Asia/Shanghai
 
 ## Basic Info
 
@@ -19,17 +19,17 @@
 |---:|---|---|---|---|---|
 | 1 | Find the real Verity Mod route without mirrors | verity mod, verity mod download, real verity mod | `/`, `/download/`, `/what-is-verity-mod/` | Open official project page or compare route | GSC exact `verity mod`: 2 clicks / 3 impressions |
 | 2 | Fix API provider failures | verity api connection failed 401, verity mod status 429 | `/api-connection-failed/`, `/status-401/`, `/status-429/` | Diagnose provider layer, do not share API keys | GA4 `/api-connection-failed/`: 220 landing sessions |
-| 3 | Choose Java file/version | verity je download, verity-6.1.jar, verity-5.7.3.jar | `/java/`, `/verity-je/`, `/versions/`, exact file pages | Match host, record ID, checksum | Official Modrinth and CurseForge counters changed August 5 |
-| 4 | Choose Bedrock route | verity be, mcpedl verity, pntmc verity | `/bedrock/`, `/verity-be/`, `/mcpedl/`, `/pntmc-verity-3-2-0/` | Match `.mcaddon` route and build | MCPEDL comments still ask for 1.21.131 and story-mode help |
+| 3 | Choose Java file/version | verity je download, verity-6.1.jar, verity-5.7.3.jar | `/java/`, `/verity-je/`, `/versions/`, exact file pages | Match host, record ID, checksum | Official Modrinth and CurseForge counters changed August 7 |
+| 4 | Choose Bedrock route | verity be, mcpedl verity, pntmc verity | `/bedrock/`, `/verity-be/`, `/mcpedl/`, `/pntmc-verity-3-2-0/` | Match `.mcaddon` route and build | August 6 MCPEDL comments ask for 26.40 support or say v26.40 does not work |
 
 ## Indexing And Analytics
 
 - Google Search Console: Domain property available for `veritymodchecker.online`.
-- GSC performance: 2026-07-15 through 2026-08-02, 66 clicks, 2,030 impressions, 3.3% CTR, average position 8.7, 127 query rows.
+- GSC performance: 2026-07-15 through 2026-08-04, 68 clicks, 2,150 impressions, 3.2% CTR, average position 8.6, 133 query rows.
 - GSC indexing: 11 indexed and 11 not indexed in the latest visible Pages report; 6 crawled-not-indexed and 2 discovered-not-indexed are under validation.
-- GA4: Property 545836630; last 7 days show 175 active users, 198 sessions, 978 events, 32 key events.
-- GA4 channels last 7 days: Organic Search 86 sessions, Direct 43, Referral 55, AI Assistant 14.
-- GA4 events past 28 days: `verity_outbound_project_click` 91, `verity_source_check` 17, `verity_api_error_diagnosis` 74.
+- GA4: Property 545836630; last 7 days show 78 active users, 90 sessions, 444 events, 10 key events.
+- GA4 channels last 7 days: Organic Search 37 sessions, Direct 21, Referral 28, AI Assistant 4.
+- GA4 visible home-card events last 7 days: `verity_outbound_project_click` 10 and `verity_api_error_diagnosis` 10. The separate landing/event reports rendered a sample report UI and did not expose reliable row-level data in the current browser session.
 - Sitemap: `https://veritymodchecker.online/sitemap.xml`
 - Robots/noindex risk: No noindex issue observed in repo audit.
 - Domain blocker: Public DNS still returns no A answer for apex and www; RDAP status is `server hold`. This is the highest traffic blocker.
@@ -61,3 +61,5 @@
 |---|---|---|---|
 | 2026-08-05 | Created persistent growth ops ledger | The site now has GSC/GA4 signals and daily operations need continuity | Future runs can compare baselines without relying on chat history |
 | 2026-08-05 | No new backlink posting while apex is `server hold` | The canonical URL cannot resolve from public DNS, so new external submissions may fail or waste trust | Focus shifts to source refresh and registrar recovery |
+| 2026-08-07 | Refreshed source counters and update log without changing homepage TDK | Official Java, Bedrock, PnTMC, GSC, GA4, and SERP evidence changed; query wording did not require title churn | Preserves stable head-query targeting while updating trust and data freshness |
+| 2026-08-07 | Skipped new public backlink submissions while DNS remains held | Broad SERP and GSC show demand, but a held canonical domain weakens crawler fetches and risks wasting community/editorial opportunities | Continue source-refresh and targeted outreach preparation until apex/www resolve |

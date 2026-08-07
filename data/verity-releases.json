@@ -1,9 +1,9 @@
 {
   "$schema": "https://veritymodchecker.online/data/verity-releases.schema.json",
   "schemaVersion": 2,
-  "checkedAt": "2026-08-05T09:45:00+08:00",
+  "checkedAt": "2026-08-07T09:45:00+08:00",
   "canonicalUrl": "https://veritymodchecker.online/download/",
-  "method": "Manual comparison against linked maintainer project pages, exact file records, official public project APIs, and current first-party page snapshots. Download totals are point-in-time popularity signals, not safety verdicts.",
+  "method": "Manual comparison against linked maintainer project pages, exact file records, official public project APIs, and current first-party page snapshots. Download totals are point-in-time popularity signals, not safety verdicts. The August 7 pass keeps Verity BE 2.0.1 / 26.40 hotfix as current while preserving older Bedrock records for diagnosis.",
   "projects": [
     {
       "name": "Verity JE",
@@ -12,7 +12,7 @@
       "projectId": 1591438,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
       "status": "current",
-      "projectDownloadsAtCheck": 2756272,
+      "projectDownloadsAtCheck": 2871128,
       "projectDownloadsApproximate": false,
       "verifiedAlternateSources": [
         {
@@ -22,7 +22,7 @@
           "projectUrl": "https://modrinth.com/mod/verity-je-official",
           "status": "current",
           "relationshipEvidence": "The project description calls Verity JE an official adaptation created with ThatMob's permission, and the project team lists ThatMob as Creator / Inventor.",
-          "projectDownloadsAtCheck": 520619,
+          "projectDownloadsAtCheck": 569570,
           "projectDownloadsApproximate": false,
           "releases": [
             {
@@ -44,11 +44,11 @@
               "packageType": "jar",
               "displayedSizeMb": 243.09,
               "sizeBytes": 254897895,
-              "recordDownloadsAtCheck": 51731,
+              "recordDownloadsAtCheck": 80862,
               "publishedDate": "2026-08-01",
               "versionType": "beta",
               "changelogSummary": [
-                "Verity JE 6.1 remains the current visible Modrinth route in the August 5 source check",
+                "Verity JE 6.1 remains the current visible Modrinth route in the August 7 source check",
                 "CurseForge also exposes verity-6.1.jar as its visible main Forge 1.20.1 file and calls the August 1 file a release",
                 "compare host-specific labels because Modrinth marks the version type beta while CurseForge labels the file release"
               ],
@@ -76,7 +76,7 @@
               "packageType": "jar",
               "displayedSizeMb": 243.09,
               "sizeBytes": 254898104,
-              "recordDownloadsAtCheck": 67807,
+              "recordDownloadsAtCheck": 69534,
               "publishedDate": "2026-07-29",
               "versionType": "beta",
               "changelogSummary": [
@@ -90,7 +90,7 @@
                 "sha1": "609c799d7350a657cf2193839224bd6c2f9971b2",
                 "sha512": "25771d7476639e5669bea28d0beb503813ca304cfd6ddb080be3eb4186fbea34024f3a0e93bcaeb4cef4ecfb925420956a5b0e92f4a957c7ff7b3a4a22127b6e"
               },
-              "currentApiStatus": "Still visible in the official Modrinth project versions list at the August 5, 2026 source check, but no longer the latest API-visible release because Verity JE 6.1 / 6jRN8Exp is newer."
+              "currentApiStatus": "Still visible in the official Modrinth project versions list at the August 7, 2026 source check, but no longer the latest API-visible release because Verity JE 6.1 / 6jRN8Exp is newer."
             },
             {
               "status": "unlisted-beta-observed",
@@ -143,7 +143,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246481139,
-              "recordDownloadsAtCheck": 328223,
+              "recordDownloadsAtCheck": 344415,
               "publishedDate": "2026-07-18",
               "hashes": {
                 "sha1": "da28115bbad0478d9ed9c97f2466b67d46d13d51",
@@ -161,7 +161,7 @@
               "packageType": "jar",
               "displayedSizeMb": 235.06,
               "sizeBytes": 246483380,
-              "recordDownloadsAtCheck": 40998,
+              "recordDownloadsAtCheck": 41992,
               "publishedDate": "2026-07-17",
               "versionType": "release",
               "hashes": {
@@ -180,7 +180,7 @@
               "packageType": "jar",
               "displayedSizeMb": 234.89,
               "sizeBytes": 246303153,
-              "recordDownloadsAtCheck": 16084,
+              "recordDownloadsAtCheck": 17001,
               "publishedDate": "2026-07-14",
               "versionType": "release",
               "hashes": {
@@ -197,7 +197,7 @@
             "6jRN8Exp"
           ],
           "latestApiVisibleRelease": "6jRN8Exp",
-          "followersAtCheck": 189,
+          "followersAtCheck": 206,
           "projectUpdatedAt": "2026-08-01T16:26:35.375695Z"
         }
       ],
@@ -211,11 +211,11 @@
           "loader": "Forge",
           "packageType": "jar",
           "displayedSizeMb": 243.1,
-          "recordDownloadsAtCheck": 70800,
+          "recordDownloadsAtCheck": 155800,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-08-01",
           "maven": "curse.maven:verity-je-1591438:8555265",
-          "note": "Current visible CurseForge main file at the August 5, 2026 source check. The same file name and version are visible on Modrinth as 6jRN8Exp, where Modrinth marks the version type beta; CurseForge labels the file release and the changelog says Gemini was fixed."
+          "note": "Current visible CurseForge main file at the August 7, 2026 source check. The same file name and version are visible on Modrinth as 6jRN8Exp, where Modrinth marks the version type beta; CurseForge labels the file release and the changelog says Gemini was fixed."
         },
         {
           "status": "previous-stable",
@@ -254,11 +254,42 @@
       "projectId": 1574632,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be",
       "status": "current",
-      "projectDownloadsAtCheck": 4493311,
+      "projectDownloadsAtCheck": 4698808,
       "projectDownloadsApproximate": false,
       "releases": [
         {
           "status": "current",
+          "filename": "Verity (Stable) (2.0.1)-(26.40).mcaddon",
+          "aliases": [
+            "Verity (Stable) (2.0.1)-(26.40).mcaddon",
+            "verity be",
+            "verity be official",
+            "verity be download",
+            "verity be 2.0.1",
+            "verity be 8583159",
+            "verity stable 2.0.1",
+            "verity stable 8583159",
+            "verity 26.40 hotfix",
+            "verity be 26.40",
+            "verity v2",
+            "vertiy be"
+          ],
+          "recordId": 8583159,
+          "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8583159",
+          "minecraftVersion": "26.40 file label / 26.30 supported row",
+          "loader": null,
+          "packageType": "mcaddon",
+          "displayedSizeMb": 23.7,
+          "recordDownloadsAtCheck": 66300,
+          "recordDownloadsApproximate": true,
+          "publishedDate": "2026-08-05",
+          "changelogSummary": [
+            "Hotfix for 26.40"
+          ],
+          "note": "CurseForge file page shows the file name and changelog as 26.40 hotfix, while the rendered supported-game-version row still shows 26.30 at the August 7 source check. Match the exact record before importing."
+        },
+        {
+          "status": "previous-visible",
           "filename": "Verity (Stable) (2.0.0)-(26.3).mcaddon",
           "aliases": [
             "Verity (Stable) (2.0.0)-(26.3#).mcaddon",
@@ -272,7 +303,9 @@
             "verity hot fix",
             "verity be hot fix",
             "verity v2",
-            "vertiy be"
+            "vertiy be",
+            "previous verity be 2.0.0",
+            "old verity be 8544453"
           ],
           "recordId": 8544453,
           "recordUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453",
@@ -285,7 +318,8 @@
           "publishedDate": "2026-07-31",
           "changelogSummary": [
             "hot fix"
-          ]
+          ],
+          "note": "Kept for old-link and July 31 hot-fix diagnosis. The August 7, 2026 source check keeps the current Verity BE route on record 8583159 / Stable 2.0.1 / 26.40 hotfix."
         },
         {
           "status": "previous-visible",
@@ -311,7 +345,7 @@
             "adds new responses",
             "adds local AI support"
           ],
-          "note": "Kept for same-day old-link diagnosis. The current July 31, 2026 source check moved the Verity BE Stable 2.0.0 route to record 8544453 / hot fix."
+          "note": "Kept for same-day old-link diagnosis. The August 7, 2026 source check keeps the current Verity BE route on record 8583159 / Stable 2.0.1 / 26.40 hotfix."
         },
         {
           "status": "previous-visible",
@@ -332,7 +366,7 @@
           "recordDownloadsAtCheck": 261100,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-25",
-          "note": "Kept for old-video and old-file diagnosis. The current July 31, 2026 source check moved the main Verity BE route to record 8544453 / Stable 2.0.0 hot fix."
+          "note": "Kept for old-video and old-file diagnosis. The August 7, 2026 source check keeps the main Verity BE route on record 8583159 / Stable 2.0.1 / 26.40 hotfix."
         }
       ]
     },
@@ -343,7 +377,7 @@
       "projectId": 1575941,
       "projectUrl": "https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition",
       "status": "current",
-      "projectDownloadsAtCheck": 8467529,
+      "projectDownloadsAtCheck": 8738315,
       "projectDownloadsApproximate": false,
       "releases": [
         {
@@ -355,7 +389,7 @@
           "loader": null,
           "packageType": "mcaddon",
           "displayedSizeMb": 39.6,
-          "recordDownloadsAtCheck": 831300,
+          "recordDownloadsAtCheck": 975200,
           "recordDownloadsApproximate": true,
           "publishedDate": "2026-07-27",
           "changelogSummary": [

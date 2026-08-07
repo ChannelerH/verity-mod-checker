@@ -66,7 +66,7 @@ const routes = {
   bedrock: {
     label: "Bedrock addon route",
     readout: "Bedrock",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8583159",
     versions: ["Bedrock 26.30", "Bedrock 26.20", "I am not sure"],
     issues: ["download", "not working", "only saying ...", "box not spawning", "voice not working", "is it real"],
     summaries: {
@@ -119,7 +119,7 @@ const routes = {
         summary:
           "The current Verity BE 2.0.0 package uses the Bedrock addon route; voice behavior still differs from Java mod behavior.",
         steps: [
-          "Confirm that you installed Verity BE 2.0.0, CurseForge record 8544453.",
+          "Confirm that you installed Verity BE 2.0.0, CurseForge record 8583159.",
           "Run /verity:tts on, then trigger a new dialogue response.",
           "Check Minecraft and device audio, then test without resource packs that alter sound behavior.",
           "Use the Verity BE maintainer page instead of Java troubleshooting."
@@ -141,7 +141,7 @@ const routes = {
   pe: {
     label: "MCPE addon route",
     readout: "MCPE",
-    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453",
+    link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8583159",
     versions: ["MCPE current", "MCPE older build", "I am not sure"],
     issues: ["download", "not working", "box not spawning", "is it real"],
     summaries: {
@@ -545,16 +545,16 @@ const knownProjects = [
     releases: [
       {
         status: "current",
-        filename: "Verity (Stable) (2.0.0)-(26.3).mcaddon",
+        filename: "Verity (Stable) (2.0.1)-(26.40).mcaddon",
         aliases: [
-          "Verity (Stable) (2.0.0)-(26.3#).mcaddon",
+          "Verity (Stable) (2.0.1)-(26.40).mcaddon",
           "verity be",
           "verity be official",
           "verity be download",
           "verity be 2.0.0",
-          "verity be 8544453",
+          "verity be 8583159",
           "verity stable 2.0.0",
-          "verity stable 8544453",
+          "verity stable 8583159",
           "verity hot fix",
           "verity be hot fix",
           "verity v2",
@@ -567,16 +567,16 @@ const knownProjects = [
         records: [
           {
             platform: "CurseForge",
-            id: "8544453",
-            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8544453"
+            id: "8583159",
+            link: "https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8583159"
           }
         ]
       },
       {
         status: "previous-visible",
-        filename: "Verity (Stable) (2.0.0)-(26.3).mcaddon",
+        filename: "Verity (Stable) (2.0.1)-(26.40).mcaddon",
         aliases: [
-          "Verity (Stable) (2.0.0)-(26.3#).mcaddon old file",
+          "Verity (Stable) (2.0.1)-(26.40).mcaddon old file",
           "verity be 8543534",
           "verity stable 8543534",
           "previous verity be 2.0.0",

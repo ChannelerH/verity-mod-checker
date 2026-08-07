@@ -5,8 +5,54 @@
   <id>https://veritymodchecker.online/feed.xml</id>
   <link href="https://veritymodchecker.online/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://veritymodchecker.online/download/" rel="alternate" type="text/html" />
-  <updated>2026-08-05T09:45:00+08:00</updated>
+  <updated>2026-08-07T09:45:00+08:00</updated>
   <author><name>Verity Mod Checker</name></author>
+  <entry>
+    <title>August 7 source counters, GSC, GA4, Bing, and DNS blocker refresh</title>
+    <id>https://veritymodchecker.online/updates/source-counters-gsc-ga4-bing-dns-hold-2026-08-07-0945</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <link href="https://veritymodchecker.online/versions/" rel="related" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/mcpedl/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/6jRN8Exp" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8555265" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8583159" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-08-07T09:45:00+08:00</published>
+    <updated>2026-08-07T09:45:00+08:00</updated>
+    <summary>GSC domain-property UI now shows the delayed July 15 through August 4 window at 68 clicks, 2,150 impressions, 3.2% CTR, average position 8.6, exact verity mod at 2 clicks / 3 impressions, and 133 query rows. GSC indexing remains 11 indexed and 11 not indexed, with 6 crawled-not-indexed and 2 discovered-not-indexed under validation. GA4 last 7 days shows 90 sessions, 78 active users, 444 events, 10 key events, 37 Organic Search sessions, 28 Referral sessions, 4 AI Assistant sessions, 10 verity_outbound_project_click events, and 10 verity_api_error_diagnosis events. Official Modrinth API shows Verity JE project on1Y0osD at 569,570 downloads, 206 followers, current version 6jRN8Exp / verity-6.1.jar at 80,862 downloads, previous visible version CXsEzVwJ / verity-6.jar at 69,534 downloads, and stable yAt0wv1Z at 344,415 downloads. First-party CurseForge pages show Verity JE Project ID 1591438 at 2,871,128 downloads with current file 8555265 / verity-6.1.jar at 155.8K, Verity BE Project ID 1574632 at 4,698,808 downloads with current file 8583159 / Verity (Stable) (2.0.1)-(26.40).mcaddon at 66.3K, and PnTMC Project ID 1575941 at 8,738,315 downloads with V26.30 file 8517480 at 975.2K. MCPEDL displays about 8.7M for the PnTMC listing and new August 6 comments ask for 26.40 support or say the add-on does not work on v26.40. Bing's broad verity mod SERP still puts official CurseForge, verity-mod.vercel.app, verityminecraft.com, MCPEDL, MCPE mirrors, and verity.monster ahead of or around this site, while Google web search now shows veritymodchecker.online results for how-to-get, homepage, what-is, Verity JE, exact beta pages, and Verity BE. Public DNS for apex and www still returns no useful A answer while RDAP status remains server hold, so canonical-domain index pings and fresh external submissions remain blocked. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory outreach is claimed.</summary>
+    <category term="source-data-refresh" />
+    <category term="gsc-ga4" />
+    <category term="serp-check" />
+    <category term="dns-blocker" />
+  </entry>
+  <entry>
+    <title>Verity BE 2.0.1 26.40 hotfix and August 6 analytics check</title>
+    <id>https://veritymodchecker.online/updates/verity-be-2-0-1-26-40-hotfix-analytics-2026-08-06-0945</id>
+    <link href="https://veritymodchecker.online/updates/" rel="alternate" />
+    <link href="https://veritymodchecker.online/verity-be/" rel="related" />
+    <link href="https://veritymodchecker.online/bedrock/" rel="related" />
+    <link href="https://veritymodchecker.online/download/" rel="related" />
+    <link href="https://veritymodchecker.online/versions/" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-releases.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-source-map.json" rel="related" />
+    <link href="https://veritymodchecker.online/data/verity-be-2-0-0-source-pack.md" rel="related" />
+    <link href="https://api.modrinth.com/v2/project/on1Y0osD" rel="related" />
+    <link href="https://api.modrinth.com/v2/version/6jRN8Exp" rel="related" />
+    <link href="https://www.curseforge.com/minecraft/mc-mods/verity-je/files/8555265" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-be/files/8583159" rel="related" />
+    <link href="https://www.curseforge.com/minecraft-bedrock/addons/verity-bedrock-edition/files/8517480" rel="related" />
+    <published>2026-08-06T09:45:00+08:00</published>
+    <updated>2026-08-06T09:45:00+08:00</updated>
+    <summary>Official first-party checks show a material Bedrock change: Verity BE Project ID 1574632 now uses file 8583159 / Verity (Stable) (2.0.1)-(26.40).mcaddon, uploaded August 5, 2026, with a 26.40 hotfix changelog, 23.7 MB size, 22.3K displayed file downloads, and 4,628,428 project downloads. The file detail still renders a 26.30 supported-game-version row, so the site now describes the route as a 26.40 file-label hotfix with 26.30 supported-row evidence instead of treating old 2.0.0 file 8544453 as current. Official Modrinth API shows Verity JE project on1Y0osD at 543,672 downloads, 195 followers, current version 6jRN8Exp / verity-6.1.jar at 65,501 downloads, previous visible version CXsEzVwJ / verity-6.jar at 68,626 downloads, and stable yAt0wv1Z at 335,869 downloads. First-party CurseForge pages show Verity JE Project ID 1591438 at 2,812,873 downloads with current file 8555265 / verity-6.1.jar at 110.8K, and PnTMC Project ID 1575941 at 8,599,391 downloads with V26.30 file 8517480 at 902.6K. GSC last visible performance window shows 66 clicks, 2,080 impressions, 3.2% CTR, average position 8.7, exact verity mod at 2 clicks / 3 impressions, and 128 query rows. GA4 past 28 days shows 866 sessions, 91 verity_outbound_project_click events, 17 verity_source_check events, 74 verity_api_error_diagnosis events, and 85 key events. Public DNS for apex and www still returns no A answer while RDAP status remains server hold, so canonical-domain index pings and fresh external submissions remain blocked. No fake traffic, paid links, comment spam, CAPTCHA bypass, or GitHub directory outreach is claimed.</summary>
+    <category term="verity-be-2-0-1" />
+    <category term="source-data-refresh" />
+    <category term="gsc-ga4" />
+    <category term="dns-blocker" />
+  </entry>
   <entry>
     <title>August 5 source counters, GSC, GA4, and DNS blocker refresh</title>
     <id>https://veritymodchecker.online/updates/source-counters-gsc-ga4-dns-hold-2026-08-05-0945</id>

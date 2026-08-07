@@ -1,6 +1,6 @@
 # Verity JE status 429 source pack
 
-Checked: 2026-08-05 09:45 Asia/Shanghai
+Checked: 2026-08-07 09:45 Asia/Shanghai
 
 Canonical guide: https://veritymodchecker.online/status-429/
 
@@ -28,7 +28,7 @@ Recommended first test:
 
 ## Observed demand
 
-The July 15 through August 2 delayed Search Console window shows API-error and 429 queries already reaching the site:
+The July 15 through August 4 delayed Search Console window shows API-error and 429 queries already reaching the site:
 
 - `api connection failed status 429 verity`: 1 click / 4 impressions
 - `api connection failed 429 verity mod`: 1 click / 2 impressions
@@ -37,36 +37,35 @@ The July 15 through August 2 delayed Search Console window shows API-error and 4
 - `verity api connection failed 401`: 2 clicks / 2 impressions
 - `verity mod`: 2 clicks / 3 impressions
 
-GA4 data checked August 5 shows:
+GA4 home-card data checked August 7 shows:
 
-- 865 past-28-days sessions
-- 220 past-28-days `/api-connection-failed/` landing sessions
-- 86 last-7-days Organic Search sessions
-- 55 last-7-days Referral sessions
-- 45 last-7-days `gist.github.com / referral` sessions
-- 10 last-7-days `google / organic` sessions
-- 12 last-7-days `bing / organic` sessions
-- 58 last-7-days `yandex.ru / referral` sessions
-- 91 `verity_outbound_project_click` events
-- 17 `verity_source_check` events
-- 74 `verity_api_error_diagnosis` events
-- 85 key events
+- 90 last-7-days sessions
+- 78 last-7-days active users
+- 444 last-7-days events
+- 10 last-7-days key events
+- 37 last-7-days Organic Search sessions
+- 28 last-7-days Referral sessions
+- 4 last-7-days AI Assistant sessions
+- 10 visible `verity_outbound_project_click` events
+- 10 visible `verity_api_error_diagnosis` events
+
+The separate GA4 landing and event detail pages rendered a sample report UI in this browser session, so this source pack does not restate row-level landing sessions as fresh August 7 data.
 
 The useful content gap is not another generic "download" page. The useful gap is a short support reference that explains why a player can get one or two replies, then see 429 until a reset window passes.
 
 ## Current Verity JE source facts
 
-Official Modrinth API checks on August 5 show:
+Official Modrinth API checks on August 7 show:
 
 - Project: `on1Y0osD`
 - Current version: `6jRN8Exp`
 - Current file: `verity-6.1.jar`
 - Loader / game version: Forge 1.20.1
-- Project downloads at check: `520619`
-- Current version downloads at check: `51731`
-- Stable 5.7.3 version downloads at check: `328223`
+- Project downloads at check: `569570`
+- Current version downloads at check: `80862`
+- Stable 5.7.3 version downloads at check: `344415`
 - Project updated: `2026-08-01T16:26:35.375695Z`
-- Followers at check: `189`
+- Followers at check: `206`
 - SHA-1 for `verity-6.1.jar`: `72f974905772b020c51e9605d35777be1a542e62`
 - SHA-512 for `verity-6.1.jar`: `4e721c8709c30230ee9b9a59eca2f70410c841244baa6ec473170cb0528562e369d277f78c20a155dcd863dabaa93897290e2cf0402804107bca93a98aa1b189`
 
